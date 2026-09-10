@@ -1,8 +1,8 @@
 # Overwatch Map Affinity
 
-Everybody knows that Overwatch heroes vary with their performance based on each map, and most can even name those cases, such as Winston being good at Watchpoint: Gibraltar. But still I believe I wanted to see the extent of the map effect, and make a deep dive to find how each hero is effected by map changes. So, I pulled ranked win rate data and built something that answers it properly: for every hero, on every map, how much does their win rate move relative to their own average?
+Everybody knows that Overwatch heroes vary with their performance based on each map, and most can even name those cases, such as Winston being good at Watchpoint: Gibraltar. But still I wanted to see the extent of the map effect, and make a deep dive to find how each hero is effected by map changes. So, I pulled ranked win rate data and built something that answers it properly: for every hero, on every map, how much does their win rate move relative to their own average?
 
-I didn't want to make a system that was dependant on patches, but wanted to find values that would stay the same regardless of hero's current balance or meta status, so I used "delta win rate" (map win rate minus the hero's baseline win rate for the same rank/region/patch slice). Of course this data is only valuable without any hero or map reworks, in those cases the data needs refreshing. But these values in this research should, in theory, survive regular balance changes.
+I didn't want to make a system that was dependant on patches, but rather wanted to find values that would stay the same regardless of hero's current balance or meta status, so I used "delta win rate" (map win rate minus the hero's baseline win rate for the same rank/region/patch slice). Of course this data is only valuable without any hero or map reworks, in those cases the data needs refreshing. But these values in this research should, in theory, survive regular balance changes.
 
 **[Live data browser →](web/index.html)** (needs a local server, see below)
 
@@ -62,4 +62,4 @@ Raw per-hero cache files aren't checked in (they're big and easy to regenerate),
 
 ## Caveats
 
-Heroes and maps added mid-timeframe are only counted from the season they existed in, and reworked maps only count data from after the rework.
+Heroes and maps added (or reworked) mid-timeframe are only counted from the season they existed in, and reworked maps only count data from after the rework.
