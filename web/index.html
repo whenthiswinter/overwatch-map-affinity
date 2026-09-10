@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Overwatch Map Affinity</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="wrap">
+
+  <header class="top">
+    <div>
+      <h1>Map Affinity</h1>
+      <p class="sub">Per-hero, per-map win rate deltas pulled from ranked Overwatch match data.</p>
+    </div>
+    <div class="top-buttons">
+      <button class="btn ghost" id="legendBtn">Methodology</button>
+      <button class="btn" id="exportBtn">Export pool</button>
+    </div>
+  </header>
+
+  <nav class="tabs">
+    <button class="tab active" data-tab="map">Maps</button>
+    <button class="tab" data-tab="hero">Heroes</button>
+    <button class="tab" data-tab="pool">My pool</button>
+  </nav>
+
+  <section class="filters">
+    <label class="field">
+      <span>Rank</span>
+      <select id="rankSelect">
+        <option value="ALL">All ranks</option>
+        <option value="MASTER">Masters</option>
+        <option value="GRANDMASTER_AND_CHAMPION">GM &amp; Champion</option>
+      </select>
+    </label>
+
+    <label class="field">
+      <span>Region</span>
+      <select id="regionSelect">
+        <option value="ALL">All regions</option>
+        <option value="AMER">Americas</option>
+        <option value="EU">Europe</option>
+        <option value="ASIA">Asia</option>
+        <option value="KR">Korea</option>
+      </select>
+    </label>
+
+    <label class="field" data-scope="map">
+      <span>Map</span>
+      <select id="mapSelect"></select>
+    </label>
+
+    <label class="field check" data-scope="map">
+      <input type="checkbox" id="onlyPoolCheck" />
+      <span>Pool only</span>
+    </label>
+
+    <label class="field" data-scope="hero">
+      <span>Hero</span>
+      <select id="heroSelect"></select>
+    </label>
+  </section>
+
+  <section class="pool-editor">
+    <div class="pool-editor-head">
+      <span>Hero pool</span>
+      <button class="link" id="clearPoolBtn">Clear</button>
+    </div>
+    <div class="role-block">
+      <p class="role-label role-Tank">Tank</p>
+      <div class="chips" id="chipsTank"></div>
+    </div>
+    <div class="role-block">
+      <p class="role-label role-Damage">Damage</p>
+      <div class="chips" id="chipsDamage"></div>
+    </div>
+    <div class="role-block">
+      <p class="role-label role-Support">Support</p>
+      <div class="chips" id="chipsSupport"></div>
+    </div>
+  </section>
+
+  <main>
+    <div id="heroSummary" class="hero-summary hidden">
+      <div class="hero-summary-head">
+        <div>
+          <h2 id="heroName"></h2>
+          <span class="role-pill" id="heroRolePill"></span>
+        </div>
+        <div class="vol-pill" id="heroVol"></div>
+      </div>
+      <div class="mode-grid" id="modeGrid"></div>
+    </div>
+
+    <div class="table-wrap" id="tableView">
+      <table>
+        <thead id="tableHead"></thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+    </div>
+
+    <div id="poolView" class="pool-view hidden">
+      <div class="role-filter" id="poolRoleFilter">
+        <button class="chip-toggle active" data-role="ALL">All</button>
+        <button class="chip-toggle" data-role="Tank">Tank</button>
+        <button class="chip-toggle" data-role="Damage">Damage</button>
+        <button class="chip-toggle" data-role="Support">Support</button>
+      </div>
+      <div id="poolGrid"></div>
+    </div>
+  </main>
+
+  <footer>
+    Data: OWTics, Masters and above, seasons 1&ndash;4 (2026). Delta WR is a hero's win rate on a given map minus their baseline win rate for that rank/region/patch slice.
+  </footer>
+</div>
+
+<dialog id="exportDialog">
+  <h3>Offline pool cheat sheet</h3>
+  <p class="dialog-sub">Grouped by game mode, then role. Best pick per role on each map is marked.</p>
+  <textarea id="exportText" readonly></textarea>
+  <div class="dialog-actions">
+    <button class="btn" id="copyExportBtn">Copy</button>
+    <button class="btn ghost" id="closeExportBtn">Close</button>
+  </div>
+</dialog>
+
+<dialog id="legendDialog">
+  <h3>Methodology</h3>
+
+  <div class="legend-entry">
+    <h4>Delta WR &amp; tiers</h4>
+    <p>Map win rate minus the hero's baseline win rate in that rank/region/patch slice, averaged across every slice collected. S &ge; 3.0%, A 1.2&ndash;2.9%, B &minus;1.1&ndash;1.1%, C &minus;3.0&ndash;&minus;1.3%, D &lt; &minus;3.0%.</p>
+  </div>
+
+  <div class="legend-entry">
+    <h4>Presence (Delta PR)</h4>
+    <p>Pick rate on the map minus the hero's average pick rate. Map Priority &ge; 3.0%, Popular 1.0&ndash;2.9%, Standard &minus;1.0&ndash;0.9%, Niche &lt; &minus;1.0%.</p>
+  </div>
+
+  <div class="legend-entry">
+    <h4>Archetypes</h4>
+    <p><b>Meta</b>: high win rate and high pick rate. <b>Specialist</b>: high win rate, low pick rate. <b>Trap Pick</b>: low win rate despite being picked often. <b>Deterrent</b>: low win rate and low pick rate. <b>Favorable</b> / <b>Unfavorable</b>: a clear win rate lift or drop on its own, without a pick-rate swing big enough to earn one of the labels above. <b>Neutral</b>: no meaningful signal either way.</p>
+  </div>
+
+  <div class="legend-entry">
+    <h4>Map sensitivity (sigma)</h4>
+    <p>Standard deviation of a hero's delta across all maps. Map-Dependent &ge; 3.0%, Flexible 1.8&ndash;2.9%, Map-Agnostic &lt; 1.8%.</p>
+  </div>
+
+  <div class="dialog-actions">
+    <button class="btn ghost" id="closeLegendBtn">Close</button>
+  </div>
+</dialog>
+
+<script src="js/app.js"></script>
+</body>
+</html>

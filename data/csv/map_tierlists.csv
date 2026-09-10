@@ -1,0 +1,1591 @@
+map,tier,hero,delta_wr,delta_pr,presence,archetype,rank_comparison,sample_size
+aatlis,D,ana,-4.28,-16.33,Niche (-16.3%),Deterrent,Better in Masters,44
+aatlis,S,anran,3.95,2.63,Popular (+2.6%),Meta,Even Across Ranks,44
+aatlis,D,ashe,-4.13,-8.05,Niche (-8.0%),Deterrent,Better in Masters,32
+aatlis,B,baptiste,-0.87,-1.8,Niche (-1.8%),Neutral,Even Across Ranks,43
+aatlis,C,bastion,-1.57,-1.44,Niche (-1.4%),Deterrent,Even Across Ranks,42
+aatlis,A,brigitte,2.26,2.49,Popular (+2.5%),Meta,Even Across Ranks,44
+aatlis,A,cassidy,1.45,8.57,Map Priority (+8.6%),Favorable,Even Across Ranks,44
+aatlis,A,dmon,2.91,2.26,Popular (+2.3%),Meta,Even Across Ranks,8
+aatlis,C,domina,-1.97,-1.23,Niche (-1.2%),Deterrent,Even Across Ranks,41
+aatlis,A,doomfist,1.4,1.68,Popular (+1.7%),Favorable,Even Across Ranks,44
+aatlis,D,dva,-3.37,-1.53,Niche (-1.5%),Deterrent,Even Across Ranks,44
+aatlis,D,echo,-3.53,-3.05,Niche (-3.1%),Deterrent,Even Across Ranks,43
+aatlis,B,emre,1.16,-4.62,Niche (-4.6%),Neutral,Better in GM+,44
+aatlis,C,freja,-2.08,-2.88,Niche (-2.9%),Deterrent,Better in GM+,38
+aatlis,B,genji,0.26,0.97,Standard (+1.0%),Neutral,Even Across Ranks,44
+aatlis,D,hanzo,-3.96,-3.11,Niche (-3.1%),Deterrent,Even Across Ranks,43
+aatlis,B,hazard,-0.12,2.63,Popular (+2.6%),Neutral,Even Across Ranks,43
+aatlis,B,illari,-0.79,-5.13,Niche (-5.1%),Neutral,Even Across Ranks,43
+aatlis,B,jetpackcat,1.14,-0.56,Standard (-0.6%),Neutral,Even Across Ranks,44
+aatlis,S,junkerqueen,4.57,2.51,Popular (+2.5%),Meta,Even Across Ranks,43
+aatlis,A,junkrat,2.69,0.66,Standard (+0.7%),Favorable,Even Across Ranks,42
+aatlis,B,juno,-0.64,0.44,Standard (+0.4%),Neutral,Even Across Ranks,44
+aatlis,B,kiriko,-0.1,9.47,Map Priority (+9.5%),Neutral,Even Across Ranks,43
+aatlis,A,lifeweaver,1.42,-2.09,Niche (-2.1%),Favorable,Better in GM+,43
+aatlis,A,lucio,2.9,8.91,Map Priority (+8.9%),Meta,Better in Masters,44
+aatlis,S,mauga,3.38,2.37,Popular (+2.4%),Meta,Even Across Ranks,44
+aatlis,B,mei,-0.77,0.43,Standard (+0.4%),Neutral,Even Across Ranks,44
+aatlis,C,mercy,-1.58,-3.74,Niche (-3.7%),Deterrent,Even Across Ranks,41
+aatlis,A,mizuki,1.29,5.79,Map Priority (+5.8%),Favorable,Even Across Ranks,44
+aatlis,A,moira,1.82,6.45,Map Priority (+6.4%),Meta,Even Across Ranks,44
+aatlis,C,orisa,-2.86,0.93,Standard (+0.9%),Unfavorable,Even Across Ranks,43
+aatlis,D,pharah,-4.2,-0.97,Standard (-1.0%),Deterrent,Better in GM+,43
+aatlis,B,ramattra,0.63,1.39,Popular (+1.4%),Neutral,Even Across Ranks,44
+aatlis,B,reaper,0.54,5.82,Map Priority (+5.8%),Neutral,Better in Masters,44
+aatlis,A,reinhardt,2.43,0.91,Standard (+0.9%),Favorable,Even Across Ranks,42
+aatlis,A,roadhog,1.48,-0.1,Standard (-0.1%),Favorable,Even Across Ranks,43
+aatlis,B,shion,0.57,7.77,Map Priority (+7.8%),Neutral,Even Across Ranks,20
+aatlis,C,sierra,-1.59,-1.29,Niche (-1.3%),Deterrent,Even Across Ranks,23
+aatlis,D,sigma,-5.03,-5.55,Niche (-5.5%),Deterrent,Even Across Ranks,44
+aatlis,B,sojourn,-0.37,0.42,Standard (+0.4%),Neutral,Even Across Ranks,44
+aatlis,B,soldier76,-0.1,-2.72,Niche (-2.7%),Neutral,Even Across Ranks,43
+aatlis,C,sombra,-1.67,-0.28,Standard (-0.3%),Deterrent,Better in Masters,42
+aatlis,B,symmetra,0.2,0.38,Standard (+0.4%),Neutral,Even Across Ranks,43
+aatlis,B,torbjorn,0.28,-0.13,Standard (-0.1%),Neutral,Better in Masters,42
+aatlis,B,tracer,-0.15,6.63,Map Priority (+6.6%),Neutral,Even Across Ranks,44
+aatlis,A,vendetta,2.84,1.57,Popular (+1.6%),Meta,Even Across Ranks,44
+aatlis,B,venture,0.51,1.87,Popular (+1.9%),Neutral,Even Across Ranks,44
+aatlis,D,widowmaker,-28.36,-6.73,Niche (-6.7%),Deterrent,Even Across Ranks,5
+aatlis,D,winston,-5.42,-5.97,Niche (-6.0%),Deterrent,Better in Masters,43
+aatlis,B,wreckingball,0.82,-0.24,Standard (-0.2%),Neutral,Even Across Ranks,43
+aatlis,C,wuyang,-1.97,1.06,Popular (+1.1%),Trap Pick,Even Across Ranks,44
+aatlis,A,zarya,2.59,2.33,Popular (+2.3%),Meta,Better in GM+,44
+aatlis,B,zenyatta,-0.64,-4.57,Niche (-4.6%),Neutral,Even Across Ranks,43
+antarctic-peninsula,C,ana,-1.62,-8.28,Niche (-8.3%),Deterrent,Even Across Ranks,32
+antarctic-peninsula,B,anran,0.24,0.67,Standard (+0.7%),Neutral,Even Across Ranks,31
+antarctic-peninsula,B,ashe,-0.39,-5.26,Niche (-5.3%),Neutral,Even Across Ranks,32
+antarctic-peninsula,B,baptiste,0.68,-0.83,Standard (-0.8%),Neutral,Even Across Ranks,32
+antarctic-peninsula,A,bastion,1.45,-0.75,Standard (-0.7%),Favorable,Even Across Ranks,31
+antarctic-peninsula,A,brigitte,1.26,1.03,Popular (+1.0%),Favorable,Even Across Ranks,32
+antarctic-peninsula,S,cassidy,3.82,9.04,Map Priority (+9.0%),Meta,Even Across Ranks,32
+antarctic-peninsula,A,dmon,1.28,2.29,Popular (+2.3%),Favorable,Even Across Ranks,8
+antarctic-peninsula,A,domina,2.14,-0.69,Standard (-0.7%),Specialist,Even Across Ranks,31
+antarctic-peninsula,B,doomfist,-0.74,0.05,Standard (+0.0%),Neutral,Even Across Ranks,32
+antarctic-peninsula,C,dva,-2.13,-1.12,Niche (-1.1%),Deterrent,Even Across Ranks,32
+antarctic-peninsula,C,echo,-1.57,-1.86,Niche (-1.9%),Deterrent,Even Across Ranks,32
+antarctic-peninsula,B,emre,-0.29,-2.16,Niche (-2.2%),Neutral,Even Across Ranks,32
+antarctic-peninsula,B,freja,-1.13,-1.53,Niche (-1.5%),Neutral,Better in Masters,32
+antarctic-peninsula,C,genji,-1.7,-0.77,Standard (-0.8%),Deterrent,Even Across Ranks,32
+antarctic-peninsula,B,hanzo,-0.59,-2.48,Niche (-2.5%),Neutral,Better in GM+,32
+antarctic-peninsula,C,hazard,-2.21,0.73,Standard (+0.7%),Unfavorable,Even Across Ranks,32
+antarctic-peninsula,A,illari,1.27,-2.27,Niche (-2.3%),Favorable,Even Across Ranks,32
+antarctic-peninsula,C,jetpackcat,-1.43,-0.44,Standard (-0.4%),Unfavorable,Even Across Ranks,32
+antarctic-peninsula,A,junkerqueen,2.95,1.04,Popular (+1.0%),Favorable,Better in GM+,32
+antarctic-peninsula,C,junkrat,-1.89,-0.19,Standard (-0.2%),Deterrent,Better in Masters,32
+antarctic-peninsula,B,juno,-0.24,0.8,Standard (+0.8%),Neutral,Even Across Ranks,32
+antarctic-peninsula,A,kiriko,1.28,5.49,Map Priority (+5.5%),Favorable,Even Across Ranks,32
+antarctic-peninsula,B,lifeweaver,0.87,-1.4,Niche (-1.4%),Neutral,Even Across Ranks,32
+antarctic-peninsula,B,lucio,-0.56,3.44,Map Priority (+3.4%),Neutral,Even Across Ranks,32
+antarctic-peninsula,A,mauga,2.12,1.5,Popular (+1.5%),Favorable,Even Across Ranks,32
+antarctic-peninsula,B,mei,0.22,0.27,Standard (+0.3%),Neutral,Better in Masters,32
+antarctic-peninsula,B,mercy,-1.04,-1.63,Niche (-1.6%),Neutral,Even Across Ranks,31
+antarctic-peninsula,B,mizuki,0.36,2.81,Popular (+2.8%),Neutral,Even Across Ranks,32
+antarctic-peninsula,A,moira,1.67,2.4,Popular (+2.4%),Meta,Even Across Ranks,32
+antarctic-peninsula,B,orisa,0.23,1.21,Popular (+1.2%),Neutral,Even Across Ranks,32
+antarctic-peninsula,D,pharah,-4.89,-0.73,Standard (-0.7%),Deterrent,Even Across Ranks,32
+antarctic-peninsula,A,ramattra,2.24,1.05,Popular (+1.0%),Favorable,Even Across Ranks,32
+antarctic-peninsula,B,reaper,0.51,2.27,Popular (+2.3%),Neutral,Even Across Ranks,32
+antarctic-peninsula,A,reinhardt,1.68,0.83,Standard (+0.8%),Favorable,Even Across Ranks,32
+antarctic-peninsula,S,roadhog,3.58,0.33,Standard (+0.3%),Favorable,Even Across Ranks,32
+antarctic-peninsula,B,shion,-1.06,6.52,Map Priority (+6.5%),Neutral,Even Across Ranks,20
+antarctic-peninsula,B,sierra,-0.81,-0.24,Standard (-0.2%),Neutral,Even Across Ranks,25
+antarctic-peninsula,C,sigma,-1.24,-2.39,Niche (-2.4%),Unfavorable,Even Across Ranks,32
+antarctic-peninsula,B,sojourn,-0.15,0.43,Standard (+0.4%),Neutral,Even Across Ranks,32
+antarctic-peninsula,B,soldier76,0.9,-0.74,Standard (-0.7%),Neutral,Even Across Ranks,32
+antarctic-peninsula,A,sombra,1.49,-0.18,Standard (-0.2%),Favorable,Better in GM+,31
+antarctic-peninsula,A,symmetra,2.24,0.57,Standard (+0.6%),Favorable,Even Across Ranks,32
+antarctic-peninsula,A,torbjorn,2.96,-0.08,Standard (-0.1%),Specialist,Even Across Ranks,32
+antarctic-peninsula,A,tracer,1.38,4.28,Map Priority (+4.3%),Favorable,Even Across Ranks,32
+antarctic-peninsula,B,vendetta,0.89,0.35,Standard (+0.4%),Neutral,Even Across Ranks,29
+antarctic-peninsula,C,venture,-1.48,0.23,Standard (+0.2%),Unfavorable,Even Across Ranks,31
+antarctic-peninsula,D,widowmaker,-9.18,-5.12,Niche (-5.1%),Deterrent,Better in Masters,27
+antarctic-peninsula,C,winston,-2.79,-4.47,Niche (-4.5%),Deterrent,Even Across Ranks,32
+antarctic-peninsula,C,wreckingball,-1.33,-0.22,Standard (-0.2%),Unfavorable,Better in Masters,32
+antarctic-peninsula,B,wuyang,0.61,1.17,Popular (+1.2%),Neutral,Even Across Ranks,32
+antarctic-peninsula,A,zarya,2.01,1.52,Popular (+1.5%),Meta,Even Across Ranks,32
+antarctic-peninsula,B,zenyatta,0.1,-2.32,Niche (-2.3%),Neutral,Even Across Ranks,32
+blizzard-world,B,ana,-0.13,7.1,Map Priority (+7.1%),Neutral,Even Across Ranks,44
+blizzard-world,A,anran,2.12,-0.69,Standard (-0.7%),Specialist,Better in GM+,43
+blizzard-world,C,ashe,-1.26,2.77,Popular (+2.8%),Unfavorable,Even Across Ranks,44
+blizzard-world,C,baptiste,-2.57,-0.37,Standard (-0.4%),Deterrent,Even Across Ranks,44
+blizzard-world,C,bastion,-1.44,-0.17,Standard (-0.2%),Unfavorable,Even Across Ranks,43
+blizzard-world,D,brigitte,-5.84,-0.54,Standard (-0.5%),Deterrent,Better in Masters,44
+blizzard-world,C,cassidy,-2.12,-5.21,Niche (-5.2%),Deterrent,Even Across Ranks,44
+blizzard-world,D,dmon,-3.36,-0.68,Standard (-0.7%),Deterrent,Better in Masters,8
+blizzard-world,D,domina,-3.14,0.59,Standard (+0.6%),Unfavorable,Even Across Ranks,44
+blizzard-world,C,doomfist,-2.25,-0.13,Standard (-0.1%),Deterrent,Even Across Ranks,44
+blizzard-world,A,dva,1.47,0.74,Standard (+0.7%),Favorable,Even Across Ranks,44
+blizzard-world,C,echo,-1.4,-2.05,Niche (-2.1%),Unfavorable,Even Across Ranks,44
+blizzard-world,B,emre,-0.27,1.88,Popular (+1.9%),Neutral,Better in Masters,44
+blizzard-world,B,freja,-1.14,0.64,Standard (+0.6%),Neutral,Better in GM+,43
+blizzard-world,B,genji,-1.05,-0.8,Standard (-0.8%),Neutral,Better in Masters,44
+blizzard-world,C,hanzo,-1.65,1.35,Popular (+1.4%),Trap Pick,Better in GM+,44
+blizzard-world,D,hazard,-3.64,-1.94,Niche (-1.9%),Deterrent,Better in GM+,43
+blizzard-world,B,illari,0.58,1.68,Popular (+1.7%),Neutral,Even Across Ranks,44
+blizzard-world,B,jetpackcat,0.42,-0.53,Standard (-0.5%),Neutral,Even Across Ranks,44
+blizzard-world,D,junkerqueen,-5.73,-1.01,Niche (-1.0%),Deterrent,Better in Masters,36
+blizzard-world,D,junkrat,-4.36,-0.85,Standard (-0.9%),Deterrent,Even Across Ranks,44
+blizzard-world,B,juno,0.1,-1.31,Niche (-1.3%),Neutral,Better in GM+,44
+blizzard-world,C,kiriko,-1.68,-2.51,Niche (-2.5%),Deterrent,Better in Masters,44
+blizzard-world,B,lifeweaver,-0.57,0.69,Standard (+0.7%),Neutral,Better in GM+,44
+blizzard-world,D,lucio,-8.01,-3.12,Niche (-3.1%),Deterrent,Better in Masters,43
+blizzard-world,D,mauga,-5.41,-1.19,Niche (-1.2%),Deterrent,Better in Masters,43
+blizzard-world,B,mei,-0.67,-0.24,Standard (-0.2%),Neutral,Better in Masters,43
+blizzard-world,B,mercy,0.96,1.25,Popular (+1.2%),Neutral,Better in GM+,43
+blizzard-world,D,mizuki,-5.13,-2.13,Niche (-2.1%),Deterrent,Better in Masters,44
+blizzard-world,D,moira,-6.05,-2.08,Niche (-2.1%),Deterrent,Even Across Ranks,44
+blizzard-world,B,orisa,-0.38,-0.4,Standard (-0.4%),Neutral,Even Across Ranks,44
+blizzard-world,C,pharah,-2.86,-1.78,Niche (-1.8%),Deterrent,Better in GM+,44
+blizzard-world,D,ramattra,-5.28,-0.81,Standard (-0.8%),Deterrent,Better in Masters,42
+blizzard-world,C,reaper,-1.63,-2.16,Niche (-2.2%),Deterrent,Even Across Ranks,44
+blizzard-world,D,reinhardt,-4.72,-0.97,Standard (-1.0%),Deterrent,Better in GM+,44
+blizzard-world,D,roadhog,-3.38,-0.73,Standard (-0.7%),Deterrent,Even Across Ranks,43
+blizzard-world,C,shion,-1.58,-2.68,Niche (-2.7%),Deterrent,Even Across Ranks,20
+blizzard-world,C,sierra,-2.72,0.47,Standard (+0.5%),Unfavorable,Better in GM+,30
+blizzard-world,B,sigma,-1.16,2.69,Popular (+2.7%),Neutral,Even Across Ranks,44
+blizzard-world,B,sojourn,0.61,1.52,Popular (+1.5%),Neutral,Even Across Ranks,44
+blizzard-world,C,soldier76,-2.74,0.2,Standard (+0.2%),Unfavorable,Even Across Ranks,44
+blizzard-world,B,sombra,-0.85,0.45,Standard (+0.4%),Neutral,Better in Masters,43
+blizzard-world,C,symmetra,-2.14,-0.28,Standard (-0.3%),Deterrent,Even Across Ranks,44
+blizzard-world,D,torbjorn,-4.9,0.42,Standard (+0.4%),Unfavorable,Better in Masters,42
+blizzard-world,C,tracer,-2.16,0.79,Standard (+0.8%),Unfavorable,Even Across Ranks,44
+blizzard-world,D,vendetta,-3.78,-0.53,Standard (-0.5%),Deterrent,Even Across Ranks,36
+blizzard-world,A,venture,2.39,-0.32,Standard (-0.3%),Specialist,Even Across Ranks,42
+blizzard-world,B,widowmaker,-0.57,5.41,Map Priority (+5.4%),Neutral,Even Across Ranks,44
+blizzard-world,B,winston,0.33,3.11,Map Priority (+3.1%),Neutral,Even Across Ranks,44
+blizzard-world,A,wreckingball,1.29,1.32,Popular (+1.3%),Favorable,Better in GM+,44
+blizzard-world,B,wuyang,0.17,0.09,Standard (+0.1%),Neutral,Even Across Ranks,44
+blizzard-world,C,zarya,-2.01,-1.1,Niche (-1.1%),Deterrent,Better in Masters,43
+blizzard-world,B,zenyatta,-0.77,1.56,Popular (+1.6%),Neutral,Even Across Ranks,43
+busan,B,ana,-0.31,-3.79,Niche (-3.8%),Neutral,Even Across Ranks,8
+busan,A,anran,2.03,0.26,Standard (+0.3%),Favorable,Even Across Ranks,7
+busan,C,ashe,-1.25,-2.86,Niche (-2.9%),Unfavorable,Even Across Ranks,8
+busan,C,baptiste,-1.98,-1.28,Niche (-1.3%),Deterrent,Even Across Ranks,8
+busan,B,bastion,-0.09,-0.97,Standard (-1.0%),Neutral,Even Across Ranks,8
+busan,C,brigitte,-2.31,0.95,Standard (+1.0%),Unfavorable,Better in GM+,8
+busan,A,cassidy,2.35,2.89,Popular (+2.9%),Meta,Even Across Ranks,8
+busan,B,dmon,-0.13,1.76,Popular (+1.8%),Neutral,Even Across Ranks,8
+busan,B,domina,0.77,-0.66,Standard (-0.7%),Neutral,Even Across Ranks,8
+busan,C,doomfist,-2.96,0.17,Standard (+0.2%),Unfavorable,Better in Masters,8
+busan,A,dva,2.26,0.39,Standard (+0.4%),Favorable,Even Across Ranks,8
+busan,A,echo,1.35,-3.1,Niche (-3.1%),Favorable,Better in Masters,8
+busan,A,emre,2.81,-0.27,Standard (-0.3%),Specialist,Better in GM+,8
+busan,S,freja,3.6,-1.52,Niche (-1.5%),Specialist,Even Across Ranks,8
+busan,D,genji,-3.37,-0.87,Standard (-0.9%),Deterrent,Even Across Ranks,8
+busan,B,hanzo,-0.35,-2.68,Niche (-2.7%),Neutral,Better in GM+,8
+busan,C,hazard,-1.35,-0.19,Standard (-0.2%),Unfavorable,Better in GM+,8
+busan,B,illari,0.88,-2.34,Niche (-2.3%),Neutral,Better in Masters,8
+busan,B,jetpackcat,-0.4,0.51,Standard (+0.5%),Neutral,Better in Masters,8
+busan,A,junkerqueen,2.68,0.58,Standard (+0.6%),Favorable,Better in GM+,8
+busan,D,junkrat,-10.64,-0.89,Standard (-0.9%),Deterrent,Better in Masters,8
+busan,B,juno,0.68,-0.6,Standard (-0.6%),Neutral,Even Across Ranks,8
+busan,B,kiriko,0.21,4.47,Map Priority (+4.5%),Neutral,Even Across Ranks,8
+busan,A,lifeweaver,1.88,-0.71,Standard (-0.7%),Specialist,Better in Masters,8
+busan,B,lucio,-0.56,1.89,Popular (+1.9%),Neutral,Even Across Ranks,8
+busan,S,mauga,3.35,0.83,Standard (+0.8%),Favorable,Even Across Ranks,8
+busan,B,mei,0.21,-0.68,Standard (-0.7%),Neutral,Even Across Ranks,8
+busan,D,mercy,-4.47,-1.36,Niche (-1.4%),Deterrent,Better in GM+,6
+busan,A,mizuki,1.24,1.81,Popular (+1.8%),Favorable,Better in GM+,8
+busan,A,moira,2.26,1.99,Popular (+2.0%),Meta,Even Across Ranks,8
+busan,B,orisa,-0.34,0.38,Standard (+0.4%),Neutral,Even Across Ranks,8
+busan,C,pharah,-1.83,-2.88,Niche (-2.9%),Deterrent,Even Across Ranks,8
+busan,D,ramattra,-3.4,-0.68,Standard (-0.7%),Deterrent,Better in Masters,8
+busan,B,reaper,0.68,0.6,Standard (+0.6%),Neutral,Even Across Ranks,8
+busan,A,reinhardt,1.31,0.37,Standard (+0.4%),Favorable,Better in Masters,8
+busan,B,roadhog,-0.09,-0.43,Standard (-0.4%),Neutral,Even Across Ranks,8
+busan,B,shion,0.43,4.68,Map Priority (+4.7%),Neutral,Better in GM+,8
+busan,D,sierra,-6.42,-0.07,Standard (-0.1%),Deterrent,Even Across Ranks,4
+busan,B,sigma,-0.52,-3.24,Niche (-3.2%),Neutral,Even Across Ranks,8
+busan,B,sojourn,-0.07,-0.99,Standard (-1.0%),Neutral,Even Across Ranks,8
+busan,S,soldier76,3.79,3.06,Map Priority (+3.1%),Meta,Better in GM+,8
+busan,B,sombra,-0.68,0.29,Standard (+0.3%),Neutral,Better in Masters,8
+busan,B,symmetra,-0.82,0.48,Standard (+0.5%),Neutral,Better in Masters,8
+busan,D,torbjorn,-4.7,-0.31,Standard (-0.3%),Deterrent,Better in Masters,8
+busan,B,tracer,0.19,6.59,Map Priority (+6.6%),Neutral,Even Across Ranks,8
+busan,C,vendetta,-2.2,0.15,Standard (+0.2%),Unfavorable,Better in GM+,8
+busan,A,venture,2.97,-0.08,Standard (-0.1%),Specialist,Even Across Ranks,8
+busan,B,widowmaker,-0.42,-0.62,Standard (-0.6%),Neutral,Even Across Ranks,8
+busan,A,winston,1.98,-0.77,Standard (-0.8%),Specialist,Even Across Ranks,8
+busan,B,wreckingball,-1.14,1.94,Popular (+1.9%),Neutral,Better in GM+,8
+busan,B,wuyang,-0.4,-0.18,Standard (-0.2%),Neutral,Even Across Ranks,8
+busan,B,zarya,-0.4,-0.57,Standard (-0.6%),Neutral,Even Across Ranks,8
+busan,B,zenyatta,1.14,-1.52,Niche (-1.5%),Neutral,Better in GM+,8
+circuit-royal,B,ana,-0.09,8.0,Map Priority (+8.0%),Neutral,Even Across Ranks,44
+circuit-royal,D,anran,-3.32,-2.07,Niche (-2.1%),Deterrent,Even Across Ranks,34
+circuit-royal,B,ashe,-0.32,7.58,Map Priority (+7.6%),Neutral,Even Across Ranks,44
+circuit-royal,A,baptiste,1.91,8.19,Map Priority (+8.2%),Meta,Better in Masters,44
+circuit-royal,S,bastion,4.91,3.11,Map Priority (+3.1%),Meta,Even Across Ranks,44
+circuit-royal,D,brigitte,-5.92,-5.8,Niche (-5.8%),Deterrent,Even Across Ranks,40
+circuit-royal,B,cassidy,-0.66,-15.12,Niche (-15.1%),Neutral,Better in Masters,43
+circuit-royal,D,dmon,-3.89,-3.98,Niche (-4.0%),Deterrent,Better in Masters,8
+circuit-royal,S,domina,6.57,4.44,Map Priority (+4.4%),Meta,Even Across Ranks,44
+circuit-royal,D,doomfist,-3.32,-2.15,Niche (-2.2%),Deterrent,Even Across Ranks,44
+circuit-royal,D,dva,-4.1,-2.45,Niche (-2.5%),Deterrent,Even Across Ranks,44
+circuit-royal,D,echo,-3.24,-1.13,Niche (-1.1%),Deterrent,Even Across Ranks,43
+circuit-royal,B,emre,0.13,4.67,Map Priority (+4.7%),Neutral,Even Across Ranks,44
+circuit-royal,B,freja,0.06,5.22,Map Priority (+5.2%),Neutral,Better in Masters,44
+circuit-royal,B,genji,0.11,-1.17,Niche (-1.2%),Neutral,Even Across Ranks,44
+circuit-royal,B,hanzo,0.54,7.56,Map Priority (+7.6%),Neutral,Better in Masters,44
+circuit-royal,D,hazard,-8.16,-5.88,Niche (-5.9%),Deterrent,Better in Masters,38
+circuit-royal,A,illari,1.83,6.13,Map Priority (+6.1%),Meta,Even Across Ranks,44
+circuit-royal,C,jetpackcat,-2.26,-2.08,Niche (-2.1%),Deterrent,Even Across Ranks,44
+circuit-royal,D,junkerqueen,-7.82,-2.08,Niche (-2.1%),Deterrent,Better in Masters,28
+circuit-royal,C,junkrat,-1.87,0.12,Standard (+0.1%),Unfavorable,Even Across Ranks,44
+circuit-royal,S,juno,4.22,4.72,Map Priority (+4.7%),Meta,Even Across Ranks,44
+circuit-royal,D,kiriko,-3.97,-18.3,Niche (-18.3%),Deterrent,Better in Masters,44
+circuit-royal,B,lifeweaver,-0.85,1.26,Popular (+1.3%),Neutral,Even Across Ranks,43
+circuit-royal,D,lucio,-9.95,-6.38,Niche (-6.4%),Deterrent,Even Across Ranks,38
+circuit-royal,D,mauga,-4.54,-2.42,Niche (-2.4%),Deterrent,Even Across Ranks,41
+circuit-royal,A,mei,2.62,3.23,Map Priority (+3.2%),Meta,Even Across Ranks,43
+circuit-royal,B,mercy,0.78,1.57,Popular (+1.6%),Neutral,Even Across Ranks,43
+circuit-royal,A,mizuki,2.15,-5.21,Niche (-5.2%),Specialist,Better in GM+,44
+circuit-royal,C,moira,-1.64,-3.1,Niche (-3.1%),Deterrent,Better in Masters,43
+circuit-royal,B,orisa,1.13,1.01,Popular (+1.0%),Neutral,Even Across Ranks,43
+circuit-royal,D,pharah,-3.15,2.22,Popular (+2.2%),Trap Pick,Better in GM+,43
+circuit-royal,B,ramattra,1.02,4.4,Map Priority (+4.4%),Neutral,Even Across Ranks,43
+circuit-royal,B,reaper,0.4,-4.92,Niche (-4.9%),Neutral,Even Across Ranks,44
+circuit-royal,B,reinhardt,1.04,1.2,Popular (+1.2%),Neutral,Better in Masters,43
+circuit-royal,D,roadhog,-7.21,-3.42,Niche (-3.4%),Deterrent,Better in Masters,41
+circuit-royal,D,shion,-4.52,-12.33,Niche (-12.3%),Deterrent,Even Across Ranks,20
+circuit-royal,A,sierra,2.24,1.51,Popular (+1.5%),Meta,Even Across Ranks,31
+circuit-royal,S,sigma,8.08,17.51,Map Priority (+17.5%),Meta,Even Across Ranks,44
+circuit-royal,A,sojourn,2.36,12.26,Map Priority (+12.3%),Meta,Even Across Ranks,44
+circuit-royal,C,soldier76,-1.81,-2.75,Niche (-2.8%),Deterrent,Better in Masters,43
+circuit-royal,B,sombra,0.83,-1.15,Niche (-1.1%),Neutral,Better in GM+,39
+circuit-royal,S,symmetra,3.08,0.26,Standard (+0.3%),Favorable,Better in GM+,43
+circuit-royal,D,torbjorn,-3.09,-0.59,Standard (-0.6%),Deterrent,Better in GM+,42
+circuit-royal,D,tracer,-6.22,-18.51,Niche (-18.5%),Deterrent,Even Across Ranks,43
+circuit-royal,C,vendetta,-2.08,-1.0,Niche (-1.0%),Deterrent,Better in Masters,27
+circuit-royal,C,venture,-1.51,-0.57,Standard (-0.6%),Deterrent,Better in GM+,44
+circuit-royal,S,widowmaker,5.82,7.91,Map Priority (+7.9%),Meta,Even Across Ranks,44
+circuit-royal,D,winston,-10.39,-7.62,Niche (-7.6%),Deterrent,Even Across Ranks,43
+circuit-royal,C,wreckingball,-1.34,-2.7,Niche (-2.7%),Unfavorable,Better in Masters,42
+circuit-royal,B,wuyang,0.58,-0.15,Standard (-0.1%),Neutral,Even Across Ranks,44
+circuit-royal,C,zarya,-1.76,0.46,Standard (+0.5%),Unfavorable,Better in Masters,44
+circuit-royal,A,zenyatta,1.52,10.62,Map Priority (+10.6%),Meta,Even Across Ranks,44
+colosseo,C,ana,-2.67,-2.58,Niche (-2.6%),Deterrent,Even Across Ranks,44
+colosseo,A,anran,2.52,0.27,Standard (+0.3%),Favorable,Even Across Ranks,41
+colosseo,C,ashe,-1.22,-2.68,Niche (-2.7%),Unfavorable,Even Across Ranks,43
+colosseo,C,baptiste,-2.17,-1.63,Niche (-1.6%),Deterrent,Better in Masters,44
+colosseo,C,bastion,-2.14,-1.02,Niche (-1.0%),Deterrent,Better in Masters,42
+colosseo,B,brigitte,-0.89,-0.01,Standard (-0.0%),Neutral,Even Across Ranks,44
+colosseo,C,cassidy,-1.79,0.31,Standard (+0.3%),Unfavorable,Even Across Ranks,44
+colosseo,B,dmon,0.32,1.59,Popular (+1.6%),Neutral,Even Across Ranks,8
+colosseo,D,domina,-5.0,-0.29,Standard (-0.3%),Deterrent,Better in Masters,43
+colosseo,S,doomfist,3.04,0.95,Standard (+1.0%),Favorable,Even Across Ranks,44
+colosseo,C,dva,-2.61,-0.59,Standard (-0.6%),Deterrent,Even Across Ranks,44
+colosseo,B,echo,0.38,-0.98,Standard (-1.0%),Neutral,Even Across Ranks,44
+colosseo,B,emre,-0.96,1.25,Popular (+1.3%),Neutral,Even Across Ranks,44
+colosseo,A,freja,1.63,-1.0,Standard (-1.0%),Specialist,Even Across Ranks,43
+colosseo,B,genji,-0.13,-1.01,Niche (-1.0%),Neutral,Even Across Ranks,44
+colosseo,B,hanzo,-0.25,-2.23,Niche (-2.2%),Neutral,Even Across Ranks,43
+colosseo,B,hazard,0.78,0.38,Standard (+0.4%),Neutral,Even Across Ranks,43
+colosseo,A,illari,1.52,-0.47,Standard (-0.5%),Specialist,Even Across Ranks,44
+colosseo,A,jetpackcat,2.49,0.17,Standard (+0.2%),Favorable,Even Across Ranks,44
+colosseo,A,junkerqueen,1.51,0.84,Standard (+0.8%),Favorable,Even Across Ranks,43
+colosseo,A,junkrat,2.35,-0.61,Standard (-0.6%),Specialist,Even Across Ranks,43
+colosseo,B,juno,0.43,0.72,Standard (+0.7%),Neutral,Even Across Ranks,43
+colosseo,B,kiriko,0.65,2.22,Popular (+2.2%),Neutral,Even Across Ranks,44
+colosseo,B,lifeweaver,0.02,-0.31,Standard (-0.3%),Neutral,Better in GM+,43
+colosseo,S,lucio,3.78,1.54,Popular (+1.5%),Meta,Even Across Ranks,44
+colosseo,B,mauga,-0.52,0.6,Standard (+0.6%),Neutral,Even Across Ranks,43
+colosseo,A,mei,1.7,-1.24,Niche (-1.2%),Specialist,Better in GM+,43
+colosseo,B,mercy,0.79,-0.32,Standard (-0.3%),Neutral,Better in Masters,43
+colosseo,B,mizuki,-0.05,1.11,Popular (+1.1%),Neutral,Even Across Ranks,44
+colosseo,C,moira,-1.71,0.22,Standard (+0.2%),Unfavorable,Better in Masters,43
+colosseo,D,orisa,-3.12,-0.07,Standard (-0.1%),Deterrent,Even Across Ranks,43
+colosseo,C,pharah,-1.28,-0.2,Standard (-0.2%),Unfavorable,Better in Masters,44
+colosseo,C,ramattra,-2.99,-0.67,Standard (-0.7%),Deterrent,Even Across Ranks,42
+colosseo,C,reaper,-1.52,-0.78,Standard (-0.8%),Deterrent,Better in Masters,44
+colosseo,S,reinhardt,4.98,0.31,Standard (+0.3%),Favorable,Better in GM+,43
+colosseo,B,roadhog,-0.13,-0.08,Standard (-0.1%),Neutral,Even Across Ranks,43
+colosseo,B,shion,1.04,4.35,Map Priority (+4.4%),Neutral,Even Across Ranks,20
+colosseo,C,sierra,-1.29,-0.04,Standard (-0.0%),Unfavorable,Even Across Ranks,28
+colosseo,D,sigma,-3.93,-2.78,Niche (-2.8%),Deterrent,Even Across Ranks,44
+colosseo,A,sojourn,1.79,3.34,Map Priority (+3.3%),Meta,Even Across Ranks,44
+colosseo,B,soldier76,0.87,1.24,Popular (+1.2%),Neutral,Better in GM+,44
+colosseo,B,sombra,-0.68,0.7,Standard (+0.7%),Neutral,Better in GM+,44
+colosseo,D,symmetra,-3.32,-0.96,Standard (-1.0%),Deterrent,Even Across Ranks,40
+colosseo,A,torbjorn,2.85,-0.2,Standard (-0.2%),Specialist,Better in GM+,43
+colosseo,A,tracer,2.04,5.49,Map Priority (+5.5%),Meta,Even Across Ranks,44
+colosseo,S,vendetta,3.65,0.01,Standard (+0.0%),Favorable,Better in GM+,39
+colosseo,B,venture,-0.34,-0.24,Standard (-0.2%),Neutral,Better in Masters,44
+colosseo,D,widowmaker,-5.0,-1.48,Niche (-1.5%),Deterrent,Even Across Ranks,44
+colosseo,A,winston,1.2,0.01,Standard (+0.0%),Favorable,Even Across Ranks,44
+colosseo,B,wreckingball,0.92,1.16,Popular (+1.2%),Neutral,Better in Masters,44
+colosseo,A,wuyang,1.27,0.71,Standard (+0.7%),Favorable,Even Across Ranks,44
+colosseo,B,zarya,0.58,-0.22,Standard (-0.2%),Neutral,Better in GM+,44
+colosseo,B,zenyatta,0.81,-1.62,Niche (-1.6%),Neutral,Better in GM+,44
+dorado,S,ana,4.53,8.38,Map Priority (+8.4%),Meta,Even Across Ranks,44
+dorado,B,anran,-0.51,-0.47,Standard (-0.5%),Neutral,Better in GM+,42
+dorado,S,ashe,4.14,6.61,Map Priority (+6.6%),Meta,Better in GM+,44
+dorado,D,baptiste,-4.21,-0.74,Standard (-0.7%),Deterrent,Even Across Ranks,43
+dorado,C,bastion,-2.0,0.33,Standard (+0.3%),Unfavorable,Even Across Ranks,42
+dorado,B,brigitte,0.0,3.47,Map Priority (+3.5%),Neutral,Better in GM+,44
+dorado,B,cassidy,-0.69,-1.24,Niche (-1.2%),Neutral,Even Across Ranks,44
+dorado,S,dmon,6.58,-3.04,Niche (-3.0%),Specialist,Better in GM+,8
+dorado,D,domina,-6.61,-1.5,Niche (-1.5%),Deterrent,Better in Masters,39
+dorado,S,doomfist,3.11,0.42,Standard (+0.4%),Favorable,Better in GM+,43
+dorado,A,dva,1.6,3.24,Map Priority (+3.2%),Meta,Even Across Ranks,44
+dorado,S,echo,4.5,5.04,Map Priority (+5.0%),Meta,Even Across Ranks,44
+dorado,C,emre,-1.27,-0.61,Standard (-0.6%),Unfavorable,Even Across Ranks,44
+dorado,B,freja,0.13,1.87,Popular (+1.9%),Neutral,Even Across Ranks,43
+dorado,B,genji,-0.02,2.48,Popular (+2.5%),Neutral,Even Across Ranks,43
+dorado,B,hanzo,0.05,-0.56,Standard (-0.6%),Neutral,Even Across Ranks,44
+dorado,C,hazard,-2.06,2.37,Popular (+2.4%),Trap Pick,Even Across Ranks,43
+dorado,B,illari,-0.43,1.54,Popular (+1.5%),Neutral,Better in Masters,44
+dorado,B,jetpackcat,-0.09,1.68,Popular (+1.7%),Neutral,Even Across Ranks,44
+dorado,D,junkerqueen,-7.49,-1.49,Niche (-1.5%),Deterrent,Even Across Ranks,33
+dorado,D,junkrat,-3.05,0.6,Standard (+0.6%),Unfavorable,Better in Masters,42
+dorado,B,juno,-0.32,-1.97,Niche (-2.0%),Neutral,Even Across Ranks,40
+dorado,C,kiriko,-2.79,-2.69,Niche (-2.7%),Deterrent,Even Across Ranks,44
+dorado,A,lifeweaver,2.88,1.56,Popular (+1.6%),Meta,Even Across Ranks,42
+dorado,D,lucio,-5.66,-4.47,Niche (-4.5%),Deterrent,Even Across Ranks,41
+dorado,B,mauga,0.84,-1.1,Niche (-1.1%),Neutral,Better in GM+,42
+dorado,C,mei,-1.28,-0.87,Standard (-0.9%),Unfavorable,Better in GM+,44
+dorado,B,mercy,-0.56,2.42,Popular (+2.4%),Neutral,Better in Masters,44
+dorado,C,mizuki,-1.22,-2.24,Niche (-2.2%),Unfavorable,Better in GM+,44
+dorado,B,moira,-1.06,-1.98,Niche (-2.0%),Neutral,Even Across Ranks,42
+dorado,D,orisa,-4.89,-3.1,Niche (-3.1%),Deterrent,Even Across Ranks,43
+dorado,A,pharah,2.47,-0.09,Standard (-0.1%),Specialist,Better in Masters,42
+dorado,D,ramattra,-7.55,-2.55,Niche (-2.6%),Deterrent,Even Across Ranks,25
+dorado,B,reaper,0.56,1.79,Popular (+1.8%),Neutral,Better in GM+,44
+dorado,C,reinhardt,-2.77,-2.38,Niche (-2.4%),Deterrent,Even Across Ranks,41
+dorado,D,roadhog,-3.25,0.78,Standard (+0.8%),Unfavorable,Even Across Ranks,43
+dorado,B,shion,0.55,-5.02,Niche (-5.0%),Neutral,Better in GM+,20
+dorado,C,sierra,-1.87,0.14,Standard (+0.1%),Unfavorable,Better in Masters,28
+dorado,D,sigma,-8.06,-4.42,Niche (-4.4%),Deterrent,Even Across Ranks,44
+dorado,D,sojourn,-3.55,-9.1,Niche (-9.1%),Deterrent,Better in Masters,44
+dorado,B,soldier76,0.88,0.45,Standard (+0.4%),Neutral,Even Across Ranks,44
+dorado,C,sombra,-1.41,-0.01,Standard (-0.0%),Unfavorable,Even Across Ranks,42
+dorado,C,symmetra,-2.54,-0.69,Standard (-0.7%),Deterrent,Even Across Ranks,43
+dorado,D,torbjorn,-3.39,-0.08,Standard (-0.1%),Deterrent,Even Across Ranks,41
+dorado,C,tracer,-1.41,-1.65,Niche (-1.6%),Unfavorable,Even Across Ranks,44
+dorado,C,vendetta,-1.72,-0.2,Standard (-0.2%),Deterrent,Better in Masters,40
+dorado,A,venture,2.55,-0.18,Standard (-0.2%),Specialist,Better in GM+,42
+dorado,D,widowmaker,-4.49,-0.38,Standard (-0.4%),Deterrent,Even Across Ranks,44
+dorado,S,winston,4.18,13.38,Map Priority (+13.4%),Meta,Even Across Ranks,44
+dorado,S,wreckingball,5.43,0.91,Standard (+0.9%),Favorable,Better in Masters,43
+dorado,A,wuyang,1.92,-2.87,Niche (-2.9%),Specialist,Even Across Ranks,44
+dorado,D,zarya,-8.96,-3.33,Niche (-3.3%),Deterrent,Better in Masters,42
+dorado,C,zenyatta,-1.55,-2.03,Niche (-2.0%),Deterrent,Better in Masters,44
+eichenwalde,S,ana,5.56,4.46,Map Priority (+4.5%),Meta,Even Across Ranks,8
+eichenwalde,D,anran,-14.98,-0.27,Standard (-0.3%),Deterrent,Better in Masters,7
+eichenwalde,A,ashe,2.82,-1.37,Niche (-1.4%),Specialist,Better in Masters,8
+eichenwalde,C,baptiste,-1.67,0.96,Standard (+1.0%),Unfavorable,Even Across Ranks,8
+eichenwalde,B,bastion,-0.25,1.49,Popular (+1.5%),Neutral,Better in GM+,8
+eichenwalde,D,brigitte,-6.07,-0.45,Standard (-0.5%),Deterrent,Better in Masters,7
+eichenwalde,D,cassidy,-3.01,5.13,Map Priority (+5.1%),Trap Pick,Better in Masters,8
+eichenwalde,S,dmon,4.63,2.48,Popular (+2.5%),Meta,Better in GM+,8
+eichenwalde,A,domina,1.39,0.18,Standard (+0.2%),Favorable,Even Across Ranks,8
+eichenwalde,B,doomfist,1.02,-1.27,Niche (-1.3%),Neutral,Better in GM+,8
+eichenwalde,C,dva,-1.49,-1.01,Niche (-1.0%),Unfavorable,Better in Masters,8
+eichenwalde,S,echo,5.15,4.57,Map Priority (+4.6%),Meta,Better in Masters,8
+eichenwalde,D,emre,-5.92,-0.4,Standard (-0.4%),Deterrent,Better in Masters,8
+eichenwalde,S,freja,3.28,-0.24,Standard (-0.2%),Specialist,Better in Masters,8
+eichenwalde,C,genji,-2.88,1.1,Popular (+1.1%),Trap Pick,Better in Masters,8
+eichenwalde,D,hanzo,-8.58,0.79,Standard (+0.8%),Unfavorable,Better in GM+,8
+eichenwalde,S,hazard,3.83,-1.88,Niche (-1.9%),Specialist,Better in GM+,8
+eichenwalde,A,illari,1.7,-0.19,Standard (-0.2%),Specialist,Better in GM+,8
+eichenwalde,S,jetpackcat,5.72,0.7,Standard (+0.7%),Favorable,Better in Masters,8
+eichenwalde,S,junkerqueen,7.92,-0.23,Standard (-0.2%),Specialist,Even Across Ranks,8
+eichenwalde,S,junkrat,6.25,2.15,Popular (+2.1%),Meta,Better in GM+,8
+eichenwalde,C,juno,-1.3,-0.53,Standard (-0.5%),Unfavorable,Better in GM+,8
+eichenwalde,D,kiriko,-3.33,-2.74,Niche (-2.7%),Deterrent,Better in Masters,8
+eichenwalde,S,lifeweaver,5.7,-1.4,Niche (-1.4%),Specialist,Better in GM+,8
+eichenwalde,D,lucio,-6.03,-1.16,Niche (-1.2%),Deterrent,Better in Masters,8
+eichenwalde,S,mauga,4.69,0.13,Standard (+0.1%),Favorable,Better in GM+,8
+eichenwalde,S,mei,4.25,0.82,Standard (+0.8%),Favorable,Better in Masters,8
+eichenwalde,A,mercy,2.34,1.09,Popular (+1.1%),Favorable,Even Across Ranks,7
+eichenwalde,B,mizuki,-0.25,-0.89,Standard (-0.9%),Neutral,Even Across Ranks,8
+eichenwalde,D,moira,-12.18,-0.71,Standard (-0.7%),Deterrent,Better in Masters,8
+eichenwalde,A,orisa,2.25,2.39,Popular (+2.4%),Meta,Even Across Ranks,8
+eichenwalde,A,pharah,2.31,2.71,Popular (+2.7%),Meta,Even Across Ranks,8
+eichenwalde,S,ramattra,3.73,0.04,Standard (+0.0%),Favorable,Better in GM+,7
+eichenwalde,D,reaper,-6.11,-0.82,Standard (-0.8%),Deterrent,Even Across Ranks,8
+eichenwalde,D,reinhardt,-5.71,1.96,Popular (+2.0%),Trap Pick,Better in Masters,8
+eichenwalde,S,roadhog,8.35,0.46,Standard (+0.5%),Favorable,Better in GM+,8
+eichenwalde,D,shion,-3.88,-3.5,Niche (-3.5%),Deterrent,Better in Masters,8
+eichenwalde,A,sierra,2.99,0.19,Standard (+0.2%),Favorable,Even Across Ranks,4
+eichenwalde,B,sigma,0.97,-1.08,Niche (-1.1%),Neutral,Better in GM+,8
+eichenwalde,B,sojourn,0.09,-5.4,Niche (-5.4%),Neutral,Better in GM+,8
+eichenwalde,S,soldier76,8.04,-2.8,Niche (-2.8%),Specialist,Better in GM+,8
+eichenwalde,S,sombra,5.29,-0.08,Standard (-0.1%),Specialist,Even Across Ranks,8
+eichenwalde,D,symmetra,-9.3,-0.5,Standard (-0.5%),Deterrent,Better in Masters,7
+eichenwalde,B,torbjorn,0.17,2.31,Popular (+2.3%),Neutral,Better in GM+,7
+eichenwalde,S,tracer,4.21,-2.8,Niche (-2.8%),Specialist,Better in GM+,8
+eichenwalde,B,vendetta,-1.09,0.03,Standard (+0.0%),Neutral,Better in Masters,7
+eichenwalde,S,venture,8.34,0.51,Standard (+0.5%),Favorable,Better in GM+,8
+eichenwalde,C,widowmaker,-1.49,-2.59,Niche (-2.6%),Unfavorable,Even Across Ranks,8
+eichenwalde,D,winston,-3.38,-2.49,Niche (-2.5%),Deterrent,Better in GM+,8
+eichenwalde,C,wreckingball,-2.27,-0.75,Standard (-0.8%),Deterrent,Better in Masters,8
+eichenwalde,A,wuyang,1.85,0.63,Standard (+0.6%),Favorable,Better in GM+,8
+eichenwalde,D,zarya,-11.45,1.36,Popular (+1.4%),Trap Pick,Better in Masters,8
+eichenwalde,B,zenyatta,0.59,1.6,Popular (+1.6%),Neutral,Better in GM+,8
+esperanca,C,ana,-2.02,-8.16,Niche (-8.2%),Deterrent,Even Across Ranks,44
+esperanca,C,anran,-2.04,0.2,Standard (+0.2%),Unfavorable,Better in Masters,41
+esperanca,B,ashe,-0.39,-4.02,Niche (-4.0%),Neutral,Even Across Ranks,43
+esperanca,C,baptiste,-1.89,-2.69,Niche (-2.7%),Deterrent,Better in Masters,43
+esperanca,B,bastion,0.83,-1.33,Niche (-1.3%),Neutral,Even Across Ranks,42
+esperanca,B,brigitte,0.15,1.24,Popular (+1.2%),Neutral,Even Across Ranks,43
+esperanca,B,cassidy,-0.76,3.11,Map Priority (+3.1%),Neutral,Even Across Ranks,44
+esperanca,A,dmon,2.08,0.91,Standard (+0.9%),Favorable,Even Across Ranks,8
+esperanca,D,domina,-3.66,-1.45,Niche (-1.4%),Deterrent,Even Across Ranks,42
+esperanca,B,doomfist,-0.08,0.22,Standard (+0.2%),Neutral,Even Across Ranks,44
+esperanca,C,dva,-2.14,1.48,Popular (+1.5%),Trap Pick,Even Across Ranks,43
+esperanca,B,echo,0.69,0.56,Standard (+0.6%),Neutral,Better in GM+,44
+esperanca,B,emre,0.53,0.64,Standard (+0.6%),Neutral,Better in Masters,44
+esperanca,B,freja,-1.08,-1.13,Niche (-1.1%),Neutral,Better in GM+,41
+esperanca,B,genji,0.58,-0.7,Standard (-0.7%),Neutral,Even Across Ranks,44
+esperanca,A,hanzo,1.62,-3.33,Niche (-3.3%),Specialist,Even Across Ranks,41
+esperanca,B,hazard,-0.06,1.78,Popular (+1.8%),Neutral,Even Across Ranks,43
+esperanca,B,illari,-0.69,-0.79,Standard (-0.8%),Neutral,Even Across Ranks,44
+esperanca,B,jetpackcat,0.28,1.36,Popular (+1.4%),Neutral,Even Across Ranks,44
+esperanca,A,junkerqueen,2.21,0.85,Standard (+0.8%),Favorable,Better in GM+,42
+esperanca,A,junkrat,1.76,-0.86,Standard (-0.9%),Specialist,Even Across Ranks,42
+esperanca,C,juno,-2.17,1.61,Popular (+1.6%),Trap Pick,Better in Masters,43
+esperanca,A,kiriko,1.77,7.6,Map Priority (+7.6%),Meta,Better in GM+,44
+esperanca,B,lifeweaver,0.64,-0.69,Standard (-0.7%),Neutral,Better in Masters,42
+esperanca,S,lucio,3.89,3.22,Map Priority (+3.2%),Meta,Better in GM+,44
+esperanca,B,mauga,0.61,1.47,Popular (+1.5%),Neutral,Even Across Ranks,43
+esperanca,A,mei,2.84,-1.38,Niche (-1.4%),Specialist,Even Across Ranks,43
+esperanca,B,mercy,0.04,-0.68,Standard (-0.7%),Neutral,Better in Masters,42
+esperanca,B,mizuki,0.47,1.16,Popular (+1.2%),Neutral,Even Across Ranks,44
+esperanca,B,moira,0.93,0.86,Standard (+0.9%),Neutral,Better in GM+,44
+esperanca,B,orisa,-0.93,-1.0,Standard (-1.0%),Neutral,Even Across Ranks,44
+esperanca,B,pharah,-0.21,-0.85,Standard (-0.8%),Neutral,Even Across Ranks,42
+esperanca,D,ramattra,-3.44,-1.56,Niche (-1.6%),Deterrent,Better in Masters,41
+esperanca,B,reaper,1.08,-0.16,Standard (-0.2%),Neutral,Better in Masters,43
+esperanca,A,reinhardt,1.87,-0.81,Standard (-0.8%),Specialist,Even Across Ranks,43
+esperanca,B,roadhog,0.21,0.1,Standard (+0.1%),Neutral,Better in Masters,43
+esperanca,B,shion,0.45,6.21,Map Priority (+6.2%),Neutral,Even Across Ranks,20
+esperanca,B,sierra,-0.22,-0.3,Standard (-0.3%),Neutral,Better in Masters,27
+esperanca,D,sigma,-5.78,-5.71,Niche (-5.7%),Deterrent,Better in Masters,44
+esperanca,B,sojourn,0.05,0.24,Standard (+0.2%),Neutral,Even Across Ranks,44
+esperanca,A,soldier76,2.31,3.8,Map Priority (+3.8%),Meta,Better in GM+,43
+esperanca,B,sombra,0.87,0.89,Standard (+0.9%),Neutral,Even Across Ranks,42
+esperanca,B,symmetra,0.22,-0.8,Standard (-0.8%),Neutral,Better in GM+,40
+esperanca,A,torbjorn,1.31,-0.46,Standard (-0.5%),Favorable,Better in GM+,42
+esperanca,B,tracer,-0.03,8.86,Map Priority (+8.9%),Neutral,Even Across Ranks,44
+esperanca,A,vendetta,1.4,0.25,Standard (+0.2%),Favorable,Better in GM+,39
+esperanca,A,venture,1.21,-0.33,Standard (-0.3%),Favorable,Even Across Ranks,40
+esperanca,D,widowmaker,-15.95,-4.25,Niche (-4.3%),Deterrent,Even Across Ranks,41
+esperanca,A,winston,2.49,3.64,Map Priority (+3.6%),Meta,Even Across Ranks,44
+esperanca,B,wreckingball,0.73,1.78,Popular (+1.8%),Neutral,Even Across Ranks,44
+esperanca,B,wuyang,0.53,-0.01,Standard (-0.0%),Neutral,Even Across Ranks,44
+esperanca,C,zarya,-2.0,-1.29,Niche (-1.3%),Deterrent,Even Across Ranks,44
+esperanca,C,zenyatta,-2.4,-3.81,Niche (-3.8%),Deterrent,Even Across Ranks,43
+havana,A,ana,1.51,13.65,Map Priority (+13.6%),Meta,Better in Masters,43
+havana,B,anran,-0.15,-0.96,Standard (-1.0%),Neutral,Better in GM+,40
+havana,A,ashe,1.2,7.66,Map Priority (+7.7%),Favorable,Even Across Ranks,43
+havana,A,baptiste,1.4,3.69,Map Priority (+3.7%),Favorable,Even Across Ranks,43
+havana,A,bastion,1.42,1.0,Standard (+1.0%),Favorable,Even Across Ranks,41
+havana,C,brigitte,-1.73,-4.28,Niche (-4.3%),Deterrent,Even Across Ranks,41
+havana,C,cassidy,-2.11,-12.73,Niche (-12.7%),Deterrent,Better in GM+,43
+havana,D,dmon,-9.21,-2.77,Niche (-2.8%),Deterrent,Better in Masters,7
+havana,A,domina,2.94,4.8,Map Priority (+4.8%),Meta,Even Across Ranks,42
+havana,D,doomfist,-3.2,-1.5,Niche (-1.5%),Deterrent,Better in GM+,43
+havana,B,dva,-0.5,-1.64,Niche (-1.6%),Neutral,Better in GM+,43
+havana,D,echo,-3.85,-3.88,Niche (-3.9%),Deterrent,Better in GM+,40
+havana,B,emre,0.93,3.67,Map Priority (+3.7%),Neutral,Even Across Ranks,44
+havana,B,freja,0.13,2.09,Popular (+2.1%),Neutral,Even Across Ranks,43
+havana,B,genji,0.44,0.8,Standard (+0.8%),Neutral,Better in Masters,44
+havana,B,hanzo,1.02,9.75,Map Priority (+9.7%),Neutral,Even Across Ranks,44
+havana,D,hazard,-4.12,-5.28,Niche (-5.3%),Deterrent,Even Across Ranks,38
+havana,A,illari,1.27,6.16,Map Priority (+6.2%),Favorable,Better in GM+,44
+havana,D,jetpackcat,-6.18,-2.63,Niche (-2.6%),Deterrent,Better in Masters,43
+havana,D,junkerqueen,-4.47,-1.77,Niche (-1.8%),Deterrent,Better in Masters,31
+havana,C,junkrat,-1.64,-1.02,Niche (-1.0%),Deterrent,Better in Masters,42
+havana,A,juno,1.42,-1.89,Niche (-1.9%),Favorable,Better in GM+,42
+havana,D,kiriko,-3.14,-12.91,Niche (-12.9%),Deterrent,Better in Masters,44
+havana,B,lifeweaver,1.04,1.2,Popular (+1.2%),Neutral,Even Across Ranks,42
+havana,D,lucio,-8.57,-5.89,Niche (-5.9%),Deterrent,Even Across Ranks,40
+havana,C,mauga,-2.28,-2.15,Niche (-2.2%),Deterrent,Even Across Ranks,41
+havana,D,mei,-3.15,0.87,Standard (+0.9%),Unfavorable,Better in Masters,43
+havana,B,mercy,0.2,1.91,Popular (+1.9%),Neutral,Even Across Ranks,42
+havana,D,mizuki,-3.69,-5.11,Niche (-5.1%),Deterrent,Even Across Ranks,42
+havana,C,moira,-1.26,-3.06,Niche (-3.1%),Unfavorable,Better in Masters,42
+havana,A,orisa,1.42,0.26,Standard (+0.3%),Favorable,Even Across Ranks,43
+havana,D,pharah,-4.24,-2.09,Niche (-2.1%),Deterrent,Better in GM+,42
+havana,C,ramattra,-2.33,1.51,Popular (+1.5%),Trap Pick,Even Across Ranks,42
+havana,C,reaper,-2.76,-4.23,Niche (-4.2%),Deterrent,Better in GM+,43
+havana,D,reinhardt,-3.33,0.57,Standard (+0.6%),Unfavorable,Even Across Ranks,43
+havana,B,roadhog,0.66,-1.85,Niche (-1.8%),Neutral,Better in GM+,43
+havana,C,shion,-2.63,-9.76,Niche (-9.8%),Deterrent,Even Across Ranks,20
+havana,S,sierra,3.5,1.37,Popular (+1.4%),Favorable,Even Across Ranks,31
+havana,S,sigma,6.47,15.78,Map Priority (+15.8%),Meta,Better in Masters,43
+havana,B,sojourn,0.22,6.74,Map Priority (+6.7%),Neutral,Better in Masters,44
+havana,B,soldier76,1.17,-0.76,Standard (-0.8%),Neutral,Better in Masters,43
+havana,B,sombra,-0.15,-0.2,Standard (-0.2%),Neutral,Better in GM+,42
+havana,D,symmetra,-3.32,0.03,Standard (+0.0%),Unfavorable,Even Across Ranks,43
+havana,B,torbjorn,-0.33,0.03,Standard (+0.0%),Neutral,Even Across Ranks,42
+havana,B,tracer,0.96,-11.69,Niche (-11.7%),Neutral,Even Across Ranks,44
+havana,D,vendetta,-3.28,-0.88,Standard (-0.9%),Deterrent,Better in GM+,29
+havana,B,venture,-0.47,-0.66,Standard (-0.7%),Neutral,Better in Masters,41
+havana,S,widowmaker,6.05,11.95,Map Priority (+11.9%),Meta,Better in GM+,44
+havana,D,winston,-8.11,-4.76,Niche (-4.8%),Deterrent,Even Across Ranks,43
+havana,D,wreckingball,-3.63,-2.52,Niche (-2.5%),Deterrent,Better in Masters,42
+havana,C,wuyang,-2.49,-1.43,Niche (-1.4%),Deterrent,Even Across Ranks,44
+havana,C,zarya,-2.88,-0.75,Standard (-0.8%),Deterrent,Even Across Ranks,42
+havana,S,zenyatta,4.52,11.1,Map Priority (+11.1%),Meta,Even Across Ranks,43
+hollywood,A,ana,1.23,7.8,Map Priority (+7.8%),Favorable,Even Across Ranks,44
+hollywood,C,anran,-1.47,-0.13,Standard (-0.1%),Unfavorable,Better in Masters,44
+hollywood,B,ashe,0.63,4.36,Map Priority (+4.4%),Neutral,Even Across Ranks,44
+hollywood,B,baptiste,-0.82,0.74,Standard (+0.7%),Neutral,Even Across Ranks,44
+hollywood,C,bastion,-1.48,0.67,Standard (+0.7%),Unfavorable,Better in GM+,43
+hollywood,C,brigitte,-1.89,-0.73,Standard (-0.7%),Deterrent,Even Across Ranks,43
+hollywood,C,cassidy,-1.81,-1.5,Niche (-1.5%),Deterrent,Even Across Ranks,44
+hollywood,D,dmon,-6.61,-0.13,Standard (-0.1%),Deterrent,Better in Masters,8
+hollywood,B,domina,-0.1,0.31,Standard (+0.3%),Neutral,Even Across Ranks,44
+hollywood,B,doomfist,-0.45,-0.54,Standard (-0.5%),Neutral,Better in Masters,43
+hollywood,B,dva,-0.29,0.03,Standard (+0.0%),Neutral,Even Across Ranks,43
+hollywood,C,echo,-2.13,0.37,Standard (+0.4%),Unfavorable,Better in Masters,44
+hollywood,C,emre,-1.42,-0.19,Standard (-0.2%),Unfavorable,Even Across Ranks,44
+hollywood,B,freja,-0.52,0.33,Standard (+0.3%),Neutral,Better in GM+,43
+hollywood,B,genji,0.66,1.52,Popular (+1.5%),Neutral,Better in GM+,43
+hollywood,A,hanzo,1.51,1.8,Popular (+1.8%),Meta,Better in GM+,44
+hollywood,B,hazard,-0.75,-0.67,Standard (-0.7%),Neutral,Even Across Ranks,42
+hollywood,C,illari,-2.32,1.01,Popular (+1.0%),Trap Pick,Even Across Ranks,44
+hollywood,D,jetpackcat,-4.7,-1.01,Niche (-1.0%),Deterrent,Even Across Ranks,44
+hollywood,D,junkerqueen,-4.73,-0.77,Standard (-0.8%),Deterrent,Better in GM+,39
+hollywood,C,junkrat,-2.44,0.76,Standard (+0.8%),Unfavorable,Better in Masters,42
+hollywood,D,juno,-3.42,-0.93,Standard (-0.9%),Deterrent,Even Across Ranks,44
+hollywood,B,kiriko,-0.1,-5.0,Niche (-5.0%),Neutral,Better in GM+,44
+hollywood,C,lifeweaver,-2.69,1.03,Popular (+1.0%),Trap Pick,Even Across Ranks,42
+hollywood,D,lucio,-5.52,-3.59,Niche (-3.6%),Deterrent,Even Across Ranks,41
+hollywood,D,mauga,-5.26,-1.16,Niche (-1.2%),Deterrent,Even Across Ranks,41
+hollywood,C,mei,-2.53,0.6,Standard (+0.6%),Unfavorable,Better in GM+,43
+hollywood,B,mercy,-0.44,1.27,Popular (+1.3%),Neutral,Better in GM+,43
+hollywood,B,mizuki,-0.87,-0.94,Standard (-0.9%),Neutral,Even Across Ranks,44
+hollywood,C,moira,-1.93,-0.95,Standard (-1.0%),Deterrent,Better in GM+,43
+hollywood,C,orisa,-1.58,-0.27,Standard (-0.3%),Deterrent,Better in Masters,44
+hollywood,B,pharah,-1.08,-0.25,Standard (-0.2%),Neutral,Even Across Ranks,42
+hollywood,B,ramattra,-0.23,-0.48,Standard (-0.5%),Neutral,Even Across Ranks,44
+hollywood,C,reaper,-2.79,-0.38,Standard (-0.4%),Deterrent,Even Across Ranks,44
+hollywood,D,reinhardt,-8.66,-0.42,Standard (-0.4%),Deterrent,Better in Masters,43
+hollywood,B,roadhog,-0.15,0.22,Standard (+0.2%),Neutral,Better in GM+,43
+hollywood,C,shion,-1.51,-4.05,Niche (-4.1%),Deterrent,Better in Masters,20
+hollywood,B,sierra,0.78,0.05,Standard (+0.1%),Neutral,Better in GM+,26
+hollywood,D,sigma,-3.14,1.59,Popular (+1.6%),Trap Pick,Better in Masters,44
+hollywood,D,sojourn,-4.15,-2.62,Niche (-2.6%),Deterrent,Better in Masters,44
+hollywood,D,soldier76,-3.78,-2.05,Niche (-2.1%),Deterrent,Better in Masters,42
+hollywood,A,sombra,2.95,-0.04,Standard (-0.0%),Specialist,Better in GM+,42
+hollywood,D,symmetra,-5.02,-0.21,Standard (-0.2%),Deterrent,Even Across Ranks,43
+hollywood,C,torbjorn,-2.25,0.94,Standard (+0.9%),Unfavorable,Better in Masters,43
+hollywood,B,tracer,-0.45,-3.53,Niche (-3.5%),Neutral,Better in GM+,44
+hollywood,D,vendetta,-4.47,-0.02,Standard (-0.0%),Deterrent,Even Across Ranks,38
+hollywood,D,venture,-5.05,-0.35,Standard (-0.3%),Deterrent,Even Across Ranks,43
+hollywood,C,widowmaker,-1.6,2.23,Popular (+2.2%),Trap Pick,Even Across Ranks,44
+hollywood,B,winston,0.17,2.85,Popular (+2.9%),Neutral,Even Across Ranks,44
+hollywood,C,wreckingball,-1.37,-1.03,Niche (-1.0%),Unfavorable,Even Across Ranks,42
+hollywood,B,wuyang,-0.44,-0.5,Standard (-0.5%),Neutral,Even Across Ranks,44
+hollywood,A,zarya,1.44,1.04,Popular (+1.0%),Favorable,Better in GM+,43
+hollywood,B,zenyatta,-0.85,1.87,Popular (+1.9%),Neutral,Even Across Ranks,44
+ilios,C,ana,-1.7,-7.56,Niche (-7.6%),Deterrent,Even Across Ranks,44
+ilios,A,anran,1.3,0.53,Standard (+0.5%),Favorable,Even Across Ranks,41
+ilios,B,ashe,-0.59,-4.18,Niche (-4.2%),Neutral,Better in GM+,43
+ilios,B,baptiste,-1.05,-2.08,Niche (-2.1%),Neutral,Even Across Ranks,43
+ilios,B,bastion,0.52,-1.52,Niche (-1.5%),Neutral,Even Across Ranks,41
+ilios,B,brigitte,-1.14,3.09,Map Priority (+3.1%),Neutral,Better in Masters,44
+ilios,B,cassidy,-0.34,5.64,Map Priority (+5.6%),Neutral,Even Across Ranks,44
+ilios,B,dmon,-1.17,-0.71,Standard (-0.7%),Neutral,Better in Masters,8
+ilios,D,domina,-5.93,-2.11,Niche (-2.1%),Deterrent,Better in Masters,39
+ilios,B,doomfist,-0.26,0.96,Standard (+1.0%),Neutral,Even Across Ranks,44
+ilios,B,dva,1.06,2.75,Popular (+2.7%),Neutral,Even Across Ranks,44
+ilios,A,echo,2.25,5.74,Map Priority (+5.7%),Meta,Even Across Ranks,44
+ilios,B,emre,0.07,-3.3,Niche (-3.3%),Neutral,Better in GM+,44
+ilios,B,freja,1.09,2.27,Popular (+2.3%),Neutral,Even Across Ranks,44
+ilios,B,genji,0.76,0.26,Standard (+0.3%),Neutral,Even Across Ranks,44
+ilios,B,hanzo,-1.17,-3.04,Niche (-3.0%),Neutral,Even Across Ranks,44
+ilios,S,hazard,3.63,3.97,Map Priority (+4.0%),Meta,Even Across Ranks,43
+ilios,C,illari,-2.58,-3.04,Niche (-3.0%),Deterrent,Even Across Ranks,44
+ilios,S,jetpackcat,3.87,3.39,Map Priority (+3.4%),Meta,Better in Masters,44
+ilios,A,junkerqueen,2.08,0.24,Standard (+0.2%),Favorable,Even Across Ranks,40
+ilios,A,junkrat,2.68,-0.8,Standard (-0.8%),Specialist,Even Across Ranks,43
+ilios,B,juno,0.06,0.34,Standard (+0.3%),Neutral,Even Across Ranks,43
+ilios,B,kiriko,1.15,5.52,Map Priority (+5.5%),Neutral,Better in GM+,44
+ilios,C,lifeweaver,-2.16,-0.54,Standard (-0.5%),Deterrent,Even Across Ranks,42
+ilios,S,lucio,4.84,6.56,Map Priority (+6.6%),Meta,Better in GM+,44
+ilios,C,mauga,-2.0,-0.14,Standard (-0.1%),Deterrent,Even Across Ranks,42
+ilios,D,mei,-4.32,-1.67,Niche (-1.7%),Deterrent,Even Across Ranks,43
+ilios,B,mercy,0.89,-0.36,Standard (-0.4%),Neutral,Even Across Ranks,42
+ilios,B,mizuki,-1.14,1.35,Popular (+1.4%),Neutral,Even Across Ranks,44
+ilios,B,moira,0.11,0.94,Standard (+0.9%),Neutral,Even Across Ranks,43
+ilios,B,orisa,-1.02,-0.84,Standard (-0.8%),Neutral,Even Across Ranks,42
+ilios,A,pharah,1.91,1.75,Popular (+1.7%),Meta,Even Across Ranks,43
+ilios,C,ramattra,-2.17,-2.45,Niche (-2.4%),Deterrent,Better in Masters,32
+ilios,B,reaper,0.41,2.74,Popular (+2.7%),Neutral,Even Across Ranks,44
+ilios,C,reinhardt,-1.7,-2.02,Niche (-2.0%),Deterrent,Even Across Ranks,42
+ilios,S,roadhog,3.45,2.52,Popular (+2.5%),Meta,Even Across Ranks,43
+ilios,B,shion,-0.55,1.89,Popular (+1.9%),Neutral,Even Across Ranks,20
+ilios,B,sierra,-0.48,-0.9,Standard (-0.9%),Neutral,Better in GM+,26
+ilios,D,sigma,-5.01,-7.71,Niche (-7.7%),Deterrent,Even Across Ranks,43
+ilios,C,sojourn,-1.65,-7.56,Niche (-7.6%),Deterrent,Better in Masters,44
+ilios,C,soldier76,-2.94,-3.54,Niche (-3.5%),Deterrent,Even Across Ranks,43
+ilios,C,sombra,-1.69,0.65,Standard (+0.6%),Unfavorable,Even Across Ranks,44
+ilios,B,symmetra,-0.02,-0.16,Standard (-0.2%),Neutral,Even Across Ranks,44
+ilios,S,torbjorn,3.33,-0.42,Standard (-0.4%),Specialist,Even Across Ranks,43
+ilios,C,tracer,-1.9,6.37,Map Priority (+6.4%),Trap Pick,Even Across Ranks,44
+ilios,A,vendetta,1.54,0.31,Standard (+0.3%),Favorable,Better in GM+,39
+ilios,B,venture,-0.43,0.39,Standard (+0.4%),Neutral,Better in Masters,44
+ilios,B,widowmaker,0.87,-0.74,Standard (-0.7%),Neutral,Better in GM+,44
+ilios,A,winston,1.46,5.54,Map Priority (+5.5%),Favorable,Even Across Ranks,44
+ilios,B,wreckingball,0.88,2.56,Popular (+2.6%),Neutral,Better in GM+,44
+ilios,C,wuyang,-1.87,-3.31,Niche (-3.3%),Deterrent,Even Across Ranks,44
+ilios,D,zarya,-3.1,-2.72,Niche (-2.7%),Deterrent,Better in GM+,42
+ilios,B,zenyatta,0.54,-3.97,Niche (-4.0%),Neutral,Even Across Ranks,42
+junkertown,S,ana,3.48,11.2,Map Priority (+11.2%),Meta,Even Across Ranks,44
+junkertown,B,anran,0.96,-0.92,Standard (-0.9%),Neutral,Even Across Ranks,43
+junkertown,C,ashe,-1.62,6.24,Map Priority (+6.2%),Trap Pick,Even Across Ranks,43
+junkertown,B,baptiste,0.71,0.99,Standard (+1.0%),Neutral,Even Across Ranks,43
+junkertown,B,bastion,-0.71,0.47,Standard (+0.5%),Neutral,Better in Masters,42
+junkertown,A,brigitte,1.38,-1.61,Niche (-1.6%),Favorable,Better in GM+,43
+junkertown,C,cassidy,-1.85,-6.47,Niche (-6.5%),Deterrent,Better in Masters,44
+junkertown,D,dmon,-3.44,-2.79,Niche (-2.8%),Deterrent,Better in Masters,8
+junkertown,C,domina,-2.56,1.01,Popular (+1.0%),Trap Pick,Better in Masters,43
+junkertown,C,doomfist,-1.85,-1.0,Niche (-1.0%),Deterrent,Better in Masters,43
+junkertown,C,dva,-1.66,0.77,Standard (+0.8%),Unfavorable,Better in Masters,44
+junkertown,B,echo,0.05,-2.68,Niche (-2.7%),Neutral,Better in Masters,42
+junkertown,B,emre,-0.45,2.1,Popular (+2.1%),Neutral,Better in Masters,44
+junkertown,S,freja,4.65,1.42,Popular (+1.4%),Favorable,Better in GM+,43
+junkertown,A,genji,1.36,1.82,Popular (+1.8%),Favorable,Better in GM+,44
+junkertown,A,hanzo,1.88,4.46,Map Priority (+4.5%),Meta,Even Across Ranks,43
+junkertown,B,hazard,0.03,-2.22,Niche (-2.2%),Neutral,Even Across Ranks,43
+junkertown,A,illari,2.24,5.05,Map Priority (+5.1%),Meta,Even Across Ranks,44
+junkertown,B,jetpackcat,-0.02,-1.9,Niche (-1.9%),Neutral,Even Across Ranks,43
+junkertown,D,junkerqueen,-5.47,-1.15,Niche (-1.2%),Deterrent,Better in Masters,34
+junkertown,A,junkrat,2.48,-0.59,Standard (-0.6%),Specialist,Better in GM+,42
+junkertown,C,juno,-2.91,-2.32,Niche (-2.3%),Deterrent,Better in Masters,42
+junkertown,B,kiriko,0.61,-7.99,Niche (-8.0%),Neutral,Even Across Ranks,44
+junkertown,C,lifeweaver,-2.69,1.38,Popular (+1.4%),Trap Pick,Even Across Ranks,43
+junkertown,D,lucio,-5.65,-5.52,Niche (-5.5%),Deterrent,Better in GM+,41
+junkertown,B,mauga,-1.0,-1.14,Niche (-1.1%),Neutral,Better in Masters,43
+junkertown,B,mei,0.58,-0.55,Standard (-0.6%),Neutral,Better in GM+,42
+junkertown,B,mercy,0.06,2.08,Popular (+2.1%),Neutral,Even Across Ranks,43
+junkertown,C,mizuki,-2.38,-3.32,Niche (-3.3%),Deterrent,Even Across Ranks,44
+junkertown,C,moira,-2.29,-2.34,Niche (-2.3%),Deterrent,Even Across Ranks,43
+junkertown,B,orisa,0.47,-1.37,Niche (-1.4%),Neutral,Even Across Ranks,43
+junkertown,D,pharah,-6.21,-2.7,Niche (-2.7%),Deterrent,Even Across Ranks,42
+junkertown,D,ramattra,-4.02,-1.36,Niche (-1.4%),Deterrent,Even Across Ranks,41
+junkertown,C,reaper,-2.15,-2.18,Niche (-2.2%),Deterrent,Even Across Ranks,43
+junkertown,B,reinhardt,0.52,-1.29,Niche (-1.3%),Neutral,Better in GM+,42
+junkertown,D,roadhog,-3.99,0.12,Standard (+0.1%),Unfavorable,Better in Masters,43
+junkertown,B,shion,1.06,-5.73,Niche (-5.7%),Neutral,Better in Masters,20
+junkertown,A,sierra,1.62,0.87,Standard (+0.9%),Favorable,Better in GM+,28
+junkertown,S,sigma,3.71,9.5,Map Priority (+9.5%),Meta,Better in GM+,44
+junkertown,B,sojourn,0.92,0.46,Standard (+0.5%),Neutral,Even Across Ranks,44
+junkertown,C,soldier76,-2.93,2.5,Popular (+2.5%),Trap Pick,Better in Masters,44
+junkertown,A,sombra,1.35,1.05,Popular (+1.0%),Favorable,Better in GM+,43
+junkertown,C,symmetra,-1.71,-1.1,Niche (-1.1%),Deterrent,Even Across Ranks,40
+junkertown,B,torbjorn,0.35,0.25,Standard (+0.3%),Neutral,Even Across Ranks,42
+junkertown,B,tracer,0.15,-7.39,Niche (-7.4%),Neutral,Even Across Ranks,44
+junkertown,D,vendetta,-4.34,-0.2,Standard (-0.2%),Deterrent,Better in GM+,36
+junkertown,B,venture,0.06,-0.26,Standard (-0.3%),Neutral,Better in GM+,43
+junkertown,S,widowmaker,5.65,8.01,Map Priority (+8.0%),Meta,Even Across Ranks,44
+junkertown,B,winston,-0.23,0.96,Standard (+1.0%),Neutral,Better in GM+,44
+junkertown,A,wreckingball,2.35,0.49,Standard (+0.5%),Favorable,Better in GM+,43
+junkertown,C,wuyang,-2.36,-0.18,Standard (-0.2%),Deterrent,Better in Masters,44
+junkertown,D,zarya,-3.64,-2.2,Niche (-2.2%),Deterrent,Even Across Ranks,43
+junkertown,S,zenyatta,3.46,4.89,Map Priority (+4.9%),Meta,Better in GM+,44
+kings-row,A,ana,1.83,4.82,Map Priority (+4.8%),Meta,Even Across Ranks,44
+kings-row,B,anran,-0.47,-0.28,Standard (-0.3%),Neutral,Even Across Ranks,44
+kings-row,C,ashe,-1.76,-0.5,Standard (-0.5%),Deterrent,Even Across Ranks,44
+kings-row,B,baptiste,-0.29,3.26,Map Priority (+3.3%),Neutral,Even Across Ranks,44
+kings-row,B,bastion,-0.54,2.45,Popular (+2.4%),Neutral,Even Across Ranks,43
+kings-row,C,brigitte,-1.4,-2.8,Niche (-2.8%),Unfavorable,Better in Masters,44
+kings-row,B,cassidy,0.49,-1.88,Niche (-1.9%),Neutral,Even Across Ranks,44
+kings-row,A,dmon,1.36,0.33,Standard (+0.3%),Favorable,Better in GM+,8
+kings-row,B,domina,0.54,1.01,Popular (+1.0%),Neutral,Even Across Ranks,43
+kings-row,B,doomfist,-1.02,-0.46,Standard (-0.5%),Neutral,Better in Masters,44
+kings-row,B,dva,-0.9,-1.24,Niche (-1.2%),Neutral,Better in GM+,44
+kings-row,B,echo,-1.02,0.38,Standard (+0.4%),Neutral,Better in GM+,44
+kings-row,D,emre,-3.23,-1.42,Niche (-1.4%),Deterrent,Even Across Ranks,44
+kings-row,C,freja,-1.24,0.46,Standard (+0.5%),Unfavorable,Better in Masters,44
+kings-row,B,genji,-0.08,0.43,Standard (+0.4%),Neutral,Even Across Ranks,44
+kings-row,A,hanzo,2.18,3.51,Map Priority (+3.5%),Meta,Even Across Ranks,44
+kings-row,B,hazard,-0.86,-2.44,Niche (-2.4%),Neutral,Even Across Ranks,43
+kings-row,C,illari,-1.47,-0.52,Standard (-0.5%),Unfavorable,Even Across Ranks,44
+kings-row,D,jetpackcat,-3.56,-1.21,Niche (-1.2%),Deterrent,Even Across Ranks,44
+kings-row,C,junkerqueen,-2.85,-0.16,Standard (-0.2%),Deterrent,Even Across Ranks,41
+kings-row,A,junkrat,2.06,1.4,Popular (+1.4%),Favorable,Even Across Ranks,43
+kings-row,B,juno,-0.33,-0.01,Standard (-0.0%),Neutral,Even Across Ranks,43
+kings-row,B,kiriko,-0.41,-4.95,Niche (-4.9%),Neutral,Even Across Ranks,44
+kings-row,C,lifeweaver,-1.33,0.02,Standard (+0.0%),Unfavorable,Better in Masters,43
+kings-row,B,lucio,-0.76,-2.49,Niche (-2.5%),Neutral,Even Across Ranks,44
+kings-row,B,mauga,-1.1,-1.05,Niche (-1.1%),Neutral,Better in GM+,43
+kings-row,B,mei,-1.19,2.82,Popular (+2.8%),Neutral,Even Across Ranks,44
+kings-row,C,mercy,-2.83,-0.73,Standard (-0.7%),Deterrent,Even Across Ranks,44
+kings-row,B,mizuki,-0.06,-0.35,Standard (-0.3%),Neutral,Even Across Ranks,44
+kings-row,B,moira,-1.11,-0.67,Standard (-0.7%),Neutral,Even Across Ranks,43
+kings-row,S,orisa,4.77,1.44,Popular (+1.4%),Favorable,Even Across Ranks,44
+kings-row,A,pharah,1.64,2.48,Popular (+2.5%),Meta,Even Across Ranks,44
+kings-row,B,ramattra,-1.06,2.55,Popular (+2.5%),Neutral,Better in Masters,43
+kings-row,A,reaper,2.02,-0.5,Standard (-0.5%),Specialist,Better in GM+,44
+kings-row,B,reinhardt,-0.49,2.49,Popular (+2.5%),Neutral,Better in Masters,44
+kings-row,C,roadhog,-2.23,-1.13,Niche (-1.1%),Deterrent,Even Across Ranks,44
+kings-row,B,shion,-0.11,-4.01,Niche (-4.0%),Neutral,Even Across Ranks,20
+kings-row,B,sierra,0.56,0.18,Standard (+0.2%),Neutral,Even Across Ranks,27
+kings-row,B,sigma,-0.14,2.46,Popular (+2.5%),Neutral,Better in GM+,44
+kings-row,B,sojourn,-0.55,1.23,Popular (+1.2%),Neutral,Even Across Ranks,44
+kings-row,C,soldier76,-2.09,-4.44,Niche (-4.4%),Deterrent,Better in GM+,43
+kings-row,B,sombra,-0.73,-0.9,Standard (-0.9%),Neutral,Better in Masters,41
+kings-row,B,symmetra,-0.3,0.35,Standard (+0.3%),Neutral,Even Across Ranks,43
+kings-row,C,torbjorn,-1.83,0.13,Standard (+0.1%),Unfavorable,Even Across Ranks,42
+kings-row,D,tracer,-3.38,-8.09,Niche (-8.1%),Deterrent,Even Across Ranks,44
+kings-row,C,vendetta,-2.22,-0.11,Standard (-0.1%),Deterrent,Better in GM+,41
+kings-row,A,venture,1.87,0.22,Standard (+0.2%),Favorable,Even Across Ranks,43
+kings-row,B,widowmaker,1.01,3.37,Map Priority (+3.4%),Neutral,Better in Masters,44
+kings-row,D,winston,-4.31,-4.81,Niche (-4.8%),Deterrent,Even Across Ranks,44
+kings-row,D,wreckingball,-6.41,-2.58,Niche (-2.6%),Deterrent,Even Across Ranks,44
+kings-row,C,wuyang,-1.63,1.61,Popular (+1.6%),Trap Pick,Better in GM+,44
+kings-row,A,zarya,1.24,3.67,Map Priority (+3.7%),Favorable,Better in Masters,44
+kings-row,B,zenyatta,-0.89,3.65,Map Priority (+3.6%),Neutral,Better in Masters,44
+lijiang-tower,C,ana,-1.64,-7.59,Niche (-7.6%),Deterrent,Even Across Ranks,44
+lijiang-tower,C,anran,-2.7,0.42,Standard (+0.4%),Unfavorable,Even Across Ranks,43
+lijiang-tower,D,ashe,-3.42,-6.12,Niche (-6.1%),Deterrent,Even Across Ranks,42
+lijiang-tower,B,baptiste,-0.85,-1.31,Niche (-1.3%),Neutral,Better in Masters,43
+lijiang-tower,B,bastion,-0.58,-0.57,Standard (-0.6%),Neutral,Better in Masters,44
+lijiang-tower,B,brigitte,0.19,-0.23,Standard (-0.2%),Neutral,Better in Masters,44
+lijiang-tower,B,cassidy,0.35,5.77,Map Priority (+5.8%),Neutral,Even Across Ranks,44
+lijiang-tower,B,dmon,-0.57,1.12,Popular (+1.1%),Neutral,Even Across Ranks,8
+lijiang-tower,A,domina,2.55,-1.21,Niche (-1.2%),Specialist,Better in GM+,44
+lijiang-tower,B,doomfist,0.48,1.2,Popular (+1.2%),Neutral,Even Across Ranks,44
+lijiang-tower,C,dva,-2.15,-1.43,Niche (-1.4%),Deterrent,Even Across Ranks,44
+lijiang-tower,D,echo,-3.59,0.19,Standard (+0.2%),Unfavorable,Better in Masters,44
+lijiang-tower,C,emre,-1.37,-2.34,Niche (-2.3%),Unfavorable,Even Across Ranks,44
+lijiang-tower,C,freja,-1.76,-1.21,Niche (-1.2%),Deterrent,Even Across Ranks,42
+lijiang-tower,B,genji,0.24,-1.06,Niche (-1.1%),Neutral,Even Across Ranks,43
+lijiang-tower,B,hanzo,-0.14,-2.39,Niche (-2.4%),Neutral,Better in Masters,44
+lijiang-tower,B,hazard,0.7,0.06,Standard (+0.1%),Neutral,Even Across Ranks,43
+lijiang-tower,B,illari,-0.77,-3.8,Niche (-3.8%),Neutral,Even Across Ranks,44
+lijiang-tower,A,jetpackcat,1.36,0.87,Standard (+0.9%),Favorable,Even Across Ranks,44
+lijiang-tower,B,junkerqueen,-0.1,0.88,Standard (+0.9%),Neutral,Even Across Ranks,43
+lijiang-tower,B,junkrat,0.43,0.91,Standard (+0.9%),Neutral,Better in GM+,43
+lijiang-tower,C,juno,-1.68,0.73,Standard (+0.7%),Unfavorable,Even Across Ranks,43
+lijiang-tower,B,kiriko,0.85,4.92,Map Priority (+4.9%),Neutral,Even Across Ranks,44
+lijiang-tower,C,lifeweaver,-2.0,-1.21,Niche (-1.2%),Deterrent,Even Across Ranks,41
+lijiang-tower,A,lucio,2.99,7.06,Map Priority (+7.1%),Meta,Even Across Ranks,43
+lijiang-tower,C,mauga,-1.5,1.35,Popular (+1.3%),Trap Pick,Even Across Ranks,44
+lijiang-tower,S,mei,4.54,0.33,Standard (+0.3%),Favorable,Better in GM+,44
+lijiang-tower,C,mercy,-1.63,-0.94,Standard (-0.9%),Deterrent,Even Across Ranks,43
+lijiang-tower,A,mizuki,1.34,2.54,Popular (+2.5%),Favorable,Even Across Ranks,44
+lijiang-tower,B,moira,1.05,2.07,Popular (+2.1%),Neutral,Even Across Ranks,43
+lijiang-tower,A,orisa,2.41,2.28,Popular (+2.3%),Meta,Better in GM+,44
+lijiang-tower,S,pharah,4.59,5.0,Map Priority (+5.0%),Meta,Even Across Ranks,44
+lijiang-tower,B,ramattra,0.7,1.32,Popular (+1.3%),Neutral,Better in Masters,44
+lijiang-tower,A,reaper,2.55,1.48,Popular (+1.5%),Favorable,Even Across Ranks,44
+lijiang-tower,S,reinhardt,3.32,2.12,Popular (+2.1%),Meta,Even Across Ranks,44
+lijiang-tower,A,roadhog,1.86,-0.22,Standard (-0.2%),Specialist,Even Across Ranks,43
+lijiang-tower,B,shion,-0.34,2.84,Popular (+2.8%),Neutral,Even Across Ranks,20
+lijiang-tower,B,sierra,-0.1,-0.69,Standard (-0.7%),Neutral,Even Across Ranks,26
+lijiang-tower,C,sigma,-1.81,-5.09,Niche (-5.1%),Deterrent,Even Across Ranks,44
+lijiang-tower,B,sojourn,1.05,1.15,Popular (+1.1%),Neutral,Even Across Ranks,44
+lijiang-tower,C,soldier76,-1.58,-2.32,Niche (-2.3%),Deterrent,Even Across Ranks,43
+lijiang-tower,B,sombra,-0.24,-0.37,Standard (-0.4%),Neutral,Better in Masters,44
+lijiang-tower,S,symmetra,3.11,2.85,Popular (+2.8%),Meta,Even Across Ranks,44
+lijiang-tower,S,torbjorn,3.91,-0.69,Standard (-0.7%),Specialist,Even Across Ranks,39
+lijiang-tower,C,tracer,-1.55,1.98,Popular (+2.0%),Trap Pick,Even Across Ranks,44
+lijiang-tower,B,vendetta,-1.11,0.45,Standard (+0.4%),Neutral,Better in Masters,41
+lijiang-tower,C,venture,-2.14,0.19,Standard (+0.2%),Unfavorable,Even Across Ranks,43
+lijiang-tower,D,widowmaker,-7.09,-4.24,Niche (-4.2%),Deterrent,Even Across Ranks,41
+lijiang-tower,C,winston,-1.27,-5.07,Niche (-5.1%),Unfavorable,Even Across Ranks,44
+lijiang-tower,C,wreckingball,-1.58,0.95,Standard (+1.0%),Unfavorable,Even Across Ranks,44
+lijiang-tower,B,wuyang,-0.42,-0.32,Standard (-0.3%),Neutral,Even Across Ranks,44
+lijiang-tower,A,zarya,2.96,2.18,Popular (+2.2%),Meta,Better in GM+,44
+lijiang-tower,B,zenyatta,0.74,-2.28,Niche (-2.3%),Neutral,Better in GM+,44
+midtown,B,ana,-0.5,4.33,Map Priority (+4.3%),Neutral,Even Across Ranks,44
+midtown,B,anran,-0.83,-0.06,Standard (-0.1%),Neutral,Better in GM+,41
+midtown,C,ashe,-2.04,3.23,Map Priority (+3.2%),Trap Pick,Even Across Ranks,44
+midtown,B,baptiste,0.84,3.08,Map Priority (+3.1%),Neutral,Even Across Ranks,44
+midtown,D,bastion,-5.53,0.96,Standard (+1.0%),Unfavorable,Better in Masters,44
+midtown,A,brigitte,1.45,-2.93,Niche (-2.9%),Favorable,Better in GM+,44
+midtown,B,cassidy,-0.49,-4.31,Niche (-4.3%),Neutral,Even Across Ranks,44
+midtown,A,dmon,2.28,-1.08,Niche (-1.1%),Specialist,Better in GM+,8
+midtown,B,domina,0.32,2.55,Popular (+2.6%),Neutral,Better in Masters,44
+midtown,B,doomfist,0.21,-2.08,Niche (-2.1%),Neutral,Better in GM+,44
+midtown,B,dva,-0.25,-2.0,Niche (-2.0%),Neutral,Even Across Ranks,42
+midtown,D,echo,-3.76,-1.94,Niche (-1.9%),Deterrent,Better in Masters,44
+midtown,B,emre,0.47,2.36,Popular (+2.4%),Neutral,Even Across Ranks,44
+midtown,B,freja,-0.12,-0.61,Standard (-0.6%),Neutral,Better in GM+,42
+midtown,S,genji,3.51,-1.5,Niche (-1.5%),Specialist,Better in GM+,44
+midtown,B,hanzo,-0.18,2.65,Popular (+2.7%),Neutral,Even Across Ranks,42
+midtown,D,hazard,-3.0,-3.78,Niche (-3.8%),Deterrent,Better in Masters,41
+midtown,B,illari,0.46,1.9,Popular (+1.9%),Neutral,Even Across Ranks,44
+midtown,D,jetpackcat,-6.32,-2.61,Niche (-2.6%),Deterrent,Even Across Ranks,44
+midtown,D,junkerqueen,-3.25,-0.62,Standard (-0.6%),Deterrent,Even Across Ranks,38
+midtown,B,junkrat,-0.97,0.38,Standard (+0.4%),Neutral,Better in GM+,44
+midtown,A,juno,2.77,0.17,Standard (+0.2%),Favorable,Even Across Ranks,43
+midtown,C,kiriko,-1.67,-4.58,Niche (-4.6%),Deterrent,Even Across Ranks,44
+midtown,B,lifeweaver,0.6,0.82,Standard (+0.8%),Neutral,Better in GM+,43
+midtown,D,lucio,-7.49,-4.36,Niche (-4.4%),Deterrent,Even Across Ranks,39
+midtown,C,mauga,-2.38,-1.49,Niche (-1.5%),Deterrent,Better in GM+,41
+midtown,C,mei,-2.92,1.47,Popular (+1.5%),Trap Pick,Even Across Ranks,44
+midtown,C,mercy,-2.54,0.19,Standard (+0.2%),Unfavorable,Better in GM+,42
+midtown,B,mizuki,-1.13,-1.41,Niche (-1.4%),Neutral,Even Across Ranks,44
+midtown,B,moira,0.28,-1.25,Niche (-1.2%),Neutral,Even Across Ranks,43
+midtown,A,orisa,1.77,0.65,Standard (+0.6%),Favorable,Even Across Ranks,44
+midtown,C,pharah,-2.81,-0.43,Standard (-0.4%),Deterrent,Better in GM+,43
+midtown,C,ramattra,-1.29,2.14,Popular (+2.1%),Unfavorable,Even Across Ranks,44
+midtown,B,reaper,-0.11,-2.19,Niche (-2.2%),Neutral,Better in Masters,44
+midtown,D,reinhardt,-3.89,0.73,Standard (+0.7%),Unfavorable,Better in Masters,44
+midtown,C,roadhog,-2.84,-0.65,Standard (-0.7%),Deterrent,Even Across Ranks,44
+midtown,C,shion,-1.71,-3.64,Niche (-3.6%),Deterrent,Even Across Ranks,20
+midtown,A,sierra,2.76,0.48,Standard (+0.5%),Favorable,Even Across Ranks,27
+midtown,B,sigma,-0.5,9.16,Map Priority (+9.2%),Neutral,Even Across Ranks,44
+midtown,B,sojourn,0.08,4.45,Map Priority (+4.5%),Neutral,Even Across Ranks,44
+midtown,C,soldier76,-1.87,-1.23,Niche (-1.2%),Deterrent,Even Across Ranks,43
+midtown,D,sombra,-3.74,-0.59,Standard (-0.6%),Deterrent,Better in Masters,40
+midtown,C,symmetra,-1.88,1.07,Popular (+1.1%),Trap Pick,Better in GM+,44
+midtown,D,torbjorn,-3.52,0.44,Standard (+0.4%),Unfavorable,Better in GM+,43
+midtown,B,tracer,-1.03,-5.98,Niche (-6.0%),Neutral,Better in Masters,44
+midtown,B,vendetta,-0.15,-0.46,Standard (-0.5%),Neutral,Better in Masters,34
+midtown,S,venture,3.02,0.31,Standard (+0.3%),Favorable,Even Across Ranks,43
+midtown,A,widowmaker,1.47,3.53,Map Priority (+3.5%),Favorable,Better in Masters,44
+midtown,D,winston,-6.4,-5.06,Niche (-5.1%),Deterrent,Better in Masters,44
+midtown,D,wreckingball,-5.77,-2.52,Niche (-2.5%),Deterrent,Better in Masters,43
+midtown,B,wuyang,0.02,2.66,Popular (+2.7%),Neutral,Even Across Ranks,44
+midtown,B,zarya,0.07,2.93,Popular (+2.9%),Neutral,Better in Masters,44
+midtown,C,zenyatta,-2.17,3.78,Map Priority (+3.8%),Trap Pick,Better in Masters,44
+neon-junction,C,ana,-1.94,2.26,Popular (+2.3%),Trap Pick,Better in Masters,20
+neon-junction,D,anran,-3.21,-0.2,Standard (-0.2%),Deterrent,Better in Masters,20
+neon-junction,C,ashe,-1.71,0.62,Standard (+0.6%),Unfavorable,Even Across Ranks,20
+neon-junction,C,baptiste,-2.23,1.47,Popular (+1.5%),Trap Pick,Even Across Ranks,20
+neon-junction,A,bastion,1.78,2.38,Popular (+2.4%),Meta,Better in GM+,20
+neon-junction,D,brigitte,-4.98,-2.9,Niche (-2.9%),Deterrent,Better in Masters,20
+neon-junction,B,cassidy,0.24,-3.08,Niche (-3.1%),Neutral,Even Across Ranks,20
+neon-junction,D,dmon,-3.12,0.12,Standard (+0.1%),Unfavorable,Even Across Ranks,8
+neon-junction,B,domina,-0.25,1.27,Popular (+1.3%),Neutral,Better in GM+,20
+neon-junction,C,doomfist,-2.78,-1.43,Niche (-1.4%),Deterrent,Better in Masters,20
+neon-junction,C,dva,-2.91,-2.99,Niche (-3.0%),Deterrent,Even Across Ranks,20
+neon-junction,D,echo,-4.46,-2.38,Niche (-2.4%),Deterrent,Even Across Ranks,20
+neon-junction,C,emre,-1.25,0.98,Standard (+1.0%),Unfavorable,Even Across Ranks,20
+neon-junction,D,freja,-4.24,0.07,Standard (+0.1%),Unfavorable,Even Across Ranks,20
+neon-junction,B,genji,-0.56,-1.99,Niche (-2.0%),Neutral,Even Across Ranks,20
+neon-junction,C,hanzo,-2.4,1.81,Popular (+1.8%),Trap Pick,Even Across Ranks,20
+neon-junction,D,hazard,-6.24,-3.85,Niche (-3.8%),Deterrent,Even Across Ranks,20
+neon-junction,B,illari,-0.61,-0.61,Standard (-0.6%),Neutral,Better in GM+,20
+neon-junction,D,jetpackcat,-3.3,-2.99,Niche (-3.0%),Deterrent,Better in GM+,20
+neon-junction,C,junkerqueen,-1.21,-0.26,Standard (-0.3%),Unfavorable,Even Across Ranks,19
+neon-junction,D,junkrat,-5.86,0.43,Standard (+0.4%),Unfavorable,Even Across Ranks,20
+neon-junction,C,juno,-1.67,0.97,Standard (+1.0%),Unfavorable,Better in Masters,20
+neon-junction,B,kiriko,0.85,-2.18,Niche (-2.2%),Neutral,Even Across Ranks,20
+neon-junction,B,lifeweaver,-0.67,0.51,Standard (+0.5%),Neutral,Even Across Ranks,20
+neon-junction,C,lucio,-2.32,-2.44,Niche (-2.4%),Deterrent,Better in GM+,20
+neon-junction,C,mauga,-1.82,-1.03,Niche (-1.0%),Deterrent,Better in GM+,20
+neon-junction,C,mei,-1.55,2.8,Popular (+2.8%),Trap Pick,Even Across Ranks,20
+neon-junction,D,mercy,-3.01,-0.55,Standard (-0.6%),Deterrent,Even Across Ranks,18
+neon-junction,S,mizuki,3.46,0.37,Standard (+0.4%),Favorable,Even Across Ranks,20
+neon-junction,B,moira,1.0,-0.57,Standard (-0.6%),Neutral,Better in GM+,20
+neon-junction,A,orisa,1.41,1.65,Popular (+1.6%),Favorable,Even Across Ranks,20
+neon-junction,B,pharah,-0.52,0.25,Standard (+0.2%),Neutral,Even Across Ranks,20
+neon-junction,A,ramattra,1.59,3.67,Map Priority (+3.7%),Meta,Better in GM+,20
+neon-junction,B,reaper,0.46,-1.41,Niche (-1.4%),Neutral,Even Across Ranks,20
+neon-junction,A,reinhardt,2.07,2.54,Popular (+2.5%),Meta,Better in GM+,20
+neon-junction,D,roadhog,-3.02,-1.03,Niche (-1.0%),Deterrent,Better in Masters,20
+neon-junction,A,shion,1.73,2.45,Popular (+2.4%),Meta,Even Across Ranks,20
+neon-junction,A,sierra,1.62,0.4,Standard (+0.4%),Favorable,Better in Masters,16
+neon-junction,B,sigma,0.2,7.36,Map Priority (+7.4%),Neutral,Even Across Ranks,20
+neon-junction,B,sojourn,-0.44,5.07,Map Priority (+5.1%),Neutral,Even Across Ranks,20
+neon-junction,B,soldier76,0.27,-2.26,Niche (-2.3%),Neutral,Better in GM+,20
+neon-junction,B,sombra,-1.04,-0.65,Standard (-0.6%),Neutral,Better in Masters,19
+neon-junction,B,symmetra,0.62,0.69,Standard (+0.7%),Neutral,Even Across Ranks,20
+neon-junction,B,torbjorn,0.39,0.27,Standard (+0.3%),Neutral,Better in GM+,19
+neon-junction,D,tracer,-3.78,-8.12,Niche (-8.1%),Deterrent,Even Across Ranks,20
+neon-junction,S,vendetta,3.88,-0.28,Standard (-0.3%),Specialist,Better in GM+,20
+neon-junction,A,venture,1.49,-0.01,Standard (-0.0%),Favorable,Even Across Ranks,20
+neon-junction,B,widowmaker,0.21,2.24,Popular (+2.2%),Neutral,Better in GM+,20
+neon-junction,D,winston,-6.19,-5.62,Niche (-5.6%),Deterrent,Even Across Ranks,20
+neon-junction,B,wreckingball,0.29,-2.8,Niche (-2.8%),Neutral,Better in GM+,20
+neon-junction,C,wuyang,-2.13,3.34,Map Priority (+3.3%),Trap Pick,Even Across Ranks,20
+neon-junction,A,zarya,1.75,2.41,Popular (+2.4%),Meta,Even Across Ranks,20
+neon-junction,B,zenyatta,0.5,3.32,Map Priority (+3.3%),Neutral,Even Across Ranks,20
+nepal,C,ana,-2.35,-6.22,Niche (-6.2%),Deterrent,Even Across Ranks,44
+nepal,B,anran,-0.42,0.44,Standard (+0.4%),Neutral,Even Across Ranks,43
+nepal,B,ashe,-0.81,-4.16,Niche (-4.2%),Neutral,Even Across Ranks,44
+nepal,B,baptiste,0.23,-0.83,Standard (-0.8%),Neutral,Even Across Ranks,44
+nepal,A,bastion,2.3,-0.77,Standard (-0.8%),Specialist,Even Across Ranks,44
+nepal,A,brigitte,1.35,0.19,Standard (+0.2%),Favorable,Even Across Ranks,44
+nepal,B,cassidy,0.24,3.23,Map Priority (+3.2%),Neutral,Even Across Ranks,44
+nepal,A,dmon,1.58,0.71,Standard (+0.7%),Favorable,Better in GM+,8
+nepal,B,domina,-0.4,-0.24,Standard (-0.2%),Neutral,Better in Masters,44
+nepal,B,doomfist,0.67,1.04,Popular (+1.0%),Neutral,Even Across Ranks,44
+nepal,C,dva,-1.72,-1.08,Niche (-1.1%),Deterrent,Better in GM+,44
+nepal,C,echo,-1.42,0.14,Standard (+0.1%),Unfavorable,Even Across Ranks,44
+nepal,B,emre,0.65,-0.97,Standard (-1.0%),Neutral,Even Across Ranks,44
+nepal,B,freja,-0.58,-1.11,Niche (-1.1%),Neutral,Even Across Ranks,44
+nepal,C,genji,-1.26,-0.52,Standard (-0.5%),Unfavorable,Even Across Ranks,44
+nepal,B,hanzo,0.78,-2.26,Niche (-2.3%),Neutral,Even Across Ranks,44
+nepal,A,hazard,2.2,0.48,Standard (+0.5%),Favorable,Better in GM+,44
+nepal,B,illari,-0.93,-2.78,Niche (-2.8%),Neutral,Even Across Ranks,43
+nepal,A,jetpackcat,2.01,0.46,Standard (+0.5%),Favorable,Even Across Ranks,44
+nepal,B,junkerqueen,-0.95,0.34,Standard (+0.3%),Neutral,Even Across Ranks,40
+nepal,B,junkrat,1.19,0.33,Standard (+0.3%),Neutral,Even Across Ranks,44
+nepal,C,juno,-1.88,0.91,Standard (+0.9%),Unfavorable,Even Across Ranks,44
+nepal,B,kiriko,0.64,3.89,Map Priority (+3.9%),Neutral,Even Across Ranks,44
+nepal,B,lifeweaver,0.07,-1.23,Niche (-1.2%),Neutral,Even Across Ranks,42
+nepal,A,lucio,2.1,4.06,Map Priority (+4.1%),Meta,Even Across Ranks,44
+nepal,A,mauga,2.47,0.99,Standard (+1.0%),Favorable,Even Across Ranks,43
+nepal,B,mei,0.94,-0.39,Standard (-0.4%),Neutral,Even Across Ranks,44
+nepal,B,mercy,-0.76,-0.89,Standard (-0.9%),Neutral,Even Across Ranks,43
+nepal,B,mizuki,0.77,1.54,Popular (+1.5%),Neutral,Even Across Ranks,44
+nepal,B,moira,0.18,1.57,Popular (+1.6%),Neutral,Better in Masters,44
+nepal,A,orisa,1.96,0.68,Standard (+0.7%),Favorable,Even Across Ranks,44
+nepal,A,pharah,2.14,2.49,Popular (+2.5%),Meta,Even Across Ranks,44
+nepal,A,ramattra,1.72,0.6,Standard (+0.6%),Favorable,Even Across Ranks,44
+nepal,B,reaper,0.85,0.86,Standard (+0.9%),Neutral,Even Across Ranks,44
+nepal,A,reinhardt,2.29,1.43,Popular (+1.4%),Favorable,Even Across Ranks,44
+nepal,A,roadhog,1.41,-0.06,Standard (-0.1%),Favorable,Even Across Ranks,44
+nepal,C,shion,-1.2,3.42,Map Priority (+3.4%),Unfavorable,Even Across Ranks,20
+nepal,B,sierra,1.06,-0.51,Standard (-0.5%),Neutral,Even Across Ranks,25
+nepal,B,sigma,-0.16,-1.7,Niche (-1.7%),Neutral,Even Across Ranks,44
+nepal,A,sojourn,1.24,1.41,Popular (+1.4%),Favorable,Even Across Ranks,44
+nepal,B,soldier76,-1.16,-0.84,Standard (-0.8%),Neutral,Even Across Ranks,44
+nepal,C,sombra,-1.9,-0.37,Standard (-0.4%),Deterrent,Even Across Ranks,43
+nepal,S,symmetra,3.54,2.34,Popular (+2.3%),Meta,Better in Masters,44
+nepal,A,torbjorn,2.91,-0.46,Standard (-0.5%),Specialist,Better in GM+,43
+nepal,B,tracer,-0.9,2.66,Popular (+2.7%),Neutral,Even Across Ranks,44
+nepal,B,vendetta,1.06,0.15,Standard (+0.2%),Neutral,Even Across Ranks,41
+nepal,B,venture,0.79,0.14,Standard (+0.1%),Neutral,Even Across Ranks,44
+nepal,D,widowmaker,-9.76,-4.63,Niche (-4.6%),Deterrent,Even Across Ranks,44
+nepal,D,winston,-4.0,-4.42,Niche (-4.4%),Deterrent,Even Across Ranks,44
+nepal,D,wreckingball,-3.16,0.04,Standard (+0.0%),Unfavorable,Even Across Ranks,44
+nepal,B,wuyang,0.25,1.05,Popular (+1.1%),Neutral,Even Across Ranks,44
+nepal,B,zarya,-0.06,1.15,Popular (+1.1%),Neutral,Even Across Ranks,44
+nepal,B,zenyatta,0.49,-1.96,Niche (-2.0%),Neutral,Even Across Ranks,44
+new-junk-city,D,ana,-5.55,-14.73,Niche (-14.7%),Deterrent,Better in Masters,44
+new-junk-city,B,anran,0.34,1.97,Popular (+2.0%),Neutral,Better in Masters,43
+new-junk-city,C,ashe,-2.82,-7.07,Niche (-7.1%),Deterrent,Better in Masters,38
+new-junk-city,A,baptiste,1.97,-1.85,Niche (-1.8%),Specialist,Even Across Ranks,44
+new-junk-city,C,bastion,-1.21,-1.64,Niche (-1.6%),Unfavorable,Even Across Ranks,40
+new-junk-city,B,brigitte,0.81,0.97,Standard (+1.0%),Neutral,Better in GM+,43
+new-junk-city,A,cassidy,1.22,8.04,Map Priority (+8.0%),Favorable,Even Across Ranks,44
+new-junk-city,A,dmon,1.43,2.67,Popular (+2.7%),Favorable,Better in GM+,8
+new-junk-city,B,domina,1.06,-0.93,Standard (-0.9%),Neutral,Better in GM+,40
+new-junk-city,B,doomfist,0.69,0.17,Standard (+0.2%),Neutral,Better in Masters,43
+new-junk-city,C,dva,-1.57,-1.73,Niche (-1.7%),Deterrent,Better in GM+,44
+new-junk-city,B,echo,-0.95,-3.59,Niche (-3.6%),Neutral,Even Across Ranks,43
+new-junk-city,B,emre,0.96,-4.0,Niche (-4.0%),Neutral,Even Across Ranks,43
+new-junk-city,D,freja,-6.13,-2.89,Niche (-2.9%),Deterrent,Better in Masters,40
+new-junk-city,C,genji,-1.23,0.45,Standard (+0.4%),Unfavorable,Even Across Ranks,44
+new-junk-city,C,hanzo,-2.59,-2.34,Niche (-2.3%),Deterrent,Even Across Ranks,43
+new-junk-city,S,hazard,3.2,0.9,Standard (+0.9%),Favorable,Even Across Ranks,43
+new-junk-city,C,illari,-1.25,-5.06,Niche (-5.1%),Unfavorable,Even Across Ranks,44
+new-junk-city,B,jetpackcat,-0.75,-1.04,Niche (-1.0%),Neutral,Even Across Ranks,43
+new-junk-city,S,junkerqueen,4.28,3.49,Map Priority (+3.5%),Meta,Even Across Ranks,42
+new-junk-city,B,junkrat,-0.73,0.35,Standard (+0.3%),Neutral,Better in Masters,41
+new-junk-city,B,juno,-0.15,0.46,Standard (+0.5%),Neutral,Even Across Ranks,42
+new-junk-city,B,kiriko,-0.09,10.28,Map Priority (+10.3%),Neutral,Better in Masters,44
+new-junk-city,B,lifeweaver,0.46,-1.92,Niche (-1.9%),Neutral,Better in Masters,41
+new-junk-city,A,lucio,2.58,7.75,Map Priority (+7.8%),Meta,Even Across Ranks,44
+new-junk-city,B,mauga,0.7,2.57,Popular (+2.6%),Neutral,Even Across Ranks,42
+new-junk-city,A,mei,1.51,1.0,Popular (+1.0%),Favorable,Even Across Ranks,43
+new-junk-city,B,mercy,-0.02,-3.18,Niche (-3.2%),Neutral,Better in GM+,42
+new-junk-city,S,mizuki,3.02,5.15,Map Priority (+5.2%),Meta,Better in GM+,44
+new-junk-city,A,moira,2.85,5.08,Map Priority (+5.1%),Meta,Even Across Ranks,43
+new-junk-city,B,orisa,0.87,2.26,Popular (+2.3%),Neutral,Even Across Ranks,43
+new-junk-city,D,pharah,-6.99,-1.74,Niche (-1.7%),Deterrent,Even Across Ranks,43
+new-junk-city,B,ramattra,0.25,1.96,Popular (+2.0%),Neutral,Even Across Ranks,44
+new-junk-city,A,reaper,2.26,4.39,Map Priority (+4.4%),Meta,Even Across Ranks,44
+new-junk-city,A,reinhardt,1.82,1.59,Popular (+1.6%),Meta,Better in GM+,44
+new-junk-city,B,roadhog,0.09,0.08,Standard (+0.1%),Neutral,Better in GM+,43
+new-junk-city,A,shion,1.51,8.06,Map Priority (+8.1%),Meta,Even Across Ranks,20
+new-junk-city,C,sierra,-1.47,-1.09,Niche (-1.1%),Unfavorable,Even Across Ranks,21
+new-junk-city,C,sigma,-3.0,-5.17,Niche (-5.2%),Deterrent,Even Across Ranks,43
+new-junk-city,B,sojourn,0.77,3.41,Map Priority (+3.4%),Neutral,Better in GM+,44
+new-junk-city,C,soldier76,-1.36,-0.8,Standard (-0.8%),Unfavorable,Even Across Ranks,43
+new-junk-city,B,sombra,0.72,-0.32,Standard (-0.3%),Neutral,Even Across Ranks,41
+new-junk-city,S,symmetra,3.28,0.6,Standard (+0.6%),Favorable,Even Across Ranks,42
+new-junk-city,A,torbjorn,1.69,-0.15,Standard (-0.1%),Specialist,Better in Masters,42
+new-junk-city,B,tracer,0.8,5.67,Map Priority (+5.7%),Neutral,Even Across Ranks,44
+new-junk-city,A,vendetta,2.1,1.42,Popular (+1.4%),Favorable,Even Across Ranks,40
+new-junk-city,A,venture,2.13,1.15,Popular (+1.2%),Favorable,Better in GM+,42
+new-junk-city,D,widowmaker,-18.15,-6.03,Niche (-6.0%),Deterrent,Better in Masters,22
+new-junk-city,D,winston,-8.32,-6.78,Niche (-6.8%),Deterrent,Better in Masters,44
+new-junk-city,B,wreckingball,0.99,-1.05,Niche (-1.0%),Neutral,Better in Masters,44
+new-junk-city,B,wuyang,0.02,2.08,Popular (+2.1%),Neutral,Better in Masters,44
+new-junk-city,B,zarya,1.18,2.85,Popular (+2.9%),Neutral,Better in Masters,44
+new-junk-city,C,zenyatta,-2.0,-3.39,Niche (-3.4%),Deterrent,Even Across Ranks,42
+new-queen-street,D,ana,-3.85,-5.15,Niche (-5.1%),Deterrent,Even Across Ranks,44
+new-queen-street,C,anran,-2.98,0.01,Standard (+0.0%),Unfavorable,Better in Masters,42
+new-queen-street,B,ashe,-1.13,-4.41,Niche (-4.4%),Neutral,Better in Masters,43
+new-queen-street,C,baptiste,-1.31,-2.58,Niche (-2.6%),Unfavorable,Better in GM+,44
+new-queen-street,C,bastion,-2.37,-1.56,Niche (-1.6%),Deterrent,Better in Masters,41
+new-queen-street,B,brigitte,-0.16,0.82,Standard (+0.8%),Neutral,Even Across Ranks,44
+new-queen-street,C,cassidy,-1.66,-0.33,Standard (-0.3%),Deterrent,Better in GM+,44
+new-queen-street,A,dmon,1.89,1.29,Popular (+1.3%),Favorable,Better in GM+,8
+new-queen-street,C,domina,-1.81,-0.92,Standard (-0.9%),Deterrent,Even Across Ranks,43
+new-queen-street,A,doomfist,2.48,1.03,Popular (+1.0%),Favorable,Better in Masters,44
+new-queen-street,B,dva,-0.47,0.84,Standard (+0.8%),Neutral,Even Across Ranks,44
+new-queen-street,B,echo,-1.18,-2.75,Niche (-2.8%),Neutral,Better in Masters,44
+new-queen-street,B,emre,-1.09,0.09,Standard (+0.1%),Neutral,Even Across Ranks,44
+new-queen-street,A,freja,2.59,-1.57,Niche (-1.6%),Specialist,Even Across Ranks,43
+new-queen-street,B,genji,-1.1,-1.36,Niche (-1.4%),Neutral,Even Across Ranks,44
+new-queen-street,B,hanzo,0.56,-3.26,Niche (-3.3%),Neutral,Better in GM+,42
+new-queen-street,B,hazard,1.17,0.83,Standard (+0.8%),Neutral,Better in Masters,44
+new-queen-street,B,illari,-0.81,-1.37,Niche (-1.4%),Neutral,Better in Masters,44
+new-queen-street,C,jetpackcat,-2.6,0.6,Standard (+0.6%),Unfavorable,Even Across Ranks,44
+new-queen-street,A,junkerqueen,2.12,0.74,Standard (+0.7%),Favorable,Even Across Ranks,41
+new-queen-street,A,junkrat,2.38,-1.49,Niche (-1.5%),Specialist,Better in Masters,41
+new-queen-street,C,juno,-1.34,0.72,Standard (+0.7%),Unfavorable,Better in Masters,44
+new-queen-street,A,kiriko,2.97,6.3,Map Priority (+6.3%),Meta,Even Across Ranks,44
+new-queen-street,B,lifeweaver,1.08,-0.67,Standard (-0.7%),Neutral,Better in GM+,43
+new-queen-street,B,lucio,-0.13,1.47,Popular (+1.5%),Neutral,Even Across Ranks,44
+new-queen-street,A,mauga,1.61,1.25,Popular (+1.3%),Favorable,Better in GM+,43
+new-queen-street,B,mei,-1.09,-1.55,Niche (-1.6%),Neutral,Better in Masters,44
+new-queen-street,B,mercy,0.79,-0.85,Standard (-0.8%),Neutral,Even Across Ranks,42
+new-queen-street,A,mizuki,1.86,0.59,Standard (+0.6%),Favorable,Even Across Ranks,44
+new-queen-street,B,moira,-0.55,0.46,Standard (+0.5%),Neutral,Better in Masters,44
+new-queen-street,C,orisa,-2.26,-0.12,Standard (-0.1%),Deterrent,Better in Masters,44
+new-queen-street,B,pharah,-0.5,-1.85,Niche (-1.8%),Neutral,Even Across Ranks,44
+new-queen-street,B,ramattra,1.08,-1.27,Niche (-1.3%),Neutral,Even Across Ranks,39
+new-queen-street,A,reaper,1.43,-1.07,Niche (-1.1%),Favorable,Even Across Ranks,44
+new-queen-street,B,reinhardt,1.06,-0.13,Standard (-0.1%),Neutral,Better in GM+,44
+new-queen-street,B,roadhog,1.14,0.2,Standard (+0.2%),Neutral,Even Across Ranks,44
+new-queen-street,B,shion,0.54,5.15,Map Priority (+5.2%),Neutral,Even Across Ranks,20
+new-queen-street,C,sierra,-1.75,-0.13,Standard (-0.1%),Deterrent,Even Across Ranks,27
+new-queen-street,D,sigma,-5.53,-4.26,Niche (-4.3%),Deterrent,Better in GM+,44
+new-queen-street,C,sojourn,-1.37,1.93,Popular (+1.9%),Unfavorable,Even Across Ranks,44
+new-queen-street,S,soldier76,5.45,13.13,Map Priority (+13.1%),Meta,Even Across Ranks,44
+new-queen-street,C,sombra,-2.01,1.12,Popular (+1.1%),Trap Pick,Even Across Ranks,44
+new-queen-street,S,symmetra,3.18,-1.11,Niche (-1.1%),Specialist,Even Across Ranks,38
+new-queen-street,S,torbjorn,3.31,-0.36,Standard (-0.4%),Specialist,Even Across Ranks,43
+new-queen-street,A,tracer,1.28,7.84,Map Priority (+7.8%),Favorable,Even Across Ranks,44
+new-queen-street,C,vendetta,-1.28,-0.17,Standard (-0.2%),Unfavorable,Even Across Ranks,40
+new-queen-street,B,venture,1.15,-0.57,Standard (-0.6%),Neutral,Better in Masters,43
+new-queen-street,D,widowmaker,-7.83,-3.51,Niche (-3.5%),Deterrent,Even Across Ranks,43
+new-queen-street,B,winston,0.3,0.26,Standard (+0.3%),Neutral,Even Across Ranks,44
+new-queen-street,A,wreckingball,2.26,2.48,Popular (+2.5%),Meta,Even Across Ranks,44
+new-queen-street,A,wuyang,1.42,2.13,Popular (+2.1%),Favorable,Even Across Ranks,44
+new-queen-street,B,zarya,0.93,-1.39,Niche (-1.4%),Neutral,Even Across Ranks,43
+new-queen-street,A,zenyatta,1.73,-2.9,Niche (-2.9%),Specialist,Better in GM+,44
+numbani,B,ana,0.68,7.64,Map Priority (+7.6%),Neutral,Even Across Ranks,44
+numbani,C,anran,-1.48,-0.48,Standard (-0.5%),Unfavorable,Even Across Ranks,42
+numbani,A,ashe,1.43,5.88,Map Priority (+5.9%),Favorable,Even Across Ranks,44
+numbani,D,baptiste,-5.14,-0.29,Standard (-0.3%),Deterrent,Better in Masters,44
+numbani,B,bastion,0.79,1.2,Popular (+1.2%),Neutral,Better in GM+,43
+numbani,C,brigitte,-2.22,1.11,Popular (+1.1%),Trap Pick,Better in GM+,43
+numbani,B,cassidy,-0.14,-2.65,Niche (-2.6%),Neutral,Even Across Ranks,44
+numbani,C,dmon,-1.54,-2.77,Niche (-2.8%),Deterrent,Even Across Ranks,8
+numbani,D,domina,-5.73,-0.94,Standard (-0.9%),Deterrent,Even Across Ranks,40
+numbani,C,doomfist,-1.85,0.76,Standard (+0.8%),Unfavorable,Better in GM+,44
+numbani,A,dva,1.37,1.9,Popular (+1.9%),Favorable,Even Across Ranks,43
+numbani,C,echo,-1.46,5.09,Map Priority (+5.1%),Unfavorable,Even Across Ranks,44
+numbani,C,emre,-1.5,0.55,Standard (+0.5%),Unfavorable,Better in GM+,44
+numbani,B,freja,-1.03,1.09,Popular (+1.1%),Neutral,Better in Masters,44
+numbani,C,genji,-2.04,1.07,Popular (+1.1%),Trap Pick,Even Across Ranks,44
+numbani,B,hanzo,-0.21,0.02,Standard (+0.0%),Neutral,Better in GM+,44
+numbani,B,hazard,-0.11,2.42,Popular (+2.4%),Neutral,Better in Masters,42
+numbani,C,illari,-1.59,0.63,Standard (+0.6%),Unfavorable,Even Across Ranks,44
+numbani,C,jetpackcat,-2.44,1.3,Popular (+1.3%),Trap Pick,Even Across Ranks,44
+numbani,D,junkerqueen,-10.56,-1.5,Niche (-1.5%),Deterrent,Even Across Ranks,34
+numbani,B,junkrat,-0.64,0.02,Standard (+0.0%),Neutral,Even Across Ranks,43
+numbani,D,juno,-3.27,-0.69,Standard (-0.7%),Deterrent,Better in Masters,43
+numbani,B,kiriko,0.33,0.24,Standard (+0.2%),Neutral,Better in Masters,44
+numbani,A,lifeweaver,2.12,1.13,Popular (+1.1%),Favorable,Even Across Ranks,43
+numbani,D,lucio,-4.06,-2.72,Niche (-2.7%),Deterrent,Better in GM+,44
+numbani,C,mauga,-2.89,-0.69,Standard (-0.7%),Deterrent,Even Across Ranks,41
+numbani,D,mei,-3.66,-0.88,Standard (-0.9%),Deterrent,Better in GM+,43
+numbani,A,mercy,1.28,2.35,Popular (+2.3%),Favorable,Even Across Ranks,43
+numbani,D,mizuki,-3.75,-2.8,Niche (-2.8%),Deterrent,Even Across Ranks,43
+numbani,D,moira,-4.25,-2.11,Niche (-2.1%),Deterrent,Better in GM+,43
+numbani,C,orisa,-1.88,-1.89,Niche (-1.9%),Deterrent,Better in GM+,43
+numbani,D,pharah,-4.22,-0.08,Standard (-0.1%),Deterrent,Better in Masters,43
+numbani,D,ramattra,-4.78,-1.97,Niche (-2.0%),Deterrent,Even Across Ranks,36
+numbani,D,reaper,-5.58,-0.72,Standard (-0.7%),Deterrent,Even Across Ranks,44
+numbani,D,reinhardt,-4.71,-2.11,Niche (-2.1%),Deterrent,Even Across Ranks,43
+numbani,D,roadhog,-6.79,0.03,Standard (+0.0%),Unfavorable,Even Across Ranks,44
+numbani,C,shion,-1.35,-2.83,Niche (-2.8%),Unfavorable,Even Across Ranks,20
+numbani,A,sierra,2.22,0.2,Standard (+0.2%),Favorable,Better in Masters,26
+numbani,B,sigma,-1.16,-2.72,Niche (-2.7%),Neutral,Better in Masters,43
+numbani,D,sojourn,-5.39,-6.62,Niche (-6.6%),Deterrent,Better in Masters,44
+numbani,B,soldier76,0.02,0.55,Standard (+0.5%),Neutral,Even Across Ranks,44
+numbani,B,sombra,-0.01,0.05,Standard (+0.1%),Neutral,Better in Masters,39
+numbani,D,symmetra,-5.76,-0.6,Standard (-0.6%),Deterrent,Even Across Ranks,41
+numbani,C,torbjorn,-1.71,0.48,Standard (+0.5%),Unfavorable,Even Across Ranks,42
+numbani,B,tracer,0.64,0.33,Standard (+0.3%),Neutral,Even Across Ranks,44
+numbani,C,vendetta,-2.19,-0.09,Standard (-0.1%),Deterrent,Better in Masters,35
+numbani,D,venture,-3.32,-0.09,Standard (-0.1%),Deterrent,Better in GM+,43
+numbani,D,widowmaker,-9.72,-2.42,Niche (-2.4%),Deterrent,Even Across Ranks,43
+numbani,A,winston,1.88,9.36,Map Priority (+9.4%),Meta,Even Across Ranks,44
+numbani,S,wreckingball,3.2,0.56,Standard (+0.6%),Favorable,Better in GM+,43
+numbani,C,wuyang,-1.5,-2.95,Niche (-3.0%),Deterrent,Better in GM+,43
+numbani,C,zarya,-2.37,-2.2,Niche (-2.2%),Deterrent,Even Across Ranks,44
+numbani,C,zenyatta,-2.79,-2.15,Niche (-2.1%),Deterrent,Even Across Ranks,44
+oasis,C,ana,-1.74,-9.19,Niche (-9.2%),Deterrent,Even Across Ranks,44
+oasis,B,anran,-0.53,0.35,Standard (+0.3%),Neutral,Even Across Ranks,44
+oasis,C,ashe,-1.45,-6.33,Niche (-6.3%),Unfavorable,Better in GM+,44
+oasis,B,baptiste,-0.42,-1.35,Niche (-1.4%),Neutral,Better in Masters,44
+oasis,B,bastion,-0.51,-1.0,Niche (-1.0%),Neutral,Even Across Ranks,43
+oasis,B,brigitte,0.82,1.96,Popular (+2.0%),Neutral,Even Across Ranks,44
+oasis,A,cassidy,2.34,11.46,Map Priority (+11.5%),Meta,Even Across Ranks,44
+oasis,C,dmon,-1.46,0.76,Standard (+0.8%),Unfavorable,Even Across Ranks,8
+oasis,B,domina,0.6,-0.94,Standard (-0.9%),Neutral,Even Across Ranks,42
+oasis,A,doomfist,2.21,1.02,Popular (+1.0%),Favorable,Even Across Ranks,44
+oasis,B,dva,0.31,0.86,Standard (+0.9%),Neutral,Better in GM+,44
+oasis,B,echo,-0.01,-0.22,Standard (-0.2%),Neutral,Even Across Ranks,44
+oasis,C,emre,-1.35,-3.2,Niche (-3.2%),Unfavorable,Even Across Ranks,44
+oasis,A,freja,2.74,-1.51,Niche (-1.5%),Specialist,Even Across Ranks,44
+oasis,C,genji,-1.59,-0.45,Standard (-0.4%),Deterrent,Better in Masters,44
+oasis,B,hanzo,1.2,-2.6,Niche (-2.6%),Neutral,Even Across Ranks,44
+oasis,B,hazard,0.91,2.19,Popular (+2.2%),Neutral,Even Across Ranks,44
+oasis,B,illari,1.18,-3.01,Niche (-3.0%),Neutral,Even Across Ranks,44
+oasis,B,jetpackcat,0.73,1.09,Popular (+1.1%),Neutral,Even Across Ranks,44
+oasis,B,junkerqueen,-0.39,0.79,Standard (+0.8%),Neutral,Even Across Ranks,44
+oasis,B,junkrat,0.32,-0.42,Standard (-0.4%),Neutral,Even Across Ranks,43
+oasis,B,juno,-1.14,0.01,Standard (+0.0%),Neutral,Even Across Ranks,44
+oasis,B,kiriko,0.8,7.02,Map Priority (+7.0%),Neutral,Even Across Ranks,44
+oasis,B,lifeweaver,0.38,-1.17,Niche (-1.2%),Neutral,Even Across Ranks,42
+oasis,B,lucio,-0.68,4.11,Map Priority (+4.1%),Neutral,Even Across Ranks,44
+oasis,A,mauga,1.7,1.19,Popular (+1.2%),Favorable,Better in GM+,43
+oasis,B,mei,0.16,-0.74,Standard (-0.7%),Neutral,Even Across Ranks,44
+oasis,C,mercy,-1.47,-1.15,Niche (-1.2%),Unfavorable,Even Across Ranks,43
+oasis,B,mizuki,1.09,3.13,Map Priority (+3.1%),Neutral,Even Across Ranks,44
+oasis,B,moira,0.69,1.82,Popular (+1.8%),Neutral,Even Across Ranks,44
+oasis,A,orisa,2.58,0.46,Standard (+0.5%),Favorable,Even Across Ranks,44
+oasis,C,pharah,-1.49,0.87,Standard (+0.9%),Unfavorable,Better in Masters,44
+oasis,B,ramattra,0.69,-0.86,Standard (-0.9%),Neutral,Even Across Ranks,43
+oasis,B,reaper,0.97,1.8,Popular (+1.8%),Neutral,Even Across Ranks,44
+oasis,B,reinhardt,-1.06,-0.48,Standard (-0.5%),Neutral,Even Across Ranks,43
+oasis,S,roadhog,3.59,0.9,Standard (+0.9%),Favorable,Even Across Ranks,44
+oasis,B,shion,0.72,5.06,Map Priority (+5.1%),Neutral,Even Across Ranks,20
+oasis,B,sierra,0.92,-0.66,Standard (-0.7%),Neutral,Even Across Ranks,25
+oasis,D,sigma,-4.19,-5.97,Niche (-6.0%),Deterrent,Even Across Ranks,44
+oasis,B,sojourn,0.1,-2.21,Niche (-2.2%),Neutral,Even Across Ranks,44
+oasis,B,soldier76,0.17,-1.1,Niche (-1.1%),Neutral,Even Across Ranks,44
+oasis,B,sombra,-0.58,0.2,Standard (+0.2%),Neutral,Even Across Ranks,44
+oasis,B,symmetra,0.1,0.3,Standard (+0.3%),Neutral,Even Across Ranks,44
+oasis,S,torbjorn,3.77,-0.27,Standard (-0.3%),Specialist,Even Across Ranks,43
+oasis,B,tracer,0.31,6.78,Map Priority (+6.8%),Neutral,Even Across Ranks,44
+oasis,A,vendetta,1.7,0.46,Standard (+0.5%),Favorable,Even Across Ranks,40
+oasis,C,venture,-1.43,0.04,Standard (+0.0%),Unfavorable,Better in GM+,44
+oasis,D,widowmaker,-15.39,-5.22,Niche (-5.2%),Deterrent,Better in Masters,39
+oasis,B,winston,-0.51,-0.65,Standard (-0.6%),Neutral,Even Across Ranks,44
+oasis,C,wreckingball,-2.3,0.8,Standard (+0.8%),Unfavorable,Even Across Ranks,44
+oasis,B,wuyang,0.28,-0.8,Standard (-0.8%),Neutral,Even Across Ranks,44
+oasis,B,zarya,0.68,0.21,Standard (+0.2%),Neutral,Even Across Ranks,44
+oasis,B,zenyatta,-0.38,-2.97,Niche (-3.0%),Neutral,Even Across Ranks,44
+paraiso,B,ana,1.01,7.79,Map Priority (+7.8%),Neutral,Even Across Ranks,8
+paraiso,C,anran,-1.9,-0.1,Standard (-0.1%),Deterrent,Even Across Ranks,8
+paraiso,A,ashe,2.57,6.16,Map Priority (+6.2%),Meta,Even Across Ranks,8
+paraiso,B,baptiste,-0.24,-0.23,Standard (-0.2%),Neutral,Better in GM+,8
+paraiso,S,bastion,5.01,0.18,Standard (+0.2%),Favorable,Better in GM+,8
+paraiso,C,brigitte,-2.34,0.2,Standard (+0.2%),Unfavorable,Better in Masters,8
+paraiso,D,cassidy,-3.36,-1.83,Niche (-1.8%),Deterrent,Even Across Ranks,8
+paraiso,C,dmon,-1.98,0.48,Standard (+0.5%),Unfavorable,Better in Masters,8
+paraiso,D,domina,-8.0,-0.07,Standard (-0.1%),Deterrent,Better in GM+,7
+paraiso,D,doomfist,-3.18,-1.24,Niche (-1.2%),Deterrent,Better in Masters,8
+paraiso,A,dva,2.85,4.4,Map Priority (+4.4%),Meta,Better in GM+,8
+paraiso,B,echo,-0.15,5.3,Map Priority (+5.3%),Neutral,Better in Masters,8
+paraiso,C,emre,-2.3,1.69,Popular (+1.7%),Trap Pick,Better in Masters,8
+paraiso,D,freja,-5.6,0.38,Standard (+0.4%),Unfavorable,Better in Masters,8
+paraiso,D,genji,-3.53,1.48,Popular (+1.5%),Trap Pick,Even Across Ranks,8
+paraiso,D,hanzo,-4.95,0.01,Standard (+0.0%),Unfavorable,Better in Masters,8
+paraiso,D,hazard,-3.69,1.53,Popular (+1.5%),Trap Pick,Better in Masters,8
+paraiso,D,illari,-5.13,1.45,Popular (+1.5%),Trap Pick,Better in Masters,8
+paraiso,S,jetpackcat,8.43,1.84,Popular (+1.8%),Meta,Better in GM+,8
+paraiso,D,junkerqueen,-7.86,-0.89,Standard (-0.9%),Deterrent,Better in Masters,7
+paraiso,C,junkrat,-1.35,0.2,Standard (+0.2%),Unfavorable,Better in GM+,8
+paraiso,D,juno,-4.95,-1.05,Niche (-1.1%),Deterrent,Better in Masters,8
+paraiso,C,kiriko,-2.24,-2.94,Niche (-2.9%),Deterrent,Even Across Ranks,8
+paraiso,S,lifeweaver,5.97,0.68,Standard (+0.7%),Favorable,Better in GM+,8
+paraiso,D,lucio,-14.06,-3.31,Niche (-3.3%),Deterrent,Better in Masters,8
+paraiso,D,mauga,-5.4,-0.87,Standard (-0.9%),Deterrent,Better in Masters,7
+paraiso,D,mei,-5.06,-1.0,Niche (-1.0%),Deterrent,Even Across Ranks,8
+paraiso,S,mercy,5.12,1.45,Popular (+1.5%),Favorable,Better in GM+,8
+paraiso,D,mizuki,-7.66,-2.18,Niche (-2.2%),Deterrent,Better in Masters,8
+paraiso,B,moira,-0.88,-0.99,Standard (-1.0%),Neutral,Even Across Ranks,8
+paraiso,S,orisa,4.69,-2.4,Niche (-2.4%),Specialist,Better in GM+,8
+paraiso,B,pharah,-0.56,-0.47,Standard (-0.5%),Neutral,Better in GM+,8
+paraiso,B,ramattra,1.0,-2.13,Niche (-2.1%),Neutral,Better in GM+,7
+paraiso,D,reaper,-5.15,-0.89,Standard (-0.9%),Deterrent,Better in Masters,8
+paraiso,D,reinhardt,-6.04,-1.04,Niche (-1.0%),Deterrent,Better in Masters,8
+paraiso,B,roadhog,1.16,0.8,Standard (+0.8%),Neutral,Better in GM+,8
+paraiso,B,shion,-0.05,-3.76,Niche (-3.8%),Neutral,Even Across Ranks,8
+paraiso,B,sierra,0.56,0.09,Standard (+0.1%),Neutral,Better in Masters,6
+paraiso,D,sigma,-3.66,-0.18,Standard (-0.2%),Deterrent,Even Across Ranks,8
+paraiso,B,sojourn,-1.19,-4.65,Niche (-4.7%),Neutral,Better in Masters,8
+paraiso,D,soldier76,-5.53,-0.83,Standard (-0.8%),Deterrent,Better in Masters,8
+paraiso,D,sombra,-6.33,-0.14,Standard (-0.1%),Deterrent,Even Across Ranks,7
+paraiso,A,symmetra,1.49,-0.47,Standard (-0.5%),Favorable,Even Across Ranks,8
+paraiso,C,torbjorn,-2.63,0.75,Standard (+0.7%),Unfavorable,Better in GM+,8
+paraiso,B,tracer,0.06,-3.66,Niche (-3.7%),Neutral,Better in GM+,8
+paraiso,C,vendetta,-2.74,-0.09,Standard (-0.1%),Deterrent,Better in GM+,8
+paraiso,C,venture,-1.67,-0.45,Standard (-0.5%),Deterrent,Better in Masters,8
+paraiso,B,widowmaker,0.98,2.08,Popular (+2.1%),Neutral,Better in GM+,8
+paraiso,S,winston,3.01,3.82,Map Priority (+3.8%),Meta,Better in GM+,8
+paraiso,D,wreckingball,-9.1,-0.75,Standard (-0.8%),Deterrent,Even Across Ranks,8
+paraiso,C,wuyang,-2.44,-1.96,Niche (-2.0%),Deterrent,Better in Masters,8
+paraiso,D,zarya,-5.03,-1.26,Niche (-1.3%),Deterrent,Better in Masters,8
+paraiso,C,zenyatta,-1.39,-0.87,Standard (-0.9%),Unfavorable,Even Across Ranks,8
+rialto,A,ana,1.31,10.75,Map Priority (+10.8%),Favorable,Better in Masters,44
+rialto,B,anran,-0.3,-0.82,Standard (-0.8%),Neutral,Even Across Ranks,43
+rialto,B,ashe,-0.52,4.84,Map Priority (+4.8%),Neutral,Even Across Ranks,44
+rialto,B,baptiste,0.76,0.65,Standard (+0.7%),Neutral,Even Across Ranks,44
+rialto,A,bastion,2.99,0.8,Standard (+0.8%),Favorable,Better in GM+,42
+rialto,A,brigitte,2.18,-1.79,Niche (-1.8%),Specialist,Better in GM+,44
+rialto,C,cassidy,-1.73,-6.96,Niche (-7.0%),Deterrent,Even Across Ranks,44
+rialto,C,dmon,-1.23,-0.96,Standard (-1.0%),Unfavorable,Better in GM+,8
+rialto,C,domina,-1.53,0.32,Standard (+0.3%),Unfavorable,Better in GM+,43
+rialto,B,doomfist,-0.59,-0.05,Standard (-0.0%),Neutral,Even Across Ranks,44
+rialto,B,dva,0.17,1.47,Popular (+1.5%),Neutral,Even Across Ranks,43
+rialto,B,echo,0.8,3.11,Map Priority (+3.1%),Neutral,Even Across Ranks,44
+rialto,A,emre,2.25,1.68,Popular (+1.7%),Meta,Better in GM+,44
+rialto,A,freja,1.35,0.61,Standard (+0.6%),Favorable,Better in GM+,44
+rialto,B,genji,1.11,-0.58,Standard (-0.6%),Neutral,Even Across Ranks,44
+rialto,B,hanzo,0.21,1.54,Popular (+1.5%),Neutral,Better in Masters,44
+rialto,B,hazard,0.42,0.18,Standard (+0.2%),Neutral,Even Across Ranks,43
+rialto,A,illari,1.6,3.51,Map Priority (+3.5%),Meta,Even Across Ranks,44
+rialto,C,jetpackcat,-1.23,0.67,Standard (+0.7%),Unfavorable,Better in GM+,43
+rialto,B,junkerqueen,-0.78,-0.93,Standard (-0.9%),Neutral,Even Across Ranks,38
+rialto,C,junkrat,-1.78,-0.02,Standard (-0.0%),Deterrent,Even Across Ranks,43
+rialto,C,juno,-2.5,-1.78,Niche (-1.8%),Deterrent,Even Across Ranks,43
+rialto,B,kiriko,-0.52,-6.52,Niche (-6.5%),Neutral,Even Across Ranks,44
+rialto,B,lifeweaver,-0.25,0.94,Standard (+0.9%),Neutral,Even Across Ranks,42
+rialto,D,lucio,-5.82,-4.29,Niche (-4.3%),Deterrent,Even Across Ranks,42
+rialto,C,mauga,-1.42,-1.28,Niche (-1.3%),Unfavorable,Even Across Ranks,42
+rialto,B,mei,0.5,0.33,Standard (+0.3%),Neutral,Better in Masters,43
+rialto,B,mercy,-0.05,1.33,Popular (+1.3%),Neutral,Even Across Ranks,43
+rialto,B,mizuki,-1.11,-2.7,Niche (-2.7%),Neutral,Even Across Ranks,43
+rialto,C,moira,-1.22,-2.29,Niche (-2.3%),Unfavorable,Better in GM+,43
+rialto,B,orisa,0.1,0.25,Standard (+0.3%),Neutral,Better in Masters,44
+rialto,A,pharah,1.92,1.88,Popular (+1.9%),Meta,Even Across Ranks,44
+rialto,B,ramattra,0.04,-0.52,Standard (-0.5%),Neutral,Better in GM+,42
+rialto,B,reaper,0.32,-2.07,Niche (-2.1%),Neutral,Even Across Ranks,44
+rialto,C,reinhardt,-1.32,0.25,Standard (+0.2%),Unfavorable,Better in Masters,43
+rialto,A,roadhog,1.5,0.71,Standard (+0.7%),Favorable,Even Across Ranks,43
+rialto,B,shion,0.37,-5.47,Niche (-5.5%),Neutral,Even Across Ranks,20
+rialto,B,sierra,-0.43,0.34,Standard (+0.3%),Neutral,Even Across Ranks,29
+rialto,A,sigma,2.24,1.66,Popular (+1.7%),Meta,Even Across Ranks,44
+rialto,C,sojourn,-1.26,-1.67,Niche (-1.7%),Unfavorable,Better in Masters,44
+rialto,C,soldier76,-2.61,-1.46,Niche (-1.5%),Deterrent,Even Across Ranks,43
+rialto,C,sombra,-1.44,-0.28,Standard (-0.3%),Unfavorable,Even Across Ranks,40
+rialto,B,symmetra,-1.17,-0.52,Standard (-0.5%),Neutral,Even Across Ranks,43
+rialto,C,torbjorn,-2.59,0.31,Standard (+0.3%),Unfavorable,Even Across Ranks,42
+rialto,C,tracer,-1.43,-4.86,Niche (-4.9%),Unfavorable,Better in Masters,44
+rialto,B,vendetta,-0.5,-0.51,Standard (-0.5%),Neutral,Better in GM+,38
+rialto,C,venture,-1.54,-0.37,Standard (-0.4%),Deterrent,Better in Masters,43
+rialto,A,widowmaker,2.37,7.16,Map Priority (+7.2%),Meta,Even Across Ranks,44
+rialto,B,winston,0.66,0.77,Standard (+0.8%),Neutral,Even Across Ranks,43
+rialto,C,wreckingball,-2.67,-1.09,Niche (-1.1%),Deterrent,Even Across Ranks,43
+rialto,B,wuyang,1.06,-1.14,Niche (-1.1%),Neutral,Better in GM+,44
+rialto,A,zarya,1.34,-0.68,Standard (-0.7%),Favorable,Better in GM+,43
+rialto,C,zenyatta,-1.28,3.27,Map Priority (+3.3%),Unfavorable,Even Across Ranks,44
+route-66,A,ana,2.23,7.39,Map Priority (+7.4%),Meta,Even Across Ranks,44
+route-66,C,anran,-1.21,-0.51,Standard (-0.5%),Unfavorable,Even Across Ranks,42
+route-66,B,ashe,0.95,5.57,Map Priority (+5.6%),Neutral,Even Across Ranks,44
+route-66,A,baptiste,2.3,1.3,Popular (+1.3%),Favorable,Even Across Ranks,44
+route-66,D,bastion,-4.9,0.54,Standard (+0.5%),Unfavorable,Better in Masters,44
+route-66,B,brigitte,0.21,0.04,Standard (+0.0%),Neutral,Even Across Ranks,42
+route-66,A,cassidy,1.28,-2.63,Niche (-2.6%),Favorable,Better in GM+,44
+route-66,B,dmon,0.54,-1.68,Niche (-1.7%),Neutral,Better in GM+,8
+route-66,C,domina,-1.3,-0.07,Standard (-0.1%),Unfavorable,Even Across Ranks,43
+route-66,A,doomfist,1.79,-0.93,Standard (-0.9%),Specialist,Better in GM+,43
+route-66,A,dva,1.98,0.95,Standard (+0.9%),Favorable,Better in Masters,44
+route-66,C,echo,-2.06,-0.17,Standard (-0.2%),Deterrent,Better in Masters,44
+route-66,B,emre,-0.42,2.3,Popular (+2.3%),Neutral,Better in GM+,44
+route-66,B,freja,0.45,1.47,Popular (+1.5%),Neutral,Even Across Ranks,44
+route-66,B,genji,-0.47,1.54,Popular (+1.5%),Neutral,Even Across Ranks,44
+route-66,A,hanzo,1.44,1.47,Popular (+1.5%),Favorable,Better in Masters,43
+route-66,B,hazard,0.75,0.36,Standard (+0.4%),Neutral,Better in Masters,43
+route-66,B,illari,0.25,3.38,Map Priority (+3.4%),Neutral,Even Across Ranks,44
+route-66,C,jetpackcat,-1.25,-1.01,Niche (-1.0%),Unfavorable,Even Across Ranks,44
+route-66,D,junkerqueen,-3.26,-0.87,Standard (-0.9%),Deterrent,Better in Masters,37
+route-66,B,junkrat,-0.46,-0.02,Standard (-0.0%),Neutral,Even Across Ranks,41
+route-66,B,juno,0.7,-0.66,Standard (-0.7%),Neutral,Better in GM+,42
+route-66,D,kiriko,-3.35,-5.74,Niche (-5.7%),Deterrent,Better in Masters,44
+route-66,A,lifeweaver,1.39,1.25,Popular (+1.2%),Favorable,Even Across Ranks,41
+route-66,D,lucio,-5.97,-4.27,Niche (-4.3%),Deterrent,Even Across Ranks,42
+route-66,A,mauga,2.79,-1.4,Niche (-1.4%),Specialist,Better in GM+,43
+route-66,C,mei,-1.67,0.11,Standard (+0.1%),Unfavorable,Better in Masters,44
+route-66,S,mercy,4.32,2.77,Popular (+2.8%),Meta,Better in GM+,44
+route-66,D,mizuki,-3.31,-1.97,Niche (-2.0%),Deterrent,Better in Masters,44
+route-66,D,moira,-4.05,-2.07,Niche (-2.1%),Deterrent,Better in Masters,44
+route-66,D,orisa,-3.04,-1.63,Niche (-1.6%),Deterrent,Even Across Ranks,43
+route-66,B,pharah,-0.92,-1.31,Niche (-1.3%),Neutral,Better in Masters,43
+route-66,C,ramattra,-2.45,-1.45,Niche (-1.4%),Deterrent,Better in Masters,40
+route-66,D,reaper,-3.94,-1.31,Niche (-1.3%),Deterrent,Better in Masters,44
+route-66,D,reinhardt,-4.24,-1.39,Niche (-1.4%),Deterrent,Even Across Ranks,42
+route-66,B,roadhog,-0.51,1.23,Popular (+1.2%),Neutral,Even Across Ranks,44
+route-66,S,shion,3.28,-3.86,Niche (-3.9%),Specialist,Even Across Ranks,20
+route-66,A,sierra,1.87,0.71,Standard (+0.7%),Favorable,Better in GM+,28
+route-66,B,sigma,-0.74,2.72,Popular (+2.7%),Neutral,Better in GM+,44
+route-66,B,sojourn,0.61,-2.41,Niche (-2.4%),Neutral,Even Across Ranks,44
+route-66,B,soldier76,-0.69,-1.45,Niche (-1.5%),Neutral,Even Across Ranks,44
+route-66,S,sombra,3.56,0.04,Standard (+0.0%),Favorable,Even Across Ranks,42
+route-66,C,symmetra,-2.64,-0.62,Standard (-0.6%),Deterrent,Better in GM+,42
+route-66,A,torbjorn,2.47,0.47,Standard (+0.5%),Favorable,Even Across Ranks,43
+route-66,B,tracer,0.75,-4.04,Niche (-4.0%),Neutral,Better in GM+,44
+route-66,B,vendetta,0.62,-0.18,Standard (-0.2%),Neutral,Better in GM+,38
+route-66,C,venture,-1.83,-0.04,Standard (-0.0%),Deterrent,Better in GM+,42
+route-66,B,widowmaker,-0.06,2.47,Popular (+2.5%),Neutral,Even Across Ranks,44
+route-66,D,winston,-3.72,4.13,Map Priority (+4.1%),Trap Pick,Better in Masters,44
+route-66,B,wreckingball,1.17,-0.22,Standard (-0.2%),Neutral,Better in Masters,44
+route-66,B,wuyang,-0.23,-0.18,Standard (-0.2%),Neutral,Even Across Ranks,44
+route-66,B,zarya,-0.54,-1.27,Niche (-1.3%),Neutral,Better in Masters,44
+route-66,C,zenyatta,-1.96,0.38,Standard (+0.4%),Unfavorable,Even Across Ranks,43
+runasapi,D,ana,-4.83,-10.43,Niche (-10.4%),Deterrent,Even Across Ranks,44
+runasapi,A,anran,2.07,0.36,Standard (+0.4%),Favorable,Even Across Ranks,41
+runasapi,B,ashe,-0.16,-5.07,Niche (-5.1%),Neutral,Even Across Ranks,43
+runasapi,B,baptiste,-1.12,-2.24,Niche (-2.2%),Neutral,Even Across Ranks,42
+runasapi,B,bastion,0.54,-0.91,Standard (-0.9%),Neutral,Even Across Ranks,40
+runasapi,B,brigitte,-0.07,0.96,Standard (+1.0%),Neutral,Better in Masters,44
+runasapi,B,cassidy,-0.18,2.91,Popular (+2.9%),Neutral,Even Across Ranks,44
+runasapi,A,dmon,1.74,1.69,Popular (+1.7%),Meta,Better in Masters,8
+runasapi,A,domina,1.88,-0.44,Standard (-0.4%),Specialist,Even Across Ranks,43
+runasapi,C,doomfist,-1.33,0.19,Standard (+0.2%),Unfavorable,Even Across Ranks,43
+runasapi,B,dva,1.08,0.25,Standard (+0.3%),Neutral,Better in GM+,44
+runasapi,C,echo,-2.6,-2.5,Niche (-2.5%),Deterrent,Even Across Ranks,43
+runasapi,B,emre,0.61,0.98,Standard (+1.0%),Neutral,Even Across Ranks,44
+runasapi,D,freja,-5.08,-1.56,Niche (-1.6%),Deterrent,Even Across Ranks,42
+runasapi,B,genji,1.12,-1.41,Niche (-1.4%),Neutral,Even Across Ranks,43
+runasapi,D,hanzo,-3.84,-3.52,Niche (-3.5%),Deterrent,Better in Masters,42
+runasapi,B,hazard,-0.43,0.71,Standard (+0.7%),Neutral,Even Across Ranks,42
+runasapi,B,illari,0.39,-1.55,Niche (-1.5%),Neutral,Better in Masters,43
+runasapi,B,jetpackcat,0.46,0.48,Standard (+0.5%),Neutral,Better in Masters,44
+runasapi,A,junkerqueen,2.27,1.01,Popular (+1.0%),Favorable,Better in GM+,42
+runasapi,B,junkrat,-0.7,-1.11,Niche (-1.1%),Neutral,Better in GM+,39
+runasapi,A,juno,2.14,3.0,Popular (+3.0%),Meta,Even Across Ranks,43
+runasapi,S,kiriko,3.38,8.26,Map Priority (+8.3%),Meta,Better in GM+,44
+runasapi,A,lifeweaver,2.89,-0.89,Standard (-0.9%),Specialist,Even Across Ranks,42
+runasapi,B,lucio,1.11,3.95,Map Priority (+3.9%),Neutral,Even Across Ranks,43
+runasapi,A,mauga,2.24,2.33,Popular (+2.3%),Meta,Better in Masters,42
+runasapi,A,mei,2.31,-1.23,Niche (-1.2%),Specialist,Better in GM+,42
+runasapi,D,mercy,-3.09,-1.6,Niche (-1.6%),Deterrent,Even Across Ranks,41
+runasapi,A,mizuki,2.1,2.22,Popular (+2.2%),Meta,Better in Masters,44
+runasapi,C,moira,-1.43,0.82,Standard (+0.8%),Unfavorable,Better in GM+,43
+runasapi,B,orisa,-1.15,0.19,Standard (+0.2%),Neutral,Better in GM+,43
+runasapi,B,pharah,-0.68,-1.42,Niche (-1.4%),Neutral,Even Across Ranks,40
+runasapi,C,ramattra,-2.56,-0.3,Standard (-0.3%),Deterrent,Even Across Ranks,43
+runasapi,B,reaper,-0.84,-0.7,Standard (-0.7%),Neutral,Better in Masters,43
+runasapi,S,reinhardt,3.87,0.33,Standard (+0.3%),Favorable,Even Across Ranks,43
+runasapi,B,roadhog,0.87,0.04,Standard (+0.0%),Neutral,Even Across Ranks,43
+runasapi,B,shion,-0.95,7.43,Map Priority (+7.4%),Neutral,Even Across Ranks,20
+runasapi,B,sierra,0.24,-0.22,Standard (-0.2%),Neutral,Better in GM+,26
+runasapi,D,sigma,-5.09,-3.14,Niche (-3.1%),Deterrent,Even Across Ranks,44
+runasapi,B,sojourn,-0.45,3.15,Map Priority (+3.1%),Neutral,Even Across Ranks,44
+runasapi,S,soldier76,3.94,6.85,Map Priority (+6.9%),Meta,Even Across Ranks,44
+runasapi,B,sombra,1.08,0.46,Standard (+0.5%),Neutral,Even Across Ranks,43
+runasapi,C,symmetra,-1.68,-0.78,Standard (-0.8%),Deterrent,Even Across Ranks,40
+runasapi,A,torbjorn,1.28,-0.51,Standard (-0.5%),Favorable,Better in Masters,41
+runasapi,B,tracer,0.79,7.53,Map Priority (+7.5%),Neutral,Even Across Ranks,44
+runasapi,A,vendetta,1.93,0.79,Standard (+0.8%),Favorable,Better in GM+,40
+runasapi,A,venture,1.2,-0.01,Standard (-0.0%),Favorable,Better in GM+,43
+runasapi,D,widowmaker,-17.53,-3.94,Niche (-3.9%),Deterrent,Even Across Ranks,44
+runasapi,B,winston,0.16,-1.83,Niche (-1.8%),Neutral,Even Across Ranks,44
+runasapi,A,wreckingball,1.47,1.32,Popular (+1.3%),Favorable,Better in Masters,43
+runasapi,B,wuyang,0.95,1.64,Popular (+1.6%),Neutral,Better in GM+,44
+runasapi,B,zarya,0.66,0.2,Standard (+0.2%),Neutral,Even Across Ranks,42
+runasapi,C,zenyatta,-1.81,-3.44,Niche (-3.4%),Deterrent,Even Across Ranks,44
+samoa,C,ana,-2.0,-5.83,Niche (-5.8%),Deterrent,Even Across Ranks,44
+samoa,A,anran,2.04,0.77,Standard (+0.8%),Favorable,Better in Masters,43
+samoa,B,ashe,-0.37,-4.19,Niche (-4.2%),Neutral,Even Across Ranks,44
+samoa,A,baptiste,1.2,-1.07,Niche (-1.1%),Favorable,Even Across Ranks,43
+samoa,B,bastion,1.04,-0.42,Standard (-0.4%),Neutral,Even Across Ranks,42
+samoa,B,brigitte,-0.5,1.02,Popular (+1.0%),Neutral,Better in GM+,44
+samoa,A,cassidy,1.71,6.81,Map Priority (+6.8%),Meta,Even Across Ranks,44
+samoa,B,dmon,0.79,1.68,Popular (+1.7%),Neutral,Better in GM+,8
+samoa,B,domina,0.17,-0.25,Standard (-0.2%),Neutral,Even Across Ranks,44
+samoa,B,doomfist,0.24,0.6,Standard (+0.6%),Neutral,Even Across Ranks,44
+samoa,C,dva,-1.72,-1.03,Niche (-1.0%),Deterrent,Even Across Ranks,44
+samoa,C,echo,-1.92,-2.22,Niche (-2.2%),Deterrent,Better in GM+,44
+samoa,B,emre,0.8,-1.05,Niche (-1.0%),Neutral,Even Across Ranks,44
+samoa,C,freja,-2.26,-1.57,Niche (-1.6%),Deterrent,Even Across Ranks,44
+samoa,C,genji,-2.64,-1.54,Niche (-1.5%),Deterrent,Even Across Ranks,44
+samoa,B,hanzo,0.12,-2.53,Niche (-2.5%),Neutral,Even Across Ranks,43
+samoa,B,hazard,1.01,0.44,Standard (+0.4%),Neutral,Better in Masters,44
+samoa,B,illari,0.03,-1.97,Niche (-2.0%),Neutral,Even Across Ranks,44
+samoa,C,jetpackcat,-2.4,-0.43,Standard (-0.4%),Deterrent,Even Across Ranks,44
+samoa,B,junkerqueen,0.55,1.0,Popular (+1.0%),Neutral,Better in Masters,43
+samoa,C,junkrat,-2.21,-0.27,Standard (-0.3%),Deterrent,Even Across Ranks,43
+samoa,C,juno,-1.59,0.49,Standard (+0.5%),Unfavorable,Even Across Ranks,44
+samoa,B,kiriko,0.4,4.07,Map Priority (+4.1%),Neutral,Even Across Ranks,44
+samoa,A,lifeweaver,1.96,-0.82,Standard (-0.8%),Specialist,Even Across Ranks,43
+samoa,B,lucio,0.32,2.52,Popular (+2.5%),Neutral,Even Across Ranks,44
+samoa,B,mauga,0.62,1.32,Popular (+1.3%),Neutral,Better in GM+,42
+samoa,B,mei,-0.61,-0.34,Standard (-0.3%),Neutral,Even Across Ranks,43
+samoa,B,mercy,-0.65,-1.65,Niche (-1.7%),Neutral,Better in Masters,43
+samoa,A,mizuki,1.58,2.24,Popular (+2.2%),Meta,Even Across Ranks,44
+samoa,A,moira,2.21,1.61,Popular (+1.6%),Meta,Even Across Ranks,44
+samoa,B,orisa,0.23,1.04,Popular (+1.0%),Neutral,Even Across Ranks,44
+samoa,C,pharah,-1.61,-0.67,Standard (-0.7%),Deterrent,Even Across Ranks,43
+samoa,B,ramattra,0.83,0.32,Standard (+0.3%),Neutral,Better in GM+,42
+samoa,C,reaper,-1.3,1.93,Popular (+1.9%),Unfavorable,Even Across Ranks,44
+samoa,B,reinhardt,0.34,0.69,Standard (+0.7%),Neutral,Even Across Ranks,44
+samoa,S,roadhog,4.56,0.4,Standard (+0.4%),Favorable,Even Across Ranks,44
+samoa,B,shion,0.94,4.95,Map Priority (+5.0%),Neutral,Even Across Ranks,20
+samoa,B,sierra,-0.22,-0.5,Standard (-0.5%),Neutral,Even Across Ranks,25
+samoa,C,sigma,-1.33,-2.89,Niche (-2.9%),Unfavorable,Even Across Ranks,44
+samoa,B,sojourn,1.05,1.86,Popular (+1.9%),Neutral,Even Across Ranks,44
+samoa,C,soldier76,-1.25,-1.47,Niche (-1.5%),Unfavorable,Even Across Ranks,44
+samoa,B,sombra,1.18,-0.01,Standard (-0.0%),Neutral,Better in GM+,44
+samoa,A,symmetra,1.89,0.88,Standard (+0.9%),Favorable,Even Across Ranks,43
+samoa,A,torbjorn,1.89,-0.08,Standard (-0.1%),Specialist,Even Across Ranks,44
+samoa,A,tracer,1.5,6.19,Map Priority (+6.2%),Favorable,Even Across Ranks,44
+samoa,C,vendetta,-1.42,-0.04,Standard (-0.0%),Unfavorable,Better in Masters,40
+samoa,B,venture,-0.67,0.3,Standard (+0.3%),Neutral,Better in Masters,43
+samoa,D,widowmaker,-6.37,-4.69,Niche (-4.7%),Deterrent,Even Across Ranks,37
+samoa,D,winston,-3.05,-3.9,Niche (-3.9%),Deterrent,Better in Masters,44
+samoa,C,wreckingball,-1.48,0.29,Standard (+0.3%),Unfavorable,Even Across Ranks,43
+samoa,A,wuyang,1.61,1.32,Popular (+1.3%),Favorable,Even Across Ranks,44
+samoa,B,zarya,0.94,1.51,Popular (+1.5%),Neutral,Even Across Ranks,44
+samoa,B,zenyatta,-0.08,-1.9,Niche (-1.9%),Neutral,Even Across Ranks,44
+shambali-monastery,C,ana,-2.05,2.86,Popular (+2.9%),Trap Pick,Even Across Ranks,44
+shambali-monastery,B,anran,-0.36,0.17,Standard (+0.2%),Neutral,Even Across Ranks,42
+shambali-monastery,B,ashe,-0.4,1.68,Popular (+1.7%),Neutral,Even Across Ranks,44
+shambali-monastery,A,baptiste,1.67,2.26,Popular (+2.3%),Meta,Better in GM+,44
+shambali-monastery,A,bastion,2.13,1.5,Popular (+1.5%),Favorable,Better in Masters,42
+shambali-monastery,B,brigitte,-0.47,-2.28,Niche (-2.3%),Neutral,Even Across Ranks,43
+shambali-monastery,C,cassidy,-2.78,-3.52,Niche (-3.5%),Deterrent,Even Across Ranks,44
+shambali-monastery,D,dmon,-4.08,1.38,Popular (+1.4%),Trap Pick,Better in Masters,8
+shambali-monastery,B,domina,-1.18,1.53,Popular (+1.5%),Neutral,Better in Masters,44
+shambali-monastery,C,doomfist,-2.32,-1.28,Niche (-1.3%),Deterrent,Better in Masters,44
+shambali-monastery,B,dva,0.6,-2.1,Niche (-2.1%),Neutral,Even Across Ranks,43
+shambali-monastery,B,echo,0.53,3.82,Map Priority (+3.8%),Neutral,Better in GM+,44
+shambali-monastery,B,emre,0.48,2.62,Popular (+2.6%),Neutral,Even Across Ranks,44
+shambali-monastery,B,freja,0.88,0.66,Standard (+0.7%),Neutral,Even Across Ranks,43
+shambali-monastery,B,genji,-0.17,-0.78,Standard (-0.8%),Neutral,Better in Masters,44
+shambali-monastery,B,hanzo,0.37,1.61,Popular (+1.6%),Neutral,Better in Masters,43
+shambali-monastery,C,hazard,-1.52,-2.81,Niche (-2.8%),Deterrent,Better in GM+,43
+shambali-monastery,B,illari,0.26,2.8,Popular (+2.8%),Neutral,Better in Masters,44
+shambali-monastery,B,jetpackcat,0.85,0.01,Standard (+0.0%),Neutral,Better in GM+,44
+shambali-monastery,C,junkerqueen,-1.21,-0.45,Standard (-0.4%),Unfavorable,Better in Masters,39
+shambali-monastery,A,junkrat,2.94,1.53,Popular (+1.5%),Meta,Even Across Ranks,41
+shambali-monastery,B,juno,0.39,-0.0,Standard (-0.0%),Neutral,Even Across Ranks,44
+shambali-monastery,B,kiriko,-1.04,-5.85,Niche (-5.9%),Neutral,Even Across Ranks,44
+shambali-monastery,C,lifeweaver,-1.88,0.99,Standard (+1.0%),Unfavorable,Better in Masters,42
+shambali-monastery,D,lucio,-5.41,-3.57,Niche (-3.6%),Deterrent,Better in Masters,42
+shambali-monastery,D,mauga,-3.42,-0.73,Standard (-0.7%),Deterrent,Better in Masters,42
+shambali-monastery,S,mei,3.03,1.59,Popular (+1.6%),Meta,Even Across Ranks,43
+shambali-monastery,C,mercy,-2.85,0.75,Standard (+0.7%),Unfavorable,Even Across Ranks,41
+shambali-monastery,S,mizuki,3.18,-1.08,Niche (-1.1%),Specialist,Even Across Ranks,43
+shambali-monastery,B,moira,-0.07,-0.74,Standard (-0.7%),Neutral,Better in Masters,42
+shambali-monastery,A,orisa,1.53,1.35,Popular (+1.4%),Favorable,Even Across Ranks,44
+shambali-monastery,B,pharah,1.04,1.65,Popular (+1.6%),Neutral,Better in Masters,44
+shambali-monastery,S,ramattra,4.42,3.22,Map Priority (+3.2%),Meta,Even Across Ranks,43
+shambali-monastery,A,reaper,1.76,-1.26,Niche (-1.3%),Specialist,Better in Masters,43
+shambali-monastery,S,reinhardt,5.29,2.02,Popular (+2.0%),Meta,Better in GM+,43
+shambali-monastery,B,roadhog,-0.26,-0.79,Standard (-0.8%),Neutral,Better in GM+,42
+shambali-monastery,B,shion,0.52,-2.98,Niche (-3.0%),Neutral,Even Across Ranks,20
+shambali-monastery,B,sierra,-0.16,0.36,Standard (+0.4%),Neutral,Even Across Ranks,28
+shambali-monastery,A,sigma,2.62,6.74,Map Priority (+6.7%),Meta,Even Across Ranks,44
+shambali-monastery,B,sojourn,0.18,0.61,Standard (+0.6%),Neutral,Better in GM+,44
+shambali-monastery,C,soldier76,-2.72,-2.07,Niche (-2.1%),Deterrent,Even Across Ranks,44
+shambali-monastery,A,sombra,2.86,-0.42,Standard (-0.4%),Specialist,Better in Masters,40
+shambali-monastery,C,symmetra,-2.1,-0.12,Standard (-0.1%),Deterrent,Even Across Ranks,42
+shambali-monastery,C,torbjorn,-2.73,0.1,Standard (+0.1%),Unfavorable,Better in Masters,42
+shambali-monastery,C,tracer,-2.28,-7.42,Niche (-7.4%),Deterrent,Better in GM+,44
+shambali-monastery,A,vendetta,2.6,-0.08,Standard (-0.1%),Specialist,Even Across Ranks,34
+shambali-monastery,A,venture,1.22,0.45,Standard (+0.4%),Favorable,Even Across Ranks,40
+shambali-monastery,C,widowmaker,-1.67,0.53,Standard (+0.5%),Unfavorable,Even Across Ranks,42
+shambali-monastery,D,winston,-5.63,-5.59,Niche (-5.6%),Deterrent,Even Across Ranks,43
+shambali-monastery,B,wreckingball,-0.31,-1.69,Niche (-1.7%),Neutral,Even Across Ranks,43
+shambali-monastery,A,wuyang,2.9,2.33,Popular (+2.3%),Meta,Better in GM+,44
+shambali-monastery,C,zarya,-1.97,0.87,Standard (+0.9%),Unfavorable,Better in Masters,44
+shambali-monastery,C,zenyatta,-1.86,2.18,Popular (+2.2%),Trap Pick,Even Across Ranks,44
+suravasa,D,ana,-3.15,-11.31,Niche (-11.3%),Deterrent,Even Across Ranks,44
+suravasa,A,anran,1.99,0.73,Standard (+0.7%),Favorable,Even Across Ranks,44
+suravasa,B,ashe,-0.76,-5.93,Niche (-5.9%),Neutral,Even Across Ranks,43
+suravasa,C,baptiste,-2.15,-2.22,Niche (-2.2%),Deterrent,Even Across Ranks,44
+suravasa,B,bastion,-0.18,-1.39,Niche (-1.4%),Neutral,Even Across Ranks,41
+suravasa,A,brigitte,2.43,1.39,Popular (+1.4%),Favorable,Even Across Ranks,44
+suravasa,B,cassidy,-0.84,4.86,Map Priority (+4.9%),Neutral,Even Across Ranks,44
+suravasa,B,dmon,-0.23,0.61,Standard (+0.6%),Neutral,Even Across Ranks,8
+suravasa,A,domina,2.06,-0.54,Standard (-0.5%),Specialist,Even Across Ranks,44
+suravasa,B,doomfist,0.06,0.78,Standard (+0.8%),Neutral,Even Across Ranks,44
+suravasa,D,dva,-3.54,-0.21,Standard (-0.2%),Deterrent,Even Across Ranks,44
+suravasa,B,echo,0.66,-2.49,Niche (-2.5%),Neutral,Even Across Ranks,44
+suravasa,B,emre,-0.88,-2.14,Niche (-2.1%),Neutral,Even Across Ranks,44
+suravasa,D,freja,-3.12,-1.84,Niche (-1.8%),Deterrent,Even Across Ranks,44
+suravasa,B,genji,1.2,-0.03,Standard (-0.0%),Neutral,Even Across Ranks,43
+suravasa,C,hanzo,-2.14,-2.94,Niche (-2.9%),Deterrent,Better in GM+,44
+suravasa,B,hazard,0.49,1.13,Popular (+1.1%),Neutral,Even Across Ranks,43
+suravasa,B,illari,0.22,-2.89,Niche (-2.9%),Neutral,Better in GM+,44
+suravasa,A,jetpackcat,2.75,0.22,Standard (+0.2%),Favorable,Better in Masters,43
+suravasa,S,junkerqueen,3.59,1.67,Popular (+1.7%),Meta,Better in Masters,43
+suravasa,B,junkrat,-0.84,-0.62,Standard (-0.6%),Neutral,Even Across Ranks,42
+suravasa,B,juno,-1.03,0.66,Standard (+0.7%),Neutral,Better in Masters,44
+suravasa,A,kiriko,2.96,8.14,Map Priority (+8.1%),Meta,Even Across Ranks,44
+suravasa,C,lifeweaver,-1.4,-1.2,Niche (-1.2%),Unfavorable,Better in Masters,43
+suravasa,S,lucio,3.81,5.83,Map Priority (+5.8%),Meta,Better in Masters,43
+suravasa,A,mauga,1.64,1.65,Popular (+1.7%),Meta,Even Across Ranks,43
+suravasa,B,mei,-0.03,-0.84,Standard (-0.8%),Neutral,Better in Masters,44
+suravasa,C,mercy,-1.88,-2.21,Niche (-2.2%),Deterrent,Better in Masters,43
+suravasa,C,mizuki,-1.42,3.29,Map Priority (+3.3%),Unfavorable,Even Across Ranks,44
+suravasa,B,moira,-0.66,3.0,Map Priority (+3.0%),Neutral,Even Across Ranks,43
+suravasa,B,orisa,-0.39,0.51,Standard (+0.5%),Neutral,Better in GM+,44
+suravasa,A,pharah,2.2,-0.88,Standard (-0.9%),Specialist,Even Across Ranks,43
+suravasa,A,ramattra,2.54,-0.31,Standard (-0.3%),Specialist,Even Across Ranks,43
+suravasa,B,reaper,0.97,2.0,Popular (+2.0%),Neutral,Even Across Ranks,44
+suravasa,B,reinhardt,1.01,0.2,Standard (+0.2%),Neutral,Better in Masters,44
+suravasa,C,roadhog,-2.41,-0.12,Standard (-0.1%),Deterrent,Even Across Ranks,44
+suravasa,B,shion,0.65,6.76,Map Priority (+6.8%),Neutral,Even Across Ranks,20
+suravasa,A,sierra,1.66,-0.51,Standard (-0.5%),Specialist,Even Across Ranks,26
+suravasa,D,sigma,-4.75,-5.18,Niche (-5.2%),Deterrent,Better in Masters,44
+suravasa,B,sojourn,0.87,4.11,Map Priority (+4.1%),Neutral,Even Across Ranks,44
+suravasa,B,soldier76,1.15,1.97,Popular (+2.0%),Neutral,Even Across Ranks,43
+suravasa,B,sombra,-0.28,0.43,Standard (+0.4%),Neutral,Even Across Ranks,43
+suravasa,S,symmetra,3.47,-0.14,Standard (-0.1%),Specialist,Even Across Ranks,42
+suravasa,B,torbjorn,-0.03,-0.11,Standard (-0.1%),Neutral,Better in Masters,44
+suravasa,B,tracer,0.31,7.33,Map Priority (+7.3%),Neutral,Even Across Ranks,44
+suravasa,B,vendetta,0.03,0.3,Standard (+0.3%),Neutral,Even Across Ranks,40
+suravasa,C,venture,-1.28,0.17,Standard (+0.2%),Unfavorable,Better in Masters,43
+suravasa,D,widowmaker,-11.91,-5.27,Niche (-5.3%),Deterrent,Even Across Ranks,37
+suravasa,B,winston,0.81,-2.19,Niche (-2.2%),Neutral,Better in Masters,44
+suravasa,S,wreckingball,3.02,1.51,Popular (+1.5%),Meta,Even Across Ranks,44
+suravasa,B,wuyang,-0.88,0.71,Standard (+0.7%),Neutral,Better in Masters,44
+suravasa,B,zarya,-0.53,0.54,Standard (+0.5%),Neutral,Better in GM+,44
+suravasa,B,zenyatta,-0.01,-3.23,Niche (-3.2%),Neutral,Better in GM+,44
+watchpoint-gibraltar,A,ana,2.39,9.98,Map Priority (+10.0%),Meta,Even Across Ranks,44
+watchpoint-gibraltar,A,anran,2.52,-0.66,Standard (-0.7%),Specialist,Even Across Ranks,42
+watchpoint-gibraltar,A,ashe,1.31,7.49,Map Priority (+7.5%),Favorable,Even Across Ranks,44
+watchpoint-gibraltar,A,baptiste,2.23,-0.31,Standard (-0.3%),Specialist,Even Across Ranks,44
+watchpoint-gibraltar,B,bastion,0.44,-0.03,Standard (-0.0%),Neutral,Even Across Ranks,42
+watchpoint-gibraltar,A,brigitte,1.96,4.74,Map Priority (+4.7%),Meta,Better in Masters,44
+watchpoint-gibraltar,B,cassidy,0.33,-3.22,Niche (-3.2%),Neutral,Even Across Ranks,44
+watchpoint-gibraltar,C,dmon,-2.53,-3.91,Niche (-3.9%),Deterrent,Better in GM+,8
+watchpoint-gibraltar,D,domina,-4.53,-2.13,Niche (-2.1%),Deterrent,Better in GM+,38
+watchpoint-gibraltar,B,doomfist,-1.1,0.23,Standard (+0.2%),Neutral,Better in Masters,44
+watchpoint-gibraltar,S,dva,3.64,2.68,Popular (+2.7%),Meta,Even Across Ranks,43
+watchpoint-gibraltar,A,echo,1.33,1.18,Popular (+1.2%),Favorable,Better in Masters,44
+watchpoint-gibraltar,B,emre,0.33,0.39,Standard (+0.4%),Neutral,Even Across Ranks,44
+watchpoint-gibraltar,A,freja,2.09,1.61,Popular (+1.6%),Meta,Better in Masters,44
+watchpoint-gibraltar,B,genji,0.29,2.83,Popular (+2.8%),Neutral,Even Across Ranks,44
+watchpoint-gibraltar,C,hanzo,-1.36,0.83,Standard (+0.8%),Unfavorable,Even Across Ranks,44
+watchpoint-gibraltar,A,hazard,2.27,3.9,Map Priority (+3.9%),Meta,Even Across Ranks,44
+watchpoint-gibraltar,B,illari,0.28,0.99,Standard (+1.0%),Neutral,Better in Masters,44
+watchpoint-gibraltar,B,jetpackcat,-0.25,1.38,Popular (+1.4%),Neutral,Even Across Ranks,44
+watchpoint-gibraltar,C,junkerqueen,-2.9,-1.79,Niche (-1.8%),Deterrent,Even Across Ranks,34
+watchpoint-gibraltar,A,junkrat,1.8,0.3,Standard (+0.3%),Favorable,Better in GM+,42
+watchpoint-gibraltar,C,juno,-1.81,-1.31,Niche (-1.3%),Deterrent,Better in Masters,42
+watchpoint-gibraltar,B,kiriko,-0.68,-2.39,Niche (-2.4%),Neutral,Even Across Ranks,44
+watchpoint-gibraltar,C,lifeweaver,-1.21,1.56,Popular (+1.6%),Unfavorable,Even Across Ranks,44
+watchpoint-gibraltar,D,lucio,-7.75,-4.76,Niche (-4.8%),Deterrent,Even Across Ranks,40
+watchpoint-gibraltar,D,mauga,-3.46,-1.5,Niche (-1.5%),Deterrent,Even Across Ranks,42
+watchpoint-gibraltar,B,mei,-0.19,-1.55,Niche (-1.6%),Neutral,Better in GM+,40
+watchpoint-gibraltar,A,mercy,2.83,1.61,Popular (+1.6%),Meta,Better in Masters,43
+watchpoint-gibraltar,B,mizuki,-0.29,-2.66,Niche (-2.7%),Neutral,Better in GM+,44
+watchpoint-gibraltar,C,moira,-2.24,-2.85,Niche (-2.8%),Deterrent,Better in Masters,44
+watchpoint-gibraltar,D,orisa,-3.67,-3.3,Niche (-3.3%),Deterrent,Better in GM+,44
+watchpoint-gibraltar,B,pharah,-0.11,-1.81,Niche (-1.8%),Neutral,Even Across Ranks,43
+watchpoint-gibraltar,C,ramattra,-1.86,-3.07,Niche (-3.1%),Deterrent,Better in GM+,17
+watchpoint-gibraltar,C,reaper,-1.71,1.23,Popular (+1.2%),Trap Pick,Even Across Ranks,44
+watchpoint-gibraltar,D,reinhardt,-7.74,-3.17,Niche (-3.2%),Deterrent,Better in Masters,40
+watchpoint-gibraltar,B,roadhog,-1.19,1.36,Popular (+1.4%),Neutral,Better in Masters,44
+watchpoint-gibraltar,A,shion,2.1,-6.78,Niche (-6.8%),Specialist,Better in GM+,20
+watchpoint-gibraltar,B,sierra,-0.07,0.14,Standard (+0.1%),Neutral,Better in Masters,28
+watchpoint-gibraltar,D,sigma,-7.95,-5.65,Niche (-5.7%),Deterrent,Better in Masters,44
+watchpoint-gibraltar,C,sojourn,-2.44,-9.95,Niche (-9.9%),Deterrent,Even Across Ranks,44
+watchpoint-gibraltar,B,soldier76,-0.42,-0.52,Standard (-0.5%),Neutral,Better in GM+,44
+watchpoint-gibraltar,B,sombra,-1.05,0.14,Standard (+0.1%),Neutral,Even Across Ranks,42
+watchpoint-gibraltar,D,symmetra,-4.38,-0.91,Standard (-0.9%),Deterrent,Even Across Ranks,42
+watchpoint-gibraltar,C,torbjorn,-2.66,0.16,Standard (+0.2%),Unfavorable,Better in GM+,44
+watchpoint-gibraltar,B,tracer,0.65,2.43,Popular (+2.4%),Neutral,Even Across Ranks,44
+watchpoint-gibraltar,D,vendetta,-5.6,-0.17,Standard (-0.2%),Deterrent,Better in Masters,38
+watchpoint-gibraltar,B,venture,-1.17,-0.17,Standard (-0.2%),Neutral,Even Across Ranks,42
+watchpoint-gibraltar,B,widowmaker,-0.37,3.31,Map Priority (+3.3%),Neutral,Even Across Ranks,43
+watchpoint-gibraltar,A,winston,2.94,16.25,Map Priority (+16.3%),Meta,Even Across Ranks,44
+watchpoint-gibraltar,S,wreckingball,4.28,0.57,Standard (+0.6%),Favorable,Better in GM+,43
+watchpoint-gibraltar,B,wuyang,-0.81,-4.21,Niche (-4.2%),Neutral,Even Across Ranks,44
+watchpoint-gibraltar,D,zarya,-5.55,-4.05,Niche (-4.0%),Deterrent,Better in GM+,44
+watchpoint-gibraltar,D,zenyatta,-3.26,-2.27,Niche (-2.3%),Deterrent,Even Across Ranks,44

@@ -1,0 +1,6468 @@
+{
+  "Ramattra": {
+    "new-queen-street": {
+      "delta": 1.08,
+      "data_points": 39
+    },
+    "lijiang-tower": {
+      "delta": 0.7,
+      "data_points": 44
+    },
+    "samoa": {
+      "delta": 0.83,
+      "data_points": 42
+    },
+    "nepal": {
+      "delta": 1.72,
+      "data_points": 44
+    },
+    "suravasa": {
+      "delta": 2.54,
+      "data_points": 43
+    },
+    "circuit-royal": {
+      "delta": 1.02,
+      "data_points": 43
+    },
+    "aatlis": {
+      "delta": 0.63,
+      "data_points": 44
+    },
+    "new-junk-city": {
+      "delta": 0.25,
+      "data_points": 44
+    },
+    "colosseo": {
+      "delta": -2.99,
+      "data_points": 42
+    },
+    "oasis": {
+      "delta": 0.69,
+      "data_points": 43
+    },
+    "ilios": {
+      "delta": -2.17,
+      "data_points": 32
+    },
+    "hollywood": {
+      "delta": -0.23,
+      "data_points": 44
+    },
+    "havana": {
+      "delta": -2.33,
+      "data_points": 42
+    },
+    "kings-row": {
+      "delta": -1.06,
+      "data_points": 43
+    },
+    "shambali-monastery": {
+      "delta": 4.42,
+      "data_points": 43
+    },
+    "rialto": {
+      "delta": 0.04,
+      "data_points": 42
+    },
+    "blizzard-world": {
+      "delta": -5.28,
+      "data_points": 42
+    },
+    "midtown": {
+      "delta": -1.29,
+      "data_points": 44
+    },
+    "runasapi": {
+      "delta": -2.56,
+      "data_points": 43
+    },
+    "route-66": {
+      "delta": -2.45,
+      "data_points": 40
+    },
+    "junkertown": {
+      "delta": -4.02,
+      "data_points": 41
+    },
+    "watchpoint-gibraltar": {
+      "delta": -1.86,
+      "data_points": 17
+    },
+    "dorado": {
+      "delta": -7.55,
+      "data_points": 25
+    },
+    "esperanca": {
+      "delta": -3.44,
+      "data_points": 41
+    },
+    "numbani": {
+      "delta": -4.78,
+      "data_points": 36
+    },
+    "antarctic-peninsula": {
+      "delta": 2.24,
+      "data_points": 32
+    },
+    "neon-junction": {
+      "delta": 1.59,
+      "data_points": 20
+    },
+    "eichenwalde": {
+      "delta": 3.73,
+      "data_points": 7
+    },
+    "busan": {
+      "delta": -3.4,
+      "data_points": 8
+    },
+    "paraiso": {
+      "delta": 1.0,
+      "data_points": 7
+    }
+  },
+  "Venture": {
+    "midtown": {
+      "delta": 3.02,
+      "data_points": 43
+    },
+    "esperanca": {
+      "delta": 1.21,
+      "data_points": 40
+    },
+    "new-queen-street": {
+      "delta": 1.15,
+      "data_points": 43
+    },
+    "new-junk-city": {
+      "delta": 2.13,
+      "data_points": 42
+    },
+    "kings-row": {
+      "delta": 1.87,
+      "data_points": 43
+    },
+    "suravasa": {
+      "delta": -1.28,
+      "data_points": 43
+    },
+    "rialto": {
+      "delta": -1.54,
+      "data_points": 43
+    },
+    "aatlis": {
+      "delta": 0.51,
+      "data_points": 44
+    },
+    "colosseo": {
+      "delta": -0.34,
+      "data_points": 44
+    },
+    "samoa": {
+      "delta": -0.67,
+      "data_points": 43
+    },
+    "shambali-monastery": {
+      "delta": 1.22,
+      "data_points": 40
+    },
+    "nepal": {
+      "delta": 0.79,
+      "data_points": 44
+    },
+    "ilios": {
+      "delta": -0.43,
+      "data_points": 44
+    },
+    "runasapi": {
+      "delta": 1.2,
+      "data_points": 43
+    },
+    "circuit-royal": {
+      "delta": -1.51,
+      "data_points": 44
+    },
+    "oasis": {
+      "delta": -1.43,
+      "data_points": 44
+    },
+    "lijiang-tower": {
+      "delta": -2.14,
+      "data_points": 43
+    },
+    "blizzard-world": {
+      "delta": 2.39,
+      "data_points": 42
+    },
+    "dorado": {
+      "delta": 2.55,
+      "data_points": 42
+    },
+    "watchpoint-gibraltar": {
+      "delta": -1.17,
+      "data_points": 42
+    },
+    "junkertown": {
+      "delta": 0.06,
+      "data_points": 43
+    },
+    "hollywood": {
+      "delta": -5.05,
+      "data_points": 43
+    },
+    "route-66": {
+      "delta": -1.83,
+      "data_points": 42
+    },
+    "havana": {
+      "delta": -0.47,
+      "data_points": 41
+    },
+    "numbani": {
+      "delta": -3.32,
+      "data_points": 43
+    },
+    "antarctic-peninsula": {
+      "delta": -1.48,
+      "data_points": 31
+    },
+    "neon-junction": {
+      "delta": 1.49,
+      "data_points": 20
+    },
+    "paraiso": {
+      "delta": -1.67,
+      "data_points": 8
+    },
+    "busan": {
+      "delta": 2.97,
+      "data_points": 8
+    },
+    "eichenwalde": {
+      "delta": 8.34,
+      "data_points": 8
+    }
+  },
+  "Sigma": {
+    "numbani": {
+      "delta": -1.16,
+      "data_points": 43
+    },
+    "circuit-royal": {
+      "delta": 8.08,
+      "data_points": 44
+    },
+    "havana": {
+      "delta": 6.47,
+      "data_points": 43
+    },
+    "lijiang-tower": {
+      "delta": -1.81,
+      "data_points": 44
+    },
+    "junkertown": {
+      "delta": 3.71,
+      "data_points": 44
+    },
+    "rialto": {
+      "delta": 2.24,
+      "data_points": 44
+    },
+    "shambali-monastery": {
+      "delta": 2.62,
+      "data_points": 44
+    },
+    "midtown": {
+      "delta": -0.5,
+      "data_points": 44
+    },
+    "blizzard-world": {
+      "delta": -1.16,
+      "data_points": 44
+    },
+    "nepal": {
+      "delta": -0.16,
+      "data_points": 44
+    },
+    "samoa": {
+      "delta": -1.33,
+      "data_points": 44
+    },
+    "hollywood": {
+      "delta": -3.14,
+      "data_points": 44
+    },
+    "oasis": {
+      "delta": -4.19,
+      "data_points": 44
+    },
+    "kings-row": {
+      "delta": -0.14,
+      "data_points": 44
+    },
+    "route-66": {
+      "delta": -0.74,
+      "data_points": 44
+    },
+    "colosseo": {
+      "delta": -3.93,
+      "data_points": 44
+    },
+    "aatlis": {
+      "delta": -5.03,
+      "data_points": 44
+    },
+    "ilios": {
+      "delta": -5.01,
+      "data_points": 43
+    },
+    "dorado": {
+      "delta": -8.06,
+      "data_points": 44
+    },
+    "suravasa": {
+      "delta": -4.75,
+      "data_points": 44
+    },
+    "watchpoint-gibraltar": {
+      "delta": -7.95,
+      "data_points": 44
+    },
+    "new-junk-city": {
+      "delta": -3.0,
+      "data_points": 43
+    },
+    "new-queen-street": {
+      "delta": -5.53,
+      "data_points": 44
+    },
+    "esperanca": {
+      "delta": -5.78,
+      "data_points": 44
+    },
+    "runasapi": {
+      "delta": -5.09,
+      "data_points": 44
+    },
+    "antarctic-peninsula": {
+      "delta": -1.24,
+      "data_points": 32
+    },
+    "neon-junction": {
+      "delta": 0.2,
+      "data_points": 20
+    },
+    "busan": {
+      "delta": -0.52,
+      "data_points": 8
+    },
+    "paraiso": {
+      "delta": -3.66,
+      "data_points": 8
+    },
+    "eichenwalde": {
+      "delta": 0.97,
+      "data_points": 8
+    }
+  },
+  "Lifeweaver": {
+    "numbani": {
+      "delta": 2.12,
+      "data_points": 43
+    },
+    "new-queen-street": {
+      "delta": 1.08,
+      "data_points": 43
+    },
+    "esperanca": {
+      "delta": 0.64,
+      "data_points": 42
+    },
+    "runasapi": {
+      "delta": 2.89,
+      "data_points": 42
+    },
+    "watchpoint-gibraltar": {
+      "delta": -1.21,
+      "data_points": 44
+    },
+    "blizzard-world": {
+      "delta": -0.57,
+      "data_points": 44
+    },
+    "havana": {
+      "delta": 1.04,
+      "data_points": 42
+    },
+    "oasis": {
+      "delta": 0.38,
+      "data_points": 42
+    },
+    "midtown": {
+      "delta": 0.6,
+      "data_points": 43
+    },
+    "dorado": {
+      "delta": 2.88,
+      "data_points": 42
+    },
+    "new-junk-city": {
+      "delta": 0.46,
+      "data_points": 41
+    },
+    "suravasa": {
+      "delta": -1.4,
+      "data_points": 43
+    },
+    "samoa": {
+      "delta": 1.96,
+      "data_points": 43
+    },
+    "colosseo": {
+      "delta": 0.02,
+      "data_points": 43
+    },
+    "rialto": {
+      "delta": -0.25,
+      "data_points": 42
+    },
+    "nepal": {
+      "delta": 0.07,
+      "data_points": 42
+    },
+    "shambali-monastery": {
+      "delta": -1.88,
+      "data_points": 42
+    },
+    "junkertown": {
+      "delta": -2.69,
+      "data_points": 43
+    },
+    "ilios": {
+      "delta": -2.16,
+      "data_points": 42
+    },
+    "aatlis": {
+      "delta": 1.42,
+      "data_points": 43
+    },
+    "circuit-royal": {
+      "delta": -0.85,
+      "data_points": 43
+    },
+    "route-66": {
+      "delta": 1.39,
+      "data_points": 41
+    },
+    "kings-row": {
+      "delta": -1.33,
+      "data_points": 43
+    },
+    "hollywood": {
+      "delta": -2.69,
+      "data_points": 42
+    },
+    "lijiang-tower": {
+      "delta": -2.0,
+      "data_points": 41
+    },
+    "antarctic-peninsula": {
+      "delta": 0.87,
+      "data_points": 32
+    },
+    "neon-junction": {
+      "delta": -0.67,
+      "data_points": 20
+    },
+    "busan": {
+      "delta": 1.88,
+      "data_points": 8
+    },
+    "eichenwalde": {
+      "delta": 5.7,
+      "data_points": 8
+    },
+    "paraiso": {
+      "delta": 5.97,
+      "data_points": 8
+    }
+  },
+  "Mauga": {
+    "runasapi": {
+      "delta": 2.24,
+      "data_points": 42
+    },
+    "esperanca": {
+      "delta": 0.61,
+      "data_points": 43
+    },
+    "aatlis": {
+      "delta": 3.38,
+      "data_points": 44
+    },
+    "dorado": {
+      "delta": 0.84,
+      "data_points": 42
+    },
+    "suravasa": {
+      "delta": 1.64,
+      "data_points": 43
+    },
+    "junkertown": {
+      "delta": -1.0,
+      "data_points": 43
+    },
+    "new-junk-city": {
+      "delta": 0.7,
+      "data_points": 42
+    },
+    "blizzard-world": {
+      "delta": -5.41,
+      "data_points": 43
+    },
+    "oasis": {
+      "delta": 1.7,
+      "data_points": 43
+    },
+    "circuit-royal": {
+      "delta": -4.54,
+      "data_points": 41
+    },
+    "colosseo": {
+      "delta": -0.52,
+      "data_points": 43
+    },
+    "nepal": {
+      "delta": 2.47,
+      "data_points": 43
+    },
+    "watchpoint-gibraltar": {
+      "delta": -3.46,
+      "data_points": 42
+    },
+    "havana": {
+      "delta": -2.28,
+      "data_points": 41
+    },
+    "hollywood": {
+      "delta": -5.26,
+      "data_points": 41
+    },
+    "shambali-monastery": {
+      "delta": -3.42,
+      "data_points": 42
+    },
+    "route-66": {
+      "delta": 2.79,
+      "data_points": 43
+    },
+    "samoa": {
+      "delta": 0.62,
+      "data_points": 42
+    },
+    "ilios": {
+      "delta": -2.0,
+      "data_points": 42
+    },
+    "rialto": {
+      "delta": -1.42,
+      "data_points": 42
+    },
+    "new-queen-street": {
+      "delta": 1.61,
+      "data_points": 43
+    },
+    "kings-row": {
+      "delta": -1.1,
+      "data_points": 43
+    },
+    "lijiang-tower": {
+      "delta": -1.5,
+      "data_points": 44
+    },
+    "midtown": {
+      "delta": -2.38,
+      "data_points": 41
+    },
+    "numbani": {
+      "delta": -2.89,
+      "data_points": 41
+    },
+    "antarctic-peninsula": {
+      "delta": 2.12,
+      "data_points": 32
+    },
+    "neon-junction": {
+      "delta": -1.82,
+      "data_points": 20
+    },
+    "busan": {
+      "delta": 3.35,
+      "data_points": 8
+    },
+    "paraiso": {
+      "delta": -5.4,
+      "data_points": 7
+    },
+    "eichenwalde": {
+      "delta": 4.69,
+      "data_points": 8
+    }
+  },
+  "Junker Queen": {
+    "numbani": {
+      "delta": -10.56,
+      "data_points": 34
+    },
+    "new-junk-city": {
+      "delta": 4.28,
+      "data_points": 42
+    },
+    "havana": {
+      "delta": -4.47,
+      "data_points": 31
+    },
+    "ilios": {
+      "delta": 2.08,
+      "data_points": 40
+    },
+    "new-queen-street": {
+      "delta": 2.12,
+      "data_points": 41
+    },
+    "oasis": {
+      "delta": -0.39,
+      "data_points": 44
+    },
+    "aatlis": {
+      "delta": 4.57,
+      "data_points": 43
+    },
+    "suravasa": {
+      "delta": 3.59,
+      "data_points": 43
+    },
+    "esperanca": {
+      "delta": 2.21,
+      "data_points": 42
+    },
+    "lijiang-tower": {
+      "delta": -0.1,
+      "data_points": 43
+    },
+    "samoa": {
+      "delta": 0.55,
+      "data_points": 43
+    },
+    "colosseo": {
+      "delta": 1.51,
+      "data_points": 43
+    },
+    "nepal": {
+      "delta": -0.95,
+      "data_points": 40
+    },
+    "rialto": {
+      "delta": -0.78,
+      "data_points": 38
+    },
+    "kings-row": {
+      "delta": -2.85,
+      "data_points": 41
+    },
+    "circuit-royal": {
+      "delta": -7.82,
+      "data_points": 28
+    },
+    "blizzard-world": {
+      "delta": -5.73,
+      "data_points": 36
+    },
+    "shambali-monastery": {
+      "delta": -1.21,
+      "data_points": 39
+    },
+    "junkertown": {
+      "delta": -5.47,
+      "data_points": 34
+    },
+    "hollywood": {
+      "delta": -4.73,
+      "data_points": 39
+    },
+    "dorado": {
+      "delta": -7.49,
+      "data_points": 33
+    },
+    "route-66": {
+      "delta": -3.26,
+      "data_points": 37
+    },
+    "watchpoint-gibraltar": {
+      "delta": -2.9,
+      "data_points": 34
+    },
+    "runasapi": {
+      "delta": 2.27,
+      "data_points": 42
+    },
+    "midtown": {
+      "delta": -3.25,
+      "data_points": 38
+    },
+    "antarctic-peninsula": {
+      "delta": 2.95,
+      "data_points": 32
+    },
+    "neon-junction": {
+      "delta": -1.21,
+      "data_points": 19
+    },
+    "eichenwalde": {
+      "delta": 7.92,
+      "data_points": 8
+    },
+    "busan": {
+      "delta": 2.68,
+      "data_points": 8
+    },
+    "paraiso": {
+      "delta": -7.86,
+      "data_points": 7
+    }
+  },
+  "Kiriko": {
+    "new-queen-street": {
+      "delta": 2.97,
+      "data_points": 44
+    },
+    "numbani": {
+      "delta": 0.33,
+      "data_points": 44
+    },
+    "runasapi": {
+      "delta": 3.38,
+      "data_points": 44
+    },
+    "esperanca": {
+      "delta": 1.77,
+      "data_points": 44
+    },
+    "oasis": {
+      "delta": 0.8,
+      "data_points": 44
+    },
+    "samoa": {
+      "delta": 0.4,
+      "data_points": 44
+    },
+    "suravasa": {
+      "delta": 2.96,
+      "data_points": 44
+    },
+    "aatlis": {
+      "delta": -0.1,
+      "data_points": 43
+    },
+    "nepal": {
+      "delta": 0.64,
+      "data_points": 44
+    },
+    "midtown": {
+      "delta": -1.67,
+      "data_points": 44
+    },
+    "colosseo": {
+      "delta": 0.65,
+      "data_points": 44
+    },
+    "shambali-monastery": {
+      "delta": -1.04,
+      "data_points": 44
+    },
+    "dorado": {
+      "delta": -2.79,
+      "data_points": 44
+    },
+    "ilios": {
+      "delta": 1.15,
+      "data_points": 44
+    },
+    "junkertown": {
+      "delta": 0.61,
+      "data_points": 44
+    },
+    "rialto": {
+      "delta": -0.52,
+      "data_points": 44
+    },
+    "kings-row": {
+      "delta": -0.41,
+      "data_points": 44
+    },
+    "new-junk-city": {
+      "delta": -0.09,
+      "data_points": 44
+    },
+    "watchpoint-gibraltar": {
+      "delta": -0.68,
+      "data_points": 44
+    },
+    "lijiang-tower": {
+      "delta": 0.85,
+      "data_points": 44
+    },
+    "blizzard-world": {
+      "delta": -1.68,
+      "data_points": 44
+    },
+    "route-66": {
+      "delta": -3.35,
+      "data_points": 44
+    },
+    "hollywood": {
+      "delta": -0.1,
+      "data_points": 44
+    },
+    "havana": {
+      "delta": -3.14,
+      "data_points": 44
+    },
+    "circuit-royal": {
+      "delta": -3.97,
+      "data_points": 44
+    },
+    "antarctic-peninsula": {
+      "delta": 1.28,
+      "data_points": 32
+    },
+    "neon-junction": {
+      "delta": 0.85,
+      "data_points": 20
+    },
+    "eichenwalde": {
+      "delta": -3.33,
+      "data_points": 8
+    },
+    "paraiso": {
+      "delta": -2.24,
+      "data_points": 8
+    },
+    "busan": {
+      "delta": 0.21,
+      "data_points": 8
+    }
+  },
+  "Illari": {
+    "runasapi": {
+      "delta": 0.39,
+      "data_points": 43
+    },
+    "junkertown": {
+      "delta": 2.24,
+      "data_points": 44
+    },
+    "circuit-royal": {
+      "delta": 1.83,
+      "data_points": 44
+    },
+    "colosseo": {
+      "delta": 1.52,
+      "data_points": 44
+    },
+    "route-66": {
+      "delta": 0.25,
+      "data_points": 44
+    },
+    "rialto": {
+      "delta": 1.6,
+      "data_points": 44
+    },
+    "suravasa": {
+      "delta": 0.22,
+      "data_points": 44
+    },
+    "oasis": {
+      "delta": 1.18,
+      "data_points": 44
+    },
+    "samoa": {
+      "delta": 0.03,
+      "data_points": 44
+    },
+    "hollywood": {
+      "delta": -2.32,
+      "data_points": 44
+    },
+    "blizzard-world": {
+      "delta": 0.58,
+      "data_points": 44
+    },
+    "nepal": {
+      "delta": -0.93,
+      "data_points": 43
+    },
+    "dorado": {
+      "delta": -0.43,
+      "data_points": 44
+    },
+    "havana": {
+      "delta": 1.27,
+      "data_points": 44
+    },
+    "ilios": {
+      "delta": -2.58,
+      "data_points": 44
+    },
+    "kings-row": {
+      "delta": -1.47,
+      "data_points": 44
+    },
+    "new-junk-city": {
+      "delta": -1.25,
+      "data_points": 44
+    },
+    "watchpoint-gibraltar": {
+      "delta": 0.28,
+      "data_points": 44
+    },
+    "shambali-monastery": {
+      "delta": 0.26,
+      "data_points": 44
+    },
+    "aatlis": {
+      "delta": -0.79,
+      "data_points": 43
+    },
+    "new-queen-street": {
+      "delta": -0.81,
+      "data_points": 44
+    },
+    "esperanca": {
+      "delta": -0.69,
+      "data_points": 44
+    },
+    "numbani": {
+      "delta": -1.59,
+      "data_points": 44
+    },
+    "midtown": {
+      "delta": 0.46,
+      "data_points": 44
+    },
+    "lijiang-tower": {
+      "delta": -0.77,
+      "data_points": 44
+    },
+    "antarctic-peninsula": {
+      "delta": 1.27,
+      "data_points": 32
+    },
+    "neon-junction": {
+      "delta": -0.61,
+      "data_points": 20
+    },
+    "eichenwalde": {
+      "delta": 1.7,
+      "data_points": 8
+    },
+    "busan": {
+      "delta": 0.88,
+      "data_points": 8
+    },
+    "paraiso": {
+      "delta": -5.13,
+      "data_points": 8
+    }
+  },
+  "Juno": {
+    "shambali-monastery": {
+      "delta": 0.39,
+      "data_points": 44
+    },
+    "numbani": {
+      "delta": -3.27,
+      "data_points": 43
+    },
+    "watchpoint-gibraltar": {
+      "delta": -1.81,
+      "data_points": 42
+    },
+    "colosseo": {
+      "delta": 0.43,
+      "data_points": 43
+    },
+    "junkertown": {
+      "delta": -2.91,
+      "data_points": 42
+    },
+    "new-junk-city": {
+      "delta": -0.15,
+      "data_points": 42
+    },
+    "samoa": {
+      "delta": -1.59,
+      "data_points": 44
+    },
+    "kings-row": {
+      "delta": -0.33,
+      "data_points": 43
+    },
+    "circuit-royal": {
+      "delta": 4.22,
+      "data_points": 44
+    },
+    "route-66": {
+      "delta": 0.7,
+      "data_points": 42
+    },
+    "havana": {
+      "delta": 1.42,
+      "data_points": 42
+    },
+    "dorado": {
+      "delta": -0.32,
+      "data_points": 40
+    },
+    "aatlis": {
+      "delta": -0.64,
+      "data_points": 44
+    },
+    "ilios": {
+      "delta": 0.06,
+      "data_points": 43
+    },
+    "hollywood": {
+      "delta": -3.42,
+      "data_points": 44
+    },
+    "suravasa": {
+      "delta": -1.03,
+      "data_points": 44
+    },
+    "nepal": {
+      "delta": -1.88,
+      "data_points": 44
+    },
+    "rialto": {
+      "delta": -2.5,
+      "data_points": 43
+    },
+    "oasis": {
+      "delta": -1.14,
+      "data_points": 44
+    },
+    "blizzard-world": {
+      "delta": 0.1,
+      "data_points": 44
+    },
+    "runasapi": {
+      "delta": 2.14,
+      "data_points": 43
+    },
+    "lijiang-tower": {
+      "delta": -1.68,
+      "data_points": 43
+    },
+    "midtown": {
+      "delta": 2.77,
+      "data_points": 43
+    },
+    "esperanca": {
+      "delta": -2.17,
+      "data_points": 43
+    },
+    "new-queen-street": {
+      "delta": -1.34,
+      "data_points": 44
+    },
+    "antarctic-peninsula": {
+      "delta": -0.24,
+      "data_points": 32
+    },
+    "neon-junction": {
+      "delta": -1.67,
+      "data_points": 20
+    },
+    "busan": {
+      "delta": 0.68,
+      "data_points": 8
+    },
+    "paraiso": {
+      "delta": -4.95,
+      "data_points": 8
+    },
+    "eichenwalde": {
+      "delta": -1.3,
+      "data_points": 8
+    }
+  },
+  "Sojourn": {
+    "numbani": {
+      "delta": -5.39,
+      "data_points": 44
+    },
+    "esperanca": {
+      "delta": 0.05,
+      "data_points": 44
+    },
+    "suravasa": {
+      "delta": 0.87,
+      "data_points": 44
+    },
+    "shambali-monastery": {
+      "delta": 0.18,
+      "data_points": 44
+    },
+    "circuit-royal": {
+      "delta": 2.36,
+      "data_points": 44
+    },
+    "lijiang-tower": {
+      "delta": 1.05,
+      "data_points": 44
+    },
+    "blizzard-world": {
+      "delta": 0.61,
+      "data_points": 44
+    },
+    "samoa": {
+      "delta": 1.05,
+      "data_points": 44
+    },
+    "nepal": {
+      "delta": 1.24,
+      "data_points": 44
+    },
+    "route-66": {
+      "delta": 0.61,
+      "data_points": 44
+    },
+    "new-junk-city": {
+      "delta": 0.77,
+      "data_points": 44
+    },
+    "colosseo": {
+      "delta": 1.79,
+      "data_points": 44
+    },
+    "aatlis": {
+      "delta": -0.37,
+      "data_points": 44
+    },
+    "kings-row": {
+      "delta": -0.55,
+      "data_points": 44
+    },
+    "rialto": {
+      "delta": -1.26,
+      "data_points": 44
+    },
+    "oasis": {
+      "delta": 0.1,
+      "data_points": 44
+    },
+    "havana": {
+      "delta": 0.22,
+      "data_points": 44
+    },
+    "junkertown": {
+      "delta": 0.92,
+      "data_points": 44
+    },
+    "ilios": {
+      "delta": -1.65,
+      "data_points": 44
+    },
+    "hollywood": {
+      "delta": -4.15,
+      "data_points": 44
+    },
+    "midtown": {
+      "delta": 0.08,
+      "data_points": 44
+    },
+    "dorado": {
+      "delta": -3.55,
+      "data_points": 44
+    },
+    "watchpoint-gibraltar": {
+      "delta": -2.44,
+      "data_points": 44
+    },
+    "runasapi": {
+      "delta": -0.45,
+      "data_points": 44
+    },
+    "new-queen-street": {
+      "delta": -1.37,
+      "data_points": 44
+    },
+    "antarctic-peninsula": {
+      "delta": -0.15,
+      "data_points": 32
+    },
+    "neon-junction": {
+      "delta": -0.44,
+      "data_points": 20
+    },
+    "eichenwalde": {
+      "delta": 0.09,
+      "data_points": 8
+    },
+    "busan": {
+      "delta": -0.07,
+      "data_points": 8
+    },
+    "paraiso": {
+      "delta": -1.19,
+      "data_points": 8
+    }
+  },
+  "Ashe": {
+    "esperanca": {
+      "delta": -0.39,
+      "data_points": 43
+    },
+    "havana": {
+      "delta": 1.2,
+      "data_points": 43
+    },
+    "junkertown": {
+      "delta": -1.62,
+      "data_points": 43
+    },
+    "dorado": {
+      "delta": 4.14,
+      "data_points": 44
+    },
+    "route-66": {
+      "delta": 0.95,
+      "data_points": 44
+    },
+    "shambali-monastery": {
+      "delta": -0.4,
+      "data_points": 44
+    },
+    "watchpoint-gibraltar": {
+      "delta": 1.31,
+      "data_points": 44
+    },
+    "colosseo": {
+      "delta": -1.22,
+      "data_points": 43
+    },
+    "new-queen-street": {
+      "delta": -1.13,
+      "data_points": 43
+    },
+    "circuit-royal": {
+      "delta": -0.32,
+      "data_points": 44
+    },
+    "ilios": {
+      "delta": -0.59,
+      "data_points": 43
+    },
+    "samoa": {
+      "delta": -0.37,
+      "data_points": 44
+    },
+    "rialto": {
+      "delta": -0.52,
+      "data_points": 44
+    },
+    "blizzard-world": {
+      "delta": -1.26,
+      "data_points": 44
+    },
+    "hollywood": {
+      "delta": 0.63,
+      "data_points": 44
+    },
+    "nepal": {
+      "delta": -0.81,
+      "data_points": 44
+    },
+    "numbani": {
+      "delta": 1.43,
+      "data_points": 44
+    },
+    "suravasa": {
+      "delta": -0.76,
+      "data_points": 43
+    },
+    "new-junk-city": {
+      "delta": -2.82,
+      "data_points": 38
+    },
+    "kings-row": {
+      "delta": -1.76,
+      "data_points": 44
+    },
+    "aatlis": {
+      "delta": -4.13,
+      "data_points": 32
+    },
+    "midtown": {
+      "delta": -2.04,
+      "data_points": 44
+    },
+    "oasis": {
+      "delta": -1.45,
+      "data_points": 44
+    },
+    "runasapi": {
+      "delta": -0.16,
+      "data_points": 43
+    },
+    "lijiang-tower": {
+      "delta": -3.42,
+      "data_points": 42
+    },
+    "antarctic-peninsula": {
+      "delta": -0.39,
+      "data_points": 32
+    },
+    "neon-junction": {
+      "delta": -1.71,
+      "data_points": 20
+    },
+    "paraiso": {
+      "delta": 2.57,
+      "data_points": 8
+    },
+    "eichenwalde": {
+      "delta": 2.82,
+      "data_points": 8
+    },
+    "busan": {
+      "delta": -1.25,
+      "data_points": 8
+    }
+  },
+  "Brigitte": {
+    "lijiang-tower": {
+      "delta": 0.19,
+      "data_points": 44
+    },
+    "aatlis": {
+      "delta": 2.26,
+      "data_points": 44
+    },
+    "runasapi": {
+      "delta": -0.07,
+      "data_points": 44
+    },
+    "route-66": {
+      "delta": 0.21,
+      "data_points": 42
+    },
+    "nepal": {
+      "delta": 1.35,
+      "data_points": 44
+    },
+    "esperanca": {
+      "delta": 0.15,
+      "data_points": 43
+    },
+    "circuit-royal": {
+      "delta": -5.92,
+      "data_points": 40
+    },
+    "samoa": {
+      "delta": -0.5,
+      "data_points": 44
+    },
+    "ilios": {
+      "delta": -1.14,
+      "data_points": 44
+    },
+    "watchpoint-gibraltar": {
+      "delta": 1.96,
+      "data_points": 44
+    },
+    "blizzard-world": {
+      "delta": -5.84,
+      "data_points": 44
+    },
+    "new-junk-city": {
+      "delta": 0.81,
+      "data_points": 43
+    },
+    "oasis": {
+      "delta": 0.82,
+      "data_points": 44
+    },
+    "rialto": {
+      "delta": 2.18,
+      "data_points": 44
+    },
+    "colosseo": {
+      "delta": -0.89,
+      "data_points": 44
+    },
+    "midtown": {
+      "delta": 1.45,
+      "data_points": 44
+    },
+    "junkertown": {
+      "delta": 1.38,
+      "data_points": 43
+    },
+    "suravasa": {
+      "delta": 2.43,
+      "data_points": 44
+    },
+    "kings-row": {
+      "delta": -1.4,
+      "data_points": 44
+    },
+    "shambali-monastery": {
+      "delta": -0.47,
+      "data_points": 43
+    },
+    "hollywood": {
+      "delta": -1.89,
+      "data_points": 43
+    },
+    "dorado": {
+      "delta": 0.0,
+      "data_points": 44
+    },
+    "havana": {
+      "delta": -1.73,
+      "data_points": 41
+    },
+    "numbani": {
+      "delta": -2.22,
+      "data_points": 43
+    },
+    "new-queen-street": {
+      "delta": -0.16,
+      "data_points": 44
+    },
+    "antarctic-peninsula": {
+      "delta": 1.26,
+      "data_points": 32
+    },
+    "neon-junction": {
+      "delta": -4.98,
+      "data_points": 20
+    },
+    "busan": {
+      "delta": -2.31,
+      "data_points": 8
+    },
+    "paraiso": {
+      "delta": -2.34,
+      "data_points": 8
+    },
+    "eichenwalde": {
+      "delta": -6.07,
+      "data_points": 7
+    }
+  },
+  "Orisa": {
+    "shambali-monastery": {
+      "delta": 1.53,
+      "data_points": 44
+    },
+    "junkertown": {
+      "delta": 0.47,
+      "data_points": 43
+    },
+    "route-66": {
+      "delta": -3.04,
+      "data_points": 43
+    },
+    "rialto": {
+      "delta": 0.1,
+      "data_points": 44
+    },
+    "oasis": {
+      "delta": 2.58,
+      "data_points": 44
+    },
+    "ilios": {
+      "delta": -1.02,
+      "data_points": 42
+    },
+    "samoa": {
+      "delta": 0.23,
+      "data_points": 44
+    },
+    "nepal": {
+      "delta": 1.96,
+      "data_points": 44
+    },
+    "kings-row": {
+      "delta": 4.77,
+      "data_points": 44
+    },
+    "circuit-royal": {
+      "delta": 1.13,
+      "data_points": 43
+    },
+    "midtown": {
+      "delta": 1.77,
+      "data_points": 44
+    },
+    "lijiang-tower": {
+      "delta": 2.41,
+      "data_points": 44
+    },
+    "havana": {
+      "delta": 1.42,
+      "data_points": 43
+    },
+    "blizzard-world": {
+      "delta": -0.38,
+      "data_points": 44
+    },
+    "suravasa": {
+      "delta": -0.39,
+      "data_points": 44
+    },
+    "new-junk-city": {
+      "delta": 0.87,
+      "data_points": 43
+    },
+    "dorado": {
+      "delta": -4.89,
+      "data_points": 43
+    },
+    "colosseo": {
+      "delta": -3.12,
+      "data_points": 43
+    },
+    "hollywood": {
+      "delta": -1.58,
+      "data_points": 44
+    },
+    "aatlis": {
+      "delta": -2.86,
+      "data_points": 43
+    },
+    "watchpoint-gibraltar": {
+      "delta": -3.67,
+      "data_points": 44
+    },
+    "numbani": {
+      "delta": -1.88,
+      "data_points": 43
+    },
+    "new-queen-street": {
+      "delta": -2.26,
+      "data_points": 44
+    },
+    "runasapi": {
+      "delta": -1.15,
+      "data_points": 43
+    },
+    "esperanca": {
+      "delta": -0.93,
+      "data_points": 44
+    },
+    "antarctic-peninsula": {
+      "delta": 0.23,
+      "data_points": 32
+    },
+    "neon-junction": {
+      "delta": 1.41,
+      "data_points": 20
+    },
+    "paraiso": {
+      "delta": 4.69,
+      "data_points": 8
+    },
+    "eichenwalde": {
+      "delta": 2.25,
+      "data_points": 8
+    },
+    "busan": {
+      "delta": -0.34,
+      "data_points": 8
+    }
+  },
+  "Moira": {
+    "lijiang-tower": {
+      "delta": 1.05,
+      "data_points": 43
+    },
+    "new-queen-street": {
+      "delta": -0.55,
+      "data_points": 44
+    },
+    "circuit-royal": {
+      "delta": -1.64,
+      "data_points": 43
+    },
+    "esperanca": {
+      "delta": 0.93,
+      "data_points": 44
+    },
+    "shambali-monastery": {
+      "delta": -0.07,
+      "data_points": 42
+    },
+    "new-junk-city": {
+      "delta": 2.85,
+      "data_points": 43
+    },
+    "suravasa": {
+      "delta": -0.66,
+      "data_points": 43
+    },
+    "nepal": {
+      "delta": 0.18,
+      "data_points": 44
+    },
+    "ilios": {
+      "delta": 0.11,
+      "data_points": 43
+    },
+    "oasis": {
+      "delta": 0.69,
+      "data_points": 44
+    },
+    "junkertown": {
+      "delta": -2.29,
+      "data_points": 43
+    },
+    "aatlis": {
+      "delta": 1.82,
+      "data_points": 44
+    },
+    "dorado": {
+      "delta": -1.06,
+      "data_points": 42
+    },
+    "numbani": {
+      "delta": -4.25,
+      "data_points": 43
+    },
+    "samoa": {
+      "delta": 2.21,
+      "data_points": 44
+    },
+    "rialto": {
+      "delta": -1.22,
+      "data_points": 43
+    },
+    "blizzard-world": {
+      "delta": -6.05,
+      "data_points": 44
+    },
+    "kings-row": {
+      "delta": -1.11,
+      "data_points": 43
+    },
+    "colosseo": {
+      "delta": -1.71,
+      "data_points": 43
+    },
+    "havana": {
+      "delta": -1.26,
+      "data_points": 42
+    },
+    "watchpoint-gibraltar": {
+      "delta": -2.24,
+      "data_points": 44
+    },
+    "midtown": {
+      "delta": 0.28,
+      "data_points": 43
+    },
+    "route-66": {
+      "delta": -4.05,
+      "data_points": 44
+    },
+    "hollywood": {
+      "delta": -1.93,
+      "data_points": 43
+    },
+    "runasapi": {
+      "delta": -1.43,
+      "data_points": 43
+    },
+    "antarctic-peninsula": {
+      "delta": 1.67,
+      "data_points": 32
+    },
+    "neon-junction": {
+      "delta": 1.0,
+      "data_points": 20
+    },
+    "busan": {
+      "delta": 2.26,
+      "data_points": 8
+    },
+    "paraiso": {
+      "delta": -0.88,
+      "data_points": 8
+    },
+    "eichenwalde": {
+      "delta": -12.18,
+      "data_points": 8
+    }
+  },
+  "Ana": {
+    "midtown": {
+      "delta": -0.5,
+      "data_points": 44
+    },
+    "lijiang-tower": {
+      "delta": -1.64,
+      "data_points": 44
+    },
+    "dorado": {
+      "delta": 4.53,
+      "data_points": 44
+    },
+    "route-66": {
+      "delta": 2.23,
+      "data_points": 44
+    },
+    "havana": {
+      "delta": 1.51,
+      "data_points": 43
+    },
+    "watchpoint-gibraltar": {
+      "delta": 2.39,
+      "data_points": 44
+    },
+    "rialto": {
+      "delta": 1.31,
+      "data_points": 44
+    },
+    "esperanca": {
+      "delta": -2.02,
+      "data_points": 44
+    },
+    "junkertown": {
+      "delta": 3.48,
+      "data_points": 44
+    },
+    "hollywood": {
+      "delta": 1.23,
+      "data_points": 44
+    },
+    "blizzard-world": {
+      "delta": -0.13,
+      "data_points": 44
+    },
+    "kings-row": {
+      "delta": 1.83,
+      "data_points": 44
+    },
+    "samoa": {
+      "delta": -2.0,
+      "data_points": 44
+    },
+    "ilios": {
+      "delta": -1.7,
+      "data_points": 44
+    },
+    "oasis": {
+      "delta": -1.74,
+      "data_points": 44
+    },
+    "circuit-royal": {
+      "delta": -0.09,
+      "data_points": 44
+    },
+    "shambali-monastery": {
+      "delta": -2.05,
+      "data_points": 44
+    },
+    "aatlis": {
+      "delta": -4.28,
+      "data_points": 44
+    },
+    "nepal": {
+      "delta": -2.35,
+      "data_points": 44
+    },
+    "suravasa": {
+      "delta": -3.15,
+      "data_points": 44
+    },
+    "colosseo": {
+      "delta": -2.67,
+      "data_points": 44
+    },
+    "new-junk-city": {
+      "delta": -5.55,
+      "data_points": 44
+    },
+    "new-queen-street": {
+      "delta": -3.85,
+      "data_points": 44
+    },
+    "runasapi": {
+      "delta": -4.83,
+      "data_points": 44
+    },
+    "numbani": {
+      "delta": 0.68,
+      "data_points": 44
+    },
+    "antarctic-peninsula": {
+      "delta": -1.62,
+      "data_points": 32
+    },
+    "neon-junction": {
+      "delta": -1.94,
+      "data_points": 20
+    },
+    "eichenwalde": {
+      "delta": 5.56,
+      "data_points": 8
+    },
+    "busan": {
+      "delta": -0.31,
+      "data_points": 8
+    },
+    "paraiso": {
+      "delta": 1.01,
+      "data_points": 8
+    }
+  },
+  "Wrecking Ball": {
+    "new-queen-street": {
+      "delta": 2.26,
+      "data_points": 44
+    },
+    "midtown": {
+      "delta": -5.77,
+      "data_points": 43
+    },
+    "junkertown": {
+      "delta": 2.35,
+      "data_points": 43
+    },
+    "havana": {
+      "delta": -3.63,
+      "data_points": 42
+    },
+    "route-66": {
+      "delta": 1.17,
+      "data_points": 44
+    },
+    "dorado": {
+      "delta": 5.43,
+      "data_points": 43
+    },
+    "new-junk-city": {
+      "delta": 0.99,
+      "data_points": 44
+    },
+    "suravasa": {
+      "delta": 3.02,
+      "data_points": 44
+    },
+    "colosseo": {
+      "delta": 0.92,
+      "data_points": 44
+    },
+    "shambali-monastery": {
+      "delta": -0.31,
+      "data_points": 43
+    },
+    "aatlis": {
+      "delta": 0.82,
+      "data_points": 43
+    },
+    "watchpoint-gibraltar": {
+      "delta": 4.28,
+      "data_points": 43
+    },
+    "hollywood": {
+      "delta": -1.37,
+      "data_points": 42
+    },
+    "runasapi": {
+      "delta": 1.47,
+      "data_points": 43
+    },
+    "oasis": {
+      "delta": -2.3,
+      "data_points": 44
+    },
+    "nepal": {
+      "delta": -3.16,
+      "data_points": 44
+    },
+    "circuit-royal": {
+      "delta": -1.34,
+      "data_points": 42
+    },
+    "ilios": {
+      "delta": 0.88,
+      "data_points": 44
+    },
+    "blizzard-world": {
+      "delta": 1.29,
+      "data_points": 44
+    },
+    "samoa": {
+      "delta": -1.48,
+      "data_points": 43
+    },
+    "kings-row": {
+      "delta": -6.41,
+      "data_points": 44
+    },
+    "rialto": {
+      "delta": -2.67,
+      "data_points": 43
+    },
+    "lijiang-tower": {
+      "delta": -1.58,
+      "data_points": 44
+    },
+    "esperanca": {
+      "delta": 0.73,
+      "data_points": 44
+    },
+    "numbani": {
+      "delta": 3.2,
+      "data_points": 43
+    },
+    "antarctic-peninsula": {
+      "delta": -1.33,
+      "data_points": 32
+    },
+    "neon-junction": {
+      "delta": 0.29,
+      "data_points": 20
+    },
+    "eichenwalde": {
+      "delta": -2.27,
+      "data_points": 8
+    },
+    "paraiso": {
+      "delta": -9.1,
+      "data_points": 8
+    },
+    "busan": {
+      "delta": -1.14,
+      "data_points": 8
+    }
+  },
+  "Doomfist": {
+    "runasapi": {
+      "delta": -1.33,
+      "data_points": 43
+    },
+    "watchpoint-gibraltar": {
+      "delta": -1.1,
+      "data_points": 44
+    },
+    "blizzard-world": {
+      "delta": -2.25,
+      "data_points": 44
+    },
+    "ilios": {
+      "delta": -0.26,
+      "data_points": 44
+    },
+    "aatlis": {
+      "delta": 1.4,
+      "data_points": 44
+    },
+    "samoa": {
+      "delta": 0.24,
+      "data_points": 44
+    },
+    "kings-row": {
+      "delta": -1.02,
+      "data_points": 44
+    },
+    "colosseo": {
+      "delta": 3.04,
+      "data_points": 44
+    },
+    "rialto": {
+      "delta": -0.59,
+      "data_points": 44
+    },
+    "shambali-monastery": {
+      "delta": -2.32,
+      "data_points": 44
+    },
+    "nepal": {
+      "delta": 0.67,
+      "data_points": 44
+    },
+    "oasis": {
+      "delta": 2.21,
+      "data_points": 44
+    },
+    "suravasa": {
+      "delta": 0.06,
+      "data_points": 44
+    },
+    "numbani": {
+      "delta": -1.85,
+      "data_points": 44
+    },
+    "hollywood": {
+      "delta": -0.45,
+      "data_points": 43
+    },
+    "new-junk-city": {
+      "delta": 0.69,
+      "data_points": 43
+    },
+    "dorado": {
+      "delta": 3.11,
+      "data_points": 43
+    },
+    "havana": {
+      "delta": -3.2,
+      "data_points": 43
+    },
+    "circuit-royal": {
+      "delta": -3.32,
+      "data_points": 44
+    },
+    "lijiang-tower": {
+      "delta": 0.48,
+      "data_points": 44
+    },
+    "route-66": {
+      "delta": 1.79,
+      "data_points": 43
+    },
+    "junkertown": {
+      "delta": -1.85,
+      "data_points": 43
+    },
+    "esperanca": {
+      "delta": -0.08,
+      "data_points": 44
+    },
+    "new-queen-street": {
+      "delta": 2.48,
+      "data_points": 44
+    },
+    "midtown": {
+      "delta": 0.21,
+      "data_points": 44
+    },
+    "antarctic-peninsula": {
+      "delta": -0.74,
+      "data_points": 32
+    },
+    "neon-junction": {
+      "delta": -2.78,
+      "data_points": 20
+    },
+    "paraiso": {
+      "delta": -3.18,
+      "data_points": 8
+    },
+    "eichenwalde": {
+      "delta": 1.02,
+      "data_points": 8
+    },
+    "busan": {
+      "delta": -2.96,
+      "data_points": 8
+    }
+  },
+  "Sombra": {
+    "midtown": {
+      "delta": -3.74,
+      "data_points": 40
+    },
+    "numbani": {
+      "delta": -0.01,
+      "data_points": 39
+    },
+    "esperanca": {
+      "delta": 0.87,
+      "data_points": 42
+    },
+    "runasapi": {
+      "delta": 1.08,
+      "data_points": 43
+    },
+    "new-junk-city": {
+      "delta": 0.72,
+      "data_points": 41
+    },
+    "dorado": {
+      "delta": -1.41,
+      "data_points": 42
+    },
+    "circuit-royal": {
+      "delta": 0.83,
+      "data_points": 39
+    },
+    "blizzard-world": {
+      "delta": -0.85,
+      "data_points": 43
+    },
+    "shambali-monastery": {
+      "delta": 2.86,
+      "data_points": 40
+    },
+    "suravasa": {
+      "delta": -0.28,
+      "data_points": 43
+    },
+    "rialto": {
+      "delta": -1.44,
+      "data_points": 40
+    },
+    "colosseo": {
+      "delta": -0.68,
+      "data_points": 44
+    },
+    "junkertown": {
+      "delta": 1.35,
+      "data_points": 43
+    },
+    "havana": {
+      "delta": -0.15,
+      "data_points": 42
+    },
+    "ilios": {
+      "delta": -1.69,
+      "data_points": 44
+    },
+    "route-66": {
+      "delta": 3.56,
+      "data_points": 42
+    },
+    "nepal": {
+      "delta": -1.9,
+      "data_points": 43
+    },
+    "oasis": {
+      "delta": -0.58,
+      "data_points": 44
+    },
+    "lijiang-tower": {
+      "delta": -0.24,
+      "data_points": 44
+    },
+    "aatlis": {
+      "delta": -1.67,
+      "data_points": 42
+    },
+    "samoa": {
+      "delta": 1.18,
+      "data_points": 44
+    },
+    "hollywood": {
+      "delta": 2.95,
+      "data_points": 42
+    },
+    "watchpoint-gibraltar": {
+      "delta": -1.05,
+      "data_points": 42
+    },
+    "new-queen-street": {
+      "delta": -2.01,
+      "data_points": 44
+    },
+    "kings-row": {
+      "delta": -0.73,
+      "data_points": 41
+    },
+    "antarctic-peninsula": {
+      "delta": 1.49,
+      "data_points": 31
+    },
+    "neon-junction": {
+      "delta": -1.04,
+      "data_points": 19
+    },
+    "eichenwalde": {
+      "delta": 5.29,
+      "data_points": 8
+    },
+    "busan": {
+      "delta": -0.68,
+      "data_points": 8
+    },
+    "paraiso": {
+      "delta": -6.33,
+      "data_points": 7
+    }
+  },
+  "Echo": {
+    "new-queen-street": {
+      "delta": -1.18,
+      "data_points": 44
+    },
+    "runasapi": {
+      "delta": -2.6,
+      "data_points": 43
+    },
+    "midtown": {
+      "delta": -3.76,
+      "data_points": 44
+    },
+    "dorado": {
+      "delta": 4.5,
+      "data_points": 44
+    },
+    "junkertown": {
+      "delta": 0.05,
+      "data_points": 42
+    },
+    "shambali-monastery": {
+      "delta": 0.53,
+      "data_points": 44
+    },
+    "ilios": {
+      "delta": 2.25,
+      "data_points": 44
+    },
+    "colosseo": {
+      "delta": 0.38,
+      "data_points": 44
+    },
+    "suravasa": {
+      "delta": 0.66,
+      "data_points": 44
+    },
+    "rialto": {
+      "delta": 0.8,
+      "data_points": 44
+    },
+    "route-66": {
+      "delta": -2.06,
+      "data_points": 44
+    },
+    "samoa": {
+      "delta": -1.92,
+      "data_points": 44
+    },
+    "nepal": {
+      "delta": -1.42,
+      "data_points": 44
+    },
+    "watchpoint-gibraltar": {
+      "delta": 1.33,
+      "data_points": 44
+    },
+    "new-junk-city": {
+      "delta": -0.95,
+      "data_points": 43
+    },
+    "aatlis": {
+      "delta": -3.53,
+      "data_points": 43
+    },
+    "kings-row": {
+      "delta": -1.02,
+      "data_points": 44
+    },
+    "hollywood": {
+      "delta": -2.13,
+      "data_points": 44
+    },
+    "oasis": {
+      "delta": -0.01,
+      "data_points": 44
+    },
+    "lijiang-tower": {
+      "delta": -3.59,
+      "data_points": 44
+    },
+    "circuit-royal": {
+      "delta": -3.24,
+      "data_points": 43
+    },
+    "blizzard-world": {
+      "delta": -1.4,
+      "data_points": 44
+    },
+    "numbani": {
+      "delta": -1.46,
+      "data_points": 44
+    },
+    "havana": {
+      "delta": -3.85,
+      "data_points": 40
+    },
+    "esperanca": {
+      "delta": 0.69,
+      "data_points": 44
+    },
+    "antarctic-peninsula": {
+      "delta": -1.57,
+      "data_points": 32
+    },
+    "neon-junction": {
+      "delta": -4.46,
+      "data_points": 20
+    },
+    "paraiso": {
+      "delta": -0.15,
+      "data_points": 8
+    },
+    "eichenwalde": {
+      "delta": 5.15,
+      "data_points": 8
+    },
+    "busan": {
+      "delta": 1.35,
+      "data_points": 8
+    }
+  },
+  "Mei": {
+    "runasapi": {
+      "delta": 2.31,
+      "data_points": 42
+    },
+    "midtown": {
+      "delta": -2.92,
+      "data_points": 44
+    },
+    "new-junk-city": {
+      "delta": 1.51,
+      "data_points": 43
+    },
+    "circuit-royal": {
+      "delta": 2.62,
+      "data_points": 43
+    },
+    "blizzard-world": {
+      "delta": -0.67,
+      "data_points": 43
+    },
+    "havana": {
+      "delta": -3.15,
+      "data_points": 43
+    },
+    "shambali-monastery": {
+      "delta": 3.03,
+      "data_points": 43
+    },
+    "samoa": {
+      "delta": -0.61,
+      "data_points": 43
+    },
+    "oasis": {
+      "delta": 0.16,
+      "data_points": 44
+    },
+    "colosseo": {
+      "delta": 1.7,
+      "data_points": 43
+    },
+    "lijiang-tower": {
+      "delta": 4.54,
+      "data_points": 44
+    },
+    "suravasa": {
+      "delta": -0.03,
+      "data_points": 44
+    },
+    "aatlis": {
+      "delta": -0.77,
+      "data_points": 44
+    },
+    "watchpoint-gibraltar": {
+      "delta": -0.19,
+      "data_points": 40
+    },
+    "rialto": {
+      "delta": 0.5,
+      "data_points": 43
+    },
+    "kings-row": {
+      "delta": -1.19,
+      "data_points": 44
+    },
+    "route-66": {
+      "delta": -1.67,
+      "data_points": 44
+    },
+    "dorado": {
+      "delta": -1.28,
+      "data_points": 44
+    },
+    "nepal": {
+      "delta": 0.94,
+      "data_points": 44
+    },
+    "ilios": {
+      "delta": -4.32,
+      "data_points": 43
+    },
+    "hollywood": {
+      "delta": -2.53,
+      "data_points": 43
+    },
+    "junkertown": {
+      "delta": 0.58,
+      "data_points": 42
+    },
+    "esperanca": {
+      "delta": 2.84,
+      "data_points": 43
+    },
+    "numbani": {
+      "delta": -3.66,
+      "data_points": 43
+    },
+    "new-queen-street": {
+      "delta": -1.09,
+      "data_points": 44
+    },
+    "antarctic-peninsula": {
+      "delta": 0.22,
+      "data_points": 32
+    },
+    "neon-junction": {
+      "delta": -1.55,
+      "data_points": 20
+    },
+    "eichenwalde": {
+      "delta": 4.25,
+      "data_points": 8
+    },
+    "busan": {
+      "delta": 0.21,
+      "data_points": 8
+    },
+    "paraiso": {
+      "delta": -5.06,
+      "data_points": 8
+    }
+  },
+  "L\u00facio": {
+    "numbani": {
+      "delta": -4.06,
+      "data_points": 44
+    },
+    "midtown": {
+      "delta": -7.49,
+      "data_points": 39
+    },
+    "esperanca": {
+      "delta": 3.89,
+      "data_points": 44
+    },
+    "aatlis": {
+      "delta": 2.9,
+      "data_points": 44
+    },
+    "ilios": {
+      "delta": 4.84,
+      "data_points": 44
+    },
+    "colosseo": {
+      "delta": 3.78,
+      "data_points": 44
+    },
+    "new-junk-city": {
+      "delta": 2.58,
+      "data_points": 44
+    },
+    "nepal": {
+      "delta": 2.1,
+      "data_points": 44
+    },
+    "suravasa": {
+      "delta": 3.81,
+      "data_points": 43
+    },
+    "route-66": {
+      "delta": -5.97,
+      "data_points": 42
+    },
+    "samoa": {
+      "delta": 0.32,
+      "data_points": 44
+    },
+    "oasis": {
+      "delta": -0.68,
+      "data_points": 44
+    },
+    "shambali-monastery": {
+      "delta": -5.41,
+      "data_points": 42
+    },
+    "kings-row": {
+      "delta": -0.76,
+      "data_points": 44
+    },
+    "rialto": {
+      "delta": -5.82,
+      "data_points": 42
+    },
+    "lijiang-tower": {
+      "delta": 2.99,
+      "data_points": 43
+    },
+    "hollywood": {
+      "delta": -5.52,
+      "data_points": 41
+    },
+    "watchpoint-gibraltar": {
+      "delta": -7.75,
+      "data_points": 40
+    },
+    "blizzard-world": {
+      "delta": -8.01,
+      "data_points": 43
+    },
+    "runasapi": {
+      "delta": 1.11,
+      "data_points": 43
+    },
+    "dorado": {
+      "delta": -5.66,
+      "data_points": 41
+    },
+    "junkertown": {
+      "delta": -5.65,
+      "data_points": 41
+    },
+    "circuit-royal": {
+      "delta": -9.95,
+      "data_points": 38
+    },
+    "havana": {
+      "delta": -8.57,
+      "data_points": 40
+    },
+    "new-queen-street": {
+      "delta": -0.13,
+      "data_points": 44
+    },
+    "antarctic-peninsula": {
+      "delta": -0.56,
+      "data_points": 32
+    },
+    "neon-junction": {
+      "delta": -2.32,
+      "data_points": 20
+    },
+    "eichenwalde": {
+      "delta": -6.03,
+      "data_points": 8
+    },
+    "busan": {
+      "delta": -0.56,
+      "data_points": 8
+    },
+    "paraiso": {
+      "delta": -14.06,
+      "data_points": 8
+    }
+  },
+  "Soldier: 76": {
+    "dorado": {
+      "delta": 0.88,
+      "data_points": 44
+    },
+    "route-66": {
+      "delta": -0.69,
+      "data_points": 44
+    },
+    "colosseo": {
+      "delta": 0.87,
+      "data_points": 44
+    },
+    "rialto": {
+      "delta": -2.61,
+      "data_points": 43
+    },
+    "new-queen-street": {
+      "delta": 5.45,
+      "data_points": 44
+    },
+    "junkertown": {
+      "delta": -2.93,
+      "data_points": 44
+    },
+    "samoa": {
+      "delta": -1.25,
+      "data_points": 44
+    },
+    "watchpoint-gibraltar": {
+      "delta": -0.42,
+      "data_points": 44
+    },
+    "oasis": {
+      "delta": 0.17,
+      "data_points": 44
+    },
+    "hollywood": {
+      "delta": -3.78,
+      "data_points": 42
+    },
+    "havana": {
+      "delta": 1.17,
+      "data_points": 43
+    },
+    "suravasa": {
+      "delta": 1.15,
+      "data_points": 43
+    },
+    "blizzard-world": {
+      "delta": -2.74,
+      "data_points": 44
+    },
+    "ilios": {
+      "delta": -2.94,
+      "data_points": 43
+    },
+    "nepal": {
+      "delta": -1.16,
+      "data_points": 44
+    },
+    "kings-row": {
+      "delta": -2.09,
+      "data_points": 43
+    },
+    "shambali-monastery": {
+      "delta": -2.72,
+      "data_points": 44
+    },
+    "aatlis": {
+      "delta": -0.1,
+      "data_points": 43
+    },
+    "new-junk-city": {
+      "delta": -1.36,
+      "data_points": 43
+    },
+    "circuit-royal": {
+      "delta": -1.81,
+      "data_points": 43
+    },
+    "lijiang-tower": {
+      "delta": -1.58,
+      "data_points": 43
+    },
+    "runasapi": {
+      "delta": 3.94,
+      "data_points": 44
+    },
+    "esperanca": {
+      "delta": 2.31,
+      "data_points": 43
+    },
+    "midtown": {
+      "delta": -1.87,
+      "data_points": 43
+    },
+    "numbani": {
+      "delta": 0.02,
+      "data_points": 44
+    },
+    "antarctic-peninsula": {
+      "delta": 0.9,
+      "data_points": 32
+    },
+    "neon-junction": {
+      "delta": 0.27,
+      "data_points": 20
+    },
+    "busan": {
+      "delta": 3.79,
+      "data_points": 8
+    },
+    "paraiso": {
+      "delta": -5.53,
+      "data_points": 8
+    },
+    "eichenwalde": {
+      "delta": 8.04,
+      "data_points": 8
+    }
+  },
+  "Zarya": {
+    "midtown": {
+      "delta": 0.07,
+      "data_points": 44
+    },
+    "numbani": {
+      "delta": -2.37,
+      "data_points": 44
+    },
+    "runasapi": {
+      "delta": 0.66,
+      "data_points": 42
+    },
+    "samoa": {
+      "delta": 0.94,
+      "data_points": 44
+    },
+    "new-junk-city": {
+      "delta": 1.18,
+      "data_points": 44
+    },
+    "route-66": {
+      "delta": -0.54,
+      "data_points": 44
+    },
+    "lijiang-tower": {
+      "delta": 2.96,
+      "data_points": 44
+    },
+    "oasis": {
+      "delta": 0.68,
+      "data_points": 44
+    },
+    "nepal": {
+      "delta": -0.06,
+      "data_points": 44
+    },
+    "new-queen-street": {
+      "delta": 0.93,
+      "data_points": 43
+    },
+    "esperanca": {
+      "delta": -2.0,
+      "data_points": 44
+    },
+    "kings-row": {
+      "delta": 1.24,
+      "data_points": 44
+    },
+    "aatlis": {
+      "delta": 2.59,
+      "data_points": 44
+    },
+    "circuit-royal": {
+      "delta": -1.76,
+      "data_points": 44
+    },
+    "suravasa": {
+      "delta": -0.53,
+      "data_points": 44
+    },
+    "colosseo": {
+      "delta": 0.58,
+      "data_points": 44
+    },
+    "havana": {
+      "delta": -2.88,
+      "data_points": 42
+    },
+    "rialto": {
+      "delta": 1.34,
+      "data_points": 43
+    },
+    "hollywood": {
+      "delta": 1.44,
+      "data_points": 43
+    },
+    "blizzard-world": {
+      "delta": -2.01,
+      "data_points": 43
+    },
+    "watchpoint-gibraltar": {
+      "delta": -5.55,
+      "data_points": 44
+    },
+    "shambali-monastery": {
+      "delta": -1.97,
+      "data_points": 44
+    },
+    "ilios": {
+      "delta": -3.1,
+      "data_points": 42
+    },
+    "junkertown": {
+      "delta": -3.64,
+      "data_points": 43
+    },
+    "dorado": {
+      "delta": -8.96,
+      "data_points": 42
+    },
+    "antarctic-peninsula": {
+      "delta": 2.01,
+      "data_points": 32
+    },
+    "neon-junction": {
+      "delta": 1.75,
+      "data_points": 20
+    },
+    "eichenwalde": {
+      "delta": -11.45,
+      "data_points": 8
+    },
+    "paraiso": {
+      "delta": -5.03,
+      "data_points": 8
+    },
+    "busan": {
+      "delta": -0.4,
+      "data_points": 8
+    }
+  },
+  "Junkrat": {
+    "new-queen-street": {
+      "delta": 2.38,
+      "data_points": 41
+    },
+    "esperanca": {
+      "delta": 1.76,
+      "data_points": 42
+    },
+    "junkertown": {
+      "delta": 2.48,
+      "data_points": 42
+    },
+    "ilios": {
+      "delta": 2.68,
+      "data_points": 43
+    },
+    "shambali-monastery": {
+      "delta": 2.94,
+      "data_points": 41
+    },
+    "aatlis": {
+      "delta": 2.69,
+      "data_points": 42
+    },
+    "new-junk-city": {
+      "delta": -0.73,
+      "data_points": 41
+    },
+    "nepal": {
+      "delta": 1.19,
+      "data_points": 44
+    },
+    "samoa": {
+      "delta": -2.21,
+      "data_points": 43
+    },
+    "suravasa": {
+      "delta": -0.84,
+      "data_points": 42
+    },
+    "kings-row": {
+      "delta": 2.06,
+      "data_points": 43
+    },
+    "circuit-royal": {
+      "delta": -1.87,
+      "data_points": 44
+    },
+    "blizzard-world": {
+      "delta": -4.36,
+      "data_points": 44
+    },
+    "oasis": {
+      "delta": 0.32,
+      "data_points": 43
+    },
+    "colosseo": {
+      "delta": 2.35,
+      "data_points": 43
+    },
+    "route-66": {
+      "delta": -0.46,
+      "data_points": 41
+    },
+    "watchpoint-gibraltar": {
+      "delta": 1.8,
+      "data_points": 42
+    },
+    "rialto": {
+      "delta": -1.78,
+      "data_points": 43
+    },
+    "lijiang-tower": {
+      "delta": 0.43,
+      "data_points": 43
+    },
+    "dorado": {
+      "delta": -3.05,
+      "data_points": 42
+    },
+    "hollywood": {
+      "delta": -2.44,
+      "data_points": 42
+    },
+    "havana": {
+      "delta": -1.64,
+      "data_points": 42
+    },
+    "numbani": {
+      "delta": -0.64,
+      "data_points": 43
+    },
+    "midtown": {
+      "delta": -0.97,
+      "data_points": 44
+    },
+    "runasapi": {
+      "delta": -0.7,
+      "data_points": 39
+    },
+    "antarctic-peninsula": {
+      "delta": -1.89,
+      "data_points": 32
+    },
+    "neon-junction": {
+      "delta": -5.86,
+      "data_points": 20
+    },
+    "eichenwalde": {
+      "delta": 6.25,
+      "data_points": 8
+    },
+    "busan": {
+      "delta": -10.64,
+      "data_points": 8
+    },
+    "paraiso": {
+      "delta": -1.35,
+      "data_points": 8
+    }
+  },
+  "Roadhog": {
+    "midtown": {
+      "delta": -2.84,
+      "data_points": 44
+    },
+    "esperanca": {
+      "delta": 0.21,
+      "data_points": 43
+    },
+    "new-queen-street": {
+      "delta": 1.14,
+      "data_points": 44
+    },
+    "runasapi": {
+      "delta": 0.87,
+      "data_points": 43
+    },
+    "lijiang-tower": {
+      "delta": 1.86,
+      "data_points": 43
+    },
+    "route-66": {
+      "delta": -0.51,
+      "data_points": 44
+    },
+    "ilios": {
+      "delta": 3.45,
+      "data_points": 43
+    },
+    "rialto": {
+      "delta": 1.5,
+      "data_points": 43
+    },
+    "oasis": {
+      "delta": 3.59,
+      "data_points": 44
+    },
+    "blizzard-world": {
+      "delta": -3.38,
+      "data_points": 43
+    },
+    "samoa": {
+      "delta": 4.56,
+      "data_points": 44
+    },
+    "aatlis": {
+      "delta": 1.48,
+      "data_points": 43
+    },
+    "nepal": {
+      "delta": 1.41,
+      "data_points": 44
+    },
+    "colosseo": {
+      "delta": -0.13,
+      "data_points": 43
+    },
+    "hollywood": {
+      "delta": -0.15,
+      "data_points": 43
+    },
+    "watchpoint-gibraltar": {
+      "delta": -1.19,
+      "data_points": 44
+    },
+    "kings-row": {
+      "delta": -2.23,
+      "data_points": 44
+    },
+    "new-junk-city": {
+      "delta": 0.09,
+      "data_points": 43
+    },
+    "junkertown": {
+      "delta": -3.99,
+      "data_points": 43
+    },
+    "suravasa": {
+      "delta": -2.41,
+      "data_points": 44
+    },
+    "dorado": {
+      "delta": -3.25,
+      "data_points": 43
+    },
+    "havana": {
+      "delta": 0.66,
+      "data_points": 43
+    },
+    "shambali-monastery": {
+      "delta": -0.26,
+      "data_points": 42
+    },
+    "circuit-royal": {
+      "delta": -7.21,
+      "data_points": 41
+    },
+    "numbani": {
+      "delta": -6.79,
+      "data_points": 44
+    },
+    "antarctic-peninsula": {
+      "delta": 3.58,
+      "data_points": 32
+    },
+    "neon-junction": {
+      "delta": -3.02,
+      "data_points": 20
+    },
+    "eichenwalde": {
+      "delta": 8.35,
+      "data_points": 8
+    },
+    "busan": {
+      "delta": -0.09,
+      "data_points": 8
+    },
+    "paraiso": {
+      "delta": 1.16,
+      "data_points": 8
+    }
+  },
+  "Cassidy": {
+    "runasapi": {
+      "delta": -0.18,
+      "data_points": 44
+    },
+    "esperanca": {
+      "delta": -0.76,
+      "data_points": 44
+    },
+    "numbani": {
+      "delta": -0.14,
+      "data_points": 44
+    },
+    "midtown": {
+      "delta": -0.49,
+      "data_points": 44
+    },
+    "oasis": {
+      "delta": 2.34,
+      "data_points": 44
+    },
+    "aatlis": {
+      "delta": 1.45,
+      "data_points": 44
+    },
+    "samoa": {
+      "delta": 1.71,
+      "data_points": 44
+    },
+    "circuit-royal": {
+      "delta": -0.66,
+      "data_points": 43
+    },
+    "nepal": {
+      "delta": 0.24,
+      "data_points": 44
+    },
+    "junkertown": {
+      "delta": -1.85,
+      "data_points": 44
+    },
+    "watchpoint-gibraltar": {
+      "delta": 0.33,
+      "data_points": 44
+    },
+    "new-junk-city": {
+      "delta": 1.22,
+      "data_points": 44
+    },
+    "ilios": {
+      "delta": -0.34,
+      "data_points": 44
+    },
+    "dorado": {
+      "delta": -0.69,
+      "data_points": 44
+    },
+    "kings-row": {
+      "delta": 0.49,
+      "data_points": 44
+    },
+    "route-66": {
+      "delta": 1.28,
+      "data_points": 44
+    },
+    "suravasa": {
+      "delta": -0.84,
+      "data_points": 44
+    },
+    "hollywood": {
+      "delta": -1.81,
+      "data_points": 44
+    },
+    "lijiang-tower": {
+      "delta": 0.35,
+      "data_points": 44
+    },
+    "new-queen-street": {
+      "delta": -1.66,
+      "data_points": 44
+    },
+    "blizzard-world": {
+      "delta": -2.12,
+      "data_points": 44
+    },
+    "havana": {
+      "delta": -2.11,
+      "data_points": 43
+    },
+    "colosseo": {
+      "delta": -1.79,
+      "data_points": 44
+    },
+    "rialto": {
+      "delta": -1.73,
+      "data_points": 44
+    },
+    "shambali-monastery": {
+      "delta": -2.78,
+      "data_points": 44
+    },
+    "antarctic-peninsula": {
+      "delta": 3.82,
+      "data_points": 32
+    },
+    "neon-junction": {
+      "delta": 0.24,
+      "data_points": 20
+    },
+    "busan": {
+      "delta": 2.35,
+      "data_points": 8
+    },
+    "eichenwalde": {
+      "delta": -3.01,
+      "data_points": 8
+    },
+    "paraiso": {
+      "delta": -3.36,
+      "data_points": 8
+    }
+  },
+  "Genji": {
+    "new-queen-street": {
+      "delta": -1.1,
+      "data_points": 44
+    },
+    "runasapi": {
+      "delta": 1.12,
+      "data_points": 43
+    },
+    "suravasa": {
+      "delta": 1.2,
+      "data_points": 43
+    },
+    "nepal": {
+      "delta": -1.26,
+      "data_points": 44
+    },
+    "dorado": {
+      "delta": -0.02,
+      "data_points": 43
+    },
+    "hollywood": {
+      "delta": 0.66,
+      "data_points": 43
+    },
+    "watchpoint-gibraltar": {
+      "delta": 0.29,
+      "data_points": 44
+    },
+    "numbani": {
+      "delta": -2.04,
+      "data_points": 44
+    },
+    "blizzard-world": {
+      "delta": -1.05,
+      "data_points": 44
+    },
+    "ilios": {
+      "delta": 0.76,
+      "data_points": 44
+    },
+    "havana": {
+      "delta": 0.44,
+      "data_points": 44
+    },
+    "aatlis": {
+      "delta": 0.26,
+      "data_points": 44
+    },
+    "oasis": {
+      "delta": -1.59,
+      "data_points": 44
+    },
+    "colosseo": {
+      "delta": -0.13,
+      "data_points": 44
+    },
+    "rialto": {
+      "delta": 1.11,
+      "data_points": 44
+    },
+    "shambali-monastery": {
+      "delta": -0.17,
+      "data_points": 44
+    },
+    "kings-row": {
+      "delta": -0.08,
+      "data_points": 44
+    },
+    "new-junk-city": {
+      "delta": -1.23,
+      "data_points": 44
+    },
+    "circuit-royal": {
+      "delta": 0.11,
+      "data_points": 44
+    },
+    "route-66": {
+      "delta": -0.47,
+      "data_points": 44
+    },
+    "lijiang-tower": {
+      "delta": 0.24,
+      "data_points": 43
+    },
+    "samoa": {
+      "delta": -2.64,
+      "data_points": 44
+    },
+    "junkertown": {
+      "delta": 1.36,
+      "data_points": 44
+    },
+    "midtown": {
+      "delta": 3.51,
+      "data_points": 44
+    },
+    "esperanca": {
+      "delta": 0.58,
+      "data_points": 44
+    },
+    "antarctic-peninsula": {
+      "delta": -1.7,
+      "data_points": 32
+    },
+    "neon-junction": {
+      "delta": -0.56,
+      "data_points": 20
+    },
+    "paraiso": {
+      "delta": -3.53,
+      "data_points": 8
+    },
+    "busan": {
+      "delta": -3.37,
+      "data_points": 8
+    },
+    "eichenwalde": {
+      "delta": -2.88,
+      "data_points": 8
+    }
+  },
+  "D.Va": {
+    "new-queen-street": {
+      "delta": -0.47,
+      "data_points": 44
+    },
+    "watchpoint-gibraltar": {
+      "delta": 3.64,
+      "data_points": 43
+    },
+    "blizzard-world": {
+      "delta": 1.47,
+      "data_points": 44
+    },
+    "hollywood": {
+      "delta": -0.29,
+      "data_points": 43
+    },
+    "havana": {
+      "delta": -0.5,
+      "data_points": 43
+    },
+    "rialto": {
+      "delta": 0.17,
+      "data_points": 43
+    },
+    "kings-row": {
+      "delta": -0.9,
+      "data_points": 44
+    },
+    "samoa": {
+      "delta": -1.72,
+      "data_points": 44
+    },
+    "ilios": {
+      "delta": 1.06,
+      "data_points": 44
+    },
+    "shambali-monastery": {
+      "delta": 0.6,
+      "data_points": 43
+    },
+    "route-66": {
+      "delta": 1.98,
+      "data_points": 44
+    },
+    "dorado": {
+      "delta": 1.6,
+      "data_points": 44
+    },
+    "oasis": {
+      "delta": 0.31,
+      "data_points": 44
+    },
+    "runasapi": {
+      "delta": 1.08,
+      "data_points": 44
+    },
+    "aatlis": {
+      "delta": -3.37,
+      "data_points": 44
+    },
+    "new-junk-city": {
+      "delta": -1.57,
+      "data_points": 44
+    },
+    "colosseo": {
+      "delta": -2.61,
+      "data_points": 44
+    },
+    "suravasa": {
+      "delta": -3.54,
+      "data_points": 44
+    },
+    "nepal": {
+      "delta": -1.72,
+      "data_points": 44
+    },
+    "lijiang-tower": {
+      "delta": -2.15,
+      "data_points": 44
+    },
+    "esperanca": {
+      "delta": -2.14,
+      "data_points": 43
+    },
+    "circuit-royal": {
+      "delta": -4.1,
+      "data_points": 44
+    },
+    "junkertown": {
+      "delta": -1.66,
+      "data_points": 44
+    },
+    "midtown": {
+      "delta": -0.25,
+      "data_points": 42
+    },
+    "numbani": {
+      "delta": 1.37,
+      "data_points": 43
+    },
+    "antarctic-peninsula": {
+      "delta": -2.13,
+      "data_points": 32
+    },
+    "neon-junction": {
+      "delta": -2.91,
+      "data_points": 20
+    },
+    "eichenwalde": {
+      "delta": -1.49,
+      "data_points": 8
+    },
+    "paraiso": {
+      "delta": 2.85,
+      "data_points": 8
+    },
+    "busan": {
+      "delta": 2.26,
+      "data_points": 8
+    }
+  },
+  "Zenyatta": {
+    "havana": {
+      "delta": 4.52,
+      "data_points": 43
+    },
+    "runasapi": {
+      "delta": -1.81,
+      "data_points": 44
+    },
+    "junkertown": {
+      "delta": 3.46,
+      "data_points": 44
+    },
+    "shambali-monastery": {
+      "delta": -1.86,
+      "data_points": 44
+    },
+    "midtown": {
+      "delta": -2.17,
+      "data_points": 44
+    },
+    "rialto": {
+      "delta": -1.28,
+      "data_points": 44
+    },
+    "circuit-royal": {
+      "delta": 1.52,
+      "data_points": 44
+    },
+    "samoa": {
+      "delta": -0.08,
+      "data_points": 44
+    },
+    "oasis": {
+      "delta": -0.38,
+      "data_points": 44
+    },
+    "watchpoint-gibraltar": {
+      "delta": -3.26,
+      "data_points": 44
+    },
+    "aatlis": {
+      "delta": -0.64,
+      "data_points": 43
+    },
+    "ilios": {
+      "delta": 0.54,
+      "data_points": 42
+    },
+    "suravasa": {
+      "delta": -0.01,
+      "data_points": 44
+    },
+    "dorado": {
+      "delta": -1.55,
+      "data_points": 44
+    },
+    "blizzard-world": {
+      "delta": -0.77,
+      "data_points": 43
+    },
+    "kings-row": {
+      "delta": -0.89,
+      "data_points": 44
+    },
+    "nepal": {
+      "delta": 0.49,
+      "data_points": 44
+    },
+    "colosseo": {
+      "delta": 0.81,
+      "data_points": 44
+    },
+    "new-junk-city": {
+      "delta": -2.0,
+      "data_points": 42
+    },
+    "hollywood": {
+      "delta": -0.85,
+      "data_points": 44
+    },
+    "esperanca": {
+      "delta": -2.4,
+      "data_points": 43
+    },
+    "route-66": {
+      "delta": -1.96,
+      "data_points": 43
+    },
+    "new-queen-street": {
+      "delta": 1.73,
+      "data_points": 44
+    },
+    "lijiang-tower": {
+      "delta": 0.74,
+      "data_points": 44
+    },
+    "numbani": {
+      "delta": -2.79,
+      "data_points": 44
+    },
+    "antarctic-peninsula": {
+      "delta": 0.1,
+      "data_points": 32
+    },
+    "neon-junction": {
+      "delta": 0.5,
+      "data_points": 20
+    },
+    "paraiso": {
+      "delta": -1.39,
+      "data_points": 8
+    },
+    "busan": {
+      "delta": 1.14,
+      "data_points": 8
+    },
+    "eichenwalde": {
+      "delta": 0.59,
+      "data_points": 8
+    }
+  },
+  "Symmetra": {
+    "new-queen-street": {
+      "delta": 3.18,
+      "data_points": 38
+    },
+    "new-junk-city": {
+      "delta": 3.28,
+      "data_points": 42
+    },
+    "nepal": {
+      "delta": 3.54,
+      "data_points": 44
+    },
+    "samoa": {
+      "delta": 1.89,
+      "data_points": 43
+    },
+    "lijiang-tower": {
+      "delta": 3.11,
+      "data_points": 44
+    },
+    "junkertown": {
+      "delta": -1.71,
+      "data_points": 40
+    },
+    "suravasa": {
+      "delta": 3.47,
+      "data_points": 42
+    },
+    "ilios": {
+      "delta": -0.02,
+      "data_points": 44
+    },
+    "oasis": {
+      "delta": 0.1,
+      "data_points": 44
+    },
+    "hollywood": {
+      "delta": -5.02,
+      "data_points": 43
+    },
+    "midtown": {
+      "delta": -1.88,
+      "data_points": 44
+    },
+    "kings-row": {
+      "delta": -0.3,
+      "data_points": 43
+    },
+    "rialto": {
+      "delta": -1.17,
+      "data_points": 43
+    },
+    "shambali-monastery": {
+      "delta": -2.1,
+      "data_points": 42
+    },
+    "dorado": {
+      "delta": -2.54,
+      "data_points": 43
+    },
+    "colosseo": {
+      "delta": -3.32,
+      "data_points": 40
+    },
+    "runasapi": {
+      "delta": -1.68,
+      "data_points": 40
+    },
+    "watchpoint-gibraltar": {
+      "delta": -4.38,
+      "data_points": 42
+    },
+    "route-66": {
+      "delta": -2.64,
+      "data_points": 42
+    },
+    "circuit-royal": {
+      "delta": 3.08,
+      "data_points": 43
+    },
+    "havana": {
+      "delta": -3.32,
+      "data_points": 43
+    },
+    "blizzard-world": {
+      "delta": -2.14,
+      "data_points": 44
+    },
+    "aatlis": {
+      "delta": 0.2,
+      "data_points": 43
+    },
+    "esperanca": {
+      "delta": 0.22,
+      "data_points": 40
+    },
+    "numbani": {
+      "delta": -5.76,
+      "data_points": 41
+    },
+    "antarctic-peninsula": {
+      "delta": 2.24,
+      "data_points": 32
+    },
+    "neon-junction": {
+      "delta": 0.62,
+      "data_points": 20
+    },
+    "paraiso": {
+      "delta": 1.49,
+      "data_points": 8
+    },
+    "busan": {
+      "delta": -0.82,
+      "data_points": 8
+    },
+    "eichenwalde": {
+      "delta": -9.3,
+      "data_points": 7
+    }
+  },
+  "Widowmaker": {
+    "circuit-royal": {
+      "delta": 5.82,
+      "data_points": 44
+    },
+    "midtown": {
+      "delta": 1.47,
+      "data_points": 44
+    },
+    "junkertown": {
+      "delta": 5.65,
+      "data_points": 44
+    },
+    "havana": {
+      "delta": 6.05,
+      "data_points": 44
+    },
+    "dorado": {
+      "delta": -4.49,
+      "data_points": 44
+    },
+    "rialto": {
+      "delta": 2.37,
+      "data_points": 44
+    },
+    "kings-row": {
+      "delta": 1.01,
+      "data_points": 44
+    },
+    "blizzard-world": {
+      "delta": -0.57,
+      "data_points": 44
+    },
+    "route-66": {
+      "delta": -0.06,
+      "data_points": 44
+    },
+    "watchpoint-gibraltar": {
+      "delta": -0.37,
+      "data_points": 43
+    },
+    "ilios": {
+      "delta": 0.87,
+      "data_points": 44
+    },
+    "shambali-monastery": {
+      "delta": -1.67,
+      "data_points": 42
+    },
+    "colosseo": {
+      "delta": -5.0,
+      "data_points": 44
+    },
+    "numbani": {
+      "delta": -9.72,
+      "data_points": 43
+    },
+    "hollywood": {
+      "delta": -1.6,
+      "data_points": 44
+    },
+    "samoa": {
+      "delta": -6.37,
+      "data_points": 37
+    },
+    "nepal": {
+      "delta": -9.76,
+      "data_points": 44
+    },
+    "suravasa": {
+      "delta": -11.91,
+      "data_points": 37
+    },
+    "new-queen-street": {
+      "delta": -7.83,
+      "data_points": 43
+    },
+    "esperanca": {
+      "delta": -15.95,
+      "data_points": 41
+    },
+    "runasapi": {
+      "delta": -17.53,
+      "data_points": 44
+    },
+    "lijiang-tower": {
+      "delta": -7.09,
+      "data_points": 41
+    },
+    "oasis": {
+      "delta": -15.39,
+      "data_points": 39
+    },
+    "aatlis": {
+      "delta": -28.36,
+      "data_points": 5
+    },
+    "new-junk-city": {
+      "delta": -18.15,
+      "data_points": 22
+    },
+    "antarctic-peninsula": {
+      "delta": -9.18,
+      "data_points": 27
+    },
+    "neon-junction": {
+      "delta": 0.21,
+      "data_points": 20
+    },
+    "busan": {
+      "delta": -0.42,
+      "data_points": 8
+    },
+    "paraiso": {
+      "delta": 0.98,
+      "data_points": 8
+    },
+    "eichenwalde": {
+      "delta": -1.49,
+      "data_points": 8
+    }
+  },
+  "Winston": {
+    "numbani": {
+      "delta": 1.88,
+      "data_points": 44
+    },
+    "dorado": {
+      "delta": 4.18,
+      "data_points": 44
+    },
+    "watchpoint-gibraltar": {
+      "delta": 2.94,
+      "data_points": 44
+    },
+    "colosseo": {
+      "delta": 1.2,
+      "data_points": 44
+    },
+    "esperanca": {
+      "delta": 2.49,
+      "data_points": 44
+    },
+    "route-66": {
+      "delta": -3.72,
+      "data_points": 44
+    },
+    "new-queen-street": {
+      "delta": 0.3,
+      "data_points": 44
+    },
+    "suravasa": {
+      "delta": 0.81,
+      "data_points": 44
+    },
+    "ilios": {
+      "delta": 1.46,
+      "data_points": 44
+    },
+    "hollywood": {
+      "delta": 0.17,
+      "data_points": 44
+    },
+    "junkertown": {
+      "delta": -0.23,
+      "data_points": 44
+    },
+    "lijiang-tower": {
+      "delta": -1.27,
+      "data_points": 44
+    },
+    "oasis": {
+      "delta": -0.51,
+      "data_points": 44
+    },
+    "rialto": {
+      "delta": 0.66,
+      "data_points": 43
+    },
+    "shambali-monastery": {
+      "delta": -5.63,
+      "data_points": 43
+    },
+    "samoa": {
+      "delta": -3.05,
+      "data_points": 44
+    },
+    "nepal": {
+      "delta": -4.0,
+      "data_points": 44
+    },
+    "blizzard-world": {
+      "delta": 0.33,
+      "data_points": 44
+    },
+    "aatlis": {
+      "delta": -5.42,
+      "data_points": 43
+    },
+    "runasapi": {
+      "delta": 0.16,
+      "data_points": 44
+    },
+    "new-junk-city": {
+      "delta": -8.32,
+      "data_points": 44
+    },
+    "kings-row": {
+      "delta": -4.31,
+      "data_points": 44
+    },
+    "havana": {
+      "delta": -8.11,
+      "data_points": 43
+    },
+    "circuit-royal": {
+      "delta": -10.39,
+      "data_points": 43
+    },
+    "midtown": {
+      "delta": -6.4,
+      "data_points": 44
+    },
+    "antarctic-peninsula": {
+      "delta": -2.79,
+      "data_points": 32
+    },
+    "neon-junction": {
+      "delta": -6.19,
+      "data_points": 20
+    },
+    "paraiso": {
+      "delta": 3.01,
+      "data_points": 8
+    },
+    "busan": {
+      "delta": 1.98,
+      "data_points": 8
+    },
+    "eichenwalde": {
+      "delta": -3.38,
+      "data_points": 8
+    }
+  },
+  "Bastion": {
+    "numbani": {
+      "delta": 0.79,
+      "data_points": 43
+    },
+    "runasapi": {
+      "delta": 0.54,
+      "data_points": 40
+    },
+    "nepal": {
+      "delta": 2.3,
+      "data_points": 44
+    },
+    "havana": {
+      "delta": 1.42,
+      "data_points": 41
+    },
+    "new-junk-city": {
+      "delta": -1.21,
+      "data_points": 40
+    },
+    "junkertown": {
+      "delta": -0.71,
+      "data_points": 42
+    },
+    "watchpoint-gibraltar": {
+      "delta": 0.44,
+      "data_points": 42
+    },
+    "ilios": {
+      "delta": 0.52,
+      "data_points": 41
+    },
+    "colosseo": {
+      "delta": -2.14,
+      "data_points": 42
+    },
+    "circuit-royal": {
+      "delta": 4.91,
+      "data_points": 44
+    },
+    "kings-row": {
+      "delta": -0.54,
+      "data_points": 43
+    },
+    "route-66": {
+      "delta": -4.9,
+      "data_points": 44
+    },
+    "rialto": {
+      "delta": 2.99,
+      "data_points": 42
+    },
+    "suravasa": {
+      "delta": -0.18,
+      "data_points": 41
+    },
+    "oasis": {
+      "delta": -0.51,
+      "data_points": 43
+    },
+    "samoa": {
+      "delta": 1.04,
+      "data_points": 42
+    },
+    "blizzard-world": {
+      "delta": -1.44,
+      "data_points": 43
+    },
+    "hollywood": {
+      "delta": -1.48,
+      "data_points": 43
+    },
+    "shambali-monastery": {
+      "delta": 2.13,
+      "data_points": 42
+    },
+    "new-queen-street": {
+      "delta": -2.37,
+      "data_points": 41
+    },
+    "aatlis": {
+      "delta": -1.57,
+      "data_points": 42
+    },
+    "esperanca": {
+      "delta": 0.83,
+      "data_points": 42
+    },
+    "dorado": {
+      "delta": -2.0,
+      "data_points": 42
+    },
+    "lijiang-tower": {
+      "delta": -0.58,
+      "data_points": 44
+    },
+    "midtown": {
+      "delta": -5.53,
+      "data_points": 44
+    },
+    "antarctic-peninsula": {
+      "delta": 1.45,
+      "data_points": 31
+    },
+    "neon-junction": {
+      "delta": 1.78,
+      "data_points": 20
+    },
+    "busan": {
+      "delta": -0.09,
+      "data_points": 8
+    },
+    "paraiso": {
+      "delta": 5.01,
+      "data_points": 8
+    },
+    "eichenwalde": {
+      "delta": -0.25,
+      "data_points": 8
+    }
+  },
+  "Pharah": {
+    "runasapi": {
+      "delta": -0.68,
+      "data_points": 40
+    },
+    "numbani": {
+      "delta": -4.22,
+      "data_points": 43
+    },
+    "midtown": {
+      "delta": -2.81,
+      "data_points": 43
+    },
+    "route-66": {
+      "delta": -0.92,
+      "data_points": 43
+    },
+    "shambali-monastery": {
+      "delta": 1.04,
+      "data_points": 44
+    },
+    "oasis": {
+      "delta": -1.49,
+      "data_points": 44
+    },
+    "dorado": {
+      "delta": 2.47,
+      "data_points": 42
+    },
+    "rialto": {
+      "delta": 1.92,
+      "data_points": 44
+    },
+    "ilios": {
+      "delta": 1.91,
+      "data_points": 43
+    },
+    "nepal": {
+      "delta": 2.14,
+      "data_points": 44
+    },
+    "samoa": {
+      "delta": -1.61,
+      "data_points": 43
+    },
+    "lijiang-tower": {
+      "delta": 4.59,
+      "data_points": 44
+    },
+    "hollywood": {
+      "delta": -1.08,
+      "data_points": 42
+    },
+    "kings-row": {
+      "delta": 1.64,
+      "data_points": 44
+    },
+    "suravasa": {
+      "delta": 2.2,
+      "data_points": 43
+    },
+    "watchpoint-gibraltar": {
+      "delta": -0.11,
+      "data_points": 43
+    },
+    "blizzard-world": {
+      "delta": -2.86,
+      "data_points": 44
+    },
+    "colosseo": {
+      "delta": -1.28,
+      "data_points": 44
+    },
+    "havana": {
+      "delta": -4.24,
+      "data_points": 42
+    },
+    "circuit-royal": {
+      "delta": -3.15,
+      "data_points": 43
+    },
+    "aatlis": {
+      "delta": -4.2,
+      "data_points": 43
+    },
+    "new-queen-street": {
+      "delta": -0.5,
+      "data_points": 44
+    },
+    "junkertown": {
+      "delta": -6.21,
+      "data_points": 42
+    },
+    "new-junk-city": {
+      "delta": -6.99,
+      "data_points": 43
+    },
+    "esperanca": {
+      "delta": -0.21,
+      "data_points": 42
+    },
+    "antarctic-peninsula": {
+      "delta": -4.89,
+      "data_points": 32
+    },
+    "neon-junction": {
+      "delta": -0.52,
+      "data_points": 20
+    },
+    "eichenwalde": {
+      "delta": 2.31,
+      "data_points": 8
+    },
+    "paraiso": {
+      "delta": -0.56,
+      "data_points": 8
+    },
+    "busan": {
+      "delta": -1.83,
+      "data_points": 8
+    }
+  },
+  "Reinhardt": {
+    "esperanca": {
+      "delta": 1.87,
+      "data_points": 43
+    },
+    "runasapi": {
+      "delta": 3.87,
+      "data_points": 43
+    },
+    "kings-row": {
+      "delta": -0.49,
+      "data_points": 44
+    },
+    "lijiang-tower": {
+      "delta": 3.32,
+      "data_points": 44
+    },
+    "shambali-monastery": {
+      "delta": 5.29,
+      "data_points": 43
+    },
+    "nepal": {
+      "delta": 2.29,
+      "data_points": 44
+    },
+    "colosseo": {
+      "delta": 4.98,
+      "data_points": 43
+    },
+    "suravasa": {
+      "delta": 1.01,
+      "data_points": 44
+    },
+    "new-queen-street": {
+      "delta": 1.06,
+      "data_points": 44
+    },
+    "rialto": {
+      "delta": -1.32,
+      "data_points": 43
+    },
+    "oasis": {
+      "delta": -1.06,
+      "data_points": 43
+    },
+    "samoa": {
+      "delta": 0.34,
+      "data_points": 44
+    },
+    "new-junk-city": {
+      "delta": 1.82,
+      "data_points": 44
+    },
+    "circuit-royal": {
+      "delta": 1.04,
+      "data_points": 43
+    },
+    "junkertown": {
+      "delta": 0.52,
+      "data_points": 42
+    },
+    "aatlis": {
+      "delta": 2.43,
+      "data_points": 42
+    },
+    "ilios": {
+      "delta": -1.7,
+      "data_points": 42
+    },
+    "blizzard-world": {
+      "delta": -4.72,
+      "data_points": 44
+    },
+    "route-66": {
+      "delta": -4.24,
+      "data_points": 42
+    },
+    "dorado": {
+      "delta": -2.77,
+      "data_points": 41
+    },
+    "midtown": {
+      "delta": -3.89,
+      "data_points": 44
+    },
+    "havana": {
+      "delta": -3.33,
+      "data_points": 43
+    },
+    "hollywood": {
+      "delta": -8.66,
+      "data_points": 43
+    },
+    "watchpoint-gibraltar": {
+      "delta": -7.74,
+      "data_points": 40
+    },
+    "numbani": {
+      "delta": -4.71,
+      "data_points": 43
+    },
+    "antarctic-peninsula": {
+      "delta": 1.68,
+      "data_points": 32
+    },
+    "neon-junction": {
+      "delta": 2.07,
+      "data_points": 20
+    },
+    "busan": {
+      "delta": 1.31,
+      "data_points": 8
+    },
+    "eichenwalde": {
+      "delta": -5.71,
+      "data_points": 8
+    },
+    "paraiso": {
+      "delta": -6.04,
+      "data_points": 8
+    }
+  },
+  "Torbj\u00f6rn": {
+    "lijiang-tower": {
+      "delta": 3.91,
+      "data_points": 39
+    },
+    "numbani": {
+      "delta": -1.71,
+      "data_points": 42
+    },
+    "junkertown": {
+      "delta": 0.35,
+      "data_points": 42
+    },
+    "new-junk-city": {
+      "delta": 1.69,
+      "data_points": 42
+    },
+    "nepal": {
+      "delta": 2.91,
+      "data_points": 43
+    },
+    "dorado": {
+      "delta": -3.39,
+      "data_points": 41
+    },
+    "samoa": {
+      "delta": 1.89,
+      "data_points": 44
+    },
+    "havana": {
+      "delta": -0.33,
+      "data_points": 42
+    },
+    "suravasa": {
+      "delta": -0.03,
+      "data_points": 44
+    },
+    "oasis": {
+      "delta": 3.77,
+      "data_points": 43
+    },
+    "ilios": {
+      "delta": 3.33,
+      "data_points": 43
+    },
+    "watchpoint-gibraltar": {
+      "delta": -2.66,
+      "data_points": 44
+    },
+    "aatlis": {
+      "delta": 0.28,
+      "data_points": 42
+    },
+    "rialto": {
+      "delta": -2.59,
+      "data_points": 42
+    },
+    "circuit-royal": {
+      "delta": -3.09,
+      "data_points": 42
+    },
+    "colosseo": {
+      "delta": 2.85,
+      "data_points": 43
+    },
+    "kings-row": {
+      "delta": -1.83,
+      "data_points": 42
+    },
+    "hollywood": {
+      "delta": -2.25,
+      "data_points": 43
+    },
+    "route-66": {
+      "delta": 2.47,
+      "data_points": 43
+    },
+    "blizzard-world": {
+      "delta": -4.9,
+      "data_points": 42
+    },
+    "new-queen-street": {
+      "delta": 3.31,
+      "data_points": 43
+    },
+    "shambali-monastery": {
+      "delta": -2.73,
+      "data_points": 42
+    },
+    "runasapi": {
+      "delta": 1.28,
+      "data_points": 41
+    },
+    "esperanca": {
+      "delta": 1.31,
+      "data_points": 42
+    },
+    "midtown": {
+      "delta": -3.52,
+      "data_points": 43
+    },
+    "antarctic-peninsula": {
+      "delta": 2.96,
+      "data_points": 32
+    },
+    "neon-junction": {
+      "delta": 0.39,
+      "data_points": 19
+    },
+    "busan": {
+      "delta": -4.7,
+      "data_points": 8
+    },
+    "paraiso": {
+      "delta": -2.63,
+      "data_points": 8
+    },
+    "eichenwalde": {
+      "delta": 0.17,
+      "data_points": 7
+    }
+  },
+  "Mercy": {
+    "lijiang-tower": {
+      "delta": -1.63,
+      "data_points": 43
+    },
+    "runasapi": {
+      "delta": -3.09,
+      "data_points": 41
+    },
+    "aatlis": {
+      "delta": -1.58,
+      "data_points": 41
+    },
+    "blizzard-world": {
+      "delta": 0.96,
+      "data_points": 43
+    },
+    "route-66": {
+      "delta": 4.32,
+      "data_points": 44
+    },
+    "circuit-royal": {
+      "delta": 0.78,
+      "data_points": 43
+    },
+    "rialto": {
+      "delta": -0.05,
+      "data_points": 43
+    },
+    "colosseo": {
+      "delta": 0.79,
+      "data_points": 43
+    },
+    "oasis": {
+      "delta": -1.47,
+      "data_points": 43
+    },
+    "nepal": {
+      "delta": -0.76,
+      "data_points": 43
+    },
+    "watchpoint-gibraltar": {
+      "delta": 2.83,
+      "data_points": 43
+    },
+    "suravasa": {
+      "delta": -1.88,
+      "data_points": 43
+    },
+    "new-junk-city": {
+      "delta": -0.02,
+      "data_points": 42
+    },
+    "dorado": {
+      "delta": -0.56,
+      "data_points": 44
+    },
+    "ilios": {
+      "delta": 0.89,
+      "data_points": 42
+    },
+    "samoa": {
+      "delta": -0.65,
+      "data_points": 43
+    },
+    "hollywood": {
+      "delta": -0.44,
+      "data_points": 43
+    },
+    "shambali-monastery": {
+      "delta": -2.85,
+      "data_points": 41
+    },
+    "esperanca": {
+      "delta": 0.04,
+      "data_points": 42
+    },
+    "junkertown": {
+      "delta": 0.06,
+      "data_points": 43
+    },
+    "kings-row": {
+      "delta": -2.83,
+      "data_points": 44
+    },
+    "havana": {
+      "delta": 0.2,
+      "data_points": 42
+    },
+    "numbani": {
+      "delta": 1.28,
+      "data_points": 43
+    },
+    "midtown": {
+      "delta": -2.54,
+      "data_points": 42
+    },
+    "new-queen-street": {
+      "delta": 0.79,
+      "data_points": 42
+    },
+    "antarctic-peninsula": {
+      "delta": -1.04,
+      "data_points": 31
+    },
+    "neon-junction": {
+      "delta": -3.01,
+      "data_points": 18
+    },
+    "busan": {
+      "delta": -4.47,
+      "data_points": 6
+    },
+    "paraiso": {
+      "delta": 5.12,
+      "data_points": 8
+    },
+    "eichenwalde": {
+      "delta": 2.34,
+      "data_points": 7
+    }
+  },
+  "Hanzo": {
+    "esperanca": {
+      "delta": 1.62,
+      "data_points": 41
+    },
+    "lijiang-tower": {
+      "delta": -0.14,
+      "data_points": 44
+    },
+    "shambali-monastery": {
+      "delta": 0.37,
+      "data_points": 43
+    },
+    "midtown": {
+      "delta": -0.18,
+      "data_points": 42
+    },
+    "colosseo": {
+      "delta": -0.25,
+      "data_points": 43
+    },
+    "circuit-royal": {
+      "delta": 0.54,
+      "data_points": 44
+    },
+    "nepal": {
+      "delta": 0.78,
+      "data_points": 44
+    },
+    "hollywood": {
+      "delta": 1.51,
+      "data_points": 44
+    },
+    "havana": {
+      "delta": 1.02,
+      "data_points": 44
+    },
+    "rialto": {
+      "delta": 0.21,
+      "data_points": 44
+    },
+    "samoa": {
+      "delta": 0.12,
+      "data_points": 43
+    },
+    "watchpoint-gibraltar": {
+      "delta": -1.36,
+      "data_points": 44
+    },
+    "kings-row": {
+      "delta": 2.18,
+      "data_points": 44
+    },
+    "junkertown": {
+      "delta": 1.88,
+      "data_points": 43
+    },
+    "route-66": {
+      "delta": 1.44,
+      "data_points": 43
+    },
+    "oasis": {
+      "delta": 1.2,
+      "data_points": 44
+    },
+    "suravasa": {
+      "delta": -2.14,
+      "data_points": 44
+    },
+    "ilios": {
+      "delta": -1.17,
+      "data_points": 44
+    },
+    "blizzard-world": {
+      "delta": -1.65,
+      "data_points": 44
+    },
+    "dorado": {
+      "delta": 0.05,
+      "data_points": 44
+    },
+    "aatlis": {
+      "delta": -3.96,
+      "data_points": 43
+    },
+    "new-queen-street": {
+      "delta": 0.56,
+      "data_points": 42
+    },
+    "new-junk-city": {
+      "delta": -2.59,
+      "data_points": 43
+    },
+    "numbani": {
+      "delta": -0.21,
+      "data_points": 44
+    },
+    "runasapi": {
+      "delta": -3.84,
+      "data_points": 42
+    },
+    "antarctic-peninsula": {
+      "delta": -0.59,
+      "data_points": 32
+    },
+    "neon-junction": {
+      "delta": -2.4,
+      "data_points": 20
+    },
+    "paraiso": {
+      "delta": -4.95,
+      "data_points": 8
+    },
+    "eichenwalde": {
+      "delta": -8.58,
+      "data_points": 8
+    },
+    "busan": {
+      "delta": -0.35,
+      "data_points": 8
+    }
+  },
+  "Tracer": {
+    "numbani": {
+      "delta": 0.64,
+      "data_points": 44
+    },
+    "midtown": {
+      "delta": -1.03,
+      "data_points": 44
+    },
+    "esperanca": {
+      "delta": -0.03,
+      "data_points": 44
+    },
+    "colosseo": {
+      "delta": 2.04,
+      "data_points": 44
+    },
+    "aatlis": {
+      "delta": -0.15,
+      "data_points": 44
+    },
+    "lijiang-tower": {
+      "delta": -1.55,
+      "data_points": 44
+    },
+    "runasapi": {
+      "delta": 0.79,
+      "data_points": 44
+    },
+    "samoa": {
+      "delta": 1.5,
+      "data_points": 44
+    },
+    "watchpoint-gibraltar": {
+      "delta": 0.65,
+      "data_points": 44
+    },
+    "route-66": {
+      "delta": 0.75,
+      "data_points": 44
+    },
+    "new-junk-city": {
+      "delta": 0.8,
+      "data_points": 44
+    },
+    "junkertown": {
+      "delta": 0.15,
+      "data_points": 44
+    },
+    "dorado": {
+      "delta": -1.41,
+      "data_points": 44
+    },
+    "oasis": {
+      "delta": 0.31,
+      "data_points": 44
+    },
+    "shambali-monastery": {
+      "delta": -2.28,
+      "data_points": 44
+    },
+    "blizzard-world": {
+      "delta": -2.16,
+      "data_points": 44
+    },
+    "ilios": {
+      "delta": -1.9,
+      "data_points": 44
+    },
+    "suravasa": {
+      "delta": 0.31,
+      "data_points": 44
+    },
+    "rialto": {
+      "delta": -1.43,
+      "data_points": 44
+    },
+    "hollywood": {
+      "delta": -0.45,
+      "data_points": 44
+    },
+    "nepal": {
+      "delta": -0.9,
+      "data_points": 44
+    },
+    "havana": {
+      "delta": 0.96,
+      "data_points": 44
+    },
+    "kings-row": {
+      "delta": -3.38,
+      "data_points": 44
+    },
+    "circuit-royal": {
+      "delta": -6.22,
+      "data_points": 43
+    },
+    "new-queen-street": {
+      "delta": 1.28,
+      "data_points": 44
+    },
+    "antarctic-peninsula": {
+      "delta": 1.38,
+      "data_points": 32
+    },
+    "neon-junction": {
+      "delta": -3.78,
+      "data_points": 20
+    },
+    "paraiso": {
+      "delta": 0.06,
+      "data_points": 8
+    },
+    "busan": {
+      "delta": 0.19,
+      "data_points": 8
+    },
+    "eichenwalde": {
+      "delta": 4.21,
+      "data_points": 8
+    }
+  },
+  "Reaper": {
+    "esperanca": {
+      "delta": 1.08,
+      "data_points": 43
+    },
+    "lijiang-tower": {
+      "delta": 2.55,
+      "data_points": 44
+    },
+    "midtown": {
+      "delta": -0.11,
+      "data_points": 44
+    },
+    "oasis": {
+      "delta": 0.97,
+      "data_points": 44
+    },
+    "aatlis": {
+      "delta": 0.54,
+      "data_points": 44
+    },
+    "new-queen-street": {
+      "delta": 1.43,
+      "data_points": 44
+    },
+    "new-junk-city": {
+      "delta": 2.26,
+      "data_points": 44
+    },
+    "kings-row": {
+      "delta": 2.02,
+      "data_points": 44
+    },
+    "nepal": {
+      "delta": 0.85,
+      "data_points": 44
+    },
+    "suravasa": {
+      "delta": 0.97,
+      "data_points": 44
+    },
+    "rialto": {
+      "delta": 0.32,
+      "data_points": 44
+    },
+    "watchpoint-gibraltar": {
+      "delta": -1.71,
+      "data_points": 44
+    },
+    "shambali-monastery": {
+      "delta": 1.76,
+      "data_points": 43
+    },
+    "colosseo": {
+      "delta": -1.52,
+      "data_points": 44
+    },
+    "samoa": {
+      "delta": -1.3,
+      "data_points": 44
+    },
+    "ilios": {
+      "delta": 0.41,
+      "data_points": 44
+    },
+    "dorado": {
+      "delta": 0.56,
+      "data_points": 44
+    },
+    "havana": {
+      "delta": -2.76,
+      "data_points": 43
+    },
+    "blizzard-world": {
+      "delta": -1.63,
+      "data_points": 44
+    },
+    "hollywood": {
+      "delta": -2.79,
+      "data_points": 44
+    },
+    "route-66": {
+      "delta": -3.94,
+      "data_points": 44
+    },
+    "junkertown": {
+      "delta": -2.15,
+      "data_points": 43
+    },
+    "circuit-royal": {
+      "delta": 0.4,
+      "data_points": 44
+    },
+    "numbani": {
+      "delta": -5.58,
+      "data_points": 44
+    },
+    "runasapi": {
+      "delta": -0.84,
+      "data_points": 43
+    },
+    "antarctic-peninsula": {
+      "delta": 0.51,
+      "data_points": 32
+    },
+    "neon-junction": {
+      "delta": 0.46,
+      "data_points": 20
+    },
+    "busan": {
+      "delta": 0.68,
+      "data_points": 8
+    },
+    "eichenwalde": {
+      "delta": -6.11,
+      "data_points": 8
+    },
+    "paraiso": {
+      "delta": -5.15,
+      "data_points": 8
+    }
+  },
+  "Vendetta": {
+    "runasapi": {
+      "delta": 1.93,
+      "data_points": 40
+    },
+    "shambali-monastery": {
+      "delta": 2.6,
+      "data_points": 34
+    },
+    "midtown": {
+      "delta": -0.15,
+      "data_points": 34
+    },
+    "junkertown": {
+      "delta": -4.34,
+      "data_points": 36
+    },
+    "blizzard-world": {
+      "delta": -3.78,
+      "data_points": 36
+    },
+    "kings-row": {
+      "delta": -2.22,
+      "data_points": 41
+    },
+    "ilios": {
+      "delta": 1.54,
+      "data_points": 39
+    },
+    "esperanca": {
+      "delta": 1.4,
+      "data_points": 39
+    },
+    "nepal": {
+      "delta": 1.06,
+      "data_points": 41
+    },
+    "rialto": {
+      "delta": -0.5,
+      "data_points": 38
+    },
+    "new-junk-city": {
+      "delta": 2.1,
+      "data_points": 40
+    },
+    "suravasa": {
+      "delta": 0.03,
+      "data_points": 40
+    },
+    "aatlis": {
+      "delta": 2.84,
+      "data_points": 44
+    },
+    "watchpoint-gibraltar": {
+      "delta": -5.6,
+      "data_points": 38
+    },
+    "hollywood": {
+      "delta": -4.47,
+      "data_points": 38
+    },
+    "colosseo": {
+      "delta": 3.65,
+      "data_points": 39
+    },
+    "samoa": {
+      "delta": -1.42,
+      "data_points": 40
+    },
+    "route-66": {
+      "delta": 0.62,
+      "data_points": 38
+    },
+    "dorado": {
+      "delta": -1.72,
+      "data_points": 40
+    },
+    "oasis": {
+      "delta": 1.7,
+      "data_points": 40
+    },
+    "new-queen-street": {
+      "delta": -1.28,
+      "data_points": 40
+    },
+    "circuit-royal": {
+      "delta": -2.08,
+      "data_points": 27
+    },
+    "havana": {
+      "delta": -3.28,
+      "data_points": 29
+    },
+    "lijiang-tower": {
+      "delta": -1.11,
+      "data_points": 41
+    },
+    "numbani": {
+      "delta": -2.19,
+      "data_points": 35
+    },
+    "antarctic-peninsula": {
+      "delta": 0.89,
+      "data_points": 29
+    },
+    "neon-junction": {
+      "delta": 3.88,
+      "data_points": 20
+    },
+    "eichenwalde": {
+      "delta": -1.09,
+      "data_points": 7
+    },
+    "busan": {
+      "delta": -2.2,
+      "data_points": 8
+    },
+    "paraiso": {
+      "delta": -2.74,
+      "data_points": 8
+    }
+  },
+  "Wuyang": {
+    "midtown": {
+      "delta": 0.02,
+      "data_points": 44
+    },
+    "lijiang-tower": {
+      "delta": -0.42,
+      "data_points": 44
+    },
+    "route-66": {
+      "delta": -0.23,
+      "data_points": 44
+    },
+    "kings-row": {
+      "delta": -1.63,
+      "data_points": 44
+    },
+    "havana": {
+      "delta": -2.49,
+      "data_points": 44
+    },
+    "new-junk-city": {
+      "delta": 0.02,
+      "data_points": 44
+    },
+    "hollywood": {
+      "delta": -0.44,
+      "data_points": 44
+    },
+    "colosseo": {
+      "delta": 1.27,
+      "data_points": 44
+    },
+    "suravasa": {
+      "delta": -0.88,
+      "data_points": 44
+    },
+    "shambali-monastery": {
+      "delta": 2.9,
+      "data_points": 44
+    },
+    "blizzard-world": {
+      "delta": 0.17,
+      "data_points": 44
+    },
+    "nepal": {
+      "delta": 0.25,
+      "data_points": 44
+    },
+    "ilios": {
+      "delta": -1.87,
+      "data_points": 44
+    },
+    "rialto": {
+      "delta": 1.06,
+      "data_points": 44
+    },
+    "circuit-royal": {
+      "delta": 0.58,
+      "data_points": 44
+    },
+    "dorado": {
+      "delta": 1.92,
+      "data_points": 44
+    },
+    "aatlis": {
+      "delta": -1.97,
+      "data_points": 44
+    },
+    "samoa": {
+      "delta": 1.61,
+      "data_points": 44
+    },
+    "watchpoint-gibraltar": {
+      "delta": -0.81,
+      "data_points": 44
+    },
+    "new-queen-street": {
+      "delta": 1.42,
+      "data_points": 44
+    },
+    "oasis": {
+      "delta": 0.28,
+      "data_points": 44
+    },
+    "junkertown": {
+      "delta": -2.36,
+      "data_points": 44
+    },
+    "numbani": {
+      "delta": -1.5,
+      "data_points": 43
+    },
+    "esperanca": {
+      "delta": 0.53,
+      "data_points": 44
+    },
+    "runasapi": {
+      "delta": 0.95,
+      "data_points": 44
+    },
+    "antarctic-peninsula": {
+      "delta": 0.61,
+      "data_points": 32
+    },
+    "neon-junction": {
+      "delta": -2.13,
+      "data_points": 20
+    },
+    "busan": {
+      "delta": -0.4,
+      "data_points": 8
+    },
+    "paraiso": {
+      "delta": -2.44,
+      "data_points": 8
+    },
+    "eichenwalde": {
+      "delta": 1.85,
+      "data_points": 8
+    }
+  },
+  "Freja": {
+    "new-queen-street": {
+      "delta": 2.59,
+      "data_points": 43
+    },
+    "midtown": {
+      "delta": -0.12,
+      "data_points": 42
+    },
+    "oasis": {
+      "delta": 2.74,
+      "data_points": 44
+    },
+    "circuit-royal": {
+      "delta": 0.06,
+      "data_points": 44
+    },
+    "hollywood": {
+      "delta": -0.52,
+      "data_points": 43
+    },
+    "colosseo": {
+      "delta": 1.63,
+      "data_points": 43
+    },
+    "ilios": {
+      "delta": 1.09,
+      "data_points": 44
+    },
+    "lijiang-tower": {
+      "delta": -1.76,
+      "data_points": 42
+    },
+    "havana": {
+      "delta": 0.13,
+      "data_points": 43
+    },
+    "blizzard-world": {
+      "delta": -1.14,
+      "data_points": 43
+    },
+    "route-66": {
+      "delta": 0.45,
+      "data_points": 44
+    },
+    "dorado": {
+      "delta": 0.13,
+      "data_points": 43
+    },
+    "samoa": {
+      "delta": -2.26,
+      "data_points": 44
+    },
+    "nepal": {
+      "delta": -0.58,
+      "data_points": 44
+    },
+    "rialto": {
+      "delta": 1.35,
+      "data_points": 44
+    },
+    "watchpoint-gibraltar": {
+      "delta": 2.09,
+      "data_points": 44
+    },
+    "shambali-monastery": {
+      "delta": 0.88,
+      "data_points": 43
+    },
+    "kings-row": {
+      "delta": -1.24,
+      "data_points": 44
+    },
+    "junkertown": {
+      "delta": 4.65,
+      "data_points": 43
+    },
+    "suravasa": {
+      "delta": -3.12,
+      "data_points": 44
+    },
+    "aatlis": {
+      "delta": -2.08,
+      "data_points": 38
+    },
+    "new-junk-city": {
+      "delta": -6.13,
+      "data_points": 40
+    },
+    "numbani": {
+      "delta": -1.03,
+      "data_points": 44
+    },
+    "runasapi": {
+      "delta": -5.08,
+      "data_points": 42
+    },
+    "esperanca": {
+      "delta": -1.08,
+      "data_points": 41
+    },
+    "antarctic-peninsula": {
+      "delta": -1.13,
+      "data_points": 32
+    },
+    "neon-junction": {
+      "delta": -4.24,
+      "data_points": 20
+    },
+    "eichenwalde": {
+      "delta": 3.28,
+      "data_points": 8
+    },
+    "busan": {
+      "delta": 3.6,
+      "data_points": 8
+    },
+    "paraiso": {
+      "delta": -5.6,
+      "data_points": 8
+    }
+  },
+  "Hazard": {
+    "esperanca": {
+      "delta": -0.06,
+      "data_points": 43
+    },
+    "midtown": {
+      "delta": -3.0,
+      "data_points": 41
+    },
+    "runasapi": {
+      "delta": -0.43,
+      "data_points": 42
+    },
+    "numbani": {
+      "delta": -0.11,
+      "data_points": 42
+    },
+    "lijiang-tower": {
+      "delta": 0.7,
+      "data_points": 43
+    },
+    "colosseo": {
+      "delta": 0.78,
+      "data_points": 43
+    },
+    "junkertown": {
+      "delta": 0.03,
+      "data_points": 43
+    },
+    "nepal": {
+      "delta": 2.2,
+      "data_points": 44
+    },
+    "new-junk-city": {
+      "delta": 3.2,
+      "data_points": 43
+    },
+    "ilios": {
+      "delta": 3.63,
+      "data_points": 43
+    },
+    "shambali-monastery": {
+      "delta": -1.52,
+      "data_points": 43
+    },
+    "aatlis": {
+      "delta": -0.12,
+      "data_points": 43
+    },
+    "hollywood": {
+      "delta": -0.75,
+      "data_points": 42
+    },
+    "rialto": {
+      "delta": 0.42,
+      "data_points": 43
+    },
+    "dorado": {
+      "delta": -2.06,
+      "data_points": 43
+    },
+    "samoa": {
+      "delta": 1.01,
+      "data_points": 44
+    },
+    "watchpoint-gibraltar": {
+      "delta": 2.27,
+      "data_points": 44
+    },
+    "oasis": {
+      "delta": 0.91,
+      "data_points": 44
+    },
+    "kings-row": {
+      "delta": -0.86,
+      "data_points": 43
+    },
+    "suravasa": {
+      "delta": 0.49,
+      "data_points": 43
+    },
+    "route-66": {
+      "delta": 0.75,
+      "data_points": 43
+    },
+    "blizzard-world": {
+      "delta": -3.64,
+      "data_points": 43
+    },
+    "new-queen-street": {
+      "delta": 1.17,
+      "data_points": 44
+    },
+    "circuit-royal": {
+      "delta": -8.16,
+      "data_points": 38
+    },
+    "havana": {
+      "delta": -4.12,
+      "data_points": 38
+    },
+    "antarctic-peninsula": {
+      "delta": -2.21,
+      "data_points": 32
+    },
+    "neon-junction": {
+      "delta": -6.24,
+      "data_points": 20
+    },
+    "paraiso": {
+      "delta": -3.69,
+      "data_points": 8
+    },
+    "busan": {
+      "delta": -1.35,
+      "data_points": 8
+    },
+    "eichenwalde": {
+      "delta": 3.83,
+      "data_points": 8
+    }
+  },
+  "Domina": {
+    "new-queen-street": {
+      "delta": -1.81,
+      "data_points": 43
+    },
+    "midtown": {
+      "delta": 0.32,
+      "data_points": 44
+    },
+    "circuit-royal": {
+      "delta": 6.57,
+      "data_points": 44
+    },
+    "new-junk-city": {
+      "delta": 1.06,
+      "data_points": 40
+    },
+    "kings-row": {
+      "delta": 0.54,
+      "data_points": 43
+    },
+    "havana": {
+      "delta": 2.94,
+      "data_points": 42
+    },
+    "shambali-monastery": {
+      "delta": -1.18,
+      "data_points": 44
+    },
+    "route-66": {
+      "delta": -1.3,
+      "data_points": 43
+    },
+    "suravasa": {
+      "delta": 2.06,
+      "data_points": 44
+    },
+    "rialto": {
+      "delta": -1.53,
+      "data_points": 43
+    },
+    "nepal": {
+      "delta": -0.4,
+      "data_points": 44
+    },
+    "lijiang-tower": {
+      "delta": 2.55,
+      "data_points": 44
+    },
+    "samoa": {
+      "delta": 0.17,
+      "data_points": 44
+    },
+    "hollywood": {
+      "delta": -0.1,
+      "data_points": 44
+    },
+    "aatlis": {
+      "delta": -1.97,
+      "data_points": 41
+    },
+    "blizzard-world": {
+      "delta": -3.14,
+      "data_points": 44
+    },
+    "oasis": {
+      "delta": 0.6,
+      "data_points": 42
+    },
+    "junkertown": {
+      "delta": -2.56,
+      "data_points": 43
+    },
+    "ilios": {
+      "delta": -5.93,
+      "data_points": 39
+    },
+    "colosseo": {
+      "delta": -5.0,
+      "data_points": 43
+    },
+    "dorado": {
+      "delta": -6.61,
+      "data_points": 39
+    },
+    "numbani": {
+      "delta": -5.73,
+      "data_points": 40
+    },
+    "watchpoint-gibraltar": {
+      "delta": -4.53,
+      "data_points": 38
+    },
+    "esperanca": {
+      "delta": -3.66,
+      "data_points": 42
+    },
+    "runasapi": {
+      "delta": 1.88,
+      "data_points": 43
+    },
+    "antarctic-peninsula": {
+      "delta": 2.14,
+      "data_points": 31
+    },
+    "neon-junction": {
+      "delta": -0.25,
+      "data_points": 20
+    },
+    "busan": {
+      "delta": 0.77,
+      "data_points": 8
+    },
+    "eichenwalde": {
+      "delta": 1.39,
+      "data_points": 8
+    },
+    "paraiso": {
+      "delta": -8.0,
+      "data_points": 7
+    }
+  },
+  "Anran": {
+    "numbani": {
+      "delta": -1.48,
+      "data_points": 42
+    },
+    "new-queen-street": {
+      "delta": -2.98,
+      "data_points": 42
+    },
+    "midtown": {
+      "delta": -0.83,
+      "data_points": 41
+    },
+    "route-66": {
+      "delta": -1.21,
+      "data_points": 42
+    },
+    "junkertown": {
+      "delta": 0.96,
+      "data_points": 43
+    },
+    "aatlis": {
+      "delta": 3.95,
+      "data_points": 44
+    },
+    "esperanca": {
+      "delta": -2.04,
+      "data_points": 41
+    },
+    "new-junk-city": {
+      "delta": 0.34,
+      "data_points": 43
+    },
+    "rialto": {
+      "delta": -0.3,
+      "data_points": 43
+    },
+    "havana": {
+      "delta": -0.15,
+      "data_points": 40
+    },
+    "watchpoint-gibraltar": {
+      "delta": 2.52,
+      "data_points": 42
+    },
+    "shambali-monastery": {
+      "delta": -0.36,
+      "data_points": 42
+    },
+    "colosseo": {
+      "delta": 2.52,
+      "data_points": 41
+    },
+    "kings-row": {
+      "delta": -0.47,
+      "data_points": 44
+    },
+    "suravasa": {
+      "delta": 1.99,
+      "data_points": 44
+    },
+    "ilios": {
+      "delta": 1.3,
+      "data_points": 41
+    },
+    "dorado": {
+      "delta": -0.51,
+      "data_points": 42
+    },
+    "blizzard-world": {
+      "delta": 2.12,
+      "data_points": 43
+    },
+    "hollywood": {
+      "delta": -1.47,
+      "data_points": 44
+    },
+    "samoa": {
+      "delta": 2.04,
+      "data_points": 43
+    },
+    "oasis": {
+      "delta": -0.53,
+      "data_points": 44
+    },
+    "circuit-royal": {
+      "delta": -3.32,
+      "data_points": 34
+    },
+    "nepal": {
+      "delta": -0.42,
+      "data_points": 43
+    },
+    "runasapi": {
+      "delta": 2.07,
+      "data_points": 41
+    },
+    "lijiang-tower": {
+      "delta": -2.7,
+      "data_points": 43
+    },
+    "antarctic-peninsula": {
+      "delta": 0.24,
+      "data_points": 31
+    },
+    "neon-junction": {
+      "delta": -3.21,
+      "data_points": 20
+    },
+    "paraiso": {
+      "delta": -1.9,
+      "data_points": 8
+    },
+    "eichenwalde": {
+      "delta": -14.98,
+      "data_points": 7
+    },
+    "busan": {
+      "delta": 2.03,
+      "data_points": 7
+    }
+  },
+  "Emre": {
+    "esperanca": {
+      "delta": 0.53,
+      "data_points": 44
+    },
+    "lijiang-tower": {
+      "delta": -1.37,
+      "data_points": 44
+    },
+    "new-queen-street": {
+      "delta": -1.09,
+      "data_points": 44
+    },
+    "havana": {
+      "delta": 0.93,
+      "data_points": 44
+    },
+    "circuit-royal": {
+      "delta": 0.13,
+      "data_points": 44
+    },
+    "watchpoint-gibraltar": {
+      "delta": 0.33,
+      "data_points": 44
+    },
+    "rialto": {
+      "delta": 2.25,
+      "data_points": 44
+    },
+    "midtown": {
+      "delta": 0.47,
+      "data_points": 44
+    },
+    "route-66": {
+      "delta": -0.42,
+      "data_points": 44
+    },
+    "dorado": {
+      "delta": -1.27,
+      "data_points": 44
+    },
+    "nepal": {
+      "delta": 0.65,
+      "data_points": 44
+    },
+    "suravasa": {
+      "delta": -0.88,
+      "data_points": 44
+    },
+    "oasis": {
+      "delta": -1.35,
+      "data_points": 44
+    },
+    "kings-row": {
+      "delta": -3.23,
+      "data_points": 44
+    },
+    "new-junk-city": {
+      "delta": 0.96,
+      "data_points": 43
+    },
+    "colosseo": {
+      "delta": -0.96,
+      "data_points": 44
+    },
+    "hollywood": {
+      "delta": -1.42,
+      "data_points": 44
+    },
+    "aatlis": {
+      "delta": 1.16,
+      "data_points": 44
+    },
+    "junkertown": {
+      "delta": -0.45,
+      "data_points": 44
+    },
+    "ilios": {
+      "delta": 0.07,
+      "data_points": 44
+    },
+    "numbani": {
+      "delta": -1.5,
+      "data_points": 44
+    },
+    "samoa": {
+      "delta": 0.8,
+      "data_points": 44
+    },
+    "shambali-monastery": {
+      "delta": 0.48,
+      "data_points": 44
+    },
+    "blizzard-world": {
+      "delta": -0.27,
+      "data_points": 44
+    },
+    "runasapi": {
+      "delta": 0.61,
+      "data_points": 44
+    },
+    "antarctic-peninsula": {
+      "delta": -0.29,
+      "data_points": 32
+    },
+    "neon-junction": {
+      "delta": -1.25,
+      "data_points": 20
+    },
+    "paraiso": {
+      "delta": -2.3,
+      "data_points": 8
+    },
+    "busan": {
+      "delta": 2.81,
+      "data_points": 8
+    },
+    "eichenwalde": {
+      "delta": -5.92,
+      "data_points": 8
+    }
+  },
+  "Jetpack Cat": {
+    "runasapi": {
+      "delta": 0.46,
+      "data_points": 44
+    },
+    "new-queen-street": {
+      "delta": -2.6,
+      "data_points": 44
+    },
+    "esperanca": {
+      "delta": 0.28,
+      "data_points": 44
+    },
+    "oasis": {
+      "delta": 0.73,
+      "data_points": 44
+    },
+    "dorado": {
+      "delta": -0.09,
+      "data_points": 44
+    },
+    "ilios": {
+      "delta": 3.87,
+      "data_points": 44
+    },
+    "suravasa": {
+      "delta": 2.75,
+      "data_points": 43
+    },
+    "hollywood": {
+      "delta": -4.7,
+      "data_points": 44
+    },
+    "new-junk-city": {
+      "delta": -0.75,
+      "data_points": 43
+    },
+    "watchpoint-gibraltar": {
+      "delta": -0.25,
+      "data_points": 44
+    },
+    "junkertown": {
+      "delta": -0.02,
+      "data_points": 43
+    },
+    "colosseo": {
+      "delta": 2.49,
+      "data_points": 44
+    },
+    "shambali-monastery": {
+      "delta": 0.85,
+      "data_points": 44
+    },
+    "nepal": {
+      "delta": 2.01,
+      "data_points": 44
+    },
+    "circuit-royal": {
+      "delta": -2.26,
+      "data_points": 44
+    },
+    "samoa": {
+      "delta": -2.4,
+      "data_points": 44
+    },
+    "aatlis": {
+      "delta": 1.14,
+      "data_points": 44
+    },
+    "havana": {
+      "delta": -6.18,
+      "data_points": 43
+    },
+    "rialto": {
+      "delta": -1.23,
+      "data_points": 43
+    },
+    "kings-row": {
+      "delta": -3.56,
+      "data_points": 44
+    },
+    "route-66": {
+      "delta": -1.25,
+      "data_points": 44
+    },
+    "blizzard-world": {
+      "delta": 0.42,
+      "data_points": 44
+    },
+    "lijiang-tower": {
+      "delta": 1.36,
+      "data_points": 44
+    },
+    "numbani": {
+      "delta": -2.44,
+      "data_points": 44
+    },
+    "midtown": {
+      "delta": -6.32,
+      "data_points": 44
+    },
+    "antarctic-peninsula": {
+      "delta": -1.43,
+      "data_points": 32
+    },
+    "neon-junction": {
+      "delta": -3.3,
+      "data_points": 20
+    },
+    "busan": {
+      "delta": -0.4,
+      "data_points": 8
+    },
+    "paraiso": {
+      "delta": 8.43,
+      "data_points": 8
+    },
+    "eichenwalde": {
+      "delta": 5.72,
+      "data_points": 8
+    }
+  },
+  "Mizuki": {
+    "new-queen-street": {
+      "delta": 1.86,
+      "data_points": 44
+    },
+    "runasapi": {
+      "delta": 2.1,
+      "data_points": 44
+    },
+    "junkertown": {
+      "delta": -2.38,
+      "data_points": 44
+    },
+    "dorado": {
+      "delta": -1.22,
+      "data_points": 44
+    },
+    "havana": {
+      "delta": -3.69,
+      "data_points": 42
+    },
+    "watchpoint-gibraltar": {
+      "delta": -0.29,
+      "data_points": 44
+    },
+    "shambali-monastery": {
+      "delta": 3.18,
+      "data_points": 43
+    },
+    "colosseo": {
+      "delta": -0.05,
+      "data_points": 44
+    },
+    "rialto": {
+      "delta": -1.11,
+      "data_points": 43
+    },
+    "kings-row": {
+      "delta": -0.06,
+      "data_points": 44
+    },
+    "new-junk-city": {
+      "delta": 3.02,
+      "data_points": 44
+    },
+    "samoa": {
+      "delta": 1.58,
+      "data_points": 44
+    },
+    "lijiang-tower": {
+      "delta": 1.34,
+      "data_points": 44
+    },
+    "circuit-royal": {
+      "delta": 2.15,
+      "data_points": 44
+    },
+    "hollywood": {
+      "delta": -0.87,
+      "data_points": 44
+    },
+    "aatlis": {
+      "delta": 1.29,
+      "data_points": 44
+    },
+    "route-66": {
+      "delta": -3.31,
+      "data_points": 44
+    },
+    "oasis": {
+      "delta": 1.09,
+      "data_points": 44
+    },
+    "ilios": {
+      "delta": -1.14,
+      "data_points": 44
+    },
+    "suravasa": {
+      "delta": -1.42,
+      "data_points": 44
+    },
+    "nepal": {
+      "delta": 0.77,
+      "data_points": 44
+    },
+    "blizzard-world": {
+      "delta": -5.13,
+      "data_points": 44
+    },
+    "esperanca": {
+      "delta": 0.47,
+      "data_points": 44
+    },
+    "midtown": {
+      "delta": -1.13,
+      "data_points": 44
+    },
+    "numbani": {
+      "delta": -3.75,
+      "data_points": 43
+    },
+    "antarctic-peninsula": {
+      "delta": 0.36,
+      "data_points": 32
+    },
+    "neon-junction": {
+      "delta": 3.46,
+      "data_points": 20
+    },
+    "paraiso": {
+      "delta": -7.66,
+      "data_points": 8
+    },
+    "busan": {
+      "delta": 1.24,
+      "data_points": 8
+    },
+    "eichenwalde": {
+      "delta": -0.25,
+      "data_points": 8
+    }
+  },
+  "Sierra": {
+    "watchpoint-gibraltar": {
+      "delta": -0.07,
+      "data_points": 28
+    },
+    "suravasa": {
+      "delta": 1.66,
+      "data_points": 26
+    },
+    "junkertown": {
+      "delta": 1.62,
+      "data_points": 28
+    },
+    "rialto": {
+      "delta": -0.43,
+      "data_points": 29
+    },
+    "route-66": {
+      "delta": 1.87,
+      "data_points": 28
+    },
+    "dorado": {
+      "delta": -1.87,
+      "data_points": 28
+    },
+    "kings-row": {
+      "delta": 0.56,
+      "data_points": 27
+    },
+    "oasis": {
+      "delta": 0.92,
+      "data_points": 25
+    },
+    "circuit-royal": {
+      "delta": 2.24,
+      "data_points": 31
+    },
+    "numbani": {
+      "delta": 2.22,
+      "data_points": 26
+    },
+    "shambali-monastery": {
+      "delta": -0.16,
+      "data_points": 28
+    },
+    "blizzard-world": {
+      "delta": -2.72,
+      "data_points": 30
+    },
+    "lijiang-tower": {
+      "delta": -0.1,
+      "data_points": 26
+    },
+    "colosseo": {
+      "delta": -1.29,
+      "data_points": 28
+    },
+    "midtown": {
+      "delta": 2.76,
+      "data_points": 27
+    },
+    "esperanca": {
+      "delta": -0.22,
+      "data_points": 27
+    },
+    "hollywood": {
+      "delta": 0.78,
+      "data_points": 26
+    },
+    "antarctic-peninsula": {
+      "delta": -0.81,
+      "data_points": 25
+    },
+    "ilios": {
+      "delta": -0.48,
+      "data_points": 26
+    },
+    "runasapi": {
+      "delta": 0.24,
+      "data_points": 26
+    },
+    "samoa": {
+      "delta": -0.22,
+      "data_points": 25
+    },
+    "nepal": {
+      "delta": 1.06,
+      "data_points": 25
+    },
+    "new-queen-street": {
+      "delta": -1.75,
+      "data_points": 27
+    },
+    "new-junk-city": {
+      "delta": -1.47,
+      "data_points": 21
+    },
+    "aatlis": {
+      "delta": -1.59,
+      "data_points": 23
+    },
+    "havana": {
+      "delta": 3.5,
+      "data_points": 31
+    },
+    "neon-junction": {
+      "delta": 1.62,
+      "data_points": 16
+    },
+    "busan": {
+      "delta": -6.42,
+      "data_points": 4
+    },
+    "paraiso": {
+      "delta": 0.56,
+      "data_points": 6
+    },
+    "eichenwalde": {
+      "delta": 2.99,
+      "data_points": 4
+    }
+  },
+  "Shion": {
+    "junkertown": {
+      "delta": 1.06,
+      "data_points": 20
+    },
+    "watchpoint-gibraltar": {
+      "delta": 2.1,
+      "data_points": 20
+    },
+    "aatlis": {
+      "delta": 0.57,
+      "data_points": 20
+    },
+    "rialto": {
+      "delta": 0.37,
+      "data_points": 20
+    },
+    "neon-junction": {
+      "delta": 1.73,
+      "data_points": 20
+    },
+    "circuit-royal": {
+      "delta": -4.52,
+      "data_points": 20
+    },
+    "colosseo": {
+      "delta": 1.04,
+      "data_points": 20
+    },
+    "route-66": {
+      "delta": 3.28,
+      "data_points": 20
+    },
+    "shambali-monastery": {
+      "delta": 0.52,
+      "data_points": 20
+    },
+    "new-junk-city": {
+      "delta": 1.51,
+      "data_points": 20
+    },
+    "esperanca": {
+      "delta": 0.45,
+      "data_points": 20
+    },
+    "suravasa": {
+      "delta": 0.65,
+      "data_points": 20
+    },
+    "hollywood": {
+      "delta": -1.51,
+      "data_points": 20
+    },
+    "samoa": {
+      "delta": 0.94,
+      "data_points": 20
+    },
+    "antarctic-peninsula": {
+      "delta": -1.06,
+      "data_points": 20
+    },
+    "lijiang-tower": {
+      "delta": -0.34,
+      "data_points": 20
+    },
+    "dorado": {
+      "delta": 0.55,
+      "data_points": 20
+    },
+    "runasapi": {
+      "delta": -0.95,
+      "data_points": 20
+    },
+    "nepal": {
+      "delta": -1.2,
+      "data_points": 20
+    },
+    "kings-row": {
+      "delta": -0.11,
+      "data_points": 20
+    },
+    "new-queen-street": {
+      "delta": 0.54,
+      "data_points": 20
+    },
+    "oasis": {
+      "delta": 0.72,
+      "data_points": 20
+    },
+    "midtown": {
+      "delta": -1.71,
+      "data_points": 20
+    },
+    "blizzard-world": {
+      "delta": -1.58,
+      "data_points": 20
+    },
+    "ilios": {
+      "delta": -0.55,
+      "data_points": 20
+    },
+    "numbani": {
+      "delta": -1.35,
+      "data_points": 20
+    },
+    "havana": {
+      "delta": -2.63,
+      "data_points": 20
+    },
+    "busan": {
+      "delta": 0.43,
+      "data_points": 8
+    },
+    "paraiso": {
+      "delta": -0.05,
+      "data_points": 8
+    },
+    "eichenwalde": {
+      "delta": -3.88,
+      "data_points": 8
+    }
+  },
+  "D.Mon": {
+    "dorado": {
+      "delta": 6.58,
+      "data_points": 8
+    },
+    "midtown": {
+      "delta": 2.28,
+      "data_points": 8
+    },
+    "watchpoint-gibraltar": {
+      "delta": -2.53,
+      "data_points": 8
+    },
+    "numbani": {
+      "delta": -1.54,
+      "data_points": 8
+    },
+    "runasapi": {
+      "delta": 1.74,
+      "data_points": 8
+    },
+    "antarctic-peninsula": {
+      "delta": 1.28,
+      "data_points": 8
+    },
+    "aatlis": {
+      "delta": 2.91,
+      "data_points": 8
+    },
+    "samoa": {
+      "delta": 0.79,
+      "data_points": 8
+    },
+    "lijiang-tower": {
+      "delta": -0.57,
+      "data_points": 8
+    },
+    "esperanca": {
+      "delta": 2.08,
+      "data_points": 8
+    },
+    "new-junk-city": {
+      "delta": 1.43,
+      "data_points": 8
+    },
+    "ilios": {
+      "delta": -1.17,
+      "data_points": 8
+    },
+    "busan": {
+      "delta": -0.13,
+      "data_points": 8
+    },
+    "suravasa": {
+      "delta": -0.23,
+      "data_points": 8
+    },
+    "neon-junction": {
+      "delta": -3.12,
+      "data_points": 8
+    },
+    "shambali-monastery": {
+      "delta": -4.08,
+      "data_points": 8
+    },
+    "hollywood": {
+      "delta": -6.61,
+      "data_points": 8
+    },
+    "circuit-royal": {
+      "delta": -3.89,
+      "data_points": 8
+    },
+    "kings-row": {
+      "delta": 1.36,
+      "data_points": 8
+    },
+    "new-queen-street": {
+      "delta": 1.89,
+      "data_points": 8
+    },
+    "rialto": {
+      "delta": -1.23,
+      "data_points": 8
+    },
+    "oasis": {
+      "delta": -1.46,
+      "data_points": 8
+    },
+    "paraiso": {
+      "delta": -1.98,
+      "data_points": 8
+    },
+    "nepal": {
+      "delta": 1.58,
+      "data_points": 8
+    },
+    "havana": {
+      "delta": -9.21,
+      "data_points": 7
+    },
+    "route-66": {
+      "delta": 0.54,
+      "data_points": 8
+    },
+    "colosseo": {
+      "delta": 0.32,
+      "data_points": 8
+    },
+    "eichenwalde": {
+      "delta": 4.63,
+      "data_points": 8
+    },
+    "blizzard-world": {
+      "delta": -3.36,
+      "data_points": 8
+    },
+    "junkertown": {
+      "delta": -3.44,
+      "data_points": 8
+    }
+  },
+  "Baptiste": {
+    "runasapi": {
+      "delta": -1.12,
+      "data_points": 42
+    },
+    "lijiang-tower": {
+      "delta": -0.85,
+      "data_points": 43
+    },
+    "circuit-royal": {
+      "delta": 1.91,
+      "data_points": 44
+    },
+    "havana": {
+      "delta": 1.4,
+      "data_points": 43
+    },
+    "route-66": {
+      "delta": 2.3,
+      "data_points": 44
+    },
+    "watchpoint-gibraltar": {
+      "delta": 2.23,
+      "data_points": 44
+    },
+    "nepal": {
+      "delta": 0.23,
+      "data_points": 44
+    },
+    "midtown": {
+      "delta": 0.84,
+      "data_points": 44
+    },
+    "blizzard-world": {
+      "delta": -2.57,
+      "data_points": 44
+    },
+    "samoa": {
+      "delta": 1.2,
+      "data_points": 43
+    },
+    "shambali-monastery": {
+      "delta": 1.67,
+      "data_points": 44
+    },
+    "oasis": {
+      "delta": -0.42,
+      "data_points": 44
+    },
+    "kings-row": {
+      "delta": -0.29,
+      "data_points": 44
+    },
+    "rialto": {
+      "delta": 0.76,
+      "data_points": 44
+    },
+    "hollywood": {
+      "delta": -0.82,
+      "data_points": 44
+    },
+    "suravasa": {
+      "delta": -2.15,
+      "data_points": 44
+    },
+    "new-junk-city": {
+      "delta": 1.97,
+      "data_points": 44
+    },
+    "colosseo": {
+      "delta": -2.17,
+      "data_points": 44
+    },
+    "ilios": {
+      "delta": -1.05,
+      "data_points": 43
+    },
+    "dorado": {
+      "delta": -4.21,
+      "data_points": 43
+    },
+    "numbani": {
+      "delta": -5.14,
+      "data_points": 44
+    },
+    "junkertown": {
+      "delta": 0.71,
+      "data_points": 43
+    },
+    "aatlis": {
+      "delta": -0.87,
+      "data_points": 43
+    },
+    "esperanca": {
+      "delta": -1.89,
+      "data_points": 43
+    },
+    "new-queen-street": {
+      "delta": -1.31,
+      "data_points": 44
+    },
+    "antarctic-peninsula": {
+      "delta": 0.68,
+      "data_points": 32
+    },
+    "neon-junction": {
+      "delta": -2.23,
+      "data_points": 20
+    },
+    "eichenwalde": {
+      "delta": -1.67,
+      "data_points": 8
+    },
+    "busan": {
+      "delta": -1.98,
+      "data_points": 8
+    },
+    "paraiso": {
+      "delta": -0.24,
+      "data_points": 8
+    }
+  }
+}
