@@ -11,6 +11,11 @@ OUT_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "web_data.json"
 RANKS = ["ALL", "MASTER", "GRANDMASTER_AND_CHAMPION"]
 REGIONS = ["ALL", "AMER", "EU", "ASIA", "KR"]
 
+# OWTics reports Korea as "KOREA" in the raw payload, but the site uses the
+# shorter "KR" everywhere else. Map the site-facing filter back to the raw
+# region code when matching against harvested data.
+REGION_CODE = {"KR": "KOREA"}
+
 
 def tier_of(delta):
     if delta >= 3.0:
@@ -63,6 +68,7 @@ def load_raw():
 def flatten(raw):
     slices = defaultdict(list)
     rank_slices = defaultdict(lambda: defaultdict(lambda: {"MASTER": [], "GM": []}))
+    raw_slice_counts = defaultdict(list)
 
     for hero_slug, seasons in raw.items():
         earliest = HERO_RELEASE_SEASON.get(hero_slug.title(), 1)
@@ -79,6 +85,8 @@ def flatten(raw):
             total_pr = sum(m["pickRate"] for m in measurements)
             if total_pr == 0:
                 continue
+
+            raw_slice_counts[hero_slug].append((season, tier, region))
 
             baseline_wr = sum(m["winRate"] * m["pickRate"] for m in measurements) / total_pr
             baseline_pr = total_pr / len(measurements)
@@ -104,7 +112,28 @@ def flatten(raw):
                 elif tier == "GRANDMASTER_AND_CHAMPION":
                     rank_slices[hero_slug][map_slug]["GM"].append(d_wr)
 
-    return slices, rank_slices
+    return slices, rank_slices, raw_slice_counts
+
+
+def max_possible_slices(raw_slice_counts, hero_slug, map_slug, rank_filter, region_filter):
+    """How many raw slices could this hero-map pair ever have under this
+    rank/region filter, given when the hero and map became eligible.
+    A brand-new hero or a recently-reworked map will always fall short of
+    MIN_SAMPLE_SIZE once you narrow to one rank or region - this is the
+    ceiling we compare against instead of a flat minimum in that case."""
+    earliest = max(HERO_RELEASE_SEASON.get(hero_slug.title(), 1), MAP_VALID_FROM_SEASON.get(map_slug, 1))
+    region_code = REGION_CODE.get(region_filter, region_filter)
+
+    count = 0
+    for season, tier, region in raw_slice_counts.get(hero_slug, []):
+        if season < earliest:
+            continue
+        if rank_filter != "ALL" and tier != rank_filter:
+            continue
+        if region_filter != "ALL" and region != region_code:
+            continue
+        count += 1
+    return count
 
 
 def rank_divergence(rank_slices):
@@ -127,13 +156,14 @@ def rank_divergence(rank_slices):
 
 def build():
     raw = load_raw()
-    slices, rank_slices = flatten(raw)
+    slices, rank_slices, raw_slice_counts = flatten(raw)
     divergence = rank_divergence(rank_slices)
 
     database = {}
     for rank_filter in RANKS:
         for region_filter in REGIONS:
             combo = f"{rank_filter}_{region_filter}"
+            region_code = REGION_CODE.get(region_filter, region_filter)
             hero_map_wr = defaultdict(lambda: defaultdict(list))
             hero_map_pr = defaultdict(lambda: defaultdict(list))
 
@@ -141,7 +171,7 @@ def build():
                 for item in items:
                     if rank_filter != "ALL" and item["tier"] != rank_filter:
                         continue
-                    if region_filter != "ALL" and item["region"] != region_filter:
+                    if region_filter != "ALL" and item["region"] != region_code:
                         continue
                     hero_map_wr[hero_slug][item["map_slug"]].append(item["delta_wr"])
                     hero_map_pr[hero_slug][item["map_slug"]].append(item["delta_pr"])
@@ -155,7 +185,8 @@ def build():
                 entries = []
 
                 for map_slug, deltas in maps.items():
-                    if len(deltas) < MIN_SAMPLE_SIZE:
+                    possible = max_possible_slices(raw_slice_counts, hero_slug, map_slug, rank_filter, region_filter)
+                    if len(deltas) < min(MIN_SAMPLE_SIZE, possible):
                         continue
                     avg_wr = sum(deltas) / len(deltas)
                     avg_pr = sum(hero_map_pr[hero_slug][map_slug]) / len(hero_map_pr[hero_slug][map_slug])
