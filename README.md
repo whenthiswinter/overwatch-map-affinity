@@ -4,7 +4,7 @@ Everybody knows that Overwatch heroes vary with their performance based on each 
 
 I didn't want to make a system that was dependant on patches, but rather wanted to find values that would stay the same regardless of hero's current balance or meta status, so I used "delta win rate" (map win rate minus the hero's baseline win rate for the same rank/region/patch slice). Of course this data is only valuable without any hero or map reworks, in those cases the data needs refreshing. But these values in this research should, in theory, survive regular balance changes.
 
-**[Live data browser →](web/index.html)** (needs a local server, see below)
+**[Live Interactive Dashboard →](https://whenthiswinter.github.io/overwatch-map-affinity/)**
 
 ![Hero-map affinity heatmap](charts/hero_map_heatmap.png)
 
