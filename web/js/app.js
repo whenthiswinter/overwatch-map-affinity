@@ -5,6 +5,7 @@ const TIER_ORDER = { S: 0, A: 1, B: 2, C: 3, D: 4 };
 let data = null;
 let activeTab = "map";
 let poolRoleFilter = "ALL";
+let poolModeFilter = "ALL";
 let pool = new Set(JSON.parse(localStorage.getItem("owPool") || '["winston","tracer","ana"]'));
 
 const el = (id) => document.getElementById(id);
@@ -44,6 +45,14 @@ function bindEvents() {
     btn.onclick = () => {
       poolRoleFilter = btn.dataset.role;
       document.querySelectorAll("#poolRoleFilter .chip-toggle").forEach((b) => b.classList.toggle("active", b === btn));
+      render();
+    };
+  });
+
+  document.querySelectorAll("#poolModeFilter .chip-toggle").forEach((btn) => {
+    btn.onclick = () => {
+      poolModeFilter = btn.dataset.mode;
+      document.querySelectorAll("#poolModeFilter .chip-toggle").forEach((b) => b.classList.toggle("active", b === btn));
       render();
     };
   });
@@ -187,15 +196,36 @@ function renderHeroTab(slice) {
     </tr>`).join("");
 }
 
+function volClass(sigma) {
+  if (sigma >= 3.0) return "vol-high";
+  if (sigma >= 1.8) return "vol-mid";
+  return "vol-low";
+}
+
 function renderPoolTab(slice) {
   const grid = el("poolGrid");
+  const stats = el("poolStats");
 
   if (pool.size === 0) {
     grid.innerHTML = `<p class="empty-note">Select heroes in the pool editor above to build your board.</p>`;
+    stats.innerHTML = "";
     return;
   }
 
-  grid.innerHTML = MODES.map((mode) => {
+  const statHeroes = [...pool]
+    .filter((h) => poolRoleFilter === "ALL" || (data.hero_roles[h] || "Damage") === poolRoleFilter)
+    .map((h) => ({ hero: h, role: data.hero_roles[h] || "Damage", ...(slice.heroes[h] || { volatility: 0, volatility_class: "" }) }))
+    .sort((a, b) => b.volatility - a.volatility);
+
+  stats.innerHTML = statHeroes.map((h) => `
+    <div class="pool-stat-chip">
+      <span class="role-tag ${h.role}">${fmt(h.hero)}</span>
+      <span class="sigma ${volClass(h.volatility)}">&sigma; ${h.volatility.toFixed(2)}%</span>
+    </div>`).join("");
+
+  const modesToShow = poolModeFilter === "ALL" ? MODES : [poolModeFilter];
+
+  grid.innerHTML = modesToShow.map((mode) => {
     const maps = data.map_list.filter((m) => data.map_modes[m] === mode);
 
     const cards = maps.map((mapSlug) => {

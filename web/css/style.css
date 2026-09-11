@@ -364,11 +364,60 @@ tbody tr:hover { background: var(--bg); }
 
 .hidden { display: none !important; }
 
+.pool-filter-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.pool-filter-row:last-of-type {
+  margin-bottom: 18px;
+}
+
+.filter-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--muted);
+  width: 42px;
+  flex-shrink: 0;
+}
+
 .pool-view .role-filter {
   display: flex;
   gap: 6px;
-  margin-bottom: 16px;
+  flex-wrap: wrap;
 }
+
+.pool-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.pool-stat-chip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 0.8rem;
+}
+
+.pool-stat-chip .sigma {
+  font-weight: 700;
+  font-size: 0.78rem;
+}
+
+.pool-stat-chip .sigma.vol-high { color: var(--d); }
+.pool-stat-chip .sigma.vol-mid { color: var(--c); }
+.pool-stat-chip .sigma.vol-low { color: var(--s); }
 
 .chip-toggle {
   background: var(--surface);

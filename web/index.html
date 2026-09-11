@@ -103,12 +103,27 @@
     </div>
 
     <div id="poolView" class="pool-view hidden">
-      <div class="role-filter" id="poolRoleFilter">
-        <button class="chip-toggle active" data-role="ALL">All</button>
-        <button class="chip-toggle" data-role="Tank">Tank</button>
-        <button class="chip-toggle" data-role="Damage">Damage</button>
-        <button class="chip-toggle" data-role="Support">Support</button>
+      <div class="pool-filter-row">
+        <span class="filter-label">Role</span>
+        <div class="role-filter" id="poolRoleFilter">
+          <button class="chip-toggle active" data-role="ALL">All</button>
+          <button class="chip-toggle" data-role="Tank">Tank</button>
+          <button class="chip-toggle" data-role="Damage">Damage</button>
+          <button class="chip-toggle" data-role="Support">Support</button>
+        </div>
       </div>
+      <div class="pool-filter-row">
+        <span class="filter-label">Mode</span>
+        <div class="role-filter" id="poolModeFilter">
+          <button class="chip-toggle active" data-mode="ALL">All</button>
+          <button class="chip-toggle" data-mode="Escort">Escort</button>
+          <button class="chip-toggle" data-mode="Hybrid">Hybrid</button>
+          <button class="chip-toggle" data-mode="Control">Control</button>
+          <button class="chip-toggle" data-mode="Push">Push</button>
+          <button class="chip-toggle" data-mode="Flashpoint">Flashpoint</button>
+        </div>
+      </div>
+      <div id="poolStats" class="pool-stats"></div>
       <div id="poolGrid"></div>
     </div>
   </main>

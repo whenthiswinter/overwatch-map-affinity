@@ -16,6 +16,10 @@ CHART_DIR = os.path.join(BASE, "..", "charts")
 sns.set_theme(style="whitegrid", font="sans-serif")
 
 
+def fmt(slug):
+    return slug.replace("-", " ").title()
+
+
 def load_web_data():
     with open(os.path.join(DATA_DIR, "web_data.json"), encoding="utf-8") as f:
         return json.load(f)
@@ -73,19 +77,31 @@ def rank_divergence_scatter(data):
                 rows.append({"hero": hero, "map": map_slug, "role": hd["role"], "masters": m_val, "gm": gm_by_map[map_slug]})
 
     df = pd.DataFrame(rows)
+    df["diff"] = (df["gm"] - df["masters"]).abs()
     role_colors = {"Tank": "#3498db", "Damage": "#e74c3c", "Support": "#2ecc71"}
 
-    plt.figure(figsize=(10, 10))
+    plt.figure(figsize=(11, 11))
     for role, group in df.groupby("role"):
-        plt.scatter(group["masters"], group["gm"], s=14, alpha=0.55, label=role, color=role_colors.get(role, "#999"))
+        plt.scatter(group["masters"], group["gm"], s=14, alpha=0.5, label=role, color=role_colors.get(role, "#999"))
 
     lim = max(df["masters"].abs().max(), df["gm"].abs().max()) * 1.1
     plt.plot([-lim, lim], [-lim, lim], color="#7f8c8d", linestyle="--", linewidth=1)
     plt.xlim(-lim, lim)
     plt.ylim(-lim, lim)
+
+    for _, row in df.nlargest(20, "diff").iterrows():
+        plt.annotate(
+            fmt(row["hero"]),
+            (row["masters"], row["gm"]),
+            textcoords="offset points", xytext=(5, 4),
+            fontsize=7.5, color="#333333",
+            bbox=dict(boxstyle="round,pad=0.15", fc="white", ec="none", alpha=0.65),
+        )
+
     plt.xlabel("Delta WR in Masters (%)")
     plt.ylabel("Delta WR in GM+ (%)")
     plt.title("Rank Divergence: Masters vs GM+ per hero-map pair", fontsize=14, fontweight="bold", pad=15)
+    plt.figtext(0.5, 0.005, "Labeled: the 20 hero-map pairs with the biggest Masters/GM+ split", ha="center", fontsize=8.5, color="#7f8c8d")
     plt.legend(title="Role")
     plt.tight_layout()
     plt.savefig(os.path.join(CHART_DIR, "rank_divergence_scatter.png"), dpi=300)
