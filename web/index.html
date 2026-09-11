@@ -166,6 +166,11 @@
     <p>Standard deviation of a hero's delta across all maps. Map-Dependent &ge; 3.0%, Flexible 1.8&ndash;2.9%, Map-Agnostic &lt; 1.8%.</p>
   </div>
 
+  <div class="legend-entry">
+    <h4>Minimum sample size</h4>
+    <p>A hero-map pair needs at least 3 qualifying season/tier/region slices before it's shown at all &mdash; otherwise one unlucky slice (a hero with barely any games on a map, all of them losses) can swing the average by dozens of points. Narrowing to a specific rank or region thins the slices out fast, so a hero can disappear from a filtered view even though it shows up on "All ranks / All regions". That's the filter working as intended, not missing data.</p>
+  </div>
+
   <div class="dialog-actions">
     <button class="btn ghost" id="closeLegendBtn">Close</button>
   </div>

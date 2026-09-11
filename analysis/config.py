@@ -7,6 +7,12 @@ SEASON_MAP = {
 
 MIN_PICK_RATE = 1.0
 
+# A hero-map pair needs at least this many qualifying season/tier/region
+# slices before we'll report a delta for it. Below this, a single fluky
+# slice (e.g. a 0% win rate from a handful of real games) can swing the
+# average by dozens of points and look like a real result when it isn't.
+MIN_SAMPLE_SIZE = 3
+
 HERO_RELEASE_SEASON = {
     "Sierra": 2,
     "Shion": 3,

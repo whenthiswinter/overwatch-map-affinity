@@ -24,12 +24,12 @@ Standard deviation of a hero's average delta across all maps. High sigma means a
 | Domina | 3.20% | Map-Dependent |
 | Roadhog | 3.20% | Map-Dependent |
 | Dmon | 3.17% | Map-Dependent |
-| Jetpack Cat | 3.12% | Map-Dependent |
+| Jetpackcat | 3.12% | Map-Dependent |
 | Junkrat | 3.12% | Map-Dependent |
 | Wreckingball | 3.10% | Map-Dependent |
 | Symmetra | 3.05% | Map-Dependent |
 | Moira | 2.87% | Flexible |
-| Soldier 76 | 2.80% | Flexible |
+| Soldier76 | 2.80% | Flexible |
 | Mauga | 2.79% | Flexible |
 | Pharah | 2.75% | Flexible |
 | Ramattra | 2.73% | Flexible |
@@ -76,7 +76,7 @@ Heroes whose map performance differs by 2.5% or more between Masters and GM+.
 | Hero | Map | Masters | GM+ | Diff | Better In |
 |---|---|---|---|---|---|
 | Lifeweaver | eichenwalde | -17.75% | +29.15% | +46.90% | Better in GM+ |
-| Soldier 76 | eichenwalde | -3.30% | +19.37% | +22.67% | Better in GM+ |
+| Soldier76 | eichenwalde | -3.30% | +19.37% | +22.67% | Better in GM+ |
 | Zarya | eichenwalde | -1.18% | -21.72% | -20.54% | Better in Masters |
 | Freja | eichenwalde | +13.07% | -6.50% | -19.57% | Better in Masters |
 | Zenyatta | eichenwalde | -8.37% | +9.54% | +17.91% | Better in GM+ |
@@ -97,7 +97,7 @@ Heroes whose map performance differs by 2.5% or more between Masters and GM+.
 | Shion | eichenwalde | +2.35% | -10.11% | -12.46% | Better in Masters |
 | Orisa | paraiso | -1.52% | +10.89% | +12.41% | Better in GM+ |
 | Junkrat | paraiso | -7.51% | +4.80% | +12.31% | Better in GM+ |
-| Jetpack Cat | paraiso | +2.42% | +14.44% | +12.02% | Better in GM+ |
+| Jetpackcat | paraiso | +2.42% | +14.44% | +12.02% | Better in GM+ |
 | Torbjorn | busan | +1.20% | -10.61% | -11.81% | Better in Masters |
 | Brigitte | eichenwalde | -1.08% | -12.72% | -11.64% | Better in Masters |
 | Dmon | havana | -4.26% | -15.82% | -11.57% | Better in Masters |
@@ -107,7 +107,7 @@ Heroes whose map performance differs by 2.5% or more between Masters and GM+.
 | Dmon | shambali-monastery | +1.47% | -9.63% | -11.10% | Better in Masters |
 | Baptiste | paraiso | -5.76% | +5.28% | +11.04% | Better in GM+ |
 | Lifeweaver | paraiso | +0.50% | +11.43% | +10.93% | Better in GM+ |
-| Jetpack Cat | eichenwalde | +11.02% | +0.41% | -10.61% | Better in Masters |
+| Jetpackcat | eichenwalde | +11.02% | +0.41% | -10.61% | Better in Masters |
 | Widowmaker | paraiso | -4.27% | +6.23% | +10.50% | Better in GM+ |
 | Torbjorn | neon-junction | -4.41% | +5.72% | +10.12% | Better in GM+ |
 | Hazard | eichenwalde | -1.21% | +8.87% | +10.08% | Better in GM+ |
@@ -214,13 +214,13 @@ Heroes whose map performance differs by 2.5% or more between Masters and GM+.
 | Reaper | route-66 | -1.06% | -6.82% | -5.76% | Better in Masters |
 | Wuyang | junkertown | +0.51% | -5.22% | -5.74% | Better in Masters |
 | Shion | dorado | -2.27% | +3.37% | +5.64% | Better in GM+ |
-| Soldier 76 | hollywood | -1.10% | -6.73% | -5.62% | Better in Masters |
+| Soldier76 | hollywood | -1.10% | -6.73% | -5.62% | Better in Masters |
 | Wreckingball | colosseo | +3.73% | -1.88% | -5.60% | Better in Masters |
 | Vendetta | busan | -5.00% | +0.60% | +5.59% | Better in GM+ |
 | Echo | shambali-monastery | -2.25% | +3.32% | +5.57% | Better in GM+ |
-| Jetpack Cat | runasapi | +3.23% | -2.31% | -5.55% | Better in Masters |
+| Jetpackcat | runasapi | +3.23% | -2.31% | -5.55% | Better in Masters |
 | Venture | route-66 | -4.60% | +0.94% | +5.54% | Better in GM+ |
-| Jetpack Cat | busan | +2.37% | -3.16% | -5.53% | Better in Masters |
+| Jetpackcat | busan | +2.37% | -3.16% | -5.53% | Better in Masters |
 | Baptiste | numbani | -2.38% | -7.90% | -5.53% | Better in Masters |
 | Bastion | midtown | -2.77% | -8.28% | -5.51% | Better in Masters |
 | Echo | paraiso | +2.61% | -2.90% | -5.51% | Better in Masters |
@@ -291,9 +291,9 @@ Heroes whose map performance differs by 2.5% or more between Masters and GM+.
 | Junkerqueen | hollywood | -6.98% | -2.11% | +4.87% | Better in GM+ |
 | Wreckingball | runasapi | +3.84% | -1.02% | -4.86% | Better in Masters |
 | Pharah | havana | -6.54% | -1.72% | +4.83% | Better in GM+ |
-| Soldier 76 | watchpoint-gibraltar | -2.83% | +1.99% | +4.82% | Better in GM+ |
+| Soldier76 | watchpoint-gibraltar | -2.83% | +1.99% | +4.82% | Better in GM+ |
 | Bastion | new-queen-street | -0.02% | -4.84% | -4.82% | Better in Masters |
-| Soldier 76 | busan | +1.38% | +6.20% | +4.82% | Better in GM+ |
+| Soldier76 | busan | +1.38% | +6.20% | +4.82% | Better in GM+ |
 | Reinhardt | suravasa | +3.42% | -1.40% | -4.81% | Better in Masters |
 | Torbjorn | hollywood | +0.10% | -4.71% | -4.81% | Better in Masters |
 | Freja | junkertown | +2.31% | +7.11% | +4.80% | Better in GM+ |
@@ -322,7 +322,7 @@ Heroes whose map performance differs by 2.5% or more between Masters and GM+.
 | Reaper | kings-row | -0.26% | +4.31% | +4.57% | Better in GM+ |
 | Winston | midtown | -4.11% | -8.69% | -4.57% | Better in Masters |
 | Illari | havana | -1.01% | +3.55% | +4.56% | Better in GM+ |
-| Jetpack Cat | havana | -3.97% | -8.51% | -4.54% | Better in Masters |
+| Jetpackcat | havana | -3.97% | -8.51% | -4.54% | Better in Masters |
 | Junkerqueen | esperanca | -0.06% | +4.48% | +4.54% | Better in GM+ |
 | Vendetta | havana | -5.31% | -0.78% | +4.54% | Better in GM+ |
 | Pharah | midtown | -5.03% | -0.49% | +4.54% | Better in GM+ |
@@ -355,7 +355,7 @@ Heroes whose map performance differs by 2.5% or more between Masters and GM+.
 | Venture | havana | +1.53% | -2.79% | -4.33% | Better in Masters |
 | Ashe | dorado | +1.98% | +6.31% | +4.33% | Better in GM+ |
 | Echo | busan | +3.51% | -0.80% | -4.31% | Better in Masters |
-| Soldier 76 | kings-row | -4.19% | +0.12% | +4.30% | Better in GM+ |
+| Soldier76 | kings-row | -4.19% | +0.12% | +4.30% | Better in GM+ |
 | Tracer | rialto | +0.71% | -3.58% | -4.30% | Better in Masters |
 | Widowmaker | ilios | -1.28% | +3.01% | +4.29% | Better in GM+ |
 | Wreckingball | ilios | -1.26% | +3.02% | +4.28% | Better in GM+ |
@@ -363,18 +363,18 @@ Heroes whose map performance differs by 2.5% or more between Masters and GM+.
 | Mei | new-queen-street | +1.05% | -3.23% | -4.28% | Better in Masters |
 | Vendetta | midtown | +1.60% | -2.66% | -4.27% | Better in Masters |
 | Zarya | suravasa | -2.67% | +1.60% | +4.27% | Better in GM+ |
-| Soldier 76 | neon-junction | -1.86% | +2.41% | +4.27% | Better in GM+ |
+| Soldier76 | neon-junction | -1.86% | +2.41% | +4.27% | Better in GM+ |
 | Reinhardt | watchpoint-gibraltar | -5.83% | -10.09% | -4.26% | Better in Masters |
 | Torbjorn | runasapi | +3.25% | -1.00% | -4.26% | Better in Masters |
 | Moira | runasapi | -3.51% | +0.75% | +4.26% | Better in GM+ |
 | Zarya | shambali-monastery | +0.16% | -4.10% | -4.26% | Better in Masters |
 | Sombra | blizzard-world | +1.23% | -3.02% | -4.25% | Better in Masters |
 | Pharah | shambali-monastery | +3.17% | -1.08% | -4.24% | Better in Masters |
-| Soldier 76 | junkertown | -0.82% | -5.05% | -4.23% | Better in Masters |
+| Soldier76 | junkertown | -0.82% | -5.05% | -4.23% | Better in Masters |
 | Baptiste | colosseo | -0.06% | -4.28% | -4.23% | Better in Masters |
 | Mei | hollywood | -4.59% | -0.37% | +4.22% | Better in GM+ |
 | Moira | havana | +0.75% | -3.47% | -4.22% | Better in Masters |
-| Soldier 76 | circuit-royal | +0.25% | -3.96% | -4.20% | Better in Masters |
+| Soldier76 | circuit-royal | +0.25% | -3.96% | -4.20% | Better in Masters |
 | Junkrat | antarctic-peninsula | +0.21% | -3.99% | -4.20% | Better in Masters |
 | Venture | samoa | +1.38% | -2.82% | -4.20% | Better in Masters |
 | Zenyatta | midtown | -0.07% | -4.26% | -4.19% | Better in Masters |
@@ -434,7 +434,7 @@ Heroes whose map performance differs by 2.5% or more between Masters and GM+.
 | Echo | kings-row | -2.93% | +0.88% | +3.81% | Better in GM+ |
 | Mauga | midtown | -4.23% | -0.44% | +3.79% | Better in GM+ |
 | Sigma | route-66 | -2.64% | +1.15% | +3.79% | Better in GM+ |
-| Jetpack Cat | shambali-monastery | -1.04% | +2.74% | +3.78% | Better in GM+ |
+| Jetpackcat | shambali-monastery | -1.04% | +2.74% | +3.78% | Better in GM+ |
 | Zarya | route-66 | +1.33% | -2.41% | -3.74% | Better in Masters |
 | Brigitte | ilios | +0.73% | -3.01% | -3.74% | Better in Masters |
 | Vendetta | circuit-royal | -0.56% | -4.30% | -3.74% | Better in Masters |
@@ -475,7 +475,7 @@ Heroes whose map performance differs by 2.5% or more between Masters and GM+.
 | Junkrat | new-queen-street | +4.04% | +0.46% | -3.58% | Better in Masters |
 | Domina | junkertown | -0.82% | -4.39% | -3.57% | Better in Masters |
 | Juno | havana | -0.36% | +3.20% | +3.56% | Better in GM+ |
-| Jetpack Cat | rialto | -2.96% | +0.59% | +3.55% | Better in GM+ |
+| Jetpackcat | rialto | -2.96% | +0.59% | +3.55% | Better in GM+ |
 | Mizuki | runasapi | +3.88% | +0.33% | -3.55% | Better in Masters |
 | Freja | circuit-royal | +1.84% | -1.71% | -3.55% | Better in Masters |
 | Sierra | ilios | -1.85% | +1.70% | +3.55% | Better in GM+ |
@@ -491,7 +491,7 @@ Heroes whose map performance differs by 2.5% or more between Masters and GM+.
 | Ashe | new-junk-city | -1.18% | -4.64% | -3.47% | Better in Masters |
 | Wuyang | runasapi | -0.79% | +2.68% | +3.47% | Better in GM+ |
 | Orisa | lijiang-tower | +0.68% | +4.15% | +3.47% | Better in GM+ |
-| Soldier 76 | paraiso | -3.80% | -7.25% | -3.46% | Better in Masters |
+| Soldier76 | paraiso | -3.80% | -7.25% | -3.46% | Better in Masters |
 | Brigitte | runasapi | +1.66% | -1.80% | -3.46% | Better in Masters |
 | Hanzo | eichenwalde | -10.30% | -6.85% | +3.45% | Better in GM+ |
 | Ramattra | kings-row | +0.62% | -2.82% | -3.45% | Better in Masters |
@@ -504,7 +504,7 @@ Heroes whose map performance differs by 2.5% or more between Masters and GM+.
 | Dmon | rialto | -2.93% | +0.47% | +3.40% | Better in GM+ |
 | Torbjorn | shambali-monastery | -1.11% | -4.51% | -3.39% | Better in Masters |
 | Brigitte | new-junk-city | -0.85% | +2.54% | +3.39% | Better in GM+ |
-| Soldier 76 | esperanca | +0.66% | +4.03% | +3.37% | Better in GM+ |
+| Soldier76 | esperanca | +0.66% | +4.03% | +3.37% | Better in GM+ |
 | Reinhardt | new-queen-street | -0.63% | +2.74% | +3.37% | Better in GM+ |
 | Symmetra | nepal | +5.23% | +1.86% | -3.37% | Better in Masters |
 | Zarya | colosseo | -1.10% | +2.27% | +3.37% | Better in GM+ |
@@ -572,7 +572,7 @@ Heroes whose map performance differs by 2.5% or more between Masters and GM+.
 | Anran | havana | -1.64% | +1.49% | +3.12% | Better in GM+ |
 | Reaper | shambali-monastery | +3.28% | +0.16% | -3.12% | Better in Masters |
 | Genji | junkertown | -0.20% | +2.92% | +3.12% | Better in GM+ |
-| Jetpack Cat | neon-junction | -4.86% | -1.74% | +3.12% | Better in GM+ |
+| Jetpackcat | neon-junction | -4.86% | -1.74% | +3.12% | Better in GM+ |
 | Junkrat | runasapi | -2.22% | +0.90% | +3.11% | Better in GM+ |
 | Baptiste | lijiang-tower | +0.67% | -2.45% | -3.11% | Better in Masters |
 | Venture | colosseo | +1.21% | -1.90% | -3.11% | Better in Masters |
@@ -581,11 +581,11 @@ Heroes whose map performance differs by 2.5% or more between Masters and GM+.
 | Symmetra | midtown | -3.42% | -0.33% | +3.09% | Better in GM+ |
 | Domina | ilios | -4.42% | -7.51% | -3.09% | Better in Masters |
 | Sojourn | ilios | -0.11% | -3.20% | -3.09% | Better in Masters |
-| Jetpack Cat | ilios | +5.41% | +2.32% | -3.09% | Better in Masters |
+| Jetpackcat | ilios | +5.41% | +2.32% | -3.09% | Better in Masters |
 | Sigma | havana | +7.97% | +4.89% | -3.09% | Better in Masters |
 | Echo | junkertown | +1.51% | -1.56% | -3.08% | Better in Masters |
 | Emre | ilios | -1.46% | +1.61% | +3.07% | Better in GM+ |
-| Jetpack Cat | suravasa | +4.25% | +1.18% | -3.07% | Better in Masters |
+| Jetpackcat | suravasa | +4.25% | +1.18% | -3.07% | Better in Masters |
 | Emre | blizzard-world | +1.26% | -1.80% | -3.06% | Better in Masters |
 | Doomfist | shambali-monastery | -0.79% | -3.85% | -3.06% | Better in Masters |
 | Lucio | aatlis | +4.43% | +1.37% | -3.06% | Better in Masters |
@@ -616,7 +616,7 @@ Heroes whose map performance differs by 2.5% or more between Masters and GM+.
 | Kiriko | circuit-royal | -2.51% | -5.44% | -2.93% | Better in Masters |
 | Mei | antarctic-peninsula | +1.69% | -1.24% | -2.93% | Better in Masters |
 | Mei | watchpoint-gibraltar | -1.57% | +1.35% | +2.92% | Better in GM+ |
-| Soldier 76 | havana | +2.60% | -0.32% | -2.92% | Better in Masters |
+| Soldier76 | havana | +2.60% | -0.32% | -2.92% | Better in Masters |
 | Mauga | dorado | -0.62% | +2.30% | +2.91% | Better in GM+ |
 | Pharah | circuit-royal | -4.57% | -1.66% | +2.91% | Better in GM+ |
 | Wuyang | numbani | -2.92% | -0.02% | +2.91% | Better in GM+ |
@@ -675,7 +675,7 @@ Heroes whose map performance differs by 2.5% or more between Masters and GM+.
 | Hazard | route-66 | +2.05% | -0.61% | -2.67% | Better in Masters |
 | Kiriko | havana | -1.81% | -4.47% | -2.66% | Better in Masters |
 | Lifeweaver | new-queen-street | -0.22% | +2.44% | +2.66% | Better in GM+ |
-| Soldier 76 | colosseo | -0.45% | +2.20% | +2.65% | Better in GM+ |
+| Soldier76 | colosseo | -0.45% | +2.20% | +2.65% | Better in GM+ |
 | Zarya | aatlis | +1.27% | +3.91% | +2.64% | Better in GM+ |
 | Brigitte | watchpoint-gibraltar | +3.28% | +0.64% | -2.64% | Better in Masters |
 | Wreckingball | midtown | -4.48% | -7.12% | -2.64% | Better in Masters |
@@ -748,7 +748,7 @@ Heroes whose map performance differs by 2.5% or more between Masters and GM+.
 | A | Doomfist | +1.40% | Popular (+1.7%) | Favorable | - | 44 |
 | A | Mizuki | +1.29% | Map Priority (+5.8%) | Favorable | - | 44 |
 | B | Emre | +1.16% | Niche (-4.6%) | Neutral | Better in GM+ | 44 |
-| B | Jetpack Cat | +1.14% | Standard (-0.6%) | Neutral | - | 44 |
+| B | Jetpackcat | +1.14% | Standard (-0.6%) | Neutral | - | 44 |
 | B | Wreckingball | +0.82% | Standard (-0.2%) | Neutral | - | 43 |
 | B | Ramattra | +0.63% | Popular (+1.4%) | Neutral | - | 44 |
 | B | Shion | +0.57% | Map Priority (+7.8%) | Neutral | - | 20 |
@@ -758,7 +758,7 @@ Heroes whose map performance differs by 2.5% or more between Masters and GM+.
 | B | Genji | +0.26% | Standard (+1.0%) | Neutral | - | 44 |
 | B | Symmetra | +0.20% | Standard (+0.4%) | Neutral | - | 43 |
 | B | Kiriko | -0.10% | Map Priority (+9.5%) | Neutral | - | 43 |
-| B | Soldier 76 | -0.10% | Niche (-2.7%) | Neutral | - | 43 |
+| B | Soldier76 | -0.10% | Niche (-2.7%) | Neutral | - | 43 |
 | B | Hazard | -0.12% | Popular (+2.6%) | Neutral | - | 43 |
 | B | Tracer | -0.15% | Map Priority (+6.6%) | Neutral | - | 44 |
 | B | Sojourn | -0.37% | Standard (+0.4%) | Neutral | - | 44 |
@@ -807,7 +807,7 @@ Heroes whose map performance differs by 2.5% or more between Masters and GM+.
 | A | Kiriko | +1.28% | Map Priority (+5.5%) | Favorable | - | 32 |
 | A | Illari | +1.27% | Niche (-2.3%) | Favorable | - | 32 |
 | A | Brigitte | +1.26% | Popular (+1.0%) | Favorable | - | 32 |
-| B | Soldier 76 | +0.90% | Standard (-0.7%) | Neutral | - | 32 |
+| B | Soldier76 | +0.90% | Standard (-0.7%) | Neutral | - | 32 |
 | B | Vendetta | +0.89% | Standard (+0.4%) | Neutral | - | 29 |
 | B | Lifeweaver | +0.87% | Niche (-1.4%) | Neutral | - | 32 |
 | B | Baptiste | +0.68% | Standard (-0.8%) | Neutral | - | 32 |
@@ -831,7 +831,7 @@ Heroes whose map performance differs by 2.5% or more between Masters and GM+.
 | B | Freja | -1.13% | Niche (-1.5%) | Neutral | Better in Masters | 32 |
 | C | Sigma | -1.24% | Niche (-2.4%) | Unfavorable | - | 32 |
 | C | Wreckingball | -1.33% | Standard (-0.2%) | Unfavorable | Better in Masters | 32 |
-| C | Jetpack Cat | -1.43% | Standard (-0.4%) | Unfavorable | - | 32 |
+| C | Jetpackcat | -1.43% | Standard (-0.4%) | Unfavorable | - | 32 |
 | C | Venture | -1.48% | Standard (+0.2%) | Unfavorable | - | 31 |
 | C | Echo | -1.57% | Niche (-1.9%) | Deterrent | - | 32 |
 | C | Ana | -1.62% | Niche (-8.3%) | Deterrent | - | 32 |
@@ -854,7 +854,7 @@ Heroes whose map performance differs by 2.5% or more between Masters and GM+.
 | B | Mercy | +0.96% | Popular (+1.2%) | Neutral | Better in GM+ | 43 |
 | B | Sojourn | +0.61% | Popular (+1.5%) | Neutral | - | 44 |
 | B | Illari | +0.58% | Popular (+1.7%) | Neutral | - | 44 |
-| B | Jetpack Cat | +0.42% | Standard (-0.5%) | Neutral | - | 44 |
+| B | Jetpackcat | +0.42% | Standard (-0.5%) | Neutral | - | 44 |
 | B | Winston | +0.33% | Map Priority (+3.1%) | Neutral | - | 44 |
 | B | Wuyang | +0.17% | Standard (+0.1%) | Neutral | - | 44 |
 | B | Juno | +0.10% | Niche (-1.3%) | Neutral | Better in GM+ | 44 |
@@ -883,7 +883,7 @@ Heroes whose map performance differs by 2.5% or more between Masters and GM+.
 | C | Doomfist | -2.25% | Standard (-0.1%) | Deterrent | - | 44 |
 | C | Baptiste | -2.57% | Standard (-0.4%) | Deterrent | - | 44 |
 | C | Sierra | -2.72% | Standard (+0.5%) | Unfavorable | Better in GM+ | 30 |
-| C | Soldier 76 | -2.74% | Standard (+0.2%) | Unfavorable | - | 44 |
+| C | Soldier76 | -2.74% | Standard (+0.2%) | Unfavorable | - | 44 |
 | C | Pharah | -2.86% | Niche (-1.8%) | Deterrent | Better in GM+ | 44 |
 | D | Domina | -3.14% | Standard (+0.6%) | Unfavorable | - | 44 |
 | D | Dmon | -3.36% | Standard (-0.7%) | Deterrent | Better in Masters | 8 |
@@ -905,7 +905,7 @@ Heroes whose map performance differs by 2.5% or more between Masters and GM+.
 
 | Tier | Hero | Delta WR | Presence | Archetype | Rank | n |
 |---|---|---|---|---|---|---|
-| S | Soldier 76 | +3.79% | Map Priority (+3.1%) | Meta | Better in GM+ | 8 |
+| S | Soldier76 | +3.79% | Map Priority (+3.1%) | Meta | Better in GM+ | 8 |
 | S | Freja | +3.60% | Niche (-1.5%) | Specialist | - | 8 |
 | S | Mauga | +3.35% | Standard (+0.8%) | Favorable | - | 8 |
 | A | Venture | +2.97% | Standard (-0.1%) | Specialist | - | 8 |
@@ -936,7 +936,7 @@ Heroes whose map performance differs by 2.5% or more between Masters and GM+.
 | B | Ana | -0.31% | Niche (-3.8%) | Neutral | - | 8 |
 | B | Orisa | -0.34% | Standard (+0.4%) | Neutral | - | 8 |
 | B | Hanzo | -0.35% | Niche (-2.7%) | Neutral | Better in GM+ | 8 |
-| B | Jetpack Cat | -0.40% | Standard (+0.5%) | Neutral | Better in Masters | 8 |
+| B | Jetpackcat | -0.40% | Standard (+0.5%) | Neutral | Better in Masters | 8 |
 | B | Zarya | -0.40% | Standard (-0.6%) | Neutral | - | 8 |
 | B | Wuyang | -0.40% | Standard (-0.2%) | Neutral | - | 8 |
 | B | Widowmaker | -0.42% | Standard (-0.6%) | Neutral | - | 8 |
@@ -995,10 +995,10 @@ Heroes whose map performance differs by 2.5% or more between Masters and GM+.
 | C | Venture | -1.51% | Standard (-0.6%) | Deterrent | Better in GM+ | 44 |
 | C | Moira | -1.64% | Niche (-3.1%) | Deterrent | Better in Masters | 43 |
 | C | Zarya | -1.76% | Standard (+0.5%) | Unfavorable | Better in Masters | 44 |
-| C | Soldier 76 | -1.81% | Niche (-2.8%) | Deterrent | Better in Masters | 43 |
+| C | Soldier76 | -1.81% | Niche (-2.8%) | Deterrent | Better in Masters | 43 |
 | C | Junkrat | -1.87% | Standard (+0.1%) | Unfavorable | - | 44 |
 | C | Vendetta | -2.08% | Niche (-1.0%) | Deterrent | Better in Masters | 27 |
-| C | Jetpack Cat | -2.26% | Niche (-2.1%) | Deterrent | - | 44 |
+| C | Jetpackcat | -2.26% | Niche (-2.1%) | Deterrent | - | 44 |
 | D | Torbjorn | -3.09% | Standard (-0.6%) | Deterrent | Better in GM+ | 42 |
 | D | Pharah | -3.15% | Popular (+2.2%) | Trap Pick | Better in GM+ | 43 |
 | D | Echo | -3.24% | Niche (-1.1%) | Deterrent | - | 43 |
@@ -1027,7 +1027,7 @@ Heroes whose map performance differs by 2.5% or more between Masters and GM+.
 | S | Doomfist | +3.04% | Standard (+1.0%) | Favorable | - | 44 |
 | A | Torbjorn | +2.85% | Standard (-0.2%) | Specialist | Better in GM+ | 43 |
 | A | Anran | +2.52% | Standard (+0.3%) | Favorable | - | 41 |
-| A | Jetpack Cat | +2.49% | Standard (+0.2%) | Favorable | - | 44 |
+| A | Jetpackcat | +2.49% | Standard (+0.2%) | Favorable | - | 44 |
 | A | Junkrat | +2.35% | Standard (-0.6%) | Specialist | - | 43 |
 | A | Tracer | +2.04% | Map Priority (+5.5%) | Meta | - | 44 |
 | A | Sojourn | +1.79% | Map Priority (+3.3%) | Meta | - | 44 |
@@ -1039,7 +1039,7 @@ Heroes whose map performance differs by 2.5% or more between Masters and GM+.
 | A | Winston | +1.20% | Standard (+0.0%) | Favorable | - | 44 |
 | B | Shion | +1.04% | Map Priority (+4.4%) | Neutral | - | 20 |
 | B | Wreckingball | +0.92% | Popular (+1.2%) | Neutral | Better in Masters | 44 |
-| B | Soldier 76 | +0.87% | Popular (+1.2%) | Neutral | Better in GM+ | 44 |
+| B | Soldier76 | +0.87% | Popular (+1.2%) | Neutral | Better in GM+ | 44 |
 | B | Zenyatta | +0.81% | Niche (-1.6%) | Neutral | Better in GM+ | 44 |
 | B | Mercy | +0.79% | Standard (-0.3%) | Neutral | Better in Masters | 43 |
 | B | Hazard | +0.78% | Standard (+0.4%) | Neutral | - | 43 |
@@ -1091,7 +1091,7 @@ Heroes whose map performance differs by 2.5% or more between Masters and GM+.
 | A | Pharah | +2.47% | Standard (-0.1%) | Specialist | Better in Masters | 42 |
 | A | Wuyang | +1.92% | Niche (-2.9%) | Specialist | - | 44 |
 | A | Dva | +1.60% | Map Priority (+3.2%) | Meta | - | 44 |
-| B | Soldier 76 | +0.88% | Standard (+0.4%) | Neutral | - | 44 |
+| B | Soldier76 | +0.88% | Standard (+0.4%) | Neutral | - | 44 |
 | B | Mauga | +0.84% | Niche (-1.1%) | Neutral | Better in GM+ | 42 |
 | B | Reaper | +0.56% | Popular (+1.8%) | Neutral | Better in GM+ | 44 |
 | B | Shion | +0.55% | Niche (-5.0%) | Neutral | Better in GM+ | 20 |
@@ -1099,7 +1099,7 @@ Heroes whose map performance differs by 2.5% or more between Masters and GM+.
 | B | Hanzo | +0.05% | Standard (-0.6%) | Neutral | - | 44 |
 | B | Brigitte | +0.00% | Map Priority (+3.5%) | Neutral | Better in GM+ | 44 |
 | B | Genji | -0.02% | Popular (+2.5%) | Neutral | - | 43 |
-| B | Jetpack Cat | -0.09% | Popular (+1.7%) | Neutral | - | 44 |
+| B | Jetpackcat | -0.09% | Popular (+1.7%) | Neutral | - | 44 |
 | B | Juno | -0.32% | Niche (-2.0%) | Neutral | - | 40 |
 | B | Illari | -0.43% | Popular (+1.5%) | Neutral | Better in Masters | 44 |
 | B | Anran | -0.51% | Standard (-0.5%) | Neutral | Better in GM+ | 42 |
@@ -1139,10 +1139,10 @@ Heroes whose map performance differs by 2.5% or more between Masters and GM+.
 |---|---|---|---|---|---|---|
 | S | Roadhog | +8.35% | Standard (+0.5%) | Favorable | Better in GM+ | 8 |
 | S | Venture | +8.34% | Standard (+0.5%) | Favorable | Better in GM+ | 8 |
-| S | Soldier 76 | +8.04% | Niche (-2.8%) | Specialist | Better in GM+ | 8 |
+| S | Soldier76 | +8.04% | Niche (-2.8%) | Specialist | Better in GM+ | 8 |
 | S | Junkerqueen | +7.92% | Standard (-0.2%) | Specialist | - | 8 |
 | S | Junkrat | +6.25% | Popular (+2.1%) | Meta | Better in GM+ | 8 |
-| S | Jetpack Cat | +5.72% | Standard (+0.7%) | Favorable | Better in Masters | 8 |
+| S | Jetpackcat | +5.72% | Standard (+0.7%) | Favorable | Better in Masters | 8 |
 | S | Lifeweaver | +5.70% | Niche (-1.4%) | Specialist | Better in GM+ | 8 |
 | S | Ana | +5.56% | Map Priority (+4.5%) | Meta | - | 8 |
 | S | Sombra | +5.29% | Standard (-0.1%) | Specialist | - | 8 |
@@ -1198,7 +1198,7 @@ Heroes whose map performance differs by 2.5% or more between Masters and GM+.
 | S | Lucio | +3.89% | Map Priority (+3.2%) | Meta | Better in GM+ | 44 |
 | A | Mei | +2.84% | Niche (-1.4%) | Specialist | - | 43 |
 | A | Winston | +2.49% | Map Priority (+3.6%) | Meta | - | 44 |
-| A | Soldier 76 | +2.31% | Map Priority (+3.8%) | Meta | Better in GM+ | 43 |
+| A | Soldier76 | +2.31% | Map Priority (+3.8%) | Meta | Better in GM+ | 43 |
 | A | Junkerqueen | +2.21% | Standard (+0.8%) | Favorable | Better in GM+ | 42 |
 | A | Dmon | +2.08% | Standard (+0.9%) | Favorable | - | 8 |
 | A | Reinhardt | +1.87% | Standard (-0.8%) | Specialist | - | 43 |
@@ -1221,7 +1221,7 @@ Heroes whose map performance differs by 2.5% or more between Masters and GM+.
 | B | Emre | +0.53% | Standard (+0.6%) | Neutral | Better in Masters | 44 |
 | B | Mizuki | +0.47% | Popular (+1.2%) | Neutral | - | 44 |
 | B | Shion | +0.45% | Map Priority (+6.2%) | Neutral | - | 20 |
-| B | Jetpack Cat | +0.28% | Popular (+1.4%) | Neutral | - | 44 |
+| B | Jetpackcat | +0.28% | Popular (+1.4%) | Neutral | - | 44 |
 | B | Symmetra | +0.22% | Standard (-0.8%) | Neutral | Better in GM+ | 40 |
 | B | Roadhog | +0.21% | Standard (+0.1%) | Neutral | Better in Masters | 43 |
 | B | Brigitte | +0.15% | Popular (+1.2%) | Neutral | - | 43 |
@@ -1265,7 +1265,7 @@ Heroes whose map performance differs by 2.5% or more between Masters and GM+.
 | A | Baptiste | +1.40% | Map Priority (+3.7%) | Favorable | - | 43 |
 | A | Illari | +1.27% | Map Priority (+6.2%) | Favorable | Better in GM+ | 44 |
 | A | Ashe | +1.20% | Map Priority (+7.7%) | Favorable | - | 43 |
-| B | Soldier 76 | +1.17% | Standard (-0.8%) | Neutral | Better in Masters | 43 |
+| B | Soldier76 | +1.17% | Standard (-0.8%) | Neutral | Better in Masters | 43 |
 | B | Lifeweaver | +1.04% | Popular (+1.2%) | Neutral | - | 42 |
 | B | Hanzo | +1.02% | Map Priority (+9.7%) | Neutral | - | 44 |
 | B | Tracer | +0.96% | Niche (-11.7%) | Neutral | - | 44 |
@@ -1302,7 +1302,7 @@ Heroes whose map performance differs by 2.5% or more between Masters and GM+.
 | D | Hazard | -4.12% | Niche (-5.3%) | Deterrent | - | 38 |
 | D | Pharah | -4.24% | Niche (-2.1%) | Deterrent | Better in GM+ | 42 |
 | D | Junkerqueen | -4.47% | Niche (-1.8%) | Deterrent | Better in Masters | 31 |
-| D | Jetpack Cat | -6.18% | Niche (-2.6%) | Deterrent | Better in Masters | 43 |
+| D | Jetpackcat | -6.18% | Niche (-2.6%) | Deterrent | Better in Masters | 43 |
 | D | Winston | -8.11% | Niche (-4.8%) | Deterrent | - | 43 |
 | D | Lucio | -8.57% | Niche (-5.9%) | Deterrent | - | 40 |
 | D | Dmon | -9.21% | Niche (-2.8%) | Deterrent | Better in Masters | 7 |
@@ -1353,10 +1353,10 @@ Heroes whose map performance differs by 2.5% or more between Masters and GM+.
 | C | Reaper | -2.79% | Standard (-0.4%) | Deterrent | - | 44 |
 | D | Sigma | -3.14% | Popular (+1.6%) | Trap Pick | Better in Masters | 44 |
 | D | Juno | -3.42% | Standard (-0.9%) | Deterrent | - | 44 |
-| D | Soldier 76 | -3.78% | Niche (-2.1%) | Deterrent | Better in Masters | 42 |
+| D | Soldier76 | -3.78% | Niche (-2.1%) | Deterrent | Better in Masters | 42 |
 | D | Sojourn | -4.15% | Niche (-2.6%) | Deterrent | Better in Masters | 44 |
 | D | Vendetta | -4.47% | Standard (-0.0%) | Deterrent | - | 38 |
-| D | Jetpack Cat | -4.70% | Niche (-1.0%) | Deterrent | - | 44 |
+| D | Jetpackcat | -4.70% | Niche (-1.0%) | Deterrent | - | 44 |
 | D | Junkerqueen | -4.73% | Standard (-0.8%) | Deterrent | Better in GM+ | 39 |
 | D | Symmetra | -5.02% | Standard (-0.2%) | Deterrent | - | 43 |
 | D | Venture | -5.05% | Standard (-0.3%) | Deterrent | - | 43 |
@@ -1370,7 +1370,7 @@ Heroes whose map performance differs by 2.5% or more between Masters and GM+.
 | Tier | Hero | Delta WR | Presence | Archetype | Rank | n |
 |---|---|---|---|---|---|---|
 | S | Lucio | +4.84% | Map Priority (+6.6%) | Meta | Better in GM+ | 44 |
-| S | Jetpack Cat | +3.87% | Map Priority (+3.4%) | Meta | Better in Masters | 44 |
+| S | Jetpackcat | +3.87% | Map Priority (+3.4%) | Meta | Better in Masters | 44 |
 | S | Hazard | +3.63% | Map Priority (+4.0%) | Meta | - | 43 |
 | S | Roadhog | +3.45% | Popular (+2.5%) | Meta | - | 43 |
 | S | Torbjorn | +3.33% | Standard (-0.4%) | Specialist | - | 43 |
@@ -1417,7 +1417,7 @@ Heroes whose map performance differs by 2.5% or more between Masters and GM+.
 | C | Lifeweaver | -2.16% | Standard (-0.5%) | Deterrent | - | 42 |
 | C | Ramattra | -2.17% | Niche (-2.4%) | Deterrent | Better in Masters | 32 |
 | C | Illari | -2.58% | Niche (-3.0%) | Deterrent | - | 44 |
-| C | Soldier 76 | -2.94% | Niche (-3.5%) | Deterrent | - | 43 |
+| C | Soldier76 | -2.94% | Niche (-3.5%) | Deterrent | - | 43 |
 | D | Zarya | -3.10% | Niche (-2.7%) | Deterrent | Better in GM+ | 42 |
 | D | Mei | -4.32% | Niche (-1.7%) | Deterrent | - | 43 |
 | D | Sigma | -5.01% | Niche (-7.7%) | Deterrent | - | 43 |
@@ -1454,7 +1454,7 @@ Heroes whose map performance differs by 2.5% or more between Masters and GM+.
 | B | Mercy | +0.06% | Popular (+2.1%) | Neutral | - | 43 |
 | B | Echo | +0.05% | Niche (-2.7%) | Neutral | Better in Masters | 42 |
 | B | Hazard | +0.03% | Niche (-2.2%) | Neutral | - | 43 |
-| B | Jetpack Cat | -0.02% | Niche (-1.9%) | Neutral | - | 43 |
+| B | Jetpackcat | -0.02% | Niche (-1.9%) | Neutral | - | 43 |
 | B | Winston | -0.23% | Standard (+1.0%) | Neutral | Better in GM+ | 44 |
 | B | Emre | -0.45% | Popular (+2.1%) | Neutral | Better in Masters | 44 |
 | B | Bastion | -0.71% | Standard (+0.5%) | Neutral | Better in Masters | 42 |
@@ -1471,7 +1471,7 @@ Heroes whose map performance differs by 2.5% or more between Masters and GM+.
 | C | Domina | -2.56% | Popular (+1.0%) | Trap Pick | Better in Masters | 43 |
 | C | Lifeweaver | -2.69% | Popular (+1.4%) | Trap Pick | - | 43 |
 | C | Juno | -2.91% | Niche (-2.3%) | Deterrent | Better in Masters | 42 |
-| C | Soldier 76 | -2.93% | Popular (+2.5%) | Trap Pick | Better in Masters | 44 |
+| C | Soldier76 | -2.93% | Popular (+2.5%) | Trap Pick | Better in Masters | 44 |
 | D | Dmon | -3.44% | Niche (-2.8%) | Deterrent | Better in Masters | 8 |
 | D | Zarya | -3.64% | Niche (-2.2%) | Deterrent | - | 43 |
 | D | Roadhog | -3.99% | Standard (+0.1%) | Unfavorable | Better in Masters | 43 |
@@ -1528,14 +1528,14 @@ Heroes whose map performance differs by 2.5% or more between Masters and GM+.
 | C | Wuyang | -1.63% | Popular (+1.6%) | Trap Pick | Better in GM+ | 44 |
 | C | Ashe | -1.76% | Standard (-0.5%) | Deterrent | - | 44 |
 | C | Torbjorn | -1.83% | Standard (+0.1%) | Unfavorable | - | 42 |
-| C | Soldier 76 | -2.09% | Niche (-4.4%) | Deterrent | Better in GM+ | 43 |
+| C | Soldier76 | -2.09% | Niche (-4.4%) | Deterrent | Better in GM+ | 43 |
 | C | Vendetta | -2.22% | Standard (-0.1%) | Deterrent | Better in GM+ | 41 |
 | C | Roadhog | -2.23% | Niche (-1.1%) | Deterrent | - | 44 |
 | C | Mercy | -2.83% | Standard (-0.7%) | Deterrent | - | 44 |
 | C | Junkerqueen | -2.85% | Standard (-0.2%) | Deterrent | - | 41 |
 | D | Emre | -3.23% | Niche (-1.4%) | Deterrent | - | 44 |
 | D | Tracer | -3.38% | Niche (-8.1%) | Deterrent | - | 44 |
-| D | Jetpack Cat | -3.56% | Niche (-1.2%) | Deterrent | - | 44 |
+| D | Jetpackcat | -3.56% | Niche (-1.2%) | Deterrent | - | 44 |
 | D | Winston | -4.31% | Niche (-4.8%) | Deterrent | - | 44 |
 | D | Wreckingball | -6.41% | Niche (-2.6%) | Deterrent | - | 44 |
 
@@ -1554,7 +1554,7 @@ Heroes whose map performance differs by 2.5% or more between Masters and GM+.
 | A | Domina | +2.55% | Niche (-1.2%) | Specialist | Better in GM+ | 44 |
 | A | Orisa | +2.41% | Popular (+2.3%) | Meta | Better in GM+ | 44 |
 | A | Roadhog | +1.86% | Standard (-0.2%) | Specialist | - | 43 |
-| A | Jetpack Cat | +1.36% | Standard (+0.9%) | Favorable | - | 44 |
+| A | Jetpackcat | +1.36% | Standard (+0.9%) | Favorable | - | 44 |
 | A | Mizuki | +1.34% | Popular (+2.5%) | Favorable | - | 44 |
 | B | Sojourn | +1.05% | Popular (+1.1%) | Neutral | - | 44 |
 | B | Moira | +1.05% | Popular (+2.1%) | Neutral | - | 43 |
@@ -1582,7 +1582,7 @@ Heroes whose map performance differs by 2.5% or more between Masters and GM+.
 | C | Emre | -1.37% | Niche (-2.3%) | Unfavorable | - | 44 |
 | C | Mauga | -1.50% | Popular (+1.3%) | Trap Pick | - | 44 |
 | C | Tracer | -1.55% | Popular (+2.0%) | Trap Pick | - | 44 |
-| C | Soldier 76 | -1.58% | Niche (-2.3%) | Deterrent | - | 43 |
+| C | Soldier76 | -1.58% | Niche (-2.3%) | Deterrent | - | 43 |
 | C | Wreckingball | -1.58% | Standard (+1.0%) | Unfavorable | - | 44 |
 | C | Mercy | -1.63% | Standard (-0.9%) | Deterrent | - | 43 |
 | C | Ana | -1.64% | Niche (-7.6%) | Deterrent | - | 44 |
@@ -1634,7 +1634,7 @@ Heroes whose map performance differs by 2.5% or more between Masters and GM+.
 | C | Ramattra | -1.29% | Popular (+2.1%) | Unfavorable | - | 44 |
 | C | Kiriko | -1.67% | Niche (-4.6%) | Deterrent | - | 44 |
 | C | Shion | -1.71% | Niche (-3.6%) | Deterrent | - | 20 |
-| C | Soldier 76 | -1.87% | Niche (-1.2%) | Deterrent | - | 43 |
+| C | Soldier76 | -1.87% | Niche (-1.2%) | Deterrent | - | 43 |
 | C | Symmetra | -1.88% | Popular (+1.1%) | Trap Pick | Better in GM+ | 44 |
 | C | Ashe | -2.04% | Map Priority (+3.2%) | Trap Pick | - | 44 |
 | C | Zenyatta | -2.17% | Map Priority (+3.8%) | Trap Pick | Better in Masters | 44 |
@@ -1651,7 +1651,7 @@ Heroes whose map performance differs by 2.5% or more between Masters and GM+.
 | D | Reinhardt | -3.89% | Standard (+0.7%) | Unfavorable | Better in Masters | 44 |
 | D | Bastion | -5.53% | Standard (+1.0%) | Unfavorable | Better in Masters | 44 |
 | D | Wreckingball | -5.77% | Niche (-2.5%) | Deterrent | Better in Masters | 43 |
-| D | Jetpack Cat | -6.32% | Niche (-2.6%) | Deterrent | - | 44 |
+| D | Jetpackcat | -6.32% | Niche (-2.6%) | Deterrent | - | 44 |
 | D | Winston | -6.40% | Niche (-5.1%) | Deterrent | Better in Masters | 44 |
 | D | Lucio | -7.49% | Niche (-4.4%) | Deterrent | - | 39 |
 
@@ -1676,7 +1676,7 @@ Heroes whose map performance differs by 2.5% or more between Masters and GM+.
 | B | Reaper | +0.46% | Niche (-1.4%) | Neutral | - | 20 |
 | B | Torbjorn | +0.39% | Standard (+0.3%) | Neutral | Better in GM+ | 19 |
 | B | Wreckingball | +0.29% | Niche (-2.8%) | Neutral | Better in GM+ | 20 |
-| B | Soldier 76 | +0.27% | Niche (-2.3%) | Neutral | Better in GM+ | 20 |
+| B | Soldier76 | +0.27% | Niche (-2.3%) | Neutral | Better in GM+ | 20 |
 | B | Cassidy | +0.24% | Niche (-3.1%) | Neutral | - | 20 |
 | B | Widowmaker | +0.21% | Popular (+2.2%) | Neutral | Better in GM+ | 20 |
 | B | Sigma | +0.20% | Map Priority (+7.4%) | Neutral | - | 20 |
@@ -1704,7 +1704,7 @@ Heroes whose map performance differs by 2.5% or more between Masters and GM+.
 | D | Roadhog | -3.02% | Niche (-1.0%) | Deterrent | Better in Masters | 20 |
 | D | Dmon | -3.12% | Standard (+0.1%) | Unfavorable | - | 8 |
 | D | Anran | -3.21% | Standard (-0.2%) | Deterrent | Better in Masters | 20 |
-| D | Jetpack Cat | -3.30% | Niche (-3.0%) | Deterrent | Better in GM+ | 20 |
+| D | Jetpackcat | -3.30% | Niche (-3.0%) | Deterrent | Better in GM+ | 20 |
 | D | Tracer | -3.78% | Niche (-8.1%) | Deterrent | - | 20 |
 | D | Freja | -4.24% | Standard (+0.1%) | Unfavorable | - | 20 |
 | D | Echo | -4.46% | Niche (-2.4%) | Deterrent | - | 20 |
@@ -1725,7 +1725,7 @@ Heroes whose map performance differs by 2.5% or more between Masters and GM+.
 | A | Hazard | +2.20% | Standard (+0.5%) | Favorable | Better in GM+ | 44 |
 | A | Pharah | +2.14% | Popular (+2.5%) | Meta | - | 44 |
 | A | Lucio | +2.10% | Map Priority (+4.1%) | Meta | - | 44 |
-| A | Jetpack Cat | +2.01% | Standard (+0.5%) | Favorable | - | 44 |
+| A | Jetpackcat | +2.01% | Standard (+0.5%) | Favorable | - | 44 |
 | A | Orisa | +1.96% | Standard (+0.7%) | Favorable | - | 44 |
 | A | Ramattra | +1.72% | Standard (+0.6%) | Favorable | - | 44 |
 | A | Dmon | +1.58% | Standard (+0.7%) | Favorable | Better in GM+ | 8 |
@@ -1759,7 +1759,7 @@ Heroes whose map performance differs by 2.5% or more between Masters and GM+.
 | B | Tracer | -0.90% | Popular (+2.7%) | Neutral | - | 44 |
 | B | Illari | -0.93% | Niche (-2.8%) | Neutral | - | 43 |
 | B | Junkerqueen | -0.95% | Standard (+0.3%) | Neutral | - | 40 |
-| B | Soldier 76 | -1.16% | Standard (-0.8%) | Neutral | - | 44 |
+| B | Soldier76 | -1.16% | Standard (-0.8%) | Neutral | - | 44 |
 | C | Shion | -1.20% | Map Priority (+3.4%) | Unfavorable | - | 20 |
 | C | Genji | -1.26% | Standard (-0.5%) | Unfavorable | - | 44 |
 | C | Echo | -1.42% | Standard (+0.1%) | Unfavorable | - | 44 |
@@ -1811,12 +1811,12 @@ Heroes whose map performance differs by 2.5% or more between Masters and GM+.
 | B | Kiriko | -0.09% | Map Priority (+10.3%) | Neutral | Better in Masters | 44 |
 | B | Juno | -0.15% | Standard (+0.5%) | Neutral | - | 42 |
 | B | Junkrat | -0.73% | Standard (+0.3%) | Neutral | Better in Masters | 41 |
-| B | Jetpack Cat | -0.75% | Niche (-1.0%) | Neutral | - | 43 |
+| B | Jetpackcat | -0.75% | Niche (-1.0%) | Neutral | - | 43 |
 | B | Echo | -0.95% | Niche (-3.6%) | Neutral | - | 43 |
 | C | Bastion | -1.21% | Niche (-1.6%) | Unfavorable | - | 40 |
 | C | Genji | -1.23% | Standard (+0.4%) | Unfavorable | - | 44 |
 | C | Illari | -1.25% | Niche (-5.1%) | Unfavorable | - | 44 |
-| C | Soldier 76 | -1.36% | Standard (-0.8%) | Unfavorable | - | 43 |
+| C | Soldier76 | -1.36% | Standard (-0.8%) | Unfavorable | - | 43 |
 | C | Sierra | -1.47% | Niche (-1.1%) | Unfavorable | - | 21 |
 | C | Dva | -1.57% | Niche (-1.7%) | Deterrent | Better in GM+ | 44 |
 | C | Zenyatta | -2.00% | Niche (-3.4%) | Deterrent | - | 42 |
@@ -1833,7 +1833,7 @@ Heroes whose map performance differs by 2.5% or more between Masters and GM+.
 
 | Tier | Hero | Delta WR | Presence | Archetype | Rank | n |
 |---|---|---|---|---|---|---|
-| S | Soldier 76 | +5.45% | Map Priority (+13.1%) | Meta | - | 44 |
+| S | Soldier76 | +5.45% | Map Priority (+13.1%) | Meta | - | 44 |
 | S | Torbjorn | +3.31% | Standard (-0.4%) | Specialist | - | 43 |
 | S | Symmetra | +3.18% | Niche (-1.1%) | Specialist | - | 38 |
 | A | Kiriko | +2.97% | Map Priority (+6.3%) | Meta | - | 44 |
@@ -1881,7 +1881,7 @@ Heroes whose map performance differs by 2.5% or more between Masters and GM+.
 | C | Sombra | -2.01% | Popular (+1.1%) | Trap Pick | - | 44 |
 | C | Orisa | -2.26% | Standard (-0.1%) | Deterrent | Better in Masters | 44 |
 | C | Bastion | -2.37% | Niche (-1.6%) | Deterrent | Better in Masters | 41 |
-| C | Jetpack Cat | -2.60% | Standard (+0.6%) | Unfavorable | - | 44 |
+| C | Jetpackcat | -2.60% | Standard (+0.6%) | Unfavorable | - | 44 |
 | C | Anran | -2.98% | Standard (+0.0%) | Unfavorable | Better in Masters | 42 |
 | D | Ana | -3.85% | Niche (-5.1%) | Deterrent | - | 44 |
 | D | Sigma | -5.53% | Niche (-4.3%) | Deterrent | Better in GM+ | 44 |
@@ -1902,7 +1902,7 @@ Heroes whose map performance differs by 2.5% or more between Masters and GM+.
 | B | Ana | +0.68% | Map Priority (+7.6%) | Neutral | - | 44 |
 | B | Tracer | +0.64% | Standard (+0.3%) | Neutral | - | 44 |
 | B | Kiriko | +0.33% | Standard (+0.2%) | Neutral | Better in Masters | 44 |
-| B | Soldier 76 | +0.02% | Standard (+0.5%) | Neutral | - | 44 |
+| B | Soldier76 | +0.02% | Standard (+0.5%) | Neutral | - | 44 |
 | B | Sombra | -0.01% | Standard (+0.1%) | Neutral | Better in Masters | 39 |
 | B | Hazard | -0.11% | Popular (+2.4%) | Neutral | Better in Masters | 42 |
 | B | Cassidy | -0.14% | Niche (-2.6%) | Neutral | - | 44 |
@@ -1924,7 +1924,7 @@ Heroes whose map performance differs by 2.5% or more between Masters and GM+.
 | C | Vendetta | -2.19% | Standard (-0.1%) | Deterrent | Better in Masters | 35 |
 | C | Brigitte | -2.22% | Popular (+1.1%) | Trap Pick | Better in GM+ | 43 |
 | C | Zarya | -2.37% | Niche (-2.2%) | Deterrent | - | 44 |
-| C | Jetpack Cat | -2.44% | Popular (+1.3%) | Trap Pick | - | 44 |
+| C | Jetpackcat | -2.44% | Popular (+1.3%) | Trap Pick | - | 44 |
 | C | Zenyatta | -2.79% | Niche (-2.1%) | Deterrent | - | 44 |
 | C | Mauga | -2.89% | Standard (-0.7%) | Deterrent | - | 41 |
 | D | Juno | -3.27% | Standard (-0.7%) | Deterrent | Better in Masters | 43 |
@@ -1965,7 +1965,7 @@ Heroes whose map performance differs by 2.5% or more between Masters and GM+.
 | B | Hazard | +0.91% | Popular (+2.2%) | Neutral | - | 44 |
 | B | Brigitte | +0.82% | Popular (+2.0%) | Neutral | - | 44 |
 | B | Kiriko | +0.80% | Map Priority (+7.0%) | Neutral | - | 44 |
-| B | Jetpack Cat | +0.73% | Popular (+1.1%) | Neutral | - | 44 |
+| B | Jetpackcat | +0.73% | Popular (+1.1%) | Neutral | - | 44 |
 | B | Shion | +0.72% | Map Priority (+5.1%) | Neutral | - | 20 |
 | B | Ramattra | +0.69% | Standard (-0.9%) | Neutral | - | 43 |
 | B | Moira | +0.69% | Popular (+1.8%) | Neutral | - | 44 |
@@ -1976,7 +1976,7 @@ Heroes whose map performance differs by 2.5% or more between Masters and GM+.
 | B | Dva | +0.31% | Standard (+0.9%) | Neutral | Better in GM+ | 44 |
 | B | Tracer | +0.31% | Map Priority (+6.8%) | Neutral | - | 44 |
 | B | Wuyang | +0.28% | Standard (-0.8%) | Neutral | - | 44 |
-| B | Soldier 76 | +0.17% | Niche (-1.1%) | Neutral | - | 44 |
+| B | Soldier76 | +0.17% | Niche (-1.1%) | Neutral | - | 44 |
 | B | Mei | +0.16% | Standard (-0.7%) | Neutral | - | 44 |
 | B | Sojourn | +0.10% | Niche (-2.2%) | Neutral | - | 44 |
 | B | Symmetra | +0.10% | Standard (+0.3%) | Neutral | - | 44 |
@@ -2007,7 +2007,7 @@ Heroes whose map performance differs by 2.5% or more between Masters and GM+.
 
 | Tier | Hero | Delta WR | Presence | Archetype | Rank | n |
 |---|---|---|---|---|---|---|
-| S | Jetpack Cat | +8.43% | Popular (+1.8%) | Meta | Better in GM+ | 8 |
+| S | Jetpackcat | +8.43% | Popular (+1.8%) | Meta | Better in GM+ | 8 |
 | S | Lifeweaver | +5.97% | Standard (+0.7%) | Favorable | Better in GM+ | 8 |
 | S | Mercy | +5.12% | Popular (+1.5%) | Favorable | Better in GM+ | 8 |
 | S | Bastion | +5.01% | Standard (+0.2%) | Favorable | Better in GM+ | 8 |
@@ -2051,7 +2051,7 @@ Heroes whose map performance differs by 2.5% or more between Masters and GM+.
 | D | Illari | -5.13% | Popular (+1.5%) | Trap Pick | Better in Masters | 8 |
 | D | Reaper | -5.15% | Standard (-0.9%) | Deterrent | Better in Masters | 8 |
 | D | Mauga | -5.40% | Standard (-0.9%) | Deterrent | Better in Masters | 7 |
-| D | Soldier 76 | -5.53% | Standard (-0.8%) | Deterrent | Better in Masters | 8 |
+| D | Soldier76 | -5.53% | Standard (-0.8%) | Deterrent | Better in Masters | 8 |
 | D | Freja | -5.60% | Standard (+0.4%) | Unfavorable | Better in Masters | 8 |
 | D | Reinhardt | -6.04% | Niche (-1.0%) | Deterrent | Better in Masters | 8 |
 | D | Sombra | -6.33% | Standard (-0.1%) | Deterrent | - | 7 |
@@ -2101,7 +2101,7 @@ Heroes whose map performance differs by 2.5% or more between Masters and GM+.
 | B | Mizuki | -1.11% | Niche (-2.7%) | Neutral | - | 43 |
 | B | Symmetra | -1.17% | Standard (-0.5%) | Neutral | - | 43 |
 | C | Moira | -1.22% | Niche (-2.3%) | Unfavorable | Better in GM+ | 43 |
-| C | Jetpack Cat | -1.23% | Standard (+0.7%) | Unfavorable | Better in GM+ | 43 |
+| C | Jetpackcat | -1.23% | Standard (+0.7%) | Unfavorable | Better in GM+ | 43 |
 | C | Dmon | -1.23% | Standard (-1.0%) | Unfavorable | Better in GM+ | 8 |
 | C | Sojourn | -1.26% | Niche (-1.7%) | Unfavorable | Better in Masters | 44 |
 | C | Zenyatta | -1.28% | Map Priority (+3.3%) | Unfavorable | - | 44 |
@@ -2115,7 +2115,7 @@ Heroes whose map performance differs by 2.5% or more between Masters and GM+.
 | C | Junkrat | -1.78% | Standard (-0.0%) | Deterrent | - | 43 |
 | C | Juno | -2.50% | Niche (-1.8%) | Deterrent | - | 43 |
 | C | Torbjorn | -2.59% | Standard (+0.3%) | Unfavorable | - | 42 |
-| C | Soldier 76 | -2.61% | Niche (-1.5%) | Deterrent | - | 43 |
+| C | Soldier76 | -2.61% | Niche (-1.5%) | Deterrent | - | 43 |
 | C | Wreckingball | -2.67% | Niche (-1.1%) | Deterrent | - | 43 |
 | D | Lucio | -5.82% | Niche (-4.3%) | Deterrent | - | 42 |
 
@@ -2154,11 +2154,11 @@ Heroes whose map performance differs by 2.5% or more between Masters and GM+.
 | B | Genji | -0.47% | Popular (+1.5%) | Neutral | - | 44 |
 | B | Roadhog | -0.51% | Popular (+1.2%) | Neutral | - | 44 |
 | B | Zarya | -0.54% | Niche (-1.3%) | Neutral | Better in Masters | 44 |
-| B | Soldier 76 | -0.69% | Niche (-1.5%) | Neutral | - | 44 |
+| B | Soldier76 | -0.69% | Niche (-1.5%) | Neutral | - | 44 |
 | B | Sigma | -0.74% | Popular (+2.7%) | Neutral | Better in GM+ | 44 |
 | B | Pharah | -0.92% | Niche (-1.3%) | Neutral | Better in Masters | 43 |
 | C | Anran | -1.21% | Standard (-0.5%) | Unfavorable | - | 42 |
-| C | Jetpack Cat | -1.25% | Niche (-1.0%) | Unfavorable | - | 44 |
+| C | Jetpackcat | -1.25% | Niche (-1.0%) | Unfavorable | - | 44 |
 | C | Domina | -1.30% | Standard (-0.1%) | Unfavorable | - | 43 |
 | C | Mei | -1.67% | Standard (+0.1%) | Unfavorable | Better in Masters | 44 |
 | C | Venture | -1.83% | Standard (-0.0%) | Deterrent | Better in GM+ | 42 |
@@ -2181,7 +2181,7 @@ Heroes whose map performance differs by 2.5% or more between Masters and GM+.
 
 | Tier | Hero | Delta WR | Presence | Archetype | Rank | n |
 |---|---|---|---|---|---|---|
-| S | Soldier 76 | +3.94% | Map Priority (+6.9%) | Meta | - | 44 |
+| S | Soldier76 | +3.94% | Map Priority (+6.9%) | Meta | - | 44 |
 | S | Reinhardt | +3.87% | Standard (+0.3%) | Favorable | - | 43 |
 | S | Kiriko | +3.38% | Map Priority (+8.3%) | Meta | Better in GM+ | 44 |
 | A | Lifeweaver | +2.89% | Standard (-0.9%) | Specialist | - | 42 |
@@ -2207,7 +2207,7 @@ Heroes whose map performance differs by 2.5% or more between Masters and GM+.
 | B | Zarya | +0.66% | Standard (+0.2%) | Neutral | - | 42 |
 | B | Emre | +0.61% | Standard (+1.0%) | Neutral | - | 44 |
 | B | Bastion | +0.54% | Standard (-0.9%) | Neutral | - | 40 |
-| B | Jetpack Cat | +0.46% | Standard (+0.5%) | Neutral | Better in Masters | 44 |
+| B | Jetpackcat | +0.46% | Standard (+0.5%) | Neutral | Better in Masters | 44 |
 | B | Illari | +0.39% | Niche (-1.5%) | Neutral | Better in Masters | 43 |
 | B | Sierra | +0.24% | Standard (-0.2%) | Neutral | Better in GM+ | 26 |
 | B | Winston | +0.16% | Niche (-1.8%) | Neutral | - | 44 |
@@ -2276,7 +2276,7 @@ Heroes whose map performance differs by 2.5% or more between Masters and GM+.
 | B | Mei | -0.61% | Standard (-0.3%) | Neutral | - | 43 |
 | B | Mercy | -0.65% | Niche (-1.7%) | Neutral | Better in Masters | 43 |
 | B | Venture | -0.67% | Standard (+0.3%) | Neutral | Better in Masters | 43 |
-| C | Soldier 76 | -1.25% | Niche (-1.5%) | Unfavorable | - | 44 |
+| C | Soldier76 | -1.25% | Niche (-1.5%) | Unfavorable | - | 44 |
 | C | Reaper | -1.30% | Popular (+1.9%) | Unfavorable | - | 44 |
 | C | Sigma | -1.33% | Niche (-2.9%) | Unfavorable | - | 44 |
 | C | Vendetta | -1.42% | Standard (-0.0%) | Unfavorable | Better in Masters | 40 |
@@ -2288,7 +2288,7 @@ Heroes whose map performance differs by 2.5% or more between Masters and GM+.
 | C | Ana | -2.00% | Niche (-5.8%) | Deterrent | - | 44 |
 | C | Junkrat | -2.21% | Standard (-0.3%) | Deterrent | - | 43 |
 | C | Freja | -2.26% | Niche (-1.6%) | Deterrent | - | 44 |
-| C | Jetpack Cat | -2.40% | Standard (-0.4%) | Deterrent | - | 44 |
+| C | Jetpackcat | -2.40% | Standard (-0.4%) | Deterrent | - | 44 |
 | C | Genji | -2.64% | Niche (-1.5%) | Deterrent | - | 44 |
 | D | Winston | -3.05% | Niche (-3.9%) | Deterrent | Better in Masters | 44 |
 | D | Widowmaker | -6.37% | Niche (-4.7%) | Deterrent | - | 37 |
@@ -2313,7 +2313,7 @@ Heroes whose map performance differs by 2.5% or more between Masters and GM+.
 | A | Venture | +1.22% | Standard (+0.4%) | Favorable | - | 40 |
 | B | Pharah | +1.04% | Popular (+1.6%) | Neutral | Better in Masters | 44 |
 | B | Freja | +0.88% | Standard (+0.7%) | Neutral | - | 43 |
-| B | Jetpack Cat | +0.85% | Standard (+0.0%) | Neutral | Better in GM+ | 44 |
+| B | Jetpackcat | +0.85% | Standard (+0.0%) | Neutral | Better in GM+ | 44 |
 | B | Dva | +0.60% | Niche (-2.1%) | Neutral | - | 43 |
 | B | Echo | +0.53% | Map Priority (+3.8%) | Neutral | Better in GM+ | 44 |
 | B | Shion | +0.52% | Niche (-3.0%) | Neutral | - | 20 |
@@ -2342,7 +2342,7 @@ Heroes whose map performance differs by 2.5% or more between Masters and GM+.
 | C | Symmetra | -2.10% | Standard (-0.1%) | Deterrent | - | 42 |
 | C | Tracer | -2.28% | Niche (-7.4%) | Deterrent | Better in GM+ | 44 |
 | C | Doomfist | -2.32% | Niche (-1.3%) | Deterrent | Better in Masters | 44 |
-| C | Soldier 76 | -2.72% | Niche (-2.1%) | Deterrent | - | 44 |
+| C | Soldier76 | -2.72% | Niche (-2.1%) | Deterrent | - | 44 |
 | C | Torbjorn | -2.73% | Standard (+0.1%) | Unfavorable | Better in Masters | 42 |
 | C | Cassidy | -2.78% | Niche (-3.5%) | Deterrent | - | 44 |
 | C | Mercy | -2.85% | Standard (+0.7%) | Unfavorable | - | 41 |
@@ -2360,7 +2360,7 @@ Heroes whose map performance differs by 2.5% or more between Masters and GM+.
 | S | Symmetra | +3.47% | Standard (-0.1%) | Specialist | - | 42 |
 | S | Wreckingball | +3.02% | Popular (+1.5%) | Meta | - | 44 |
 | A | Kiriko | +2.96% | Map Priority (+8.1%) | Meta | - | 44 |
-| A | Jetpack Cat | +2.75% | Standard (+0.2%) | Favorable | Better in Masters | 43 |
+| A | Jetpackcat | +2.75% | Standard (+0.2%) | Favorable | Better in Masters | 43 |
 | A | Ramattra | +2.54% | Standard (-0.3%) | Specialist | - | 43 |
 | A | Brigitte | +2.43% | Popular (+1.4%) | Favorable | - | 44 |
 | A | Pharah | +2.20% | Standard (-0.9%) | Specialist | - | 43 |
@@ -2369,7 +2369,7 @@ Heroes whose map performance differs by 2.5% or more between Masters and GM+.
 | A | Sierra | +1.66% | Standard (-0.5%) | Specialist | - | 26 |
 | A | Mauga | +1.64% | Popular (+1.7%) | Meta | - | 43 |
 | B | Genji | +1.20% | Standard (-0.0%) | Neutral | - | 43 |
-| B | Soldier 76 | +1.15% | Popular (+2.0%) | Neutral | - | 43 |
+| B | Soldier76 | +1.15% | Popular (+2.0%) | Neutral | - | 43 |
 | B | Reinhardt | +1.01% | Standard (+0.2%) | Neutral | Better in Masters | 44 |
 | B | Reaper | +0.97% | Popular (+2.0%) | Neutral | - | 44 |
 | B | Sojourn | +0.87% | Map Priority (+4.1%) | Neutral | - | 44 |
@@ -2436,10 +2436,10 @@ Heroes whose map performance differs by 2.5% or more between Masters and GM+.
 | B | Sierra | -0.07% | Standard (+0.1%) | Neutral | Better in Masters | 28 |
 | B | Pharah | -0.11% | Niche (-1.8%) | Neutral | - | 43 |
 | B | Mei | -0.19% | Niche (-1.6%) | Neutral | Better in GM+ | 40 |
-| B | Jetpack Cat | -0.25% | Popular (+1.4%) | Neutral | - | 44 |
+| B | Jetpackcat | -0.25% | Popular (+1.4%) | Neutral | - | 44 |
 | B | Mizuki | -0.29% | Niche (-2.7%) | Neutral | Better in GM+ | 44 |
 | B | Widowmaker | -0.37% | Map Priority (+3.3%) | Neutral | - | 43 |
-| B | Soldier 76 | -0.42% | Standard (-0.5%) | Neutral | Better in GM+ | 44 |
+| B | Soldier76 | -0.42% | Standard (-0.5%) | Neutral | Better in GM+ | 44 |
 | B | Kiriko | -0.68% | Niche (-2.4%) | Neutral | - | 44 |
 | B | Wuyang | -0.81% | Niche (-4.2%) | Neutral | - | 44 |
 | B | Sombra | -1.05% | Standard (+0.1%) | Neutral | - | 42 |

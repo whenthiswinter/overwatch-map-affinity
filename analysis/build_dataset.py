@@ -3,7 +3,7 @@ import math
 import os
 from collections import defaultdict
 
-from config import HERO_RELEASE_SEASON, MAP_MODES, MAP_VALID_FROM_SEASON, MIN_PICK_RATE, hero_role
+from config import HERO_RELEASE_SEASON, MAP_MODES, MAP_VALID_FROM_SEASON, MIN_PICK_RATE, MIN_SAMPLE_SIZE, hero_role
 
 RAW_DIR = os.path.join(os.path.dirname(__file__), "..", "data", "raw")
 OUT_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "web_data.json")
@@ -155,7 +155,7 @@ def build():
                 entries = []
 
                 for map_slug, deltas in maps.items():
-                    if not deltas:
+                    if len(deltas) < MIN_SAMPLE_SIZE:
                         continue
                     avg_wr = sum(deltas) / len(deltas)
                     avg_pr = sum(hero_map_pr[hero_slug][map_slug]) / len(hero_map_pr[hero_slug][map_slug])

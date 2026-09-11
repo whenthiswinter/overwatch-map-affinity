@@ -4,7 +4,7 @@ import math
 import os
 from collections import defaultdict
 
-from config import MAP_VALID_FROM_SEASON, MIN_PICK_RATE
+from config import MAP_VALID_FROM_SEASON, MIN_PICK_RATE, MIN_SAMPLE_SIZE
 
 RAW_DIR = os.path.join(os.path.dirname(__file__), "..", "data", "raw")
 CSV_DIR = os.path.join(os.path.dirname(__file__), "..", "data", "csv")
@@ -61,7 +61,7 @@ def analyze(raw):
 def volatility_of(deltas):
     result = {}
     for hero, maps in deltas.items():
-        avgs = [sum(d) / len(d) for d in maps.values() if len(d) >= 3]
+        avgs = [sum(d) / len(d) for d in maps.values() if len(d) >= MIN_SAMPLE_SIZE]
         if len(avgs) >= 5:
             mean = sum(avgs) / len(avgs)
             result[hero] = math.sqrt(sum((x - mean) ** 2 for x in avgs) / len(avgs))
@@ -175,6 +175,8 @@ def run():
                 if map_slug not in maps:
                     continue
                 d_list = maps[map_slug]
+                if len(d_list) < MIN_SAMPLE_SIZE:
+                    continue
                 avg_delta = sum(d_list) / len(d_list)
                 avg_pr = sum(pr_lifts[hero][map_slug]) / len(pr_lifts[hero][map_slug])
                 comp, _, _, _ = rank_comparison(gm_deltas[hero].get(map_slug, []), master_deltas[hero].get(map_slug, []))
