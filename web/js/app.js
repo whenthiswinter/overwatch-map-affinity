@@ -95,6 +95,7 @@ function switchTab(tab) {
   document.querySelectorAll(".tab").forEach((b) => b.classList.toggle("active", b.dataset.tab === tab));
   document.querySelectorAll('[data-scope="map"]').forEach((n) => n.classList.toggle("hidden", tab !== "map"));
   document.querySelectorAll('[data-scope="hero"]').forEach((n) => n.classList.toggle("hidden", tab !== "hero"));
+  document.querySelectorAll('[data-scope="pool"]').forEach((n) => n.classList.toggle("hidden", tab !== "pool"));
   el("tableView").classList.toggle("hidden", tab === "pool");
   el("poolView").classList.toggle("hidden", tab !== "pool");
   if (tab !== "hero") el("heroSummary").classList.add("hidden");

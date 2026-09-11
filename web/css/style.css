@@ -150,6 +150,16 @@ body {
   gap: 6px;
 }
 
+.field.highlight span {
+  color: var(--accent);
+}
+
+.field.highlight select {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  font-weight: 600;
+}
+
 select, input[type="text"] {
   background: var(--surface);
   border: 1px solid var(--border);
