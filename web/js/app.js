@@ -57,7 +57,7 @@ function bindEvents() {
     };
   });
 
-  ["rankSelect", "regionSelect", "mapSelect", "heroSelect", "onlyPoolCheck"].forEach((id) => {
+  ["rankSelect", "regionSelect", "mapSelect", "roleSelect", "heroSelect", "onlyPoolCheck"].forEach((id) => {
     el(id).addEventListener("change", render);
   });
 
@@ -137,6 +137,7 @@ function renderMapTab(slice) {
 
   const mapSlug = el("mapSelect").value;
   const mode = data.map_modes[mapSlug];
+  const role = el("roleSelect").value;
   const onlyPool = el("onlyPoolCheck").checked;
 
   el("tableHead").innerHTML = `
@@ -146,6 +147,7 @@ function renderMapTab(slice) {
     </tr>`;
 
   let entries = slice.maps[mapSlug] || [];
+  if (role !== "ALL") entries = entries.filter((e) => e.role === role);
   if (onlyPool && pool.size > 0) entries = entries.filter((e) => pool.has(e.hero));
 
   el("tableBody").innerHTML = sortByTier(entries).map((e) => `
@@ -250,7 +252,10 @@ function renderPoolTab(slice) {
                 ${fmt(e.hero)}
                 ${isBest ? `<span class="best-tag ${role}">#1</span>` : ""}
               </span>
-              ${deltaCell(e.delta_wr)}
+              <span class="pick-stats">
+                <span class="pick-arch" title="Presence: ${e.presence}">${e.archetype}</span>
+                ${deltaCell(e.delta_wr)}
+              </span>
             </div>`;
         }).join("");
       });
@@ -298,7 +303,7 @@ function openExport() {
         any = true;
         const parts = roleEntries.map((e, idx) => {
           const tag = idx === 0 && e.delta_wr > 0 ? " [best]" : "";
-          return `${fmt(e.hero)} (${e.delta_wr > 0 ? "+" : ""}${e.delta_wr.toFixed(1)}%)${tag}`;
+          return `${fmt(e.hero)} (${e.delta_wr > 0 ? "+" : ""}${e.delta_wr.toFixed(1)}%, ${e.archetype})${tag}`;
         });
         out += `  ${role.padEnd(8)}: ${parts.join(" | ")}\n`;
       });

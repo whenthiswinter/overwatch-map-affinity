@@ -495,6 +495,14 @@ tbody tr:hover { background: var(--bg); }
 
 .pick-row .name { display: flex; align-items: center; gap: 6px; }
 
+.pick-stats { display: flex; align-items: center; gap: 8px; }
+
+.pick-arch {
+  font-size: 0.7rem;
+  color: var(--muted);
+  cursor: help;
+}
+
 .best-tag {
   font-size: 0.62rem;
   font-weight: 700;
