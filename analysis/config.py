@@ -11,6 +11,7 @@ SEASON_MAP = {
 # data from earlier seasons. Pairs that only exist in this season (new or
 # reworked heroes, new maps) still use it, flagged as provisional.
 CURRENT_SEASON = 5
+CURRENT_IS_MIDSEASON = False
 CURRENT_SEASON_MATURE = False
 
 MIN_PICK_RATE = 1.0
