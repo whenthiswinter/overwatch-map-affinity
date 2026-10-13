@@ -6,10 +6,14 @@ let data = null;
 let activeTab = "map";
 let poolRoleFilter = "ALL";
 let poolModeFilter = "ALL";
-let pool = new Set(JSON.parse(localStorage.getItem("owPool") || '["winston","tracer","ana"]'));
+// Hero slugs were renamed to match Blizzard's; carry saved pools over.
+const LEGACY_SLUGS = { jetpackcat: "jetpack-cat", junkerqueen: "junker-queen", soldier76: "soldier-76", wreckingball: "wrecking-ball" };
+let pool = new Set(JSON.parse(localStorage.getItem("owPool") || '["winston","tracer","ana"]').map((h) => LEGACY_SLUGS[h] || h));
 
 const el = (id) => document.getElementById(id);
 const fmt = (slug) => slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
+const heroName = (slug) => (data && data.hero_names && data.hero_names[slug]) || fmt(slug);
+const provTag = (e) => (e.provisional ? '<span class="prov-tag" title="Only current-season data so far, which is still settling. Expect this to move.">Provisional</span>' : "");
 
 fetch("../data/web_data.json")
   .then((r) => r.json())
@@ -20,14 +24,14 @@ fetch("../data/web_data.json")
 
 function init() {
   el("mapSelect").innerHTML = data.map_list.map((m) => `<option value="${m}">${fmt(m)}</option>`).join("");
-  el("heroSelect").innerHTML = data.hero_list.map((h) => `<option value="${h}">${fmt(h)}</option>`).join("");
+  el("heroSelect").innerHTML = data.hero_list.map((h) => `<option value="${h}">${heroName(h)}</option>`).join("");
 
   const buckets = { Tank: el("chipsTank"), Damage: el("chipsDamage"), Support: el("chipsSupport") };
   data.hero_list.forEach((h) => {
     const role = data.hero_roles[h] || "Damage";
     const chip = document.createElement("div");
     chip.className = "chip" + (pool.has(h) ? " selected" : "");
-    chip.textContent = fmt(h);
+    chip.textContent = heroName(h);
     chip.onclick = () => togglePool(h, chip);
     buckets[role].appendChild(chip);
   });
@@ -153,7 +157,7 @@ function renderMapTab(slice) {
   el("tableBody").innerHTML = sortByTier(entries).map((e) => `
     <tr>
       <td><span class="badge ${e.tier}">${e.tier}</span></td>
-      <td><strong>${fmt(e.hero)}</strong></td>
+      <td><strong>${heroName(e.hero)}</strong>${provTag(e)}</td>
       <td><span class="role-tag ${e.role}">${e.role}</span></td>
       <td><span class="mode-badge">${mode}</span></td>
       <td>${deltaCell(e.delta_wr)}</td>
@@ -169,9 +173,10 @@ function renderHeroTab(slice) {
   const hData = slice.heroes[hero] || { role: "Damage", modes: {}, maps: [], volatility: 0, volatility_class: "" };
 
   el("heroSummary").classList.remove("hidden");
-  el("heroName").textContent = fmt(hero);
+  el("heroName").textContent = heroName(hero);
   el("heroRolePill").textContent = hData.role;
   el("heroRolePill").className = `role-pill ${hData.role}`;
+  el("heroProv").innerHTML = hData.provisional ? provTag(hData) : "";
   el("heroVol").innerHTML = `Map sensitivity: <strong>&sigma; ${hData.volatility.toFixed(2)}%</strong> <span class="muted">(${hData.volatility_class})</span>`;
 
   el("modeGrid").innerHTML = MODES.map((m) => {
@@ -189,7 +194,7 @@ function renderHeroTab(slice) {
   el("tableBody").innerHTML = sortByTier(hData.maps || []).map((e) => `
     <tr>
       <td><span class="badge ${e.tier}">${e.tier}</span></td>
-      <td><strong>${fmt(e.map)}</strong></td>
+      <td><strong>${fmt(e.map)}</strong>${provTag(e)}</td>
       <td><span class="mode-badge">${e.mode}</span></td>
       <td>${deltaCell(e.delta_wr)}</td>
       <td class="muted">${e.presence}</td>
@@ -222,7 +227,7 @@ function renderPoolTab(slice) {
 
   stats.innerHTML = statHeroes.map((h) => `
     <div class="pool-stat-chip">
-      <span class="role-tag ${h.role}">${fmt(h.hero)}</span>
+      <span class="role-tag ${h.role}">${heroName(h.hero)}</span>
       <span class="sigma ${volClass(h.volatility)}">&sigma; ${h.volatility.toFixed(2)}%</span>
     </div>`).join("");
 
@@ -249,7 +254,7 @@ function renderPoolTab(slice) {
             <div class="pick-row">
               <span class="name">
                 <span class="badge ${e.tier}" style="font-size:.65rem;padding:1px 5px;">${e.tier}</span>
-                ${fmt(e.hero)}
+                ${heroName(e.hero)}${provTag(e)}
                 ${isBest ? `<span class="best-tag ${role}">#1</span>` : ""}
               </span>
               <span class="pick-stats">
@@ -277,7 +282,7 @@ function openExport() {
 
   const slice = activeSlice();
   const byRole = { Tank: [], Damage: [], Support: [] };
-  pool.forEach((h) => byRole[data.hero_roles[h] || "Damage"].push(fmt(h)));
+  pool.forEach((h) => byRole[data.hero_roles[h] || "Damage"].push(heroName(h)));
 
   let out = "OVERWATCH MAP AFFINITY - OFFLINE CHEAT SHEET\n";
   out += "=".repeat(50) + "\n\n";
@@ -303,7 +308,7 @@ function openExport() {
         any = true;
         const parts = roleEntries.map((e, idx) => {
           const tag = idx === 0 && e.delta_wr > 0 ? " [best]" : "";
-          return `${fmt(e.hero)} (${e.delta_wr > 0 ? "+" : ""}${e.delta_wr.toFixed(1)}%, ${e.archetype})${tag}`;
+          return `${heroName(e.hero)}${e.provisional ? "*" : ""} (${e.delta_wr > 0 ? "+" : ""}${e.delta_wr.toFixed(1)}%, ${e.archetype})${tag}`;
         });
         out += `  ${role.padEnd(8)}: ${parts.join(" | ")}\n`;
       });
@@ -312,6 +317,8 @@ function openExport() {
       out += "\n";
     });
   });
+
+  out += "* provisional: only current-season data so far, still settling\n";
 
   el("exportText").value = out;
   el("exportDialog").showModal();

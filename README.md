@@ -18,11 +18,12 @@ I didn't want to make a system that was dependant on patches, but rather wanted 
 
 ## The numbers
 
-- **Delta WR** — a hero's win rate on a map minus their baseline win rate in that same rank/region/patch slice, averaged across every slice I collected (currently seasons 1-4 (2026, no season 4 midseason), Masters and up). Tiers: S ≥ +3.0%, A +1.2 to +2.9%, B ±1.1%, C −1.3 to −3.0%, D < −3.0%.
+- **Delta WR** — a hero's win rate on a map minus their baseline win rate in that same rank/region/patch slice, averaged across every slice I collected (currently seasons 1-4 of 2026 including midseasons, Masters and up; season 5 is in progress, see *Provisional* below). Tiers: S ≥ +3.0%, A +1.2 to +2.9%, B ±1.1%, C −1.3 to −3.0%, D < −3.0%.
 - **Delta PR** — pick rate lift on the map vs. the hero's average pick rate. Tells you whether a strong map is being drafted for, or slept on.
 - **Archetype** — a rough read of delta WR crossed with delta PR: *Meta* (strong and popular), *Specialist* (strong but rarely picked), *Trap Pick* (weak but still picked a lot), *Deterrent* (weak and avoided).
 - **Sigma (map sensitivity)** — standard deviation of a hero's delta across all maps. High sigma = map specialist, low sigma = plays about the same everywhere.
 - **Rank divergence** — flags heroes whose delta shifts by 2.5%+ between Masters and GM/Champion, helpful in some edge cases where the disparity between Masters and GM+ can be big enough to be misleading.
+- **Provisional** — the season currently in progress is left out of the averages until its data settles, because the first weeks of a patch are thin and noisy. Heroes and maps that only exist in the current season (new releases and reworks; right now Doctrine, Grímsvötn, and the reworked Sombra and Roadhog as of Season 5) are still shown, built from current-season data alone and marked *Provisional*.
 - **Minimum sample size** — a hero-map pair needs at least 3 qualifying season/tier/region slices before it shows up anywhere. Below that, a single unlucky slice (a hero with barely any games on a map happens to lose all of them) can swing the average by 30-50 points and look like a real result when it's really just noise. Filtering down to a specific rank or region thins out the slices fast, so a hero that shows up on the all-ranks/all-regions view can disappear from a narrower one — that's the filter doing its job, not a bug. The one exception is a hero or map that just hasn't existed long enough to ever reach 3 slices under a narrow filter (a hero released this season, or a map reworked this season) — those show with whatever slices actually exist instead of getting hidden entirely, so a new hero isn't invisible on the site until they've been around for months.
 
 More charts, for the curious:
@@ -63,4 +64,4 @@ Raw per-hero cache files aren't checked in (they're big and easy to regenerate),
 
 ## Caveats
 
-Heroes and maps added (or reworked) mid-timeframe are only counted from the season they existed in, and reworked maps only count data from after the rework.
+Heroes and maps added (or reworked) mid-timeframe are only counted from the season they were released or reworked in, so a rework starts that hero or map over from scratch (e.g. Sombra's move from Damage to Support in season 5).

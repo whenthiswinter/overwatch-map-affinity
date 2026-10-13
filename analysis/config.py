@@ -3,7 +3,15 @@ SEASON_MAP = {
     2: 22,
     3: 23,
     4: 24,
+    5: 25,
 }
+
+# The season currently in progress. Until it has run long enough for its data
+# to settle, its slices are left out of every hero-map pair that already has
+# data from earlier seasons. Pairs that only exist in this season (new or
+# reworked heroes, new maps) still use it, flagged as provisional.
+CURRENT_SEASON = 5
+CURRENT_SEASON_MATURE = False
 
 MIN_PICK_RATE = 1.0
 
@@ -13,10 +21,15 @@ MIN_PICK_RATE = 1.0
 # average by dozens of points and look like a real result when it isn't.
 MIN_SAMPLE_SIZE = 3
 
-HERO_RELEASE_SEASON = {
-    "Sierra": 2,
-    "Shion": 3,
-    "D.Mon": 4,
+# Earliest season we accept data from for a hero: their release, or their
+# most recent rework. Keyed by canonical slug (see canonical_slug).
+HERO_VALID_FROM_SEASON = {
+    "sierra": 2,
+    "shion": 3,
+    "dmon": 4,
+    "doctrine": 5,
+    "sombra": 5,   # reworked, Damage -> Support
+    "roadhog": 5,  # reworked
 }
 
 MAP_VALID_FROM_SEASON = {
@@ -26,10 +39,11 @@ MAP_VALID_FROM_SEASON = {
     "paraiso": 4,
     "eichenwalde": 4,
     "busan": 4,
+    "grimsvotn": 5,
 }
 
 MAP_SLUGS = [
-    "circuit-royal", "dorado", "havana", "junkertown", "rialto", "route-66", "shambali-monastery", "watchpoint-gibraltar",
+    "circuit-royal", "dorado", "grimsvotn", "havana", "junkertown", "rialto", "route-66", "shambali-monastery", "watchpoint-gibraltar",
     "blizzard-world", "eichenwalde", "hollywood", "kings-row", "midtown", "neon-junction", "numbani", "paraiso",
     "antarctic-peninsula", "busan", "ilios", "lijiang-tower", "nepal", "oasis", "samoa",
     "colosseo", "esperanca", "new-queen-street", "runasapi",
@@ -37,7 +51,7 @@ MAP_SLUGS = [
 ]
 
 MAP_MODES = {
-    "circuit-royal": "Escort", "dorado": "Escort", "havana": "Escort", "junkertown": "Escort",
+    "circuit-royal": "Escort", "dorado": "Escort", "grimsvotn": "Escort", "havana": "Escort", "junkertown": "Escort",
     "rialto": "Escort", "route-66": "Escort", "shambali-monastery": "Escort", "watchpoint-gibraltar": "Escort",
     "blizzard-world": "Hybrid", "eichenwalde": "Hybrid", "hollywood": "Hybrid", "kings-row": "Hybrid",
     "midtown": "Hybrid", "neon-junction": "Hybrid", "numbani": "Hybrid", "paraiso": "Hybrid",
@@ -47,32 +61,71 @@ MAP_MODES = {
     "aatlis": "Flashpoint", "new-junk-city": "Flashpoint", "suravasa": "Flashpoint",
 }
 
+# Canonical hero slugs follow Blizzard's rates page (overwatch.blizzard.com/rates),
+# which is where live data comes from. Older OWTics caches use other spellings.
+SLUG_ALIASES = {
+    "jetpackcat": "jetpack-cat",
+    "junkerqueen": "junker-queen",
+    "soldier76": "soldier-76",
+    "wreckingball": "wrecking-ball",
+    "lúcio": "lucio",
+    "torbjörn": "torbjorn",
+}
+
+HERO_NAMES = {
+    "dmon": "D.Mon", "dva": "D.Va", "lucio": "Lúcio", "soldier-76": "Soldier: 76", "torbjorn": "Torbjörn",
+}
+
 HERO_ROLES = {
-    "d.mon": "Tank", "dmon": "Tank", "d.va": "Tank", "dva": "Tank", "domina": "Tank",
-    "doomfist": "Tank", "hazard": "Tank", "junker-queen": "Tank", "junkerqueen": "Tank",
-    "mauga": "Tank", "orisa": "Tank", "ramattra": "Tank", "reinhardt": "Tank",
-    "roadhog": "Tank", "sigma": "Tank", "winston": "Tank", "wrecking-ball": "Tank",
-    "wreckingball": "Tank", "zarya": "Tank",
+    "dmon": "Tank", "domina": "Tank", "doomfist": "Tank", "dva": "Tank", "hazard": "Tank",
+    "junker-queen": "Tank", "mauga": "Tank", "orisa": "Tank", "ramattra": "Tank", "reinhardt": "Tank",
+    "roadhog": "Tank", "sigma": "Tank", "winston": "Tank", "wrecking-ball": "Tank", "zarya": "Tank",
 
     "anran": "Damage", "ashe": "Damage", "bastion": "Damage", "cassidy": "Damage",
     "echo": "Damage", "emre": "Damage", "freja": "Damage", "genji": "Damage",
     "hanzo": "Damage", "junkrat": "Damage", "mei": "Damage", "pharah": "Damage",
     "reaper": "Damage", "shion": "Damage", "sierra": "Damage", "sojourn": "Damage",
-    "soldier-76": "Damage", "soldier:_76": "Damage", "soldier76": "Damage",
-    "sombra": "Damage", "symmetra": "Damage", "torbjorn": "Damage", "torbjörn": "Damage",
-    "tracer": "Damage", "vendetta": "Damage", "vendetta[5]": "Damage", "venture": "Damage",
-    "widowmaker": "Damage",
+    "soldier-76": "Damage", "symmetra": "Damage", "torbjorn": "Damage", "tracer": "Damage",
+    "vendetta": "Damage", "venture": "Damage", "widowmaker": "Damage",
 
-    "ana": "Support", "baptiste": "Support", "brigitte": "Support", "illari": "Support",
-    "jetpack-cat": "Support", "jetpackcat": "Support", "juno": "Support", "kiriko": "Support",
-    "lifeweaver": "Support", "lucio": "Support", "lúcio": "Support", "mercy": "Support",
-    "mizuki": "Support", "moira": "Support", "wuyang": "Support", "zenyatta": "Support",
+    "ana": "Support", "baptiste": "Support", "brigitte": "Support", "doctrine": "Support",
+    "illari": "Support", "jetpack-cat": "Support", "juno": "Support", "kiriko": "Support",
+    "lifeweaver": "Support", "lucio": "Support", "mercy": "Support", "mizuki": "Support",
+    "moira": "Support", "sombra": "Support", "wuyang": "Support", "zenyatta": "Support",
 }
 
 TIERS = ["MASTER", "GRANDMASTER_AND_CHAMPION"]
 REGIONS = ["AMER", "EU", "ASIA", "KOREA"]
 
 
+def canonical_slug(slug):
+    key = slug.strip().lower().replace(" ", "-").replace("_", "-").replace(":", "").replace(".", "")
+    return SLUG_ALIASES.get(key, key)
+
+
 def hero_role(slug):
-    key = slug.lower().replace(" ", "").replace("_", "-").replace(":", "")
-    return HERO_ROLES.get(key, "Damage")
+    return HERO_ROLES.get(canonical_slug(slug), "Damage")
+
+
+def hero_name(slug):
+    slug = canonical_slug(slug)
+    return HERO_NAMES.get(slug, slug.replace("-", " ").title())
+
+
+def valid_from(hero_slug, map_slug):
+    return max(HERO_VALID_FROM_SEASON.get(canonical_slug(hero_slug), 1), MAP_VALID_FROM_SEASON.get(map_slug, 1))
+
+
+def season_usable(hero_slug, map_slug, season):
+    """Whether data from this season counts for this hero-map pair."""
+    earliest = valid_from(hero_slug, map_slug)
+    if season < earliest:
+        return False
+    if season == CURRENT_SEASON and not CURRENT_SEASON_MATURE:
+        return earliest >= CURRENT_SEASON
+    return True
+
+
+def is_provisional(hero_slug, map_slug):
+    """True when a pair's only usable data is the still-immature current season."""
+    return not CURRENT_SEASON_MATURE and valid_from(hero_slug, map_slug) >= CURRENT_SEASON

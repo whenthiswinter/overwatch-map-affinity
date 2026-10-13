@@ -3,7 +3,10 @@ import math
 import os
 from collections import defaultdict
 
-from config import HERO_RELEASE_SEASON, MAP_MODES, MAP_VALID_FROM_SEASON, MIN_PICK_RATE, MIN_SAMPLE_SIZE, hero_role
+from config import (
+    HERO_VALID_FROM_SEASON, MAP_MODES, MIN_PICK_RATE, MIN_SAMPLE_SIZE,
+    canonical_slug, hero_name, hero_role, is_provisional, season_usable,
+)
 
 RAW_DIR = os.path.join(os.path.dirname(__file__), "..", "data", "raw")
 OUT_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "web_data.json")
@@ -59,9 +62,9 @@ def load_raw():
     raw = {}
     for fname in os.listdir(RAW_DIR):
         if fname.endswith("_cache.json"):
-            slug = fname.replace("_cache.json", "")
+            slug = canonical_slug(fname.replace("_cache.json", ""))
             with open(os.path.join(RAW_DIR, fname), encoding="utf-8") as f:
-                raw[slug] = json.load(f)
+                raw.setdefault(slug, []).extend(json.load(f))
     return raw
 
 
@@ -71,7 +74,7 @@ def flatten(raw):
     raw_slice_counts = defaultdict(list)
 
     for hero_slug, seasons in raw.items():
-        earliest = HERO_RELEASE_SEASON.get(hero_slug.title(), 1)
+        earliest = HERO_VALID_FROM_SEASON.get(hero_slug, 1)
         role = hero_role(hero_slug)
 
         for s in seasons:
@@ -93,7 +96,7 @@ def flatten(raw):
 
             for m in measurements:
                 map_slug = m["map"]["slug"]
-                if season < MAP_VALID_FROM_SEASON.get(map_slug, 1):
+                if not season_usable(hero_slug, map_slug, season):
                     continue
                 if m["pickRate"] < MIN_PICK_RATE:
                     continue
@@ -117,16 +120,15 @@ def flatten(raw):
 
 def max_possible_slices(raw_slice_counts, hero_slug, map_slug, rank_filter, region_filter):
     """How many raw slices could this hero-map pair ever have under this
-    rank/region filter, given when the hero and map became eligible.
+    rank/region filter, given which seasons count for the pair.
     A brand-new hero or a recently-reworked map will always fall short of
     MIN_SAMPLE_SIZE once you narrow to one rank or region - this is the
     ceiling we compare against instead of a flat minimum in that case."""
-    earliest = max(HERO_RELEASE_SEASON.get(hero_slug.title(), 1), MAP_VALID_FROM_SEASON.get(map_slug, 1))
     region_code = REGION_CODE.get(region_filter, region_filter)
 
     count = 0
     for season, tier, region in raw_slice_counts.get(hero_slug, []):
-        if season < earliest:
+        if not season_usable(hero_slug, map_slug, season):
             continue
         if rank_filter != "ALL" and tier != rank_filter:
             continue
@@ -200,6 +202,7 @@ def build():
                         "archetype": archetype_of(avg_wr, avg_pr),
                         "rank_skew": divergence[hero_slug].get(map_slug, "Even Across Ranks"),
                         "sample_size": len(deltas),
+                        "provisional": is_provisional(hero_slug, map_slug),
                     }
                     maps_aggregate[map_slug].append(entry)
                     entries.append(entry)
@@ -222,6 +225,7 @@ def build():
                     "role": role, "modes": hero_modes,
                     "volatility": sigma, "volatility_class": vol_class,
                     "maps": entries,
+                    "provisional": bool(entries) and all(e["provisional"] for e in entries),
                 }
 
             database[combo] = {"maps": maps_aggregate, "heroes": heroes_aggregate}
@@ -231,6 +235,7 @@ def build():
         "map_list": sorted(MAP_MODES.keys()),
         "hero_list": sorted(raw.keys()),
         "hero_roles": {h: hero_role(h) for h in raw.keys()},
+        "hero_names": {h: hero_name(h) for h in raw.keys()},
         "map_modes": MAP_MODES,
     }
 

@@ -4,7 +4,7 @@ import math
 import os
 from collections import defaultdict
 
-from config import MAP_VALID_FROM_SEASON, MIN_PICK_RATE, MIN_SAMPLE_SIZE
+from config import MIN_PICK_RATE, MIN_SAMPLE_SIZE, canonical_slug, hero_name, is_provisional, season_usable
 
 RAW_DIR = os.path.join(os.path.dirname(__file__), "..", "data", "raw")
 CSV_DIR = os.path.join(os.path.dirname(__file__), "..", "data", "csv")
@@ -15,9 +15,9 @@ def load_raw():
     raw = {}
     for fname in os.listdir(RAW_DIR):
         if fname.endswith("_cache.json"):
-            slug = fname.replace("_cache.json", "")
+            slug = canonical_slug(fname.replace("_cache.json", ""))
             with open(os.path.join(RAW_DIR, fname), encoding="utf-8") as f:
-                raw[slug] = json.load(f)
+                raw.setdefault(slug, []).extend(json.load(f))
     return raw
 
 
@@ -41,7 +41,7 @@ def analyze(raw):
                 map_slug = m["map"]["slug"]
                 if m["pickRate"] < MIN_PICK_RATE:
                     continue
-                if season < MAP_VALID_FROM_SEASON.get(map_slug, 1):
+                if not season_usable(slug, map_slug, season):
                     continue
 
                 delta = m["winRate"] - baseline_wr
@@ -144,7 +144,7 @@ def run():
         f.write("| Hero | Sigma | Class |\n|---|---|---|\n")
         for hero, sigma in sorted_vol:
             cls = "Map-Dependent" if sigma >= 3.0 else "Flexible" if sigma >= 1.8 else "Map-Agnostic"
-            f.write(f"| {hero.title()} | {sigma:.2f}% | {cls} |\n")
+            f.write(f"| {hero_name(hero)} | {sigma:.2f}% | {cls} |\n")
         f.write("\n---\n\n")
 
         f.write("## 2. Rank Divergence\n\n")
@@ -160,7 +160,7 @@ def run():
         divergence_rows.sort(key=lambda r: abs(r[4]), reverse=True)
 
         for hero, map_slug, avg_m, avg_gm, diff, comp in divergence_rows:
-            f.write(f"| {hero.title()} | {map_slug} | {avg_m:+.2f}% | {avg_gm:+.2f}% | {diff:+.2f}% | {comp} |\n")
+            f.write(f"| {hero_name(hero)} | {map_slug} | {avg_m:+.2f}% | {avg_gm:+.2f}% | {diff:+.2f}% | {comp} |\n")
         f.write("\n---\n\n")
 
         f.write("## 3. Map Tier Lists\n\n")
@@ -197,7 +197,8 @@ def run():
 
             for tier, hero, delta, pr_l, presence, archetype, comp, n in entries:
                 rank_str = comp if comp != "Even Across Ranks" else "-"
-                f.write(f"| {tier} | {hero.title()} | {delta:+.2f}% | {presence} | {archetype} | {rank_str} | {n} |\n")
+                name = hero_name(hero) + (" *(provisional)*" if is_provisional(hero, map_slug) else "")
+                f.write(f"| {tier} | {name} | {delta:+.2f}% | {presence} | {archetype} | {rank_str} | {n} |\n")
             f.write("\n")
 
     with open(os.path.join(CSV_DIR, "map_tierlists.csv"), "w", newline="", encoding="utf-8") as f:

@@ -497,6 +497,19 @@ tbody tr:hover { background: var(--bg); }
 
 .pick-stats { display: flex; align-items: center; gap: 8px; }
 
+.prov-tag {
+  margin-left: 6px;
+  font-size: 0.62rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  padding: 1px 5px;
+  border-radius: 3px;
+  color: var(--accent);
+  background: var(--accent-soft);
+  cursor: help;
+}
+
 .pick-arch {
   font-size: 0.7rem;
   color: var(--muted);

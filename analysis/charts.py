@@ -8,16 +8,14 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
 
+from config import hero_name
+
 BASE = os.path.dirname(__file__)
 DATA_DIR = os.path.join(BASE, "..", "data")
 CSV_DIR = os.path.join(DATA_DIR, "csv")
 CHART_DIR = os.path.join(BASE, "..", "charts")
 
 sns.set_theme(style="whitegrid", font="sans-serif")
-
-
-def fmt(slug):
-    return slug.replace("-", " ").title()
 
 
 def load_web_data():
@@ -28,7 +26,7 @@ def load_web_data():
 def heatmap():
     df = pd.read_csv(os.path.join(CSV_DIR, "map_tierlists.csv"))
     pivot = df.pivot(index="hero", columns="map", values="delta_wr")
-    pivot.index = pivot.index.str.title()
+    pivot.index = pivot.index.map(hero_name)
     pivot.columns = pivot.columns.str.replace("-", " ").str.title()
 
     plt.figure(figsize=(22, 16))
@@ -50,7 +48,7 @@ def volatility_bar():
 
     plt.figure(figsize=(10, 14))
     colors = ["#2ecc71" if s < 1.8 else "#f39c12" if s < 3.0 else "#e74c3c" for s in df["volatility_sigma"]]
-    plt.barh(df["hero"].str.title(), df["volatility_sigma"], color=colors, height=0.7)
+    plt.barh(df["hero"].map(hero_name), df["volatility_sigma"], color=colors, height=0.7)
     plt.axvline(1.8, color="#7f8c8d", linestyle="--", linewidth=1, alpha=0.7)
     plt.axvline(3.0, color="#7f8c8d", linestyle="--", linewidth=1, alpha=0.7)
     plt.title("Hero Map-Sensitivity Index (sigma of Delta WR)", fontsize=14, fontweight="bold", pad=15)
@@ -91,7 +89,7 @@ def rank_divergence_scatter(data):
 
     for _, row in df.nlargest(20, "diff").iterrows():
         plt.annotate(
-            fmt(row["hero"]),
+            hero_name(row["hero"]),
             (row["masters"], row["gm"]),
             textcoords="offset points", xytext=(5, 4),
             fontsize=7.5, color="#333333",

@@ -99,6 +99,7 @@
         <div>
           <h2 id="heroName"></h2>
           <span class="role-pill" id="heroRolePill"></span>
+          <span id="heroProv"></span>
         </div>
         <div class="vol-pill" id="heroVol"></div>
       </div>
@@ -139,7 +140,7 @@
   </main>
 
   <footer>
-    Data: OWTics, Masters and above, seasons 1&ndash;4 (2026). Delta WR is a hero's win rate on a given map minus their baseline win rate for that rank/region/patch slice.
+    Data: OWTics, Masters and above, seasons 1&ndash;4 plus midseasons (2026). Season 5 is in progress and only counts for new or reworked heroes and maps, marked Provisional. Delta WR is a hero's win rate on a given map minus their baseline win rate for that rank/region/patch slice.
   </footer>
 </div>
 
@@ -179,6 +180,11 @@
   <div class="legend-entry">
     <h4>Minimum sample size</h4>
     <p>A hero-map pair needs at least 3 qualifying season/tier/region slices before it's shown at all &mdash; otherwise one unlucky slice (a hero with barely any games on a map, all of them losses) can swing the average by dozens of points. Narrowing to a specific rank or region thins the slices out fast, so a hero can disappear from a filtered view even though it shows up on "All ranks / All regions". That's the filter working as intended, not missing data. The exception is a hero or map that hasn't existed long enough to ever reach 3 slices under a narrow filter (a brand-new hero, or a map reworked this season) &mdash; those show with whatever data actually exists rather than being hidden outright.</p>
+  </div>
+
+  <div class="legend-entry">
+    <h4>Provisional</h4>
+    <p>The current season is left out of the averages until its data has had time to settle, since early-patch numbers are thin and swing a lot. Heroes and maps that only exist in the current season (new releases, reworks) are shown anyway, built from current-season data alone and marked Provisional. Expect those to move.</p>
   </div>
 
   <div class="dialog-actions">

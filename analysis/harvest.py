@@ -5,7 +5,7 @@ import time
 
 from curl_cffi import requests
 
-from config import HERO_RELEASE_SEASON, REGIONS, SEASON_MAP, TIERS
+from config import HERO_VALID_FROM_SEASON, REGIONS, SEASON_MAP, TIERS, canonical_slug
 
 API_URL = "https://api.owtics.gg/graphql"
 DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "data", "raw")
@@ -77,7 +77,9 @@ def discover_heroes():
 
 
 def harvest_hero(hero_name, hero_meta):
-    earliest_season = HERO_RELEASE_SEASON.get(hero_name, 1)
+    # Also matters for correctness: OWTics returns current-season numbers for
+    # any season filter on a hero who did not exist yet.
+    earliest_season = HERO_VALID_FROM_SEASON.get(canonical_slug(hero_meta["slug"]), 1)
     dataset = []
 
     for concept_season, owtics_season in SEASON_MAP.items():
@@ -135,7 +137,7 @@ def main():
     print(f"found {len(heroes)} heroes")
 
     for i, (hero_name, meta) in enumerate(heroes.items(), start=1):
-        cache_path = os.path.join(DATA_DIR, f"{meta['slug']}_cache.json")
+        cache_path = os.path.join(DATA_DIR, f"{canonical_slug(meta['slug'])}_cache.json")
         if os.path.exists(cache_path):
             print(f"[{i}/{len(heroes)}] {hero_name}: cached, skipping")
             continue
