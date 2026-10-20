@@ -1,24 +1,14 @@
 import csv
-import json
 import math
 import os
 from collections import defaultdict
 
-from config import MIN_PICK_RATE, MIN_SAMPLE_SIZE, canonical_slug, hero_name, is_provisional, season_usable
+import sources
+from config import MIN_PICK_RATE, MIN_SAMPLE_SIZE, hero_name, is_provisional, season_usable
 
-RAW_DIR = os.path.join(os.path.dirname(__file__), "..", "data", "raw")
 CSV_DIR = os.path.join(os.path.dirname(__file__), "..", "data", "csv")
 REPORT_PATH = os.path.join(os.path.dirname(__file__), "..", "report", "analysis_report.md")
 
-
-def load_raw():
-    raw = {}
-    for fname in os.listdir(RAW_DIR):
-        if fname.endswith("_cache.json"):
-            slug = canonical_slug(fname.replace("_cache.json", ""))
-            with open(os.path.join(RAW_DIR, fname), encoding="utf-8") as f:
-                raw.setdefault(slug, []).extend(json.load(f))
-    return raw
 
 
 def analyze(raw):
@@ -41,7 +31,7 @@ def analyze(raw):
                 map_slug = m["map"]["slug"]
                 if m["pickRate"] < MIN_PICK_RATE:
                     continue
-                if not season_usable(slug, map_slug, season):
+                if not season_usable(slug, map_slug, season, s.get("isMidseason", False)):
                     continue
 
                 delta = m["winRate"] - baseline_wr
@@ -123,7 +113,7 @@ def run():
     os.makedirs(CSV_DIR, exist_ok=True)
     os.makedirs(os.path.dirname(REPORT_PATH), exist_ok=True)
 
-    raw = load_raw()
+    raw = sources.load_all()
     deltas, gm_deltas, master_deltas, pr_lifts = analyze(raw)
     volatility = volatility_of(deltas)
     sorted_vol = sorted(volatility.items(), key=lambda x: x[1], reverse=True)

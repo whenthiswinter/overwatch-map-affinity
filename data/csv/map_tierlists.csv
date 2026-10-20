@@ -7,7 +7,7 @@ aatlis,C,bastion,-2.06,-1.45,Niche (-1.4%),Deterrent,Even Across Ranks,49
 aatlis,A,brigitte,2.17,2.42,Popular (+2.4%),Meta,Even Across Ranks,52
 aatlis,A,cassidy,1.45,8.79,Map Priority (+8.8%),Favorable,Even Across Ranks,52
 aatlis,A,dmon,2.8,2.35,Popular (+2.4%),Meta,Even Across Ranks,16
-aatlis,D,doctrine,-5.34,-4.45,Niche (-4.5%),Deterrent,Better in Masters,8
+aatlis,C,doctrine,-2.37,-4.83,Niche (-4.8%),Deterrent,Even Across Ranks,8
 aatlis,C,domina,-1.81,-1.19,Niche (-1.2%),Deterrent,Even Across Ranks,46
 aatlis,B,doomfist,1.04,1.61,Popular (+1.6%),Neutral,Even Across Ranks,52
 aatlis,D,dva,-3.17,-1.66,Niche (-1.7%),Deterrent,Even Across Ranks,52
@@ -35,13 +35,13 @@ aatlis,D,pharah,-4.42,-1.02,Niche (-1.0%),Deterrent,Better in GM+,51
 aatlis,A,ramattra,1.28,1.25,Popular (+1.3%),Favorable,Even Across Ranks,52
 aatlis,B,reaper,0.62,5.59,Map Priority (+5.6%),Neutral,Better in Masters,52
 aatlis,A,reinhardt,2.1,0.9,Standard (+0.9%),Favorable,Even Across Ranks,50
-aatlis,C,roadhog,-2.4,0.06,Standard (+0.1%),Unfavorable,Better in GM+,8
+aatlis,C,roadhog,-1.29,0.32,Standard (+0.3%),Unfavorable,Better in GM+,8
 aatlis,B,shion,0.83,7.78,Map Priority (+7.8%),Neutral,Even Across Ranks,28
 aatlis,C,sierra,-1.67,-1.24,Niche (-1.2%),Deterrent,Even Across Ranks,27
 aatlis,D,sigma,-5.0,-5.52,Niche (-5.5%),Deterrent,Even Across Ranks,52
 aatlis,B,sojourn,-0.36,0.3,Standard (+0.3%),Neutral,Even Across Ranks,52
 aatlis,B,soldier-76,-0.39,-2.62,Niche (-2.6%),Neutral,Even Across Ranks,51
-aatlis,S,sombra,3.09,4.54,Map Priority (+4.5%),Meta,Even Across Ranks,8
+aatlis,A,sombra,2.83,5.29,Map Priority (+5.3%),Meta,Even Across Ranks,8
 aatlis,B,symmetra,-0.33,0.32,Standard (+0.3%),Neutral,Even Across Ranks,51
 aatlis,B,torbjorn,0.05,-0.23,Standard (-0.2%),Neutral,Better in Masters,50
 aatlis,B,tracer,0.12,6.64,Map Priority (+6.6%),Neutral,Even Across Ranks,52
@@ -61,7 +61,7 @@ antarctic-peninsula,A,bastion,1.71,-0.65,Standard (-0.6%),Specialist,Even Across
 antarctic-peninsula,B,brigitte,0.96,0.91,Standard (+0.9%),Neutral,Even Across Ranks,40
 antarctic-peninsula,S,cassidy,3.6,9.35,Map Priority (+9.3%),Meta,Even Across Ranks,40
 antarctic-peninsula,B,dmon,0.32,2.4,Popular (+2.4%),Neutral,Even Across Ranks,16
-antarctic-peninsula,C,doctrine,-2.88,-0.96,Standard (-1.0%),Deterrent,Even Across Ranks,8
+antarctic-peninsula,C,doctrine,-2.06,-1.68,Niche (-1.7%),Deterrent,Even Across Ranks,8
 antarctic-peninsula,A,domina,1.73,-0.65,Standard (-0.7%),Specialist,Even Across Ranks,39
 antarctic-peninsula,B,doomfist,-0.1,0.08,Standard (+0.1%),Neutral,Even Across Ranks,40
 antarctic-peninsula,C,dva,-1.82,-1.12,Niche (-1.1%),Deterrent,Even Across Ranks,40
@@ -89,13 +89,13 @@ antarctic-peninsula,D,pharah,-4.5,-0.73,Standard (-0.7%),Deterrent,Even Across R
 antarctic-peninsula,A,ramattra,2.4,0.88,Standard (+0.9%),Favorable,Even Across Ranks,40
 antarctic-peninsula,B,reaper,0.25,2.02,Popular (+2.0%),Neutral,Even Across Ranks,40
 antarctic-peninsula,A,reinhardt,1.57,0.83,Standard (+0.8%),Favorable,Even Across Ranks,40
-antarctic-peninsula,B,roadhog,-0.59,0.45,Standard (+0.4%),Neutral,Better in Masters,8
+antarctic-peninsula,B,roadhog,0.99,0.21,Standard (+0.2%),Neutral,Better in Masters,8
 antarctic-peninsula,B,shion,-0.83,6.68,Map Priority (+6.7%),Neutral,Even Across Ranks,28
 antarctic-peninsula,B,sierra,-0.89,-0.28,Standard (-0.3%),Neutral,Even Across Ranks,31
 antarctic-peninsula,C,sigma,-1.7,-2.53,Niche (-2.5%),Deterrent,Even Across Ranks,40
 antarctic-peninsula,B,sojourn,-0.15,0.28,Standard (+0.3%),Neutral,Even Across Ranks,40
 antarctic-peninsula,B,soldier-76,1.17,-0.71,Standard (-0.7%),Neutral,Even Across Ranks,40
-antarctic-peninsula,D,sombra,-5.21,5.02,Map Priority (+5.0%),Trap Pick,Better in Masters,8
+antarctic-peninsula,C,sombra,-2.14,3.44,Map Priority (+3.4%),Trap Pick,Even Across Ranks,8
 antarctic-peninsula,A,symmetra,2.19,0.52,Standard (+0.5%),Favorable,Even Across Ranks,40
 antarctic-peninsula,S,torbjorn,3.22,-0.09,Standard (-0.1%),Specialist,Even Across Ranks,40
 antarctic-peninsula,A,tracer,1.46,4.49,Map Priority (+4.5%),Favorable,Even Across Ranks,40
@@ -115,7 +115,7 @@ blizzard-world,B,bastion,-0.16,-0.02,Standard (-0.0%),Neutral,Even Across Ranks,
 blizzard-world,D,brigitte,-6.24,-0.72,Standard (-0.7%),Deterrent,Better in Masters,52
 blizzard-world,C,cassidy,-1.99,-5.45,Niche (-5.4%),Deterrent,Even Across Ranks,52
 blizzard-world,A,dmon,2.32,-1.13,Niche (-1.1%),Specialist,Better in GM+,16
-blizzard-world,S,doctrine,7.82,1.62,Popular (+1.6%),Meta,Better in GM+,8
+blizzard-world,S,doctrine,7.81,1.78,Popular (+1.8%),Meta,Better in GM+,8
 blizzard-world,C,domina,-2.14,0.52,Standard (+0.5%),Unfavorable,Even Across Ranks,51
 blizzard-world,C,doomfist,-2.07,-0.02,Standard (-0.0%),Deterrent,Even Across Ranks,52
 blizzard-world,A,dva,1.34,0.7,Standard (+0.7%),Favorable,Even Across Ranks,52
@@ -143,13 +143,13 @@ blizzard-world,D,pharah,-3.6,-1.84,Niche (-1.8%),Deterrent,Better in GM+,52
 blizzard-world,D,ramattra,-5.78,-0.8,Standard (-0.8%),Deterrent,Better in Masters,49
 blizzard-world,C,reaper,-1.57,-2.1,Niche (-2.1%),Deterrent,Even Across Ranks,52
 blizzard-world,D,reinhardt,-5.81,-0.89,Standard (-0.9%),Deterrent,Better in GM+,52
-blizzard-world,D,roadhog,-12.61,-0.15,Standard (-0.2%),Deterrent,Better in Masters,8
+blizzard-world,A,roadhog,2.04,1.07,Popular (+1.1%),Favorable,Better in GM+,8
 blizzard-world,B,shion,-0.88,-2.63,Niche (-2.6%),Neutral,Even Across Ranks,28
 blizzard-world,D,sierra,-3.02,0.52,Standard (+0.5%),Unfavorable,Even Across Ranks,38
 blizzard-world,B,sigma,-1.19,2.57,Popular (+2.6%),Neutral,Even Across Ranks,52
 blizzard-world,B,sojourn,0.57,1.42,Popular (+1.4%),Neutral,Even Across Ranks,52
 blizzard-world,C,soldier-76,-1.74,0.1,Standard (+0.1%),Unfavorable,Even Across Ranks,52
-blizzard-world,S,sombra,4.01,-2.47,Niche (-2.5%),Specialist,Better in Masters,8
+blizzard-world,S,sombra,4.23,-1.03,Niche (-1.0%),Specialist,Better in Masters,8
 blizzard-world,C,symmetra,-1.83,-0.26,Standard (-0.3%),Deterrent,Better in Masters,51
 blizzard-world,D,torbjorn,-6.95,0.46,Standard (+0.5%),Unfavorable,Better in Masters,50
 blizzard-world,C,tracer,-1.95,0.66,Standard (+0.7%),Unfavorable,Even Across Ranks,52
@@ -169,7 +169,7 @@ busan,C,bastion,-1.52,-0.88,Standard (-0.9%),Deterrent,Even Across Ranks,16
 busan,C,brigitte,-2.23,1.18,Popular (+1.2%),Trap Pick,Even Across Ranks,16
 busan,A,cassidy,1.57,3.42,Map Priority (+3.4%),Meta,Even Across Ranks,16
 busan,B,dmon,-0.23,2.23,Popular (+2.2%),Neutral,Even Across Ranks,16
-busan,C,doctrine,-1.74,0.4,Standard (+0.4%),Unfavorable,Even Across Ranks,8
+busan,C,doctrine,-2.73,-0.81,Standard (-0.8%),Deterrent,Even Across Ranks,8
 busan,B,domina,-1.09,-0.63,Standard (-0.6%),Neutral,Even Across Ranks,15
 busan,C,doomfist,-1.39,0.42,Standard (+0.4%),Unfavorable,Better in Masters,16
 busan,A,dva,1.31,0.6,Standard (+0.6%),Favorable,Even Across Ranks,16
@@ -197,13 +197,13 @@ busan,B,pharah,-0.05,-2.56,Niche (-2.6%),Neutral,Even Across Ranks,16
 busan,C,ramattra,-1.64,-0.63,Standard (-0.6%),Deterrent,Better in Masters,16
 busan,B,reaper,0.29,0.39,Standard (+0.4%),Neutral,Even Across Ranks,16
 busan,B,reinhardt,0.48,-0.04,Standard (-0.0%),Neutral,Better in Masters,16
-busan,S,roadhog,7.32,-0.27,Standard (-0.3%),Specialist,Better in GM+,8
+busan,S,roadhog,5.33,-0.01,Standard (-0.0%),Specialist,Better in GM+,8
 busan,B,shion,-0.73,4.49,Map Priority (+4.5%),Neutral,Even Across Ranks,16
 busan,C,sierra,-2.9,-0.22,Standard (-0.2%),Deterrent,Better in Masters,10
 busan,C,sigma,-1.64,-3.69,Niche (-3.7%),Deterrent,Even Across Ranks,16
 busan,B,sojourn,-0.02,-1.08,Niche (-1.1%),Neutral,Even Across Ranks,16
 busan,S,soldier-76,3.33,2.97,Popular (+3.0%),Meta,Even Across Ranks,16
-busan,A,sombra,1.3,2.97,Popular (+3.0%),Favorable,Better in GM+,8
+busan,B,sombra,-0.03,3.69,Map Priority (+3.7%),Neutral,Even Across Ranks,8
 busan,B,symmetra,-0.47,0.36,Standard (+0.4%),Neutral,Even Across Ranks,16
 busan,B,torbjorn,-1.16,-0.32,Standard (-0.3%),Neutral,Better in Masters,16
 busan,B,tracer,0.08,6.55,Map Priority (+6.5%),Neutral,Even Across Ranks,16
@@ -223,7 +223,7 @@ circuit-royal,S,bastion,4.27,3.05,Map Priority (+3.0%),Meta,Even Across Ranks,52
 circuit-royal,D,brigitte,-6.47,-6.05,Niche (-6.1%),Deterrent,Even Across Ranks,48
 circuit-royal,B,cassidy,-0.87,-15.94,Niche (-15.9%),Neutral,Better in Masters,51
 circuit-royal,D,dmon,-4.38,-3.47,Niche (-3.5%),Deterrent,Better in Masters,16
-circuit-royal,S,doctrine,7.39,3.15,Map Priority (+3.1%),Meta,Better in GM+,8
+circuit-royal,S,doctrine,6.11,3.48,Map Priority (+3.5%),Meta,Better in GM+,8
 circuit-royal,S,domina,6.6,4.53,Map Priority (+4.5%),Meta,Even Across Ranks,52
 circuit-royal,D,doomfist,-4.16,-2.23,Niche (-2.2%),Deterrent,Even Across Ranks,52
 circuit-royal,D,dva,-3.46,-2.67,Niche (-2.7%),Deterrent,Even Across Ranks,52
@@ -251,13 +251,13 @@ circuit-royal,D,pharah,-3.09,2.27,Popular (+2.3%),Trap Pick,Even Across Ranks,51
 circuit-royal,B,ramattra,1.12,4.38,Map Priority (+4.4%),Neutral,Even Across Ranks,51
 circuit-royal,B,reaper,0.58,-4.86,Niche (-4.9%),Neutral,Even Across Ranks,52
 circuit-royal,A,reinhardt,1.43,1.14,Popular (+1.1%),Favorable,Even Across Ranks,51
-circuit-royal,S,roadhog,13.74,-2.27,Niche (-2.3%),Specialist,Better in GM+,8
+circuit-royal,S,roadhog,8.46,-2.11,Niche (-2.1%),Specialist,Better in GM+,8
 circuit-royal,D,shion,-4.18,-12.74,Niche (-12.7%),Deterrent,Even Across Ranks,28
 circuit-royal,A,sierra,2.45,1.49,Popular (+1.5%),Favorable,Better in GM+,39
 circuit-royal,S,sigma,8.02,17.94,Map Priority (+17.9%),Meta,Even Across Ranks,52
 circuit-royal,A,sojourn,2.47,12.84,Map Priority (+12.8%),Meta,Even Across Ranks,52
 circuit-royal,C,soldier-76,-2.5,-2.7,Niche (-2.7%),Deterrent,Better in Masters,51
-circuit-royal,D,sombra,-18.4,-14.77,Niche (-14.8%),Deterrent,Better in Masters,8
+circuit-royal,D,sombra,-14.49,-12.93,Niche (-12.9%),Deterrent,Better in Masters,8
 circuit-royal,A,symmetra,2.48,0.28,Standard (+0.3%),Favorable,Better in GM+,51
 circuit-royal,D,torbjorn,-3.15,-0.65,Standard (-0.6%),Deterrent,Better in GM+,50
 circuit-royal,D,tracer,-6.33,-19.0,Niche (-19.0%),Deterrent,Even Across Ranks,51
@@ -277,7 +277,7 @@ colosseo,C,bastion,-1.88,-1.03,Niche (-1.0%),Deterrent,Even Across Ranks,49
 colosseo,B,brigitte,-0.48,-0.01,Standard (-0.0%),Neutral,Even Across Ranks,52
 colosseo,C,cassidy,-1.92,0.6,Standard (+0.6%),Unfavorable,Even Across Ranks,52
 colosseo,B,dmon,0.6,1.66,Popular (+1.7%),Neutral,Even Across Ranks,16
-colosseo,C,doctrine,-2.13,1.87,Popular (+1.9%),Trap Pick,Even Across Ranks,8
+colosseo,C,doctrine,-2.16,2.08,Popular (+2.1%),Trap Pick,Even Across Ranks,8
 colosseo,D,domina,-4.56,-0.33,Standard (-0.3%),Deterrent,Better in Masters,48
 colosseo,S,doomfist,3.12,0.99,Standard (+1.0%),Favorable,Even Across Ranks,52
 colosseo,D,dva,-3.05,-0.63,Standard (-0.6%),Deterrent,Even Across Ranks,52
@@ -305,13 +305,13 @@ colosseo,B,pharah,-0.93,-0.19,Standard (-0.2%),Neutral,Better in Masters,52
 colosseo,C,ramattra,-2.34,-0.69,Standard (-0.7%),Deterrent,Even Across Ranks,50
 colosseo,C,reaper,-1.63,-0.76,Standard (-0.8%),Deterrent,Better in Masters,52
 colosseo,S,reinhardt,4.49,0.31,Standard (+0.3%),Favorable,Even Across Ranks,51
-colosseo,C,roadhog,-1.26,-0.38,Standard (-0.4%),Unfavorable,Even Across Ranks,8
+colosseo,C,roadhog,-1.87,-0.28,Standard (-0.3%),Deterrent,Even Across Ranks,8
 colosseo,B,shion,1.08,4.63,Map Priority (+4.6%),Neutral,Even Across Ranks,28
 colosseo,B,sierra,1.05,-0.1,Standard (-0.1%),Neutral,Better in GM+,36
 colosseo,D,sigma,-3.71,-2.96,Niche (-3.0%),Deterrent,Even Across Ranks,52
 colosseo,A,sojourn,1.61,3.2,Map Priority (+3.2%),Meta,Even Across Ranks,52
 colosseo,B,soldier-76,0.58,1.21,Popular (+1.2%),Neutral,Even Across Ranks,52
-colosseo,S,sombra,5.75,1.62,Popular (+1.6%),Meta,Better in GM+,8
+colosseo,S,sombra,4.36,2.7,Popular (+2.7%),Meta,Better in GM+,8
 colosseo,D,symmetra,-3.63,-0.94,Standard (-0.9%),Deterrent,Even Across Ranks,43
 colosseo,A,torbjorn,2.83,-0.26,Standard (-0.3%),Specialist,Even Across Ranks,51
 colosseo,A,tracer,1.85,5.51,Map Priority (+5.5%),Meta,Even Across Ranks,52
@@ -331,7 +331,7 @@ dorado,C,bastion,-2.36,0.27,Standard (+0.3%),Unfavorable,Better in Masters,49
 dorado,B,brigitte,0.24,3.81,Map Priority (+3.8%),Neutral,Even Across Ranks,52
 dorado,B,cassidy,-0.67,-1.37,Niche (-1.4%),Neutral,Even Across Ranks,52
 dorado,S,dmon,3.42,-3.34,Niche (-3.3%),Specialist,Better in GM+,16
-dorado,A,doctrine,1.71,-3.53,Niche (-3.5%),Specialist,Even Across Ranks,8
+dorado,S,doctrine,4.16,-3.51,Niche (-3.5%),Specialist,Better in GM+,8
 dorado,D,domina,-7.15,-1.46,Niche (-1.5%),Deterrent,Better in Masters,44
 dorado,A,doomfist,1.92,0.36,Standard (+0.4%),Favorable,Better in GM+,51
 dorado,A,dva,1.65,3.31,Map Priority (+3.3%),Meta,Even Across Ranks,52
@@ -359,13 +359,13 @@ dorado,A,pharah,2.03,0.02,Standard (+0.0%),Favorable,Better in Masters,50
 dorado,D,ramattra,-6.85,-2.48,Niche (-2.5%),Deterrent,Even Across Ranks,28
 dorado,B,reaper,0.28,1.85,Popular (+1.9%),Neutral,Better in GM+,52
 dorado,D,reinhardt,-3.05,-2.37,Niche (-2.4%),Deterrent,Even Across Ranks,49
-dorado,B,roadhog,-0.67,-0.02,Standard (-0.0%),Neutral,Better in Masters,7
+dorado,S,roadhog,4.84,-0.34,Standard (-0.3%),Specialist,Even Across Ranks,8
 dorado,B,shion,-0.2,-5.26,Niche (-5.3%),Neutral,Better in GM+,28
 dorado,C,sierra,-2.62,0.17,Standard (+0.2%),Unfavorable,Better in Masters,36
 dorado,D,sigma,-8.15,-4.45,Niche (-4.4%),Deterrent,Better in Masters,52
 dorado,D,sojourn,-3.2,-8.98,Niche (-9.0%),Deterrent,Better in Masters,52
 dorado,B,soldier-76,-0.05,0.42,Standard (+0.4%),Neutral,Even Across Ranks,52
-dorado,A,sombra,2.84,-0.28,Standard (-0.3%),Specialist,Better in Masters,8
+dorado,B,sombra,0.43,-0.06,Standard (-0.1%),Neutral,Better in GM+,8
 dorado,D,symmetra,-3.09,-0.69,Standard (-0.7%),Deterrent,Even Across Ranks,48
 dorado,D,torbjorn,-3.69,-0.14,Standard (-0.1%),Deterrent,Even Across Ranks,49
 dorado,B,tracer,-0.98,-1.67,Niche (-1.7%),Neutral,Even Across Ranks,52
@@ -385,7 +385,7 @@ eichenwalde,B,bastion,-0.01,1.02,Popular (+1.0%),Neutral,Even Across Ranks,16
 eichenwalde,C,brigitte,-2.84,-1.14,Niche (-1.1%),Deterrent,Even Across Ranks,15
 eichenwalde,B,cassidy,-1.01,4.81,Map Priority (+4.8%),Neutral,Even Across Ranks,16
 eichenwalde,S,dmon,5.87,1.49,Popular (+1.5%),Favorable,Better in GM+,16
-eichenwalde,S,doctrine,3.11,-5.99,Niche (-6.0%),Specialist,Better in GM+,8
+eichenwalde,B,doctrine,-0.03,-0.93,Standard (-0.9%),Neutral,Better in GM+,8
 eichenwalde,B,domina,0.28,0.23,Standard (+0.2%),Neutral,Even Across Ranks,16
 eichenwalde,A,doomfist,1.31,-0.27,Standard (-0.3%),Favorable,Better in GM+,16
 eichenwalde,B,dva,-0.92,-0.63,Standard (-0.6%),Neutral,Better in Masters,16
@@ -413,13 +413,13 @@ eichenwalde,A,pharah,2.09,3.27,Map Priority (+3.3%),Meta,Even Across Ranks,16
 eichenwalde,B,ramattra,-0.11,0.45,Standard (+0.5%),Neutral,Better in GM+,15
 eichenwalde,D,reaper,-4.23,-0.08,Standard (-0.1%),Deterrent,Even Across Ranks,16
 eichenwalde,D,reinhardt,-4.59,1.5,Popular (+1.5%),Trap Pick,Better in Masters,16
-eichenwalde,S,roadhog,3.1,0.57,Standard (+0.6%),Favorable,Better in GM+,7
+eichenwalde,C,roadhog,-1.48,-0.32,Standard (-0.3%),Unfavorable,Better in Masters,8
 eichenwalde,C,shion,-2.63,-3.59,Niche (-3.6%),Deterrent,Better in Masters,16
 eichenwalde,A,sierra,1.26,0.15,Standard (+0.1%),Favorable,Better in GM+,10
 eichenwalde,C,sigma,-1.75,-0.57,Standard (-0.6%),Deterrent,Better in GM+,16
 eichenwalde,B,sojourn,-0.49,-4.49,Niche (-4.5%),Neutral,Better in GM+,16
 eichenwalde,B,soldier-76,0.53,-2.56,Niche (-2.6%),Neutral,Better in GM+,16
-eichenwalde,C,sombra,-1.85,2.78,Popular (+2.8%),Trap Pick,Better in Masters,8
+eichenwalde,C,sombra,-1.3,-0.61,Standard (-0.6%),Unfavorable,Better in Masters,8
 eichenwalde,D,symmetra,-5.84,-0.45,Standard (-0.4%),Deterrent,Better in Masters,13
 eichenwalde,C,torbjorn,-1.63,1.59,Popular (+1.6%),Trap Pick,Even Across Ranks,15
 eichenwalde,B,tracer,0.95,-3.74,Niche (-3.7%),Neutral,Better in GM+,16
@@ -439,7 +439,7 @@ esperanca,B,bastion,0.44,-1.31,Niche (-1.3%),Neutral,Even Across Ranks,50
 esperanca,B,brigitte,0.48,1.44,Popular (+1.4%),Neutral,Even Across Ranks,51
 esperanca,B,cassidy,-0.58,3.47,Map Priority (+3.5%),Neutral,Even Across Ranks,52
 esperanca,A,dmon,2.3,0.92,Standard (+0.9%),Favorable,Even Across Ranks,16
-esperanca,B,doctrine,0.8,-0.68,Standard (-0.7%),Neutral,Even Across Ranks,8
+esperanca,B,doctrine,0.86,0.42,Standard (+0.4%),Neutral,Even Across Ranks,8
 esperanca,C,domina,-2.91,-1.39,Niche (-1.4%),Deterrent,Even Across Ranks,47
 esperanca,B,doomfist,0.1,0.28,Standard (+0.3%),Neutral,Even Across Ranks,52
 esperanca,C,dva,-2.25,1.46,Popular (+1.5%),Trap Pick,Even Across Ranks,51
@@ -467,13 +467,13 @@ esperanca,B,pharah,0.18,-0.87,Standard (-0.9%),Neutral,Even Across Ranks,50
 esperanca,D,ramattra,-3.19,-1.57,Niche (-1.6%),Deterrent,Better in Masters,47
 esperanca,B,reaper,0.11,-0.17,Standard (-0.2%),Neutral,Better in Masters,51
 esperanca,A,reinhardt,1.44,-0.84,Standard (-0.8%),Favorable,Even Across Ranks,51
-esperanca,D,roadhog,-5.34,-0.22,Standard (-0.2%),Deterrent,Better in GM+,8
+esperanca,C,roadhog,-1.97,-0.17,Standard (-0.2%),Deterrent,Better in GM+,8
 esperanca,B,shion,0.69,6.44,Map Priority (+6.4%),Neutral,Even Across Ranks,28
 esperanca,B,sierra,0.88,-0.27,Standard (-0.3%),Neutral,Even Across Ranks,33
 esperanca,D,sigma,-5.81,-5.72,Niche (-5.7%),Deterrent,Better in Masters,52
 esperanca,B,sojourn,-0.06,0.01,Standard (+0.0%),Neutral,Even Across Ranks,52
 esperanca,A,soldier-76,2.22,3.66,Map Priority (+3.7%),Meta,Even Across Ranks,51
-esperanca,D,sombra,-4.01,5.84,Map Priority (+5.8%),Trap Pick,Better in Masters,8
+esperanca,B,sombra,1.15,5.69,Map Priority (+5.7%),Neutral,Better in Masters,8
 esperanca,B,symmetra,0.31,-0.8,Standard (-0.8%),Neutral,Better in GM+,45
 esperanca,A,torbjorn,1.48,-0.48,Standard (-0.5%),Favorable,Better in GM+,50
 esperanca,B,tracer,-0.0,8.8,Map Priority (+8.8%),Neutral,Even Across Ranks,52
@@ -485,60 +485,60 @@ esperanca,B,wrecking-ball,0.54,1.66,Popular (+1.7%),Neutral,Even Across Ranks,52
 esperanca,B,wuyang,0.39,0.1,Standard (+0.1%),Neutral,Even Across Ranks,52
 esperanca,C,zarya,-1.98,-1.34,Niche (-1.3%),Deterrent,Even Across Ranks,52
 esperanca,C,zenyatta,-2.36,-4.02,Niche (-4.0%),Deterrent,Even Across Ranks,51
-grimsvotn,B,ana,-0.29,1.61,Popular (+1.6%),Neutral,Even Across Ranks,8
-grimsvotn,B,anran,-0.3,-0.23,Standard (-0.2%),Neutral,Better in GM+,8
-grimsvotn,D,ashe,-4.99,0.82,Standard (+0.8%),Unfavorable,Better in GM+,8
-grimsvotn,B,baptiste,0.9,0.64,Standard (+0.6%),Neutral,Better in GM+,8
-grimsvotn,C,bastion,-1.46,1.53,Popular (+1.5%),Unfavorable,Better in Masters,8
-grimsvotn,S,brigitte,6.96,-1.88,Niche (-1.9%),Specialist,Better in GM+,8
-grimsvotn,B,cassidy,-0.22,-1.1,Niche (-1.1%),Neutral,Better in Masters,8
-grimsvotn,S,dmon,3.55,-0.35,Standard (-0.4%),Specialist,Better in GM+,8
-grimsvotn,C,doctrine,-2.99,3.52,Map Priority (+3.5%),Trap Pick,Better in Masters,8
-grimsvotn,C,domina,-1.22,2.83,Popular (+2.8%),Unfavorable,Even Across Ranks,8
-grimsvotn,C,doomfist,-2.47,-0.53,Standard (-0.5%),Deterrent,Better in Masters,8
-grimsvotn,C,dva,-1.63,-3.96,Niche (-4.0%),Deterrent,Better in Masters,8
-grimsvotn,B,echo,0.45,-1.3,Niche (-1.3%),Neutral,Even Across Ranks,8
-grimsvotn,C,emre,-1.24,0.51,Standard (+0.5%),Unfavorable,Better in Masters,8
-grimsvotn,D,freja,-9.36,0.04,Standard (+0.0%),Unfavorable,Better in Masters,8
-grimsvotn,C,genji,-1.25,-0.68,Standard (-0.7%),Unfavorable,Better in Masters,8
-grimsvotn,S,hanzo,5.06,3.1,Map Priority (+3.1%),Meta,Better in GM+,8
-grimsvotn,S,hazard,5.89,-3.38,Niche (-3.4%),Specialist,Better in GM+,8
-grimsvotn,D,illari,-3.24,-0.39,Standard (-0.4%),Deterrent,Better in Masters,8
-grimsvotn,S,jetpack-cat,5.09,-2.53,Niche (-2.5%),Specialist,Better in GM+,8
-grimsvotn,S,junker-queen,11.93,-0.05,Standard (-0.1%),Specialist,Better in GM+,8
-grimsvotn,A,junkrat,2.45,0.57,Standard (+0.6%),Favorable,Better in GM+,8
-grimsvotn,S,juno,6.75,-0.16,Standard (-0.2%),Specialist,Better in GM+,7
-grimsvotn,B,kiriko,0.72,-0.73,Standard (-0.7%),Neutral,Even Across Ranks,8
-grimsvotn,C,lifeweaver,-2.96,-0.22,Standard (-0.2%),Deterrent,Better in GM+,7
-grimsvotn,S,lucio,7.32,-1.42,Niche (-1.4%),Specialist,Better in GM+,5
-grimsvotn,D,mauga,-3.94,-0.35,Standard (-0.4%),Deterrent,Even Across Ranks,7
-grimsvotn,D,mei,-3.68,1.41,Popular (+1.4%),Trap Pick,Even Across Ranks,8
-grimsvotn,D,mercy,-7.44,-0.33,Standard (-0.3%),Deterrent,Better in Masters,7
-grimsvotn,S,mizuki,10.8,-0.83,Standard (-0.8%),Specialist,Better in GM+,8
-grimsvotn,A,moira,2.2,-0.18,Standard (-0.2%),Specialist,Better in GM+,8
-grimsvotn,S,orisa,3.36,3.58,Map Priority (+3.6%),Meta,Better in Masters,8
-grimsvotn,D,pharah,-7.19,-0.41,Standard (-0.4%),Deterrent,Better in Masters,8
-grimsvotn,S,ramattra,4.15,1.8,Popular (+1.8%),Meta,Better in GM+,8
-grimsvotn,A,reaper,2.86,-0.86,Standard (-0.9%),Specialist,Even Across Ranks,8
-grimsvotn,B,reinhardt,0.5,1.17,Popular (+1.2%),Neutral,Better in Masters,8
-grimsvotn,S,roadhog,4.87,0.82,Standard (+0.8%),Favorable,Better in Masters,8
-grimsvotn,B,shion,0.37,0.03,Standard (+0.0%),Neutral,Better in Masters,8
-grimsvotn,A,sierra,1.24,0.12,Standard (+0.1%),Favorable,Better in Masters,8
-grimsvotn,C,sigma,-1.36,4.84,Map Priority (+4.8%),Unfavorable,Better in Masters,8
-grimsvotn,B,sojourn,-0.13,4.53,Map Priority (+4.5%),Neutral,Even Across Ranks,8
-grimsvotn,C,soldier-76,-2.25,-1.93,Niche (-1.9%),Deterrent,Better in GM+,8
-grimsvotn,B,sombra,-0.14,-4.09,Niche (-4.1%),Neutral,Better in GM+,8
-grimsvotn,S,symmetra,5.73,-0.13,Standard (-0.1%),Specialist,Better in GM+,7
-grimsvotn,S,torbjorn,3.63,0.58,Standard (+0.6%),Favorable,Even Across Ranks,8
-grimsvotn,A,tracer,2.25,-8.61,Niche (-8.6%),Specialist,Better in Masters,8
-grimsvotn,S,vendetta,4.88,-0.76,Standard (-0.8%),Specialist,Better in GM+,8
-grimsvotn,A,venture,2.66,0.02,Standard (+0.0%),Favorable,Better in Masters,8
-grimsvotn,C,widowmaker,-2.16,1.2,Popular (+1.2%),Trap Pick,Better in GM+,8
-grimsvotn,D,winston,-3.13,-9.29,Niche (-9.3%),Deterrent,Even Across Ranks,8
-grimsvotn,D,wrecking-ball,-5.34,-1.88,Niche (-1.9%),Deterrent,Better in GM+,8
-grimsvotn,A,wuyang,1.75,2.59,Popular (+2.6%),Meta,Better in Masters,8
-grimsvotn,B,zarya,0.74,2.69,Popular (+2.7%),Neutral,Better in GM+,8
-grimsvotn,D,zenyatta,-4.97,2.99,Popular (+3.0%),Trap Pick,Better in Masters,8
+grimsvotn,A,ana,1.54,2.63,Popular (+2.6%),Meta,Even Across Ranks,8
+grimsvotn,S,anran,5.36,-0.23,Standard (-0.2%),Specialist,Better in GM+,7
+grimsvotn,D,ashe,-4.49,0.8,Standard (+0.8%),Unfavorable,Even Across Ranks,8
+grimsvotn,C,baptiste,-1.43,0.81,Standard (+0.8%),Unfavorable,Even Across Ranks,8
+grimsvotn,B,bastion,0.55,1.6,Popular (+1.6%),Neutral,Even Across Ranks,8
+grimsvotn,A,brigitte,2.85,-1.95,Niche (-2.0%),Specialist,Better in GM+,8
+grimsvotn,B,cassidy,-0.06,-1.28,Niche (-1.3%),Neutral,Even Across Ranks,8
+grimsvotn,C,dmon,-1.43,0.05,Standard (+0.0%),Unfavorable,Even Across Ranks,8
+grimsvotn,C,doctrine,-2.23,4.3,Map Priority (+4.3%),Trap Pick,Better in Masters,8
+grimsvotn,C,domina,-1.69,3.06,Map Priority (+3.1%),Trap Pick,Even Across Ranks,8
+grimsvotn,B,doomfist,0.01,-0.59,Standard (-0.6%),Neutral,Better in Masters,8
+grimsvotn,B,dva,-0.61,-3.78,Niche (-3.8%),Neutral,Better in Masters,8
+grimsvotn,B,echo,0.96,-1.07,Niche (-1.1%),Neutral,Better in GM+,8
+grimsvotn,C,emre,-1.97,0.74,Standard (+0.7%),Unfavorable,Better in Masters,8
+grimsvotn,D,freja,-4.57,-0.05,Standard (-0.0%),Deterrent,Better in Masters,8
+grimsvotn,B,genji,0.14,-0.69,Standard (-0.7%),Neutral,Even Across Ranks,8
+grimsvotn,S,hanzo,5.71,3.21,Map Priority (+3.2%),Meta,Better in GM+,8
+grimsvotn,A,hazard,2.5,-3.73,Niche (-3.7%),Specialist,Better in GM+,8
+grimsvotn,D,illari,-4.66,-0.03,Standard (-0.0%),Deterrent,Better in Masters,8
+grimsvotn,S,jetpack-cat,4.16,-2.93,Niche (-2.9%),Specialist,Better in GM+,8
+grimsvotn,S,junker-queen,6.04,0.09,Standard (+0.1%),Favorable,Better in GM+,8
+grimsvotn,S,junkrat,7.27,1.31,Popular (+1.3%),Favorable,Better in GM+,8
+grimsvotn,B,juno,-0.15,-0.08,Standard (-0.1%),Neutral,Even Across Ranks,7
+grimsvotn,B,kiriko,0.83,-2.56,Niche (-2.6%),Neutral,Even Across Ranks,8
+grimsvotn,B,lifeweaver,0.27,0.14,Standard (+0.1%),Neutral,Even Across Ranks,8
+grimsvotn,S,lucio,4.66,-1.16,Niche (-1.2%),Specialist,Better in GM+,6
+grimsvotn,B,mauga,-0.92,-0.34,Standard (-0.3%),Neutral,Even Across Ranks,6
+grimsvotn,B,mei,-0.8,2.11,Popular (+2.1%),Neutral,Even Across Ranks,8
+grimsvotn,C,mercy,-2.98,-0.31,Standard (-0.3%),Deterrent,Better in Masters,7
+grimsvotn,S,mizuki,5.96,-0.72,Standard (-0.7%),Specialist,Better in GM+,8
+grimsvotn,D,moira,-4.88,-0.69,Standard (-0.7%),Deterrent,Better in Masters,8
+grimsvotn,A,orisa,2.23,3.69,Map Priority (+3.7%),Meta,Even Across Ranks,8
+grimsvotn,C,pharah,-2.63,0.07,Standard (+0.1%),Unfavorable,Even Across Ranks,8
+grimsvotn,A,ramattra,2.95,2.13,Popular (+2.1%),Meta,Even Across Ranks,8
+grimsvotn,B,reaper,0.91,-1.01,Niche (-1.0%),Neutral,Better in Masters,8
+grimsvotn,B,reinhardt,0.56,2.13,Popular (+2.1%),Neutral,Better in Masters,8
+grimsvotn,A,roadhog,2.39,0.77,Standard (+0.8%),Favorable,Better in Masters,8
+grimsvotn,B,shion,-1.13,-0.8,Standard (-0.8%),Neutral,Better in Masters,8
+grimsvotn,S,sierra,3.67,0.47,Standard (+0.5%),Favorable,Better in Masters,8
+grimsvotn,B,sigma,0.25,6.05,Map Priority (+6.1%),Neutral,Even Across Ranks,8
+grimsvotn,B,sojourn,0.18,5.6,Map Priority (+5.6%),Neutral,Even Across Ranks,8
+grimsvotn,B,soldier-76,0.13,-1.85,Niche (-1.8%),Neutral,Better in GM+,8
+grimsvotn,A,sombra,2.32,-4.03,Niche (-4.0%),Specialist,Better in GM+,8
+grimsvotn,A,symmetra,1.34,-0.07,Standard (-0.1%),Favorable,Better in GM+,8
+grimsvotn,B,torbjorn,0.11,0.38,Standard (+0.4%),Neutral,Even Across Ranks,8
+grimsvotn,B,tracer,-0.22,-9.98,Niche (-10.0%),Neutral,Even Across Ranks,8
+grimsvotn,S,vendetta,4.07,-0.54,Standard (-0.5%),Specialist,Even Across Ranks,8
+grimsvotn,A,venture,2.05,0.0,Standard (+0.0%),Favorable,Better in GM+,8
+grimsvotn,C,widowmaker,-2.52,1.4,Popular (+1.4%),Trap Pick,Better in GM+,8
+grimsvotn,D,winston,-3.42,-10.04,Niche (-10.0%),Deterrent,Better in GM+,8
+grimsvotn,C,wrecking-ball,-1.52,-2.17,Niche (-2.2%),Deterrent,Better in GM+,8
+grimsvotn,B,wuyang,-0.01,2.77,Popular (+2.8%),Neutral,Better in GM+,8
+grimsvotn,A,zarya,1.87,2.82,Popular (+2.8%),Meta,Even Across Ranks,8
+grimsvotn,C,zenyatta,-2.45,3.79,Map Priority (+3.8%),Trap Pick,Better in GM+,8
 havana,A,ana,2.0,13.3,Map Priority (+13.3%),Meta,Even Across Ranks,51
 havana,C,anran,-2.06,-0.99,Standard (-1.0%),Deterrent,Even Across Ranks,46
 havana,B,ashe,1.03,8.1,Map Priority (+8.1%),Neutral,Even Across Ranks,51
@@ -547,7 +547,7 @@ havana,A,bastion,1.58,0.99,Standard (+1.0%),Favorable,Even Across Ranks,49
 havana,D,brigitte,-3.02,-4.49,Niche (-4.5%),Deterrent,Even Across Ranks,48
 havana,C,cassidy,-2.21,-13.43,Niche (-13.4%),Deterrent,Even Across Ranks,51
 havana,D,dmon,-3.47,-2.37,Niche (-2.4%),Deterrent,Better in Masters,15
-havana,B,doctrine,-0.5,2.5,Popular (+2.5%),Neutral,Better in Masters,8
+havana,S,doctrine,3.21,0.09,Standard (+0.1%),Favorable,Better in Masters,8
 havana,A,domina,2.08,4.58,Map Priority (+4.6%),Meta,Even Across Ranks,50
 havana,D,doomfist,-3.19,-1.41,Niche (-1.4%),Deterrent,Even Across Ranks,51
 havana,B,dva,0.06,-1.78,Niche (-1.8%),Neutral,Better in GM+,51
@@ -575,13 +575,13 @@ havana,D,pharah,-4.03,-2.18,Niche (-2.2%),Deterrent,Even Across Ranks,49
 havana,C,ramattra,-2.28,1.54,Popular (+1.5%),Trap Pick,Even Across Ranks,50
 havana,C,reaper,-2.45,-4.22,Niche (-4.2%),Deterrent,Better in GM+,51
 havana,D,reinhardt,-3.87,0.52,Standard (+0.5%),Unfavorable,Even Across Ranks,51
-havana,S,roadhog,6.35,-1.39,Niche (-1.4%),Specialist,Better in GM+,8
+havana,C,roadhog,-1.91,-0.48,Standard (-0.5%),Deterrent,Better in GM+,8
 havana,C,shion,-2.05,-10.01,Niche (-10.0%),Deterrent,Even Across Ranks,28
 havana,A,sierra,1.77,1.37,Popular (+1.4%),Favorable,Better in Masters,37
 havana,S,sigma,6.19,16.13,Map Priority (+16.1%),Meta,Even Across Ranks,51
 havana,B,sojourn,0.09,7.06,Map Priority (+7.1%),Neutral,Better in Masters,52
 havana,A,soldier-76,1.35,-0.69,Standard (-0.7%),Favorable,Even Across Ranks,51
-havana,S,sombra,5.39,-4.11,Niche (-4.1%),Specialist,Better in GM+,8
+havana,A,sombra,2.75,-5.0,Niche (-5.0%),Specialist,Even Across Ranks,8
 havana,C,symmetra,-2.12,0.17,Standard (+0.2%),Unfavorable,Even Across Ranks,48
 havana,B,torbjorn,0.06,0.16,Standard (+0.2%),Neutral,Even Across Ranks,50
 havana,B,tracer,0.28,-11.62,Niche (-11.6%),Neutral,Even Across Ranks,52
@@ -601,7 +601,7 @@ hollywood,B,bastion,-0.84,0.64,Standard (+0.6%),Neutral,Better in GM+,51
 hollywood,C,brigitte,-2.07,-0.71,Standard (-0.7%),Deterrent,Even Across Ranks,51
 hollywood,C,cassidy,-1.71,-1.37,Niche (-1.4%),Deterrent,Even Across Ranks,52
 hollywood,C,dmon,-2.83,-0.71,Standard (-0.7%),Deterrent,Better in Masters,16
-hollywood,S,doctrine,6.55,4.25,Map Priority (+4.2%),Meta,Better in GM+,6
+hollywood,B,doctrine,0.94,-0.17,Standard (-0.2%),Neutral,Even Across Ranks,6
 hollywood,B,domina,-0.41,0.3,Standard (+0.3%),Neutral,Even Across Ranks,52
 hollywood,B,doomfist,-0.64,-0.56,Standard (-0.6%),Neutral,Better in Masters,51
 hollywood,B,dva,0.44,0.21,Standard (+0.2%),Neutral,Even Across Ranks,51
@@ -629,13 +629,13 @@ hollywood,C,pharah,-1.55,-0.27,Standard (-0.3%),Deterrent,Even Across Ranks,50
 hollywood,B,ramattra,-0.53,-0.45,Standard (-0.5%),Neutral,Even Across Ranks,51
 hollywood,C,reaper,-2.67,-0.22,Standard (-0.2%),Deterrent,Even Across Ranks,52
 hollywood,D,reinhardt,-9.47,-0.58,Standard (-0.6%),Deterrent,Better in Masters,51
-hollywood,D,roadhog,-9.54,0.53,Standard (+0.5%),Unfavorable,Better in Masters,5
+hollywood,S,roadhog,5.71,0.55,Standard (+0.5%),Favorable,Better in GM+,6
 hollywood,B,shion,0.02,-4.11,Niche (-4.1%),Neutral,Better in Masters,28
 hollywood,B,sierra,-0.56,0.11,Standard (+0.1%),Neutral,Even Across Ranks,34
 hollywood,C,sigma,-2.93,1.5,Popular (+1.5%),Trap Pick,Better in Masters,52
 hollywood,D,sojourn,-3.84,-2.68,Niche (-2.7%),Deterrent,Better in Masters,52
 hollywood,D,soldier-76,-3.56,-2.07,Niche (-2.1%),Deterrent,Better in Masters,50
-hollywood,B,sombra,-0.49,-1.28,Niche (-1.3%),Neutral,Better in GM+,5
+hollywood,D,sombra,-3.12,-3.87,Niche (-3.9%),Deterrent,Even Across Ranks,6
 hollywood,D,symmetra,-4.86,-0.13,Standard (-0.1%),Deterrent,Even Across Ranks,51
 hollywood,C,torbjorn,-2.19,0.93,Standard (+0.9%),Unfavorable,Better in Masters,51
 hollywood,B,tracer,-0.37,-3.35,Niche (-3.3%),Neutral,Better in GM+,52
@@ -655,7 +655,7 @@ ilios,B,bastion,0.37,-1.59,Niche (-1.6%),Neutral,Even Across Ranks,48
 ilios,B,brigitte,-0.74,3.36,Map Priority (+3.4%),Neutral,Better in Masters,52
 ilios,B,cassidy,-0.3,5.53,Map Priority (+5.5%),Neutral,Even Across Ranks,52
 ilios,B,dmon,-1.11,-1.08,Niche (-1.1%),Neutral,Even Across Ranks,16
-ilios,D,doctrine,-8.79,-6.31,Niche (-6.3%),Deterrent,Better in Masters,8
+ilios,D,doctrine,-6.14,-5.47,Niche (-5.5%),Deterrent,Better in Masters,8
 ilios,D,domina,-6.23,-2.04,Niche (-2.0%),Deterrent,Better in Masters,43
 ilios,B,doomfist,-0.2,0.9,Standard (+0.9%),Neutral,Even Across Ranks,52
 ilios,B,dva,0.57,2.81,Popular (+2.8%),Neutral,Even Across Ranks,52
@@ -683,13 +683,13 @@ ilios,A,pharah,2.05,1.73,Popular (+1.7%),Meta,Even Across Ranks,51
 ilios,C,ramattra,-2.57,-2.39,Niche (-2.4%),Deterrent,Better in Masters,36
 ilios,B,reaper,0.65,2.6,Popular (+2.6%),Neutral,Even Across Ranks,52
 ilios,C,reinhardt,-1.38,-1.99,Niche (-2.0%),Unfavorable,Even Across Ranks,50
-ilios,D,roadhog,-3.11,1.07,Popular (+1.1%),Trap Pick,Better in GM+,8
+ilios,C,roadhog,-2.04,1.04,Popular (+1.0%),Trap Pick,Even Across Ranks,8
 ilios,B,shion,-0.53,1.67,Popular (+1.7%),Neutral,Even Across Ranks,28
 ilios,B,sierra,-0.01,-0.83,Standard (-0.8%),Neutral,Better in GM+,32
 ilios,D,sigma,-4.73,-7.58,Niche (-7.6%),Deterrent,Even Across Ranks,51
 ilios,C,sojourn,-1.44,-7.58,Niche (-7.6%),Unfavorable,Better in Masters,52
 ilios,C,soldier-76,-2.8,-3.51,Niche (-3.5%),Deterrent,Even Across Ranks,51
-ilios,A,sombra,1.45,4.06,Map Priority (+4.1%),Favorable,Even Across Ranks,8
+ilios,A,sombra,2.15,4.9,Map Priority (+4.9%),Meta,Better in GM+,8
 ilios,B,symmetra,0.33,-0.04,Standard (-0.0%),Neutral,Even Across Ranks,52
 ilios,A,torbjorn,2.77,-0.44,Standard (-0.4%),Specialist,Even Across Ranks,51
 ilios,C,tracer,-1.73,6.5,Map Priority (+6.5%),Trap Pick,Even Across Ranks,52
@@ -709,7 +709,7 @@ junkertown,B,bastion,-0.88,0.41,Standard (+0.4%),Neutral,Better in Masters,50
 junkertown,B,brigitte,1.16,-1.6,Niche (-1.6%),Neutral,Better in GM+,51
 junkertown,C,cassidy,-1.31,-6.89,Niche (-6.9%),Unfavorable,Better in Masters,52
 junkertown,D,dmon,-4.5,-2.09,Niche (-2.1%),Deterrent,Better in Masters,16
-junkertown,B,doctrine,-0.48,-1.18,Niche (-1.2%),Neutral,Even Across Ranks,8
+junkertown,B,doctrine,-0.67,1.0,Popular (+1.0%),Neutral,Better in GM+,8
 junkertown,C,domina,-2.3,1.05,Popular (+1.1%),Trap Pick,Even Across Ranks,50
 junkertown,C,doomfist,-2.42,-1.14,Niche (-1.1%),Deterrent,Better in Masters,51
 junkertown,B,dva,-0.81,0.72,Standard (+0.7%),Neutral,Better in Masters,52
@@ -737,13 +737,13 @@ junkertown,D,pharah,-5.7,-2.7,Niche (-2.7%),Deterrent,Even Across Ranks,49
 junkertown,D,ramattra,-3.2,-1.33,Niche (-1.3%),Deterrent,Even Across Ranks,46
 junkertown,C,reaper,-1.24,-2.12,Niche (-2.1%),Unfavorable,Better in GM+,51
 junkertown,B,reinhardt,0.07,-1.19,Niche (-1.2%),Neutral,Better in GM+,49
-junkertown,D,roadhog,-17.41,0.8,Standard (+0.8%),Unfavorable,Better in Masters,8
+junkertown,C,roadhog,-2.58,1.21,Popular (+1.2%),Trap Pick,Better in GM+,8
 junkertown,B,shion,0.8,-6.0,Niche (-6.0%),Neutral,Even Across Ranks,28
 junkertown,A,sierra,1.57,1.02,Popular (+1.0%),Favorable,Better in GM+,35
 junkertown,S,sigma,3.13,9.62,Map Priority (+9.6%),Meta,Even Across Ranks,52
 junkertown,B,sojourn,0.95,0.44,Standard (+0.4%),Neutral,Even Across Ranks,52
 junkertown,D,soldier-76,-3.49,2.3,Popular (+2.3%),Trap Pick,Better in Masters,52
-junkertown,D,sombra,-11.38,-6.03,Niche (-6.0%),Deterrent,Better in Masters,8
+junkertown,B,sombra,-0.29,-4.21,Niche (-4.2%),Neutral,Better in Masters,8
 junkertown,C,symmetra,-1.64,-1.01,Niche (-1.0%),Deterrent,Better in Masters,45
 junkertown,B,torbjorn,0.64,0.32,Standard (+0.3%),Neutral,Even Across Ranks,49
 junkertown,B,tracer,0.03,-7.08,Niche (-7.1%),Neutral,Even Across Ranks,52
@@ -763,7 +763,7 @@ kings-row,B,bastion,-0.62,2.42,Popular (+2.4%),Neutral,Even Across Ranks,51
 kings-row,C,brigitte,-1.65,-2.92,Niche (-2.9%),Deterrent,Better in Masters,52
 kings-row,B,cassidy,0.13,-1.94,Niche (-1.9%),Neutral,Even Across Ranks,52
 kings-row,A,dmon,1.72,0.08,Standard (+0.1%),Favorable,Better in GM+,16
-kings-row,C,doctrine,-1.69,1.46,Popular (+1.5%),Trap Pick,Better in Masters,8
+kings-row,D,doctrine,-5.53,0.34,Standard (+0.3%),Unfavorable,Better in Masters,8
 kings-row,B,domina,0.19,0.91,Standard (+0.9%),Neutral,Even Across Ranks,51
 kings-row,B,doomfist,-0.95,-0.46,Standard (-0.5%),Neutral,Better in Masters,52
 kings-row,B,dva,-0.93,-1.25,Niche (-1.2%),Neutral,Even Across Ranks,52
@@ -791,13 +791,13 @@ kings-row,A,pharah,1.33,2.54,Popular (+2.5%),Favorable,Even Across Ranks,52
 kings-row,B,ramattra,-0.65,2.4,Popular (+2.4%),Neutral,Better in Masters,51
 kings-row,A,reaper,1.78,-0.44,Standard (-0.4%),Specialist,Better in GM+,52
 kings-row,B,reinhardt,0.03,2.4,Popular (+2.4%),Neutral,Better in Masters,52
-kings-row,S,roadhog,4.02,-0.59,Standard (-0.6%),Specialist,Better in GM+,8
+kings-row,B,roadhog,-0.83,-0.58,Standard (-0.6%),Neutral,Better in Masters,8
 kings-row,B,shion,-0.72,-4.3,Niche (-4.3%),Neutral,Even Across Ranks,28
 kings-row,B,sierra,0.87,0.15,Standard (+0.2%),Neutral,Even Across Ranks,35
 kings-row,B,sigma,-0.64,2.31,Popular (+2.3%),Neutral,Better in GM+,52
 kings-row,B,sojourn,-0.82,1.23,Popular (+1.2%),Neutral,Even Across Ranks,52
 kings-row,C,soldier-76,-1.85,-4.28,Niche (-4.3%),Deterrent,Better in GM+,51
-kings-row,C,sombra,-1.65,-4.16,Niche (-4.2%),Deterrent,Better in GM+,8
+kings-row,B,sombra,-0.03,-4.21,Niche (-4.2%),Neutral,Even Across Ranks,8
 kings-row,B,symmetra,-1.03,0.27,Standard (+0.3%),Neutral,Better in Masters,51
 kings-row,C,torbjorn,-2.06,0.17,Standard (+0.2%),Unfavorable,Even Across Ranks,50
 kings-row,D,tracer,-3.0,-8.1,Niche (-8.1%),Deterrent,Even Across Ranks,52
@@ -817,7 +817,7 @@ lijiang-tower,B,bastion,-0.26,-0.54,Standard (-0.5%),Neutral,Better in Masters,5
 lijiang-tower,B,brigitte,0.28,-0.28,Standard (-0.3%),Neutral,Better in Masters,52
 lijiang-tower,B,cassidy,0.54,5.99,Map Priority (+6.0%),Neutral,Even Across Ranks,52
 lijiang-tower,B,dmon,-0.75,1.54,Popular (+1.5%),Neutral,Even Across Ranks,16
-lijiang-tower,D,doctrine,-3.4,-1.4,Niche (-1.4%),Deterrent,Better in Masters,8
+lijiang-tower,D,doctrine,-4.79,-1.71,Niche (-1.7%),Deterrent,Even Across Ranks,8
 lijiang-tower,A,domina,2.23,-1.13,Niche (-1.1%),Specialist,Better in GM+,51
 lijiang-tower,B,doomfist,0.64,1.27,Popular (+1.3%),Neutral,Even Across Ranks,52
 lijiang-tower,C,dva,-1.95,-1.5,Niche (-1.5%),Deterrent,Even Across Ranks,52
@@ -845,13 +845,13 @@ lijiang-tower,S,pharah,4.84,5.02,Map Priority (+5.0%),Meta,Even Across Ranks,52
 lijiang-tower,B,ramattra,1.0,1.25,Popular (+1.3%),Neutral,Better in Masters,52
 lijiang-tower,A,reaper,2.57,1.42,Popular (+1.4%),Favorable,Even Across Ranks,52
 lijiang-tower,S,reinhardt,3.34,2.05,Popular (+2.0%),Meta,Even Across Ranks,52
-lijiang-tower,A,roadhog,1.49,0.12,Standard (+0.1%),Favorable,Better in GM+,8
+lijiang-tower,B,roadhog,0.28,-0.01,Standard (-0.0%),Neutral,Even Across Ranks,8
 lijiang-tower,B,shion,-0.52,2.99,Popular (+3.0%),Neutral,Even Across Ranks,28
 lijiang-tower,B,sierra,-0.58,-0.67,Standard (-0.7%),Neutral,Even Across Ranks,33
 lijiang-tower,C,sigma,-1.81,-5.03,Niche (-5.0%),Deterrent,Even Across Ranks,52
 lijiang-tower,B,sojourn,0.95,1.04,Popular (+1.0%),Neutral,Even Across Ranks,52
 lijiang-tower,C,soldier-76,-1.57,-2.22,Niche (-2.2%),Deterrent,Even Across Ranks,51
-lijiang-tower,B,sombra,-0.58,3.04,Map Priority (+3.0%),Neutral,Even Across Ranks,8
+lijiang-tower,B,sombra,-0.7,3.7,Map Priority (+3.7%),Neutral,Better in GM+,8
 lijiang-tower,S,symmetra,3.11,2.66,Popular (+2.7%),Meta,Even Across Ranks,52
 lijiang-tower,S,torbjorn,3.61,-0.72,Standard (-0.7%),Specialist,Even Across Ranks,47
 lijiang-tower,C,tracer,-1.57,2.09,Popular (+2.1%),Trap Pick,Even Across Ranks,52
@@ -871,7 +871,7 @@ midtown,D,bastion,-5.6,0.97,Standard (+1.0%),Unfavorable,Better in Masters,52
 midtown,A,brigitte,1.66,-3.01,Niche (-3.0%),Specialist,Better in GM+,52
 midtown,C,cassidy,-1.26,-4.69,Niche (-4.7%),Unfavorable,Even Across Ranks,52
 midtown,C,dmon,-1.92,-0.77,Standard (-0.8%),Deterrent,Better in GM+,16
-midtown,C,doctrine,-1.53,2.2,Popular (+2.2%),Trap Pick,Better in GM+,8
+midtown,B,doctrine,0.72,2.05,Popular (+2.1%),Neutral,Even Across Ranks,8
 midtown,B,domina,-0.04,2.41,Popular (+2.4%),Neutral,Better in Masters,52
 midtown,B,doomfist,-0.42,-1.99,Niche (-2.0%),Neutral,Better in GM+,52
 midtown,B,dva,-0.32,-2.0,Niche (-2.0%),Neutral,Even Across Ranks,50
@@ -899,13 +899,13 @@ midtown,C,pharah,-2.97,-0.34,Standard (-0.3%),Deterrent,Better in GM+,51
 midtown,C,ramattra,-1.99,2.02,Popular (+2.0%),Trap Pick,Better in Masters,52
 midtown,B,reaper,0.25,-2.14,Niche (-2.1%),Neutral,Better in Masters,52
 midtown,D,reinhardt,-3.69,0.74,Standard (+0.7%),Unfavorable,Better in Masters,52
-midtown,D,roadhog,-10.16,-0.98,Standard (-1.0%),Deterrent,Better in Masters,8
+midtown,D,roadhog,-8.88,-0.34,Standard (-0.3%),Deterrent,Better in Masters,8
 midtown,B,shion,-0.96,-3.36,Niche (-3.4%),Neutral,Even Across Ranks,28
 midtown,B,sierra,-0.15,0.4,Standard (+0.4%),Neutral,Better in Masters,35
 midtown,B,sigma,0.05,9.34,Map Priority (+9.3%),Neutral,Even Across Ranks,52
 midtown,B,sojourn,-0.21,4.49,Map Priority (+4.5%),Neutral,Even Across Ranks,52
 midtown,C,soldier-76,-1.6,-1.2,Niche (-1.2%),Deterrent,Even Across Ranks,51
-midtown,D,sombra,-6.23,-3.91,Niche (-3.9%),Deterrent,Better in GM+,7
+midtown,D,sombra,-3.69,-3.88,Niche (-3.9%),Deterrent,Better in GM+,8
 midtown,C,symmetra,-1.7,1.11,Popular (+1.1%),Trap Pick,Even Across Ranks,52
 midtown,C,torbjorn,-2.21,0.55,Standard (+0.6%),Unfavorable,Better in GM+,50
 midtown,C,tracer,-1.25,-6.01,Niche (-6.0%),Unfavorable,Better in Masters,52
@@ -925,7 +925,7 @@ neon-junction,B,bastion,1.03,2.35,Popular (+2.4%),Neutral,Better in GM+,28
 neon-junction,D,brigitte,-4.42,-3.46,Niche (-3.5%),Deterrent,Better in Masters,28
 neon-junction,B,cassidy,-0.57,-3.09,Niche (-3.1%),Neutral,Even Across Ranks,28
 neon-junction,B,dmon,-1.0,0.67,Standard (+0.7%),Neutral,Even Across Ranks,16
-neon-junction,C,doctrine,-2.54,0.11,Standard (+0.1%),Unfavorable,Better in Masters,8
+neon-junction,C,doctrine,-1.24,1.95,Popular (+2.0%),Unfavorable,Better in Masters,8
 neon-junction,B,domina,-0.82,1.27,Popular (+1.3%),Neutral,Even Across Ranks,28
 neon-junction,C,doomfist,-2.05,-1.49,Niche (-1.5%),Deterrent,Even Across Ranks,28
 neon-junction,D,dva,-3.05,-3.09,Niche (-3.1%),Deterrent,Even Across Ranks,28
@@ -953,13 +953,13 @@ neon-junction,B,pharah,-0.94,0.27,Standard (+0.3%),Neutral,Even Across Ranks,28
 neon-junction,B,ramattra,1.16,3.39,Map Priority (+3.4%),Neutral,Better in GM+,28
 neon-junction,A,reaper,2.1,-1.47,Niche (-1.5%),Specialist,Better in GM+,28
 neon-junction,A,reinhardt,2.14,2.41,Popular (+2.4%),Meta,Better in GM+,28
-neon-junction,B,roadhog,0.35,-0.44,Standard (-0.4%),Neutral,Even Across Ranks,8
+neon-junction,B,roadhog,-0.29,-0.41,Standard (-0.4%),Neutral,Better in GM+,8
 neon-junction,A,shion,1.64,2.77,Popular (+2.8%),Meta,Even Across Ranks,28
 neon-junction,A,sierra,1.35,0.35,Standard (+0.4%),Favorable,Better in Masters,24
 neon-junction,B,sigma,0.94,7.5,Map Priority (+7.5%),Neutral,Even Across Ranks,28
 neon-junction,B,sojourn,-0.34,5.09,Map Priority (+5.1%),Neutral,Even Across Ranks,28
 neon-junction,B,soldier-76,0.34,-2.4,Niche (-2.4%),Neutral,Better in GM+,28
-neon-junction,D,sombra,-5.65,-6.14,Niche (-6.1%),Deterrent,Better in GM+,8
+neon-junction,B,sombra,0.08,-6.18,Niche (-6.2%),Neutral,Even Across Ranks,8
 neon-junction,B,symmetra,0.34,0.49,Standard (+0.5%),Neutral,Even Across Ranks,28
 neon-junction,B,torbjorn,0.02,0.27,Standard (+0.3%),Neutral,Better in GM+,27
 neon-junction,D,tracer,-4.04,-8.98,Niche (-9.0%),Deterrent,Even Across Ranks,28
@@ -979,7 +979,7 @@ nepal,A,bastion,2.56,-0.73,Standard (-0.7%),Specialist,Even Across Ranks,52
 nepal,B,brigitte,1.15,0.15,Standard (+0.1%),Neutral,Even Across Ranks,52
 nepal,B,cassidy,0.45,3.51,Map Priority (+3.5%),Neutral,Even Across Ranks,52
 nepal,B,dmon,-0.78,1.02,Popular (+1.0%),Neutral,Even Across Ranks,16
-nepal,C,doctrine,-2.48,-0.83,Standard (-0.8%),Deterrent,Better in Masters,8
+nepal,D,doctrine,-3.22,-0.76,Standard (-0.8%),Deterrent,Even Across Ranks,8
 nepal,B,domina,0.03,-0.27,Standard (-0.3%),Neutral,Even Across Ranks,50
 nepal,B,doomfist,0.97,1.1,Popular (+1.1%),Neutral,Even Across Ranks,52
 nepal,C,dva,-1.49,-1.13,Niche (-1.1%),Unfavorable,Better in GM+,52
@@ -1007,13 +1007,13 @@ nepal,A,pharah,2.45,2.58,Popular (+2.6%),Meta,Even Across Ranks,52
 nepal,A,ramattra,2.21,0.61,Standard (+0.6%),Favorable,Even Across Ranks,52
 nepal,B,reaper,0.97,0.82,Standard (+0.8%),Neutral,Even Across Ranks,52
 nepal,A,reinhardt,2.16,1.42,Popular (+1.4%),Favorable,Even Across Ranks,52
-nepal,S,roadhog,5.99,0.53,Standard (+0.5%),Favorable,Better in GM+,8
+nepal,S,roadhog,5.17,0.11,Standard (+0.1%),Favorable,Better in GM+,8
 nepal,C,shion,-1.25,3.62,Map Priority (+3.6%),Unfavorable,Even Across Ranks,28
 nepal,A,sierra,1.93,-0.47,Standard (-0.5%),Specialist,Better in GM+,32
 nepal,B,sigma,-0.32,-1.74,Niche (-1.7%),Neutral,Even Across Ranks,52
 nepal,A,sojourn,1.35,1.5,Popular (+1.5%),Favorable,Even Across Ranks,52
 nepal,C,soldier-76,-1.34,-0.85,Standard (-0.8%),Unfavorable,Even Across Ranks,52
-nepal,A,sombra,1.74,2.37,Popular (+2.4%),Meta,Even Across Ranks,8
+nepal,B,sombra,0.6,1.86,Popular (+1.9%),Neutral,Even Across Ranks,8
 nepal,S,symmetra,3.61,2.24,Popular (+2.2%),Meta,Even Across Ranks,52
 nepal,A,torbjorn,2.74,-0.49,Standard (-0.5%),Specialist,Even Across Ranks,51
 nepal,B,tracer,-0.91,2.64,Popular (+2.6%),Neutral,Even Across Ranks,52
@@ -1033,7 +1033,7 @@ new-junk-city,B,bastion,-1.07,-1.61,Niche (-1.6%),Neutral,Even Across Ranks,48
 new-junk-city,B,brigitte,0.77,0.91,Standard (+0.9%),Neutral,Better in GM+,51
 new-junk-city,A,cassidy,1.35,8.27,Map Priority (+8.3%),Favorable,Even Across Ranks,52
 new-junk-city,A,dmon,2.34,2.74,Popular (+2.7%),Meta,Even Across Ranks,16
-new-junk-city,B,doctrine,1.02,-2.13,Niche (-2.1%),Neutral,Better in GM+,8
+new-junk-city,B,doctrine,0.46,-2.46,Niche (-2.5%),Neutral,Better in GM+,8
 new-junk-city,A,domina,1.69,-0.92,Standard (-0.9%),Specialist,Better in GM+,46
 new-junk-city,B,doomfist,1.11,0.22,Standard (+0.2%),Neutral,Better in Masters,51
 new-junk-city,C,dva,-2.42,-1.85,Niche (-1.8%),Deterrent,Better in GM+,52
@@ -1061,13 +1061,13 @@ new-junk-city,D,pharah,-6.66,-1.74,Niche (-1.7%),Deterrent,Even Across Ranks,51
 new-junk-city,B,ramattra,0.54,1.84,Popular (+1.8%),Neutral,Even Across Ranks,52
 new-junk-city,A,reaper,1.79,4.06,Map Priority (+4.1%),Meta,Even Across Ranks,52
 new-junk-city,A,reinhardt,1.56,1.53,Popular (+1.5%),Meta,Better in GM+,52
-new-junk-city,A,roadhog,1.7,0.42,Standard (+0.4%),Favorable,Better in GM+,8
+new-junk-city,A,roadhog,1.82,0.12,Standard (+0.1%),Favorable,Even Across Ranks,8
 new-junk-city,A,shion,1.23,8.26,Map Priority (+8.3%),Favorable,Even Across Ranks,28
 new-junk-city,C,sierra,-1.36,-1.0,Standard (-1.0%),Unfavorable,Even Across Ranks,26
 new-junk-city,D,sigma,-3.1,-5.17,Niche (-5.2%),Deterrent,Even Across Ranks,51
 new-junk-city,B,sojourn,0.56,3.28,Map Priority (+3.3%),Neutral,Even Across Ranks,52
 new-junk-city,B,soldier-76,-0.84,-0.79,Standard (-0.8%),Neutral,Even Across Ranks,51
-new-junk-city,S,sombra,4.32,3.92,Map Priority (+3.9%),Meta,Better in Masters,8
+new-junk-city,S,sombra,4.0,3.61,Map Priority (+3.6%),Meta,Even Across Ranks,8
 new-junk-city,S,symmetra,3.53,0.51,Standard (+0.5%),Favorable,Even Across Ranks,50
 new-junk-city,A,torbjorn,1.85,-0.13,Standard (-0.1%),Specialist,Even Across Ranks,50
 new-junk-city,B,tracer,1.06,5.66,Map Priority (+5.7%),Neutral,Even Across Ranks,52
@@ -1087,7 +1087,7 @@ new-queen-street,C,bastion,-2.13,-1.52,Niche (-1.5%),Deterrent,Better in Masters
 new-queen-street,B,brigitte,-0.38,0.88,Standard (+0.9%),Neutral,Even Across Ranks,52
 new-queen-street,C,cassidy,-1.69,-0.21,Standard (-0.2%),Deterrent,Better in GM+,52
 new-queen-street,A,dmon,2.52,0.85,Standard (+0.8%),Favorable,Better in GM+,16
-new-queen-street,D,doctrine,-3.28,1.44,Popular (+1.4%),Trap Pick,Better in Masters,8
+new-queen-street,C,doctrine,-2.28,1.07,Popular (+1.1%),Trap Pick,Even Across Ranks,8
 new-queen-street,C,domina,-2.46,-0.88,Standard (-0.9%),Deterrent,Better in Masters,49
 new-queen-street,A,doomfist,2.62,1.09,Popular (+1.1%),Favorable,Even Across Ranks,52
 new-queen-street,B,dva,-0.5,0.8,Standard (+0.8%),Neutral,Even Across Ranks,52
@@ -1115,13 +1115,13 @@ new-queen-street,B,pharah,-1.07,-1.88,Niche (-1.9%),Neutral,Even Across Ranks,52
 new-queen-street,A,ramattra,2.3,-1.27,Niche (-1.3%),Specialist,Even Across Ranks,46
 new-queen-street,A,reaper,1.26,-1.1,Niche (-1.1%),Favorable,Even Across Ranks,52
 new-queen-street,B,reinhardt,0.95,-0.13,Standard (-0.1%),Neutral,Better in GM+,52
-new-queen-street,D,roadhog,-4.69,-0.19,Standard (-0.2%),Deterrent,Better in Masters,8
+new-queen-street,D,roadhog,-5.38,0.02,Standard (+0.0%),Unfavorable,Better in Masters,8
 new-queen-street,B,shion,0.22,5.17,Map Priority (+5.2%),Neutral,Even Across Ranks,28
 new-queen-street,B,sierra,-1.07,-0.15,Standard (-0.1%),Neutral,Better in Masters,34
 new-queen-street,D,sigma,-5.6,-4.37,Niche (-4.4%),Deterrent,Better in GM+,52
 new-queen-street,B,sojourn,-0.98,1.85,Popular (+1.9%),Neutral,Even Across Ranks,52
 new-queen-street,S,soldier-76,5.27,13.08,Map Priority (+13.1%),Meta,Even Across Ranks,52
-new-queen-street,D,sombra,-4.14,3.02,Map Priority (+3.0%),Trap Pick,Better in Masters,8
+new-queen-street,C,sombra,-2.83,3.12,Map Priority (+3.1%),Trap Pick,Better in Masters,8
 new-queen-street,A,symmetra,2.95,-1.12,Niche (-1.1%),Specialist,Even Across Ranks,41
 new-queen-street,S,torbjorn,3.37,-0.41,Standard (-0.4%),Specialist,Even Across Ranks,51
 new-queen-street,A,tracer,1.24,7.83,Map Priority (+7.8%),Favorable,Even Across Ranks,52
@@ -1141,7 +1141,7 @@ numbani,A,bastion,1.69,1.12,Popular (+1.1%),Favorable,Better in GM+,51
 numbani,C,brigitte,-2.72,1.2,Popular (+1.2%),Trap Pick,Better in GM+,51
 numbani,B,cassidy,-0.7,-2.77,Niche (-2.8%),Neutral,Even Across Ranks,52
 numbani,D,dmon,-6.15,-2.41,Niche (-2.4%),Deterrent,Better in Masters,16
-numbani,S,doctrine,5.34,0.94,Standard (+0.9%),Favorable,Better in GM+,8
+numbani,S,doctrine,3.92,1.69,Popular (+1.7%),Meta,Better in GM+,8
 numbani,D,domina,-5.48,-0.95,Standard (-0.9%),Deterrent,Even Across Ranks,45
 numbani,C,doomfist,-1.68,0.56,Standard (+0.6%),Unfavorable,Better in GM+,52
 numbani,A,dva,1.33,2.08,Popular (+2.1%),Favorable,Even Across Ranks,51
@@ -1169,13 +1169,13 @@ numbani,D,pharah,-4.42,-0.08,Standard (-0.1%),Deterrent,Better in Masters,51
 numbani,D,ramattra,-4.89,-1.89,Niche (-1.9%),Deterrent,Even Across Ranks,41
 numbani,D,reaper,-4.5,-0.51,Standard (-0.5%),Deterrent,Even Across Ranks,52
 numbani,D,reinhardt,-4.23,-2.12,Niche (-2.1%),Deterrent,Better in GM+,51
-numbani,D,roadhog,-10.76,0.24,Standard (+0.2%),Unfavorable,Better in Masters,7
+numbani,D,roadhog,-9.53,-0.35,Standard (-0.4%),Deterrent,Better in Masters,7
 numbani,C,shion,-1.33,-3.37,Niche (-3.4%),Unfavorable,Even Across Ranks,28
 numbani,A,sierra,2.14,0.19,Standard (+0.2%),Favorable,Better in Masters,32
 numbani,C,sigma,-1.28,-2.67,Niche (-2.7%),Unfavorable,Better in Masters,51
 numbani,D,sojourn,-4.63,-6.43,Niche (-6.4%),Deterrent,Even Across Ranks,52
 numbani,B,soldier-76,-0.88,0.53,Standard (+0.5%),Neutral,Even Across Ranks,52
-numbani,S,sombra,7.84,1.48,Popular (+1.5%),Favorable,Better in GM+,8
+numbani,B,sombra,-0.42,-1.45,Niche (-1.5%),Neutral,Better in GM+,8
 numbani,D,symmetra,-4.9,-0.55,Standard (-0.6%),Deterrent,Even Across Ranks,46
 numbani,C,torbjorn,-1.75,0.55,Standard (+0.6%),Unfavorable,Better in Masters,50
 numbani,B,tracer,0.65,0.25,Standard (+0.2%),Neutral,Even Across Ranks,52
@@ -1195,7 +1195,7 @@ oasis,B,bastion,-0.43,-1.0,Niche (-1.0%),Neutral,Even Across Ranks,51
 oasis,B,brigitte,0.87,2.17,Popular (+2.2%),Neutral,Even Across Ranks,52
 oasis,A,cassidy,2.36,11.6,Map Priority (+11.6%),Meta,Even Across Ranks,52
 oasis,C,dmon,-1.28,0.61,Standard (+0.6%),Unfavorable,Even Across Ranks,16
-oasis,C,doctrine,-2.28,-2.34,Niche (-2.3%),Deterrent,Better in Masters,8
+oasis,D,doctrine,-4.71,-2.56,Niche (-2.6%),Deterrent,Better in Masters,8
 oasis,B,domina,0.6,-0.92,Standard (-0.9%),Neutral,Even Across Ranks,47
 oasis,A,doomfist,2.37,1.1,Popular (+1.1%),Favorable,Even Across Ranks,52
 oasis,B,dva,0.23,0.79,Standard (+0.8%),Neutral,Better in GM+,52
@@ -1223,13 +1223,13 @@ oasis,B,pharah,-1.08,0.85,Standard (+0.9%),Neutral,Better in Masters,52
 oasis,B,ramattra,0.8,-0.87,Standard (-0.9%),Neutral,Even Across Ranks,50
 oasis,B,reaper,0.72,1.83,Popular (+1.8%),Neutral,Even Across Ranks,52
 oasis,C,reinhardt,-1.21,-0.49,Standard (-0.5%),Unfavorable,Even Across Ranks,51
-oasis,B,roadhog,-0.15,-0.05,Standard (-0.1%),Neutral,Better in Masters,8
+oasis,A,roadhog,2.91,0.16,Standard (+0.2%),Favorable,Even Across Ranks,8
 oasis,B,shion,0.82,5.23,Map Priority (+5.2%),Neutral,Even Across Ranks,28
 oasis,B,sierra,0.52,-0.62,Standard (-0.6%),Neutral,Even Across Ranks,32
 oasis,D,sigma,-4.34,-5.95,Niche (-6.0%),Deterrent,Even Across Ranks,52
 oasis,B,sojourn,0.02,-2.37,Niche (-2.4%),Neutral,Even Across Ranks,52
 oasis,B,soldier-76,0.36,-1.09,Niche (-1.1%),Neutral,Even Across Ranks,52
-oasis,C,sombra,-2.08,2.54,Popular (+2.5%),Trap Pick,Even Across Ranks,8
+oasis,B,sombra,-0.69,3.86,Map Priority (+3.9%),Neutral,Better in Masters,8
 oasis,B,symmetra,-0.27,0.33,Standard (+0.3%),Neutral,Even Across Ranks,52
 oasis,S,torbjorn,3.84,-0.31,Standard (-0.3%),Specialist,Even Across Ranks,51
 oasis,B,tracer,0.2,6.79,Map Priority (+6.8%),Neutral,Even Across Ranks,52
@@ -1249,7 +1249,7 @@ paraiso,S,bastion,6.42,0.38,Standard (+0.4%),Favorable,Better in GM+,15
 paraiso,B,brigitte,-0.08,0.51,Standard (+0.5%),Neutral,Better in Masters,16
 paraiso,C,cassidy,-2.2,-2.87,Niche (-2.9%),Deterrent,Even Across Ranks,16
 paraiso,B,dmon,-1.11,-0.6,Standard (-0.6%),Neutral,Better in Masters,16
-paraiso,S,doctrine,8.15,3.44,Map Priority (+3.4%),Meta,Even Across Ranks,7
+paraiso,S,doctrine,12.33,4.12,Map Priority (+4.1%),Meta,Better in GM+,8
 paraiso,D,domina,-7.36,-0.12,Standard (-0.1%),Deterrent,Better in GM+,13
 paraiso,C,doomfist,-2.1,-0.9,Standard (-0.9%),Deterrent,Better in Masters,16
 paraiso,B,dva,0.24,4.4,Map Priority (+4.4%),Neutral,Even Across Ranks,16
@@ -1277,13 +1277,13 @@ paraiso,A,pharah,2.55,0.12,Standard (+0.1%),Favorable,Better in GM+,16
 paraiso,D,ramattra,-5.55,-1.69,Niche (-1.7%),Deterrent,Better in GM+,13
 paraiso,D,reaper,-3.83,-0.31,Standard (-0.3%),Deterrent,Better in Masters,16
 paraiso,B,reinhardt,-0.57,-1.15,Niche (-1.2%),Neutral,Better in GM+,16
-paraiso,S,roadhog,14.24,-0.36,Standard (-0.4%),Specialist,Better in Masters,7
+paraiso,C,roadhog,-2.33,-0.27,Standard (-0.3%),Deterrent,Better in Masters,8
 paraiso,C,shion,-1.42,-4.1,Niche (-4.1%),Unfavorable,Even Across Ranks,16
 paraiso,B,sierra,0.25,0.27,Standard (+0.3%),Neutral,Better in Masters,11
 paraiso,D,sigma,-3.73,-0.68,Standard (-0.7%),Deterrent,Even Across Ranks,16
 paraiso,D,sojourn,-4.47,-4.69,Niche (-4.7%),Deterrent,Better in Masters,16
 paraiso,B,soldier-76,-0.59,-0.27,Standard (-0.3%),Neutral,Better in GM+,16
-paraiso,A,sombra,1.55,1.18,Popular (+1.2%),Favorable,Better in GM+,7
+paraiso,D,sombra,-7.34,-0.75,Standard (-0.8%),Deterrent,Even Across Ranks,8
 paraiso,A,symmetra,1.84,-0.58,Standard (-0.6%),Specialist,Better in GM+,15
 paraiso,C,torbjorn,-2.54,0.52,Standard (+0.5%),Unfavorable,Better in GM+,15
 paraiso,C,tracer,-1.43,-3.67,Niche (-3.7%),Unfavorable,Even Across Ranks,16
@@ -1303,7 +1303,7 @@ rialto,A,bastion,1.63,0.76,Standard (+0.8%),Favorable,Better in GM+,50
 rialto,A,brigitte,2.06,-1.82,Niche (-1.8%),Specialist,Better in GM+,52
 rialto,C,cassidy,-2.17,-7.3,Niche (-7.3%),Deterrent,Even Across Ranks,52
 rialto,B,dmon,-0.52,-1.05,Niche (-1.0%),Neutral,Better in GM+,16
-rialto,D,doctrine,-5.86,-0.83,Standard (-0.8%),Deterrent,Even Across Ranks,8
+rialto,D,doctrine,-3.96,0.57,Standard (+0.6%),Unfavorable,Better in Masters,8
 rialto,B,domina,-0.69,0.27,Standard (+0.3%),Neutral,Better in GM+,50
 rialto,B,doomfist,-0.22,-0.12,Standard (-0.1%),Neutral,Even Across Ranks,52
 rialto,B,dva,0.5,1.62,Popular (+1.6%),Neutral,Even Across Ranks,51
@@ -1331,13 +1331,13 @@ rialto,A,pharah,1.84,1.85,Popular (+1.8%),Meta,Even Across Ranks,52
 rialto,B,ramattra,-0.69,-0.51,Standard (-0.5%),Neutral,Better in GM+,49
 rialto,B,reaper,0.41,-2.01,Niche (-2.0%),Neutral,Even Across Ranks,52
 rialto,C,reinhardt,-1.56,0.3,Standard (+0.3%),Unfavorable,Better in Masters,51
-rialto,D,roadhog,-11.59,0.38,Standard (+0.4%),Unfavorable,Better in Masters,8
+rialto,D,roadhog,-9.73,0.72,Standard (+0.7%),Unfavorable,Better in Masters,8
 rialto,B,shion,0.03,-5.59,Niche (-5.6%),Neutral,Even Across Ranks,28
 rialto,B,sierra,0.2,0.28,Standard (+0.3%),Neutral,Even Across Ranks,37
 rialto,A,sigma,1.47,1.33,Popular (+1.3%),Favorable,Even Across Ranks,52
 rialto,B,sojourn,-0.86,-1.63,Niche (-1.6%),Neutral,Better in Masters,52
 rialto,C,soldier-76,-2.13,-1.48,Niche (-1.5%),Deterrent,Even Across Ranks,51
-rialto,D,sombra,-11.54,-5.01,Niche (-5.0%),Deterrent,Better in Masters,8
+rialto,D,sombra,-8.99,-4.46,Niche (-4.5%),Deterrent,Better in Masters,8
 rialto,C,symmetra,-2.53,-0.51,Standard (-0.5%),Deterrent,Even Across Ranks,49
 rialto,C,torbjorn,-2.53,0.29,Standard (+0.3%),Unfavorable,Even Across Ranks,50
 rialto,B,tracer,-1.19,-4.67,Niche (-4.7%),Neutral,Better in Masters,52
@@ -1357,7 +1357,7 @@ route-66,D,bastion,-5.61,0.57,Standard (+0.6%),Unfavorable,Better in Masters,52
 route-66,B,brigitte,0.29,0.22,Standard (+0.2%),Neutral,Even Across Ranks,50
 route-66,B,cassidy,1.01,-2.69,Niche (-2.7%),Neutral,Better in GM+,52
 route-66,C,dmon,-2.75,-1.97,Niche (-2.0%),Deterrent,Even Across Ranks,16
-route-66,D,doctrine,-4.86,2.49,Popular (+2.5%),Trap Pick,Better in GM+,8
+route-66,B,doctrine,0.09,2.09,Popular (+2.1%),Neutral,Even Across Ranks,8
 route-66,C,domina,-2.32,-0.07,Standard (-0.1%),Deterrent,Better in Masters,51
 route-66,B,doomfist,0.87,-0.97,Standard (-1.0%),Neutral,Better in GM+,51
 route-66,A,dva,2.82,1.11,Popular (+1.1%),Favorable,Better in Masters,52
@@ -1385,13 +1385,13 @@ route-66,B,pharah,-1.01,-1.37,Niche (-1.4%),Neutral,Better in Masters,50
 route-66,C,ramattra,-2.61,-1.38,Niche (-1.4%),Deterrent,Even Across Ranks,47
 route-66,D,reaper,-3.71,-1.2,Niche (-1.2%),Deterrent,Better in Masters,52
 route-66,D,reinhardt,-3.89,-1.44,Niche (-1.4%),Deterrent,Even Across Ranks,50
-route-66,S,roadhog,3.9,1.56,Popular (+1.6%),Meta,Better in GM+,8
+route-66,D,roadhog,-3.83,0.97,Standard (+1.0%),Unfavorable,Better in Masters,8
 route-66,A,shion,2.92,-3.72,Niche (-3.7%),Specialist,Even Across Ranks,28
 route-66,A,sierra,1.77,0.8,Standard (+0.8%),Favorable,Better in GM+,36
 route-66,B,sigma,-1.07,2.65,Popular (+2.7%),Neutral,Even Across Ranks,52
 route-66,B,sojourn,0.74,-2.24,Niche (-2.2%),Neutral,Even Across Ranks,52
 route-66,C,soldier-76,-1.38,-1.43,Niche (-1.4%),Unfavorable,Even Across Ranks,52
-route-66,S,sombra,10.52,2.88,Popular (+2.9%),Meta,Better in GM+,8
+route-66,S,sombra,7.38,2.62,Popular (+2.6%),Meta,Better in GM+,8
 route-66,C,symmetra,-2.87,-0.59,Standard (-0.6%),Deterrent,Even Across Ranks,50
 route-66,A,torbjorn,1.46,0.46,Standard (+0.5%),Favorable,Even Across Ranks,51
 route-66,A,tracer,1.58,-3.6,Niche (-3.6%),Specialist,Better in GM+,52
@@ -1411,7 +1411,7 @@ runasapi,B,bastion,0.82,-0.9,Standard (-0.9%),Neutral,Even Across Ranks,48
 runasapi,B,brigitte,-0.2,0.97,Standard (+1.0%),Neutral,Better in Masters,52
 runasapi,B,cassidy,0.39,3.43,Map Priority (+3.4%),Neutral,Even Across Ranks,52
 runasapi,A,dmon,1.42,1.79,Popular (+1.8%),Favorable,Better in Masters,16
-runasapi,A,doctrine,2.16,1.55,Popular (+1.5%),Meta,Even Across Ranks,8
+runasapi,B,doctrine,0.84,0.32,Standard (+0.3%),Neutral,Even Across Ranks,8
 runasapi,A,domina,1.84,-0.47,Standard (-0.5%),Specialist,Even Across Ranks,49
 runasapi,B,doomfist,-0.95,0.21,Standard (+0.2%),Neutral,Even Across Ranks,51
 runasapi,B,dva,0.3,0.09,Standard (+0.1%),Neutral,Better in GM+,52
@@ -1439,13 +1439,13 @@ runasapi,C,pharah,-1.43,-1.49,Niche (-1.5%),Unfavorable,Even Across Ranks,48
 runasapi,C,ramattra,-2.53,-0.35,Standard (-0.3%),Deterrent,Even Across Ranks,51
 runasapi,B,reaper,-0.47,-0.71,Standard (-0.7%),Neutral,Better in Masters,51
 runasapi,S,reinhardt,3.92,0.36,Standard (+0.4%),Favorable,Even Across Ranks,51
-runasapi,D,roadhog,-4.45,-0.0,Standard (-0.0%),Deterrent,Better in GM+,8
+runasapi,B,roadhog,0.19,-0.01,Standard (-0.0%),Neutral,Better in GM+,8
 runasapi,B,shion,-1.01,7.46,Map Priority (+7.5%),Neutral,Even Across Ranks,28
 runasapi,B,sierra,1.17,-0.24,Standard (-0.2%),Neutral,Better in GM+,33
 runasapi,D,sigma,-4.46,-3.38,Niche (-3.4%),Deterrent,Even Across Ranks,52
 runasapi,B,sojourn,-0.26,2.97,Popular (+3.0%),Neutral,Even Across Ranks,52
 runasapi,S,soldier-76,3.96,6.75,Map Priority (+6.8%),Meta,Even Across Ranks,52
-runasapi,B,sombra,-1.14,4.06,Map Priority (+4.1%),Neutral,Better in GM+,8
+runasapi,B,sombra,-0.32,4.71,Map Priority (+4.7%),Neutral,Even Across Ranks,8
 runasapi,B,symmetra,-0.63,-0.76,Standard (-0.8%),Neutral,Even Across Ranks,44
 runasapi,B,torbjorn,1.17,-0.52,Standard (-0.5%),Neutral,Better in Masters,49
 runasapi,B,tracer,0.51,7.47,Map Priority (+7.5%),Neutral,Even Across Ranks,52
@@ -1465,7 +1465,7 @@ samoa,B,bastion,0.57,-0.46,Standard (-0.5%),Neutral,Even Across Ranks,50
 samoa,B,brigitte,-0.24,1.11,Popular (+1.1%),Neutral,Even Across Ranks,52
 samoa,A,cassidy,1.74,7.11,Map Priority (+7.1%),Meta,Even Across Ranks,52
 samoa,B,dmon,-0.79,1.97,Popular (+2.0%),Neutral,Even Across Ranks,16
-samoa,B,doctrine,-0.39,-0.68,Standard (-0.7%),Neutral,Better in Masters,8
+samoa,D,doctrine,-3.09,-1.48,Niche (-1.5%),Deterrent,Even Across Ranks,8
 samoa,B,domina,0.51,-0.28,Standard (-0.3%),Neutral,Even Across Ranks,51
 samoa,B,doomfist,0.52,0.64,Standard (+0.6%),Neutral,Even Across Ranks,52
 samoa,C,dva,-1.94,-1.09,Niche (-1.1%),Deterrent,Even Across Ranks,52
@@ -1493,13 +1493,13 @@ samoa,C,pharah,-1.82,-0.67,Standard (-0.7%),Deterrent,Even Across Ranks,51
 samoa,B,ramattra,1.05,0.27,Standard (+0.3%),Neutral,Better in GM+,50
 samoa,B,reaper,-0.98,1.86,Popular (+1.9%),Neutral,Even Across Ranks,52
 samoa,B,reinhardt,0.45,0.66,Standard (+0.7%),Neutral,Even Across Ranks,52
-samoa,A,roadhog,2.61,-0.02,Standard (-0.0%),Specialist,Better in GM+,8
+samoa,B,roadhog,0.13,0.08,Standard (+0.1%),Neutral,Even Across Ranks,8
 samoa,B,shion,0.8,5.24,Map Priority (+5.2%),Neutral,Even Across Ranks,28
 samoa,B,sierra,-0.6,-0.51,Standard (-0.5%),Neutral,Even Across Ranks,32
 samoa,C,sigma,-1.26,-2.99,Niche (-3.0%),Unfavorable,Even Across Ranks,52
 samoa,B,sojourn,0.68,1.55,Popular (+1.5%),Neutral,Even Across Ranks,52
 samoa,C,soldier-76,-1.23,-1.38,Niche (-1.4%),Unfavorable,Even Across Ranks,52
-samoa,D,sombra,-4.75,2.27,Popular (+2.3%),Trap Pick,Better in Masters,8
+samoa,D,sombra,-3.72,2.1,Popular (+2.1%),Trap Pick,Better in Masters,8
 samoa,A,symmetra,2.2,0.88,Standard (+0.9%),Favorable,Better in GM+,51
 samoa,A,torbjorn,2.31,-0.09,Standard (-0.1%),Specialist,Even Across Ranks,52
 samoa,A,tracer,1.25,6.21,Map Priority (+6.2%),Favorable,Even Across Ranks,52
@@ -1519,7 +1519,7 @@ shambali-monastery,A,bastion,2.11,1.34,Popular (+1.3%),Favorable,Better in Maste
 shambali-monastery,B,brigitte,-0.47,-2.36,Niche (-2.4%),Neutral,Even Across Ranks,51
 shambali-monastery,C,cassidy,-2.48,-3.66,Niche (-3.7%),Deterrent,Even Across Ranks,52
 shambali-monastery,B,dmon,-1.03,1.62,Popular (+1.6%),Neutral,Better in Masters,16
-shambali-monastery,S,doctrine,5.05,5.44,Map Priority (+5.4%),Meta,Better in GM+,8
+shambali-monastery,A,doctrine,2.89,3.2,Map Priority (+3.2%),Meta,Even Across Ranks,8
 shambali-monastery,C,domina,-1.33,1.37,Popular (+1.4%),Unfavorable,Better in Masters,52
 shambali-monastery,C,doomfist,-2.1,-1.3,Niche (-1.3%),Deterrent,Better in Masters,52
 shambali-monastery,B,dva,1.09,-2.07,Niche (-2.1%),Neutral,Even Across Ranks,51
@@ -1547,13 +1547,13 @@ shambali-monastery,A,pharah,1.49,1.65,Popular (+1.7%),Favorable,Better in Master
 shambali-monastery,S,ramattra,3.72,3.12,Map Priority (+3.1%),Meta,Even Across Ranks,51
 shambali-monastery,B,reaper,0.74,-1.28,Niche (-1.3%),Neutral,Better in Masters,51
 shambali-monastery,S,reinhardt,5.15,1.99,Popular (+2.0%),Meta,Better in GM+,51
-shambali-monastery,D,roadhog,-11.03,-1.23,Niche (-1.2%),Deterrent,Better in Masters,8
+shambali-monastery,D,roadhog,-10.02,-1.24,Niche (-1.2%),Deterrent,Better in Masters,8
 shambali-monastery,B,shion,-0.15,-2.69,Niche (-2.7%),Neutral,Even Across Ranks,28
 shambali-monastery,B,sierra,-0.75,0.35,Standard (+0.3%),Neutral,Even Across Ranks,36
 shambali-monastery,A,sigma,2.22,6.6,Map Priority (+6.6%),Meta,Even Across Ranks,52
 shambali-monastery,B,sojourn,0.51,0.6,Standard (+0.6%),Neutral,Better in GM+,52
 shambali-monastery,C,soldier-76,-2.26,-1.95,Niche (-2.0%),Deterrent,Even Across Ranks,52
-shambali-monastery,D,sombra,-5.54,-4.69,Niche (-4.7%),Deterrent,Better in Masters,8
+shambali-monastery,D,sombra,-3.94,-3.34,Niche (-3.3%),Deterrent,Better in Masters,8
 shambali-monastery,C,symmetra,-2.1,-0.09,Standard (-0.1%),Deterrent,Even Across Ranks,49
 shambali-monastery,C,torbjorn,-1.73,0.2,Standard (+0.2%),Unfavorable,Even Across Ranks,50
 shambali-monastery,C,tracer,-1.96,-7.43,Niche (-7.4%),Deterrent,Even Across Ranks,52
@@ -1573,7 +1573,7 @@ suravasa,B,bastion,-0.27,-1.35,Niche (-1.3%),Neutral,Even Across Ranks,49
 suravasa,A,brigitte,1.94,1.38,Popular (+1.4%),Favorable,Even Across Ranks,52
 suravasa,B,cassidy,-0.7,5.18,Map Priority (+5.2%),Neutral,Even Across Ranks,52
 suravasa,B,dmon,0.32,0.95,Standard (+1.0%),Neutral,Even Across Ranks,16
-suravasa,A,doctrine,1.49,-2.28,Niche (-2.3%),Favorable,Even Across Ranks,8
+suravasa,B,doctrine,0.17,-1.98,Niche (-2.0%),Neutral,Even Across Ranks,8
 suravasa,A,domina,2.63,-0.55,Standard (-0.5%),Specialist,Even Across Ranks,51
 suravasa,B,doomfist,0.47,0.9,Standard (+0.9%),Neutral,Even Across Ranks,52
 suravasa,D,dva,-3.38,-0.3,Standard (-0.3%),Deterrent,Even Across Ranks,52
@@ -1601,13 +1601,13 @@ suravasa,A,pharah,2.16,-0.93,Standard (-0.9%),Specialist,Even Across Ranks,51
 suravasa,A,ramattra,2.47,-0.35,Standard (-0.3%),Specialist,Even Across Ranks,50
 suravasa,B,reaper,0.69,1.87,Popular (+1.9%),Neutral,Even Across Ranks,52
 suravasa,B,reinhardt,0.93,0.17,Standard (+0.2%),Neutral,Better in Masters,52
-suravasa,S,roadhog,7.54,0.28,Standard (+0.3%),Favorable,Better in GM+,8
+suravasa,B,roadhog,0.56,0.34,Standard (+0.3%),Neutral,Better in GM+,8
 suravasa,B,shion,0.8,6.92,Map Priority (+6.9%),Neutral,Even Across Ranks,28
 suravasa,A,sierra,2.03,-0.49,Standard (-0.5%),Specialist,Better in GM+,33
 suravasa,D,sigma,-4.56,-5.23,Niche (-5.2%),Deterrent,Even Across Ranks,52
 suravasa,B,sojourn,0.86,3.84,Map Priority (+3.8%),Neutral,Even Across Ranks,52
 suravasa,B,soldier-76,0.82,2.01,Popular (+2.0%),Neutral,Even Across Ranks,51
-suravasa,A,sombra,1.62,2.72,Popular (+2.7%),Meta,Better in GM+,8
+suravasa,A,sombra,1.32,3.87,Map Priority (+3.9%),Favorable,Even Across Ranks,8
 suravasa,S,symmetra,3.24,-0.15,Standard (-0.2%),Specialist,Even Across Ranks,49
 suravasa,B,torbjorn,0.06,-0.12,Standard (-0.1%),Neutral,Better in Masters,52
 suravasa,B,tracer,0.37,7.27,Map Priority (+7.3%),Neutral,Even Across Ranks,52
@@ -1627,7 +1627,7 @@ watchpoint-gibraltar,B,bastion,0.61,-0.02,Standard (-0.0%),Neutral,Even Across R
 watchpoint-gibraltar,A,brigitte,1.79,5.01,Map Priority (+5.0%),Meta,Better in Masters,52
 watchpoint-gibraltar,B,cassidy,0.15,-3.59,Niche (-3.6%),Neutral,Even Across Ranks,52
 watchpoint-gibraltar,C,dmon,-2.3,-4.04,Niche (-4.0%),Deterrent,Even Across Ranks,16
-watchpoint-gibraltar,S,doctrine,3.81,-1.3,Niche (-1.3%),Specialist,Better in GM+,8
+watchpoint-gibraltar,A,doctrine,1.23,-2.2,Niche (-2.2%),Favorable,Even Across Ranks,8
 watchpoint-gibraltar,D,domina,-4.66,-2.01,Niche (-2.0%),Deterrent,Better in GM+,42
 watchpoint-gibraltar,B,doomfist,-1.03,0.02,Standard (+0.0%),Neutral,Better in Masters,52
 watchpoint-gibraltar,S,dva,3.08,2.94,Popular (+2.9%),Meta,Even Across Ranks,51
@@ -1655,13 +1655,13 @@ watchpoint-gibraltar,B,pharah,-0.62,-1.86,Niche (-1.9%),Neutral,Better in GM+,51
 watchpoint-gibraltar,C,ramattra,-1.7,-3.03,Niche (-3.0%),Deterrent,Better in GM+,18
 watchpoint-gibraltar,C,reaper,-1.7,1.36,Popular (+1.4%),Trap Pick,Even Across Ranks,52
 watchpoint-gibraltar,D,reinhardt,-6.58,-3.08,Niche (-3.1%),Deterrent,Better in Masters,48
-watchpoint-gibraltar,D,roadhog,-4.11,1.14,Popular (+1.1%),Trap Pick,Better in Masters,7
+watchpoint-gibraltar,S,roadhog,5.14,0.46,Standard (+0.5%),Favorable,Better in Masters,7
 watchpoint-gibraltar,B,shion,0.96,-7.36,Niche (-7.4%),Neutral,Even Across Ranks,28
 watchpoint-gibraltar,B,sierra,-0.26,0.12,Standard (+0.1%),Neutral,Even Across Ranks,36
 watchpoint-gibraltar,D,sigma,-7.53,-5.57,Niche (-5.6%),Deterrent,Better in Masters,52
 watchpoint-gibraltar,C,sojourn,-2.0,-9.79,Niche (-9.8%),Deterrent,Even Across Ranks,52
 watchpoint-gibraltar,B,soldier-76,-0.26,-0.44,Standard (-0.4%),Neutral,Better in GM+,52
-watchpoint-gibraltar,C,sombra,-1.35,-0.18,Standard (-0.2%),Unfavorable,Better in Masters,8
+watchpoint-gibraltar,D,sombra,-4.43,-0.14,Standard (-0.1%),Deterrent,Better in Masters,8
 watchpoint-gibraltar,D,symmetra,-3.86,-0.91,Standard (-0.9%),Deterrent,Better in Masters,47
 watchpoint-gibraltar,C,torbjorn,-2.47,0.15,Standard (+0.1%),Unfavorable,Better in GM+,52
 watchpoint-gibraltar,B,tracer,0.68,2.52,Popular (+2.5%),Neutral,Even Across Ranks,52

@@ -1,0 +1,95 @@
+name: Daily data
+
+# Every 6 hours: collect today's snapshot (only the first successful run of a
+# UTC day does any work; the rest are retries), check for a patch reset,
+# commit the snapshot, rebuild the dataset and redeploy the site. Pushes to
+# main only rebuild and redeploy.
+on:
+  schedule:
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+  issues: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: daily-data
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    if: github.event_name != 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - run: pip install curl_cffi
+
+      - name: Collect today's snapshot
+        run: python analysis/collect_live.py
+
+      - name: Detect patch changes
+        run: python analysis/detect_patch.py
+        env:
+          ISSUE_OUT: ${{ runner.temp }}/issue.json
+
+      - name: Open an issue if something needs a human
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE: ${{ runner.temp }}/issue.json
+        run: |
+          if [ -f "$ISSUE" ]; then
+            gh issue create --title "$(jq -r .title "$ISSUE")" --body "$(jq -r .body "$ISSUE")"
+          fi
+
+      - name: Commit snapshot and patch state
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/snapshots
+          if ! git diff --cached --quiet; then
+            git commit -m "Snapshot $(date -u +%F)"
+            git pull --rebase
+            git push
+          fi
+
+  deploy:
+    needs: collect
+    if: ${{ !failure() && !cancelled() }}
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main  # includes the snapshot the collect job just pushed
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Build dataset
+        run: python analysis/build_dataset.py
+
+      - name: Assemble site
+        run: |
+          mkdir -p _site/data
+          cp -r index.html web _site/
+          cp data/web_data.json _site/data/
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - id: deploy
+        uses: actions/deploy-pages@v4

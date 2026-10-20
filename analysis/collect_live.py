@@ -17,7 +17,7 @@ import traceback
 
 from curl_cffi import requests
 
-from config import CURRENT_IS_MIDSEASON, CURRENT_SEASON, HERO_ROLES, MAP_MODES, canonical_slug
+from config import HERO_ROLES, MAP_MODES, canonical_slug, current_patch
 
 BASE = os.path.join(os.path.dirname(__file__), "..")
 SNAPSHOT_DIR = os.path.join(BASE, "data", "snapshots")
@@ -202,11 +202,13 @@ def main():
         note_run("failed")
         return 1
 
+    patch = current_patch()
     snapshot = {
         "date": today,
         "collected_at": datetime.datetime.now().astimezone().isoformat(timespec="seconds"),
-        "season": CURRENT_SEASON,
-        "is_midseason": CURRENT_IS_MIDSEASON,
+        "patch": patch["id"],
+        "season": patch["season"],
+        "is_midseason": patch["is_midseason"],
         "sources": {"blizzard": {"rq": bliz_rq}, "nexon": {"rq": kr_rq, "empty_maps": kr_empty}},
         "heroes": heroes,
         "maps": maps,

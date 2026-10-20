@@ -1,3 +1,6 @@
+import json
+import os
+
 SEASON_MAP = {
     1: 21,
     2: 22,
@@ -6,13 +9,32 @@ SEASON_MAP = {
     5: 25,
 }
 
-# The season currently in progress. Until it has run long enough for its data
-# to settle, its slices are left out of every hero-map pair that already has
-# data from earlier seasons. Pairs that only exist in this season (new or
-# reworked heroes, new maps) still use it, flagged as provisional.
-CURRENT_SEASON = 5
-CURRENT_IS_MIDSEASON = False
-CURRENT_SEASON_MATURE = False
+# The patch in progress lives in data/snapshots/state.json, which
+# detect_patch.py updates when Blizzard's numbers reset. Each patch has an id
+# ("S5", "S5-mid", "S5-mid-2" for a later reset in the same half) plus the
+# season / midseason label its slices are filed under.
+PATCH_STATE_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "snapshots", "state.json")
+
+
+def load_patch_state():
+    with open(PATCH_STATE_PATH, encoding="utf-8") as f:
+        return json.load(f)
+
+
+def current_patch(state=None):
+    state = state or load_patch_state()
+    return next(p for p in state["patches"] if p["id"] == state["current"])
+
+
+# The patch currently in progress (a season or a midseason half). Until it has
+# run long enough for its data to settle, its slices are left out of every
+# hero-map pair that has data from earlier patches. Pairs whose only data is
+# this patch (new or reworked heroes, new maps, in a season's first half) still
+# use it, flagged as provisional.
+_current = current_patch()
+CURRENT_SEASON = _current["season"]
+CURRENT_IS_MIDSEASON = _current["is_midseason"]
+CURRENT_PATCH_MATURE = False
 
 MIN_PICK_RATE = 1.0
 
@@ -23,7 +45,8 @@ MIN_PICK_RATE = 1.0
 MIN_SAMPLE_SIZE = 3
 
 # Earliest season we accept data from for a hero: their release, or their
-# most recent rework. Keyed by canonical slug (see canonical_slug).
+# most recent rework. Keyed by canonical slug (see canonical_slug). Use x.5
+# for a midseason release or rework (5.5 = from S5 midseason on).
 HERO_VALID_FROM_SEASON = {
     "sierra": 2,
     "shion": 3,
@@ -117,16 +140,25 @@ def valid_from(hero_slug, map_slug):
     return max(HERO_VALID_FROM_SEASON.get(canonical_slug(hero_slug), 1), MAP_VALID_FROM_SEASON.get(map_slug, 1))
 
 
-def season_usable(hero_slug, map_slug, season):
-    """Whether data from this season counts for this hero-map pair."""
-    earliest = valid_from(hero_slug, map_slug)
-    if season < earliest:
-        return False
-    if season == CURRENT_SEASON and not CURRENT_SEASON_MATURE:
-        return earliest >= CURRENT_SEASON
-    return True
+def period(season, is_midseason=False):
+    """Seasons and their midseason halves on one scale: S5 = 5, S5 midseason = 5.5.
+    Valid-from entries can use either, e.g. 5.5 for a midseason rework."""
+    return season + (0.5 if is_midseason else 0)
+
+
+CURRENT_PERIOD = period(CURRENT_SEASON, CURRENT_IS_MIDSEASON)
 
 
 def is_provisional(hero_slug, map_slug):
-    """True when a pair's only usable data is the still-immature current season."""
-    return not CURRENT_SEASON_MATURE and valid_from(hero_slug, map_slug) >= CURRENT_SEASON
+    """True when a pair's only usable data is the still-immature current patch."""
+    return not CURRENT_PATCH_MATURE and valid_from(hero_slug, map_slug) >= CURRENT_PERIOD
+
+
+def season_usable(hero_slug, map_slug, season, is_midseason=False):
+    """Whether a slice from this season / half counts for this hero-map pair."""
+    p = period(season, is_midseason)
+    if p < valid_from(hero_slug, map_slug):
+        return False
+    if p == CURRENT_PERIOD and not CURRENT_PATCH_MATURE:
+        return is_provisional(hero_slug, map_slug)
+    return True

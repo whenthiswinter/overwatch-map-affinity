@@ -18,6 +18,28 @@ def load_snapshot(path):
         return json.load(f)
 
 
+def save_snapshot(path, snapshot):
+    tmp = path + ".tmp"
+    with gzip.open(tmp, "wt", encoding="utf-8") as f:
+        json.dump(snapshot, f, separators=(",", ":"))
+    os.replace(tmp, path)
+
+
+def patch_of(snapshot):
+    # Snapshots from before patch ids existed (2026-10-13 to 10-20) are all S5.
+    return snapshot.get("patch") or f"S{snapshot['season']}{'-mid' if snapshot.get('is_midseason') else ''}"
+
+
+def latest_per_patch():
+    """The newest snapshot of every patch. Snapshots are cumulative since the
+    patch started, so only the newest one of each patch may be counted."""
+    latest = {}
+    for path in snapshot_paths():
+        snapshot = load_snapshot(path)
+        latest[patch_of(snapshot)] = snapshot  # paths are date-sorted
+    return latest
+
+
 def to_slices(snapshot):
     """Per-hero slices shaped like data/raw/*_cache.json entries:
     {season, isMidseason, tier, region, measurements: [{map: {slug}, winRate, pickRate}]}.

@@ -3,12 +3,12 @@ import math
 import os
 from collections import defaultdict
 
+import sources
 from config import (
     HERO_VALID_FROM_SEASON, MAP_MODES, MIN_PICK_RATE, MIN_SAMPLE_SIZE,
-    canonical_slug, hero_name, hero_role, is_provisional, season_usable,
+    hero_name, hero_role, is_provisional, period, season_usable,
 )
 
-RAW_DIR = os.path.join(os.path.dirname(__file__), "..", "data", "raw")
 OUT_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "web_data.json")
 
 RANKS = ["ALL", "MASTER", "GRANDMASTER_AND_CHAMPION"]
@@ -58,15 +58,6 @@ def archetype_of(delta_wr, delta_pr):
     return "Neutral"
 
 
-def load_raw():
-    raw = {}
-    for fname in os.listdir(RAW_DIR):
-        if fname.endswith("_cache.json"):
-            slug = canonical_slug(fname.replace("_cache.json", ""))
-            with open(os.path.join(RAW_DIR, fname), encoding="utf-8") as f:
-                raw.setdefault(slug, []).extend(json.load(f))
-    return raw
-
 
 def flatten(raw):
     slices = defaultdict(list)
@@ -79,7 +70,8 @@ def flatten(raw):
 
         for s in seasons:
             season = s["season"]
-            if season < earliest:
+            is_mid = s.get("isMidseason", False)
+            if period(season, is_mid) < earliest:
                 continue
 
             tier = s["tier"]
@@ -89,14 +81,14 @@ def flatten(raw):
             if total_pr == 0:
                 continue
 
-            raw_slice_counts[hero_slug].append((season, tier, region))
+            raw_slice_counts[hero_slug].append((season, is_mid, tier, region))
 
             baseline_wr = sum(m["winRate"] * m["pickRate"] for m in measurements) / total_pr
             baseline_pr = total_pr / len(measurements)
 
             for m in measurements:
                 map_slug = m["map"]["slug"]
-                if not season_usable(hero_slug, map_slug, season):
+                if not season_usable(hero_slug, map_slug, season, is_mid):
                     continue
                 if m["pickRate"] < MIN_PICK_RATE:
                     continue
@@ -127,8 +119,8 @@ def max_possible_slices(raw_slice_counts, hero_slug, map_slug, rank_filter, regi
     region_code = REGION_CODE.get(region_filter, region_filter)
 
     count = 0
-    for season, tier, region in raw_slice_counts.get(hero_slug, []):
-        if not season_usable(hero_slug, map_slug, season):
+    for season, is_mid, tier, region in raw_slice_counts.get(hero_slug, []):
+        if not season_usable(hero_slug, map_slug, season, is_mid):
             continue
         if rank_filter != "ALL" and tier != rank_filter:
             continue
@@ -157,7 +149,7 @@ def rank_divergence(rank_slices):
 
 
 def build():
-    raw = load_raw()
+    raw = sources.load_all()
     slices, rank_slices, raw_slice_counts = flatten(raw)
     divergence = rank_divergence(rank_slices)
 
