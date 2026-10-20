@@ -13,6 +13,7 @@ import os
 import re
 import sys
 import time
+import traceback
 
 from curl_cffi import requests
 
@@ -21,6 +22,7 @@ from config import CURRENT_IS_MIDSEASON, CURRENT_SEASON, HERO_ROLES, MAP_MODES, 
 BASE = os.path.join(os.path.dirname(__file__), "..")
 SNAPSHOT_DIR = os.path.join(BASE, "data", "snapshots")
 LOG_PATH = os.path.join(SNAPSHOT_DIR, "collect.log")
+RUNS_PATH = os.path.join(SNAPSHOT_DIR, "runs.log")
 
 BLIZZARD_PAGE = "https://overwatch.blizzard.com/en-us/rates/"
 BLIZZARD_DATA = "https://overwatch.blizzard.com/en-us/rates/data/"
@@ -171,11 +173,20 @@ def roster_warnings(heroes, maps):
     return warnings
 
 
+def note_run(outcome):
+    """One line per invocation, so a scheduled task that never fires (or dies
+    before logging) shows up as a gap instead of silence."""
+    os.makedirs(SNAPSHOT_DIR, exist_ok=True)
+    with open(RUNS_PATH, "a", encoding="utf-8") as f:
+        f.write(f"{datetime.datetime.now():%Y-%m-%d %H:%M:%S} {outcome}\n")
+
+
 def main():
     today = datetime.date.today().isoformat()
     path = os.path.join(SNAPSHOT_DIR, f"{today}.json.gz")
     if os.path.exists(path):
         print(f"{path} already exists, nothing to do")
+        note_run("skipped (already collected today)")
         return 0
 
     started = time.time()
@@ -188,6 +199,7 @@ def main():
         slices = collect_blizzard(bliz_rq, map_slugs, heroes) + kr_slices
     except Exception as exc:
         log(f"FAILED: {exc}")
+        note_run("failed")
         return 1
 
     snapshot = {
@@ -207,6 +219,7 @@ def main():
 
     log(f"saved {os.path.basename(path)}: {len(slices)} slices, {len(heroes)} heroes, {len(maps)} maps, "
         f"{os.path.getsize(path) // 1024} KB, {time.time() - started:.0f}s")
+    note_run("saved")
     if kr_empty:
         log(f"note: no Korea data for {', '.join(kr_empty)}")
     for warning in roster_warnings(heroes, maps):
@@ -215,4 +228,11 @@ def main():
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    # Under pythonw there is no console, so an uncaught error would vanish.
+    try:
+        code = main()
+    except Exception:
+        log("CRASHED:\n" + traceback.format_exc())
+        note_run("crashed")
+        code = 1
+    sys.exit(code)

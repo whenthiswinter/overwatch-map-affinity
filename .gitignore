@@ -5,3 +5,4 @@ venv/
 .venv/
 .DS_Store
 data/snapshots/collect.log
+data/snapshots/runs.log
