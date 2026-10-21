@@ -1,3 +1,4 @@
+import datetime
 import json
 import os
 
@@ -31,10 +32,32 @@ def current_patch(state=None):
 # hero-map pair that has data from earlier patches. Pairs whose only data is
 # this patch (new or reworked heroes, new maps, in a season's first half) still
 # use it, flagged as provisional.
+#
+# "Settled" = MATURITY_DAYS since the patch started, counted to the newest
+# snapshot. At 13-15 days into S5, per-slice deltas still moved ~3 points
+# between refreshes (vs ~5 between two whole patches), so 14 was too early.
+# 21 is a conservative placeholder until a full half has been observed
+# (PLAN.md phase 5).
+MATURITY_DAYS = 21
+
+SNAPSHOT_DIR = os.path.join(os.path.dirname(__file__), "..", "data", "snapshots")
+
+
+def latest_snapshot_date():
+    dates = [f[:10] for f in os.listdir(SNAPSHOT_DIR) if f.endswith(".json.gz")] if os.path.isdir(SNAPSHOT_DIR) else []
+    return max(dates) if dates else None
+
+
 _current = current_patch()
+CURRENT_PATCH = _current
 CURRENT_SEASON = _current["season"]
 CURRENT_IS_MIDSEASON = _current["is_midseason"]
-CURRENT_PATCH_MATURE = False
+DATA_THROUGH = latest_snapshot_date()
+DAYS_INTO_PATCH = (
+    (datetime.date.fromisoformat(DATA_THROUGH) - datetime.date.fromisoformat(_current["started"])).days
+    if DATA_THROUGH else 0
+)
+CURRENT_PATCH_MATURE = DAYS_INTO_PATCH >= MATURITY_DAYS
 
 MIN_PICK_RATE = 1.0
 
@@ -152,6 +175,12 @@ CURRENT_PERIOD = period(CURRENT_SEASON, CURRENT_IS_MIDSEASON)
 def is_provisional(hero_slug, map_slug):
     """True when a pair's only usable data is the still-immature current patch."""
     return not CURRENT_PATCH_MATURE and valid_from(hero_slug, map_slug) >= CURRENT_PERIOD
+
+
+def in_current_patch(hero_slug, map_slug, season, is_midseason=False):
+    """For the "this patch only" view: current-period slices the pair is valid for."""
+    p = period(season, is_midseason)
+    return p == CURRENT_PERIOD and p >= valid_from(hero_slug, map_slug)
 
 
 def season_usable(hero_slug, map_slug, season, is_midseason=False):

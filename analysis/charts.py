@@ -19,8 +19,16 @@ sns.set_theme(style="whitegrid", font="sans-serif")
 
 
 def load_web_data():
+    """web_data.json with the all-seasons scope expanded into
+    database[combo]["heroes"][hero] = {role, modes, maps: [entries]}."""
     with open(os.path.join(DATA_DIR, "web_data.json"), encoding="utf-8") as f:
-        return json.load(f)
+        data = json.load(f)
+    data["database"] = data["scopes"]["all"]
+    for combo in data["database"].values():
+        for hero, hd in combo["heroes"].items():
+            hd["role"] = data["hero_roles"][hero]
+            hd["maps"] = [e for e in combo["entries"] if e["hero"] == hero]
+    return data
 
 
 def heatmap():

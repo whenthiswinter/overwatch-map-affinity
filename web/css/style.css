@@ -497,6 +497,30 @@ tbody tr:hover { background: var(--bg); }
 
 .pick-stats { display: flex; align-items: center; gap: 8px; }
 
+.freshness {
+  margin: 6px 0 0;
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+.patch-notice {
+  margin-bottom: 14px;
+  padding: 10px 14px;
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  background: var(--accent-soft);
+  font-size: 0.83rem;
+}
+
+.conf { display: inline-flex; align-items: center; gap: 5px; font-size: 0.8rem; cursor: help; white-space: nowrap; }
+.conf-dot { width: 7px; height: 7px; border-radius: 50%; display: inline-block; }
+.conf-high .conf-dot { background: var(--s); }
+.conf-mid .conf-dot { background: var(--c); }
+.conf-low .conf-dot { background: var(--b); }
+.conf-low { color: var(--muted); }
+
+.delta.lowconf { opacity: 0.5; }
+
 .prov-tag {
   margin-left: 6px;
   font-size: 0.62rem;

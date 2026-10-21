@@ -14,6 +14,7 @@
     <div>
       <h1>Map Affinity</h1>
       <p class="sub">Per-hero, per-map win rate deltas pulled from ranked Overwatch match data.</p>
+      <p class="freshness" id="freshness"></p>
     </div>
     <div class="top-buttons">
       <button class="btn ghost" id="legendBtn">Methodology</button>
@@ -28,6 +29,14 @@
   </nav>
 
   <section class="filters">
+    <label class="field">
+      <span>Data</span>
+      <select id="scopeSelect">
+        <option value="all">All seasons</option>
+        <option value="patch">This patch only</option>
+      </select>
+    </label>
+
     <label class="field">
       <span>Rank</span>
       <select id="rankSelect">
@@ -94,6 +103,7 @@
   </section>
 
   <main>
+    <div id="patchNotice" class="patch-notice hidden"></div>
     <div id="heroSummary" class="hero-summary hidden">
       <div class="hero-summary-head">
         <div>
@@ -184,7 +194,17 @@
 
   <div class="legend-entry">
     <h4>Provisional</h4>
-    <p>The current season is left out of the averages until its data has had time to settle, since early-patch numbers are thin and swing a lot. Heroes and maps that only exist in the current season (new releases, reworks) are shown anyway, built from current-season data alone and marked Provisional. Expect those to move.</p>
+    <p>Data is collected daily from Blizzard's and Nexon's official stats. The patch in progress (a season or its midseason half) is left out of the averages for its first 21 days, since early-patch numbers are thin and swing a lot. Heroes and maps that only exist in the current patch (new releases, reworks) are shown anyway, built from current-patch data alone and marked Provisional. Expect those to move. After 21 days the patch counts like any other.</p>
+  </div>
+
+  <div class="legend-entry">
+    <h4>Confidence</h4>
+    <p>Every hero-map number is an average over several season/rank/region slices. The &plusmn; range shows how far the true value probably is from that average (a 95% range), based on how much the slices disagree; n is the number of slices. <b>High</b>: &plusmn;2.5 or less. <b>Medium</b>: up to &plusmn;5. <b>Low</b>: wider, or a single slice; low-confidence numbers are shown faded. Slices from the same season aren't fully independent, so treat the range as optimistic.</p>
+  </div>
+
+  <div class="legend-entry">
+    <h4>This patch only</h4>
+    <p>The Data filter can switch to the current patch on its own, for a look at how maps play in the live meta. It has far fewer slices per number than the all-seasons view (at most 8, or 1 once you pick a single rank and region), so expect wide confidence ranges.</p>
   </div>
 
   <div class="dialog-actions">

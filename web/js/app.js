@@ -13,16 +13,51 @@ let pool = new Set(JSON.parse(localStorage.getItem("owPool") || '["winston","tra
 const el = (id) => document.getElementById(id);
 const fmt = (slug) => slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
 const heroName = (slug) => (data && data.hero_names && data.hero_names[slug]) || fmt(slug);
-const provTag = (e) => (e.provisional ? '<span class="prov-tag" title="Only current-season data so far, which is still settling. Expect this to move.">Provisional</span>' : "");
+const provTag = (e) => (e.provisional ? '<span class="prov-tag" title="Only current-patch data so far, which is still settling. Expect this to move.">Provisional</span>' : "");
+const fmtDate = (iso) => new Date(`${iso}T00:00:00`).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
 
 fetch("../data/web_data.json")
   .then((r) => r.json())
   .then((json) => {
     data = json;
+    expandScopes();
     init();
   });
 
+// web_data.json stores each hero-map entry once per rank/region combo; rebuild
+// the per-map and per-hero views the tabs read from.
+function expandScopes() {
+  Object.values(data.scopes).forEach((combos) => {
+    Object.values(combos).forEach((combo) => {
+      combo.maps = {};
+      Object.entries(combo.heroes).forEach(([hero, h]) => {
+        h.role = data.hero_roles[hero] || "Damage";
+        h.maps = [];
+      });
+      combo.entries.forEach((e) => {
+        e.role = data.hero_roles[e.hero] || "Damage";
+        e.mode = data.map_modes[e.map] || "Other";
+        (combo.maps[e.map] = combo.maps[e.map] || []).push(e);
+        combo.heroes[e.hero].maps.push(e);
+      });
+    });
+  });
+}
+
+function patchLabel(meta) {
+  return `Season ${meta.season}${meta.is_midseason ? " midseason" : ""}`;
+}
+
+function renderFreshness() {
+  const m = data.meta;
+  let text = `Data through ${fmtDate(m.data_through)} · ${patchLabel(m)}, day ${m.days_into_patch}`;
+  if (!m.mature) text += ` · counts fully from day ${m.maturity_days}`;
+  el("freshness").textContent = text;
+  el("scopeSelect").options[1].textContent = `This patch only (${patchLabel(m)})`;
+}
+
 function init() {
+  renderFreshness();
   el("mapSelect").innerHTML = data.map_list.map((m) => `<option value="${m}">${fmt(m)}</option>`).join("");
   el("heroSelect").innerHTML = data.hero_list.map((h) => `<option value="${h}">${heroName(h)}</option>`).join("");
 
@@ -61,7 +96,7 @@ function bindEvents() {
     };
   });
 
-  ["rankSelect", "regionSelect", "mapSelect", "roleSelect", "heroSelect", "onlyPoolCheck"].forEach((id) => {
+  ["scopeSelect", "rankSelect", "regionSelect", "mapSelect", "roleSelect", "heroSelect", "onlyPoolCheck"].forEach((id) => {
     el(id).addEventListener("change", render);
   });
 
@@ -108,7 +143,35 @@ function switchTab(tab) {
 
 function activeSlice() {
   const key = `${el("rankSelect").value}_${el("regionSelect").value}`;
-  return data.database[key] || { maps: {}, heroes: {} };
+  return data.scopes[el("scopeSelect").value][key] || { maps: {}, heroes: {} };
+}
+
+// 95% range of the average delta, from how much its slices disagree.
+function confidence(e) {
+  if (e.ci == null) return { level: "Low", cls: "low", range: "single slice" };
+  const range = `±${e.ci.toFixed(1)}`;
+  if (e.ci <= 2.5) return { level: "High", cls: "high", range };
+  if (e.ci <= 5) return { level: "Medium", cls: "mid", range };
+  return { level: "Low", cls: "low", range };
+}
+
+function confTitle(e) {
+  const c = confidence(e);
+  return `${c.level} confidence: the true value is likely within ${c.range === "single slice" ? "an unknown range (only one slice)" : c.range + " points"} of this, from ${e.sample_size} slice${e.sample_size === 1 ? "" : "s"}`;
+}
+
+function confCell(e) {
+  const c = confidence(e);
+  return `<span class="conf conf-${c.cls}" title="${confTitle(e)}"><span class="conf-dot"></span>${c.range}</span> <span class="muted">n=${e.sample_size}</span>`;
+}
+
+function renderPatchNotice() {
+  const m = data.meta;
+  const patchOnly = el("scopeSelect").value === "patch";
+  el("patchNotice").classList.toggle("hidden", !patchOnly);
+  if (patchOnly) {
+    el("patchNotice").innerHTML = `<strong>${patchLabel(m)} only</strong>, ${m.days_into_patch} days in. These numbers come from the current patch alone (at most 8 slices per hero-map pair, 1 with a single rank and region picked), so they are much noisier than the all-seasons view${m.mature ? "" : " and still settling"}.`;
+  }
 }
 
 function rankFlag(skew) {
@@ -117,10 +180,11 @@ function rankFlag(skew) {
   return '<span class="rank-flag">-</span>';
 }
 
-function deltaCell(v) {
+function deltaCell(v, e) {
   const cls = v >= 0 ? "pos" : "neg";
   const sign = v > 0 ? "+" : "";
-  return `<span class="delta ${cls}">${sign}${v.toFixed(2)}%</span>`;
+  const low = e && confidence(e).cls === "low";
+  return `<span class="delta ${cls}${low ? " lowconf" : ""}"${e ? ` title="${confTitle(e)}"` : ""}>${sign}${v.toFixed(2)}%</span>`;
 }
 
 function sortByTier(entries) {
@@ -130,6 +194,7 @@ function sortByTier(entries) {
 function render() {
   if (!data) return;
   const slice = activeSlice();
+  renderPatchNotice();
 
   if (activeTab === "map") renderMapTab(slice);
   else if (activeTab === "hero") renderHeroTab(slice);
@@ -147,7 +212,7 @@ function renderMapTab(slice) {
   el("tableHead").innerHTML = `
     <tr>
       <th>Tier</th><th>Hero</th><th>Role</th><th>Mode</th>
-      <th>Delta WR</th><th>Presence</th><th>Archetype</th><th>Rank</th><th>n</th>
+      <th>Delta WR</th><th>Presence</th><th>Archetype</th><th>Rank</th><th>Confidence</th>
     </tr>`;
 
   let entries = slice.maps[mapSlug] || [];
@@ -160,17 +225,17 @@ function renderMapTab(slice) {
       <td><strong>${heroName(e.hero)}</strong>${provTag(e)}</td>
       <td><span class="role-tag ${e.role}">${e.role}</span></td>
       <td><span class="mode-badge">${mode}</span></td>
-      <td>${deltaCell(e.delta_wr)}</td>
+      <td>${deltaCell(e.delta_wr, e)}</td>
       <td class="muted">${e.presence}</td>
       <td>${e.archetype}</td>
       <td>${rankFlag(e.rank_skew)}</td>
-      <td class="muted">n=${e.sample_size}</td>
+      <td>${confCell(e)}</td>
     </tr>`).join("");
 }
 
 function renderHeroTab(slice) {
   const hero = el("heroSelect").value;
-  const hData = slice.heroes[hero] || { role: "Damage", modes: {}, maps: [], volatility: 0, volatility_class: "" };
+  const hData = slice.heroes[hero] || { role: data.hero_roles[hero] || "Damage", modes: {}, maps: [], volatility: 0, volatility_class: "no data in this view" };
 
   el("heroSummary").classList.remove("hidden");
   el("heroName").textContent = heroName(hero);
@@ -188,7 +253,7 @@ function renderHeroTab(slice) {
   el("tableHead").innerHTML = `
     <tr>
       <th>Tier</th><th>Map</th><th>Mode</th>
-      <th>Delta WR</th><th>Presence</th><th>Archetype</th><th>Rank</th><th>n</th>
+      <th>Delta WR</th><th>Presence</th><th>Archetype</th><th>Rank</th><th>Confidence</th>
     </tr>`;
 
   el("tableBody").innerHTML = sortByTier(hData.maps || []).map((e) => `
@@ -196,11 +261,11 @@ function renderHeroTab(slice) {
       <td><span class="badge ${e.tier}">${e.tier}</span></td>
       <td><strong>${fmt(e.map)}</strong>${provTag(e)}</td>
       <td><span class="mode-badge">${e.mode}</span></td>
-      <td>${deltaCell(e.delta_wr)}</td>
+      <td>${deltaCell(e.delta_wr, e)}</td>
       <td class="muted">${e.presence}</td>
       <td>${e.archetype}</td>
       <td>${rankFlag(e.rank_skew)}</td>
-      <td class="muted">n=${e.sample_size}</td>
+      <td>${confCell(e)}</td>
     </tr>`).join("");
 }
 
@@ -259,7 +324,7 @@ function renderPoolTab(slice) {
               </span>
               <span class="pick-stats">
                 <span class="pick-arch" title="Presence: ${e.presence}">${e.archetype}</span>
-                ${deltaCell(e.delta_wr)}
+                ${deltaCell(e.delta_wr, e)}
               </span>
             </div>`;
         }).join("");
@@ -308,7 +373,7 @@ function openExport() {
         any = true;
         const parts = roleEntries.map((e, idx) => {
           const tag = idx === 0 && e.delta_wr > 0 ? " [best]" : "";
-          return `${heroName(e.hero)}${e.provisional ? "*" : ""} (${e.delta_wr > 0 ? "+" : ""}${e.delta_wr.toFixed(1)}%, ${e.archetype})${tag}`;
+          return `${heroName(e.hero)}${e.provisional ? "*" : ""}${confidence(e).cls === "low" ? "?" : ""} (${e.delta_wr > 0 ? "+" : ""}${e.delta_wr.toFixed(1)}%, ${e.archetype})${tag}`;
         });
         out += `  ${role.padEnd(8)}: ${parts.join(" | ")}\n`;
       });
@@ -318,7 +383,9 @@ function openExport() {
     });
   });
 
-  out += "* provisional: only current-season data so far, still settling\n";
+  out += "* provisional: only current-patch data so far, still settling\n";
+  out += "? low confidence: the slices behind this number disagree a lot\n";
+  out += `Data through ${data.meta.data_through}, ${el("scopeSelect").value === "patch" ? patchLabel(data.meta) + " only" : "all seasons"}\n`;
 
   el("exportText").value = out;
   el("exportDialog").showModal();

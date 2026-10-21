@@ -1,3 +1,4 @@
+import datetime
 import json
 import math
 import os
@@ -5,8 +6,9 @@ from collections import defaultdict
 
 import sources
 from config import (
-    HERO_VALID_FROM_SEASON, MAP_MODES, MIN_PICK_RATE, MIN_SAMPLE_SIZE,
-    hero_name, hero_role, is_provisional, period, season_usable,
+    CURRENT_IS_MIDSEASON, CURRENT_PATCH, CURRENT_PATCH_MATURE, CURRENT_SEASON, DATA_THROUGH,
+    DAYS_INTO_PATCH, HERO_VALID_FROM_SEASON, MAP_MODES, MATURITY_DAYS, MIN_PICK_RATE, MIN_SAMPLE_SIZE,
+    hero_name, hero_role, in_current_patch, is_provisional, period, season_usable,
 )
 
 OUT_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "web_data.json")
@@ -59,7 +61,9 @@ def archetype_of(delta_wr, delta_pr):
 
 
 
-def flatten(raw):
+def flatten(raw, usable):
+    """Per-hero list of qualifying (hero, map) slice deltas. `usable(hero, map,
+    season, is_midseason)` decides which slices count for the scope."""
     slices = defaultdict(list)
     rank_slices = defaultdict(lambda: defaultdict(lambda: {"MASTER": [], "GM": []}))
     raw_slice_counts = defaultdict(list)
@@ -88,7 +92,7 @@ def flatten(raw):
 
             for m in measurements:
                 map_slug = m["map"]["slug"]
-                if not season_usable(hero_slug, map_slug, season, is_mid):
+                if not usable(hero_slug, map_slug, season, is_mid):
                     continue
                 if m["pickRate"] < MIN_PICK_RATE:
                     continue
@@ -110,7 +114,7 @@ def flatten(raw):
     return slices, rank_slices, raw_slice_counts
 
 
-def max_possible_slices(raw_slice_counts, hero_slug, map_slug, rank_filter, region_filter):
+def max_possible_slices(raw_slice_counts, usable, hero_slug, map_slug, rank_filter, region_filter):
     """How many raw slices could this hero-map pair ever have under this
     rank/region filter, given which seasons count for the pair.
     A brand-new hero or a recently-reworked map will always fall short of
@@ -120,7 +124,7 @@ def max_possible_slices(raw_slice_counts, hero_slug, map_slug, rank_filter, regi
 
     count = 0
     for season, is_mid, tier, region in raw_slice_counts.get(hero_slug, []):
-        if not season_usable(hero_slug, map_slug, season, is_mid):
+        if not usable(hero_slug, map_slug, season, is_mid):
             continue
         if rank_filter != "ALL" and tier != rank_filter:
             continue
@@ -148,15 +152,25 @@ def rank_divergence(rank_slices):
     return divergence
 
 
-def build():
-    raw = sources.load_all()
-    slices, rank_slices, raw_slice_counts = flatten(raw)
+def ci95(values):
+    """Rough 95% range of a pair's average delta, from how much its slices
+    disagree. Slices of one season are correlated, so treat it as a lower bound."""
+    if len(values) < 2:
+        return None
+    mean = sum(values) / len(values)
+    sd = math.sqrt(sum((v - mean) ** 2 for v in values) / (len(values) - 1))
+    return round(1.96 * sd / math.sqrt(len(values)), 2)
+
+
+def build_scope(raw, usable, flag_provisional):
+    """Every rank x region combo for one scope. Each hero-map entry is stored
+    once; the site rebuilds the per-map and per-hero indexes on load."""
+    slices, rank_slices, raw_slice_counts = flatten(raw, usable)
     divergence = rank_divergence(rank_slices)
 
-    database = {}
+    combos = {}
     for rank_filter in RANKS:
         for region_filter in REGIONS:
-            combo = f"{rank_filter}_{region_filter}"
             region_code = REGION_CODE.get(region_filter, region_filter)
             hero_map_wr = defaultdict(lambda: defaultdict(list))
             hero_map_pr = defaultdict(lambda: defaultdict(list))
@@ -170,38 +184,35 @@ def build():
                     hero_map_wr[hero_slug][item["map_slug"]].append(item["delta_wr"])
                     hero_map_pr[hero_slug][item["map_slug"]].append(item["delta_pr"])
 
-            maps_aggregate = defaultdict(list)
-            heroes_aggregate = {}
+            entries = []
+            heroes = {}
 
             for hero_slug, maps in hero_map_wr.items():
-                role = hero_role(hero_slug)
                 mode_deltas = defaultdict(list)
-                entries = []
+                hero_entries = []
 
                 for map_slug, deltas in maps.items():
-                    possible = max_possible_slices(raw_slice_counts, hero_slug, map_slug, rank_filter, region_filter)
+                    possible = max_possible_slices(raw_slice_counts, usable, hero_slug, map_slug, rank_filter, region_filter)
                     if len(deltas) < min(MIN_SAMPLE_SIZE, possible):
                         continue
                     avg_wr = sum(deltas) / len(deltas)
                     avg_pr = sum(hero_map_pr[hero_slug][map_slug]) / len(hero_map_pr[hero_slug][map_slug])
-                    mode = MAP_MODES.get(map_slug, "Other")
-                    mode_deltas[mode].append(avg_wr)
+                    mode_deltas[MAP_MODES.get(map_slug, "Other")].append(avg_wr)
 
-                    entry = {
-                        "hero": hero_slug, "role": role, "map": map_slug, "mode": mode,
+                    hero_entries.append({
+                        "hero": hero_slug, "map": map_slug,
                         "delta_wr": round(avg_wr, 2), "delta_pr": round(avg_pr, 2),
                         "tier": tier_of(avg_wr), "presence": presence_label(avg_pr),
                         "archetype": archetype_of(avg_wr, avg_pr),
                         "rank_skew": divergence[hero_slug].get(map_slug, "Even Across Ranks"),
                         "sample_size": len(deltas),
-                        "provisional": is_provisional(hero_slug, map_slug),
-                    }
-                    maps_aggregate[map_slug].append(entry)
-                    entries.append(entry)
+                        "ci": ci95(deltas),
+                        "provisional": flag_provisional and is_provisional(hero_slug, map_slug),
+                    })
 
                 hero_modes = {m: round(sum(d) / len(d), 2) for m, d in mode_deltas.items() if d}
 
-                all_d = [e["delta_wr"] for e in entries]
+                all_d = [e["delta_wr"] for e in hero_entries]
                 sigma = 0.0
                 if len(all_d) >= 5:
                     mean = sum(all_d) / len(all_d)
@@ -213,17 +224,36 @@ def build():
                     else "Map-Agnostic (σ < 1.8%)"
                 )
 
-                heroes_aggregate[hero_slug] = {
-                    "role": role, "modes": hero_modes,
+                heroes[hero_slug] = {
+                    "modes": hero_modes,
                     "volatility": sigma, "volatility_class": vol_class,
-                    "maps": entries,
-                    "provisional": bool(entries) and all(e["provisional"] for e in entries),
+                    "provisional": bool(hero_entries) and all(e["provisional"] for e in hero_entries),
                 }
+                entries.extend(hero_entries)
 
-            database[combo] = {"maps": maps_aggregate, "heroes": heroes_aggregate}
+            combos[f"{rank_filter}_{region_filter}"] = {"entries": entries, "heroes": heroes}
+    return combos
+
+
+def build():
+    raw = sources.load_all()
 
     payload = {
-        "database": database,
+        "meta": {
+            "data_through": DATA_THROUGH,
+            "built_at": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="minutes"),
+            "patch": CURRENT_PATCH["id"],
+            "season": CURRENT_SEASON,
+            "is_midseason": CURRENT_IS_MIDSEASON,
+            "patch_started": CURRENT_PATCH["started"],
+            "days_into_patch": DAYS_INTO_PATCH,
+            "maturity_days": MATURITY_DAYS,
+            "mature": CURRENT_PATCH_MATURE,
+        },
+        "scopes": {
+            "all": build_scope(raw, season_usable, flag_provisional=True),
+            "patch": build_scope(raw, in_current_patch, flag_provisional=False),
+        },
         "map_list": sorted(MAP_MODES.keys()),
         "hero_list": sorted(raw.keys()),
         "hero_roles": {h: hero_role(h) for h in raw.keys()},
@@ -232,9 +262,9 @@ def build():
     }
 
     with open(OUT_PATH, "w", encoding="utf-8") as f:
-        json.dump(payload, f)
+        json.dump(payload, f, separators=(",", ":"))
 
-    print(f"wrote {OUT_PATH}")
+    print(f"wrote {OUT_PATH} ({os.path.getsize(OUT_PATH) // 1024} KB)")
 
 
 if __name__ == "__main__":
