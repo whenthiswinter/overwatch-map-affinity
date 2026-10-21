@@ -31,7 +31,7 @@ import math
 from collections import defaultdict
 
 import sources
-from build_dataset import flatten, mean_of, variance_of
+from build_dataset import flatten, mean_of
 from config import is_provisional, season_usable
 
 ALPHA = 0.05

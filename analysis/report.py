@@ -25,16 +25,16 @@ def run():
     os.makedirs(CSV_DIR, exist_ok=True)
     os.makedirs(os.path.dirname(REPORT_PATH), exist_ok=True)
 
-    combos = build_scope(sources.load_all(), season_usable, flag_provisional=True)
+    combos, _ = build_scope(sources.load_all(), season_usable, flag_provisional=True)
     overall = combos["ALL_ALL"]
     rank_region = run_checks()
     heroes = sorted(overall["heroes"].items(), key=lambda kv: kv[1]["volatility"], reverse=True)
 
     with open(REPORT_PATH, "w", encoding="utf-8") as f:
         f.write("# Overwatch Map Affinity Report\n\n")
-        f.write("Timeless per-hero, per-map win rate deltas, computed relative to each hero's baseline win rate in the same rank/region/patch slice, then averaged across every slice collected. "
+        f.write("Timeless per-hero, per-map win rate deltas, computed relative to each hero's baseline win rate in the same rank/region/patch slice, then averaged across every slice collected (a 30% trimmed average, so a few wild slices can't drag it). "
                 "Each average is then adjusted for noise: pulled toward the hero's mean in proportion to how much its slices disagree, so thin or inconsistent numbers don't land in extreme tiers by chance. "
-                "The raw average and its 95% range are listed next to it.\n\n")
+                "The unadjusted average and its 95% range are listed next to it.\n\n")
 
         f.write("## Contents\n")
         f.write("1. [Map Sensitivity (Volatility)](#1-map-sensitivity-volatility)\n")
@@ -42,12 +42,14 @@ def run():
         f.write("3. [Map Tier Lists](#3-map-tier-lists)\n\n")
 
         f.write("## 1. Map Sensitivity (Volatility)\n\n")
-        f.write("How much a hero's win rate really varies from map to map: the standard deviation of their map averages, minus the part explained by sampling noise. "
-                "Map-Agnostic below 1.2 (most maps stay within the B band), Map-Dependent from 3.0 (a third or more of maps reach S or D).\n\n")
-        f.write("| Hero | Sigma | Class |\n|---|---|---|\n")
+        f.write("How much a hero's win rate really varies from map to map: the standard deviation of their map averages, minus the part explained by sampling noise, estimated together with all heroes so a hero with weak evidence leans toward the typical spread. "
+                "Map-Agnostic below 1.2 (most maps stay within the B band), Map-Dependent from 3.0 (a third or more of maps reach S or D). "
+                "P(class) is the chance the true sigma is in that class; under 75% counts as borderline.\n\n")
+        f.write("| Hero | Sigma | Class | P(class) |\n|---|---|---|---|\n")
         for hero, h in heroes:
             sigma = "-" if h["volatility_class"].startswith("Too early") else f"{h['volatility']:.2f}%"
-            f.write(f"| {hero_name(hero)} | {sigma} | {short_class(h['volatility_class'])} |\n")
+            p = "-" if h["volatility_p"] is None else f"{h['volatility_p']}%" + (" (borderline)" if h["volatility_p"] < 75 else "")
+            f.write(f"| {hero_name(hero)} | {sigma} | {short_class(h['volatility_class'])} | {p} |\n")
         f.write("\n---\n\n")
 
         f.write("## 2. Rank and Region\n\n")
@@ -69,7 +71,7 @@ def run():
 
         for map_slug in sorted(by_map):
             f.write(f"### {map_name(map_slug)}\n\n")
-            f.write("| Tier | P(tier) | Hero | Delta WR | Raw (95% range) | Presence | Archetype | n |\n|---|---|---|---|---|---|---|---|\n")
+            f.write("| Tier | P(tier) | Hero | Delta WR | Unadjusted (95% range) | Presence | Archetype | n |\n|---|---|---|---|---|---|---|---|\n")
             for e in sorted(by_map[map_slug], key=lambda e: (TIER_ORDER[e["tier"]], -e["delta_wr"])):
                 name = hero_name(e["hero"]) + (" *(provisional)*" if e["provisional"] else "")
                 f.write(f"| {e['tier']} | {e['tier_p']}% | {name} | {e['delta_wr']:+.2f}% | {e['raw_delta_wr']:+.2f}% ±{e['ci']:.1f} | "
@@ -92,9 +94,9 @@ def run():
 
     with open(os.path.join(CSV_DIR, "hero_volatility.csv"), "w", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
-        writer.writerow(["hero", "volatility_sigma", "classification"])
+        writer.writerow(["hero", "volatility_sigma", "classification", "class_probability_pct"])
         for hero, h in heroes:
-            writer.writerow([hero, h["volatility"], short_class(h["volatility_class"])])
+            writer.writerow([hero, h["volatility"], short_class(h["volatility_class"]), h["volatility_p"]])
 
     print(f"wrote {REPORT_PATH}")
     print(f"wrote {CSV_DIR}/map_tierlists.csv and hero_volatility.csv")

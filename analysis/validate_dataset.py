@@ -54,6 +54,11 @@ def check(data):
                 need(0 <= e.get("tier_p", -1) <= 100, f"{where}: tier probability {e.get('tier_p')}")
                 need(e["ci"] > 0 and e.get("sample_size", 0) >= 1, f"{where}: ci/sample size")
                 need(e["hero"] in heroes and e["map"] in maps, f"{where}: unknown hero or map")
+            for hero, h in combo.get("heroes", {}).items():
+                p = h.get("volatility_p")
+                too_early = h.get("volatility_class", "").startswith("Too early")
+                need(p is None if too_early else 0 <= (p if p is not None else -1) <= 100,
+                     f"{scope}/{name} {hero}: sigma class probability {p}")
 
     main = data.get("scopes", {}).get("all", {}).get("ALL_ALL", {}).get("entries", [])
     need(len(main) >= MIN_MAIN_VIEW_ENTRIES, f"main view has only {len(main)} entries (expected {MIN_MAIN_VIEW_ENTRIES}+)")

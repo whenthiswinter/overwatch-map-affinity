@@ -230,6 +230,9 @@ function confidence(e) {
 }
 
 const sigmaText = (h) => (h.volatility_class.startsWith("Too early") ? "&sigma; &ndash;" : `&sigma; ${h.volatility.toFixed(2)}%`);
+// Same line as High confidence: below it the hero's own data can't say which side of a class line it's on.
+const isBorderline = (h) => h.volatility_p != null && h.volatility_p < 75;
+const borderlineNote = (h) => `borderline: ${h.volatility_p}% chance it's ${h.volatility_class.split(" (")[0]}`;
 
 function confCell(e) {
   const c = confidence(e);
@@ -247,7 +250,7 @@ function detailsHtml(e, { showHero, showMap }) {
   const presenceLabel = e.presence.split(" (")[0];
   const lines = [
     `<b>${showHero ? heroName(e.hero) : ""}${showHero && showMap ? " on " : ""}${showMap ? mapName(e.map) : ""}</b> · ${e.role} · ${e.mode}`,
-    `<b>Delta WR ${signed(e.delta_wr)}%</b> (tier ${e.tier}), adjusted for noise from a raw average of ${signed(e.raw_delta_wr)}% &plusmn;${e.ci.toFixed(1)} (95% range, ${e.sample_size} slice${e.sample_size === 1 ? "" : "s"}).`,
+    `<b>Delta WR ${signed(e.delta_wr)}%</b> (tier ${e.tier}), adjusted for noise from an unadjusted average of ${signed(e.raw_delta_wr)}% &plusmn;${e.ci.toFixed(1)} (95% range, ${e.sample_size} slice${e.sample_size === 1 ? "" : "s"}).`,
     `<b>${c.level} confidence:</b> ${e.tier_p}% chance the true value is in tier ${e.tier}.`,
     `<b>Picked ${signed(e.pr_lift, 0)}%</b> vs this hero's average map (${presenceLabel}) · <b>${e.archetype}</b>`,
   ];
@@ -343,7 +346,7 @@ function renderHeroTab(slice) {
   el("heroRolePill").textContent = hData.role;
   el("heroRolePill").className = `role-pill ${hData.role}`;
   el("heroProv").innerHTML = hData.provisional ? provTag(hData) : "";
-  el("heroVol").innerHTML = `Map sensitivity: <strong>${sigmaText(hData)}</strong> <span class="muted">(${hData.volatility_class})</span>`;
+  el("heroVol").innerHTML = `Map sensitivity: <strong>${sigmaText(hData)}</strong> <span class="muted">(${hData.volatility_class})${isBorderline(hData) ? ` &middot; ${borderlineNote(hData)}` : ""}</span>`;
 
   el("modeGrid").innerHTML = MODES.map((m) => {
     const val = hData.modes[m];
@@ -379,7 +382,7 @@ function renderPoolTab(slice) {
     .map((h) => `
       <div class="pool-stat-chip">
         <span class="role-tag ${h.role}">${heroName(h.hero)}</span>
-        <span class="sigma ${volClass(h.volatility)}">${sigmaText(h)}</span>
+        <span class="sigma ${volClass(h.volatility)}${isBorderline(h) ? " borderline" : ""}"${isBorderline(h) ? ` title="${borderlineNote(h)}"` : ""}>${sigmaText(h)}${isBorderline(h) ? "*" : ""}</span>
       </div>`).join("");
 
   const modesToShow = state.pmode === "ALL" ? MODES : [state.pmode];

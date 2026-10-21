@@ -70,7 +70,7 @@ def volatility_bar():
 
 
 def rank_agreement_scatter(data):
-    """Masters vs GM+ raw averages per established hero-map pair. The spread
+    """Masters vs GM+ unadjusted averages per established hero-map pair. The spread
     around the diagonal is what noise alone produces; the split-half test in
     check_rank_region.py found no real rank difference on top of it."""
     master = {(e["hero"], e["map"]): e for e in data["database"]["MASTER_ALL"]["entries"] if not e["provisional"]}

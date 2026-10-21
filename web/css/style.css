@@ -447,6 +447,7 @@ tbody tr:hover { background: var(--bg); }
 .pool-stat-chip .sigma.vol-high { color: var(--d); }
 .pool-stat-chip .sigma.vol-mid { color: var(--c); }
 .pool-stat-chip .sigma.vol-low { color: var(--s); }
+.pool-stat-chip .sigma.borderline { text-decoration: underline dotted; cursor: help; }
 
 .chip-toggle {
   background: var(--surface);

@@ -3,6 +3,7 @@ import json
 import math
 import os
 from collections import defaultdict
+from fractions import Fraction
 
 import sources
 from config import (
@@ -137,85 +138,187 @@ def max_possible_slices(raw_slice_counts, usable, hero_slug, map_slug, rank_filt
 
 # --- Noise model -------------------------------------------------------------
 # A hero-map number is the average of a few slices that disagree with each
-# other, so part of every number is noise. Per hero (within one rank/region
-# combo):
-#   - each pair's slice variance is pulled toward the hero's pooled variance
-#     (POOL_WEIGHT pseudo-slices), so thin pairs borrow from the hero's others;
-#     its noise is se^2 = variance / n;
-#   - the hero's real map sensitivity is tau^2 = observed variance of its map
-#     averages minus the average se^2 (the "noise-corrected sigma");
+# other, so part of every number is noise. Slices also include wild outliers
+# (Lifeweaver on King's Row: +43 in one S1 Masters Asia slice, -1 to -3 in most
+# others), so a pair's value is a TRIMMED average: the top and bottom TRIM of
+# its slices are dropped. Picked 2026-10-21 by held-out tests over 1,529 pairs:
+# split-half reproducibility 0.50 (plain mean) -> 0.70 (30% trim), error vs the
+# held-out half 2.98 -> 2.48; 30-35% tied best, median/Huber close behind.
+# Per hero (within one rank/region combo):
+#   - each pair's winsorized slice variance is pulled toward the hero's pooled
+#     one (POOL_WEIGHT pseudo-slices), so thin pairs borrow from the hero's
+#     others. The pooled one is winsorized at the pair's own trim share: a
+#     1-3 slice pair trims nothing, so it borrows the plain variance, outliers
+#     included. Its noise is the trimmed mean's se^2 in Yuen's small-sample
+#     form, winsorized variance * (n-1) / (kept * (kept-1)). Held-out check
+#     (first halves vs midseasons): standardized SD 0.94-0.99 on every filter
+#     tried (plain n / kept^2 form: up to 1.19 on narrow filters);
+#   - the hero's real map sensitivity tau^2 (the "noise-corrected sigma") is
+#     estimated across heroes at once (map_sensitivity): each hero's own map
+#     averages say how likely each tau^2 is, and heroes in general (a
+#     log-normal fitted to all of them) fill in where a hero's own evidence
+#     is weak. Replaced "observed variance minus noise, clamped at 0" on
+#     2026-10-21: the clamp set Sierra and Venture to exactly 0 (every map
+#     the same value) although a raw-data audit put them around 0.5-1. On
+#     held-out data it was better in 6 of 8 filter/patch groups (tie in the
+#     other 2) and for 35 of 51 heroes; the strongest specialists shrink a
+#     little (Widowmaker 6.98 -> 6.43);
 #   - each pair is shrunk toward the hero's mean by tau^2 / (tau^2 + se^2):
 #     well-measured pairs barely move, noisy ones move a lot.
 # Heroes without established (non-provisional) history can't estimate tau
-# from two weeks of data, so they borrow the combo's typical tau^2.
+# from two weeks of data, so they get the typical hero's (the fitted
+# distribution's mean).
+# Narrow filters (one rank and/or region) take each hero's tau^2 from the
+# scope's All/All view: their own estimate is mostly noise and often hits 0,
+# which flattened every map (62% of heroes on one rank + one region). The
+# pre-registered test (check_rank_region.py) finds map effects don't differ
+# by rank/region, and borrowing predicted held-out data better on every
+# filter group and patch tested (2026-10-21). Values still come from the
+# filter's own slices; only how far they're trusted is shared.
+# The patch scope takes it from the all-data All/All view the same way: two
+# weeks of one patch flattened 29% of heroes; borrowing cut that to 5% and
+# predicted the held-out midseason better (S1-S4 first half -> midseason).
 POOL_WEIGHT = 4
 MIN_PAIRS_FOR_TAU = 5
+TRIM = 0.30
 
 
 def mean_of(values):
     return sum(values) / len(values)
 
 
-def variance_of(values):
-    m = mean_of(values)
-    return sum((v - m) ** 2 for v in values) / (len(values) - 1)
+def trim_count(n):
+    return int(n * TRIM)
 
 
-def pooled_variance(pair_deltas):
-    """Within-pair variance pooled over a hero's pairs, or None if too thin."""
+def trimmed_mean(values):
+    v = sorted(values)
+    c = trim_count(len(v))
+    return mean_of(v[c:len(v) - c])
+
+
+def winsorized_variance(values, share=None):
+    """Sample variance after clipping the trimmed share of slices to the
+    nearest kept value, the spread measure that matches a trimmed mean.
+    share (a Fraction) overrides the trim share; None means this list's own."""
+    v = sorted(values)
+    c = trim_count(len(v)) if share is None else int(len(v) * share)
+    if c:
+        v = [v[c]] * c + v[c:len(v) - c] + [v[len(v) - c - 1]] * c
+    m = mean_of(v)
+    return sum((x - m) ** 2 for x in v) / (len(v) - 1)
+
+
+def pooled_variance(pair_deltas, share):
+    """Within-pair variance winsorized at share, pooled over a hero's pairs, or None if too thin."""
     dof = sum(len(d) - 1 for d in pair_deltas)
     if dof < 5:
         return None
-    return sum(variance_of(d) * (len(d) - 1) for d in pair_deltas if len(d) > 1) / dof
+    return sum(winsorized_variance(d, share) * (len(d) - 1) for d in pair_deltas if len(d) > 1) / dof
+
+
+def pool_at(pair_deltas, fallback):
+    """share -> pooled_variance(pair_deltas, share), cached, or fallback(share) if too thin."""
+    cache = {}
+
+    def pooled(share):
+        if share not in cache:
+            cache[share] = pooled_variance(pair_deltas, share) or fallback(share)
+        return cache[share]
+    return pooled
 
 
 def pair_noise(deltas, pooled):
-    """se^2 of a pair's average, its variance pulled toward the hero's pooled one."""
+    """se^2 of a pair's trimmed mean, its variance pulled toward the hero's
+    pooled one (pooled: share -> variance) at the same trim share."""
     n = len(deltas)
-    var = ((n - 1) * variance_of(deltas) + POOL_WEIGHT * pooled) / (n - 1 + POOL_WEIGHT) if n > 1 else pooled
-    return var / n
+    c = trim_count(n)
+    p = pooled(Fraction(c, n))
+    var = ((n - 1) * winsorized_variance(deltas) + POOL_WEIGHT * p) / (n - 1 + POOL_WEIGHT) if n > 1 else p
+    kept = n - 2 * c
+    return var * (n - 1) / (kept * (kept - 1)) if kept > 1 else var
 
 
-def signal_variance(means, noises):
-    """Real spread of a hero's map effects: observed variance minus noise."""
+TAU2_GRID = [math.exp(-6 + 12 * i / 240) for i in range(241)]  # tau^2 0.0025 .. 403
+
+
+def tau2_loglik(means, noises, t2):
+    """Log-likelihood of a hero's map averages if their real spread were t2."""
     mu = mean_of(means)
-    observed = sum((m - mu) ** 2 for m in means) / len(means)
-    return max(observed - mean_of(noises), 0.0)
+    return sum(-0.5 * (math.log(t2 + s) + (m - mu) ** 2 / (t2 + s)) for m, s in zip(means, noises))
 
 
-# For the confidence figure only (never the estimate itself): never treat a
-# hero's real map effect as exactly zero, or "no detected effect" turns into
-# "100% certain B". 2.0 calibrated best on 2026-10-21: forecasts of held-out
-# tiers were off by 1.9 points on average (4.2 without a floor).
-CONFIDENCE_TAU2_FLOOR = 2.0
+def map_sensitivity(evidence):
+    """evidence: hero -> (map averages, their se^2). Returns (tau^2 by hero,
+    typical tau^2, chance by hero that the true sigma is in the class shown).
+    log tau^2 across heroes is taken as Normal(a, b^2), with a and b fitted by
+    marginal likelihood on a grid; each hero's tau^2 is its posterior mean."""
+    if not evidence:
+        return {}, 0.0, {}
+    logs = [math.log(t) for t in TAU2_GRID]
+    lls = {h: [tau2_loglik(m, s, t) for t in TAU2_GRID] for h, (m, s) in evidence.items()}
+    peaks = {h: max(ll) for h, ll in lls.items()}
+    rel = {h: [math.exp(v - peaks[h]) for v in ll] for h, ll in lls.items()}
+    best = None
+    for a in (x / 4 for x in range(-16, 25)):
+        for b in (k / 4 for k in range(1, 13)):
+            prior = [math.exp(-0.5 * ((l - a) / b) ** 2) for l in logs]
+            z = sum(prior)
+            prior = [p / z for p in prior]
+            fit = sum(math.log(sum(p * r for p, r in zip(prior, rs)) or 1e-300) for rs in rel.values())
+            if best is None or fit > best[0]:
+                best = (fit, prior)
+    prior = best[1]
+    tau2, class_p = {}, {}
+    for h, rs in rel.items():
+        w = [p * r for p, r in zip(prior, rs)]
+        z = sum(w)
+        tau2[h] = sum(x * t for x, t in zip(w, TAU2_GRID)) / z
+        shown = sigma_band(round(math.sqrt(tau2[h]), 2))
+        class_p[h] = sum(x for x, t in zip(w, TAU2_GRID) if sigma_band(math.sqrt(t)) == shown) / z
+    return tau2, sum(p * t for p, t in zip(prior, TAU2_GRID)), class_p
 
 
+# No floor on tau^2 here any more: it existed so a clamped tau^2 of 0 didn't
+# turn into "100% certain B", and map_sensitivity never returns 0. Without it
+# held-out tier forecasts (~150k, 2026-10-21) are off by 1.3 points on All/All,
+# 2.1-2.3 on one rank or region, 4.1 on one rank + region (floor 2.0: 1.2 /
+# 2.5 / 4.1).
 def normal_cdf(x):
     return 0.5 * (1 + math.erf(x / math.sqrt(2)))
 
 
 def tier_probability(adjusted, se2, tau2):
     """Chance the true value lies in the shown tier, from the noise model."""
-    t2 = max(tau2, CONFIDENCE_TAU2_FLOOR)
-    sd = math.sqrt(t2 * se2 / (t2 + se2))
+    sd = math.sqrt(tau2 * se2 / (tau2 + se2)) if tau2 + se2 > 0 else 0.0
+    if sd == 0:
+        return 1.0
     edges = [-math.inf, -TIER_OUTER, -TIER_INNER, TIER_INNER, TIER_OUTER, math.inf]
     i = "DCBAS".index(tier_of(adjusted))
     return normal_cdf((edges[i + 1] - adjusted) / sd) - normal_cdf((edges[i] - adjusted) / sd)
 
 
+# A class with a chance under 75% (the site's High-confidence line) is shown
+# as borderline: the hero sits close enough to a line that its own data can't
+# say which side. 12 of 51 heroes on 2026-10-21 (sigma 1.13-1.36, 3.03-3.25).
+SIGMA_CLASSES = ["Map-Agnostic (σ < 1.2%)", "Flexible (1.2% ≤ σ < 3.0%)", "Map-Dependent (σ ≥ 3.0%)"]
+
+
+def sigma_band(sigma):
+    return 2 if sigma >= 3.0 else 1 if sigma >= 1.2 else 0
+
+
 def volatility_class(sigma, provisional):
     if provisional:
         return "Too early to tell (new or reworked)"
-    if sigma >= 3.0:
-        return "Map-Dependent (σ ≥ 3.0%)"
-    if sigma >= 1.2:
-        return "Flexible (1.2% ≤ σ < 3.0%)"
-    return "Map-Agnostic (σ < 1.2%)"
+    return SIGMA_CLASSES[sigma_band(sigma)]
 
 
-def build_scope(raw, usable, flag_provisional):
-    """Every rank x region combo for one scope. Each hero-map entry is stored
-    once; the site rebuilds the per-map and per-hero indexes on load."""
+def build_scope(raw, usable, flag_provisional, sensitivity=None):
+    """Every rank x region combo for one scope, and the map sensitivity
+    (tau^2 by hero, typical tau^2) its All/All view used. Each hero-map entry
+    is stored once; the site rebuilds the per-map and per-hero indexes on load.
+    sensitivity: another scope's, used for every combo instead of measuring."""
     slices, raw_slice_counts = flatten(raw, usable)
 
     # Fallback noise levels from all ranks/regions together, for combos too
@@ -226,8 +329,8 @@ def build_scope(raw, usable, flag_provisional):
         for item in items:
             by_map[item["map_slug"]].append(item["delta_wr"])
         scope_pairs[hero_slug] = list(by_map.values())
-    scope_pooled = {h: pooled_variance(p) for h, p in scope_pairs.items()}
-    scope_pooled_all = pooled_variance([d for p in scope_pairs.values() for d in p]) or 0.0
+    scope_pooled_all = pool_at([d for p in scope_pairs.values() for d in p], lambda share: 0.0)
+    scope_pooled = {h: pool_at(p, scope_pooled_all) for h, p in scope_pairs.items()}
 
     combos = {}
     for rank_filter in RANKS:
@@ -257,26 +360,29 @@ def build_scope(raw, usable, flag_provisional):
                     eligible[hero_slug] = kept
 
             # Noise per pair, and each hero's real map sensitivity (tau^2).
-            noise, tau2 = {}, {}
+            noise, evidence = {}, {}
             for hero_slug, kept in eligible.items():
-                pooled = pooled_variance(list(kept.values())) or scope_pooled.get(hero_slug) or scope_pooled_all
+                pooled = pool_at(list(kept.values()), scope_pooled.get(hero_slug, scope_pooled_all))
                 noise[hero_slug] = {m: pair_noise(d, pooled) for m, d in kept.items()}
                 established = [m for m in kept if not is_provisional(hero_slug, m)]
-                if len(established) >= MIN_PAIRS_FOR_TAU:
-                    tau2[hero_slug] = signal_variance([mean_of(kept[m]) for m in established], [noise[hero_slug][m] for m in established])
-            typical_tau2 = mean_of(list(tau2.values())) if tau2 else 0.0
+                if sensitivity is None and len(established) >= MIN_PAIRS_FOR_TAU:
+                    evidence[hero_slug] = ([trimmed_mean(kept[m]) for m in established], [noise[hero_slug][m] for m in established])
+            if sensitivity is None:  # first combo built is ALL_ALL
+                sensitivity = map_sensitivity(evidence)
+            tau2 = {h: sensitivity[0][h] for h in eligible if h in sensitivity[0]}
+            typical_tau2, class_p = sensitivity[1], sensitivity[2]
 
             entries = []
             heroes = {}
 
             for hero_slug, kept in eligible.items():
                 hero_tau2 = tau2.get(hero_slug, typical_tau2)
-                hero_mean = mean_of([mean_of(d) for d in kept.values()])
+                hero_mean = mean_of([trimmed_mean(d) for d in kept.values()])
                 mode_deltas = defaultdict(list)
                 hero_entries = []
 
                 for map_slug, deltas in kept.items():
-                    raw_wr = mean_of(deltas)
+                    raw_wr = trimmed_mean(deltas)
                     se2 = noise[hero_slug][map_slug]
                     weight = hero_tau2 / (hero_tau2 + se2) if hero_tau2 + se2 > 0 else 0.0
                     adj_wr = hero_mean + weight * (raw_wr - hero_mean)
@@ -306,16 +412,19 @@ def build_scope(raw, usable, flag_provisional):
                     "modes": hero_modes,
                     "volatility": sigma,
                     "volatility_class": volatility_class(sigma, hero_provisional),
+                    "volatility_p": None if hero_provisional else round(100 * class_p[hero_slug]),
                     "provisional": bool(hero_entries) and all(e["provisional"] for e in hero_entries),
                 }
                 entries.extend(hero_entries)
 
             combos[f"{rank_filter}_{region_filter}"] = {"entries": entries, "heroes": heroes}
-    return combos
+    return combos, sensitivity
 
 
 def build():
     raw = sources.load_all()
+    all_scope, all_view = build_scope(raw, season_usable, flag_provisional=True)
+    patch_scope, _ = build_scope(raw, in_current_patch, flag_provisional=False, sensitivity=all_view)
 
     payload = {
         "meta": {
@@ -329,10 +438,7 @@ def build():
             "maturity_days": MATURITY_DAYS,
             "mature": CURRENT_PATCH_MATURE,
         },
-        "scopes": {
-            "all": build_scope(raw, season_usable, flag_provisional=True),
-            "patch": build_scope(raw, in_current_patch, flag_provisional=False),
-        },
+        "scopes": {"all": all_scope, "patch": patch_scope},
         "map_list": sorted(MAP_MODES.keys()),
         "hero_list": sorted(raw.keys()),
         "hero_roles": {h: hero_role(h) for h in raw.keys()},

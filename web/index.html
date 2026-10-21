@@ -192,8 +192,8 @@
 
   <div class="legend-entry">
     <h4>Delta WR &amp; tiers</h4>
-    <p>Map win rate minus the hero's baseline win rate in that rank/region/patch slice, averaged across every slice collected. S &ge; 3.0%, A 1.2&ndash;2.9%, B &minus;1.1&ndash;1.1%, C &minus;3.0&ndash;&minus;1.3%, D &lt; &minus;3.0%.</p>
-    <p><b>Adjusted for noise.</b> Part of every average is noise, since its slices disagree with each other. So each number is pulled toward the hero's overall mean, more strongly the noisier it is: a well-measured +5% stays near +5%, while a +5% from a handful of inconsistent slices may end up near +1%. Without this, thin numbers would land in S or D by chance. The tier, archetype and pool picks use the adjusted value; tap a row to see the raw average.</p>
+    <p>Map win rate minus the hero's baseline win rate in that rank/region/patch slice, averaged across every slice collected. It's a trimmed average: each pair's highest 30% and lowest 30% of slices are set aside, so a few wild slices (one put Lifeweaver at +43% on King's Row, where most sit near &minus;2%) can't drag the number around. S &ge; 3.0%, A 1.2&ndash;2.9%, B &minus;1.1&ndash;1.1%, C &minus;3.0&ndash;&minus;1.3%, D &lt; &minus;3.0%.</p>
+    <p><b>Adjusted for noise.</b> Part of every average is noise, since its slices disagree with each other. So each number is pulled toward the hero's overall mean, more strongly the noisier it is: a well-measured +5% stays near +5%, while a +5% from a handful of inconsistent slices may end up near +1%. Without this, thin numbers would land in S or D by chance. How strongly depends on the hero's map sensitivity (below), which a single rank, region or the current patch alone is too thin to measure, so it always comes from all ranks and regions. The tier, archetype and pool picks use the adjusted value; tap a row to see the unadjusted average.</p>
   </div>
 
   <div class="legend-entry">
@@ -208,7 +208,7 @@
 
   <div class="legend-entry">
     <h4>Map sensitivity (sigma)</h4>
-    <p>How much a hero's win rate really varies from map to map: the standard deviation of their map averages, minus the part that's just sampling noise. Map-Agnostic &lt; 1.2% (most maps stay within the B band), Flexible 1.2&ndash;2.9%, Map-Dependent &ge; 3.0% (a third or more of maps reach S or D). New and reworked heroes show "too early to tell" until they have history.</p>
+    <p>How much a hero's win rate really varies from map to map: the standard deviation of their map averages, minus the part that's just sampling noise. Map-Agnostic &lt; 1.2% (most maps stay within the B band), Flexible 1.2&ndash;2.9%, Map-Dependent &ge; 3.0% (a third or more of maps reach S or D). It's measured on all ranks and regions and used for every filter. Each hero's sigma is estimated together with all the others: a hero with clear evidence (like Widowmaker) decides almost alone, while a hero whose map differences are close to the noise (like Sierra) leans toward what's typical for heroes, instead of being treated as having no map effect at all. A hero's class is marked <b>borderline</b> when there's less than a 75% chance their true sigma is in it (the same line as High confidence): they sit close enough to a class line that the data can't tell which side. In the pool's sigma row these show with an asterisk. New and reworked heroes show "too early to tell" until they have history.</p>
   </div>
 
   <div class="legend-entry">
@@ -223,7 +223,7 @@
 
   <div class="legend-entry">
     <h4>Confidence</h4>
-    <p>The chance that the shown tier is the right one for this hero on this map, from the same noise model as the adjustment (how much the slices behind the number disagree, and how big this hero's real map effects are). <b>High</b>: at least 75% (3 in 4). <b>Medium</b>: 50&ndash;74%, more likely right than wrong. <b>Low</b>: under 50%, more likely wrong than right; shown faded. A labels tend to be the least certain because the A band is narrow. These probabilities were checked against held-out data and came out within about 2 points on average. n is the number of slices; tap a row for the raw average and its 95% range.</p>
+    <p>The chance that the shown tier is the right one for this hero on this map, from the same noise model as the adjustment (how much the slices behind the number disagree, and how big this hero's real map effects are). <b>High</b>: at least 75% (3 in 4). <b>Medium</b>: 50&ndash;74%, more likely right than wrong. <b>Low</b>: under 50%, more likely wrong than right; shown faded. A labels tend to be the least certain because the A band is narrow. These probabilities were checked against held-out data: they're off by about 1 point on average on all ranks and regions, 2 on a single rank or region, and 4 on a single rank and region. n is the number of slices; tap a row for the unadjusted average and its 95% range.</p>
   </div>
 
   <div class="legend-entry">
