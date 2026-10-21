@@ -104,6 +104,7 @@
 
   <main>
     <div id="patchNotice" class="patch-notice hidden"></div>
+    <p id="filterNotice" class="filter-notice hidden">Narrower view: fewer games behind each number, so ranges are wider and more entries sit near B. Map affinity tested the same across ranks and nearly the same across regions, so <b>All ranks / All regions</b> is the most reliable view, even if you only care about one of them.</p>
     <div id="heroSummary" class="hero-summary hidden">
       <div class="hero-summary-head">
         <div>
@@ -201,6 +202,11 @@
   <div class="legend-entry">
     <h4>Confidence</h4>
     <p>Every hero-map number is an average over several season/rank/region slices. The &plusmn; range shows how far the true value probably is from the raw average (a 95% range), based on how much the slices disagree; n is the number of slices. A pair with very few slices borrows the noise level of the hero's other maps. <b>High</b>: &plusmn;2.5 or less. <b>Medium</b>: up to &plusmn;5. <b>Low</b>: wider; low-confidence numbers are shown faded. Slices from the same season aren't fully independent, so treat the range as optimistic.</p>
+  </div>
+
+  <div class="legend-entry">
+    <h4>Rank and region</h4>
+    <p>Does a hero's map affinity differ between Masters and GM+, or between regions? Each hero-map pair's slices were split into two independent halves (season first halves vs midseasons): a real difference would show up in both halves, noise wouldn't. Between Masters and GM+ nothing repeats, so the old "Better in GM+ / Masters" flags (a third of all pairs carried one) were noise and have been removed. Europe shows a small but consistent difference from the other regions (about 1 point for a typical hero-map pair); the other regions show none. Even for GM+ or European numbers, the all-ranks, all-regions view predicts held-out data better than the narrower view, so it's the most reliable one for everyone. The test and its pass rule were fixed in advance and are rerun every season.</p>
   </div>
 
   <div class="legend-entry">

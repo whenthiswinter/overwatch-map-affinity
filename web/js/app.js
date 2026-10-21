@@ -177,10 +177,9 @@ function renderPatchNotice() {
   }
 }
 
-function rankFlag(skew) {
-  if (skew === "Better in GM+") return '<span class="rank-flag gm">Better in GM+</span>';
-  if (skew === "Better in Masters") return '<span class="rank-flag master">Better in Masters</span>';
-  return '<span class="rank-flag">-</span>';
+function renderFilterNotice() {
+  const narrow = el("rankSelect").value !== "ALL" || el("regionSelect").value !== "ALL";
+  el("filterNotice").classList.toggle("hidden", !narrow);
 }
 
 function deltaCell(v, e) {
@@ -198,6 +197,7 @@ function render() {
   if (!data) return;
   const slice = activeSlice();
   renderPatchNotice();
+  renderFilterNotice();
 
   if (activeTab === "map") renderMapTab(slice);
   else if (activeTab === "hero") renderHeroTab(slice);
@@ -215,7 +215,7 @@ function renderMapTab(slice) {
   el("tableHead").innerHTML = `
     <tr>
       <th>Tier</th><th>Hero</th><th>Role</th><th>Mode</th>
-      <th>Delta WR</th><th>Presence</th><th>Archetype</th><th>Rank</th><th>Confidence</th>
+      <th>Delta WR</th><th>Presence</th><th>Archetype</th><th>Confidence</th>
     </tr>`;
 
   let entries = slice.maps[mapSlug] || [];
@@ -231,7 +231,6 @@ function renderMapTab(slice) {
       <td>${deltaCell(e.delta_wr, e)}</td>
       <td class="muted">${e.presence}</td>
       <td>${e.archetype}</td>
-      <td>${rankFlag(e.rank_skew)}</td>
       <td>${confCell(e)}</td>
     </tr>`).join("");
 }
@@ -256,7 +255,7 @@ function renderHeroTab(slice) {
   el("tableHead").innerHTML = `
     <tr>
       <th>Tier</th><th>Map</th><th>Mode</th>
-      <th>Delta WR</th><th>Presence</th><th>Archetype</th><th>Rank</th><th>Confidence</th>
+      <th>Delta WR</th><th>Presence</th><th>Archetype</th><th>Confidence</th>
     </tr>`;
 
   el("tableBody").innerHTML = sortByTier(hData.maps || []).map((e) => `
@@ -267,7 +266,6 @@ function renderHeroTab(slice) {
       <td>${deltaCell(e.delta_wr, e)}</td>
       <td class="muted">${e.presence}</td>
       <td>${e.archetype}</td>
-      <td>${rankFlag(e.rank_skew)}</td>
       <td>${confCell(e)}</td>
     </tr>`).join("");
 }

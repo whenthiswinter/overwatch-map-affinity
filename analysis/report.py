@@ -8,6 +8,7 @@ import os
 
 import sources
 from build_dataset import build_scope
+from check_rank_region import run_checks
 from config import hero_name, season_usable
 
 CSV_DIR = os.path.join(os.path.dirname(__file__), "..", "data", "csv")
@@ -26,10 +27,7 @@ def run():
 
     combos = build_scope(sources.load_all(), season_usable, flag_provisional=True)
     overall = combos["ALL_ALL"]
-    by_rank = {
-        "MASTER": {(e["hero"], e["map"]): e for e in combos["MASTER_ALL"]["entries"]},
-        "GM": {(e["hero"], e["map"]): e for e in combos["GRANDMASTER_AND_CHAMPION_ALL"]["entries"]},
-    }
+    rank_region = run_checks()
     heroes = sorted(overall["heroes"].items(), key=lambda kv: kv[1]["volatility"], reverse=True)
 
     with open(REPORT_PATH, "w", encoding="utf-8") as f:
@@ -40,7 +38,7 @@ def run():
 
         f.write("## Contents\n")
         f.write("1. [Map Sensitivity (Volatility)](#1-map-sensitivity-volatility)\n")
-        f.write("2. [Rank Divergence](#2-rank-divergence)\n")
+        f.write("2. [Rank and Region](#2-rank-and-region)\n")
         f.write("3. [Map Tier Lists](#3-map-tier-lists)\n\n")
 
         f.write("## 1. Map Sensitivity (Volatility)\n\n")
@@ -52,19 +50,17 @@ def run():
             f.write(f"| {hero_name(hero)} | {sigma} | {short_class(h['volatility_class'])} |\n")
         f.write("\n---\n\n")
 
-        f.write("## 2. Rank Divergence\n\n")
-        f.write("Heroes whose map performance differs by 2.5% or more between Masters and GM+ (raw averages).\n\n")
-        f.write("| Hero | Map | Masters | GM+ | Diff | Better In |\n|---|---|---|---|---|---|\n")
-        divergence_rows = []
-        for e in overall["entries"]:
-            key = (e["hero"], e["map"])
-            if e["rank_skew"] != "Even Across Ranks" and key in by_rank["MASTER"] and key in by_rank["GM"]:
-                m, gm = by_rank["MASTER"][key]["raw_delta_wr"], by_rank["GM"][key]["raw_delta_wr"]
-                divergence_rows.append((e["hero"], e["map"], m, gm, gm - m, e["rank_skew"]))
-        divergence_rows.sort(key=lambda r: abs(r[4]), reverse=True)
-        for hero, map_slug, m, gm, diff, comp in divergence_rows:
-            f.write(f"| {hero_name(hero)} | {map_slug} | {m:+.2f}% | {gm:+.2f}% | {diff:+.2f}% | {comp} |\n")
-        f.write("\n---\n\n")
+        f.write("## 2. Rank and Region\n\n")
+        f.write("Does a hero's map affinity differ between Masters and GM+, or between regions? Each hero-map pair's slices are split into two independent halves "
+                "(season first halves vs midseasons) and the gap is measured in each. A real difference would repeat between the halves; noise wouldn't. "
+                "A difference counts only if the halves correlate with one-sided p < 0.05 over all pairs (region tests share it: 0.0125 each). "
+                "This rule was fixed on 2026-10-21 and is rerun every season (`analysis/check_rank_region.py`).\n\n")
+        f.write("| Comparison | Split-half correlation | Pairs | p | Detected |\n|---|---|---|---|---|\n")
+        for res in rank_region:
+            f.write(f"| {res['test']} | {res['r']:+.3f} | {res['pairs']} | {res['p']:.4f} | {'yes' if res['real'] else 'no'} |\n")
+        f.write("\nAs of the 2026-10-21 analysis (the table above is recomputed on every run): the rank groups show no detectable difference. Europe shows a small consistent one (a typical hero-map gap of about 1 point), "
+                "but even for European numbers the all-regions estimate predicts held-out data better than Europe alone, because a quarter of the data adds more noise "
+                "than the regional difference is worth. The same holds for GM+. So the all-ranks, all-regions view is the most reliable one for everyone.\n\n---\n\n")
 
         f.write("## 3. Map Tier Lists\n\n")
         by_map = {}
@@ -73,15 +69,14 @@ def run():
 
         for map_slug in sorted(by_map):
             f.write(f"### {map_slug.replace('-', ' ').title()}\n\n")
-            f.write("| Tier | Hero | Delta WR | Raw (95% range) | Presence | Archetype | Rank | n |\n|---|---|---|---|---|---|---|---|\n")
+            f.write("| Tier | Hero | Delta WR | Raw (95% range) | Presence | Archetype | n |\n|---|---|---|---|---|---|---|\n")
             for e in sorted(by_map[map_slug], key=lambda e: (TIER_ORDER[e["tier"]], -e["delta_wr"])):
                 name = hero_name(e["hero"]) + (" *(provisional)*" if e["provisional"] else "")
-                rank_str = e["rank_skew"] if e["rank_skew"] != "Even Across Ranks" else "-"
                 f.write(f"| {e['tier']} | {name} | {e['delta_wr']:+.2f}% | {e['raw_delta_wr']:+.2f}% ±{e['ci']:.1f} | "
-                        f"{e['presence']} | {e['archetype']} | {rank_str} | {e['sample_size']} |\n")
+                        f"{e['presence']} | {e['archetype']} | {e['sample_size']} |\n")
             f.write("\n")
 
-    fields = ["map", "tier", "hero", "delta_wr", "delta_pr", "presence", "archetype", "rank_comparison",
+    fields = ["map", "tier", "hero", "delta_wr", "delta_pr", "presence", "archetype",
               "sample_size", "raw_delta_wr", "ci95", "provisional"]
     with open(os.path.join(CSV_DIR, "map_tierlists.csv"), "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=fields)
@@ -90,7 +85,7 @@ def run():
             writer.writerow({
                 "map": e["map"], "tier": e["tier"], "hero": e["hero"],
                 "delta_wr": e["delta_wr"], "delta_pr": e["delta_pr"],
-                "presence": e["presence"], "archetype": e["archetype"], "rank_comparison": e["rank_skew"],
+                "presence": e["presence"], "archetype": e["archetype"],
                 "sample_size": e["sample_size"], "raw_delta_wr": e["raw_delta_wr"], "ci95": e["ci"],
                 "provisional": e["provisional"],
             })

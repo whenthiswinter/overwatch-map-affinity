@@ -65,7 +65,6 @@ def flatten(raw, usable):
     """Per-hero list of qualifying (hero, map) slice deltas. `usable(hero, map,
     season, is_midseason)` decides which slices count for the scope."""
     slices = defaultdict(list)
-    rank_slices = defaultdict(lambda: defaultdict(lambda: {"MASTER": [], "GM": []}))
     raw_slice_counts = defaultdict(list)
 
     for hero_slug, seasons in raw.items():
@@ -101,17 +100,12 @@ def flatten(raw, usable):
                 d_pr = m["pickRate"] - baseline_pr
 
                 slices[hero_slug].append({
-                    "season": season, "tier": tier, "region": region,
+                    "season": season, "is_midseason": is_mid, "tier": tier, "region": region,
                     "map_slug": map_slug, "role": role,
                     "delta_wr": d_wr, "delta_pr": d_pr,
                 })
 
-                if tier == "MASTER":
-                    rank_slices[hero_slug][map_slug]["MASTER"].append(d_wr)
-                elif tier == "GRANDMASTER_AND_CHAMPION":
-                    rank_slices[hero_slug][map_slug]["GM"].append(d_wr)
-
-    return slices, rank_slices, raw_slice_counts
+    return slices, raw_slice_counts
 
 
 def max_possible_slices(raw_slice_counts, usable, hero_slug, map_slug, rank_filter, region_filter):
@@ -132,24 +126,6 @@ def max_possible_slices(raw_slice_counts, usable, hero_slug, map_slug, rank_filt
             continue
         count += 1
     return count
-
-
-def rank_divergence(rank_slices):
-    divergence = defaultdict(dict)
-    for hero_slug, maps in rank_slices.items():
-        for map_slug, ranks in maps.items():
-            m_vals, gm_vals = ranks["MASTER"], ranks["GM"]
-            if len(m_vals) >= 2 and len(gm_vals) >= 2:
-                diff = (sum(gm_vals) / len(gm_vals)) - (sum(m_vals) / len(m_vals))
-                if diff >= 2.5:
-                    divergence[hero_slug][map_slug] = "Better in GM+"
-                elif diff <= -2.5:
-                    divergence[hero_slug][map_slug] = "Better in Masters"
-                else:
-                    divergence[hero_slug][map_slug] = "Even Across Ranks"
-            else:
-                divergence[hero_slug][map_slug] = "Even Across Ranks"
-    return divergence
 
 
 # --- Noise model -------------------------------------------------------------
@@ -213,8 +189,7 @@ def volatility_class(sigma, provisional):
 def build_scope(raw, usable, flag_provisional):
     """Every rank x region combo for one scope. Each hero-map entry is stored
     once; the site rebuilds the per-map and per-hero indexes on load."""
-    slices, rank_slices, raw_slice_counts = flatten(raw, usable)
-    divergence = rank_divergence(rank_slices)
+    slices, raw_slice_counts = flatten(raw, usable)
 
     # Fallback noise levels from all ranks/regions together, for combos too
     # narrow to measure their own (e.g. one patch, one rank, one region = 1 slice).
@@ -287,7 +262,6 @@ def build_scope(raw, usable, flag_provisional):
                         "delta_pr": round(avg_pr, 2),
                         "tier": tier_of(adj_wr), "presence": presence_label(avg_pr),
                         "archetype": archetype_of(adj_wr, avg_pr),
-                        "rank_skew": divergence[hero_slug].get(map_slug, "Even Across Ranks"),
                         "sample_size": len(deltas),
                         "ci": round(1.96 * math.sqrt(se2), 2),
                         "provisional": flag_provisional and is_provisional(hero_slug, map_slug),

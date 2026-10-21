@@ -146,6 +146,10 @@ def main():
                 f"  - Check the patch notes for **reworked heroes or maps** and add them to `HERO_VALID_FROM_SEASON` / `MAP_VALID_FROM_SEASON` "
                 f"(use `{patch['season']}{'.5' if patch['is_midseason'] else ''}`).\n"
                 f"  - If the label is wrong, fix `data/snapshots/state.json` and the snapshot's `patch` field."
+                + (f"\n  - **Season {current['season']} is complete:** run the pre-registered rank/region test "
+                   f"(`python analysis/check_rank_region.py`, rule fixed 2026-10-21; don't change it after seeing the result), "
+                   f"then regenerate the report and charts."
+                   if patch["season"] > current["season"] else "")
             )
             print(f"NEW PATCH {patch['id']}")
         elif is_pr or is_wr:

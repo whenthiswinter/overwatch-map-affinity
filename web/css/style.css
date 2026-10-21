@@ -361,15 +361,6 @@ tbody tr:hover { background: var(--bg); }
   font-size: 0.75rem;
 }
 
-.rank-flag {
-  font-size: 0.76rem;
-  font-weight: 600;
-  color: var(--muted);
-}
-
-.rank-flag.gm { color: var(--tank); }
-.rank-flag.master { color: var(--c); }
-
 .muted { color: var(--muted); }
 
 .hidden { display: none !important; }
@@ -510,6 +501,12 @@ tbody tr:hover { background: var(--bg); }
   border-radius: 8px;
   background: var(--accent-soft);
   font-size: 0.83rem;
+}
+
+.filter-notice {
+  margin: 0 0 12px;
+  font-size: 0.8rem;
+  color: var(--muted);
 }
 
 .conf { display: inline-flex; align-items: center; gap: 5px; font-size: 0.8rem; cursor: help; white-space: nowrap; }

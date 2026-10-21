@@ -69,22 +69,19 @@ def volatility_bar():
     print("wrote hero_volatility_bar.png")
 
 
-def rank_divergence_scatter(data):
-    master = data["database"].get("MASTER_ALL", {}).get("heroes", {})
-    gm = data["database"].get("GRANDMASTER_AND_CHAMPION_ALL", {}).get("heroes", {})
+def rank_agreement_scatter(data):
+    """Masters vs GM+ raw averages per established hero-map pair. The spread
+    around the diagonal is what noise alone produces; the split-half test in
+    check_rank_region.py found no real rank difference on top of it."""
+    master = {(e["hero"], e["map"]): e for e in data["database"]["MASTER_ALL"]["entries"] if not e["provisional"]}
+    gm = {(e["hero"], e["map"]): e for e in data["database"]["GRANDMASTER_AND_CHAMPION_ALL"]["entries"] if not e["provisional"]}
 
-    rows = []
-    for hero, hd in master.items():
-        if hero not in gm:
-            continue
-        m_by_map = {e["map"]: e["delta_wr"] for e in hd["maps"]}
-        gm_by_map = {e["map"]: e["delta_wr"] for e in gm[hero]["maps"]}
-        for map_slug, m_val in m_by_map.items():
-            if map_slug in gm_by_map:
-                rows.append({"hero": hero, "map": map_slug, "role": hd["role"], "masters": m_val, "gm": gm_by_map[map_slug]})
-
+    rows = [
+        {"role": data["hero_roles"][hero], "masters": master[(hero, m)]["raw_delta_wr"], "gm": gm[(hero, m)]["raw_delta_wr"]}
+        for hero, m in master.keys() & gm.keys()
+    ]
     df = pd.DataFrame(rows)
-    df["diff"] = (df["gm"] - df["masters"]).abs()
+    r = df["masters"].corr(df["gm"])
     role_colors = {"Tank": "#3498db", "Damage": "#e74c3c", "Support": "#2ecc71"}
 
     plt.figure(figsize=(11, 11))
@@ -96,24 +93,16 @@ def rank_divergence_scatter(data):
     plt.xlim(-lim, lim)
     plt.ylim(-lim, lim)
 
-    for _, row in df.nlargest(20, "diff").iterrows():
-        plt.annotate(
-            hero_name(row["hero"]),
-            (row["masters"], row["gm"]),
-            textcoords="offset points", xytext=(5, 4),
-            fontsize=7.5, color="#333333",
-            bbox=dict(boxstyle="round,pad=0.15", fc="white", ec="none", alpha=0.65),
-        )
-
-    plt.xlabel("Delta WR in Masters (%)")
-    plt.ylabel("Delta WR in GM+ (%)")
-    plt.title("Rank Divergence: Masters vs GM+ per hero-map pair", fontsize=14, fontweight="bold", pad=15)
-    plt.figtext(0.5, 0.005, "Labeled: the 20 hero-map pairs with the biggest Masters/GM+ split", ha="center", fontsize=8.5, color="#7f8c8d")
+    plt.xlabel("Raw delta WR in Masters (%)")
+    plt.ylabel("Raw delta WR in GM+ (%)")
+    plt.title(f"Masters and GM+ agree (r = {r:.2f}, {len(df)} hero-map pairs)", fontsize=14, fontweight="bold", pad=15)
+    plt.figtext(0.5, 0.005, "Scatter around the diagonal is sampling noise: a split-half test finds no real rank difference (see report section 2).",
+                ha="center", fontsize=8.5, color="#7f8c8d")
     plt.legend(title="Role")
     plt.tight_layout()
-    plt.savefig(os.path.join(CHART_DIR, "rank_divergence_scatter.png"), dpi=300)
+    plt.savefig(os.path.join(CHART_DIR, "rank_agreement_scatter.png"), dpi=300)
     plt.close()
-    print("wrote rank_divergence_scatter.png")
+    print("wrote rank_agreement_scatter.png")
 
 
 def archetype_by_role():
@@ -171,7 +160,7 @@ def main():
     data = load_web_data()
     heatmap()
     volatility_bar()
-    rank_divergence_scatter(data)
+    rank_agreement_scatter(data)
     archetype_by_role()
     mode_role_matrix(data)
 
