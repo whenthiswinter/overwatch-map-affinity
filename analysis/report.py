@@ -76,7 +76,7 @@ def run():
                         f"{e['presence']} | {e['archetype']} | {e['sample_size']} |\n")
             f.write("\n")
 
-    fields = ["map", "tier", "hero", "delta_wr", "delta_pr", "presence", "archetype",
+    fields = ["map", "tier", "hero", "delta_wr", "pr_lift_pct", "presence", "archetype",
               "sample_size", "raw_delta_wr", "ci95", "provisional"]
     with open(os.path.join(CSV_DIR, "map_tierlists.csv"), "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=fields)
@@ -84,7 +84,7 @@ def run():
         for e in sorted(overall["entries"], key=lambda e: (e["map"], TIER_ORDER[e["tier"]], -e["delta_wr"])):
             writer.writerow({
                 "map": e["map"], "tier": e["tier"], "hero": e["hero"],
-                "delta_wr": e["delta_wr"], "delta_pr": e["delta_pr"],
+                "delta_wr": e["delta_wr"], "pr_lift_pct": e["pr_lift"],
                 "presence": e["presence"], "archetype": e["archetype"],
                 "sample_size": e["sample_size"], "raw_delta_wr": e["raw_delta_wr"], "ci95": e["ci"],
                 "provisional": e["provisional"],

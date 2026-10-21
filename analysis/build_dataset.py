@@ -22,41 +22,47 @@ REGIONS = ["ALL", "AMER", "EU", "ASIA", "KR"]
 REGION_CODE = {"KR": "KOREA"}
 
 
+# Tier lines on the (noise-adjusted) win rate delta, in points. They sit at
+# ~0.6x / 1.4x the game-wide spread of real map effects (2.1) and were checked
+# against split-half reproducibility on 2026-10-21 (PLAN.md phase 5 item 4).
+TIER_INNER, TIER_OUTER = 1.2, 3.0
+
+# Presence lines on the relative pick-rate lift (map pick rate vs the hero's
+# average, in %), placed by the same rule: ~0.6x / 1.4x its spread (33%).
+PRESENCE_INNER, PRESENCE_OUTER = 20.0, 50.0
+
+
 def tier_of(delta):
-    if delta >= 3.0:
+    if delta >= TIER_OUTER:
         return "S"
-    if delta >= 1.2:
+    if delta >= TIER_INNER:
         return "A"
-    if delta >= -1.2:
+    if delta >= -TIER_INNER:
         return "B"
-    if delta >= -3.0:
+    if delta >= -TIER_OUTER:
         return "C"
     return "D"
 
 
 def presence_label(pr_lift):
-    if pr_lift >= 3.0:
-        return f"Map Priority (+{pr_lift:.1f}%)"
-    if pr_lift >= 1.0:
-        return f"Popular (+{pr_lift:.1f}%)"
-    if pr_lift >= -1.0:
-        return f"Standard ({pr_lift:+.1f}%)"
-    return f"Niche ({pr_lift:.1f}%)"
+    if pr_lift >= PRESENCE_OUTER:
+        return f"Map Priority ({pr_lift:+.0f}%)"
+    if pr_lift >= PRESENCE_INNER:
+        return f"Popular ({pr_lift:+.0f}%)"
+    if pr_lift > -PRESENCE_INNER:
+        return f"Standard ({pr_lift:+.0f}%)"
+    return f"Niche ({pr_lift:+.0f}%)"
 
 
-def archetype_of(delta_wr, delta_pr):
-    if delta_wr >= 1.5 and delta_pr >= 1.5:
-        return "Meta"
-    if delta_wr >= 1.5 and delta_pr < 0.0:
-        return "Specialist"
-    if delta_wr <= -1.5 and delta_pr >= 1.0:
-        return "Trap Pick"
-    if delta_wr <= -1.5 and delta_pr < 0.0:
-        return "Deterrent"
-    if delta_wr >= 1.2:
-        return "Favorable"
-    if delta_wr <= -1.2:
-        return "Unfavorable"
+def archetype_of(delta_wr, pr_lift):
+    """Win side from the tier lines (A or better / B / C or worse), pick side
+    from the presence lines (Popular or more / Standard / Niche)."""
+    tier = tier_of(delta_wr)
+    picked_more, picked_less = pr_lift >= PRESENCE_INNER, pr_lift <= -PRESENCE_INNER
+    if tier in "SA":
+        return "Meta" if picked_more else "Specialist" if picked_less else "Favorable"
+    if tier in "CD":
+        return "Trap Pick" if picked_more else "Deterrent" if picked_less else "Unfavorable"
     return "Neutral"
 
 
@@ -97,12 +103,13 @@ def flatten(raw, usable):
                     continue
 
                 d_wr = m["winRate"] - baseline_wr
-                d_pr = m["pickRate"] - baseline_pr
+                # Relative, so heroes with very different overall pick rates compare fairly.
+                pr_lift = (m["pickRate"] / baseline_pr - 1) * 100
 
                 slices[hero_slug].append({
                     "season": season, "is_midseason": is_mid, "tier": tier, "region": region,
                     "map_slug": map_slug, "role": role,
-                    "delta_wr": d_wr, "delta_pr": d_pr,
+                    "delta_wr": d_wr, "pr_lift": pr_lift,
                 })
 
     return slices, raw_slice_counts
@@ -216,7 +223,7 @@ def build_scope(raw, usable, flag_provisional):
                     if region_filter != "ALL" and item["region"] != region_code:
                         continue
                     hero_map_wr[hero_slug][item["map_slug"]].append(item["delta_wr"])
-                    hero_map_pr[hero_slug][item["map_slug"]].append(item["delta_pr"])
+                    hero_map_pr[hero_slug][item["map_slug"]].append(item["pr_lift"])
 
             # Pairs that pass the sample-size rule, per hero.
             eligible = {}
@@ -253,15 +260,15 @@ def build_scope(raw, usable, flag_provisional):
                     se2 = noise[hero_slug][map_slug]
                     weight = hero_tau2 / (hero_tau2 + se2) if hero_tau2 + se2 > 0 else 0.0
                     adj_wr = hero_mean + weight * (raw_wr - hero_mean)
-                    avg_pr = mean_of(hero_map_pr[hero_slug][map_slug])
+                    pr_lift = mean_of(hero_map_pr[hero_slug][map_slug])
                     mode_deltas[MAP_MODES.get(map_slug, "Other")].append(adj_wr)
 
                     hero_entries.append({
                         "hero": hero_slug, "map": map_slug,
                         "delta_wr": round(adj_wr, 2), "raw_delta_wr": round(raw_wr, 2),
-                        "delta_pr": round(avg_pr, 2),
-                        "tier": tier_of(adj_wr), "presence": presence_label(avg_pr),
-                        "archetype": archetype_of(adj_wr, avg_pr),
+                        "pr_lift": round(pr_lift, 1),
+                        "tier": tier_of(adj_wr), "presence": presence_label(pr_lift),
+                        "archetype": archetype_of(adj_wr, pr_lift),
                         "sample_size": len(deltas),
                         "ci": round(1.96 * math.sqrt(se2), 2),
                         "provisional": flag_provisional and is_provisional(hero_slug, map_slug),
