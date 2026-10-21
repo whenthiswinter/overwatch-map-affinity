@@ -59,12 +59,19 @@ DAYS_INTO_PATCH = (
 )
 CURRENT_PATCH_MATURE = DAYS_INTO_PATCH >= MATURITY_DAYS
 
+# Map slices with a pick rate below this (%) are dropped. Checked 2026-10-21:
+# such slices scatter 3-5x more than normal ones and sit systematically lower
+# (heroes get dropped where they're losing). Of the options tested, 1% gave the
+# most reproducible pair averages (split-half r 0.547; no cut 0.543, 2% 0.459,
+# 3% 0.379, pick-rate weighting 0.519), and its selection bias averages 0.08.
 MIN_PICK_RATE = 1.0
 
 # A hero-map pair needs at least this many qualifying season/tier/region
-# slices before we'll report a delta for it. Below this, a single fluky
-# slice (e.g. a 0% win rate from a handful of real games) can swing the
-# average by dozens of points and look like a real result when it isn't.
+# slices before we'll report a delta for it (unless fewer are even possible,
+# see build_dataset.max_possible_slices). Checked 2026-10-21: pairs it hides
+# are thin because the hero is rarely played there, their slices are much
+# noisier than the noise model assumes, and there's too little held-out data
+# to validate the model on them. In the main view it hides nothing.
 MIN_SAMPLE_SIZE = 3
 
 # Earliest season we accept data from for a hero: their release, or their
