@@ -152,14 +152,62 @@ def rank_divergence(rank_slices):
     return divergence
 
 
-def ci95(values):
-    """Rough 95% range of a pair's average delta, from how much its slices
-    disagree. Slices of one season are correlated, so treat it as a lower bound."""
-    if len(values) < 2:
+# --- Noise model -------------------------------------------------------------
+# A hero-map number is the average of a few slices that disagree with each
+# other, so part of every number is noise. Per hero (within one rank/region
+# combo):
+#   - each pair's slice variance is pulled toward the hero's pooled variance
+#     (POOL_WEIGHT pseudo-slices), so thin pairs borrow from the hero's others;
+#     its noise is se^2 = variance / n;
+#   - the hero's real map sensitivity is tau^2 = observed variance of its map
+#     averages minus the average se^2 (the "noise-corrected sigma");
+#   - each pair is shrunk toward the hero's mean by tau^2 / (tau^2 + se^2):
+#     well-measured pairs barely move, noisy ones move a lot.
+# Heroes without established (non-provisional) history can't estimate tau
+# from two weeks of data, so they borrow the combo's typical tau^2.
+POOL_WEIGHT = 4
+MIN_PAIRS_FOR_TAU = 5
+
+
+def mean_of(values):
+    return sum(values) / len(values)
+
+
+def variance_of(values):
+    m = mean_of(values)
+    return sum((v - m) ** 2 for v in values) / (len(values) - 1)
+
+
+def pooled_variance(pair_deltas):
+    """Within-pair variance pooled over a hero's pairs, or None if too thin."""
+    dof = sum(len(d) - 1 for d in pair_deltas)
+    if dof < 5:
         return None
-    mean = sum(values) / len(values)
-    sd = math.sqrt(sum((v - mean) ** 2 for v in values) / (len(values) - 1))
-    return round(1.96 * sd / math.sqrt(len(values)), 2)
+    return sum(variance_of(d) * (len(d) - 1) for d in pair_deltas if len(d) > 1) / dof
+
+
+def pair_noise(deltas, pooled):
+    """se^2 of a pair's average, its variance pulled toward the hero's pooled one."""
+    n = len(deltas)
+    var = ((n - 1) * variance_of(deltas) + POOL_WEIGHT * pooled) / (n - 1 + POOL_WEIGHT) if n > 1 else pooled
+    return var / n
+
+
+def signal_variance(means, noises):
+    """Real spread of a hero's map effects: observed variance minus noise."""
+    mu = mean_of(means)
+    observed = sum((m - mu) ** 2 for m in means) / len(means)
+    return max(observed - mean_of(noises), 0.0)
+
+
+def volatility_class(sigma, provisional):
+    if provisional:
+        return "Too early to tell (new or reworked)"
+    if sigma >= 3.0:
+        return "Map-Dependent (σ ≥ 3.0%)"
+    if sigma >= 1.2:
+        return "Flexible (1.2% ≤ σ < 3.0%)"
+    return "Map-Agnostic (σ < 1.2%)"
 
 
 def build_scope(raw, usable, flag_provisional):
@@ -167,6 +215,17 @@ def build_scope(raw, usable, flag_provisional):
     once; the site rebuilds the per-map and per-hero indexes on load."""
     slices, rank_slices, raw_slice_counts = flatten(raw, usable)
     divergence = rank_divergence(rank_slices)
+
+    # Fallback noise levels from all ranks/regions together, for combos too
+    # narrow to measure their own (e.g. one patch, one rank, one region = 1 slice).
+    scope_pairs = {}
+    for hero_slug, items in slices.items():
+        by_map = defaultdict(list)
+        for item in items:
+            by_map[item["map_slug"]].append(item["delta_wr"])
+        scope_pairs[hero_slug] = list(by_map.values())
+    scope_pooled = {h: pooled_variance(p) for h, p in scope_pairs.items()}
+    scope_pooled_all = pooled_variance([d for p in scope_pairs.values() for d in p]) or 0.0
 
     combos = {}
     for rank_filter in RANKS:
@@ -184,49 +243,64 @@ def build_scope(raw, usable, flag_provisional):
                     hero_map_wr[hero_slug][item["map_slug"]].append(item["delta_wr"])
                     hero_map_pr[hero_slug][item["map_slug"]].append(item["delta_pr"])
 
+            # Pairs that pass the sample-size rule, per hero.
+            eligible = {}
+            for hero_slug, maps in hero_map_wr.items():
+                kept = {}
+                for map_slug, deltas in maps.items():
+                    possible = max_possible_slices(raw_slice_counts, usable, hero_slug, map_slug, rank_filter, region_filter)
+                    if len(deltas) >= min(MIN_SAMPLE_SIZE, possible):
+                        kept[map_slug] = deltas
+                if kept:
+                    eligible[hero_slug] = kept
+
+            # Noise per pair, and each hero's real map sensitivity (tau^2).
+            noise, tau2 = {}, {}
+            for hero_slug, kept in eligible.items():
+                pooled = pooled_variance(list(kept.values())) or scope_pooled.get(hero_slug) or scope_pooled_all
+                noise[hero_slug] = {m: pair_noise(d, pooled) for m, d in kept.items()}
+                established = [m for m in kept if not is_provisional(hero_slug, m)]
+                if len(established) >= MIN_PAIRS_FOR_TAU:
+                    tau2[hero_slug] = signal_variance([mean_of(kept[m]) for m in established], [noise[hero_slug][m] for m in established])
+            typical_tau2 = mean_of(list(tau2.values())) if tau2 else 0.0
+
             entries = []
             heroes = {}
 
-            for hero_slug, maps in hero_map_wr.items():
+            for hero_slug, kept in eligible.items():
+                hero_tau2 = tau2.get(hero_slug, typical_tau2)
+                hero_mean = mean_of([mean_of(d) for d in kept.values()])
                 mode_deltas = defaultdict(list)
                 hero_entries = []
 
-                for map_slug, deltas in maps.items():
-                    possible = max_possible_slices(raw_slice_counts, usable, hero_slug, map_slug, rank_filter, region_filter)
-                    if len(deltas) < min(MIN_SAMPLE_SIZE, possible):
-                        continue
-                    avg_wr = sum(deltas) / len(deltas)
-                    avg_pr = sum(hero_map_pr[hero_slug][map_slug]) / len(hero_map_pr[hero_slug][map_slug])
-                    mode_deltas[MAP_MODES.get(map_slug, "Other")].append(avg_wr)
+                for map_slug, deltas in kept.items():
+                    raw_wr = mean_of(deltas)
+                    se2 = noise[hero_slug][map_slug]
+                    weight = hero_tau2 / (hero_tau2 + se2) if hero_tau2 + se2 > 0 else 0.0
+                    adj_wr = hero_mean + weight * (raw_wr - hero_mean)
+                    avg_pr = mean_of(hero_map_pr[hero_slug][map_slug])
+                    mode_deltas[MAP_MODES.get(map_slug, "Other")].append(adj_wr)
 
                     hero_entries.append({
                         "hero": hero_slug, "map": map_slug,
-                        "delta_wr": round(avg_wr, 2), "delta_pr": round(avg_pr, 2),
-                        "tier": tier_of(avg_wr), "presence": presence_label(avg_pr),
-                        "archetype": archetype_of(avg_wr, avg_pr),
+                        "delta_wr": round(adj_wr, 2), "raw_delta_wr": round(raw_wr, 2),
+                        "delta_pr": round(avg_pr, 2),
+                        "tier": tier_of(adj_wr), "presence": presence_label(avg_pr),
+                        "archetype": archetype_of(adj_wr, avg_pr),
                         "rank_skew": divergence[hero_slug].get(map_slug, "Even Across Ranks"),
                         "sample_size": len(deltas),
-                        "ci": ci95(deltas),
+                        "ci": round(1.96 * math.sqrt(se2), 2),
                         "provisional": flag_provisional and is_provisional(hero_slug, map_slug),
                     })
 
-                hero_modes = {m: round(sum(d) / len(d), 2) for m, d in mode_deltas.items() if d}
-
-                all_d = [e["delta_wr"] for e in hero_entries]
-                sigma = 0.0
-                if len(all_d) >= 5:
-                    mean = sum(all_d) / len(all_d)
-                    sigma = round(math.sqrt(sum((x - mean) ** 2 for x in all_d) / len(all_d)), 2)
-
-                vol_class = (
-                    "Map-Dependent (σ ≥ 3.0%)" if sigma >= 3.0
-                    else "Flexible (1.8% ≤ σ < 3.0%)" if sigma >= 1.8
-                    else "Map-Agnostic (σ < 1.8%)"
-                )
+                hero_modes = {m: round(mean_of(d), 2) for m, d in mode_deltas.items() if d}
+                hero_provisional = hero_slug not in tau2
+                sigma = round(math.sqrt(tau2.get(hero_slug, 0.0)), 2)
 
                 heroes[hero_slug] = {
                     "modes": hero_modes,
-                    "volatility": sigma, "volatility_class": vol_class,
+                    "volatility": sigma,
+                    "volatility_class": volatility_class(sigma, hero_provisional),
                     "provisional": bool(hero_entries) and all(e["provisional"] for e in hero_entries),
                 }
                 entries.extend(hero_entries)

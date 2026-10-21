@@ -52,15 +52,16 @@ def heatmap():
 
 
 def volatility_bar():
-    df = pd.read_csv(os.path.join(CSV_DIR, "hero_volatility.csv")).sort_values("volatility_sigma")
+    df = pd.read_csv(os.path.join(CSV_DIR, "hero_volatility.csv"))
+    df = df[~df["classification"].str.startswith("Too early")].sort_values("volatility_sigma")
 
     plt.figure(figsize=(10, 14))
-    colors = ["#2ecc71" if s < 1.8 else "#f39c12" if s < 3.0 else "#e74c3c" for s in df["volatility_sigma"]]
+    colors = ["#2ecc71" if s < 1.2 else "#f39c12" if s < 3.0 else "#e74c3c" for s in df["volatility_sigma"]]
     plt.barh(df["hero"].map(hero_name), df["volatility_sigma"], color=colors, height=0.7)
-    plt.axvline(1.8, color="#7f8c8d", linestyle="--", linewidth=1, alpha=0.7)
+    plt.axvline(1.2, color="#7f8c8d", linestyle="--", linewidth=1, alpha=0.7)
     plt.axvline(3.0, color="#7f8c8d", linestyle="--", linewidth=1, alpha=0.7)
-    plt.title("Hero Map-Sensitivity Index (sigma of Delta WR)", fontsize=14, fontweight="bold", pad=15)
-    plt.xlabel("Standard deviation (%)")
+    plt.title("Hero Map-Sensitivity Index (noise-corrected sigma of Delta WR)", fontsize=14, fontweight="bold", pad=15)
+    plt.xlabel("Standard deviation of real map effects (%)")
     plt.ylabel("Hero")
     plt.tight_layout()
     plt.savefig(os.path.join(CHART_DIR, "hero_volatility_bar.png"), dpi=300)

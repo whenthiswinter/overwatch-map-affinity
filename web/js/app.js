@@ -157,8 +157,11 @@ function confidence(e) {
 
 function confTitle(e) {
   const c = confidence(e);
-  return `${c.level} confidence: the true value is likely within ${c.range === "single slice" ? "an unknown range (only one slice)" : c.range + " points"} of this, from ${e.sample_size} slice${e.sample_size === 1 ? "" : "s"}`;
+  const raw = `${e.raw_delta_wr > 0 ? "+" : ""}${e.raw_delta_wr.toFixed(2)}%`;
+  return `${c.level} confidence. Raw average ${raw}, likely within ${c.range === "single slice" ? "an unknown range" : c.range + " points"} of the true value (${e.sample_size} slice${e.sample_size === 1 ? "" : "s"}). Shown value is adjusted for that noise.`;
 }
+
+const sigmaText = (h) => (h.volatility_class.startsWith("Too early") ? "&sigma; &ndash;" : `&sigma; ${h.volatility.toFixed(2)}%`);
 
 function confCell(e) {
   const c = confidence(e);
@@ -242,7 +245,7 @@ function renderHeroTab(slice) {
   el("heroRolePill").textContent = hData.role;
   el("heroRolePill").className = `role-pill ${hData.role}`;
   el("heroProv").innerHTML = hData.provisional ? provTag(hData) : "";
-  el("heroVol").innerHTML = `Map sensitivity: <strong>&sigma; ${hData.volatility.toFixed(2)}%</strong> <span class="muted">(${hData.volatility_class})</span>`;
+  el("heroVol").innerHTML = `Map sensitivity: <strong>${sigmaText(hData)}</strong> <span class="muted">(${hData.volatility_class})</span>`;
 
   el("modeGrid").innerHTML = MODES.map((m) => {
     const val = hData.modes[m] ?? 0;
@@ -271,7 +274,7 @@ function renderHeroTab(slice) {
 
 function volClass(sigma) {
   if (sigma >= 3.0) return "vol-high";
-  if (sigma >= 1.8) return "vol-mid";
+  if (sigma >= 1.2) return "vol-mid";
   return "vol-low";
 }
 
@@ -293,7 +296,7 @@ function renderPoolTab(slice) {
   stats.innerHTML = statHeroes.map((h) => `
     <div class="pool-stat-chip">
       <span class="role-tag ${h.role}">${heroName(h.hero)}</span>
-      <span class="sigma ${volClass(h.volatility)}">&sigma; ${h.volatility.toFixed(2)}%</span>
+      <span class="sigma ${volClass(h.volatility)}">${sigmaText(h)}</span>
     </div>`).join("");
 
   const modesToShow = poolModeFilter === "ALL" ? MODES : [poolModeFilter];
