@@ -20,7 +20,7 @@ const fmt = (slug) => slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperC
 const heroName = (slug) => esc((data && data.hero_names && data.hero_names[slug]) || fmt(slug));
 const mapName = (slug) => esc((data && data.map_names && data.map_names[slug]) || fmt(slug));
 const signed = (v, digits = 2) => `${v > 0 ? "+" : ""}${v.toFixed(digits)}`;
-const provTag = (e) => (e.provisional ? '<span class="prov-tag">Provisional</span>' : "");
+const provTag = (e, short = false) => (e.provisional ? `<span class="prov-tag">${short ? "Prov" : "Provisional"}</span>` : "");
 const fmtDate = (iso) => new Date(`${iso}T00:00:00`).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
 
 const CONTROLS = { scope: "scopeSelect", rank: "rankSelect", region: "regionSelect", map: "mapSelect", role: "roleSelect", hero: "heroSelect" };
@@ -404,7 +404,7 @@ function renderPoolTab(slice) {
             <div class="pick-row expandable" tabindex="0" aria-expanded="false">
               <span class="name">
                 <span class="badge badge-sm ${e.tier}">${e.tier}</span>
-                ${heroName(e.hero)}${provTag(e)}
+                ${heroName(e.hero)}${provTag(e, true)}
                 ${isBest ? `<span class="best-tag ${role}">#1</span>` : ""}
               </span>
               <span class="pick-stats">

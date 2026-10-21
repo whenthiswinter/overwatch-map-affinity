@@ -505,6 +505,7 @@ tbody tr:hover { background: var(--bg); }
 }
 
 .pick-row {
+  gap: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -512,9 +513,10 @@ tbody tr:hover { background: var(--bg); }
   font-size: 0.83rem;
 }
 
-.pick-row .name { display: flex; align-items: center; gap: 6px; }
+.pick-row .name { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 6px; min-width: 0; }
 
-.pick-stats { display: flex; align-items: center; gap: 8px; }
+.pick-stats { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
+.pick-row .prov-tag { margin-left: 0; }
 
 .freshness {
   margin: 6px 0 0;
@@ -625,6 +627,10 @@ footer {
   font-size: 0.78rem;
   max-width: 70ch;
 }
+
+footer a { color: var(--accent); }
+.footer-links, .credits { margin: 8px 0 0; }
+.credits { color: var(--text); }
 
 dialog {
   background: var(--surface);
