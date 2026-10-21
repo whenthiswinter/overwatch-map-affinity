@@ -9,5 +9,15 @@
       "detected_by": "manual"
     }
   ],
-  "notified": []
+  "notified": [],
+  "first_seen": {
+    "heroes": {
+      "doctrine": 5,
+      "roadhog": 5,
+      "sombra": 5
+    },
+    "maps": {
+      "grimsvotn": 5
+    }
+  }
 }

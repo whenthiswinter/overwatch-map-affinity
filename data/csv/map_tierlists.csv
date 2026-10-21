@@ -1,9 +1,9 @@
 map,tier,hero,delta_wr,pr_lift_pct,presence,archetype,sample_size,raw_delta_wr,ci95,tier_probability_pct,provisional
 aatlis,S,junker-queen,3.95,80.9,Map Priority (+81%),Meta,51,4.48,2.05,83,False
-aatlis,A,lucio,2.68,115.0,Map Priority (+115%),Meta,52,2.8,1.31,68,False
+aatlis,A,lucio,2.68,115.0,Map Priority (+115%),Meta,52,2.8,1.31,67,False
 aatlis,A,mauga,2.61,49.5,Popular (+50%),Meta,52,3.73,2.07,60,False
 aatlis,A,anran,2.08,68.3,Map Priority (+68%),Meta,52,4.0,2.51,66,False
-aatlis,A,junkrat,1.91,17.5,Standard (+17%),Favorable,50,2.31,1.87,69,False
+aatlis,A,junkrat,1.91,17.5,Standard (+18%),Favorable,50,2.31,1.87,69,False
 aatlis,A,zarya,1.85,34.0,Popular (+34%),Meta,52,2.52,2.13,63,False
 aatlis,A,reinhardt,1.63,16.0,Standard (+16%),Favorable,50,2.1,2.78,49,False
 aatlis,A,dmon,1.56,24.0,Popular (+24%),Meta,16,2.8,2.37,58,False
@@ -28,7 +28,7 @@ aatlis,B,illari,-0.04,-50.0,Niche (-50%),Neutral,51,0.2,1.62,91,False
 aatlis,B,tracer,-0.11,29.1,Popular (+29%),Neutral,52,0.12,2.36,80,False
 aatlis,B,genji,-0.13,5.0,Standard (+5%),Neutral,52,0.29,1.85,87,False
 aatlis,B,kiriko,-0.14,20.6,Popular (+21%),Neutral,51,-0.14,0.94,99,False
-aatlis,B,emre,-0.26,-44.5,Niche (-45%),Neutral,52,0.08,2.44,78,False
+aatlis,B,emre,-0.26,-44.5,Niche (-44%),Neutral,52,0.08,2.44,78,False
 aatlis,B,mei,-0.28,7.7,Standard (+8%),Neutral,52,-0.47,2.21,80,False
 aatlis,B,symmetra,-0.36,7.9,Standard (+8%),Neutral,51,-0.33,1.78,82,False
 aatlis,B,sojourn,-0.38,1.8,Standard (+2%),Neutral,52,-0.36,2.12,80,False
@@ -36,8 +36,8 @@ aatlis,B,soldier-76,-0.38,-24.8,Niche (-25%),Neutral,51,-0.39,1.8,83,False
 aatlis,B,juno,-0.4,3.4,Standard (+3%),Neutral,52,0.08,1.81,83,False
 aatlis,B,zenyatta,-0.64,-46.4,Niche (-46%),Neutral,51,-0.72,1.59,78,False
 aatlis,B,mercy,-0.72,-39.9,Niche (-40%),Neutral,49,-1.45,2.67,66,False
-aatlis,B,baptiste,-0.74,-28.7,Niche (-29%),Neutral,51,-1.09,3.12,63,False
-aatlis,B,wuyang,-0.99,3.5,Standard (+3%),Neutral,52,-1.67,2.12,59,False
+aatlis,B,baptiste,-0.74,-28.7,Niche (-29%),Neutral,51,-1.09,3.12,64,False
+aatlis,B,wuyang,-0.99,3.5,Standard (+4%),Neutral,52,-1.67,2.12,59,False
 aatlis,B,roadhog,-1.05,2.6,Standard (+3%),Neutral,8,-2.8,6.83,43,True
 aatlis,C,ashe,-1.4,-79.4,Niche (-79%),Deterrent,37,-3.92,3.25,51,False
 aatlis,C,doctrine,-1.51,-8.8,Standard (-9%),Unfavorable,8,-2.46,3.33,46,True
@@ -57,7 +57,7 @@ antarctic-peninsula,S,cassidy,3.16,34.4,Popular (+34%),Meta,40,3.6,0.85,65,False
 antarctic-peninsula,A,junker-queen,2.77,37.4,Popular (+37%),Meta,40,3.08,1.79,57,False
 antarctic-peninsula,A,torbjorn,2.39,-2.8,Standard (-3%),Favorable,40,3.22,2.44,58,False
 antarctic-peninsula,A,ramattra,2.03,22.5,Popular (+22%),Meta,40,2.4,1.4,82,False
-antarctic-peninsula,A,symmetra,1.76,19.7,Standard (+20%),Favorable,40,2.19,1.68,70,False
+antarctic-peninsula,A,symmetra,1.76,19.7,Standard (+20%),Favorable,40,2.19,1.68,71,False
 antarctic-peninsula,A,mauga,1.66,23.0,Popular (+23%),Meta,40,2.2,1.73,67,False
 antarctic-peninsula,A,zarya,1.54,21.7,Popular (+22%),Meta,40,1.84,1.51,66,False
 antarctic-peninsula,A,bastion,1.53,-12.1,Standard (-12%),Favorable,39,1.71,1.24,70,False
@@ -65,8 +65,8 @@ antarctic-peninsula,A,moira,1.45,30.1,Popular (+30%),Meta,40,1.76,1.24,66,False
 antarctic-peninsula,A,reinhardt,1.45,14.6,Standard (+15%),Favorable,40,1.57,1.48,62,False
 antarctic-peninsula,A,tracer,1.28,19.9,Standard (+20%),Favorable,40,1.46,0.94,57,False
 antarctic-peninsula,A,domina,1.23,-25.7,Niche (-26%),Specialist,39,1.73,2.28,46,False
-antarctic-peninsula,B,kiriko,1.17,11.4,Standard (+11%),Neutral,40,1.26,0.75,54,False
-antarctic-peninsula,B,soldier-76,0.92,-6.6,Standard (-7%),Neutral,40,1.17,1.32,68,False
+antarctic-peninsula,B,kiriko,1.17,11.4,Standard (+11%),Neutral,40,1.26,0.75,53,False
+antarctic-peninsula,B,soldier-76,0.92,-6.6,Standard (-7%),Neutral,40,1.17,1.32,67,False
 antarctic-peninsula,B,brigitte,0.74,9.8,Standard (+10%),Neutral,40,0.96,1.39,76,False
 antarctic-peninsula,B,mizuki,0.6,29.0,Popular (+29%),Neutral,40,0.69,1.46,80,False
 antarctic-peninsula,B,orisa,0.54,18.5,Standard (+18%),Neutral,40,0.72,1.75,79,False
@@ -74,7 +74,7 @@ antarctic-peninsula,B,wuyang,0.53,7.3,Standard (+7%),Neutral,40,0.64,0.94,93,Fal
 antarctic-peninsula,B,vendetta,0.51,17.0,Standard (+17%),Neutral,37,0.76,1.7,81,False
 antarctic-peninsula,B,baptiste,0.41,-13.6,Standard (-14%),Neutral,40,0.98,1.61,85,False
 antarctic-peninsula,B,illari,0.3,-28.8,Niche (-29%),Neutral,40,1.29,1.75,86,False
-antarctic-peninsula,B,sierra,0.22,-10.5,Standard (-11%),Neutral,31,-0.89,2.07,83,False
+antarctic-peninsula,B,sierra,0.22,-10.5,Standard (-10%),Neutral,31,-0.89,2.07,83,False
 antarctic-peninsula,B,mei,0.18,3.1,Standard (+3%),Neutral,40,0.57,1.98,85,False
 antarctic-peninsula,B,lifeweaver,0.13,-25.3,Niche (-25%),Neutral,40,0.96,2.25,82,False
 antarctic-peninsula,B,reaper,0.06,22.2,Popular (+22%),Neutral,40,0.25,1.63,91,False
@@ -94,7 +94,7 @@ antarctic-peninsula,B,shion,-0.69,35.6,Popular (+36%),Neutral,28,-0.83,1.03,85,F
 antarctic-peninsula,B,ashe,-0.71,-59.1,Niche (-59%),Neutral,40,-0.66,1.64,75,False
 antarctic-peninsula,B,juno,-0.71,9.2,Standard (+9%),Neutral,40,-1.05,2.03,71,False
 antarctic-peninsula,B,mercy,-0.9,-22.1,Niche (-22%),Neutral,39,-1.62,2.25,62,False
-antarctic-peninsula,B,echo,-0.94,-30.1,Niche (-30%),Neutral,40,-1.0,1.38,65,False
+antarctic-peninsula,B,echo,-0.94,-30.1,Niche (-30%),Neutral,40,-1.0,1.38,66,False
 antarctic-peninsula,B,wrecking-ball,-1.18,-3.9,Standard (-4%),Neutral,40,-1.28,1.49,51,False
 antarctic-peninsula,C,dva,-1.22,-18.1,Standard (-18%),Unfavorable,40,-1.82,1.99,49,False
 antarctic-peninsula,C,sombra,-1.24,14.4,Standard (+14%),Unfavorable,8,-1.72,4.74,38,True
@@ -112,7 +112,7 @@ blizzard-world,B,wrecking-ball,0.96,20.4,Popular (+20%),Neutral,51,1.51,2.67,55,
 blizzard-world,B,anran,0.6,-14.9,Standard (-15%),Neutral,51,2.13,3.69,65,False
 blizzard-world,B,dva,0.47,10.4,Standard (+10%),Neutral,52,1.34,1.92,80,False
 blizzard-world,B,jetpack-cat,0.46,-6.2,Standard (-6%),Neutral,52,0.86,3.42,59,False
-blizzard-world,B,winston,0.37,25.8,Popular (+26%),Neutral,52,0.48,1.52,85,False
+blizzard-world,B,winston,0.37,25.8,Popular (+26%),Neutral,52,0.48,1.52,84,False
 blizzard-world,B,sojourn,0.32,7.4,Standard (+7%),Neutral,52,0.57,1.5,89,False
 blizzard-world,B,sierra,0.22,30.7,Popular (+31%),Neutral,38,-3.02,4.08,69,False
 blizzard-world,B,sombra,0.17,-2.1,Standard (-2%),Neutral,8,4.18,8.07,48,True
@@ -122,26 +122,26 @@ blizzard-world,B,venture,0.04,-9.1,Standard (-9%),Neutral,50,3.37,3.71,71,False
 blizzard-world,B,wuyang,0.04,3.0,Standard (+3%),Neutral,52,0.1,1.27,96,False
 blizzard-world,B,dmon,0.02,-11.4,Standard (-11%),Neutral,16,2.32,7.13,61,False
 blizzard-world,B,bastion,-0.1,0.4,Standard (+0%),Neutral,51,-0.16,2.73,72,False
-blizzard-world,B,illari,-0.17,18.0,Standard (+18%),Neutral,52,-0.16,1.51,92,False
+blizzard-world,B,illari,-0.17,18.0,Standard (+18%),Neutral,52,-0.16,1.51,91,False
 blizzard-world,B,roadhog,-0.18,22.4,Popular (+22%),Neutral,8,1.21,10.07,46,True
 blizzard-world,B,mercy,-0.21,14.5,Standard (+14%),Neutral,51,-0.18,2.92,75,False
 blizzard-world,B,orisa,-0.21,-7.5,Standard (-8%),Neutral,52,-0.28,2.67,74,False
-blizzard-world,B,genji,-0.27,-5.5,Standard (-5%),Neutral,52,-0.93,1.55,89,False
+blizzard-world,B,genji,-0.27,-5.5,Standard (-6%),Neutral,52,-0.93,1.55,90,False
 blizzard-world,B,mei,-0.29,-5.2,Standard (-5%),Neutral,51,-0.69,3.16,72,False
 blizzard-world,B,emre,-0.33,18.3,Standard (+18%),Neutral,52,-0.28,2.22,80,False
 blizzard-world,B,juno,-0.45,-15.4,Standard (-15%),Neutral,51,0.78,3.36,69,False
 blizzard-world,B,shion,-0.45,-14.2,Standard (-14%),Neutral,28,-0.88,2.7,73,False
-blizzard-world,B,widowmaker,-0.48,84.5,Map Priority (+85%),Neutral,52,-0.42,1.7,77,False
+blizzard-world,B,widowmaker,-0.48,84.5,Map Priority (+84%),Neutral,52,-0.42,1.7,77,False
 blizzard-world,B,ashe,-0.74,27.7,Popular (+28%),Neutral,52,-0.71,1.75,72,False
 blizzard-world,B,zenyatta,-0.84,16.2,Standard (+16%),Neutral,51,-1.05,1.74,68,False
 blizzard-world,B,reaper,-0.86,-24.3,Niche (-24%),Neutral,52,-1.57,3.07,60,False
 blizzard-world,B,freja,-0.9,13.0,Standard (+13%),Neutral,50,-1.2,2.47,61,False
-blizzard-world,B,echo,-0.92,-28.4,Niche (-28%),Neutral,52,-1.21,3.17,56,False
+blizzard-world,B,echo,-0.92,-28.4,Niche (-28%),Neutral,52,-1.21,3.17,57,False
 blizzard-world,B,doomfist,-0.97,0.2,Standard (+0%),Neutral,52,-2.07,2.45,59,False
 blizzard-world,B,hanzo,-1.13,20.4,Popular (+20%),Neutral,52,-1.52,2.2,53,False
-blizzard-world,B,kiriko,-1.16,-5.5,Standard (-5%),Neutral,52,-1.49,1.6,52,False
+blizzard-world,B,kiriko,-1.16,-5.5,Standard (-6%),Neutral,52,-1.49,1.6,52,False
 blizzard-world,C,sigma,-1.22,22.6,Popular (+23%),Trap Pick,52,-1.19,1.57,50,False
-blizzard-world,C,soldier-76,-1.25,2.7,Standard (+3%),Unfavorable,52,-1.74,2.19,49,False
+blizzard-world,C,soldier-76,-1.25,2.7,Standard (+3%),Unfavorable,52,-1.74,2.19,50,False
 blizzard-world,C,symmetra,-1.27,-10.7,Standard (-11%),Unfavorable,51,-1.83,3.26,44,False
 blizzard-world,C,baptiste,-1.37,-4.8,Standard (-5%),Unfavorable,52,-2.77,2.82,51,False
 blizzard-world,C,tracer,-1.57,1.6,Standard (+2%),Unfavorable,52,-1.95,1.73,66,False
@@ -168,7 +168,7 @@ busan,B,widowmaker,0.95,-2.0,Standard (-2%),Neutral,16,1.17,2.92,50,False
 busan,B,roadhog,0.94,0.3,Standard (+0%),Neutral,8,4.98,7.09,44,True
 busan,B,cassidy,0.93,11.0,Standard (+11%),Neutral,16,1.57,1.73,64,False
 busan,B,moira,0.88,20.4,Popular (+20%),Neutral,16,2.29,3.01,57,False
-busan,B,freja,0.8,-31.2,Niche (-31%),Neutral,16,2.81,3.24,62,False
+busan,B,freja,0.8,-31.2,Niche (-31%),Neutral,16,2.81,3.24,61,False
 busan,B,zenyatta,0.68,-12.3,Standard (-12%),Neutral,16,1.78,2.34,70,False
 busan,B,anran,0.66,9.1,Standard (+9%),Neutral,15,2.07,3.41,64,False
 busan,B,echo,0.53,-49.2,Niche (-49%),Neutral,16,2.23,3.79,62,False
@@ -203,7 +203,7 @@ busan,B,juno,-0.55,-7.2,Standard (-7%),Neutral,16,-0.26,2.81,70,False
 busan,B,torbjorn,-0.62,-7.9,Standard (-8%),Neutral,16,-1.16,4.16,54,False
 busan,B,doomfist,-0.66,3.8,Standard (+4%),Neutral,16,-1.39,2.67,68,False
 busan,B,hazard,-0.71,-0.8,Standard (-1%),Neutral,16,-0.77,2.55,63,False
-busan,B,ashe,-0.73,-34.5,Niche (-35%),Neutral,16,-0.62,3.12,64,False
+busan,B,ashe,-0.73,-34.5,Niche (-34%),Neutral,16,-0.62,3.12,64,False
 busan,B,baptiste,-0.73,-27.5,Niche (-28%),Neutral,16,-1.03,3.07,64,False
 busan,B,bastion,-0.73,-16.8,Standard (-17%),Neutral,16,-1.52,3.7,57,False
 busan,B,domina,-1.1,-28.7,Niche (-29%),Neutral,15,-1.09,4.34,44,False
@@ -214,7 +214,7 @@ busan,C,brigitte,-1.5,15.0,Standard (+15%),Unfavorable,16,-2.23,2.88,52,False
 busan,C,sigma,-1.65,-34.4,Niche (-34%),Deterrent,16,-1.64,2.48,52,False
 busan,C,doctrine,-1.76,-1.1,Standard (-1%),Unfavorable,8,-2.71,3.08,51,True
 busan,C,lucio,-1.87,26.2,Popular (+26%),Trap Pick,16,-1.85,2.85,48,False
-busan,D,junkrat,-3.19,-30.5,Niche (-31%),Deterrent,16,-7.87,5.14,55,False
+busan,D,junkrat,-3.19,-30.5,Niche (-30%),Deterrent,16,-7.87,5.14,55,False
 circuit-royal,S,sigma,7.45,149.7,Map Priority (+150%),Meta,52,8.02,1.64,100,False
 circuit-royal,S,domina,5.64,153.4,Map Priority (+153%),Meta,52,6.6,1.86,100,False
 circuit-royal,S,widowmaker,5.63,125.2,Map Priority (+125%),Meta,52,5.92,2.45,98,False
@@ -222,7 +222,7 @@ circuit-royal,S,doctrine,3.09,5.8,Standard (+6%),Favorable,8,6.31,4.14,52,True
 circuit-royal,A,bastion,2.61,60.3,Map Priority (+60%),Meta,52,4.27,2.88,52,False
 circuit-royal,A,sojourn,1.88,69.6,Map Priority (+70%),Meta,52,2.47,1.31,84,False
 circuit-royal,A,symmetra,1.68,8.7,Standard (+9%),Favorable,51,2.48,2.32,59,False
-circuit-royal,B,mizuki,1.2,-49.4,Niche (-49%),Neutral,51,1.91,2.82,48,False
+circuit-royal,A,mizuki,1.2,-49.4,Niche (-49%),Specialist,51,1.91,2.82,44,False
 circuit-royal,B,mei,1.19,82.4,Map Priority (+82%),Neutral,51,3.29,2.26,50,False
 circuit-royal,B,reinhardt,1.16,21.9,Popular (+22%),Neutral,51,1.43,2.39,50,False
 circuit-royal,B,juno,1.11,86.2,Map Priority (+86%),Neutral,52,4.14,1.54,55,False
@@ -247,9 +247,9 @@ circuit-royal,B,ashe,-0.55,83.0,Map Priority (+83%),Neutral,52,-0.02,2.57,72,Fal
 circuit-royal,B,cassidy,-0.67,-59.2,Niche (-59%),Neutral,51,-0.87,1.8,75,False
 circuit-royal,B,vendetta,-0.78,-39.1,Niche (-39%),Neutral,35,-1.67,3.45,61,False
 circuit-royal,B,wrecking-ball,-1.07,-42.2,Niche (-42%),Neutral,50,-1.41,3.03,51,False
-circuit-royal,C,zarya,-1.22,8.5,Standard (+9%),Unfavorable,52,-1.29,1.91,49,False
-circuit-royal,C,doomfist,-1.35,-23.5,Niche (-23%),Deterrent,52,-4.16,3.12,50,False
-circuit-royal,C,junkrat,-1.4,4.4,Standard (+4%),Unfavorable,52,-1.72,2.09,53,False
+circuit-royal,C,zarya,-1.22,8.5,Standard (+8%),Unfavorable,52,-1.29,1.91,49,False
+circuit-royal,C,doomfist,-1.35,-23.5,Niche (-24%),Deterrent,52,-4.16,3.12,50,False
+circuit-royal,C,junkrat,-1.4,4.4,Standard (+4%),Unfavorable,52,-1.72,2.09,54,False
 circuit-royal,C,dva,-1.57,-43.4,Niche (-43%),Deterrent,52,-3.46,2.83,56,False
 circuit-royal,C,dmon,-1.65,-33.7,Niche (-34%),Deterrent,16,-4.38,4.39,50,False
 circuit-royal,C,moira,-1.65,-39.1,Niche (-39%),Deterrent,51,-2.31,3.59,49,False
@@ -259,14 +259,14 @@ circuit-royal,C,jetpack-cat,-1.86,-25.0,Niche (-25%),Deterrent,52,-2.54,2.94,52,
 circuit-royal,C,torbjorn,-1.93,-18.3,Standard (-18%),Unfavorable,50,-3.15,3.38,49,False
 circuit-royal,C,shion,-2.07,-66.6,Niche (-67%),Deterrent,28,-4.18,1.9,74,False
 circuit-royal,C,echo,-2.4,-15.1,Standard (-15%),Unfavorable,51,-3.11,2.01,67,False
-circuit-royal,C,pharah,-2.55,43.5,Popular (+43%),Trap Pick,51,-3.09,2.74,51,False
+circuit-royal,C,pharah,-2.55,43.5,Popular (+44%),Trap Pick,51,-3.09,2.74,51,False
 circuit-royal,C,kiriko,-2.78,-38.8,Niche (-39%),Deterrent,52,-3.63,1.62,61,False
 circuit-royal,C,sombra,-2.99,-51.4,Niche (-51%),Deterrent,8,-14.2,9.45,33,True
 circuit-royal,D,mauga,-3.54,-38.8,Niche (-39%),Deterrent,47,-4.78,2.29,71,False
-circuit-royal,D,brigitte,-4.19,-70.5,Niche (-71%),Deterrent,48,-6.47,2.64,87,False
+circuit-royal,D,brigitte,-4.19,-70.5,Niche (-70%),Deterrent,48,-6.47,2.64,87,False
 circuit-royal,D,tracer,-4.55,-78.8,Niche (-79%),Deterrent,51,-6.33,1.93,97,False
-circuit-royal,D,hazard,-5.45,-66.5,Niche (-67%),Deterrent,43,-8.4,3.26,97,False
-circuit-royal,D,junker-queen,-6.53,-51.5,Niche (-51%),Deterrent,35,-8.44,3.74,98,False
+circuit-royal,D,hazard,-5.45,-66.5,Niche (-66%),Deterrent,43,-8.4,3.26,97,False
+circuit-royal,D,junker-queen,-6.53,-51.5,Niche (-52%),Deterrent,35,-8.44,3.74,98,False
 circuit-royal,D,winston,-8.81,-61.1,Niche (-61%),Deterrent,51,-9.57,2.16,100,False
 circuit-royal,D,lucio,-9.3,-72.6,Niche (-73%),Deterrent,43,-9.93,2.35,100,False
 colosseo,S,reinhardt,3.95,5.0,Standard (+5%),Favorable,51,4.49,2.06,83,False
@@ -285,7 +285,7 @@ colosseo,B,sojourn,0.9,17.0,Standard (+17%),Neutral,52,1.61,1.91,64,False
 colosseo,B,hazard,0.77,2.4,Standard (+2%),Neutral,51,0.9,1.32,75,False
 colosseo,B,shion,0.67,24.7,Popular (+25%),Neutral,28,1.08,1.17,83,False
 colosseo,B,freja,0.61,-21.7,Niche (-22%),Neutral,51,1.25,1.95,75,False
-colosseo,B,kiriko,0.61,4.5,Standard (+5%),Neutral,52,0.84,1.56,80,False
+colosseo,B,kiriko,0.61,4.5,Standard (+4%),Neutral,52,0.84,1.56,80,False
 colosseo,B,wuyang,0.57,5.1,Standard (+5%),Neutral,52,1.24,2.19,74,False
 colosseo,B,illari,0.53,-7.8,Standard (-8%),Neutral,52,1.15,1.14,89,False
 colosseo,B,wrecking-ball,0.52,18.3,Standard (+18%),Neutral,52,0.81,2.36,69,False
@@ -307,10 +307,10 @@ colosseo,B,emre,-0.55,3.6,Standard (+4%),Neutral,52,-1.11,2.01,77,False
 colosseo,B,zarya,-0.67,-3.3,Standard (-3%),Neutral,52,-0.6,2.5,64,False
 colosseo,B,mauga,-0.84,10.3,Standard (+10%),Neutral,51,-0.9,1.81,66,False
 colosseo,B,ashe,-0.89,-30.0,Niche (-30%),Neutral,51,-0.99,1.47,68,False
-colosseo,B,roadhog,-0.89,-5.5,Standard (-5%),Neutral,8,-2.19,6.76,45,True
+colosseo,B,roadhog,-0.89,-5.5,Standard (-6%),Neutral,8,-2.19,6.76,45,True
 colosseo,B,reaper,-0.92,-8.2,Standard (-8%),Neutral,52,-1.63,2.87,59,False
 colosseo,B,pharah,-0.95,-5.1,Standard (-5%),Neutral,52,-0.93,3.15,52,False
-colosseo,B,doctrine,-1.15,3.5,Standard (+3%),Neutral,8,-2.41,4.47,45,True
+colosseo,B,doctrine,-1.15,3.5,Standard (+4%),Neutral,8,-2.41,4.47,45,True
 colosseo,C,dva,-1.31,-7.8,Standard (-8%),Unfavorable,52,-3.05,3.15,49,False
 colosseo,C,moira,-1.39,3.1,Standard (+3%),Unfavorable,51,-1.56,2.43,52,False
 colosseo,C,bastion,-1.45,-18.0,Standard (-18%),Unfavorable,49,-1.88,1.95,57,False
@@ -325,7 +325,7 @@ colosseo,D,domina,-3.68,-15.6,Standard (-16%),Unfavorable,48,-4.56,2.92,70,False
 colosseo,D,widowmaker,-4.57,-22.5,Niche (-22%),Deterrent,52,-4.56,2.66,88,False
 dorado,S,ana,4.05,19.3,Standard (+19%),Favorable,52,4.87,1.98,87,False
 dorado,S,winston,3.88,111.4,Map Priority (+111%),Meta,52,4.29,1.76,84,False
-dorado,S,wrecking-ball,3.74,14.5,Standard (+15%),Favorable,51,5.02,2.34,76,False
+dorado,S,wrecking-ball,3.74,14.5,Standard (+14%),Favorable,51,5.02,2.34,76,False
 dorado,A,echo,2.05,75.8,Map Priority (+76%),Meta,52,4.33,2.91,59,False
 dorado,A,doctrine,1.81,-6.1,Standard (-6%),Favorable,8,3.82,4.24,44,True
 dorado,A,wuyang,1.32,-17.7,Standard (-18%),Favorable,52,2.46,2.03,53,False
@@ -356,7 +356,7 @@ dorado,B,cassidy,-0.62,-5.5,Standard (-6%),Neutral,52,-0.67,0.93,90,False
 dorado,B,emre,-0.65,5.1,Standard (+5%),Neutral,52,-2.07,2.56,69,False
 dorado,B,juno,-0.68,-19.1,Standard (-19%),Neutral,48,-1.03,2.38,69,False
 dorado,B,mizuki,-0.69,-19.3,Standard (-19%),Neutral,52,-1.26,3.5,58,False
-dorado,B,tracer,-0.85,-8.1,Standard (-8%),Neutral,52,-0.98,1.72,67,False
+dorado,B,tracer,-0.85,-8.1,Standard (-8%),Neutral,52,-0.98,1.72,68,False
 dorado,B,vendetta,-0.98,-3.9,Standard (-4%),Neutral,48,-2.74,4.19,54,False
 dorado,B,zenyatta,-1.03,-21.6,Niche (-22%),Neutral,52,-1.91,2.95,55,False
 dorado,C,junkrat,-1.3,18.6,Standard (+19%),Unfavorable,50,-2.04,3.26,43,False
@@ -377,7 +377,7 @@ dorado,D,lucio,-4.39,-51.6,Niche (-52%),Deterrent,49,-4.83,3.44,81,False
 dorado,D,domina,-5.38,-34.4,Niche (-34%),Deterrent,44,-7.15,3.19,96,False
 dorado,D,zarya,-6.21,-49.2,Niche (-49%),Deterrent,49,-7.73,2.32,100,False
 dorado,D,sigma,-6.99,-34.9,Niche (-35%),Deterrent,52,-8.15,3.09,100,False
-eichenwalde,A,ana,2.55,7.5,Standard (+7%),Favorable,16,3.71,2.89,50,False
+eichenwalde,A,ana,2.55,7.5,Standard (+8%),Favorable,16,3.71,2.89,50,False
 eichenwalde,A,jetpack-cat,1.93,5.8,Standard (+6%),Favorable,16,5.41,5.77,38,False
 eichenwalde,A,junkrat,1.59,87.5,Map Priority (+88%),Meta,16,5.35,6.29,37,False
 eichenwalde,A,dmon,1.41,16.0,Standard (+16%),Favorable,16,5.87,4.7,46,False
@@ -398,7 +398,7 @@ eichenwalde,B,mei,-0.02,23.5,Popular (+24%),Neutral,16,1.95,6.81,64,False
 eichenwalde,B,illari,-0.1,2.0,Standard (+2%),Neutral,16,0.71,3.97,70,False
 eichenwalde,B,doomfist,-0.12,-2.5,Standard (-2%),Neutral,16,1.31,5.51,66,False
 eichenwalde,B,doctrine,-0.19,-0.7,Standard (-1%),Neutral,8,-0.44,5.86,51,True
-eichenwalde,B,genji,-0.19,5.5,Standard (+5%),Neutral,16,-0.69,3.33,72,False
+eichenwalde,B,genji,-0.19,5.5,Standard (+6%),Neutral,16,-0.69,3.33,72,False
 eichenwalde,B,soldier-76,-0.25,-25.8,Niche (-26%),Neutral,16,0.53,8.07,60,False
 eichenwalde,B,mauga,-0.41,-6.3,Standard (-6%),Neutral,15,0.18,6.19,54,False
 eichenwalde,B,mizuki,-0.41,-4.7,Standard (-5%),Neutral,16,-0.86,4.17,58,False
@@ -408,11 +408,11 @@ eichenwalde,B,emre,-0.55,-14.9,Standard (-15%),Neutral,16,-4.47,5.15,62,False
 eichenwalde,B,freja,-0.55,8.7,Standard (+9%),Neutral,16,-0.61,8.45,59,False
 eichenwalde,B,hazard,-0.55,-20.7,Niche (-21%),Neutral,16,-0.55,4.12,55,False
 eichenwalde,B,dva,-0.59,-8.7,Standard (-9%),Neutral,16,-0.92,6.46,60,False
-eichenwalde,B,juno,-0.62,-8.0,Standard (-8%),Neutral,16,-1.01,4.7,61,False
+eichenwalde,B,juno,-0.62,-8.0,Standard (-8%),Neutral,16,-1.01,4.7,62,False
 eichenwalde,B,ramattra,-0.65,14.2,Standard (+14%),Neutral,15,-0.11,6.84,48,False
 eichenwalde,B,zenyatta,-0.65,15.7,Standard (+16%),Neutral,16,-1.93,6.11,59,False
 eichenwalde,B,cassidy,-0.66,15.6,Standard (+16%),Neutral,16,-1.01,2.41,70,False
-eichenwalde,B,ashe,-0.82,-19.5,Standard (-19%),Neutral,16,-1.47,5.34,56,False
+eichenwalde,B,ashe,-0.82,-19.5,Standard (-20%),Neutral,16,-1.47,5.34,57,False
 eichenwalde,B,shion,-0.82,-21.7,Niche (-22%),Neutral,16,-2.63,3.18,61,False
 eichenwalde,B,wrecking-ball,-0.87,-10.4,Standard (-10%),Neutral,16,-1.94,6.35,45,False
 eichenwalde,B,kiriko,-0.89,-5.4,Standard (-5%),Neutral,16,-2.14,3.67,57,False
@@ -434,16 +434,16 @@ eichenwalde,D,lucio,-3.84,-22.6,Niche (-23%),Deterrent,16,-4.44,4.61,66,False
 esperanca,A,lucio,2.97,36.5,Popular (+36%),Meta,52,3.34,2.17,46,False
 esperanca,A,winston,2.22,31.1,Popular (+31%),Meta,52,2.5,1.73,70,False
 esperanca,A,junker-queen,1.61,26.1,Popular (+26%),Meta,49,1.93,2.16,56,False
-esperanca,A,soldier-76,1.53,31.2,Popular (+31%),Meta,51,2.22,1.78,64,False
+esperanca,A,soldier-76,1.53,31.2,Popular (+31%),Meta,51,2.22,1.78,63,False
 esperanca,A,kiriko,1.5,15.8,Standard (+16%),Favorable,52,1.69,0.97,74,False
 esperanca,B,reinhardt,1.19,-15.2,Standard (-15%),Neutral,51,1.44,2.28,49,False
-esperanca,B,junkrat,1.13,-24.1,Niche (-24%),Neutral,50,1.71,2.9,49,False
+esperanca,B,junkrat,1.13,-24.1,Niche (-24%),Neutral,50,1.71,2.9,50,False
 esperanca,B,torbjorn,0.99,-13.1,Standard (-13%),Neutral,50,1.48,2.85,54,False
 esperanca,B,dmon,0.96,8.4,Standard (+8%),Neutral,16,2.3,2.98,57,False
 esperanca,B,echo,0.77,0.6,Standard (+1%),Neutral,52,1.14,1.61,72,False
 esperanca,B,hanzo,0.69,-56.3,Niche (-56%),Neutral,49,1.45,2.39,68,False
 esperanca,B,jetpack-cat,0.57,16.7,Standard (+17%),Neutral,52,0.86,2.76,63,False
-esperanca,B,mauga,0.56,24.2,Popular (+24%),Neutral,51,0.93,1.97,74,False
+esperanca,B,mauga,0.56,24.2,Popular (+24%),Neutral,51,0.93,1.97,75,False
 esperanca,B,shion,0.51,34.6,Popular (+35%),Neutral,28,0.69,0.84,95,False
 esperanca,B,vendetta,0.5,6.9,Standard (+7%),Neutral,47,1.41,3.23,68,False
 esperanca,B,moira,0.45,12.0,Standard (+12%),Neutral,52,1.37,2.75,68,False
@@ -469,8 +469,8 @@ esperanca,B,genji,-0.11,-6.2,Standard (-6%),Neutral,52,0.53,1.93,86,False
 esperanca,B,reaper,-0.12,-2.2,Standard (-2%),Neutral,51,0.11,2.34,81,False
 esperanca,B,hazard,-0.14,22.0,Popular (+22%),Neutral,51,-0.07,1.74,85,False
 esperanca,B,illari,-0.41,-13.8,Standard (-14%),Neutral,52,-0.73,1.41,88,False
-esperanca,B,cassidy,-0.52,11.8,Standard (+12%),Neutral,52,-0.58,1.4,86,False
-esperanca,B,orisa,-0.57,-16.2,Standard (-16%),Neutral,52,-0.96,2.98,66,False
+esperanca,B,cassidy,-0.52,11.8,Standard (+12%),Neutral,52,-0.58,1.4,85,False
+esperanca,B,orisa,-0.57,-16.2,Standard (-16%),Neutral,52,-0.96,2.98,65,False
 esperanca,B,ashe,-0.61,-43.2,Niche (-43%),Neutral,51,-0.53,1.26,84,False
 esperanca,B,freja,-0.65,-24.7,Niche (-25%),Neutral,49,-0.77,2.83,67,False
 esperanca,B,juno,-0.69,11.8,Standard (+12%),Neutral,51,-1.33,3.19,65,False
@@ -478,7 +478,7 @@ esperanca,B,roadhog,-0.97,-6.3,Standard (-6%),Neutral,8,-2.4,6.56,44,True
 esperanca,B,baptiste,-1.0,-36.7,Niche (-37%),Neutral,51,-1.61,2.57,57,False
 esperanca,C,anran,-1.23,2.3,Standard (+2%),Unfavorable,49,-2.14,2.69,48,False
 esperanca,C,dva,-1.47,23.4,Popular (+23%),Trap Pick,51,-2.25,1.93,60,False
-esperanca,C,zarya,-1.63,-20.6,Niche (-21%),Deterrent,52,-1.98,3.0,49,False
+esperanca,C,zarya,-1.63,-20.6,Niche (-21%),Deterrent,52,-1.98,3.0,50,False
 esperanca,C,zenyatta,-1.67,-38.8,Niche (-39%),Deterrent,51,-2.36,1.79,69,False
 esperanca,C,ana,-1.97,-19.6,Standard (-20%),Unfavorable,52,-2.29,2.14,63,False
 esperanca,C,domina,-2.32,-34.6,Niche (-35%),Deterrent,47,-2.91,3.49,46,False
@@ -499,9 +499,9 @@ grimsvotn,B,hazard,0.33,-52.4,Niche (-52%),Neutral,8,1.68,5.21,52,True
 grimsvotn,B,brigitte,0.26,-35.2,Niche (-35%),Neutral,8,2.32,5.44,58,True
 grimsvotn,B,sierra,0.22,15.1,Standard (+15%),Neutral,8,2.0,5.42,65,True
 grimsvotn,B,kiriko,0.18,-12.3,Standard (-12%),Neutral,8,0.56,3.08,73,True
-grimsvotn,B,bastion,0.14,40.5,Popular (+41%),Neutral,8,0.37,4.8,58,True
+grimsvotn,B,bastion,0.14,40.5,Popular (+40%),Neutral,8,0.37,4.8,58,True
 grimsvotn,B,lifeweaver,0.13,5.9,Standard (+6%),Neutral,8,-2.05,5.19,66,True
-grimsvotn,B,torbjorn,0.13,6.5,Standard (+7%),Neutral,8,0.4,4.84,54,True
+grimsvotn,B,torbjorn,0.13,6.5,Standard (+6%),Neutral,8,0.4,4.84,54,True
 grimsvotn,B,symmetra,0.09,-4.1,Standard (-4%),Neutral,8,2.24,7.32,51,True
 grimsvotn,B,roadhog,0.05,11.6,Standard (+12%),Neutral,8,1.68,7.67,48,True
 grimsvotn,B,venture,0.04,-0.3,Standard (-0%),Neutral,8,1.89,5.73,65,True
@@ -518,8 +518,8 @@ grimsvotn,B,sojourn,-0.3,39.4,Popular (+39%),Neutral,8,-0.17,2.8,75,True
 grimsvotn,B,wuyang,-0.3,35.2,Popular (+35%),Neutral,8,-0.75,4.48,67,True
 grimsvotn,B,doomfist,-0.31,-7.6,Standard (-8%),Neutral,8,-0.46,5.98,64,True
 grimsvotn,B,wrecking-ball,-0.31,-43.6,Niche (-44%),Neutral,8,0.03,8.02,47,True
-grimsvotn,B,zarya,-0.31,58.5,Map Priority (+59%),Neutral,8,0.52,5.19,51,True
-grimsvotn,B,soldier-76,-0.36,-24.5,Niche (-25%),Neutral,8,-0.41,6.66,60,True
+grimsvotn,B,zarya,-0.31,58.5,Map Priority (+58%),Neutral,8,0.52,5.19,51,True
+grimsvotn,B,soldier-76,-0.36,-24.5,Niche (-24%),Neutral,8,-0.41,6.66,60,True
 grimsvotn,B,tracer,-0.39,-33.6,Niche (-34%),Neutral,8,-0.25,3.67,67,True
 grimsvotn,B,emre,-0.41,12.7,Standard (+13%),Neutral,8,-1.37,4.43,66,True
 grimsvotn,B,dva,-0.55,-53.5,Niche (-54%),Neutral,8,-0.53,5.41,62,True
@@ -542,9 +542,9 @@ grimsvotn,D,widowmaker,-3.17,17.7,Standard (+18%),Unfavorable,8,-3.03,4.28,53,Tr
 havana,S,widowmaker,5.88,175.9,Map Priority (+176%),Meta,52,6.19,2.51,99,False
 havana,S,sigma,5.72,136.5,Map Priority (+136%),Meta,51,6.19,1.64,100,False
 havana,S,zenyatta,3.33,114.1,Map Priority (+114%),Meta,51,4.93,1.53,69,False
-havana,A,ana,1.81,33.5,Popular (+33%),Meta,51,2.0,1.34,79,False
+havana,A,ana,1.81,33.5,Popular (+34%),Meta,51,2.0,1.34,79,False
 havana,A,doctrine,1.56,1.4,Standard (+1%),Favorable,8,3.52,4.51,42,True
-havana,A,domina,1.38,146.9,Map Priority (+147%),Meta,50,2.08,2.62,47,False
+havana,A,domina,1.38,146.9,Map Priority (+147%),Meta,50,2.08,2.62,48,False
 havana,A,orisa,1.24,5.1,Standard (+5%),Favorable,51,2.49,3.17,45,False
 havana,B,bastion,1.15,18.3,Standard (+18%),Neutral,49,1.58,2.21,51,False
 havana,B,hanzo,0.51,158.4,Map Priority (+158%),Neutral,52,1.0,2.07,76,False
@@ -558,7 +558,7 @@ havana,B,ashe,0.07,83.3,Map Priority (+83%),Neutral,51,1.03,1.76,88,False
 havana,B,venture,0.04,-23.0,Niche (-23%),Neutral,47,-0.77,3.96,70,False
 havana,B,torbjorn,0.02,3.3,Standard (+3%),Neutral,50,0.06,2.93,67,False
 havana,B,tracer,-0.08,-48.3,Niche (-48%),Neutral,52,0.28,2.82,75,False
-havana,B,sojourn,-0.14,37.5,Popular (+37%),Neutral,52,0.09,2.33,81,False
+havana,B,sojourn,-0.14,37.5,Popular (+38%),Neutral,52,0.09,2.33,81,False
 havana,B,freja,-0.15,42.0,Popular (+42%),Neutral,51,0.3,2.85,76,False
 havana,B,genji,-0.15,8.6,Standard (+9%),Neutral,52,0.32,3.25,73,False
 havana,B,sombra,-0.17,-21.6,Niche (-22%),Neutral,8,1.93,7.09,49,True
@@ -566,20 +566,20 @@ havana,B,roadhog,-0.25,-9.0,Standard (-9%),Neutral,8,1.6,14.04,45,True
 havana,B,dva,-0.3,-28.2,Niche (-28%),Neutral,51,0.06,2.5,77,False
 havana,B,juno,-0.48,-16.4,Standard (-16%),Neutral,49,0.21,2.76,72,False
 havana,B,mercy,-0.58,24.4,Popular (+24%),Neutral,50,-1.4,3.32,67,False
-havana,B,shion,-0.71,-52.5,Niche (-53%),Neutral,28,-2.05,3.04,65,False
+havana,B,shion,-0.71,-52.5,Niche (-52%),Neutral,28,-2.05,3.04,65,False
 havana,B,mei,-0.72,24.0,Popular (+24%),Neutral,51,-2.51,3.24,64,False
 havana,B,dmon,-0.83,-23.7,Niche (-24%),Neutral,15,-3.47,7.28,53,False
 havana,B,anran,-0.9,-26.3,Niche (-26%),Neutral,46,-2.06,3.75,57,False
-havana,B,reaper,-1.07,-48.6,Niche (-49%),Neutral,51,-2.45,3.54,52,False
+havana,B,reaper,-1.07,-48.6,Niche (-49%),Neutral,51,-2.45,3.54,53,False
 havana,B,junkrat,-1.1,-28.4,Niche (-28%),Neutral,49,-2.04,3.99,47,False
-havana,B,wuyang,-1.15,-2.5,Standard (-3%),Neutral,52,-2.78,3.01,51,False
+havana,B,wuyang,-1.15,-2.5,Standard (-2%),Neutral,52,-2.78,3.01,51,False
 havana,C,cassidy,-1.32,-50.0,Niche (-50%),Deterrent,51,-2.21,2.28,52,False
 havana,C,hazard,-1.33,-62.3,Niche (-62%),Deterrent,46,-1.94,3.68,42,False
 havana,C,symmetra,-1.34,-1.3,Standard (-1%),Unfavorable,48,-2.12,3.68,43,False
 havana,C,mauga,-1.35,-34.9,Niche (-35%),Deterrent,47,-1.88,2.97,47,False
 havana,C,doomfist,-1.43,-15.0,Standard (-15%),Unfavorable,51,-3.19,2.38,55,False
 havana,C,vendetta,-1.47,-28.8,Niche (-29%),Deterrent,37,-4.03,3.96,50,False
-havana,C,moira,-1.55,-39.1,Niche (-39%),Deterrent,50,-2.23,3.95,47,False
+havana,C,moira,-1.55,-39.1,Niche (-39%),Deterrent,50,-2.23,3.95,46,False
 havana,C,mizuki,-1.64,-48.3,Niche (-48%),Deterrent,50,-2.57,2.86,53,False
 havana,C,ramattra,-1.83,43.5,Popular (+44%),Trap Pick,50,-2.28,2.64,57,False
 havana,C,brigitte,-2.0,-52.2,Niche (-52%),Deterrent,48,-3.02,2.78,59,False
@@ -595,7 +595,7 @@ havana,D,winston,-6.74,-39.3,Niche (-39%),Deterrent,51,-7.42,2.44,100,False
 havana,D,lucio,-8.62,-68.2,Niche (-68%),Deterrent,46,-9.4,2.74,100,False
 hollywood,A,zarya,1.43,15.2,Standard (+15%),Favorable,51,2.3,2.65,49,False
 hollywood,B,ana,0.99,18.6,Standard (+19%),Neutral,52,1.11,1.33,63,False
-hollywood,B,sierra,0.22,5.5,Standard (+5%),Neutral,34,-0.56,2.85,75,False
+hollywood,B,sierra,0.22,5.5,Standard (+6%),Neutral,34,-0.56,2.85,75,False
 hollywood,B,lifeweaver,0.13,18.8,Standard (+19%),Neutral,50,-1.88,2.5,79,False
 hollywood,B,venture,0.04,-9.0,Standard (-9%),Neutral,50,-4.47,3.93,70,False
 hollywood,B,hanzo,0.01,28.0,Popular (+28%),Neutral,52,0.64,3.45,71,False
@@ -614,10 +614,10 @@ hollywood,B,mei,-0.39,14.9,Standard (+15%),Neutral,51,-0.99,2.9,73,False
 hollywood,B,illari,-0.4,10.0,Standard (+10%),Neutral,52,-1.72,2.93,72,False
 hollywood,B,tracer,-0.4,-15.6,Standard (-16%),Neutral,52,-0.37,2.13,78,False
 hollywood,B,mercy,-0.45,19.4,Standard (+19%),Neutral,51,-0.87,2.97,71,False
-hollywood,B,bastion,-0.52,10.5,Standard (+11%),Neutral,51,-0.84,2.78,66,False
+hollywood,B,bastion,-0.52,10.5,Standard (+10%),Neutral,51,-0.84,2.78,66,False
 hollywood,B,freja,-0.55,6.2,Standard (+6%),Neutral,51,-0.55,2.92,69,False
 hollywood,B,domina,-0.61,8.0,Standard (+8%),Neutral,52,-0.41,3.18,57,False
-hollywood,B,zenyatta,-0.66,15.7,Standard (+16%),Neutral,52,-0.98,2.92,66,False
+hollywood,B,zenyatta,-0.66,15.7,Standard (+16%),Neutral,52,-0.98,2.92,67,False
 hollywood,B,ramattra,-0.69,-12.5,Standard (-12%),Neutral,51,-0.53,4.35,53,False
 hollywood,B,juno,-0.85,-7.8,Standard (-8%),Neutral,52,-2.51,2.98,61,False
 hollywood,B,baptiste,-0.87,9.9,Standard (+10%),Neutral,52,-1.32,2.68,61,False
@@ -630,14 +630,14 @@ hollywood,C,reaper,-1.25,-3.3,Standard (-3%),Unfavorable,52,-2.67,3.22,47,False
 hollywood,C,mizuki,-1.29,-10.9,Standard (-11%),Unfavorable,52,-1.55,1.71,53,False
 hollywood,C,wrecking-ball,-1.29,-16.4,Standard (-16%),Unfavorable,50,-1.53,2.17,50,False
 hollywood,C,cassidy,-1.3,-5.7,Standard (-6%),Unfavorable,52,-1.71,1.55,55,False
-hollywood,C,orisa,-1.31,-4.5,Standard (-5%),Unfavorable,52,-2.12,2.68,49,False
+hollywood,C,orisa,-1.31,-4.5,Standard (-4%),Unfavorable,52,-2.12,2.68,49,False
 hollywood,C,moira,-1.35,-13.2,Standard (-13%),Unfavorable,51,-1.53,2.55,50,False
 hollywood,C,pharah,-1.45,-5.0,Standard (-5%),Unfavorable,50,-1.55,2.15,54,False
 hollywood,C,torbjorn,-1.58,27.1,Popular (+27%),Trap Pick,51,-2.19,2.65,52,False
 hollywood,C,brigitte,-1.62,-8.4,Standard (-8%),Unfavorable,51,-2.07,2.13,61,False
 hollywood,C,vendetta,-1.85,-5.6,Standard (-6%),Unfavorable,46,-2.97,2.3,66,False
 hollywood,C,soldier-76,-2.09,-20.1,Niche (-20%),Deterrent,50,-3.56,2.73,62,False
-hollywood,C,junkrat,-2.18,20.0,Standard (+20%),Unfavorable,50,-2.79,2.28,62,False
+hollywood,C,junkrat,-2.18,20.0,Popular (+20%),Trap Pick,50,-2.79,2.28,62,False
 hollywood,C,widowmaker,-2.18,35.3,Popular (+35%),Trap Pick,52,-2.15,1.53,75,False
 hollywood,C,symmetra,-2.5,-1.8,Standard (-2%),Unfavorable,51,-4.86,4.18,45,False
 hollywood,C,sojourn,-2.6,-14.2,Standard (-14%),Unfavorable,52,-3.84,1.97,64,False
@@ -654,15 +654,15 @@ ilios,A,torbjorn,2.29,-12.4,Standard (-12%),Favorable,51,2.77,1.88,69,False
 ilios,A,pharah,1.86,37.1,Popular (+37%),Meta,51,2.05,1.2,84,False
 ilios,A,echo,1.75,82.6,Map Priority (+83%),Meta,52,2.04,1.1,84,False
 ilios,A,junkrat,1.58,-21.3,Niche (-21%),Specialist,51,2.22,2.6,53,False
-ilios,A,junker-queen,1.31,3.5,Standard (+4%),Favorable,47,1.78,2.81,43,False
+ilios,A,junker-queen,1.31,3.5,Standard (+4%),Favorable,47,1.78,2.81,44,False
 ilios,A,winston,1.3,42.6,Popular (+43%),Meta,52,1.46,1.5,54,False
 ilios,B,vendetta,1.17,7.9,Standard (+8%),Neutral,47,1.65,1.68,52,False
 ilios,B,kiriko,0.8,11.7,Standard (+12%),Neutral,52,1.01,1.34,74,False
-ilios,B,mercy,0.71,-6.4,Standard (-6%),Neutral,50,1.12,1.41,77,False
-ilios,B,anran,0.64,11.0,Standard (+11%),Neutral,49,0.93,1.56,78,False
+ilios,B,mercy,0.71,-6.4,Standard (-6%),Neutral,50,1.12,1.41,78,False
+ilios,B,anran,0.64,11.0,Standard (+11%),Neutral,49,0.93,1.56,79,False
 ilios,B,freja,0.56,45.9,Popular (+46%),Neutral,52,1.12,1.88,78,False
 ilios,B,reaper,0.41,30.1,Popular (+30%),Neutral,52,0.65,1.39,89,False
-ilios,B,widowmaker,0.41,-11.5,Standard (-11%),Neutral,52,0.49,1.88,75,False
+ilios,B,widowmaker,0.41,-11.5,Standard (-12%),Neutral,52,0.49,1.88,75,False
 ilios,B,wrecking-ball,0.41,41.7,Popular (+42%),Neutral,52,0.67,2.37,71,False
 ilios,B,sombra,0.32,20.5,Popular (+20%),Neutral,8,1.73,4.46,55,True
 ilios,B,bastion,0.29,-26.2,Niche (-26%),Neutral,48,0.37,1.93,81,False
@@ -678,22 +678,22 @@ ilios,B,moira,-0.18,10.9,Standard (+11%),Neutral,51,-0.09,1.15,96,False
 ilios,B,doomfist,-0.24,8.8,Standard (+9%),Neutral,52,-0.2,1.69,88,False
 ilios,B,emre,-0.29,-28.6,Niche (-29%),Neutral,52,-0.13,2.08,82,False
 ilios,B,cassidy,-0.3,21.4,Popular (+21%),Neutral,52,-0.3,1.04,96,False
-ilios,B,shion,-0.48,8.6,Standard (+9%),Neutral,28,-0.53,0.87,96,False
+ilios,B,shion,-0.48,8.6,Standard (+9%),Neutral,28,-0.53,0.87,95,False
 ilios,B,ashe,-0.67,-44.0,Niche (-44%),Neutral,51,-0.58,1.52,78,False
-ilios,B,brigitte,-0.67,42.5,Popular (+43%),Neutral,52,-0.74,2.22,69,False
+ilios,B,brigitte,-0.67,42.5,Popular (+42%),Neutral,52,-0.74,2.22,69,False
 ilios,B,roadhog,-0.67,18.8,Standard (+19%),Neutral,8,-1.19,5.9,48,True
 ilios,B,baptiste,-0.71,-26.9,Niche (-27%),Neutral,51,-0.8,1.73,74,False
 ilios,B,illari,-0.79,-27.9,Niche (-28%),Neutral,52,-2.34,1.91,69,False
-ilios,B,dmon,-0.81,-10.5,Standard (-11%),Neutral,16,-1.11,2.48,64,False
+ilios,B,dmon,-0.81,-10.5,Standard (-10%),Neutral,16,-1.11,2.48,64,False
 ilios,B,hanzo,-0.82,-49.2,Niche (-49%),Neutral,52,-0.96,1.8,68,False
 ilios,B,orisa,-0.99,-14.2,Standard (-14%),Neutral,50,-1.1,1.1,65,False
 ilios,B,mizuki,-1.02,16.6,Standard (+17%),Neutral,52,-1.22,1.69,59,False
-ilios,B,sojourn,-1.11,-40.1,Niche (-40%),Neutral,52,-1.44,1.81,54,False
+ilios,B,sojourn,-1.11,-40.1,Niche (-40%),Neutral,52,-1.44,1.81,55,False
 ilios,C,tracer,-1.26,28.8,Popular (+29%),Trap Pick,52,-1.73,2.25,50,False
 ilios,C,reinhardt,-1.33,-34.9,Niche (-35%),Deterrent,50,-1.38,1.6,55,False
 ilios,C,wuyang,-1.45,-26.0,Niche (-26%),Deterrent,52,-1.83,1.26,66,False
-ilios,C,ana,-1.59,-19.3,Standard (-19%),Unfavorable,52,-1.61,0.67,87,False
-ilios,C,mei,-1.75,-39.8,Niche (-40%),Deterrent,50,-3.82,2.06,68,False
+ilios,C,ana,-1.59,-19.3,Standard (-19%),Unfavorable,52,-1.61,0.67,88,False
+ilios,C,mei,-1.75,-39.8,Niche (-40%),Deterrent,50,-3.82,2.06,67,False
 ilios,C,soldier-76,-2.04,-33.4,Niche (-33%),Deterrent,51,-2.8,1.97,72,False
 ilios,C,ramattra,-2.06,-60.3,Niche (-60%),Deterrent,36,-2.57,2.53,59,False
 ilios,C,mauga,-2.13,-2.8,Standard (-3%),Unfavorable,49,-2.48,1.66,76,False
@@ -702,7 +702,7 @@ ilios,D,doctrine,-3.75,-9.2,Standard (-9%),Unfavorable,8,-6.06,3.26,72,True
 ilios,D,domina,-4.57,-48.1,Niche (-48%),Deterrent,43,-6.23,3.44,86,False
 ilios,D,sigma,-4.59,-62.3,Niche (-62%),Deterrent,51,-4.73,1.49,98,False
 junkertown,S,widowmaker,5.82,119.2,Map Priority (+119%),Meta,52,6.0,1.95,100,False
-junkertown,A,sigma,2.61,81.5,Map Priority (+81%),Meta,52,3.13,2.28,54,False
+junkertown,A,sigma,2.61,81.5,Map Priority (+82%),Meta,52,3.13,2.28,54,False
 junkertown,A,ana,2.29,28.0,Popular (+28%),Meta,52,2.9,2.18,62,False
 junkertown,A,wrecking-ball,1.79,10.9,Standard (+11%),Favorable,51,3.07,3.21,50,False
 junkertown,A,hanzo,1.47,76.4,Map Priority (+76%),Meta,51,2.02,1.57,63,False
@@ -710,7 +710,7 @@ junkertown,A,junkrat,1.41,-19.1,Standard (-19%),Favorable,48,2.19,3.05,46,False
 junkertown,B,zenyatta,1.02,50.6,Map Priority (+51%),Neutral,52,3.65,3.15,55,False
 junkertown,B,freja,0.9,29.1,Popular (+29%),Neutral,51,3.76,3.71,57,False
 junkertown,B,sojourn,0.5,2.2,Standard (+2%),Neutral,52,0.95,1.81,80,False
-junkertown,B,brigitte,0.38,-18.5,Standard (-19%),Neutral,51,1.16,3.14,67,False
+junkertown,B,brigitte,0.38,-18.5,Standard (-18%),Neutral,51,1.16,3.14,67,False
 junkertown,B,kiriko,0.35,-16.9,Standard (-17%),Neutral,52,0.79,2.73,74,False
 junkertown,B,torbjorn,0.35,9.3,Standard (+9%),Neutral,49,0.64,3.43,61,False
 junkertown,B,hazard,0.29,-29.7,Niche (-30%),Neutral,51,0.67,2.88,66,False
@@ -735,7 +735,7 @@ junkertown,B,winston,-0.59,9.9,Standard (+10%),Neutral,52,-0.49,1.93,71,False
 junkertown,B,dva,-0.62,6.7,Standard (+7%),Neutral,52,-0.81,3.34,66,False
 junkertown,B,mauga,-0.63,-17.1,Standard (-17%),Neutral,51,-0.65,3.99,58,False
 junkertown,B,reaper,-0.73,-24.7,Niche (-25%),Neutral,51,-1.24,3.06,64,False
-junkertown,B,jetpack-cat,-0.75,-21.5,Niche (-21%),Neutral,51,-1.09,3.68,53,False
+junkertown,B,jetpack-cat,-0.75,-21.5,Niche (-22%),Neutral,51,-1.09,3.68,53,False
 junkertown,B,echo,-0.76,-35.9,Niche (-36%),Neutral,50,-0.93,3.64,59,False
 junkertown,B,juno,-0.82,-17.5,Standard (-18%),Neutral,50,-2.62,3.32,61,False
 junkertown,B,cassidy,-0.85,-25.7,Niche (-26%),Neutral,52,-1.31,2.22,64,False
@@ -744,17 +744,17 @@ junkertown,B,sombra,-0.91,-17.7,Standard (-18%),Neutral,8,-1.05,8.21,43,True
 junkertown,B,dmon,-0.96,-21.3,Niche (-21%),Neutral,16,-4.5,7.41,50,False
 junkertown,B,symmetra,-1.03,-33.7,Niche (-34%),Neutral,45,-1.64,4.12,49,False
 junkertown,B,ashe,-1.09,65.7,Map Priority (+66%),Neutral,51,-1.46,1.73,56,False
-junkertown,B,wuyang,-1.11,-1.7,Standard (-2%),Neutral,52,-2.02,2.3,54,False
+junkertown,B,wuyang,-1.11,-1.7,Standard (-2%),Neutral,52,-2.02,2.3,53,False
 junkertown,B,vendetta,-1.13,-7.7,Standard (-8%),Neutral,44,-3.28,4.24,50,False
 junkertown,C,mizuki,-1.64,-29.9,Niche (-30%),Deterrent,51,-2.84,3.23,50,False
 junkertown,C,moira,-1.75,-28.9,Niche (-29%),Deterrent,51,-2.42,3.33,52,False
 junkertown,C,soldier-76,-1.89,25.4,Popular (+25%),Trap Pick,52,-3.49,3.02,59,False
-junkertown,C,domina,-1.93,39.9,Popular (+40%),Trap Pick,50,-2.3,3.32,48,False
+junkertown,C,domina,-1.93,39.9,Popular (+40%),Trap Pick,50,-2.3,3.32,47,False
 junkertown,C,zarya,-2.43,-34.6,Niche (-35%),Deterrent,51,-3.43,3.5,47,False
 junkertown,C,ramattra,-2.45,-35.8,Niche (-36%),Deterrent,46,-3.2,2.68,55,False
 junkertown,D,pharah,-3.92,-54.0,Niche (-54%),Deterrent,49,-5.7,3.62,74,False
 junkertown,D,junker-queen,-4.0,-27.3,Niche (-27%),Deterrent,40,-5.26,4.16,71,False
-junkertown,D,lucio,-5.01,-65.4,Niche (-65%),Deterrent,47,-5.56,3.42,90,False
+junkertown,D,lucio,-5.01,-65.4,Niche (-65%),Deterrent,47,-5.56,3.42,89,False
 kings-row,A,junkrat,2.19,40.1,Popular (+40%),Meta,51,2.4,1.28,85,False
 kings-row,A,orisa,2.1,22.1,Popular (+22%),Meta,52,4.17,3.18,56,False
 kings-row,A,ana,1.5,11.4,Standard (+11%),Favorable,52,1.62,1.18,69,False
@@ -771,7 +771,7 @@ kings-row,B,mizuki,0.09,-6.2,Standard (-6%),Neutral,52,0.12,1.79,85,False
 kings-row,B,venture,0.04,8.8,Standard (+9%),Neutral,51,2.12,2.89,76,False
 kings-row,B,cassidy,0.01,-7.6,Standard (-8%),Neutral,52,0.13,1.52,92,False
 kings-row,B,reinhardt,-0.03,38.9,Popular (+39%),Neutral,52,0.03,2.08,77,False
-kings-row,B,genji,-0.11,5.5,Standard (+5%),Neutral,52,0.02,0.93,99,False
+kings-row,B,genji,-0.11,5.5,Standard (+6%),Neutral,52,0.02,0.93,99,False
 kings-row,B,anran,-0.19,-4.6,Standard (-5%),Neutral,52,-0.11,3.0,74,False
 kings-row,B,roadhog,-0.22,-11.3,Standard (-11%),Neutral,8,0.32,6.94,49,True
 kings-row,B,kiriko,-0.24,-10.8,Standard (-11%),Neutral,52,-0.25,0.9,99,False
@@ -779,10 +779,10 @@ kings-row,B,baptiste,-0.39,40.9,Popular (+41%),Neutral,52,-0.35,1.07,94,False
 kings-row,B,mei,-0.42,69.4,Map Priority (+69%),Neutral,52,-0.68,1.79,83,False
 kings-row,B,bastion,-0.52,43.8,Popular (+44%),Neutral,51,-0.62,1.6,81,False
 kings-row,B,juno,-0.58,1.0,Standard (+1%),Neutral,51,-0.56,1.49,82,False
-kings-row,B,shion,-0.58,-23.3,Niche (-23%),Neutral,28,-0.72,1.2,87,False
-kings-row,B,doomfist,-0.67,-4.5,Standard (-5%),Neutral,52,-0.95,1.66,76,False
-kings-row,B,ramattra,-0.67,65.3,Map Priority (+65%),Neutral,51,-0.65,1.51,76,False
-kings-row,B,dva,-0.72,-21.5,Niche (-21%),Neutral,52,-0.93,2.27,69,False
+kings-row,B,shion,-0.58,-23.3,Niche (-23%),Neutral,28,-0.72,1.2,86,False
+kings-row,B,doomfist,-0.67,-4.5,Standard (-4%),Neutral,52,-0.95,1.66,76,False
+kings-row,B,ramattra,-0.67,65.3,Map Priority (+65%),Neutral,51,-0.65,1.51,77,False
+kings-row,B,dva,-0.72,-21.5,Niche (-22%),Neutral,52,-0.93,2.27,69,False
 kings-row,B,sojourn,-0.75,6.6,Standard (+7%),Neutral,52,-0.82,1.16,79,False
 kings-row,B,sigma,-0.78,18.5,Standard (+18%),Neutral,52,-0.64,2.5,59,False
 kings-row,B,hazard,-0.79,-28.0,Niche (-28%),Neutral,51,-0.86,2.27,63,False
@@ -794,12 +794,12 @@ kings-row,B,symmetra,-0.91,11.9,Standard (+12%),Neutral,51,-1.03,2.14,61,False
 kings-row,B,echo,-0.92,3.5,Standard (+4%),Neutral,52,-1.01,1.74,64,False
 kings-row,B,emre,-0.95,-9.0,Standard (-9%),Neutral,52,-2.77,2.07,61,False
 kings-row,B,mauga,-1.08,-17.7,Standard (-18%),Neutral,51,-1.17,1.54,57,False
-kings-row,B,soldier-76,-1.16,-39.2,Niche (-39%),Neutral,51,-1.85,2.72,50,False
+kings-row,B,soldier-76,-1.16,-39.2,Niche (-39%),Neutral,51,-1.85,2.72,51,False
 kings-row,C,lucio,-1.22,-34.4,Niche (-34%),Deterrent,52,-1.11,2.95,40,False
 kings-row,C,moira,-1.24,-8.5,Standard (-8%),Unfavorable,51,-1.27,1.31,52,False
 kings-row,C,brigitte,-1.26,-34.9,Niche (-35%),Deterrent,52,-1.65,2.45,48,False
 kings-row,C,wuyang,-1.27,11.1,Standard (+11%),Unfavorable,52,-1.56,1.21,55,False
-kings-row,C,vendetta,-1.39,-6.5,Standard (-7%),Unfavorable,49,-2.27,2.4,54,False
+kings-row,C,vendetta,-1.39,-6.5,Standard (-6%),Unfavorable,49,-2.27,2.4,54,False
 kings-row,C,mercy,-1.41,-1.9,Standard (-2%),Unfavorable,52,-2.26,1.83,59,False
 kings-row,C,ashe,-1.47,-4.7,Standard (-5%),Unfavorable,52,-1.81,1.13,69,False
 kings-row,C,torbjorn,-1.74,5.2,Standard (+5%),Unfavorable,50,-2.06,1.83,67,False
@@ -830,14 +830,14 @@ lijiang-tower,B,cassidy,0.45,22.8,Popular (+23%),Neutral,52,0.54,0.79,97,False
 lijiang-tower,B,junkrat,0.35,25.7,Popular (+26%),Neutral,51,0.42,1.71,83,False
 lijiang-tower,B,doomfist,0.24,13.0,Standard (+13%),Neutral,52,0.64,1.67,88,False
 lijiang-tower,B,sierra,0.22,-19.1,Standard (-19%),Neutral,33,-0.58,1.37,93,False
-lijiang-tower,B,lifeweaver,0.13,-20.0,Standard (-20%),Neutral,49,-1.49,2.41,80,False
+lijiang-tower,B,lifeweaver,0.13,-20.0,Niche (-20%),Neutral,49,-1.49,2.41,80,False
 lijiang-tower,B,venture,0.04,6.0,Standard (+6%),Neutral,51,-1.3,2.41,80,False
 lijiang-tower,B,zenyatta,-0.04,-23.2,Niche (-23%),Neutral,52,0.39,2.42,80,False
 lijiang-tower,B,brigitte,-0.07,-3.7,Standard (-4%),Neutral,52,0.28,2.97,71,False
 lijiang-tower,B,genji,-0.13,-8.9,Standard (-9%),Neutral,51,-0.02,0.92,99,False
 lijiang-tower,B,hanzo,-0.13,-38.6,Niche (-39%),Neutral,52,0.27,3.24,72,False
 lijiang-tower,B,bastion,-0.16,-7.4,Standard (-7%),Neutral,52,-0.26,2.65,72,False
-lijiang-tower,B,junker-queen,-0.28,29.9,Popular (+30%),Neutral,51,-0.21,1.84,79,False
+lijiang-tower,B,junker-queen,-0.28,29.9,Popular (+30%),Neutral,51,-0.21,1.84,80,False
 lijiang-tower,B,illari,-0.29,-35.7,Niche (-36%),Neutral,52,-0.46,1.45,91,False
 lijiang-tower,B,roadhog,-0.33,0.7,Standard (+1%),Neutral,8,-0.13,6.21,50,True
 lijiang-tower,B,wuyang,-0.42,-4.2,Standard (-4%),Neutral,52,-0.47,1.03,94,False
@@ -849,9 +849,9 @@ lijiang-tower,B,dmon,-0.63,16.1,Standard (+16%),Neutral,16,-0.75,2.09,73,False
 lijiang-tower,B,sombra,-0.8,15.4,Standard (+15%),Neutral,8,-0.73,4.22,51,True
 lijiang-tower,B,juno,-0.95,7.8,Standard (+8%),Neutral,51,-1.75,1.73,63,False
 lijiang-tower,B,dva,-1.09,-22.9,Niche (-23%),Neutral,52,-1.95,2.65,54,False
-lijiang-tower,B,mercy,-1.12,-13.5,Standard (-13%),Neutral,51,-1.59,1.58,55,False
+lijiang-tower,B,mercy,-1.12,-13.5,Standard (-14%),Neutral,51,-1.59,1.58,54,False
 lijiang-tower,B,mauga,-1.17,25.4,Popular (+25%),Neutral,52,-1.44,2.44,50,False
-lijiang-tower,C,freja,-1.38,-25.2,Niche (-25%),Deterrent,50,-1.7,1.66,58,False
+lijiang-tower,C,freja,-1.38,-25.2,Niche (-25%),Deterrent,50,-1.7,1.66,59,False
 lijiang-tower,C,soldier-76,-1.39,-20.8,Niche (-21%),Deterrent,51,-1.57,1.21,63,False
 lijiang-tower,C,tracer,-1.46,9.7,Standard (+10%),Unfavorable,52,-1.57,1.0,70,False
 lijiang-tower,C,anran,-1.47,11.0,Standard (+11%),Unfavorable,51,-2.35,2.37,57,False
@@ -859,7 +859,7 @@ lijiang-tower,C,wrecking-ball,-1.5,16.2,Standard (+16%),Unfavorable,52,-1.67,1.6
 lijiang-tower,C,ana,-1.66,-19.5,Standard (-20%),Unfavorable,52,-1.82,1.69,67,False
 lijiang-tower,C,ashe,-1.66,-65.7,Niche (-66%),Deterrent,50,-3.47,2.34,62,False
 lijiang-tower,C,winston,-1.68,-42.3,Niche (-42%),Deterrent,52,-1.67,1.74,65,False
-lijiang-tower,C,sigma,-1.81,-43.1,Niche (-43%),Deterrent,52,-1.81,1.8,66,False
+lijiang-tower,C,sigma,-1.81,-43.1,Niche (-43%),Deterrent,52,-1.81,1.8,67,False
 lijiang-tower,C,echo,-2.16,2.8,Standard (+3%),Unfavorable,52,-3.21,2.61,62,False
 lijiang-tower,C,doctrine,-2.81,-3.1,Standard (-3%),Unfavorable,8,-4.74,3.45,44,True
 lijiang-tower,D,widowmaker,-7.37,-65.2,Niche (-65%),Deterrent,49,-7.42,1.91,100,False
@@ -876,10 +876,10 @@ midtown,B,genji,-0.03,-10.1,Standard (-10%),Neutral,52,3.06,2.88,76,False
 midtown,B,wuyang,-0.07,20.3,Popular (+20%),Neutral,52,0.07,2.58,79,False
 midtown,B,vendetta,-0.14,-17.1,Standard (-17%),Neutral,42,-0.06,3.64,71,False
 midtown,B,reaper,-0.15,-24.3,Niche (-24%),Neutral,52,0.25,3.29,73,False
-midtown,B,zarya,-0.15,42.5,Popular (+43%),Neutral,52,0.25,3.18,64,False
+midtown,B,zarya,-0.15,42.5,Popular (+42%),Neutral,52,0.25,3.18,64,False
 midtown,B,sigma,-0.17,77.2,Map Priority (+77%),Neutral,52,0.05,2.47,69,False
 midtown,B,emre,-0.18,19.2,Standard (+19%),Neutral,52,0.65,2.67,77,False
-midtown,B,mizuki,-0.27,-15.8,Standard (-16%),Neutral,52,-0.39,2.6,71,False
+midtown,B,mizuki,-0.27,-15.8,Standard (-16%),Neutral,52,-0.39,2.6,72,False
 midtown,B,sojourn,-0.28,23.7,Popular (+24%),Neutral,52,-0.21,1.76,86,False
 midtown,B,domina,-0.32,72.5,Map Priority (+72%),Neutral,52,-0.04,2.91,64,False
 midtown,B,doomfist,-0.32,-20.7,Niche (-21%),Neutral,52,-0.42,3.67,69,False
@@ -891,13 +891,13 @@ midtown,B,hanzo,-0.45,45.6,Popular (+46%),Neutral,50,-0.45,1.43,87,False
 midtown,B,dva,-0.47,-31.7,Niche (-32%),Neutral,50,-0.32,2.91,71,False
 midtown,B,shion,-0.55,-17.8,Standard (-18%),Neutral,28,-0.96,2.08,76,False
 midtown,B,mei,-0.7,33.8,Popular (+34%),Neutral,52,-2.83,3.59,63,False
-midtown,B,ana,-0.77,10.4,Standard (+10%),Neutral,52,-0.83,2.02,65,False
+midtown,B,ana,-0.77,10.4,Standard (+10%),Neutral,52,-0.83,2.02,66,False
 midtown,B,dmon,-0.8,-7.7,Standard (-8%),Neutral,16,-1.92,4.91,56,False
 midtown,B,moira,-0.8,-17.7,Standard (-18%),Neutral,51,-0.56,3.65,56,False
 midtown,B,mercy,-0.89,3.4,Standard (+3%),Neutral,50,-2.04,2.87,60,False
 midtown,B,ashe,-0.99,36.6,Popular (+37%),Neutral,52,-1.5,2.45,58,False
 midtown,B,tracer,-1.0,-26.5,Niche (-26%),Neutral,52,-1.25,2.05,59,False
-midtown,B,cassidy,-1.06,-17.4,Standard (-17%),Neutral,52,-1.26,1.23,59,False
+midtown,B,cassidy,-1.06,-17.4,Standard (-17%),Neutral,52,-1.26,1.23,60,False
 midtown,B,zenyatta,-1.13,37.3,Popular (+37%),Neutral,52,-1.85,2.44,52,False
 midtown,B,soldier-76,-1.15,-12.0,Standard (-12%),Neutral,51,-1.6,2.23,52,False
 midtown,C,torbjorn,-1.22,16.3,Standard (+16%),Unfavorable,50,-2.21,3.9,39,False
@@ -907,7 +907,7 @@ midtown,C,ramattra,-1.46,53.8,Map Priority (+54%),Trap Pick,52,-1.99,3.61,45,Fal
 midtown,C,kiriko,-1.6,-9.9,Standard (-10%),Unfavorable,52,-1.94,1.38,72,False
 midtown,C,sombra,-1.64,-18.8,Standard (-19%),Unfavorable,8,-3.41,6.23,38,True
 midtown,C,echo,-1.87,-27.1,Niche (-27%),Deterrent,52,-3.16,3.22,56,False
-midtown,C,mauga,-2.08,-24.5,Niche (-25%),Deterrent,48,-3.3,3.2,54,False
+midtown,C,mauga,-2.08,-24.5,Niche (-24%),Deterrent,48,-3.3,3.2,54,False
 midtown,C,pharah,-2.21,-7.0,Standard (-7%),Unfavorable,51,-2.97,3.68,46,False
 midtown,C,hazard,-2.44,-45.8,Niche (-46%),Deterrent,49,-3.93,3.73,46,False
 midtown,C,junker-queen,-2.63,-17.6,Standard (-18%),Unfavorable,45,-3.1,3.5,41,False
@@ -924,10 +924,10 @@ neon-junction,B,orisa,1.09,27.0,Popular (+27%),Neutral,28,1.49,1.9,55,False
 neon-junction,B,shion,1.06,13.1,Standard (+13%),Neutral,28,1.64,1.17,60,False
 neon-junction,B,zarya,0.92,44.9,Popular (+45%),Neutral,28,1.44,2.32,58,False
 neon-junction,B,sigma,0.78,61.1,Map Priority (+61%),Neutral,28,0.94,1.65,69,False
-neon-junction,B,reaper,0.66,-19.2,Standard (-19%),Neutral,28,2.1,2.94,67,False
+neon-junction,B,reaper,0.66,-19.2,Standard (-19%),Neutral,28,2.1,2.94,66,False
 neon-junction,B,bastion,0.63,45.2,Popular (+45%),Neutral,28,1.03,2.91,63,False
 neon-junction,B,ramattra,0.59,91.2,Map Priority (+91%),Neutral,28,1.16,2.47,67,False
-neon-junction,B,widowmaker,0.4,40.3,Popular (+40%),Neutral,28,0.47,1.68,79,False
+neon-junction,B,widowmaker,0.4,40.3,Popular (+40%),Neutral,28,0.47,1.68,80,False
 neon-junction,B,sierra,0.22,14.6,Standard (+15%),Neutral,24,1.35,3.3,72,False
 neon-junction,B,lifeweaver,0.13,11.9,Standard (+12%),Neutral,28,-1.09,2.42,80,False
 neon-junction,B,zenyatta,0.08,36.3,Popular (+36%),Neutral,28,0.35,1.68,90,False
@@ -935,26 +935,26 @@ neon-junction,B,soldier-76,0.07,-23.8,Niche (-24%),Neutral,28,0.34,2.37,80,False
 neon-junction,B,junker-queen,0.06,-4.7,Standard (-5%),Neutral,26,0.36,3.19,59,False
 neon-junction,B,symmetra,0.06,16.9,Standard (+17%),Neutral,28,0.34,2.78,70,False
 neon-junction,B,venture,0.04,-0.4,Standard (-0%),Neutral,28,2.16,3.48,72,False
-neon-junction,B,moira,0.0,-9.5,Standard (-9%),Neutral,28,0.7,2.86,71,False
+neon-junction,B,moira,0.0,-9.5,Standard (-10%),Neutral,28,0.7,2.86,71,False
 neon-junction,B,torbjorn,-0.03,8.0,Standard (+8%),Neutral,27,0.02,4.02,58,False
 neon-junction,B,genji,-0.22,-11.3,Standard (-11%),Neutral,28,-0.48,1.5,91,False
 neon-junction,B,kiriko,-0.22,-7.1,Standard (-7%),Neutral,28,-0.26,2.02,83,False
-neon-junction,B,illari,-0.26,-7.5,Standard (-7%),Neutral,28,-0.63,2.45,78,False
+neon-junction,B,illari,-0.26,-7.5,Standard (-8%),Neutral,28,-0.63,2.45,78,False
 neon-junction,B,sojourn,-0.36,27.4,Popular (+27%),Neutral,28,-0.34,1.47,89,False
 neon-junction,B,emre,-0.42,15.5,Standard (+16%),Neutral,28,-0.6,1.86,82,False
 neon-junction,B,cassidy,-0.5,-10.3,Standard (-10%),Neutral,28,-0.57,1.54,84,False
 neon-junction,B,mei,-0.55,65.1,Map Priority (+65%),Neutral,28,-1.28,2.49,72,False
-neon-junction,B,roadhog,-0.56,-5.3,Standard (-5%),Neutral,8,-1.09,7.65,46,True
+neon-junction,B,roadhog,-0.56,-5.3,Standard (-5%),Neutral,8,-1.09,7.65,47,True
 neon-junction,B,doctrine,-0.6,2.8,Standard (+3%),Neutral,8,-1.75,6.07,49,True
 neon-junction,B,anran,-0.68,-3.4,Standard (-3%),Neutral,28,-1.77,4.51,61,False
 neon-junction,B,dmon,-0.71,5.9,Standard (+6%),Neutral,16,-1.0,2.84,65,False
 neon-junction,B,juno,-0.77,10.6,Standard (+11%),Neutral,28,-1.69,2.67,65,False
-neon-junction,B,sombra,-0.8,-24.5,Niche (-25%),Neutral,8,-0.66,5.64,47,True
+neon-junction,B,sombra,-0.8,-24.5,Niche (-24%),Neutral,8,-0.66,5.64,47,True
 neon-junction,B,baptiste,-0.89,25.2,Popular (+25%),Neutral,28,-1.55,3.07,59,False
-neon-junction,B,domina,-0.89,57.0,Map Priority (+57%),Neutral,28,-0.82,2.62,57,False
-neon-junction,B,pharah,-0.96,4.0,Standard (+4%),Neutral,28,-0.94,2.7,55,False
+neon-junction,B,domina,-0.89,57.0,Map Priority (+57%),Neutral,28,-0.82,2.62,56,False
+neon-junction,B,pharah,-0.96,4.0,Standard (+4%),Neutral,28,-0.94,2.7,54,False
 neon-junction,B,doomfist,-1.01,-15.2,Standard (-15%),Neutral,28,-2.05,2.31,58,False
-neon-junction,B,wuyang,-1.06,23.9,Popular (+24%),Neutral,28,-1.69,1.97,57,False
+neon-junction,B,wuyang,-1.06,23.9,Popular (+24%),Neutral,28,-1.69,1.97,56,False
 neon-junction,B,ashe,-1.12,7.9,Standard (+8%),Neutral,28,-1.48,1.64,54,False
 neon-junction,C,ana,-1.23,6.9,Standard (+7%),Unfavorable,28,-1.33,1.64,50,False
 neon-junction,C,wrecking-ball,-1.36,-50.4,Niche (-50%),Deterrent,28,-2.47,4.54,39,False
@@ -965,13 +965,13 @@ neon-junction,C,jetpack-cat,-1.81,-35.8,Niche (-36%),Deterrent,28,-2.72,3.45,47,
 neon-junction,C,dva,-1.95,-50.0,Niche (-50%),Deterrent,28,-3.05,1.85,74,False
 neon-junction,C,lucio,-2.29,-39.8,Niche (-40%),Deterrent,26,-2.33,3.28,44,False
 neon-junction,C,freja,-2.34,0.2,Standard (+0%),Unfavorable,28,-3.77,2.35,66,False
-neon-junction,C,junkrat,-2.4,10.5,Standard (+11%),Unfavorable,28,-4.47,3.96,45,False
+neon-junction,C,junkrat,-2.4,10.5,Standard (+10%),Unfavorable,28,-4.47,3.96,45,False
 neon-junction,C,brigitte,-2.74,-42.2,Niche (-42%),Deterrent,28,-4.42,2.92,51,False
 neon-junction,C,tracer,-2.89,-39.4,Niche (-39%),Deterrent,28,-4.04,2.01,53,False
 neon-junction,D,echo,-3.47,-40.6,Niche (-41%),Deterrent,28,-4.9,2.24,69,False
 neon-junction,D,hazard,-4.53,-47.9,Niche (-48%),Deterrent,28,-5.78,2.36,93,False
 neon-junction,D,winston,-5.87,-54.9,Niche (-55%),Deterrent,28,-6.31,2.17,100,False
-nepal,A,symmetra,3.0,84.0,Map Priority (+84%),Meta,52,3.61,1.61,49,False
+nepal,S,symmetra,3.0,84.0,Map Priority (+84%),Meta,52,3.61,1.61,50,False
 nepal,A,torbjorn,2.42,-14.2,Standard (-14%),Favorable,51,2.74,1.52,74,False
 nepal,A,pharah,2.19,51.8,Map Priority (+52%),Meta,52,2.45,1.33,83,False
 nepal,A,bastion,2.13,-14.5,Standard (-14%),Favorable,52,2.56,1.62,77,False
@@ -979,7 +979,7 @@ nepal,A,reinhardt,2.06,25.3,Popular (+25%),Meta,52,2.16,1.21,86,False
 nepal,A,mauga,2.04,16.1,Standard (+16%),Favorable,51,2.55,1.55,79,False
 nepal,A,lucio,1.78,49.7,Popular (+50%),Meta,52,1.87,1.16,82,False
 nepal,A,ramattra,1.78,18.0,Standard (+18%),Favorable,52,2.21,1.58,73,False
-nepal,A,jetpack-cat,1.69,5.5,Standard (+5%),Favorable,52,1.85,1.3,76,False
+nepal,A,jetpack-cat,1.69,5.5,Standard (+6%),Favorable,52,1.85,1.3,76,False
 nepal,A,hazard,1.67,6.1,Standard (+6%),Favorable,52,1.98,1.56,70,False
 nepal,A,orisa,1.49,12.0,Standard (+12%),Favorable,52,1.84,1.54,64,False
 nepal,A,roadhog,1.24,3.6,Standard (+4%),Favorable,8,4.96,6.17,35,True
@@ -987,48 +987,48 @@ nepal,B,sojourn,1.13,8.0,Standard (+8%),Neutral,52,1.35,0.98,56,False
 nepal,B,junkrat,1.11,7.6,Standard (+8%),Neutral,52,1.37,1.96,53,False
 nepal,B,mizuki,1.06,14.7,Standard (+15%),Neutral,52,1.12,0.92,62,False
 nepal,B,kiriko,0.82,8.3,Standard (+8%),Neutral,52,0.87,0.65,88,False
-nepal,B,brigitte,0.79,1.5,Standard (+1%),Neutral,52,1.15,1.76,69,False
+nepal,B,brigitte,0.79,1.5,Standard (+2%),Neutral,52,1.15,1.76,69,False
 nepal,B,reaper,0.69,9.3,Standard (+9%),Neutral,52,0.97,1.29,80,False
-nepal,B,doomfist,0.58,11.5,Standard (+11%),Neutral,52,0.97,1.28,85,False
+nepal,B,doomfist,0.58,11.5,Standard (+12%),Neutral,52,0.97,1.28,85,False
 nepal,B,mei,0.43,-8.6,Standard (-9%),Neutral,52,0.85,1.54,86,False
 nepal,B,cassidy,0.4,13.1,Standard (+13%),Neutral,52,0.45,0.64,99,False
 nepal,B,vendetta,0.35,8.2,Standard (+8%),Neutral,49,0.57,1.78,84,False
 nepal,B,zarya,0.29,16.8,Standard (+17%),Neutral,52,0.35,0.94,97,False
 nepal,B,sierra,0.22,-13.1,Standard (-13%),Neutral,32,1.93,2.64,77,False
 nepal,B,hanzo,0.21,-37.4,Niche (-37%),Neutral,52,0.56,2.16,81,False
-nepal,B,baptiste,0.17,-11.5,Standard (-11%),Neutral,52,0.43,1.26,95,False
+nepal,B,baptiste,0.17,-11.5,Standard (-12%),Neutral,52,0.43,1.26,95,False
 nepal,B,lifeweaver,0.13,-24.5,Niche (-24%),Neutral,50,0.75,2.07,84,False
 nepal,B,wuyang,0.12,4.8,Standard (+5%),Neutral,52,0.15,0.75,100,False
 nepal,B,zenyatta,0.09,-20.8,Niche (-21%),Neutral,52,0.2,1.09,98,False
 nepal,B,venture,0.04,4.7,Standard (+5%),Neutral,52,0.91,2.29,82,False
 nepal,B,emre,0.03,-14.8,Standard (-15%),Neutral,52,0.35,1.13,98,False
-nepal,B,moira,-0.1,20.0,Standard (+20%),Neutral,52,0.36,2.46,76,False
+nepal,B,moira,-0.1,20.0,Popular (+20%),Neutral,52,0.36,2.46,76,False
 nepal,B,domina,-0.13,-17.1,Standard (-17%),Neutral,50,0.03,2.03,78,False
 nepal,B,freja,-0.31,-23.4,Niche (-23%),Neutral,52,-0.24,1.48,90,False
 nepal,B,illari,-0.32,-26.9,Niche (-27%),Neutral,51,-0.42,0.99,97,False
 nepal,B,sigma,-0.35,-15.7,Standard (-16%),Neutral,52,-0.32,0.96,96,False
 nepal,B,anran,-0.38,12.7,Standard (+13%),Neutral,51,-0.42,1.65,86,False
 nepal,B,genji,-0.39,-4.9,Standard (-5%),Neutral,52,-1.18,1.15,93,False
-nepal,B,mercy,-0.56,-13.5,Standard (-13%),Neutral,51,-0.69,1.35,85,False
+nepal,B,mercy,-0.56,-13.5,Standard (-14%),Neutral,51,-0.69,1.35,85,False
 nepal,B,dmon,-0.6,10.7,Standard (+11%),Neutral,16,-0.78,2.71,68,False
 nepal,B,sombra,-0.6,8.3,Standard (+8%),Neutral,8,-0.26,4.6,52,True
 nepal,B,junker-queen,-0.73,10.9,Standard (+11%),Neutral,48,-0.67,2.5,60,False
 nepal,B,ashe,-0.87,-44.4,Niche (-44%),Neutral,52,-0.94,1.38,70,False
-nepal,B,tracer,-0.88,11.5,Standard (+11%),Neutral,52,-0.91,0.82,79,False
-nepal,B,shion,-1.01,19.4,Standard (+19%),Neutral,28,-1.25,1.02,66,False
-nepal,B,juno,-1.02,10.3,Standard (+10%),Neutral,52,-1.72,1.48,60,False
+nepal,B,tracer,-0.88,11.5,Standard (+12%),Neutral,52,-0.91,0.82,79,False
+nepal,B,shion,-1.01,19.4,Standard (+19%),Neutral,28,-1.25,1.02,65,False
+nepal,B,juno,-1.02,10.3,Standard (+10%),Neutral,52,-1.72,1.48,61,False
 nepal,B,soldier-76,-1.17,-9.8,Standard (-10%),Neutral,52,-1.34,1.38,52,False
 nepal,B,dva,-1.2,-17.0,Standard (-17%),Neutral,52,-1.49,1.41,50,False
-nepal,C,echo,-1.64,1.3,Standard (+1%),Unfavorable,52,-1.8,1.27,75,False
+nepal,C,echo,-1.64,1.3,Standard (+1%),Unfavorable,52,-1.8,1.27,76,False
 nepal,C,doctrine,-2.21,-1.7,Standard (-2%),Unfavorable,8,-3.4,3.07,53,True
 nepal,C,ana,-2.51,-15.8,Standard (-16%),Unfavorable,52,-2.56,0.72,91,False
 nepal,D,wrecking-ball,-3.16,-0.3,Standard (-0%),Unfavorable,52,-3.39,1.23,60,False
 nepal,D,winston,-3.8,-35.9,Niche (-36%),Deterrent,52,-3.87,1.25,90,False
 nepal,D,widowmaker,-9.85,-70.8,Niche (-71%),Deterrent,51,-9.98,2.31,100,False
 new-junk-city,S,junker-queen,3.68,107.2,Map Priority (+107%),Meta,50,4.6,2.77,70,False
-new-junk-city,A,lucio,2.96,99.5,Map Priority (+99%),Meta,52,3.15,1.57,51,False
-new-junk-city,A,hazard,2.4,11.5,Standard (+11%),Favorable,51,2.93,1.8,68,False
-new-junk-city,A,symmetra,2.07,15.5,Standard (+15%),Favorable,50,3.53,2.89,55,False
+new-junk-city,A,lucio,2.96,99.5,Map Priority (+100%),Meta,52,3.15,1.57,51,False
+new-junk-city,A,hazard,2.4,11.5,Standard (+12%),Favorable,51,2.93,1.8,68,False
+new-junk-city,A,symmetra,2.07,15.5,Standard (+16%),Favorable,50,3.53,2.89,55,False
 new-junk-city,A,mizuki,1.99,48.4,Popular (+48%),Meta,52,3.21,2.88,56,False
 new-junk-city,A,vendetta,1.89,50.9,Map Priority (+51%),Meta,48,2.35,1.33,83,False
 new-junk-city,A,moira,1.57,66.9,Map Priority (+67%),Meta,51,2.6,2.2,59,False
@@ -1036,7 +1036,7 @@ new-junk-city,A,dmon,1.35,27.3,Popular (+27%),Meta,16,2.34,2.25,53,False
 new-junk-city,A,torbjorn,1.33,-2.7,Standard (-3%),Favorable,50,1.85,2.54,48,False
 new-junk-city,A,reinhardt,1.23,26.3,Popular (+26%),Meta,52,1.56,2.6,44,False
 new-junk-city,B,sombra,1.1,14.9,Standard (+15%),Neutral,8,3.72,4.75,45,True
-new-junk-city,B,mauga,1.02,47.5,Popular (+47%),Neutral,50,1.42,1.76,59,False
+new-junk-city,B,mauga,1.02,47.5,Popular (+48%),Neutral,50,1.42,1.76,59,False
 new-junk-city,B,reaper,0.81,46.0,Popular (+46%),Neutral,52,1.79,2.27,66,False
 new-junk-city,B,cassidy,0.8,32.1,Popular (+32%),Neutral,52,1.35,1.71,70,False
 new-junk-city,B,shion,0.72,44.6,Popular (+45%),Neutral,28,1.23,1.26,79,False
@@ -1045,7 +1045,7 @@ new-junk-city,B,domina,0.69,-29.0,Niche (-29%),Neutral,46,1.69,3.68,53,False
 new-junk-city,B,tracer,0.68,24.8,Popular (+25%),Neutral,52,1.06,1.67,75,False
 new-junk-city,B,wrecking-ball,0.49,-18.6,Standard (-19%),Neutral,52,0.93,2.94,63,False
 new-junk-city,B,sojourn,0.39,17.1,Standard (+17%),Neutral,52,0.56,1.21,92,False
-new-junk-city,B,brigitte,0.37,9.2,Standard (+9%),Neutral,51,0.77,2.28,76,False
+new-junk-city,B,brigitte,0.37,9.2,Standard (+9%),Neutral,51,0.77,2.28,75,False
 new-junk-city,B,anran,0.35,48.6,Popular (+49%),Neutral,51,0.87,2.56,76,False
 new-junk-city,B,orisa,0.22,34.7,Popular (+35%),Neutral,51,0.45,2.82,72,False
 new-junk-city,B,sierra,0.22,-21.9,Niche (-22%),Neutral,26,-1.36,1.57,90,False
@@ -1065,7 +1065,7 @@ new-junk-city,B,mercy,-0.29,-32.3,Niche (-32%),Neutral,49,-0.37,2.62,76,False
 new-junk-city,B,juno,-0.3,2.3,Standard (+2%),Neutral,50,0.24,1.57,89,False
 new-junk-city,B,illari,-0.32,-49.3,Niche (-49%),Neutral,52,-1.22,3.05,73,False
 new-junk-city,B,soldier-76,-0.68,-8.2,Standard (-8%),Neutral,51,-0.84,2.07,71,False
-new-junk-city,B,junkrat,-0.7,8.6,Standard (+9%),Neutral,49,-0.87,2.2,67,False
+new-junk-city,B,junkrat,-0.7,8.6,Standard (+9%),Neutral,49,-0.87,2.2,66,False
 new-junk-city,B,bastion,-0.77,-28.9,Niche (-29%),Neutral,48,-1.07,2.23,65,False
 new-junk-city,B,jetpack-cat,-0.96,-13.7,Standard (-14%),Neutral,51,-1.17,2.42,56,False
 new-junk-city,B,dva,-1.12,-28.5,Niche (-28%),Neutral,52,-2.42,3.17,52,False
@@ -1080,8 +1080,8 @@ new-junk-city,D,pharah,-4.83,-35.8,Niche (-36%),Deterrent,51,-6.66,3.21,91,False
 new-junk-city,D,winston,-6.98,-55.9,Niche (-56%),Deterrent,52,-8.1,3.04,100,False
 new-junk-city,D,widowmaker,-18.09,-82.7,Niche (-83%),Deterrent,29,-19.36,4.56,100,False
 new-queen-street,S,soldier-76,4.1,134.0,Map Priority (+134%),Meta,52,5.27,1.51,95,False
-new-queen-street,A,torbjorn,2.98,-11.8,Standard (-12%),Favorable,51,3.37,1.5,51,False
-new-queen-street,A,junker-queen,1.73,19.1,Standard (+19%),Favorable,49,2.0,1.98,61,False
+new-queen-street,A,torbjorn,2.98,-11.8,Standard (-12%),Favorable,51,3.37,1.5,50,False
+new-queen-street,A,junker-queen,1.73,19.1,Standard (+19%),Favorable,49,2.0,1.98,62,False
 new-queen-street,A,kiriko,1.61,13.1,Standard (+13%),Favorable,52,2.38,1.88,65,False
 new-queen-street,A,wrecking-ball,1.36,41.6,Popular (+42%),Meta,52,1.8,2.09,52,False
 new-queen-street,A,mizuki,1.25,8.1,Standard (+8%),Favorable,52,1.47,1.53,52,False
@@ -1096,8 +1096,8 @@ new-queen-street,B,zarya,0.79,-20.8,Niche (-21%),Neutral,51,0.99,1.48,71,False
 new-queen-street,B,reinhardt,0.78,-2.6,Standard (-3%),Neutral,52,0.95,2.18,63,False
 new-queen-street,B,freja,0.67,-32.7,Niche (-33%),Neutral,51,2.31,3.07,66,False
 new-queen-street,B,mauga,0.65,20.7,Popular (+21%),Neutral,51,1.23,2.41,67,False
-new-queen-street,B,reaper,0.61,-12.4,Standard (-12%),Neutral,52,1.26,2.02,74,False
-new-queen-street,B,hazard,0.48,9.7,Standard (+10%),Neutral,52,1.06,3.17,62,False
+new-queen-street,B,reaper,0.61,-12.4,Standard (-12%),Neutral,52,1.26,2.02,75,False
+new-queen-street,B,hazard,0.48,9.7,Standard (+10%),Neutral,52,1.06,3.17,61,False
 new-queen-street,B,zenyatta,0.41,-29.7,Niche (-30%),Neutral,52,1.27,2.35,77,False
 new-queen-street,B,mercy,0.28,-15.2,Standard (-15%),Neutral,49,0.89,2.36,79,False
 new-queen-street,B,sierra,0.22,-7.1,Standard (-7%),Neutral,34,-1.07,1.96,84,False
@@ -1125,7 +1125,7 @@ new-queen-street,B,sombra,-1.17,12.6,Standard (+13%),Neutral,8,-1.62,5.01,44,Tru
 new-queen-street,C,bastion,-1.26,-26.3,Niche (-26%),Deterrent,48,-2.13,2.98,45,False
 new-queen-street,C,cassidy,-1.28,-1.3,Standard (-1%),Unfavorable,52,-1.69,1.56,54,False
 new-queen-street,C,orisa,-1.35,-3.1,Standard (-3%),Unfavorable,52,-2.23,2.74,49,False
-new-queen-street,C,doctrine,-1.45,1.5,Standard (+1%),Unfavorable,8,-2.39,3.39,45,True
+new-queen-street,C,doctrine,-1.45,1.5,Standard (+2%),Unfavorable,8,-2.39,3.39,45,True
 new-queen-street,C,anran,-1.77,-0.9,Standard (-1%),Unfavorable,50,-2.94,2.44,63,False
 new-queen-street,C,roadhog,-1.95,-0.5,Standard (-0%),Unfavorable,8,-5.68,6.41,39,True
 new-queen-street,C,domina,-1.99,-26.4,Niche (-26%),Deterrent,49,-2.46,3.61,45,False
@@ -1162,11 +1162,11 @@ numbani,B,sombra,-0.72,-8.8,Standard (-9%),Neutral,8,-0.2,7.6,45,True
 numbani,B,shion,-0.75,-18.9,Standard (-19%),Neutral,28,-1.33,1.93,70,False
 numbani,B,juno,-0.84,-8.3,Standard (-8%),Neutral,51,-2.61,3.14,61,False
 numbani,B,vendetta,-0.86,-0.6,Standard (-1%),Neutral,43,-1.94,3.56,59,False
-numbani,B,echo,-1.05,74.0,Map Priority (+74%),Neutral,52,-1.32,2.6,55,False
+numbani,B,echo,-1.05,74.0,Map Priority (+74%),Neutral,52,-1.32,2.6,54,False
 numbani,B,torbjorn,-1.16,16.3,Standard (+16%),Neutral,50,-1.75,3.1,48,False
 numbani,B,jetpack-cat,-1.17,16.4,Standard (+16%),Neutral,52,-1.61,3.14,47,False
 numbani,C,wuyang,-1.24,-20.0,Niche (-20%),Deterrent,51,-2.04,2.03,50,False
-numbani,C,zenyatta,-1.24,-21.4,Niche (-21%),Deterrent,52,-2.32,2.79,47,False
+numbani,C,zenyatta,-1.24,-21.4,Niche (-21%),Deterrent,52,-2.32,2.79,48,False
 numbani,C,roadhog,-1.25,-5.8,Standard (-6%),Unfavorable,7,-10.23,13.45,32,True
 numbani,C,sigma,-1.34,-21.8,Niche (-22%),Deterrent,51,-1.28,2.53,46,False
 numbani,C,orisa,-1.54,-27.9,Niche (-28%),Deterrent,51,-3.03,3.34,50,False
@@ -1180,8 +1180,8 @@ numbani,C,sojourn,-2.41,-33.9,Niche (-34%),Deterrent,52,-4.63,2.76,61,False
 numbani,C,moira,-2.44,-27.4,Niche (-27%),Deterrent,51,-4.0,3.66,50,False
 numbani,C,symmetra,-2.46,-17.9,Standard (-18%),Unfavorable,46,-4.9,4.28,45,False
 numbani,C,reinhardt,-2.94,-35.7,Niche (-36%),Deterrent,51,-4.23,4.39,35,False
-numbani,D,ramattra,-3.22,-49.5,Niche (-49%),Deterrent,41,-4.89,3.28,57,False
-numbani,D,pharah,-3.29,-0.6,Standard (-1%),Unfavorable,51,-4.42,3.24,59,False
+numbani,D,ramattra,-3.22,-49.5,Niche (-50%),Deterrent,41,-4.89,3.28,57,False
+numbani,D,pharah,-3.29,-0.6,Standard (-1%),Unfavorable,51,-4.42,3.24,58,False
 numbani,D,mizuki,-3.36,-26.8,Niche (-27%),Deterrent,51,-4.46,2.14,65,False
 numbani,D,lucio,-3.84,-34.6,Niche (-35%),Deterrent,52,-4.28,3.96,68,False
 numbani,D,domina,-4.26,-24.7,Niche (-25%),Deterrent,45,-5.48,3.08,83,False
@@ -1203,17 +1203,17 @@ oasis,B,mauga,0.55,20.0,Popular (+20%),Neutral,51,1.26,2.76,66,False
 oasis,B,moira,0.54,23.6,Popular (+24%),Neutral,52,0.85,1.53,81,False
 oasis,B,shion,0.54,27.9,Popular (+28%),Neutral,28,0.82,1.04,91,False
 oasis,B,reaper,0.44,21.4,Popular (+21%),Neutral,52,0.72,1.47,87,False
-oasis,B,illari,0.43,-29.5,Niche (-29%),Neutral,52,1.67,1.73,83,False
+oasis,B,illari,0.43,-29.5,Niche (-30%),Neutral,52,1.67,1.73,83,False
 oasis,B,ramattra,0.43,-25.1,Niche (-25%),Neutral,50,0.8,2.13,75,False
 oasis,B,roadhog,0.42,1.9,Standard (+2%),Neutral,8,2.21,6.0,50,True
 oasis,B,hanzo,0.39,-42.4,Niche (-42%),Neutral,52,1.0,2.47,75,False
-oasis,B,soldier-76,0.28,-10.7,Standard (-11%),Neutral,52,0.36,1.04,96,False
+oasis,B,soldier-76,0.28,-10.7,Standard (-11%),Neutral,52,0.36,1.04,97,False
 oasis,B,domina,0.25,-30.0,Niche (-30%),Neutral,47,0.6,2.52,69,False
 oasis,B,sierra,0.22,-16.3,Standard (-16%),Neutral,32,0.52,1.81,86,False
 oasis,B,tracer,0.16,28.9,Popular (+29%),Neutral,52,0.2,0.68,100,False
 oasis,B,lifeweaver,0.13,-22.7,Niche (-23%),Neutral,49,0.37,2.04,84,False
 oasis,B,wuyang,0.07,-8.4,Standard (-8%),Neutral,52,0.1,0.84,100,False
-oasis,B,venture,0.04,0.5,Standard (+1%),Neutral,52,-0.62,1.92,86,False
+oasis,B,venture,0.04,0.5,Standard (+0%),Neutral,52,-0.62,1.92,86,False
 oasis,B,sojourn,-0.02,-13.1,Standard (-13%),Neutral,52,0.02,0.76,100,False
 oasis,B,mei,-0.05,-17.3,Standard (-17%),Neutral,52,0.03,1.52,92,False
 oasis,B,anran,-0.06,10.1,Standard (+10%),Neutral,52,0.14,2.71,77,False
@@ -1221,21 +1221,21 @@ oasis,B,junkrat,-0.06,-12.2,Standard (-12%),Neutral,51,-0.06,1.74,86,False
 oasis,B,dva,-0.21,11.8,Standard (+12%),Neutral,52,0.23,2.35,80,False
 oasis,B,symmetra,-0.3,10.7,Standard (+11%),Neutral,52,-0.27,1.53,87,False
 oasis,B,baptiste,-0.34,-18.5,Standard (-18%),Neutral,52,-0.13,1.99,82,False
-oasis,B,bastion,-0.34,-19.2,Standard (-19%),Neutral,51,-0.43,1.85,82,False
+oasis,B,bastion,-0.34,-19.2,Standard (-19%),Neutral,51,-0.43,1.85,81,False
 oasis,B,genji,-0.36,-4.2,Standard (-4%),Neutral,52,-1.24,1.34,91,False
 oasis,B,zenyatta,-0.49,-30.6,Niche (-31%),Neutral,52,-0.5,1.24,89,False
 oasis,B,junker-queen,-0.56,23.6,Popular (+24%),Neutral,52,-0.51,2.01,71,False
-oasis,B,juno,-0.62,-3.5,Standard (-3%),Neutral,52,-0.69,1.85,76,False
+oasis,B,juno,-0.62,-3.5,Standard (-4%),Neutral,52,-0.69,1.85,76,False
 oasis,B,echo,-0.65,-3.6,Standard (-4%),Neutral,52,-0.66,1.54,78,False
 oasis,B,sombra,-0.65,16.0,Standard (+16%),Neutral,8,-0.35,4.81,51,True
 oasis,B,lucio,-0.72,53.8,Map Priority (+54%),Neutral,52,-0.7,0.96,84,False
-oasis,B,winston,-0.73,-5.5,Standard (-5%),Neutral,52,-0.69,1.19,79,False
+oasis,B,winston,-0.73,-5.5,Standard (-6%),Neutral,52,-0.69,1.19,78,False
 oasis,B,emre,-0.9,-32.7,Niche (-33%),Neutral,52,-1.46,1.2,70,False
 oasis,B,mercy,-0.95,-15.7,Standard (-16%),Neutral,51,-1.31,1.52,64,False
 oasis,B,dmon,-0.97,6.2,Standard (+6%),Neutral,16,-1.28,2.16,59,False
 oasis,B,ashe,-1.03,-66.8,Niche (-67%),Neutral,52,-1.51,2.17,57,False
 oasis,B,pharah,-1.06,17.6,Standard (+18%),Neutral,52,-1.08,2.41,53,False
-oasis,B,reinhardt,-1.17,-9.4,Standard (-9%),Neutral,51,-1.21,1.57,52,False
+oasis,B,reinhardt,-1.17,-9.4,Standard (-9%),Neutral,51,-1.21,1.57,51,False
 oasis,C,ana,-1.96,-22.7,Niche (-23%),Deterrent,52,-2.0,0.77,97,False
 oasis,C,wrecking-ball,-2.24,13.5,Standard (+14%),Unfavorable,52,-2.48,1.5,78,False
 oasis,C,doctrine,-2.81,-5.0,Standard (-5%),Unfavorable,8,-4.89,3.58,43,True
@@ -1263,12 +1263,12 @@ paraiso,B,dva,-0.39,65.3,Map Priority (+65%),Neutral,16,0.24,4.18,67,False
 paraiso,B,illari,-0.4,22.0,Popular (+22%),Neutral,16,-3.31,4.34,66,False
 paraiso,B,mauga,-0.4,-11.0,Standard (-11%),Neutral,15,0.51,7.36,53,False
 paraiso,B,soldier-76,-0.41,-2.4,Standard (-2%),Neutral,16,-0.59,5.08,62,False
-paraiso,B,zenyatta,-0.48,-6.3,Standard (-6%),Neutral,16,-0.53,2.96,70,False
+paraiso,B,zenyatta,-0.48,-6.3,Standard (-6%),Neutral,16,-0.53,2.96,71,False
 paraiso,B,doomfist,-0.5,-10.0,Standard (-10%),Neutral,16,-2.1,5.31,62,False
 paraiso,B,shion,-0.5,-23.7,Niche (-24%),Neutral,16,-1.42,3.45,68,False
 paraiso,B,reinhardt,-0.56,-18.7,Standard (-19%),Neutral,16,-0.57,6.99,39,False
 paraiso,B,kiriko,-0.57,-5.9,Standard (-6%),Neutral,16,-0.97,2.7,70,False
-paraiso,B,dmon,-0.6,-7.5,Standard (-7%),Neutral,16,-1.11,4.68,60,False
+paraiso,B,dmon,-0.6,-7.5,Standard (-8%),Neutral,16,-1.11,4.68,60,False
 paraiso,B,junkrat,-0.63,12.8,Standard (+13%),Neutral,16,-2.48,7.62,45,False
 paraiso,B,ashe,-0.66,70.4,Map Priority (+70%),Neutral,16,-0.14,3.64,64,False
 paraiso,B,roadhog,-0.68,-1.4,Standard (-1%),Neutral,8,-3.75,13.94,43,True
@@ -1280,7 +1280,7 @@ paraiso,B,anran,-1.01,-7.1,Standard (-7%),Neutral,15,-6.13,7.28,51,False
 paraiso,B,torbjorn,-1.16,15.9,Standard (+16%),Neutral,15,-2.54,4.73,44,False
 paraiso,C,moira,-1.25,-14.9,Standard (-15%),Unfavorable,15,-1.47,3.56,43,False
 paraiso,C,wrecking-ball,-1.29,-15.0,Standard (-15%),Unfavorable,16,-3.49,6.63,35,False
-paraiso,C,wuyang,-1.35,-10.5,Standard (-11%),Unfavorable,16,-4.55,3.84,48,False
+paraiso,C,wuyang,-1.35,-10.5,Standard (-10%),Unfavorable,16,-4.55,3.84,48,False
 paraiso,C,cassidy,-1.36,-9.9,Standard (-10%),Unfavorable,16,-2.2,2.16,54,False
 paraiso,C,sojourn,-1.36,-25.4,Niche (-25%),Deterrent,16,-4.47,4.73,46,False
 paraiso,C,hazard,-1.38,28.9,Popular (+29%),Trap Pick,16,-2.02,3.66,43,False
@@ -1332,13 +1332,13 @@ rialto,B,zenyatta,-0.64,34.0,Popular (+34%),Neutral,52,-0.81,2.29,71,False
 rialto,B,sojourn,-0.66,-8.6,Standard (-9%),Neutral,52,-0.86,2.35,70,False
 rialto,B,jetpack-cat,-0.71,9.3,Standard (+9%),Neutral,51,-0.82,2.14,66,False
 rialto,B,mizuki,-0.71,-26.3,Niche (-26%),Neutral,51,-0.83,1.57,74,False
-rialto,B,ramattra,-0.75,-14.6,Standard (-15%),Neutral,49,-0.69,3.41,57,False
+rialto,B,ramattra,-0.75,-14.6,Standard (-15%),Neutral,49,-0.69,3.41,56,False
 rialto,B,domina,-0.8,8.7,Standard (+9%),Neutral,50,-0.69,2.85,57,False
 rialto,B,junker-queen,-0.87,-28.1,Niche (-28%),Neutral,45,-0.73,4.89,42,False
 rialto,B,tracer,-0.89,-21.6,Niche (-22%),Neutral,52,-1.19,2.47,61,False
 rialto,B,juno,-0.95,-20.0,Niche (-20%),Neutral,51,-2.82,2.68,59,False
 rialto,B,moira,-1.01,-27.9,Niche (-28%),Neutral,51,-1.0,2.54,55,False
-rialto,C,doctrine,-1.32,0.5,Standard (+1%),Unfavorable,8,-3.39,5.3,37,True
+rialto,C,doctrine,-1.32,0.5,Standard (+0%),Unfavorable,8,-3.39,5.3,37,True
 rialto,C,roadhog,-1.38,10.8,Standard (+11%),Unfavorable,8,-9.4,11.85,33,True
 rialto,C,reinhardt,-1.43,4.2,Standard (+4%),Unfavorable,51,-1.56,2.26,51,False
 rialto,C,cassidy,-1.45,-27.7,Niche (-28%),Deterrent,52,-2.17,1.92,59,False
@@ -1347,13 +1347,13 @@ rialto,C,mauga,-1.66,-22.2,Niche (-22%),Deterrent,49,-2.3,2.73,55,False
 rialto,C,sombra,-1.88,-15.9,Standard (-16%),Unfavorable,8,-9.2,11.09,35,True
 rialto,C,torbjorn,-1.94,7.3,Standard (+7%),Unfavorable,50,-2.53,2.33,61,False
 rialto,C,symmetra,-2.02,-18.2,Standard (-18%),Unfavorable,49,-2.53,2.22,64,False
-rialto,C,wrecking-ball,-2.62,-16.2,Standard (-16%),Unfavorable,51,-3.07,1.88,61,False
+rialto,C,wrecking-ball,-2.62,-16.2,Standard (-16%),Unfavorable,51,-3.07,1.88,62,False
 rialto,D,lucio,-6.33,-51.4,Niche (-51%),Deterrent,50,-6.82,2.68,99,False
 route-66,A,ana,2.44,17.3,Standard (+17%),Favorable,52,2.63,1.19,81,False
 route-66,A,sombra,1.62,12.8,Standard (+13%),Favorable,8,7.68,6.41,38,True
 route-66,B,torbjorn,0.95,15.1,Standard (+15%),Neutral,51,1.46,2.97,54,False
-route-66,B,tracer,0.84,-16.3,Standard (-16%),Neutral,52,1.58,2.19,64,False
-route-66,B,shion,0.83,-20.5,Niche (-21%),Neutral,28,2.92,2.43,64,False
+route-66,B,tracer,0.84,-16.3,Standard (-16%),Neutral,52,1.58,2.19,65,False
+route-66,B,shion,0.83,-20.5,Niche (-20%),Neutral,28,2.92,2.43,64,False
 route-66,B,wrecking-ball,0.65,1.9,Standard (+2%),Neutral,52,1.06,2.64,63,False
 route-66,B,hazard,0.62,5.9,Standard (+6%),Neutral,51,1.26,3.12,60,False
 route-66,B,mercy,0.62,34.8,Popular (+35%),Neutral,51,3.03,3.65,64,False
@@ -1370,7 +1370,7 @@ route-66,B,brigitte,0.05,2.9,Standard (+3%),Neutral,50,0.29,2.16,80,False
 route-66,B,venture,0.04,0.0,Standard (+0%),Neutral,50,-1.57,3.67,71,False
 route-66,B,doomfist,-0.0,-10.2,Standard (-10%),Neutral,51,0.87,3.32,73,False
 route-66,B,mauga,-0.02,-24.3,Niche (-24%),Neutral,50,0.74,4.0,63,False
-route-66,B,junkrat,-0.03,-1.5,Standard (-1%),Neutral,48,-0.01,2.67,70,False
+route-66,B,junkrat,-0.03,-1.5,Standard (-2%),Neutral,48,-0.01,2.67,70,False
 route-66,B,illari,-0.1,34.1,Popular (+34%),Neutral,52,0.22,2.44,80,False
 route-66,B,freja,-0.15,27.6,Popular (+28%),Neutral,52,0.28,2.76,77,False
 route-66,B,wuyang,-0.2,-0.6,Standard (-1%),Neutral,52,-0.22,2.2,82,False
@@ -1382,7 +1382,7 @@ route-66,B,juno,-0.41,-8.1,Standard (-8%),Neutral,50,0.39,2.35,77,False
 route-66,B,emre,-0.44,18.6,Standard (+19%),Neutral,52,-0.64,1.68,84,False
 route-66,B,jetpack-cat,-0.44,-14.2,Standard (-14%),Neutral,52,-0.58,3.58,58,False
 route-66,B,anran,-0.51,-11.2,Standard (-11%),Neutral,49,-1.03,4.02,65,False
-route-66,B,mei,-0.62,1.7,Standard (+2%),Neutral,52,-2.02,3.13,66,False
+route-66,B,mei,-0.62,1.7,Standard (+2%),Neutral,52,-2.02,3.13,67,False
 route-66,B,zarya,-0.98,-17.3,Standard (-17%),Neutral,52,-1.05,4.09,48,False
 route-66,B,pharah,-1.0,-28.0,Niche (-28%),Neutral,50,-1.01,3.02,52,False
 route-66,B,soldier-76,-1.04,-14.9,Standard (-15%),Neutral,52,-1.38,2.05,57,False
@@ -1407,9 +1407,9 @@ runasapi,S,reinhardt,3.58,6.7,Standard (+7%),Favorable,51,3.92,1.7,76,False
 runasapi,A,soldier-76,2.1,66.0,Map Priority (+66%),Meta,52,3.96,2.57,64,False
 runasapi,A,kiriko,1.97,16.7,Standard (+17%),Favorable,52,3.12,2.09,70,False
 runasapi,A,junker-queen,1.8,27.9,Popular (+28%),Meta,50,2.06,1.91,64,False
-runasapi,A,mauga,1.48,41.5,Popular (+41%),Meta,50,2.44,2.38,54,False
+runasapi,A,mauga,1.48,41.5,Popular (+42%),Meta,50,2.44,2.38,54,False
 runasapi,A,mizuki,1.38,18.4,Standard (+18%),Favorable,52,2.02,2.49,51,False
-runasapi,B,lucio,0.99,48.0,Popular (+48%),Neutral,51,1.13,1.66,59,False
+runasapi,B,lucio,0.99,48.0,Popular (+48%),Neutral,51,1.13,1.66,60,False
 runasapi,B,wrecking-ball,0.9,21.9,Popular (+22%),Neutral,51,1.31,2.36,59,False
 runasapi,B,domina,0.89,-20.7,Niche (-21%),Neutral,49,1.84,3.4,51,False
 runasapi,B,anran,0.86,7.7,Standard (+8%),Neutral,49,1.31,1.75,67,False
@@ -1418,8 +1418,8 @@ runasapi,B,vendetta,0.74,12.1,Standard (+12%),Neutral,48,1.78,2.97,64,False
 runasapi,B,doctrine,0.64,1.1,Standard (+1%),Neutral,8,1.04,3.08,60,True
 runasapi,B,mei,0.61,-29.1,Niche (-29%),Neutral,50,2.32,2.69,69,False
 runasapi,B,bastion,0.55,-15.6,Standard (-16%),Neutral,48,0.82,2.57,68,False
-runasapi,B,dmon,0.55,17.5,Standard (+17%),Neutral,16,1.42,2.87,68,False
-runasapi,B,wuyang,0.44,9.5,Standard (+9%),Neutral,52,1.27,2.69,73,False
+runasapi,B,dmon,0.55,17.5,Standard (+18%),Neutral,16,1.42,2.87,68,False
+runasapi,B,wuyang,0.44,9.5,Standard (+10%),Neutral,52,1.27,2.69,73,False
 runasapi,B,tracer,0.29,33.0,Popular (+33%),Neutral,52,0.51,1.59,88,False
 runasapi,B,zarya,0.29,2.3,Standard (+2%),Neutral,50,0.45,1.57,86,False
 runasapi,B,sierra,0.22,-8.2,Standard (-8%),Neutral,33,1.17,2.81,76,False
@@ -1429,7 +1429,7 @@ runasapi,B,juno,0.09,26.5,Popular (+26%),Neutral,51,1.82,1.83,87,False
 runasapi,B,venture,0.04,-6.4,Standard (-6%),Neutral,51,1.76,3.45,72,False
 runasapi,B,cassidy,-0.03,12.2,Standard (+12%),Neutral,52,0.39,2.97,75,False
 runasapi,B,genji,-0.05,-11.4,Standard (-11%),Neutral,51,0.74,1.59,91,False
-runasapi,B,illari,-0.11,-16.5,Standard (-17%),Neutral,51,0.21,2.67,78,False
+runasapi,B,illari,-0.11,-16.5,Standard (-16%),Neutral,51,0.21,2.67,78,False
 runasapi,B,emre,-0.24,-4.7,Standard (-5%),Neutral,52,0.15,2.28,80,False
 runasapi,B,dva,-0.28,0.1,Standard (+0%),Neutral,52,0.3,3.04,73,False
 runasapi,B,sojourn,-0.28,15.3,Standard (+15%),Neutral,52,-0.26,0.97,98,False
@@ -1444,7 +1444,7 @@ runasapi,B,baptiste,-0.64,-32.9,Niche (-33%),Neutral,50,-0.73,2.64,69,False
 runasapi,B,hazard,-0.64,9.2,Standard (+9%),Neutral,50,-0.66,2.2,68,False
 runasapi,B,shion,-0.75,40.5,Popular (+40%),Neutral,28,-1.01,1.3,77,False
 runasapi,B,ashe,-0.76,-55.3,Niche (-55%),Neutral,51,-0.74,2.82,64,False
-runasapi,B,junkrat,-0.77,-31.7,Niche (-32%),Neutral,47,-0.99,2.41,63,False
+runasapi,B,junkrat,-0.77,-31.7,Niche (-32%),Neutral,47,-0.99,2.41,62,False
 runasapi,B,mercy,-0.94,-21.4,Niche (-21%),Neutral,49,-2.08,2.73,59,False
 runasapi,B,zenyatta,-0.97,-34.7,Niche (-35%),Neutral,52,-1.72,2.87,57,False
 runasapi,C,moira,-1.24,10.9,Standard (+11%),Unfavorable,51,-1.41,3.05,45,False
@@ -1454,25 +1454,25 @@ runasapi,C,echo,-1.6,-36.6,Niche (-37%),Deterrent,51,-2.34,2.78,55,False
 runasapi,C,hanzo,-1.74,-58.2,Niche (-58%),Deterrent,50,-3.27,3.18,56,False
 runasapi,C,ramattra,-1.9,-10.7,Standard (-11%),Unfavorable,51,-2.53,3.01,53,False
 runasapi,C,freja,-2.38,-33.3,Niche (-33%),Deterrent,50,-4.45,2.8,61,False
-runasapi,D,ana,-3.79,-24.3,Niche (-24%),Deterrent,52,-4.6,2.3,78,False
+runasapi,D,ana,-3.79,-24.3,Niche (-24%),Deterrent,52,-4.6,2.3,77,False
 runasapi,D,sigma,-4.13,-31.6,Niche (-32%),Deterrent,52,-4.46,2.44,83,False
 runasapi,D,widowmaker,-16.67,-61.5,Niche (-62%),Deterrent,52,-17.19,3.09,100,False
-samoa,A,symmetra,1.93,30.9,Popular (+31%),Meta,51,2.2,1.29,83,False
+samoa,A,symmetra,1.93,30.9,Popular (+31%),Meta,51,2.2,1.29,84,False
 samoa,A,torbjorn,1.77,-1.4,Standard (-1%),Favorable,52,2.31,2.26,60,False
 samoa,A,mizuki,1.55,22.6,Popular (+23%),Meta,52,1.69,1.11,74,False
 samoa,A,cassidy,1.51,27.2,Popular (+27%),Meta,52,1.74,0.86,77,False
 samoa,A,moira,1.43,21.9,Popular (+22%),Meta,52,2.19,1.95,57,False
-samoa,B,tracer,1.12,26.4,Popular (+26%),Neutral,52,1.25,0.82,57,False
+samoa,B,tracer,1.12,26.4,Popular (+26%),Neutral,52,1.25,0.82,58,False
 samoa,B,anran,1.05,18.2,Standard (+18%),Neutral,51,2.23,2.64,55,False
 samoa,B,wuyang,0.97,6.5,Standard (+6%),Neutral,52,1.41,1.44,64,False
-samoa,B,junker-queen,0.77,30.1,Popular (+30%),Neutral,51,0.94,1.86,66,False
+samoa,B,junker-queen,0.77,30.1,Popular (+30%),Neutral,51,0.94,1.86,67,False
 samoa,B,zarya,0.65,20.7,Popular (+21%),Neutral,52,0.83,1.46,78,False
-samoa,B,ramattra,0.6,7.5,Standard (+8%),Neutral,50,1.05,2.22,70,False
+samoa,B,ramattra,0.6,7.5,Standard (+8%),Neutral,50,1.05,2.22,69,False
 samoa,B,kiriko,0.51,8.6,Standard (+9%),Neutral,52,0.57,0.89,94,False
 samoa,B,hazard,0.49,4.8,Standard (+5%),Neutral,52,0.79,2.26,71,False
 samoa,B,mauga,0.49,22.1,Popular (+22%),Neutral,50,0.96,2.3,72,False
 samoa,B,shion,0.49,28.1,Popular (+28%),Neutral,28,0.8,1.13,91,False
-samoa,B,bastion,0.47,-8.5,Standard (-9%),Neutral,50,0.57,1.69,81,False
+samoa,B,bastion,0.47,-8.5,Standard (-8%),Neutral,50,0.57,1.69,81,False
 samoa,B,reinhardt,0.39,11.9,Standard (+12%),Neutral,52,0.45,1.43,86,False
 samoa,B,sojourn,0.39,7.6,Standard (+8%),Neutral,52,0.68,1.56,87,False
 samoa,B,doomfist,0.32,6.3,Standard (+6%),Neutral,52,0.52,1.11,95,False
@@ -1480,8 +1480,8 @@ samoa,B,orisa,0.29,16.1,Standard (+16%),Neutral,52,0.43,1.93,82,False
 samoa,B,sierra,0.22,-15.2,Standard (-15%),Neutral,32,-0.6,1.83,86,False
 samoa,B,emre,0.21,-16.9,Standard (-17%),Neutral,52,0.8,1.23,95,False
 samoa,B,baptiste,0.15,-16.4,Standard (-16%),Neutral,51,1.03,2.35,80,False
-samoa,B,lifeweaver,0.13,-15.0,Standard (-15%),Neutral,51,2.17,1.73,89,False
-samoa,B,lucio,0.13,32.6,Popular (+33%),Neutral,52,0.25,1.89,80,False
+samoa,B,lifeweaver,0.13,-15.0,Standard (-15%),Neutral,51,2.17,1.73,88,False
+samoa,B,lucio,0.13,32.6,Popular (+33%),Neutral,52,0.25,1.89,79,False
 samoa,B,illari,0.08,-21.8,Niche (-22%),Neutral,52,0.38,1.29,95,False
 samoa,B,domina,0.07,-15.8,Standard (-16%),Neutral,51,0.51,3.03,64,False
 samoa,B,venture,0.04,9.3,Standard (+9%),Neutral,51,-0.23,2.46,80,False
@@ -1492,13 +1492,13 @@ samoa,B,genji,-0.3,-12.0,Standard (-12%),Neutral,52,-2.11,2.26,80,False
 samoa,B,mei,-0.39,-8.7,Standard (-9%),Neutral,51,-0.84,2.53,75,False
 samoa,B,ashe,-0.41,-44.4,Niche (-44%),Neutral,52,-0.21,1.24,91,False
 samoa,B,zenyatta,-0.46,-19.7,Standard (-20%),Neutral,52,-0.46,1.34,88,False
-samoa,B,dmon,-0.61,20.4,Popular (+20%),Neutral,16,-0.79,2.62,68,False
+samoa,B,dmon,-0.61,20.4,Popular (+20%),Neutral,16,-0.79,2.62,69,False
 samoa,B,mercy,-0.65,-20.9,Niche (-21%),Neutral,50,-0.9,1.68,77,False
-samoa,B,reaper,-0.69,21.6,Popular (+22%),Neutral,52,-0.98,2.46,69,False
+samoa,B,reaper,-0.69,21.6,Popular (+22%),Neutral,52,-0.98,2.46,68,False
 samoa,B,vendetta,-0.69,5.8,Standard (+6%),Neutral,48,-1.23,2.89,66,False
 samoa,B,juno,-0.75,1.8,Standard (+2%),Neutral,52,-1.5,2.63,66,False
 samoa,B,freja,-1.05,-33.0,Niche (-33%),Neutral,52,-1.49,2.48,55,False
-samoa,B,soldier-76,-1.08,-13.4,Standard (-13%),Neutral,52,-1.23,1.35,57,False
+samoa,B,soldier-76,-1.08,-13.4,Standard (-13%),Neutral,52,-1.23,1.35,58,False
 samoa,C,sigma,-1.28,-25.4,Niche (-25%),Deterrent,52,-1.26,1.48,53,False
 samoa,C,echo,-1.33,-32.0,Niche (-32%),Deterrent,52,-1.58,1.9,54,False
 samoa,C,dva,-1.5,-16.1,Standard (-16%),Unfavorable,52,-1.94,1.42,67,False
@@ -1507,7 +1507,7 @@ samoa,C,pharah,-1.66,-13.9,Standard (-14%),Unfavorable,51,-1.82,2.28,57,False
 samoa,C,junkrat,-1.76,-7.8,Standard (-8%),Unfavorable,51,-2.16,2.04,63,False
 samoa,C,jetpack-cat,-1.81,-6.2,Standard (-6%),Unfavorable,52,-2.38,2.73,54,False
 samoa,C,ana,-2.0,-13.9,Standard (-14%),Unfavorable,52,-2.07,0.97,93,False
-samoa,C,sombra,-2.05,8.5,Standard (+9%),Unfavorable,8,-3.45,4.46,44,True
+samoa,C,sombra,-2.05,8.5,Standard (+8%),Unfavorable,8,-3.45,4.46,44,True
 samoa,C,doctrine,-2.21,-2.2,Standard (-2%),Unfavorable,8,-3.34,2.98,53,True
 samoa,C,winston,-2.9,-30.3,Niche (-30%),Deterrent,52,-2.96,1.62,53,False
 samoa,D,widowmaker,-6.71,-70.6,Niche (-71%),Deterrent,44,-6.74,1.89,100,False
@@ -1519,7 +1519,7 @@ shambali-monastery,A,doctrine,1.55,5.3,Standard (+5%),Favorable,8,3.04,3.93,44,T
 shambali-monastery,A,bastion,1.48,27.9,Popular (+28%),Meta,50,2.11,2.36,54,False
 shambali-monastery,A,junkrat,1.36,44.1,Popular (+44%),Meta,49,1.8,2.34,50,False
 shambali-monastery,A,wuyang,1.33,15.8,Standard (+16%),Favorable,52,2.64,2.16,53,False
-shambali-monastery,B,orisa,1.07,21.2,Popular (+21%),Neutral,52,1.5,2.0,56,False
+shambali-monastery,B,orisa,1.07,21.2,Popular (+21%),Neutral,52,1.5,2.0,55,False
 shambali-monastery,B,pharah,0.72,34.2,Popular (+34%),Neutral,52,1.49,3.09,57,False
 shambali-monastery,B,jetpack-cat,0.65,-1.4,Standard (-1%),Neutral,52,1.06,3.11,58,False
 shambali-monastery,B,mei,0.65,39.2,Popular (+39%),Neutral,51,2.41,2.67,68,False
@@ -1548,7 +1548,7 @@ shambali-monastery,B,ashe,-0.7,18.7,Standard (+19%),Neutral,52,-0.55,2.51,68,Fal
 shambali-monastery,B,doomfist,-0.7,-12.9,Standard (-13%),Neutral,52,-2.1,3.56,63,False
 shambali-monastery,B,moira,-0.77,-10.1,Standard (-10%),Neutral,50,-0.52,3.5,57,False
 shambali-monastery,B,mercy,-0.81,9.7,Standard (+10%),Neutral,49,-2.0,3.1,62,False
-shambali-monastery,B,hazard,-0.82,-34.5,Niche (-35%),Neutral,51,-1.0,3.42,54,False
+shambali-monastery,B,hazard,-0.82,-34.5,Niche (-34%),Neutral,51,-1.0,3.42,54,False
 shambali-monastery,B,zarya,-1.09,14.6,Standard (+15%),Neutral,52,-1.19,2.99,50,False
 shambali-monastery,B,torbjorn,-1.13,5.3,Standard (+5%),Neutral,50,-1.73,3.12,49,False
 shambali-monastery,B,zenyatta,-1.18,22.4,Popular (+22%),Neutral,52,-1.8,2.19,51,False
@@ -1588,7 +1588,7 @@ suravasa,B,tracer,0.27,31.1,Popular (+31%),Neutral,52,0.37,1.04,97,False
 suravasa,B,sierra,0.22,-14.3,Standard (-14%),Neutral,33,2.03,2.05,83,False
 suravasa,B,echo,0.2,-35.8,Niche (-36%),Neutral,52,0.53,1.98,83,False
 suravasa,B,lifeweaver,0.13,-21.8,Niche (-22%),Neutral,51,-1.57,1.6,90,False
-suravasa,B,vendetta,0.05,16.5,Standard (+17%),Neutral,48,0.25,2.54,79,False
+suravasa,B,vendetta,0.05,16.5,Standard (+16%),Neutral,48,0.25,2.54,79,False
 suravasa,B,dmon,0.04,10.6,Standard (+11%),Neutral,16,0.32,2.43,79,False
 suravasa,B,venture,0.04,6.9,Standard (+7%),Neutral,51,-1.12,2.67,78,False
 suravasa,B,torbjorn,0.03,-3.8,Standard (-4%),Neutral,52,0.06,2.54,72,False
@@ -1625,12 +1625,12 @@ watchpoint-gibraltar,A,ana,2.11,24.4,Popular (+24%),Meta,52,2.38,1.5,78,False
 watchpoint-gibraltar,A,junkrat,1.74,9.0,Standard (+9%),Favorable,50,2.61,2.89,52,False
 watchpoint-gibraltar,A,hazard,1.5,53.3,Map Priority (+53%),Meta,52,1.97,2.04,57,False
 watchpoint-gibraltar,A,mercy,1.39,20.7,Popular (+21%),Meta,51,3.22,2.29,55,False
-watchpoint-gibraltar,A,dva,1.32,47.4,Popular (+47%),Meta,51,3.08,2.03,53,False
+watchpoint-gibraltar,A,dva,1.32,47.4,Popular (+47%),Meta,51,3.08,2.03,54,False
 watchpoint-gibraltar,B,brigitte,1.13,61.2,Map Priority (+61%),Neutral,52,1.79,2.13,52,False
 watchpoint-gibraltar,B,baptiste,0.9,1.0,Standard (+1%),Neutral,52,2.1,1.91,64,False
 watchpoint-gibraltar,B,freja,0.8,31.0,Popular (+31%),Neutral,52,2.33,2.81,63,False
 watchpoint-gibraltar,B,roadhog,0.71,8.7,Standard (+9%),Neutral,7,5.12,8.16,45,True
-watchpoint-gibraltar,B,bastion,0.46,-1.1,Standard (-1%),Neutral,50,0.61,2.08,76,False
+watchpoint-gibraltar,B,bastion,0.46,-1.1,Standard (-1%),Neutral,50,0.61,2.08,75,False
 watchpoint-gibraltar,B,tracer,0.44,10.1,Standard (+10%),Neutral,52,0.68,1.48,86,False
 watchpoint-gibraltar,B,ashe,0.34,83.1,Map Priority (+83%),Neutral,52,1.39,1.61,87,False
 watchpoint-gibraltar,B,sierra,0.22,8.7,Standard (+9%),Neutral,36,-0.26,2.28,81,False
@@ -1638,22 +1638,22 @@ watchpoint-gibraltar,B,anran,0.15,-15.0,Standard (-15%),Neutral,49,1.05,4.07,69,
 watchpoint-gibraltar,B,lifeweaver,0.13,30.8,Popular (+31%),Neutral,52,-0.6,3.59,71,False
 watchpoint-gibraltar,B,echo,0.11,20.8,Popular (+21%),Neutral,52,0.45,2.13,81,False
 watchpoint-gibraltar,B,doctrine,0.1,-3.2,Standard (-3%),Neutral,8,0.39,5.3,53,True
-watchpoint-gibraltar,B,venture,0.04,-2.5,Standard (-3%),Neutral,50,-2.05,3.53,72,False
+watchpoint-gibraltar,B,venture,0.04,-2.5,Standard (-2%),Neutral,50,-2.05,3.53,72,False
 watchpoint-gibraltar,B,illari,0.03,15.6,Standard (+16%),Neutral,52,0.42,1.7,89,False
 watchpoint-gibraltar,B,cassidy,0.02,-14.2,Standard (-14%),Neutral,52,0.15,1.53,92,False
 watchpoint-gibraltar,B,shion,-0.02,-39.8,Niche (-40%),Neutral,28,0.96,3.5,72,False
-watchpoint-gibraltar,B,genji,-0.07,21.5,Popular (+21%),Neutral,52,0.38,1.27,96,False
+watchpoint-gibraltar,B,genji,-0.07,21.5,Popular (+22%),Neutral,52,0.38,1.27,96,False
 watchpoint-gibraltar,B,emre,-0.09,10.6,Standard (+11%),Neutral,52,0.54,1.88,87,False
 watchpoint-gibraltar,B,jetpack-cat,-0.13,19.8,Standard (+20%),Neutral,52,-0.08,2.98,65,False
 watchpoint-gibraltar,B,mei,-0.23,-37.1,Niche (-37%),Neutral,47,-0.41,2.92,75,False
 watchpoint-gibraltar,B,soldier-76,-0.32,-5.3,Standard (-5%),Neutral,52,-0.26,3.79,67,False
-watchpoint-gibraltar,B,doomfist,-0.53,0.3,Standard (+0%),Neutral,52,-1.03,2.81,71,False
+watchpoint-gibraltar,B,doomfist,-0.53,0.3,Standard (+0%),Neutral,52,-1.03,2.81,70,False
 watchpoint-gibraltar,B,juno,-0.6,-17.6,Standard (-18%),Neutral,49,-0.55,3.65,65,False
 watchpoint-gibraltar,B,widowmaker,-0.62,51.9,Map Priority (+52%),Neutral,51,-0.58,1.45,78,False
-watchpoint-gibraltar,B,wuyang,-0.64,-28.5,Niche (-29%),Neutral,52,-0.86,1.6,78,False
+watchpoint-gibraltar,B,wuyang,-0.64,-28.5,Niche (-28%),Neutral,52,-0.86,1.6,78,False
 watchpoint-gibraltar,B,kiriko,-0.65,-4.1,Standard (-4%),Neutral,52,-0.83,1.73,76,False
 watchpoint-gibraltar,B,hanzo,-0.66,12.6,Standard (+13%),Neutral,52,-0.86,2.79,66,False
-watchpoint-gibraltar,B,pharah,-0.75,-37.5,Niche (-37%),Neutral,51,-0.62,3.37,55,False
+watchpoint-gibraltar,B,pharah,-0.75,-37.5,Niche (-38%),Neutral,51,-0.62,3.37,55,False
 watchpoint-gibraltar,B,mizuki,-0.87,-25.3,Niche (-25%),Neutral,52,-1.17,2.23,62,False
 watchpoint-gibraltar,B,dmon,-0.88,-40.2,Niche (-40%),Neutral,16,-2.3,5.09,54,False
 watchpoint-gibraltar,B,reaper,-1.05,17.2,Standard (+17%),Neutral,52,-1.7,2.47,55,False

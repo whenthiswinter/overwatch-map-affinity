@@ -6,7 +6,6 @@ saving a snapshot every day. Safe to run repeatedly: it exits right away once
 today's snapshot exists, and writes nothing unless every request succeeded.
 """
 import datetime
-import gzip
 import html
 import json
 import os
@@ -17,10 +16,9 @@ import traceback
 
 from curl_cffi import requests
 
-from config import HERO_ROLES, MAP_MODES, canonical_slug, current_patch
+import snapshots
+from config import SNAPSHOT_DIR, canonical_slug, current_patch
 
-BASE = os.path.join(os.path.dirname(__file__), "..")
-SNAPSHOT_DIR = os.path.join(BASE, "data", "snapshots")
 LOG_PATH = os.path.join(SNAPSHOT_DIR, "collect.log")
 RUNS_PATH = os.path.join(SNAPSHOT_DIR, "runs.log")
 
@@ -158,21 +156,6 @@ def collect_nexon(rq, map_slugs):
     return slices, empty
 
 
-def roster_warnings(heroes, maps):
-    warnings = []
-    for slug, info in sorted(heroes.items()):
-        if slug not in HERO_ROLES:
-            warnings.append(f"new hero not in config: {slug} ({info['name']}, {info['role']})")
-        elif HERO_ROLES[slug] != info["role"]:
-            warnings.append(f"role changed: {slug} is {info['role']}, config says {HERO_ROLES[slug]}")
-    for slug, info in sorted(maps.items()):
-        if slug not in MAP_MODES:
-            warnings.append(f"new map not in config: {slug} ({info['name']}, {info['mode']})")
-        elif MAP_MODES[slug] != info["mode"]:
-            warnings.append(f"mode changed: {slug} is {info['mode']}, config says {MAP_MODES[slug]}")
-    return warnings
-
-
 def note_run(outcome):
     """One line per invocation, so a scheduled task that never fires (or dies
     before logging) shows up as a gap instead of silence."""
@@ -214,18 +197,13 @@ def main():
         "maps": maps,
         "slices": slices,
     }
-    tmp = path + ".tmp"
-    with gzip.open(tmp, "wt", encoding="utf-8") as f:
-        json.dump(snapshot, f, separators=(",", ":"))
-    os.replace(tmp, path)
+    snapshots.save_snapshot(path, snapshot)
 
     log(f"saved {os.path.basename(path)}: {len(slices)} slices, {len(heroes)} heroes, {len(maps)} maps, "
         f"{os.path.getsize(path) // 1024} KB, {time.time() - started:.0f}s")
     note_run("saved")
     if kr_empty:
         log(f"note: no Korea data for {', '.join(kr_empty)}")
-    for warning in roster_warnings(heroes, maps):
-        log(f"WARNING: {warning}")
     return 0
 
 

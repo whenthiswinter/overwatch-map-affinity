@@ -2,6 +2,8 @@ import datetime
 import json
 import os
 
+import snapshots
+
 SEASON_MAP = {
     1: 21,
     2: 22,
@@ -14,7 +16,8 @@ SEASON_MAP = {
 # detect_patch.py updates when Blizzard's numbers reset. Each patch has an id
 # ("S5", "S5-mid", "S5-mid-2" for a later reset in the same half) plus the
 # season / midseason label its slices are filed under.
-PATCH_STATE_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "snapshots", "state.json")
+SNAPSHOT_DIR = snapshots.SNAPSHOT_DIR
+PATCH_STATE_PATH = os.path.join(SNAPSHOT_DIR, "state.json")
 
 
 def load_patch_state():
@@ -40,15 +43,13 @@ def current_patch(state=None):
 # (PLAN.md phase 5).
 MATURITY_DAYS = 21
 
-SNAPSHOT_DIR = os.path.join(os.path.dirname(__file__), "..", "data", "snapshots")
-
-
 def latest_snapshot_date():
     dates = [f[:10] for f in os.listdir(SNAPSHOT_DIR) if f.endswith(".json.gz")] if os.path.isdir(SNAPSHOT_DIR) else []
     return max(dates) if dates else None
 
 
-_current = current_patch()
+_state = load_patch_state()
+_current = current_patch(_state)
 CURRENT_PATCH = _current
 CURRENT_SEASON = _current["season"]
 CURRENT_IS_MIDSEASON = _current["is_midseason"]
@@ -77,6 +78,10 @@ MIN_SAMPLE_SIZE = 3
 # Earliest season we accept data from for a hero: their release, or their
 # most recent rework. Keyed by canonical slug (see canonical_slug). Use x.5
 # for a midseason release or rework (5.5 = from S5 midseason on).
+# Heroes and maps that first appear in the snapshots don't need an entry:
+# detect_patch.py records when it first saw them (state.json "first_seen") and
+# that's used instead. Entries here are for what the data can't tell:
+# reworks, and OWTics' fake pre-release rows (Doctrine).
 HERO_VALID_FROM_SEASON = {
     "sierra": 2,
     "shion": 3,
@@ -93,18 +98,14 @@ MAP_VALID_FROM_SEASON = {
     "paraiso": 4,
     "eichenwalde": 4,
     "busan": 4,
-    "grimsvotn": 5,
 }
 
-MAP_SLUGS = [
-    "circuit-royal", "dorado", "grimsvotn", "havana", "junkertown", "rialto", "route-66", "shambali-monastery", "watchpoint-gibraltar",
-    "blizzard-world", "eichenwalde", "hollywood", "kings-row", "midtown", "neon-junction", "numbani", "paraiso",
-    "antarctic-peninsula", "busan", "ilios", "lijiang-tower", "nepal", "oasis", "samoa",
-    "colosseo", "esperanca", "new-queen-street", "runasapi",
-    "aatlis", "new-junk-city", "suravasa",
-]
+FIRST_SEEN = _state.get("first_seen", {"heroes": {}, "maps": {}})
 
-MAP_MODES = {
+# Roles, names and map modes come from the newest snapshot (Blizzard's own
+# listing, see the bottom of this file). These hand-written tables are only the
+# fallback for heroes and maps that are no longer in it.
+_FALLBACK_MAP_MODES = {
     "circuit-royal": "Escort", "dorado": "Escort", "grimsvotn": "Escort", "havana": "Escort", "junkertown": "Escort",
     "rialto": "Escort", "route-66": "Escort", "shambali-monastery": "Escort", "watchpoint-gibraltar": "Escort",
     "blizzard-world": "Hybrid", "eichenwalde": "Hybrid", "hollywood": "Hybrid", "kings-row": "Hybrid",
@@ -130,7 +131,7 @@ HERO_NAMES = {
     "dmon": "D.Mon", "dva": "D.Va", "lucio": "Lúcio", "soldier-76": "Soldier: 76", "torbjorn": "Torbjörn",
 }
 
-HERO_ROLES = {
+_FALLBACK_HERO_ROLES = {
     "dmon": "Tank", "domina": "Tank", "doomfist": "Tank", "dva": "Tank", "hazard": "Tank",
     "junker-queen": "Tank", "mauga": "Tank", "orisa": "Tank", "ramattra": "Tank", "reinhardt": "Tank",
     "roadhog": "Tank", "sigma": "Tank", "winston": "Tank", "wrecking-ball": "Tank", "zarya": "Tank",
@@ -148,6 +149,11 @@ HERO_ROLES = {
     "moira": "Support", "sombra": "Support", "wuyang": "Support", "zenyatta": "Support",
 }
 
+_roster = snapshots.latest_roster()
+HERO_ROLES = {**_FALLBACK_HERO_ROLES, **{h: v["role"] for h, v in _roster["heroes"].items()}}
+MAP_MODES = {**_FALLBACK_MAP_MODES, **{m: v["mode"] for m, v in _roster["maps"].items()}}
+_SNAPSHOT_NAMES = {h: v["name"] for h, v in _roster["heroes"].items()}
+
 TIERS = ["MASTER", "GRANDMASTER_AND_CHAMPION"]
 REGIONS = ["AMER", "EU", "ASIA", "KOREA"]
 
@@ -163,11 +169,20 @@ def hero_role(slug):
 
 def hero_name(slug):
     slug = canonical_slug(slug)
-    return HERO_NAMES.get(slug, slug.replace("-", " ").title())
+    return _SNAPSHOT_NAMES.get(slug) or HERO_NAMES.get(slug, slug.replace("-", " ").title())
+
+
+def hero_valid_from(hero_slug):
+    hero_slug = canonical_slug(hero_slug)
+    return HERO_VALID_FROM_SEASON.get(hero_slug, FIRST_SEEN["heroes"].get(hero_slug, 1))
+
+
+def map_valid_from(map_slug):
+    return MAP_VALID_FROM_SEASON.get(map_slug, FIRST_SEEN["maps"].get(map_slug, 1))
 
 
 def valid_from(hero_slug, map_slug):
-    return max(HERO_VALID_FROM_SEASON.get(canonical_slug(hero_slug), 1), MAP_VALID_FROM_SEASON.get(map_slug, 1))
+    return max(hero_valid_from(hero_slug), map_valid_from(map_slug))
 
 
 def period(season, is_midseason=False):

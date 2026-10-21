@@ -25,6 +25,16 @@ def save_snapshot(path, snapshot):
     os.replace(tmp, path)
 
 
+def latest_roster():
+    """Heroes (name, role, subrole) and maps (name, mode) as Blizzard listed
+    them in the newest snapshot; empty before the first snapshot exists."""
+    paths = snapshot_paths()
+    if not paths:
+        return {"heroes": {}, "maps": {}}
+    snapshot = load_snapshot(paths[-1])
+    return {"heroes": snapshot["heroes"], "maps": snapshot["maps"]}
+
+
 def patch_of(snapshot):
     # Snapshots from before patch ids existed (2026-10-13 to 10-20) are all S5.
     return snapshot.get("patch") or f"S{snapshot['season']}{'-mid' if snapshot.get('is_midseason') else ''}"

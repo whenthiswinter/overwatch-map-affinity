@@ -5,7 +5,7 @@ import time
 
 from curl_cffi import requests
 
-from config import HERO_VALID_FROM_SEASON, REGIONS, SEASON_MAP, TIERS, canonical_slug
+from config import REGIONS, SEASON_MAP, TIERS, canonical_slug, hero_valid_from
 
 API_URL = "https://api.owtics.gg/graphql"
 DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "data", "raw")
@@ -79,7 +79,7 @@ def discover_heroes():
 def harvest_hero(hero_name, hero_meta):
     # Also matters for correctness: OWTics returns current-season numbers for
     # any season filter on a hero who did not exist yet.
-    earliest_season = HERO_VALID_FROM_SEASON.get(canonical_slug(hero_meta["slug"]), 1)
+    earliest_season = hero_valid_from(hero_meta["slug"])
     dataset = []
 
     for concept_season, owtics_season in SEASON_MAP.items():

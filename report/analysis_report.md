@@ -93,10 +93,10 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | Tier | P(tier) | Hero | Delta WR | Raw (95% range) | Presence | Archetype | n |
 |---|---|---|---|---|---|---|---|
 | S | 83% | Junker Queen | +3.95% | +4.48% ±2.0 | Map Priority (+81%) | Meta | 51 |
-| A | 68% | Lúcio | +2.68% | +2.80% ±1.3 | Map Priority (+115%) | Meta | 52 |
+| A | 67% | Lúcio | +2.68% | +2.80% ±1.3 | Map Priority (+115%) | Meta | 52 |
 | A | 60% | Mauga | +2.61% | +3.73% ±2.1 | Popular (+50%) | Meta | 52 |
 | A | 66% | Anran | +2.08% | +4.00% ±2.5 | Map Priority (+68%) | Meta | 52 |
-| A | 69% | Junkrat | +1.91% | +2.31% ±1.9 | Standard (+17%) | Favorable | 50 |
+| A | 69% | Junkrat | +1.91% | +2.31% ±1.9 | Standard (+18%) | Favorable | 50 |
 | A | 63% | Zarya | +1.85% | +2.52% ±2.1 | Popular (+34%) | Meta | 52 |
 | A | 49% | Reinhardt | +1.63% | +2.10% ±2.8 | Standard (+16%) | Favorable | 50 |
 | A | 58% | D.Mon | +1.56% | +2.80% ±2.4 | Popular (+24%) | Meta | 16 |
@@ -121,7 +121,7 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | B | 80% | Tracer | -0.11% | +0.12% ±2.4 | Popular (+29%) | Neutral | 52 |
 | B | 87% | Genji | -0.13% | +0.29% ±1.9 | Standard (+5%) | Neutral | 52 |
 | B | 99% | Kiriko | -0.14% | -0.14% ±0.9 | Popular (+21%) | Neutral | 51 |
-| B | 78% | Emre | -0.26% | +0.08% ±2.4 | Niche (-45%) | Neutral | 52 |
+| B | 78% | Emre | -0.26% | +0.08% ±2.4 | Niche (-44%) | Neutral | 52 |
 | B | 80% | Mei | -0.28% | -0.47% ±2.2 | Standard (+8%) | Neutral | 52 |
 | B | 82% | Symmetra | -0.36% | -0.33% ±1.8 | Standard (+8%) | Neutral | 51 |
 | B | 80% | Sojourn | -0.38% | -0.36% ±2.1 | Standard (+2%) | Neutral | 52 |
@@ -129,8 +129,8 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | B | 83% | Juno | -0.40% | +0.08% ±1.8 | Standard (+3%) | Neutral | 52 |
 | B | 78% | Zenyatta | -0.64% | -0.72% ±1.6 | Niche (-46%) | Neutral | 51 |
 | B | 66% | Mercy | -0.72% | -1.45% ±2.7 | Niche (-40%) | Neutral | 49 |
-| B | 63% | Baptiste | -0.74% | -1.09% ±3.1 | Niche (-29%) | Neutral | 51 |
-| B | 59% | Wuyang | -0.99% | -1.67% ±2.1 | Standard (+3%) | Neutral | 52 |
+| B | 64% | Baptiste | -0.74% | -1.09% ±3.1 | Niche (-29%) | Neutral | 51 |
+| B | 59% | Wuyang | -0.99% | -1.67% ±2.1 | Standard (+4%) | Neutral | 52 |
 | B | 43% | Roadhog *(provisional)* | -1.05% | -2.80% ±6.8 | Standard (+3%) | Neutral | 8 |
 | C | 51% | Ashe | -1.40% | -3.92% ±3.2 | Niche (-79%) | Deterrent | 37 |
 | C | 46% | Doctrine *(provisional)* | -1.51% | -2.46% ±3.3 | Standard (-9%) | Unfavorable | 8 |
@@ -155,7 +155,7 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | A | 57% | Junker Queen | +2.77% | +3.08% ±1.8 | Popular (+37%) | Meta | 40 |
 | A | 58% | Torbjörn | +2.39% | +3.22% ±2.4 | Standard (-3%) | Favorable | 40 |
 | A | 82% | Ramattra | +2.03% | +2.40% ±1.4 | Popular (+22%) | Meta | 40 |
-| A | 70% | Symmetra | +1.76% | +2.19% ±1.7 | Standard (+20%) | Favorable | 40 |
+| A | 71% | Symmetra | +1.76% | +2.19% ±1.7 | Standard (+20%) | Favorable | 40 |
 | A | 67% | Mauga | +1.66% | +2.20% ±1.7 | Popular (+23%) | Meta | 40 |
 | A | 66% | Zarya | +1.54% | +1.84% ±1.5 | Popular (+22%) | Meta | 40 |
 | A | 70% | Bastion | +1.53% | +1.71% ±1.2 | Standard (-12%) | Favorable | 39 |
@@ -163,8 +163,8 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | A | 62% | Reinhardt | +1.45% | +1.57% ±1.5 | Standard (+15%) | Favorable | 40 |
 | A | 57% | Tracer | +1.28% | +1.46% ±0.9 | Standard (+20%) | Favorable | 40 |
 | A | 46% | Domina | +1.23% | +1.73% ±2.3 | Niche (-26%) | Specialist | 39 |
-| B | 54% | Kiriko | +1.17% | +1.26% ±0.8 | Standard (+11%) | Neutral | 40 |
-| B | 68% | Soldier: 76 | +0.92% | +1.17% ±1.3 | Standard (-7%) | Neutral | 40 |
+| B | 53% | Kiriko | +1.17% | +1.26% ±0.8 | Standard (+11%) | Neutral | 40 |
+| B | 67% | Soldier: 76 | +0.92% | +1.17% ±1.3 | Standard (-7%) | Neutral | 40 |
 | B | 76% | Brigitte | +0.74% | +0.96% ±1.4 | Standard (+10%) | Neutral | 40 |
 | B | 80% | Mizuki | +0.60% | +0.69% ±1.5 | Popular (+29%) | Neutral | 40 |
 | B | 79% | Orisa | +0.54% | +0.72% ±1.8 | Standard (+18%) | Neutral | 40 |
@@ -172,7 +172,7 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | B | 81% | Vendetta | +0.51% | +0.76% ±1.7 | Standard (+17%) | Neutral | 37 |
 | B | 85% | Baptiste | +0.41% | +0.98% ±1.6 | Standard (-14%) | Neutral | 40 |
 | B | 86% | Illari | +0.30% | +1.29% ±1.8 | Niche (-29%) | Neutral | 40 |
-| B | 83% | Sierra | +0.22% | -0.89% ±2.1 | Standard (-11%) | Neutral | 31 |
+| B | 83% | Sierra | +0.22% | -0.89% ±2.1 | Standard (-10%) | Neutral | 31 |
 | B | 85% | Mei | +0.18% | +0.57% ±2.0 | Standard (+3%) | Neutral | 40 |
 | B | 82% | Lifeweaver | +0.13% | +0.96% ±2.2 | Niche (-25%) | Neutral | 40 |
 | B | 91% | Reaper | +0.06% | +0.25% ±1.6 | Popular (+22%) | Neutral | 40 |
@@ -192,7 +192,7 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | B | 75% | Ashe | -0.71% | -0.66% ±1.6 | Niche (-59%) | Neutral | 40 |
 | B | 71% | Juno | -0.71% | -1.05% ±2.0 | Standard (+9%) | Neutral | 40 |
 | B | 62% | Mercy | -0.90% | -1.62% ±2.2 | Niche (-22%) | Neutral | 39 |
-| B | 65% | Echo | -0.94% | -1.00% ±1.4 | Niche (-30%) | Neutral | 40 |
+| B | 66% | Echo | -0.94% | -1.00% ±1.4 | Niche (-30%) | Neutral | 40 |
 | B | 51% | Wrecking Ball | -1.18% | -1.28% ±1.5 | Standard (-4%) | Neutral | 40 |
 | C | 49% | D.Va | -1.22% | -1.82% ±2.0 | Standard (-18%) | Unfavorable | 40 |
 | C | 38% | Sombra *(provisional)* | -1.24% | -1.72% ±4.7 | Standard (+14%) | Unfavorable | 8 |
@@ -215,7 +215,7 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | B | 65% | Anran | +0.60% | +2.13% ±3.7 | Standard (-15%) | Neutral | 51 |
 | B | 80% | D.Va | +0.47% | +1.34% ±1.9 | Standard (+10%) | Neutral | 52 |
 | B | 59% | Jetpack Cat | +0.46% | +0.86% ±3.4 | Standard (-6%) | Neutral | 52 |
-| B | 85% | Winston | +0.37% | +0.48% ±1.5 | Popular (+26%) | Neutral | 52 |
+| B | 84% | Winston | +0.37% | +0.48% ±1.5 | Popular (+26%) | Neutral | 52 |
 | B | 89% | Sojourn | +0.32% | +0.57% ±1.5 | Standard (+7%) | Neutral | 52 |
 | B | 69% | Sierra | +0.22% | -3.02% ±4.1 | Popular (+31%) | Neutral | 38 |
 | B | 48% | Sombra *(provisional)* | +0.17% | +4.18% ±8.1 | Standard (-2%) | Neutral | 8 |
@@ -225,26 +225,26 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | B | 96% | Wuyang | +0.04% | +0.10% ±1.3 | Standard (+3%) | Neutral | 52 |
 | B | 61% | D.Mon | +0.02% | +2.32% ±7.1 | Standard (-11%) | Neutral | 16 |
 | B | 72% | Bastion | -0.10% | -0.16% ±2.7 | Standard (+0%) | Neutral | 51 |
-| B | 92% | Illari | -0.17% | -0.16% ±1.5 | Standard (+18%) | Neutral | 52 |
+| B | 91% | Illari | -0.17% | -0.16% ±1.5 | Standard (+18%) | Neutral | 52 |
 | B | 46% | Roadhog *(provisional)* | -0.18% | +1.21% ±10.1 | Popular (+22%) | Neutral | 8 |
 | B | 75% | Mercy | -0.21% | -0.18% ±2.9 | Standard (+14%) | Neutral | 51 |
 | B | 74% | Orisa | -0.21% | -0.28% ±2.7 | Standard (-8%) | Neutral | 52 |
-| B | 89% | Genji | -0.27% | -0.93% ±1.6 | Standard (-5%) | Neutral | 52 |
+| B | 90% | Genji | -0.27% | -0.93% ±1.6 | Standard (-6%) | Neutral | 52 |
 | B | 72% | Mei | -0.29% | -0.69% ±3.2 | Standard (-5%) | Neutral | 51 |
 | B | 80% | Emre | -0.33% | -0.28% ±2.2 | Standard (+18%) | Neutral | 52 |
 | B | 69% | Juno | -0.45% | +0.78% ±3.4 | Standard (-15%) | Neutral | 51 |
 | B | 73% | Shion | -0.45% | -0.88% ±2.7 | Standard (-14%) | Neutral | 28 |
-| B | 77% | Widowmaker | -0.48% | -0.42% ±1.7 | Map Priority (+85%) | Neutral | 52 |
+| B | 77% | Widowmaker | -0.48% | -0.42% ±1.7 | Map Priority (+84%) | Neutral | 52 |
 | B | 72% | Ashe | -0.74% | -0.71% ±1.8 | Popular (+28%) | Neutral | 52 |
 | B | 68% | Zenyatta | -0.84% | -1.05% ±1.7 | Standard (+16%) | Neutral | 51 |
 | B | 60% | Reaper | -0.86% | -1.57% ±3.1 | Niche (-24%) | Neutral | 52 |
 | B | 61% | Freja | -0.90% | -1.20% ±2.5 | Standard (+13%) | Neutral | 50 |
-| B | 56% | Echo | -0.92% | -1.21% ±3.2 | Niche (-28%) | Neutral | 52 |
+| B | 57% | Echo | -0.92% | -1.21% ±3.2 | Niche (-28%) | Neutral | 52 |
 | B | 59% | Doomfist | -0.97% | -2.07% ±2.5 | Standard (+0%) | Neutral | 52 |
 | B | 53% | Hanzo | -1.13% | -1.52% ±2.2 | Popular (+20%) | Neutral | 52 |
-| B | 52% | Kiriko | -1.16% | -1.49% ±1.6 | Standard (-5%) | Neutral | 52 |
+| B | 52% | Kiriko | -1.16% | -1.49% ±1.6 | Standard (-6%) | Neutral | 52 |
 | C | 50% | Sigma | -1.22% | -1.19% ±1.6 | Popular (+23%) | Trap Pick | 52 |
-| C | 49% | Soldier: 76 | -1.25% | -1.74% ±2.2 | Standard (+3%) | Unfavorable | 52 |
+| C | 50% | Soldier: 76 | -1.25% | -1.74% ±2.2 | Standard (+3%) | Unfavorable | 52 |
 | C | 44% | Symmetra | -1.27% | -1.83% ±3.3 | Standard (-11%) | Unfavorable | 51 |
 | C | 51% | Baptiste | -1.37% | -2.77% ±2.8 | Standard (-5%) | Unfavorable | 52 |
 | C | 66% | Tracer | -1.57% | -1.95% ±1.7 | Standard (+2%) | Unfavorable | 52 |
@@ -276,7 +276,7 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | B | 44% | Roadhog *(provisional)* | +0.94% | +4.98% ±7.1 | Standard (+0%) | Neutral | 8 |
 | B | 64% | Cassidy | +0.93% | +1.57% ±1.7 | Standard (+11%) | Neutral | 16 |
 | B | 57% | Moira | +0.88% | +2.29% ±3.0 | Popular (+20%) | Neutral | 16 |
-| B | 62% | Freja | +0.80% | +2.81% ±3.2 | Niche (-31%) | Neutral | 16 |
+| B | 61% | Freja | +0.80% | +2.81% ±3.2 | Niche (-31%) | Neutral | 16 |
 | B | 70% | Zenyatta | +0.68% | +1.78% ±2.3 | Standard (-12%) | Neutral | 16 |
 | B | 64% | Anran | +0.66% | +2.07% ±3.4 | Standard (+9%) | Neutral | 15 |
 | B | 62% | Echo | +0.53% | +2.23% ±3.8 | Niche (-49%) | Neutral | 16 |
@@ -311,7 +311,7 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | B | 54% | Torbjörn | -0.62% | -1.16% ±4.2 | Standard (-8%) | Neutral | 16 |
 | B | 68% | Doomfist | -0.66% | -1.39% ±2.7 | Standard (+4%) | Neutral | 16 |
 | B | 63% | Hazard | -0.71% | -0.77% ±2.5 | Standard (-1%) | Neutral | 16 |
-| B | 64% | Ashe | -0.73% | -0.62% ±3.1 | Niche (-35%) | Neutral | 16 |
+| B | 64% | Ashe | -0.73% | -0.62% ±3.1 | Niche (-34%) | Neutral | 16 |
 | B | 64% | Baptiste | -0.73% | -1.03% ±3.1 | Niche (-28%) | Neutral | 16 |
 | B | 57% | Bastion | -0.73% | -1.52% ±3.7 | Standard (-17%) | Neutral | 16 |
 | B | 44% | Domina | -1.10% | -1.09% ±4.3 | Niche (-29%) | Neutral | 15 |
@@ -322,7 +322,7 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | C | 52% | Sigma | -1.65% | -1.64% ±2.5 | Niche (-34%) | Deterrent | 16 |
 | C | 51% | Doctrine *(provisional)* | -1.76% | -2.71% ±3.1 | Standard (-1%) | Unfavorable | 8 |
 | C | 48% | Lúcio | -1.87% | -1.85% ±2.9 | Popular (+26%) | Trap Pick | 16 |
-| D | 55% | Junkrat | -3.19% | -7.87% ±5.1 | Niche (-31%) | Deterrent | 16 |
+| D | 55% | Junkrat | -3.19% | -7.87% ±5.1 | Niche (-30%) | Deterrent | 16 |
 
 ### Circuit Royal
 
@@ -335,7 +335,7 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | A | 52% | Bastion | +2.61% | +4.27% ±2.9 | Map Priority (+60%) | Meta | 52 |
 | A | 84% | Sojourn | +1.88% | +2.47% ±1.3 | Map Priority (+70%) | Meta | 52 |
 | A | 59% | Symmetra | +1.68% | +2.48% ±2.3 | Standard (+9%) | Favorable | 51 |
-| B | 48% | Mizuki | +1.20% | +1.91% ±2.8 | Niche (-49%) | Neutral | 51 |
+| A | 44% | Mizuki | +1.20% | +1.91% ±2.8 | Niche (-49%) | Specialist | 51 |
 | B | 50% | Mei | +1.19% | +3.29% ±2.3 | Map Priority (+82%) | Neutral | 51 |
 | B | 50% | Reinhardt | +1.16% | +1.43% ±2.4 | Popular (+22%) | Neutral | 51 |
 | B | 55% | Juno | +1.11% | +4.14% ±1.5 | Map Priority (+86%) | Neutral | 52 |
@@ -360,9 +360,9 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | B | 75% | Cassidy | -0.67% | -0.87% ±1.8 | Niche (-59%) | Neutral | 51 |
 | B | 61% | Vendetta | -0.78% | -1.67% ±3.5 | Niche (-39%) | Neutral | 35 |
 | B | 51% | Wrecking Ball | -1.07% | -1.41% ±3.0 | Niche (-42%) | Neutral | 50 |
-| C | 49% | Zarya | -1.22% | -1.29% ±1.9 | Standard (+9%) | Unfavorable | 52 |
-| C | 50% | Doomfist | -1.35% | -4.16% ±3.1 | Niche (-23%) | Deterrent | 52 |
-| C | 53% | Junkrat | -1.40% | -1.72% ±2.1 | Standard (+4%) | Unfavorable | 52 |
+| C | 49% | Zarya | -1.22% | -1.29% ±1.9 | Standard (+8%) | Unfavorable | 52 |
+| C | 50% | Doomfist | -1.35% | -4.16% ±3.1 | Niche (-24%) | Deterrent | 52 |
+| C | 54% | Junkrat | -1.40% | -1.72% ±2.1 | Standard (+4%) | Unfavorable | 52 |
 | C | 56% | D.Va | -1.57% | -3.46% ±2.8 | Niche (-43%) | Deterrent | 52 |
 | C | 50% | D.Mon | -1.65% | -4.38% ±4.4 | Niche (-34%) | Deterrent | 16 |
 | C | 49% | Moira | -1.65% | -2.31% ±3.6 | Niche (-39%) | Deterrent | 51 |
@@ -372,14 +372,14 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | C | 49% | Torbjörn | -1.93% | -3.15% ±3.4 | Standard (-18%) | Unfavorable | 50 |
 | C | 74% | Shion | -2.07% | -4.18% ±1.9 | Niche (-67%) | Deterrent | 28 |
 | C | 67% | Echo | -2.40% | -3.11% ±2.0 | Standard (-15%) | Unfavorable | 51 |
-| C | 51% | Pharah | -2.55% | -3.09% ±2.7 | Popular (+43%) | Trap Pick | 51 |
+| C | 51% | Pharah | -2.55% | -3.09% ±2.7 | Popular (+44%) | Trap Pick | 51 |
 | C | 61% | Kiriko | -2.78% | -3.63% ±1.6 | Niche (-39%) | Deterrent | 52 |
 | C | 33% | Sombra *(provisional)* | -2.99% | -14.20% ±9.4 | Niche (-51%) | Deterrent | 8 |
 | D | 71% | Mauga | -3.54% | -4.78% ±2.3 | Niche (-39%) | Deterrent | 47 |
-| D | 87% | Brigitte | -4.19% | -6.47% ±2.6 | Niche (-71%) | Deterrent | 48 |
+| D | 87% | Brigitte | -4.19% | -6.47% ±2.6 | Niche (-70%) | Deterrent | 48 |
 | D | 97% | Tracer | -4.55% | -6.33% ±1.9 | Niche (-79%) | Deterrent | 51 |
-| D | 97% | Hazard | -5.45% | -8.40% ±3.3 | Niche (-67%) | Deterrent | 43 |
-| D | 98% | Junker Queen | -6.53% | -8.44% ±3.7 | Niche (-51%) | Deterrent | 35 |
+| D | 97% | Hazard | -5.45% | -8.40% ±3.3 | Niche (-66%) | Deterrent | 43 |
+| D | 98% | Junker Queen | -6.53% | -8.44% ±3.7 | Niche (-52%) | Deterrent | 35 |
 | D | 100% | Winston | -8.81% | -9.57% ±2.2 | Niche (-61%) | Deterrent | 51 |
 | D | 100% | Lúcio | -9.30% | -9.93% ±2.4 | Niche (-73%) | Deterrent | 43 |
 
@@ -403,7 +403,7 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | B | 75% | Hazard | +0.77% | +0.90% ±1.3 | Standard (+2%) | Neutral | 51 |
 | B | 83% | Shion | +0.67% | +1.08% ±1.2 | Popular (+25%) | Neutral | 28 |
 | B | 75% | Freja | +0.61% | +1.25% ±1.9 | Niche (-22%) | Neutral | 51 |
-| B | 80% | Kiriko | +0.61% | +0.84% ±1.6 | Standard (+5%) | Neutral | 52 |
+| B | 80% | Kiriko | +0.61% | +0.84% ±1.6 | Standard (+4%) | Neutral | 52 |
 | B | 74% | Wuyang | +0.57% | +1.24% ±2.2 | Standard (+5%) | Neutral | 52 |
 | B | 89% | Illari | +0.53% | +1.15% ±1.1 | Standard (-8%) | Neutral | 52 |
 | B | 69% | Wrecking Ball | +0.52% | +0.81% ±2.4 | Standard (+18%) | Neutral | 52 |
@@ -425,10 +425,10 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | B | 64% | Zarya | -0.67% | -0.60% ±2.5 | Standard (-3%) | Neutral | 52 |
 | B | 66% | Mauga | -0.84% | -0.90% ±1.8 | Standard (+10%) | Neutral | 51 |
 | B | 68% | Ashe | -0.89% | -0.99% ±1.5 | Niche (-30%) | Neutral | 51 |
-| B | 45% | Roadhog *(provisional)* | -0.89% | -2.19% ±6.8 | Standard (-5%) | Neutral | 8 |
+| B | 45% | Roadhog *(provisional)* | -0.89% | -2.19% ±6.8 | Standard (-6%) | Neutral | 8 |
 | B | 59% | Reaper | -0.92% | -1.63% ±2.9 | Standard (-8%) | Neutral | 52 |
 | B | 52% | Pharah | -0.95% | -0.93% ±3.1 | Standard (-5%) | Neutral | 52 |
-| B | 45% | Doctrine *(provisional)* | -1.15% | -2.41% ±4.5 | Standard (+3%) | Neutral | 8 |
+| B | 45% | Doctrine *(provisional)* | -1.15% | -2.41% ±4.5 | Standard (+4%) | Neutral | 8 |
 | C | 49% | D.Va | -1.31% | -3.05% ±3.1 | Standard (-8%) | Unfavorable | 52 |
 | C | 52% | Moira | -1.39% | -1.56% ±2.4 | Standard (+3%) | Unfavorable | 51 |
 | C | 57% | Bastion | -1.45% | -1.88% ±1.9 | Standard (-18%) | Unfavorable | 49 |
@@ -448,7 +448,7 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 |---|---|---|---|---|---|---|---|
 | S | 87% | Ana | +4.05% | +4.87% ±2.0 | Standard (+19%) | Favorable | 52 |
 | S | 84% | Winston | +3.88% | +4.29% ±1.8 | Map Priority (+111%) | Meta | 52 |
-| S | 76% | Wrecking Ball | +3.74% | +5.02% ±2.3 | Standard (+15%) | Favorable | 51 |
+| S | 76% | Wrecking Ball | +3.74% | +5.02% ±2.3 | Standard (+14%) | Favorable | 51 |
 | A | 59% | Echo | +2.05% | +4.33% ±2.9 | Map Priority (+76%) | Meta | 52 |
 | A | 44% | Doctrine *(provisional)* | +1.81% | +3.82% ±4.2 | Standard (-6%) | Favorable | 8 |
 | A | 53% | Wuyang | +1.32% | +2.46% ±2.0 | Standard (-18%) | Favorable | 52 |
@@ -479,7 +479,7 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | B | 69% | Emre | -0.65% | -2.07% ±2.6 | Standard (+5%) | Neutral | 52 |
 | B | 69% | Juno | -0.68% | -1.03% ±2.4 | Standard (-19%) | Neutral | 48 |
 | B | 58% | Mizuki | -0.69% | -1.26% ±3.5 | Standard (-19%) | Neutral | 52 |
-| B | 67% | Tracer | -0.85% | -0.98% ±1.7 | Standard (-8%) | Neutral | 52 |
+| B | 68% | Tracer | -0.85% | -0.98% ±1.7 | Standard (-8%) | Neutral | 52 |
 | B | 54% | Vendetta | -0.98% | -2.74% ±4.2 | Standard (-4%) | Neutral | 48 |
 | B | 55% | Zenyatta | -1.03% | -1.91% ±3.0 | Niche (-22%) | Neutral | 52 |
 | C | 43% | Junkrat | -1.30% | -2.04% ±3.3 | Standard (+19%) | Unfavorable | 50 |
@@ -505,7 +505,7 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 
 | Tier | P(tier) | Hero | Delta WR | Raw (95% range) | Presence | Archetype | n |
 |---|---|---|---|---|---|---|---|
-| A | 50% | Ana | +2.55% | +3.71% ±2.9 | Standard (+7%) | Favorable | 16 |
+| A | 50% | Ana | +2.55% | +3.71% ±2.9 | Standard (+8%) | Favorable | 16 |
 | A | 38% | Jetpack Cat | +1.93% | +5.41% ±5.8 | Standard (+6%) | Favorable | 16 |
 | A | 37% | Junkrat | +1.59% | +5.35% ±6.3 | Map Priority (+88%) | Meta | 16 |
 | A | 46% | D.Mon | +1.41% | +5.87% ±4.7 | Standard (+16%) | Favorable | 16 |
@@ -526,7 +526,7 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | B | 70% | Illari | -0.10% | +0.71% ±4.0 | Standard (+2%) | Neutral | 16 |
 | B | 66% | Doomfist | -0.12% | +1.31% ±5.5 | Standard (-2%) | Neutral | 16 |
 | B | 51% | Doctrine *(provisional)* | -0.19% | -0.44% ±5.9 | Standard (-1%) | Neutral | 8 |
-| B | 72% | Genji | -0.19% | -0.69% ±3.3 | Standard (+5%) | Neutral | 16 |
+| B | 72% | Genji | -0.19% | -0.69% ±3.3 | Standard (+6%) | Neutral | 16 |
 | B | 60% | Soldier: 76 | -0.25% | +0.53% ±8.1 | Niche (-26%) | Neutral | 16 |
 | B | 54% | Mauga | -0.41% | +0.18% ±6.2 | Standard (-6%) | Neutral | 15 |
 | B | 58% | Mizuki | -0.41% | -0.86% ±4.2 | Standard (-5%) | Neutral | 16 |
@@ -536,11 +536,11 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | B | 59% | Freja | -0.55% | -0.61% ±8.4 | Standard (+9%) | Neutral | 16 |
 | B | 55% | Hazard | -0.55% | -0.55% ±4.1 | Niche (-21%) | Neutral | 16 |
 | B | 60% | D.Va | -0.59% | -0.92% ±6.5 | Standard (-9%) | Neutral | 16 |
-| B | 61% | Juno | -0.62% | -1.01% ±4.7 | Standard (-8%) | Neutral | 16 |
+| B | 62% | Juno | -0.62% | -1.01% ±4.7 | Standard (-8%) | Neutral | 16 |
 | B | 48% | Ramattra | -0.65% | -0.11% ±6.8 | Standard (+14%) | Neutral | 15 |
 | B | 59% | Zenyatta | -0.65% | -1.93% ±6.1 | Standard (+16%) | Neutral | 16 |
 | B | 70% | Cassidy | -0.66% | -1.01% ±2.4 | Standard (+16%) | Neutral | 16 |
-| B | 56% | Ashe | -0.82% | -1.47% ±5.3 | Standard (-19%) | Neutral | 16 |
+| B | 57% | Ashe | -0.82% | -1.47% ±5.3 | Standard (-20%) | Neutral | 16 |
 | B | 61% | Shion | -0.82% | -2.63% ±3.2 | Niche (-22%) | Neutral | 16 |
 | B | 45% | Wrecking Ball | -0.87% | -1.94% ±6.3 | Standard (-10%) | Neutral | 16 |
 | B | 57% | Kiriko | -0.89% | -2.14% ±3.7 | Standard (-5%) | Neutral | 16 |
@@ -567,16 +567,16 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | A | 46% | Lúcio | +2.97% | +3.34% ±2.2 | Popular (+36%) | Meta | 52 |
 | A | 70% | Winston | +2.22% | +2.50% ±1.7 | Popular (+31%) | Meta | 52 |
 | A | 56% | Junker Queen | +1.61% | +1.93% ±2.2 | Popular (+26%) | Meta | 49 |
-| A | 64% | Soldier: 76 | +1.53% | +2.22% ±1.8 | Popular (+31%) | Meta | 51 |
+| A | 63% | Soldier: 76 | +1.53% | +2.22% ±1.8 | Popular (+31%) | Meta | 51 |
 | A | 74% | Kiriko | +1.50% | +1.69% ±1.0 | Standard (+16%) | Favorable | 52 |
 | B | 49% | Reinhardt | +1.19% | +1.44% ±2.3 | Standard (-15%) | Neutral | 51 |
-| B | 49% | Junkrat | +1.13% | +1.71% ±2.9 | Niche (-24%) | Neutral | 50 |
+| B | 50% | Junkrat | +1.13% | +1.71% ±2.9 | Niche (-24%) | Neutral | 50 |
 | B | 54% | Torbjörn | +0.99% | +1.48% ±2.9 | Standard (-13%) | Neutral | 50 |
 | B | 57% | D.Mon | +0.96% | +2.30% ±3.0 | Standard (+8%) | Neutral | 16 |
 | B | 72% | Echo | +0.77% | +1.14% ±1.6 | Standard (+1%) | Neutral | 52 |
 | B | 68% | Hanzo | +0.69% | +1.45% ±2.4 | Niche (-56%) | Neutral | 49 |
 | B | 63% | Jetpack Cat | +0.57% | +0.86% ±2.8 | Standard (+17%) | Neutral | 52 |
-| B | 74% | Mauga | +0.56% | +0.93% ±2.0 | Popular (+24%) | Neutral | 51 |
+| B | 75% | Mauga | +0.56% | +0.93% ±2.0 | Popular (+24%) | Neutral | 51 |
 | B | 95% | Shion | +0.51% | +0.69% ±0.8 | Popular (+35%) | Neutral | 28 |
 | B | 68% | Vendetta | +0.50% | +1.41% ±3.2 | Standard (+7%) | Neutral | 47 |
 | B | 68% | Moira | +0.45% | +1.37% ±2.8 | Standard (+12%) | Neutral | 52 |
@@ -602,8 +602,8 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | B | 81% | Reaper | -0.12% | +0.11% ±2.3 | Standard (-2%) | Neutral | 51 |
 | B | 85% | Hazard | -0.14% | -0.07% ±1.7 | Popular (+22%) | Neutral | 51 |
 | B | 88% | Illari | -0.41% | -0.73% ±1.4 | Standard (-14%) | Neutral | 52 |
-| B | 86% | Cassidy | -0.52% | -0.58% ±1.4 | Standard (+12%) | Neutral | 52 |
-| B | 66% | Orisa | -0.57% | -0.96% ±3.0 | Standard (-16%) | Neutral | 52 |
+| B | 85% | Cassidy | -0.52% | -0.58% ±1.4 | Standard (+12%) | Neutral | 52 |
+| B | 65% | Orisa | -0.57% | -0.96% ±3.0 | Standard (-16%) | Neutral | 52 |
 | B | 84% | Ashe | -0.61% | -0.53% ±1.3 | Niche (-43%) | Neutral | 51 |
 | B | 67% | Freja | -0.65% | -0.77% ±2.8 | Niche (-25%) | Neutral | 49 |
 | B | 65% | Juno | -0.69% | -1.33% ±3.2 | Standard (+12%) | Neutral | 51 |
@@ -611,7 +611,7 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | B | 57% | Baptiste | -1.00% | -1.61% ±2.6 | Niche (-37%) | Neutral | 51 |
 | C | 48% | Anran | -1.23% | -2.14% ±2.7 | Standard (+2%) | Unfavorable | 49 |
 | C | 60% | D.Va | -1.47% | -2.25% ±1.9 | Popular (+23%) | Trap Pick | 51 |
-| C | 49% | Zarya | -1.63% | -1.98% ±3.0 | Niche (-21%) | Deterrent | 52 |
+| C | 50% | Zarya | -1.63% | -1.98% ±3.0 | Niche (-21%) | Deterrent | 52 |
 | C | 69% | Zenyatta | -1.67% | -2.36% ±1.8 | Niche (-39%) | Deterrent | 51 |
 | C | 63% | Ana | -1.97% | -2.29% ±2.1 | Standard (-20%) | Unfavorable | 52 |
 | C | 46% | Domina | -2.32% | -2.91% ±3.5 | Niche (-35%) | Deterrent | 47 |
@@ -637,9 +637,9 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | B | 58% | Brigitte *(provisional)* | +0.26% | +2.32% ±5.4 | Niche (-35%) | Neutral | 8 |
 | B | 65% | Sierra *(provisional)* | +0.22% | +2.00% ±5.4 | Standard (+15%) | Neutral | 8 |
 | B | 73% | Kiriko *(provisional)* | +0.18% | +0.56% ±3.1 | Standard (-12%) | Neutral | 8 |
-| B | 58% | Bastion *(provisional)* | +0.14% | +0.37% ±4.8 | Popular (+41%) | Neutral | 8 |
+| B | 58% | Bastion *(provisional)* | +0.14% | +0.37% ±4.8 | Popular (+40%) | Neutral | 8 |
 | B | 66% | Lifeweaver *(provisional)* | +0.13% | -2.05% ±5.2 | Standard (+6%) | Neutral | 8 |
-| B | 54% | Torbjörn *(provisional)* | +0.13% | +0.40% ±4.8 | Standard (+7%) | Neutral | 8 |
+| B | 54% | Torbjörn *(provisional)* | +0.13% | +0.40% ±4.8 | Standard (+6%) | Neutral | 8 |
 | B | 51% | Symmetra *(provisional)* | +0.09% | +2.24% ±7.3 | Standard (-4%) | Neutral | 8 |
 | B | 48% | Roadhog *(provisional)* | +0.05% | +1.68% ±7.7 | Standard (+12%) | Neutral | 8 |
 | B | 65% | Venture *(provisional)* | +0.04% | +1.89% ±5.7 | Standard (-0%) | Neutral | 8 |
@@ -656,8 +656,8 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | B | 67% | Wuyang *(provisional)* | -0.30% | -0.75% ±4.5 | Popular (+35%) | Neutral | 8 |
 | B | 64% | Doomfist *(provisional)* | -0.31% | -0.46% ±6.0 | Standard (-8%) | Neutral | 8 |
 | B | 47% | Wrecking Ball *(provisional)* | -0.31% | +0.03% ±8.0 | Niche (-44%) | Neutral | 8 |
-| B | 51% | Zarya *(provisional)* | -0.31% | +0.52% ±5.2 | Map Priority (+59%) | Neutral | 8 |
-| B | 60% | Soldier: 76 *(provisional)* | -0.36% | -0.41% ±6.7 | Niche (-25%) | Neutral | 8 |
+| B | 51% | Zarya *(provisional)* | -0.31% | +0.52% ±5.2 | Map Priority (+58%) | Neutral | 8 |
+| B | 60% | Soldier: 76 *(provisional)* | -0.36% | -0.41% ±6.7 | Niche (-24%) | Neutral | 8 |
 | B | 67% | Tracer *(provisional)* | -0.39% | -0.25% ±3.7 | Niche (-34%) | Neutral | 8 |
 | B | 66% | Emre *(provisional)* | -0.41% | -1.37% ±4.4 | Standard (+13%) | Neutral | 8 |
 | B | 62% | D.Va *(provisional)* | -0.55% | -0.53% ±5.4 | Niche (-54%) | Neutral | 8 |
@@ -685,9 +685,9 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | S | 99% | Widowmaker | +5.88% | +6.19% ±2.5 | Map Priority (+176%) | Meta | 52 |
 | S | 100% | Sigma | +5.72% | +6.19% ±1.6 | Map Priority (+136%) | Meta | 51 |
 | S | 69% | Zenyatta | +3.33% | +4.93% ±1.5 | Map Priority (+114%) | Meta | 51 |
-| A | 79% | Ana | +1.81% | +2.00% ±1.3 | Popular (+33%) | Meta | 51 |
+| A | 79% | Ana | +1.81% | +2.00% ±1.3 | Popular (+34%) | Meta | 51 |
 | A | 42% | Doctrine *(provisional)* | +1.56% | +3.52% ±4.5 | Standard (+1%) | Favorable | 8 |
-| A | 47% | Domina | +1.38% | +2.08% ±2.6 | Map Priority (+147%) | Meta | 50 |
+| A | 48% | Domina | +1.38% | +2.08% ±2.6 | Map Priority (+147%) | Meta | 50 |
 | A | 45% | Orisa | +1.24% | +2.49% ±3.2 | Standard (+5%) | Favorable | 51 |
 | B | 51% | Bastion | +1.15% | +1.58% ±2.2 | Standard (+18%) | Neutral | 49 |
 | B | 76% | Hanzo | +0.51% | +1.00% ±2.1 | Map Priority (+158%) | Neutral | 52 |
@@ -701,7 +701,7 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | B | 70% | Venture | +0.04% | -0.77% ±4.0 | Niche (-23%) | Neutral | 47 |
 | B | 67% | Torbjörn | +0.02% | +0.06% ±2.9 | Standard (+3%) | Neutral | 50 |
 | B | 75% | Tracer | -0.08% | +0.28% ±2.8 | Niche (-48%) | Neutral | 52 |
-| B | 81% | Sojourn | -0.14% | +0.09% ±2.3 | Popular (+37%) | Neutral | 52 |
+| B | 81% | Sojourn | -0.14% | +0.09% ±2.3 | Popular (+38%) | Neutral | 52 |
 | B | 76% | Freja | -0.15% | +0.30% ±2.9 | Popular (+42%) | Neutral | 51 |
 | B | 73% | Genji | -0.15% | +0.32% ±3.2 | Standard (+9%) | Neutral | 52 |
 | B | 49% | Sombra *(provisional)* | -0.17% | +1.93% ±7.1 | Niche (-22%) | Neutral | 8 |
@@ -709,20 +709,20 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | B | 77% | D.Va | -0.30% | +0.06% ±2.5 | Niche (-28%) | Neutral | 51 |
 | B | 72% | Juno | -0.48% | +0.21% ±2.8 | Standard (-16%) | Neutral | 49 |
 | B | 67% | Mercy | -0.58% | -1.40% ±3.3 | Popular (+24%) | Neutral | 50 |
-| B | 65% | Shion | -0.71% | -2.05% ±3.0 | Niche (-53%) | Neutral | 28 |
+| B | 65% | Shion | -0.71% | -2.05% ±3.0 | Niche (-52%) | Neutral | 28 |
 | B | 64% | Mei | -0.72% | -2.51% ±3.2 | Popular (+24%) | Neutral | 51 |
 | B | 53% | D.Mon | -0.83% | -3.47% ±7.3 | Niche (-24%) | Neutral | 15 |
 | B | 57% | Anran | -0.90% | -2.06% ±3.8 | Niche (-26%) | Neutral | 46 |
-| B | 52% | Reaper | -1.07% | -2.45% ±3.5 | Niche (-49%) | Neutral | 51 |
+| B | 53% | Reaper | -1.07% | -2.45% ±3.5 | Niche (-49%) | Neutral | 51 |
 | B | 47% | Junkrat | -1.10% | -2.04% ±4.0 | Niche (-28%) | Neutral | 49 |
-| B | 51% | Wuyang | -1.15% | -2.78% ±3.0 | Standard (-3%) | Neutral | 52 |
+| B | 51% | Wuyang | -1.15% | -2.78% ±3.0 | Standard (-2%) | Neutral | 52 |
 | C | 52% | Cassidy | -1.32% | -2.21% ±2.3 | Niche (-50%) | Deterrent | 51 |
 | C | 42% | Hazard | -1.33% | -1.94% ±3.7 | Niche (-62%) | Deterrent | 46 |
 | C | 43% | Symmetra | -1.34% | -2.12% ±3.7 | Standard (-1%) | Unfavorable | 48 |
 | C | 47% | Mauga | -1.35% | -1.88% ±3.0 | Niche (-35%) | Deterrent | 47 |
 | C | 55% | Doomfist | -1.43% | -3.19% ±2.4 | Standard (-15%) | Unfavorable | 51 |
 | C | 50% | Vendetta | -1.47% | -4.03% ±4.0 | Niche (-29%) | Deterrent | 37 |
-| C | 47% | Moira | -1.55% | -2.23% ±4.0 | Niche (-39%) | Deterrent | 50 |
+| C | 46% | Moira | -1.55% | -2.23% ±4.0 | Niche (-39%) | Deterrent | 50 |
 | C | 53% | Mizuki | -1.64% | -2.57% ±2.9 | Niche (-48%) | Deterrent | 50 |
 | C | 57% | Ramattra | -1.83% | -2.28% ±2.6 | Popular (+44%) | Trap Pick | 50 |
 | C | 59% | Brigitte | -2.00% | -3.02% ±2.8 | Niche (-52%) | Deterrent | 48 |
@@ -743,7 +743,7 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 |---|---|---|---|---|---|---|---|
 | A | 49% | Zarya | +1.43% | +2.30% ±2.6 | Standard (+15%) | Favorable | 51 |
 | B | 63% | Ana | +0.99% | +1.11% ±1.3 | Standard (+19%) | Neutral | 52 |
-| B | 75% | Sierra | +0.22% | -0.56% ±2.9 | Standard (+5%) | Neutral | 34 |
+| B | 75% | Sierra | +0.22% | -0.56% ±2.9 | Standard (+6%) | Neutral | 34 |
 | B | 79% | Lifeweaver | +0.13% | -1.88% ±2.5 | Standard (+19%) | Neutral | 50 |
 | B | 70% | Venture | +0.04% | -4.47% ±3.9 | Standard (-9%) | Neutral | 50 |
 | B | 71% | Hanzo | +0.01% | +0.64% ±3.5 | Popular (+28%) | Neutral | 52 |
@@ -762,10 +762,10 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | B | 72% | Illari | -0.40% | -1.72% ±2.9 | Standard (+10%) | Neutral | 52 |
 | B | 78% | Tracer | -0.40% | -0.37% ±2.1 | Standard (-16%) | Neutral | 52 |
 | B | 71% | Mercy | -0.45% | -0.87% ±3.0 | Standard (+19%) | Neutral | 51 |
-| B | 66% | Bastion | -0.52% | -0.84% ±2.8 | Standard (+11%) | Neutral | 51 |
+| B | 66% | Bastion | -0.52% | -0.84% ±2.8 | Standard (+10%) | Neutral | 51 |
 | B | 69% | Freja | -0.55% | -0.55% ±2.9 | Standard (+6%) | Neutral | 51 |
 | B | 57% | Domina | -0.61% | -0.41% ±3.2 | Standard (+8%) | Neutral | 52 |
-| B | 66% | Zenyatta | -0.66% | -0.98% ±2.9 | Standard (+16%) | Neutral | 52 |
+| B | 67% | Zenyatta | -0.66% | -0.98% ±2.9 | Standard (+16%) | Neutral | 52 |
 | B | 53% | Ramattra | -0.69% | -0.53% ±4.3 | Standard (-12%) | Neutral | 51 |
 | B | 61% | Juno | -0.85% | -2.51% ±3.0 | Standard (-8%) | Neutral | 52 |
 | B | 61% | Baptiste | -0.87% | -1.32% ±2.7 | Standard (+10%) | Neutral | 52 |
@@ -778,14 +778,14 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | C | 53% | Mizuki | -1.29% | -1.55% ±1.7 | Standard (-11%) | Unfavorable | 52 |
 | C | 50% | Wrecking Ball | -1.29% | -1.53% ±2.2 | Standard (-16%) | Unfavorable | 50 |
 | C | 55% | Cassidy | -1.30% | -1.71% ±1.6 | Standard (-6%) | Unfavorable | 52 |
-| C | 49% | Orisa | -1.31% | -2.12% ±2.7 | Standard (-5%) | Unfavorable | 52 |
+| C | 49% | Orisa | -1.31% | -2.12% ±2.7 | Standard (-4%) | Unfavorable | 52 |
 | C | 50% | Moira | -1.35% | -1.53% ±2.5 | Standard (-13%) | Unfavorable | 51 |
 | C | 54% | Pharah | -1.45% | -1.55% ±2.1 | Standard (-5%) | Unfavorable | 50 |
 | C | 52% | Torbjörn | -1.58% | -2.19% ±2.6 | Popular (+27%) | Trap Pick | 51 |
 | C | 61% | Brigitte | -1.62% | -2.07% ±2.1 | Standard (-8%) | Unfavorable | 51 |
 | C | 66% | Vendetta | -1.85% | -2.97% ±2.3 | Standard (-6%) | Unfavorable | 46 |
 | C | 62% | Soldier: 76 | -2.09% | -3.56% ±2.7 | Niche (-20%) | Deterrent | 50 |
-| C | 62% | Junkrat | -2.18% | -2.79% ±2.3 | Standard (+20%) | Unfavorable | 50 |
+| C | 62% | Junkrat | -2.18% | -2.79% ±2.3 | Popular (+20%) | Trap Pick | 50 |
 | C | 75% | Widowmaker | -2.18% | -2.15% ±1.5 | Popular (+35%) | Trap Pick | 52 |
 | C | 45% | Symmetra | -2.50% | -4.86% ±4.2 | Standard (-2%) | Unfavorable | 51 |
 | C | 64% | Sojourn | -2.60% | -3.84% ±2.0 | Standard (-14%) | Unfavorable | 52 |
@@ -807,15 +807,15 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | A | 84% | Pharah | +1.86% | +2.05% ±1.2 | Popular (+37%) | Meta | 51 |
 | A | 84% | Echo | +1.75% | +2.04% ±1.1 | Map Priority (+83%) | Meta | 52 |
 | A | 53% | Junkrat | +1.58% | +2.22% ±2.6 | Niche (-21%) | Specialist | 51 |
-| A | 43% | Junker Queen | +1.31% | +1.78% ±2.8 | Standard (+4%) | Favorable | 47 |
+| A | 44% | Junker Queen | +1.31% | +1.78% ±2.8 | Standard (+4%) | Favorable | 47 |
 | A | 54% | Winston | +1.30% | +1.46% ±1.5 | Popular (+43%) | Meta | 52 |
 | B | 52% | Vendetta | +1.17% | +1.65% ±1.7 | Standard (+8%) | Neutral | 47 |
 | B | 74% | Kiriko | +0.80% | +1.01% ±1.3 | Standard (+12%) | Neutral | 52 |
-| B | 77% | Mercy | +0.71% | +1.12% ±1.4 | Standard (-6%) | Neutral | 50 |
-| B | 78% | Anran | +0.64% | +0.93% ±1.6 | Standard (+11%) | Neutral | 49 |
+| B | 78% | Mercy | +0.71% | +1.12% ±1.4 | Standard (-6%) | Neutral | 50 |
+| B | 79% | Anran | +0.64% | +0.93% ±1.6 | Standard (+11%) | Neutral | 49 |
 | B | 78% | Freja | +0.56% | +1.12% ±1.9 | Popular (+46%) | Neutral | 52 |
 | B | 89% | Reaper | +0.41% | +0.65% ±1.4 | Popular (+30%) | Neutral | 52 |
-| B | 75% | Widowmaker | +0.41% | +0.49% ±1.9 | Standard (-11%) | Neutral | 52 |
+| B | 75% | Widowmaker | +0.41% | +0.49% ±1.9 | Standard (-12%) | Neutral | 52 |
 | B | 71% | Wrecking Ball | +0.41% | +0.67% ±2.4 | Popular (+42%) | Neutral | 52 |
 | B | 55% | Sombra *(provisional)* | +0.32% | +1.73% ±4.5 | Popular (+20%) | Neutral | 8 |
 | B | 81% | Bastion | +0.29% | +0.37% ±1.9 | Niche (-26%) | Neutral | 48 |
@@ -831,22 +831,22 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | B | 88% | Doomfist | -0.24% | -0.20% ±1.7 | Standard (+9%) | Neutral | 52 |
 | B | 82% | Emre | -0.29% | -0.13% ±2.1 | Niche (-29%) | Neutral | 52 |
 | B | 96% | Cassidy | -0.30% | -0.30% ±1.0 | Popular (+21%) | Neutral | 52 |
-| B | 96% | Shion | -0.48% | -0.53% ±0.9 | Standard (+9%) | Neutral | 28 |
+| B | 95% | Shion | -0.48% | -0.53% ±0.9 | Standard (+9%) | Neutral | 28 |
 | B | 78% | Ashe | -0.67% | -0.58% ±1.5 | Niche (-44%) | Neutral | 51 |
-| B | 69% | Brigitte | -0.67% | -0.74% ±2.2 | Popular (+43%) | Neutral | 52 |
+| B | 69% | Brigitte | -0.67% | -0.74% ±2.2 | Popular (+42%) | Neutral | 52 |
 | B | 48% | Roadhog *(provisional)* | -0.67% | -1.19% ±5.9 | Standard (+19%) | Neutral | 8 |
 | B | 74% | Baptiste | -0.71% | -0.80% ±1.7 | Niche (-27%) | Neutral | 51 |
 | B | 69% | Illari | -0.79% | -2.34% ±1.9 | Niche (-28%) | Neutral | 52 |
-| B | 64% | D.Mon | -0.81% | -1.11% ±2.5 | Standard (-11%) | Neutral | 16 |
+| B | 64% | D.Mon | -0.81% | -1.11% ±2.5 | Standard (-10%) | Neutral | 16 |
 | B | 68% | Hanzo | -0.82% | -0.96% ±1.8 | Niche (-49%) | Neutral | 52 |
 | B | 65% | Orisa | -0.99% | -1.10% ±1.1 | Standard (-14%) | Neutral | 50 |
 | B | 59% | Mizuki | -1.02% | -1.22% ±1.7 | Standard (+17%) | Neutral | 52 |
-| B | 54% | Sojourn | -1.11% | -1.44% ±1.8 | Niche (-40%) | Neutral | 52 |
+| B | 55% | Sojourn | -1.11% | -1.44% ±1.8 | Niche (-40%) | Neutral | 52 |
 | C | 50% | Tracer | -1.26% | -1.73% ±2.2 | Popular (+29%) | Trap Pick | 52 |
 | C | 55% | Reinhardt | -1.33% | -1.38% ±1.6 | Niche (-35%) | Deterrent | 50 |
 | C | 66% | Wuyang | -1.45% | -1.83% ±1.3 | Niche (-26%) | Deterrent | 52 |
-| C | 87% | Ana | -1.59% | -1.61% ±0.7 | Standard (-19%) | Unfavorable | 52 |
-| C | 68% | Mei | -1.75% | -3.82% ±2.1 | Niche (-40%) | Deterrent | 50 |
+| C | 88% | Ana | -1.59% | -1.61% ±0.7 | Standard (-19%) | Unfavorable | 52 |
+| C | 67% | Mei | -1.75% | -3.82% ±2.1 | Niche (-40%) | Deterrent | 50 |
 | C | 72% | Soldier: 76 | -2.04% | -2.80% ±2.0 | Niche (-33%) | Deterrent | 51 |
 | C | 59% | Ramattra | -2.06% | -2.57% ±2.5 | Niche (-60%) | Deterrent | 36 |
 | C | 76% | Mauga | -2.13% | -2.48% ±1.7 | Standard (-3%) | Unfavorable | 49 |
@@ -860,7 +860,7 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | Tier | P(tier) | Hero | Delta WR | Raw (95% range) | Presence | Archetype | n |
 |---|---|---|---|---|---|---|---|
 | S | 100% | Widowmaker | +5.82% | +6.00% ±1.9 | Map Priority (+119%) | Meta | 52 |
-| A | 54% | Sigma | +2.61% | +3.13% ±2.3 | Map Priority (+81%) | Meta | 52 |
+| A | 54% | Sigma | +2.61% | +3.13% ±2.3 | Map Priority (+82%) | Meta | 52 |
 | A | 62% | Ana | +2.29% | +2.90% ±2.2 | Popular (+28%) | Meta | 52 |
 | A | 50% | Wrecking Ball | +1.79% | +3.07% ±3.2 | Standard (+11%) | Favorable | 51 |
 | A | 63% | Hanzo | +1.47% | +2.02% ±1.6 | Map Priority (+76%) | Meta | 51 |
@@ -868,7 +868,7 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | B | 55% | Zenyatta | +1.02% | +3.65% ±3.1 | Map Priority (+51%) | Neutral | 52 |
 | B | 57% | Freja | +0.90% | +3.76% ±3.7 | Popular (+29%) | Neutral | 51 |
 | B | 80% | Sojourn | +0.50% | +0.95% ±1.8 | Standard (+2%) | Neutral | 52 |
-| B | 67% | Brigitte | +0.38% | +1.16% ±3.1 | Standard (-19%) | Neutral | 51 |
+| B | 67% | Brigitte | +0.38% | +1.16% ±3.1 | Standard (-18%) | Neutral | 51 |
 | B | 74% | Kiriko | +0.35% | +0.79% ±2.7 | Standard (-17%) | Neutral | 52 |
 | B | 61% | Torbjörn | +0.35% | +0.64% ±3.4 | Standard (+9%) | Neutral | 49 |
 | B | 66% | Hazard | +0.29% | +0.67% ±2.9 | Niche (-30%) | Neutral | 51 |
@@ -893,7 +893,7 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | B | 66% | D.Va | -0.62% | -0.81% ±3.3 | Standard (+7%) | Neutral | 52 |
 | B | 58% | Mauga | -0.63% | -0.65% ±4.0 | Standard (-17%) | Neutral | 51 |
 | B | 64% | Reaper | -0.73% | -1.24% ±3.1 | Niche (-25%) | Neutral | 51 |
-| B | 53% | Jetpack Cat | -0.75% | -1.09% ±3.7 | Niche (-21%) | Neutral | 51 |
+| B | 53% | Jetpack Cat | -0.75% | -1.09% ±3.7 | Niche (-22%) | Neutral | 51 |
 | B | 59% | Echo | -0.76% | -0.93% ±3.6 | Niche (-36%) | Neutral | 50 |
 | B | 61% | Juno | -0.82% | -2.62% ±3.3 | Standard (-18%) | Neutral | 50 |
 | B | 64% | Cassidy | -0.85% | -1.31% ±2.2 | Niche (-26%) | Neutral | 52 |
@@ -902,17 +902,17 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | B | 50% | D.Mon | -0.96% | -4.50% ±7.4 | Niche (-21%) | Neutral | 16 |
 | B | 49% | Symmetra | -1.03% | -1.64% ±4.1 | Niche (-34%) | Neutral | 45 |
 | B | 56% | Ashe | -1.09% | -1.46% ±1.7 | Map Priority (+66%) | Neutral | 51 |
-| B | 54% | Wuyang | -1.11% | -2.02% ±2.3 | Standard (-2%) | Neutral | 52 |
+| B | 53% | Wuyang | -1.11% | -2.02% ±2.3 | Standard (-2%) | Neutral | 52 |
 | B | 50% | Vendetta | -1.13% | -3.28% ±4.2 | Standard (-8%) | Neutral | 44 |
 | C | 50% | Mizuki | -1.64% | -2.84% ±3.2 | Niche (-30%) | Deterrent | 51 |
 | C | 52% | Moira | -1.75% | -2.42% ±3.3 | Niche (-29%) | Deterrent | 51 |
 | C | 59% | Soldier: 76 | -1.89% | -3.49% ±3.0 | Popular (+25%) | Trap Pick | 52 |
-| C | 48% | Domina | -1.93% | -2.30% ±3.3 | Popular (+40%) | Trap Pick | 50 |
+| C | 47% | Domina | -1.93% | -2.30% ±3.3 | Popular (+40%) | Trap Pick | 50 |
 | C | 47% | Zarya | -2.43% | -3.43% ±3.5 | Niche (-35%) | Deterrent | 51 |
 | C | 55% | Ramattra | -2.45% | -3.20% ±2.7 | Niche (-36%) | Deterrent | 46 |
 | D | 74% | Pharah | -3.92% | -5.70% ±3.6 | Niche (-54%) | Deterrent | 49 |
 | D | 71% | Junker Queen | -4.00% | -5.26% ±4.2 | Niche (-27%) | Deterrent | 40 |
-| D | 90% | Lúcio | -5.01% | -5.56% ±3.4 | Niche (-65%) | Deterrent | 47 |
+| D | 89% | Lúcio | -5.01% | -5.56% ±3.4 | Niche (-65%) | Deterrent | 47 |
 
 ### Kings Row
 
@@ -934,7 +934,7 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | B | 76% | Venture | +0.04% | +2.12% ±2.9 | Standard (+9%) | Neutral | 51 |
 | B | 92% | Cassidy | +0.01% | +0.13% ±1.5 | Standard (-8%) | Neutral | 52 |
 | B | 77% | Reinhardt | -0.03% | +0.03% ±2.1 | Popular (+39%) | Neutral | 52 |
-| B | 99% | Genji | -0.11% | +0.02% ±0.9 | Standard (+5%) | Neutral | 52 |
+| B | 99% | Genji | -0.11% | +0.02% ±0.9 | Standard (+6%) | Neutral | 52 |
 | B | 74% | Anran | -0.19% | -0.11% ±3.0 | Standard (-5%) | Neutral | 52 |
 | B | 49% | Roadhog *(provisional)* | -0.22% | +0.32% ±6.9 | Standard (-11%) | Neutral | 8 |
 | B | 99% | Kiriko | -0.24% | -0.25% ±0.9 | Standard (-11%) | Neutral | 52 |
@@ -942,10 +942,10 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | B | 83% | Mei | -0.42% | -0.68% ±1.8 | Map Priority (+69%) | Neutral | 52 |
 | B | 81% | Bastion | -0.52% | -0.62% ±1.6 | Popular (+44%) | Neutral | 51 |
 | B | 82% | Juno | -0.58% | -0.56% ±1.5 | Standard (+1%) | Neutral | 51 |
-| B | 87% | Shion | -0.58% | -0.72% ±1.2 | Niche (-23%) | Neutral | 28 |
-| B | 76% | Doomfist | -0.67% | -0.95% ±1.7 | Standard (-5%) | Neutral | 52 |
-| B | 76% | Ramattra | -0.67% | -0.65% ±1.5 | Map Priority (+65%) | Neutral | 51 |
-| B | 69% | D.Va | -0.72% | -0.93% ±2.3 | Niche (-21%) | Neutral | 52 |
+| B | 86% | Shion | -0.58% | -0.72% ±1.2 | Niche (-23%) | Neutral | 28 |
+| B | 76% | Doomfist | -0.67% | -0.95% ±1.7 | Standard (-4%) | Neutral | 52 |
+| B | 77% | Ramattra | -0.67% | -0.65% ±1.5 | Map Priority (+65%) | Neutral | 51 |
+| B | 69% | D.Va | -0.72% | -0.93% ±2.3 | Niche (-22%) | Neutral | 52 |
 | B | 79% | Sojourn | -0.75% | -0.82% ±1.2 | Standard (+7%) | Neutral | 52 |
 | B | 59% | Sigma | -0.78% | -0.64% ±2.5 | Standard (+18%) | Neutral | 52 |
 | B | 63% | Hazard | -0.79% | -0.86% ±2.3 | Niche (-28%) | Neutral | 51 |
@@ -957,12 +957,12 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | B | 64% | Echo | -0.92% | -1.01% ±1.7 | Standard (+4%) | Neutral | 52 |
 | B | 61% | Emre | -0.95% | -2.77% ±2.1 | Standard (-9%) | Neutral | 52 |
 | B | 57% | Mauga | -1.08% | -1.17% ±1.5 | Standard (-18%) | Neutral | 51 |
-| B | 50% | Soldier: 76 | -1.16% | -1.85% ±2.7 | Niche (-39%) | Neutral | 51 |
+| B | 51% | Soldier: 76 | -1.16% | -1.85% ±2.7 | Niche (-39%) | Neutral | 51 |
 | C | 40% | Lúcio | -1.22% | -1.11% ±3.0 | Niche (-34%) | Deterrent | 52 |
 | C | 52% | Moira | -1.24% | -1.27% ±1.3 | Standard (-8%) | Unfavorable | 51 |
 | C | 48% | Brigitte | -1.26% | -1.65% ±2.5 | Niche (-35%) | Deterrent | 52 |
 | C | 55% | Wuyang | -1.27% | -1.56% ±1.2 | Standard (+11%) | Unfavorable | 52 |
-| C | 54% | Vendetta | -1.39% | -2.27% ±2.4 | Standard (-7%) | Unfavorable | 49 |
+| C | 54% | Vendetta | -1.39% | -2.27% ±2.4 | Standard (-6%) | Unfavorable | 49 |
 | C | 59% | Mercy | -1.41% | -2.26% ±1.8 | Standard (-2%) | Unfavorable | 52 |
 | C | 69% | Ashe | -1.47% | -1.81% ±1.1 | Standard (-5%) | Unfavorable | 52 |
 | C | 67% | Torbjörn | -1.74% | -2.06% ±1.8 | Standard (+5%) | Unfavorable | 50 |
@@ -998,14 +998,14 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | B | 83% | Junkrat | +0.35% | +0.42% ±1.7 | Popular (+26%) | Neutral | 51 |
 | B | 88% | Doomfist | +0.24% | +0.64% ±1.7 | Standard (+13%) | Neutral | 52 |
 | B | 93% | Sierra | +0.22% | -0.58% ±1.4 | Standard (-19%) | Neutral | 33 |
-| B | 80% | Lifeweaver | +0.13% | -1.49% ±2.4 | Standard (-20%) | Neutral | 49 |
+| B | 80% | Lifeweaver | +0.13% | -1.49% ±2.4 | Niche (-20%) | Neutral | 49 |
 | B | 80% | Venture | +0.04% | -1.30% ±2.4 | Standard (+6%) | Neutral | 51 |
 | B | 80% | Zenyatta | -0.04% | +0.39% ±2.4 | Niche (-23%) | Neutral | 52 |
 | B | 71% | Brigitte | -0.07% | +0.28% ±3.0 | Standard (-4%) | Neutral | 52 |
 | B | 99% | Genji | -0.13% | -0.02% ±0.9 | Standard (-9%) | Neutral | 51 |
 | B | 72% | Hanzo | -0.13% | +0.27% ±3.2 | Niche (-39%) | Neutral | 52 |
 | B | 72% | Bastion | -0.16% | -0.26% ±2.6 | Standard (-7%) | Neutral | 52 |
-| B | 79% | Junker Queen | -0.28% | -0.21% ±1.8 | Popular (+30%) | Neutral | 51 |
+| B | 80% | Junker Queen | -0.28% | -0.21% ±1.8 | Popular (+30%) | Neutral | 51 |
 | B | 91% | Illari | -0.29% | -0.46% ±1.4 | Niche (-36%) | Neutral | 52 |
 | B | 50% | Roadhog *(provisional)* | -0.33% | -0.13% ±6.2 | Standard (+1%) | Neutral | 8 |
 | B | 94% | Wuyang | -0.42% | -0.47% ±1.0 | Standard (-4%) | Neutral | 52 |
@@ -1017,9 +1017,9 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | B | 51% | Sombra *(provisional)* | -0.80% | -0.73% ±4.2 | Standard (+15%) | Neutral | 8 |
 | B | 63% | Juno | -0.95% | -1.75% ±1.7 | Standard (+8%) | Neutral | 51 |
 | B | 54% | D.Va | -1.09% | -1.95% ±2.6 | Niche (-23%) | Neutral | 52 |
-| B | 55% | Mercy | -1.12% | -1.59% ±1.6 | Standard (-13%) | Neutral | 51 |
+| B | 54% | Mercy | -1.12% | -1.59% ±1.6 | Standard (-14%) | Neutral | 51 |
 | B | 50% | Mauga | -1.17% | -1.44% ±2.4 | Popular (+25%) | Neutral | 52 |
-| C | 58% | Freja | -1.38% | -1.70% ±1.7 | Niche (-25%) | Deterrent | 50 |
+| C | 59% | Freja | -1.38% | -1.70% ±1.7 | Niche (-25%) | Deterrent | 50 |
 | C | 63% | Soldier: 76 | -1.39% | -1.57% ±1.2 | Niche (-21%) | Deterrent | 51 |
 | C | 70% | Tracer | -1.46% | -1.57% ±1.0 | Standard (+10%) | Unfavorable | 52 |
 | C | 57% | Anran | -1.47% | -2.35% ±2.4 | Standard (+11%) | Unfavorable | 51 |
@@ -1027,7 +1027,7 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | C | 67% | Ana | -1.66% | -1.82% ±1.7 | Standard (-20%) | Unfavorable | 52 |
 | C | 62% | Ashe | -1.66% | -3.47% ±2.3 | Niche (-66%) | Deterrent | 50 |
 | C | 65% | Winston | -1.68% | -1.67% ±1.7 | Niche (-42%) | Deterrent | 52 |
-| C | 66% | Sigma | -1.81% | -1.81% ±1.8 | Niche (-43%) | Deterrent | 52 |
+| C | 67% | Sigma | -1.81% | -1.81% ±1.8 | Niche (-43%) | Deterrent | 52 |
 | C | 62% | Echo | -2.16% | -3.21% ±2.6 | Standard (+3%) | Unfavorable | 52 |
 | C | 44% | Doctrine *(provisional)* | -2.81% | -4.74% ±3.5 | Standard (-3%) | Unfavorable | 8 |
 | D | 100% | Widowmaker | -7.37% | -7.42% ±1.9 | Niche (-65%) | Deterrent | 49 |
@@ -1049,10 +1049,10 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | B | 79% | Wuyang | -0.07% | +0.07% ±2.6 | Popular (+20%) | Neutral | 52 |
 | B | 71% | Vendetta | -0.14% | -0.06% ±3.6 | Standard (-17%) | Neutral | 42 |
 | B | 73% | Reaper | -0.15% | +0.25% ±3.3 | Niche (-24%) | Neutral | 52 |
-| B | 64% | Zarya | -0.15% | +0.25% ±3.2 | Popular (+43%) | Neutral | 52 |
+| B | 64% | Zarya | -0.15% | +0.25% ±3.2 | Popular (+42%) | Neutral | 52 |
 | B | 69% | Sigma | -0.17% | +0.05% ±2.5 | Map Priority (+77%) | Neutral | 52 |
 | B | 77% | Emre | -0.18% | +0.65% ±2.7 | Standard (+19%) | Neutral | 52 |
-| B | 71% | Mizuki | -0.27% | -0.39% ±2.6 | Standard (-16%) | Neutral | 52 |
+| B | 72% | Mizuki | -0.27% | -0.39% ±2.6 | Standard (-16%) | Neutral | 52 |
 | B | 86% | Sojourn | -0.28% | -0.21% ±1.8 | Popular (+24%) | Neutral | 52 |
 | B | 64% | Domina | -0.32% | -0.04% ±2.9 | Map Priority (+72%) | Neutral | 52 |
 | B | 69% | Doomfist | -0.32% | -0.42% ±3.7 | Niche (-21%) | Neutral | 52 |
@@ -1064,13 +1064,13 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | B | 71% | D.Va | -0.47% | -0.32% ±2.9 | Niche (-32%) | Neutral | 50 |
 | B | 76% | Shion | -0.55% | -0.96% ±2.1 | Standard (-18%) | Neutral | 28 |
 | B | 63% | Mei | -0.70% | -2.83% ±3.6 | Popular (+34%) | Neutral | 52 |
-| B | 65% | Ana | -0.77% | -0.83% ±2.0 | Standard (+10%) | Neutral | 52 |
+| B | 66% | Ana | -0.77% | -0.83% ±2.0 | Standard (+10%) | Neutral | 52 |
 | B | 56% | D.Mon | -0.80% | -1.92% ±4.9 | Standard (-8%) | Neutral | 16 |
 | B | 56% | Moira | -0.80% | -0.56% ±3.6 | Standard (-18%) | Neutral | 51 |
 | B | 60% | Mercy | -0.89% | -2.04% ±2.9 | Standard (+3%) | Neutral | 50 |
 | B | 58% | Ashe | -0.99% | -1.50% ±2.5 | Popular (+37%) | Neutral | 52 |
 | B | 59% | Tracer | -1.00% | -1.25% ±2.0 | Niche (-26%) | Neutral | 52 |
-| B | 59% | Cassidy | -1.06% | -1.26% ±1.2 | Standard (-17%) | Neutral | 52 |
+| B | 60% | Cassidy | -1.06% | -1.26% ±1.2 | Standard (-17%) | Neutral | 52 |
 | B | 52% | Zenyatta | -1.13% | -1.85% ±2.4 | Popular (+37%) | Neutral | 52 |
 | B | 52% | Soldier: 76 | -1.15% | -1.60% ±2.2 | Standard (-12%) | Neutral | 51 |
 | C | 39% | Torbjörn | -1.22% | -2.21% ±3.9 | Standard (+16%) | Unfavorable | 50 |
@@ -1080,7 +1080,7 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | C | 72% | Kiriko | -1.60% | -1.94% ±1.4 | Standard (-10%) | Unfavorable | 52 |
 | C | 38% | Sombra *(provisional)* | -1.64% | -3.41% ±6.2 | Standard (-19%) | Unfavorable | 8 |
 | C | 56% | Echo | -1.87% | -3.16% ±3.2 | Niche (-27%) | Deterrent | 52 |
-| C | 54% | Mauga | -2.08% | -3.30% ±3.2 | Niche (-25%) | Deterrent | 48 |
+| C | 54% | Mauga | -2.08% | -3.30% ±3.2 | Niche (-24%) | Deterrent | 48 |
 | C | 46% | Pharah | -2.21% | -2.97% ±3.7 | Standard (-7%) | Unfavorable | 51 |
 | C | 46% | Hazard | -2.44% | -3.93% ±3.7 | Niche (-46%) | Deterrent | 49 |
 | C | 41% | Junker Queen | -2.63% | -3.10% ±3.5 | Standard (-18%) | Unfavorable | 45 |
@@ -1102,10 +1102,10 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | B | 60% | Shion | +1.06% | +1.64% ±1.2 | Standard (+13%) | Neutral | 28 |
 | B | 58% | Zarya | +0.92% | +1.44% ±2.3 | Popular (+45%) | Neutral | 28 |
 | B | 69% | Sigma | +0.78% | +0.94% ±1.6 | Map Priority (+61%) | Neutral | 28 |
-| B | 67% | Reaper | +0.66% | +2.10% ±2.9 | Standard (-19%) | Neutral | 28 |
+| B | 66% | Reaper | +0.66% | +2.10% ±2.9 | Standard (-19%) | Neutral | 28 |
 | B | 63% | Bastion | +0.63% | +1.03% ±2.9 | Popular (+45%) | Neutral | 28 |
 | B | 67% | Ramattra | +0.59% | +1.16% ±2.5 | Map Priority (+91%) | Neutral | 28 |
-| B | 79% | Widowmaker | +0.40% | +0.47% ±1.7 | Popular (+40%) | Neutral | 28 |
+| B | 80% | Widowmaker | +0.40% | +0.47% ±1.7 | Popular (+40%) | Neutral | 28 |
 | B | 72% | Sierra | +0.22% | +1.35% ±3.3 | Standard (+15%) | Neutral | 24 |
 | B | 80% | Lifeweaver | +0.13% | -1.09% ±2.4 | Standard (+12%) | Neutral | 28 |
 | B | 90% | Zenyatta | +0.08% | +0.35% ±1.7 | Popular (+36%) | Neutral | 28 |
@@ -1113,26 +1113,26 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | B | 59% | Junker Queen | +0.06% | +0.36% ±3.2 | Standard (-5%) | Neutral | 26 |
 | B | 70% | Symmetra | +0.06% | +0.34% ±2.8 | Standard (+17%) | Neutral | 28 |
 | B | 72% | Venture | +0.04% | +2.16% ±3.5 | Standard (-0%) | Neutral | 28 |
-| B | 71% | Moira | +0.00% | +0.70% ±2.9 | Standard (-9%) | Neutral | 28 |
+| B | 71% | Moira | +0.00% | +0.70% ±2.9 | Standard (-10%) | Neutral | 28 |
 | B | 58% | Torbjörn | -0.03% | +0.02% ±4.0 | Standard (+8%) | Neutral | 27 |
 | B | 91% | Genji | -0.22% | -0.48% ±1.5 | Standard (-11%) | Neutral | 28 |
 | B | 83% | Kiriko | -0.22% | -0.26% ±2.0 | Standard (-7%) | Neutral | 28 |
-| B | 78% | Illari | -0.26% | -0.63% ±2.5 | Standard (-7%) | Neutral | 28 |
+| B | 78% | Illari | -0.26% | -0.63% ±2.5 | Standard (-8%) | Neutral | 28 |
 | B | 89% | Sojourn | -0.36% | -0.34% ±1.5 | Popular (+27%) | Neutral | 28 |
 | B | 82% | Emre | -0.42% | -0.60% ±1.9 | Standard (+16%) | Neutral | 28 |
 | B | 84% | Cassidy | -0.50% | -0.57% ±1.5 | Standard (-10%) | Neutral | 28 |
 | B | 72% | Mei | -0.55% | -1.28% ±2.5 | Map Priority (+65%) | Neutral | 28 |
-| B | 46% | Roadhog *(provisional)* | -0.56% | -1.09% ±7.7 | Standard (-5%) | Neutral | 8 |
+| B | 47% | Roadhog *(provisional)* | -0.56% | -1.09% ±7.7 | Standard (-5%) | Neutral | 8 |
 | B | 49% | Doctrine *(provisional)* | -0.60% | -1.75% ±6.1 | Standard (+3%) | Neutral | 8 |
 | B | 61% | Anran | -0.68% | -1.77% ±4.5 | Standard (-3%) | Neutral | 28 |
 | B | 65% | D.Mon | -0.71% | -1.00% ±2.8 | Standard (+6%) | Neutral | 16 |
 | B | 65% | Juno | -0.77% | -1.69% ±2.7 | Standard (+11%) | Neutral | 28 |
-| B | 47% | Sombra *(provisional)* | -0.80% | -0.66% ±5.6 | Niche (-25%) | Neutral | 8 |
+| B | 47% | Sombra *(provisional)* | -0.80% | -0.66% ±5.6 | Niche (-24%) | Neutral | 8 |
 | B | 59% | Baptiste | -0.89% | -1.55% ±3.1 | Popular (+25%) | Neutral | 28 |
-| B | 57% | Domina | -0.89% | -0.82% ±2.6 | Map Priority (+57%) | Neutral | 28 |
-| B | 55% | Pharah | -0.96% | -0.94% ±2.7 | Standard (+4%) | Neutral | 28 |
+| B | 56% | Domina | -0.89% | -0.82% ±2.6 | Map Priority (+57%) | Neutral | 28 |
+| B | 54% | Pharah | -0.96% | -0.94% ±2.7 | Standard (+4%) | Neutral | 28 |
 | B | 58% | Doomfist | -1.01% | -2.05% ±2.3 | Standard (-15%) | Neutral | 28 |
-| B | 57% | Wuyang | -1.06% | -1.69% ±2.0 | Popular (+24%) | Neutral | 28 |
+| B | 56% | Wuyang | -1.06% | -1.69% ±2.0 | Popular (+24%) | Neutral | 28 |
 | B | 54% | Ashe | -1.12% | -1.48% ±1.6 | Standard (+8%) | Neutral | 28 |
 | C | 50% | Ana | -1.23% | -1.33% ±1.6 | Standard (+7%) | Unfavorable | 28 |
 | C | 39% | Wrecking Ball | -1.36% | -2.47% ±4.5 | Niche (-50%) | Deterrent | 28 |
@@ -1143,7 +1143,7 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | C | 74% | D.Va | -1.95% | -3.05% ±1.9 | Niche (-50%) | Deterrent | 28 |
 | C | 44% | Lúcio | -2.29% | -2.33% ±3.3 | Niche (-40%) | Deterrent | 26 |
 | C | 66% | Freja | -2.34% | -3.77% ±2.4 | Standard (+0%) | Unfavorable | 28 |
-| C | 45% | Junkrat | -2.40% | -4.47% ±4.0 | Standard (+11%) | Unfavorable | 28 |
+| C | 45% | Junkrat | -2.40% | -4.47% ±4.0 | Standard (+10%) | Unfavorable | 28 |
 | C | 51% | Brigitte | -2.74% | -4.42% ±2.9 | Niche (-42%) | Deterrent | 28 |
 | C | 53% | Tracer | -2.89% | -4.04% ±2.0 | Niche (-39%) | Deterrent | 28 |
 | D | 69% | Echo | -3.47% | -4.90% ±2.2 | Niche (-41%) | Deterrent | 28 |
@@ -1154,7 +1154,7 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 
 | Tier | P(tier) | Hero | Delta WR | Raw (95% range) | Presence | Archetype | n |
 |---|---|---|---|---|---|---|---|
-| A | 49% | Symmetra | +3.00% | +3.61% ±1.6 | Map Priority (+84%) | Meta | 52 |
+| S | 50% | Symmetra | +3.00% | +3.61% ±1.6 | Map Priority (+84%) | Meta | 52 |
 | A | 74% | Torbjörn | +2.42% | +2.74% ±1.5 | Standard (-14%) | Favorable | 51 |
 | A | 83% | Pharah | +2.19% | +2.45% ±1.3 | Map Priority (+52%) | Meta | 52 |
 | A | 77% | Bastion | +2.13% | +2.56% ±1.6 | Standard (-14%) | Favorable | 52 |
@@ -1162,7 +1162,7 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | A | 79% | Mauga | +2.04% | +2.55% ±1.6 | Standard (+16%) | Favorable | 51 |
 | A | 82% | Lúcio | +1.78% | +1.87% ±1.2 | Popular (+50%) | Meta | 52 |
 | A | 73% | Ramattra | +1.78% | +2.21% ±1.6 | Standard (+18%) | Favorable | 52 |
-| A | 76% | Jetpack Cat | +1.69% | +1.85% ±1.3 | Standard (+5%) | Favorable | 52 |
+| A | 76% | Jetpack Cat | +1.69% | +1.85% ±1.3 | Standard (+6%) | Favorable | 52 |
 | A | 70% | Hazard | +1.67% | +1.98% ±1.6 | Standard (+6%) | Favorable | 52 |
 | A | 64% | Orisa | +1.49% | +1.84% ±1.5 | Standard (+12%) | Favorable | 52 |
 | A | 35% | Roadhog *(provisional)* | +1.24% | +4.96% ±6.2 | Standard (+4%) | Favorable | 8 |
@@ -1170,39 +1170,39 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | B | 53% | Junkrat | +1.11% | +1.37% ±2.0 | Standard (+8%) | Neutral | 52 |
 | B | 62% | Mizuki | +1.06% | +1.12% ±0.9 | Standard (+15%) | Neutral | 52 |
 | B | 88% | Kiriko | +0.82% | +0.87% ±0.7 | Standard (+8%) | Neutral | 52 |
-| B | 69% | Brigitte | +0.79% | +1.15% ±1.8 | Standard (+1%) | Neutral | 52 |
+| B | 69% | Brigitte | +0.79% | +1.15% ±1.8 | Standard (+2%) | Neutral | 52 |
 | B | 80% | Reaper | +0.69% | +0.97% ±1.3 | Standard (+9%) | Neutral | 52 |
-| B | 85% | Doomfist | +0.58% | +0.97% ±1.3 | Standard (+11%) | Neutral | 52 |
+| B | 85% | Doomfist | +0.58% | +0.97% ±1.3 | Standard (+12%) | Neutral | 52 |
 | B | 86% | Mei | +0.43% | +0.85% ±1.5 | Standard (-9%) | Neutral | 52 |
 | B | 99% | Cassidy | +0.40% | +0.45% ±0.6 | Standard (+13%) | Neutral | 52 |
 | B | 84% | Vendetta | +0.35% | +0.57% ±1.8 | Standard (+8%) | Neutral | 49 |
 | B | 97% | Zarya | +0.29% | +0.35% ±0.9 | Standard (+17%) | Neutral | 52 |
 | B | 77% | Sierra | +0.22% | +1.93% ±2.6 | Standard (-13%) | Neutral | 32 |
 | B | 81% | Hanzo | +0.21% | +0.56% ±2.2 | Niche (-37%) | Neutral | 52 |
-| B | 95% | Baptiste | +0.17% | +0.43% ±1.3 | Standard (-11%) | Neutral | 52 |
+| B | 95% | Baptiste | +0.17% | +0.43% ±1.3 | Standard (-12%) | Neutral | 52 |
 | B | 84% | Lifeweaver | +0.13% | +0.75% ±2.1 | Niche (-24%) | Neutral | 50 |
 | B | 100% | Wuyang | +0.12% | +0.15% ±0.8 | Standard (+5%) | Neutral | 52 |
 | B | 98% | Zenyatta | +0.09% | +0.20% ±1.1 | Niche (-21%) | Neutral | 52 |
 | B | 82% | Venture | +0.04% | +0.91% ±2.3 | Standard (+5%) | Neutral | 52 |
 | B | 98% | Emre | +0.03% | +0.35% ±1.1 | Standard (-15%) | Neutral | 52 |
-| B | 76% | Moira | -0.10% | +0.36% ±2.5 | Standard (+20%) | Neutral | 52 |
+| B | 76% | Moira | -0.10% | +0.36% ±2.5 | Popular (+20%) | Neutral | 52 |
 | B | 78% | Domina | -0.13% | +0.03% ±2.0 | Standard (-17%) | Neutral | 50 |
 | B | 90% | Freja | -0.31% | -0.24% ±1.5 | Niche (-23%) | Neutral | 52 |
 | B | 97% | Illari | -0.32% | -0.42% ±1.0 | Niche (-27%) | Neutral | 51 |
 | B | 96% | Sigma | -0.35% | -0.32% ±1.0 | Standard (-16%) | Neutral | 52 |
 | B | 86% | Anran | -0.38% | -0.42% ±1.6 | Standard (+13%) | Neutral | 51 |
 | B | 93% | Genji | -0.39% | -1.18% ±1.1 | Standard (-5%) | Neutral | 52 |
-| B | 85% | Mercy | -0.56% | -0.69% ±1.4 | Standard (-13%) | Neutral | 51 |
+| B | 85% | Mercy | -0.56% | -0.69% ±1.4 | Standard (-14%) | Neutral | 51 |
 | B | 68% | D.Mon | -0.60% | -0.78% ±2.7 | Standard (+11%) | Neutral | 16 |
 | B | 52% | Sombra *(provisional)* | -0.60% | -0.26% ±4.6 | Standard (+8%) | Neutral | 8 |
 | B | 60% | Junker Queen | -0.73% | -0.67% ±2.5 | Standard (+11%) | Neutral | 48 |
 | B | 70% | Ashe | -0.87% | -0.94% ±1.4 | Niche (-44%) | Neutral | 52 |
-| B | 79% | Tracer | -0.88% | -0.91% ±0.8 | Standard (+11%) | Neutral | 52 |
-| B | 66% | Shion | -1.01% | -1.25% ±1.0 | Standard (+19%) | Neutral | 28 |
-| B | 60% | Juno | -1.02% | -1.72% ±1.5 | Standard (+10%) | Neutral | 52 |
+| B | 79% | Tracer | -0.88% | -0.91% ±0.8 | Standard (+12%) | Neutral | 52 |
+| B | 65% | Shion | -1.01% | -1.25% ±1.0 | Standard (+19%) | Neutral | 28 |
+| B | 61% | Juno | -1.02% | -1.72% ±1.5 | Standard (+10%) | Neutral | 52 |
 | B | 52% | Soldier: 76 | -1.17% | -1.34% ±1.4 | Standard (-10%) | Neutral | 52 |
 | B | 50% | D.Va | -1.20% | -1.49% ±1.4 | Standard (-17%) | Neutral | 52 |
-| C | 75% | Echo | -1.64% | -1.80% ±1.3 | Standard (+1%) | Unfavorable | 52 |
+| C | 76% | Echo | -1.64% | -1.80% ±1.3 | Standard (+1%) | Unfavorable | 52 |
 | C | 53% | Doctrine *(provisional)* | -2.21% | -3.40% ±3.1 | Standard (-2%) | Unfavorable | 8 |
 | C | 91% | Ana | -2.51% | -2.56% ±0.7 | Standard (-16%) | Unfavorable | 52 |
 | D | 60% | Wrecking Ball | -3.16% | -3.39% ±1.2 | Standard (-0%) | Unfavorable | 52 |
@@ -1214,9 +1214,9 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | Tier | P(tier) | Hero | Delta WR | Raw (95% range) | Presence | Archetype | n |
 |---|---|---|---|---|---|---|---|
 | S | 70% | Junker Queen | +3.68% | +4.60% ±2.8 | Map Priority (+107%) | Meta | 50 |
-| A | 51% | Lúcio | +2.96% | +3.15% ±1.6 | Map Priority (+99%) | Meta | 52 |
-| A | 68% | Hazard | +2.40% | +2.93% ±1.8 | Standard (+11%) | Favorable | 51 |
-| A | 55% | Symmetra | +2.07% | +3.53% ±2.9 | Standard (+15%) | Favorable | 50 |
+| A | 51% | Lúcio | +2.96% | +3.15% ±1.6 | Map Priority (+100%) | Meta | 52 |
+| A | 68% | Hazard | +2.40% | +2.93% ±1.8 | Standard (+12%) | Favorable | 51 |
+| A | 55% | Symmetra | +2.07% | +3.53% ±2.9 | Standard (+16%) | Favorable | 50 |
 | A | 56% | Mizuki | +1.99% | +3.21% ±2.9 | Popular (+48%) | Meta | 52 |
 | A | 83% | Vendetta | +1.89% | +2.35% ±1.3 | Map Priority (+51%) | Meta | 48 |
 | A | 59% | Moira | +1.57% | +2.60% ±2.2 | Map Priority (+67%) | Meta | 51 |
@@ -1224,7 +1224,7 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | A | 48% | Torbjörn | +1.33% | +1.85% ±2.5 | Standard (-3%) | Favorable | 50 |
 | A | 44% | Reinhardt | +1.23% | +1.56% ±2.6 | Popular (+26%) | Meta | 52 |
 | B | 45% | Sombra *(provisional)* | +1.10% | +3.72% ±4.8 | Standard (+15%) | Neutral | 8 |
-| B | 59% | Mauga | +1.02% | +1.42% ±1.8 | Popular (+47%) | Neutral | 50 |
+| B | 59% | Mauga | +1.02% | +1.42% ±1.8 | Popular (+48%) | Neutral | 50 |
 | B | 66% | Reaper | +0.81% | +1.79% ±2.3 | Popular (+46%) | Neutral | 52 |
 | B | 70% | Cassidy | +0.80% | +1.35% ±1.7 | Popular (+32%) | Neutral | 52 |
 | B | 79% | Shion | +0.72% | +1.23% ±1.3 | Popular (+45%) | Neutral | 28 |
@@ -1233,7 +1233,7 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | B | 75% | Tracer | +0.68% | +1.06% ±1.7 | Popular (+25%) | Neutral | 52 |
 | B | 63% | Wrecking Ball | +0.49% | +0.93% ±2.9 | Standard (-19%) | Neutral | 52 |
 | B | 92% | Sojourn | +0.39% | +0.56% ±1.2 | Standard (+17%) | Neutral | 52 |
-| B | 76% | Brigitte | +0.37% | +0.77% ±2.3 | Standard (+9%) | Neutral | 51 |
+| B | 75% | Brigitte | +0.37% | +0.77% ±2.3 | Standard (+9%) | Neutral | 51 |
 | B | 76% | Anran | +0.35% | +0.87% ±2.6 | Popular (+49%) | Neutral | 51 |
 | B | 72% | Orisa | +0.22% | +0.45% ±2.8 | Popular (+35%) | Neutral | 51 |
 | B | 90% | Sierra | +0.22% | -1.36% ±1.6 | Niche (-22%) | Neutral | 26 |
@@ -1253,7 +1253,7 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | B | 89% | Juno | -0.30% | +0.24% ±1.6 | Standard (+2%) | Neutral | 50 |
 | B | 73% | Illari | -0.32% | -1.22% ±3.0 | Niche (-49%) | Neutral | 52 |
 | B | 71% | Soldier: 76 | -0.68% | -0.84% ±2.1 | Standard (-8%) | Neutral | 51 |
-| B | 67% | Junkrat | -0.70% | -0.87% ±2.2 | Standard (+9%) | Neutral | 49 |
+| B | 66% | Junkrat | -0.70% | -0.87% ±2.2 | Standard (+9%) | Neutral | 49 |
 | B | 65% | Bastion | -0.77% | -1.07% ±2.2 | Niche (-29%) | Neutral | 48 |
 | B | 56% | Jetpack Cat | -0.96% | -1.17% ±2.4 | Standard (-14%) | Neutral | 51 |
 | B | 52% | D.Va | -1.12% | -2.42% ±3.2 | Niche (-28%) | Neutral | 52 |
@@ -1273,8 +1273,8 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | Tier | P(tier) | Hero | Delta WR | Raw (95% range) | Presence | Archetype | n |
 |---|---|---|---|---|---|---|---|
 | S | 95% | Soldier: 76 | +4.10% | +5.27% ±1.5 | Map Priority (+134%) | Meta | 52 |
-| A | 51% | Torbjörn | +2.98% | +3.37% ±1.5 | Standard (-12%) | Favorable | 51 |
-| A | 61% | Junker Queen | +1.73% | +2.00% ±2.0 | Standard (+19%) | Favorable | 49 |
+| A | 50% | Torbjörn | +2.98% | +3.37% ±1.5 | Standard (-12%) | Favorable | 51 |
+| A | 62% | Junker Queen | +1.73% | +2.00% ±2.0 | Standard (+19%) | Favorable | 49 |
 | A | 65% | Kiriko | +1.61% | +2.38% ±1.9 | Standard (+13%) | Favorable | 52 |
 | A | 52% | Wrecking Ball | +1.36% | +1.80% ±2.1 | Popular (+42%) | Meta | 52 |
 | A | 52% | Mizuki | +1.25% | +1.47% ±1.5 | Standard (+8%) | Favorable | 52 |
@@ -1289,8 +1289,8 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | B | 63% | Reinhardt | +0.78% | +0.95% ±2.2 | Standard (-3%) | Neutral | 52 |
 | B | 66% | Freja | +0.67% | +2.31% ±3.1 | Niche (-33%) | Neutral | 51 |
 | B | 67% | Mauga | +0.65% | +1.23% ±2.4 | Popular (+21%) | Neutral | 51 |
-| B | 74% | Reaper | +0.61% | +1.26% ±2.0 | Standard (-12%) | Neutral | 52 |
-| B | 62% | Hazard | +0.48% | +1.06% ±3.2 | Standard (+10%) | Neutral | 52 |
+| B | 75% | Reaper | +0.61% | +1.26% ±2.0 | Standard (-12%) | Neutral | 52 |
+| B | 61% | Hazard | +0.48% | +1.06% ±3.2 | Standard (+10%) | Neutral | 52 |
 | B | 77% | Zenyatta | +0.41% | +1.27% ±2.4 | Niche (-30%) | Neutral | 52 |
 | B | 79% | Mercy | +0.28% | +0.89% ±2.4 | Standard (-15%) | Neutral | 49 |
 | B | 84% | Sierra | +0.22% | -1.07% ±2.0 | Standard (-7%) | Neutral | 34 |
@@ -1318,7 +1318,7 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | C | 45% | Bastion | -1.26% | -2.13% ±3.0 | Niche (-26%) | Deterrent | 48 |
 | C | 54% | Cassidy | -1.28% | -1.69% ±1.6 | Standard (-1%) | Unfavorable | 52 |
 | C | 49% | Orisa | -1.35% | -2.23% ±2.7 | Standard (-3%) | Unfavorable | 52 |
-| C | 45% | Doctrine *(provisional)* | -1.45% | -2.39% ±3.4 | Standard (+1%) | Unfavorable | 8 |
+| C | 45% | Doctrine *(provisional)* | -1.45% | -2.39% ±3.4 | Standard (+2%) | Unfavorable | 8 |
 | C | 63% | Anran | -1.77% | -2.94% ±2.4 | Standard (-1%) | Unfavorable | 50 |
 | C | 39% | Roadhog *(provisional)* | -1.95% | -5.68% ±6.4 | Standard (-0%) | Unfavorable | 8 |
 | C | 45% | Domina | -1.99% | -2.46% ±3.6 | Niche (-26%) | Deterrent | 49 |
@@ -1360,11 +1360,11 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | B | 70% | Shion | -0.75% | -1.33% ±1.9 | Standard (-19%) | Neutral | 28 |
 | B | 61% | Juno | -0.84% | -2.61% ±3.1 | Standard (-8%) | Neutral | 51 |
 | B | 59% | Vendetta | -0.86% | -1.94% ±3.6 | Standard (-1%) | Neutral | 43 |
-| B | 55% | Echo | -1.05% | -1.32% ±2.6 | Map Priority (+74%) | Neutral | 52 |
+| B | 54% | Echo | -1.05% | -1.32% ±2.6 | Map Priority (+74%) | Neutral | 52 |
 | B | 48% | Torbjörn | -1.16% | -1.75% ±3.1 | Standard (+16%) | Neutral | 50 |
 | B | 47% | Jetpack Cat | -1.17% | -1.61% ±3.1 | Standard (+16%) | Neutral | 52 |
 | C | 50% | Wuyang | -1.24% | -2.04% ±2.0 | Niche (-20%) | Deterrent | 51 |
-| C | 47% | Zenyatta | -1.24% | -2.32% ±2.8 | Niche (-21%) | Deterrent | 52 |
+| C | 48% | Zenyatta | -1.24% | -2.32% ±2.8 | Niche (-21%) | Deterrent | 52 |
 | C | 32% | Roadhog *(provisional)* | -1.25% | -10.23% ±13.4 | Standard (-6%) | Unfavorable | 7 |
 | C | 46% | Sigma | -1.34% | -1.28% ±2.5 | Niche (-22%) | Deterrent | 51 |
 | C | 50% | Orisa | -1.54% | -3.03% ±3.3 | Niche (-28%) | Deterrent | 51 |
@@ -1378,8 +1378,8 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | C | 50% | Moira | -2.44% | -4.00% ±3.7 | Niche (-27%) | Deterrent | 51 |
 | C | 45% | Symmetra | -2.46% | -4.90% ±4.3 | Standard (-18%) | Unfavorable | 46 |
 | C | 35% | Reinhardt | -2.94% | -4.23% ±4.4 | Niche (-36%) | Deterrent | 51 |
-| D | 57% | Ramattra | -3.22% | -4.89% ±3.3 | Niche (-49%) | Deterrent | 41 |
-| D | 59% | Pharah | -3.29% | -4.42% ±3.2 | Standard (-1%) | Unfavorable | 51 |
+| D | 57% | Ramattra | -3.22% | -4.89% ±3.3 | Niche (-50%) | Deterrent | 41 |
+| D | 58% | Pharah | -3.29% | -4.42% ±3.2 | Standard (-1%) | Unfavorable | 51 |
 | D | 65% | Mizuki | -3.36% | -4.46% ±2.1 | Niche (-27%) | Deterrent | 51 |
 | D | 68% | Lúcio | -3.84% | -4.28% ±4.0 | Niche (-35%) | Deterrent | 52 |
 | D | 83% | Domina | -4.26% | -5.48% ±3.1 | Niche (-25%) | Deterrent | 45 |
@@ -1406,17 +1406,17 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | B | 81% | Moira | +0.54% | +0.85% ±1.5 | Popular (+24%) | Neutral | 52 |
 | B | 91% | Shion | +0.54% | +0.82% ±1.0 | Popular (+28%) | Neutral | 28 |
 | B | 87% | Reaper | +0.44% | +0.72% ±1.5 | Popular (+21%) | Neutral | 52 |
-| B | 83% | Illari | +0.43% | +1.67% ±1.7 | Niche (-29%) | Neutral | 52 |
+| B | 83% | Illari | +0.43% | +1.67% ±1.7 | Niche (-30%) | Neutral | 52 |
 | B | 75% | Ramattra | +0.43% | +0.80% ±2.1 | Niche (-25%) | Neutral | 50 |
 | B | 50% | Roadhog *(provisional)* | +0.42% | +2.21% ±6.0 | Standard (+2%) | Neutral | 8 |
 | B | 75% | Hanzo | +0.39% | +1.00% ±2.5 | Niche (-42%) | Neutral | 52 |
-| B | 96% | Soldier: 76 | +0.28% | +0.36% ±1.0 | Standard (-11%) | Neutral | 52 |
+| B | 97% | Soldier: 76 | +0.28% | +0.36% ±1.0 | Standard (-11%) | Neutral | 52 |
 | B | 69% | Domina | +0.25% | +0.60% ±2.5 | Niche (-30%) | Neutral | 47 |
 | B | 86% | Sierra | +0.22% | +0.52% ±1.8 | Standard (-16%) | Neutral | 32 |
 | B | 100% | Tracer | +0.16% | +0.20% ±0.7 | Popular (+29%) | Neutral | 52 |
 | B | 84% | Lifeweaver | +0.13% | +0.37% ±2.0 | Niche (-23%) | Neutral | 49 |
 | B | 100% | Wuyang | +0.07% | +0.10% ±0.8 | Standard (-8%) | Neutral | 52 |
-| B | 86% | Venture | +0.04% | -0.62% ±1.9 | Standard (+1%) | Neutral | 52 |
+| B | 86% | Venture | +0.04% | -0.62% ±1.9 | Standard (+0%) | Neutral | 52 |
 | B | 100% | Sojourn | -0.02% | +0.02% ±0.8 | Standard (-13%) | Neutral | 52 |
 | B | 92% | Mei | -0.05% | +0.03% ±1.5 | Standard (-17%) | Neutral | 52 |
 | B | 77% | Anran | -0.06% | +0.14% ±2.7 | Standard (+10%) | Neutral | 52 |
@@ -1424,21 +1424,21 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | B | 80% | D.Va | -0.21% | +0.23% ±2.4 | Standard (+12%) | Neutral | 52 |
 | B | 87% | Symmetra | -0.30% | -0.27% ±1.5 | Standard (+11%) | Neutral | 52 |
 | B | 82% | Baptiste | -0.34% | -0.13% ±2.0 | Standard (-18%) | Neutral | 52 |
-| B | 82% | Bastion | -0.34% | -0.43% ±1.9 | Standard (-19%) | Neutral | 51 |
+| B | 81% | Bastion | -0.34% | -0.43% ±1.9 | Standard (-19%) | Neutral | 51 |
 | B | 91% | Genji | -0.36% | -1.24% ±1.3 | Standard (-4%) | Neutral | 52 |
 | B | 89% | Zenyatta | -0.49% | -0.50% ±1.2 | Niche (-31%) | Neutral | 52 |
 | B | 71% | Junker Queen | -0.56% | -0.51% ±2.0 | Popular (+24%) | Neutral | 52 |
-| B | 76% | Juno | -0.62% | -0.69% ±1.9 | Standard (-3%) | Neutral | 52 |
+| B | 76% | Juno | -0.62% | -0.69% ±1.9 | Standard (-4%) | Neutral | 52 |
 | B | 78% | Echo | -0.65% | -0.66% ±1.5 | Standard (-4%) | Neutral | 52 |
 | B | 51% | Sombra *(provisional)* | -0.65% | -0.35% ±4.8 | Standard (+16%) | Neutral | 8 |
 | B | 84% | Lúcio | -0.72% | -0.70% ±1.0 | Map Priority (+54%) | Neutral | 52 |
-| B | 79% | Winston | -0.73% | -0.69% ±1.2 | Standard (-5%) | Neutral | 52 |
+| B | 78% | Winston | -0.73% | -0.69% ±1.2 | Standard (-6%) | Neutral | 52 |
 | B | 70% | Emre | -0.90% | -1.46% ±1.2 | Niche (-33%) | Neutral | 52 |
 | B | 64% | Mercy | -0.95% | -1.31% ±1.5 | Standard (-16%) | Neutral | 51 |
 | B | 59% | D.Mon | -0.97% | -1.28% ±2.2 | Standard (+6%) | Neutral | 16 |
 | B | 57% | Ashe | -1.03% | -1.51% ±2.2 | Niche (-67%) | Neutral | 52 |
 | B | 53% | Pharah | -1.06% | -1.08% ±2.4 | Standard (+18%) | Neutral | 52 |
-| B | 52% | Reinhardt | -1.17% | -1.21% ±1.6 | Standard (-9%) | Neutral | 51 |
+| B | 51% | Reinhardt | -1.17% | -1.21% ±1.6 | Standard (-9%) | Neutral | 51 |
 | C | 97% | Ana | -1.96% | -2.00% ±0.8 | Niche (-23%) | Deterrent | 52 |
 | C | 78% | Wrecking Ball | -2.24% | -2.48% ±1.5 | Standard (+14%) | Unfavorable | 52 |
 | C | 43% | Doctrine *(provisional)* | -2.81% | -4.89% ±3.6 | Standard (-5%) | Unfavorable | 8 |
@@ -1471,12 +1471,12 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | B | 66% | Illari | -0.40% | -3.31% ±4.3 | Popular (+22%) | Neutral | 16 |
 | B | 53% | Mauga | -0.40% | +0.51% ±7.4 | Standard (-11%) | Neutral | 15 |
 | B | 62% | Soldier: 76 | -0.41% | -0.59% ±5.1 | Standard (-2%) | Neutral | 16 |
-| B | 70% | Zenyatta | -0.48% | -0.53% ±3.0 | Standard (-6%) | Neutral | 16 |
+| B | 71% | Zenyatta | -0.48% | -0.53% ±3.0 | Standard (-6%) | Neutral | 16 |
 | B | 62% | Doomfist | -0.50% | -2.10% ±5.3 | Standard (-10%) | Neutral | 16 |
 | B | 68% | Shion | -0.50% | -1.42% ±3.5 | Niche (-24%) | Neutral | 16 |
 | B | 39% | Reinhardt | -0.56% | -0.57% ±7.0 | Standard (-19%) | Neutral | 16 |
 | B | 70% | Kiriko | -0.57% | -0.97% ±2.7 | Standard (-6%) | Neutral | 16 |
-| B | 60% | D.Mon | -0.60% | -1.11% ±4.7 | Standard (-7%) | Neutral | 16 |
+| B | 60% | D.Mon | -0.60% | -1.11% ±4.7 | Standard (-8%) | Neutral | 16 |
 | B | 45% | Junkrat | -0.63% | -2.48% ±7.6 | Standard (+13%) | Neutral | 16 |
 | B | 64% | Ashe | -0.66% | -0.14% ±3.6 | Map Priority (+70%) | Neutral | 16 |
 | B | 43% | Roadhog *(provisional)* | -0.68% | -3.75% ±13.9 | Standard (-1%) | Neutral | 8 |
@@ -1488,7 +1488,7 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | B | 44% | Torbjörn | -1.16% | -2.54% ±4.7 | Standard (+16%) | Neutral | 15 |
 | C | 43% | Moira | -1.25% | -1.47% ±3.6 | Standard (-15%) | Unfavorable | 15 |
 | C | 35% | Wrecking Ball | -1.29% | -3.49% ±6.6 | Standard (-15%) | Unfavorable | 16 |
-| C | 48% | Wuyang | -1.35% | -4.55% ±3.8 | Standard (-11%) | Unfavorable | 16 |
+| C | 48% | Wuyang | -1.35% | -4.55% ±3.8 | Standard (-10%) | Unfavorable | 16 |
 | C | 54% | Cassidy | -1.36% | -2.20% ±2.2 | Standard (-10%) | Unfavorable | 16 |
 | C | 46% | Sojourn | -1.36% | -4.47% ±4.7 | Niche (-25%) | Deterrent | 16 |
 | C | 43% | Hazard | -1.38% | -2.02% ±3.7 | Popular (+29%) | Trap Pick | 16 |
@@ -1545,13 +1545,13 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | B | 70% | Sojourn | -0.66% | -0.86% ±2.4 | Standard (-9%) | Neutral | 52 |
 | B | 66% | Jetpack Cat | -0.71% | -0.82% ±2.1 | Standard (+9%) | Neutral | 51 |
 | B | 74% | Mizuki | -0.71% | -0.83% ±1.6 | Niche (-26%) | Neutral | 51 |
-| B | 57% | Ramattra | -0.75% | -0.69% ±3.4 | Standard (-15%) | Neutral | 49 |
+| B | 56% | Ramattra | -0.75% | -0.69% ±3.4 | Standard (-15%) | Neutral | 49 |
 | B | 57% | Domina | -0.80% | -0.69% ±2.9 | Standard (+9%) | Neutral | 50 |
 | B | 42% | Junker Queen | -0.87% | -0.73% ±4.9 | Niche (-28%) | Neutral | 45 |
 | B | 61% | Tracer | -0.89% | -1.19% ±2.5 | Niche (-22%) | Neutral | 52 |
 | B | 59% | Juno | -0.95% | -2.82% ±2.7 | Niche (-20%) | Neutral | 51 |
 | B | 55% | Moira | -1.01% | -1.00% ±2.5 | Niche (-28%) | Neutral | 51 |
-| C | 37% | Doctrine *(provisional)* | -1.32% | -3.39% ±5.3 | Standard (+1%) | Unfavorable | 8 |
+| C | 37% | Doctrine *(provisional)* | -1.32% | -3.39% ±5.3 | Standard (+0%) | Unfavorable | 8 |
 | C | 33% | Roadhog *(provisional)* | -1.38% | -9.40% ±11.8 | Standard (+11%) | Unfavorable | 8 |
 | C | 51% | Reinhardt | -1.43% | -1.56% ±2.3 | Standard (+4%) | Unfavorable | 51 |
 | C | 59% | Cassidy | -1.45% | -2.17% ±1.9 | Niche (-28%) | Deterrent | 52 |
@@ -1560,7 +1560,7 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | C | 35% | Sombra *(provisional)* | -1.88% | -9.20% ±11.1 | Standard (-16%) | Unfavorable | 8 |
 | C | 61% | Torbjörn | -1.94% | -2.53% ±2.3 | Standard (+7%) | Unfavorable | 50 |
 | C | 64% | Symmetra | -2.02% | -2.53% ±2.2 | Standard (-18%) | Unfavorable | 49 |
-| C | 61% | Wrecking Ball | -2.62% | -3.07% ±1.9 | Standard (-16%) | Unfavorable | 51 |
+| C | 62% | Wrecking Ball | -2.62% | -3.07% ±1.9 | Standard (-16%) | Unfavorable | 51 |
 | D | 99% | Lúcio | -6.33% | -6.82% ±2.7 | Niche (-51%) | Deterrent | 50 |
 
 ### Route 66
@@ -1570,8 +1570,8 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | A | 81% | Ana | +2.44% | +2.63% ±1.2 | Standard (+17%) | Favorable | 52 |
 | A | 38% | Sombra *(provisional)* | +1.62% | +7.68% ±6.4 | Standard (+13%) | Favorable | 8 |
 | B | 54% | Torbjörn | +0.95% | +1.46% ±3.0 | Standard (+15%) | Neutral | 51 |
-| B | 64% | Tracer | +0.84% | +1.58% ±2.2 | Standard (-16%) | Neutral | 52 |
-| B | 64% | Shion | +0.83% | +2.92% ±2.4 | Niche (-21%) | Neutral | 28 |
+| B | 65% | Tracer | +0.84% | +1.58% ±2.2 | Standard (-16%) | Neutral | 52 |
+| B | 64% | Shion | +0.83% | +2.92% ±2.4 | Niche (-20%) | Neutral | 28 |
 | B | 63% | Wrecking Ball | +0.65% | +1.06% ±2.6 | Standard (+2%) | Neutral | 52 |
 | B | 60% | Hazard | +0.62% | +1.26% ±3.1 | Standard (+6%) | Neutral | 51 |
 | B | 64% | Mercy | +0.62% | +3.03% ±3.6 | Popular (+35%) | Neutral | 51 |
@@ -1588,7 +1588,7 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | B | 71% | Venture | +0.04% | -1.57% ±3.7 | Standard (+0%) | Neutral | 50 |
 | B | 73% | Doomfist | -0.00% | +0.87% ±3.3 | Standard (-10%) | Neutral | 51 |
 | B | 63% | Mauga | -0.02% | +0.74% ±4.0 | Niche (-24%) | Neutral | 50 |
-| B | 70% | Junkrat | -0.03% | -0.01% ±2.7 | Standard (-1%) | Neutral | 48 |
+| B | 70% | Junkrat | -0.03% | -0.01% ±2.7 | Standard (-2%) | Neutral | 48 |
 | B | 80% | Illari | -0.10% | +0.22% ±2.4 | Popular (+34%) | Neutral | 52 |
 | B | 77% | Freja | -0.15% | +0.28% ±2.8 | Popular (+28%) | Neutral | 52 |
 | B | 82% | Wuyang | -0.20% | -0.22% ±2.2 | Standard (-1%) | Neutral | 52 |
@@ -1600,7 +1600,7 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | B | 84% | Emre | -0.44% | -0.64% ±1.7 | Standard (+19%) | Neutral | 52 |
 | B | 58% | Jetpack Cat | -0.44% | -0.58% ±3.6 | Standard (-14%) | Neutral | 52 |
 | B | 65% | Anran | -0.51% | -1.03% ±4.0 | Standard (-11%) | Neutral | 49 |
-| B | 66% | Mei | -0.62% | -2.02% ±3.1 | Standard (+2%) | Neutral | 52 |
+| B | 67% | Mei | -0.62% | -2.02% ±3.1 | Standard (+2%) | Neutral | 52 |
 | B | 48% | Zarya | -0.98% | -1.05% ±4.1 | Standard (-17%) | Neutral | 52 |
 | B | 52% | Pharah | -1.00% | -1.01% ±3.0 | Niche (-28%) | Neutral | 50 |
 | B | 57% | Soldier: 76 | -1.04% | -1.38% ±2.0 | Standard (-15%) | Neutral | 52 |
@@ -1630,9 +1630,9 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | A | 64% | Soldier: 76 | +2.10% | +3.96% ±2.6 | Map Priority (+66%) | Meta | 52 |
 | A | 70% | Kiriko | +1.97% | +3.12% ±2.1 | Standard (+17%) | Favorable | 52 |
 | A | 64% | Junker Queen | +1.80% | +2.06% ±1.9 | Popular (+28%) | Meta | 50 |
-| A | 54% | Mauga | +1.48% | +2.44% ±2.4 | Popular (+41%) | Meta | 50 |
+| A | 54% | Mauga | +1.48% | +2.44% ±2.4 | Popular (+42%) | Meta | 50 |
 | A | 51% | Mizuki | +1.38% | +2.02% ±2.5 | Standard (+18%) | Favorable | 52 |
-| B | 59% | Lúcio | +0.99% | +1.13% ±1.7 | Popular (+48%) | Neutral | 51 |
+| B | 60% | Lúcio | +0.99% | +1.13% ±1.7 | Popular (+48%) | Neutral | 51 |
 | B | 59% | Wrecking Ball | +0.90% | +1.31% ±2.4 | Popular (+22%) | Neutral | 51 |
 | B | 51% | Domina | +0.89% | +1.84% ±3.4 | Niche (-21%) | Neutral | 49 |
 | B | 67% | Anran | +0.86% | +1.31% ±1.8 | Standard (+8%) | Neutral | 49 |
@@ -1641,8 +1641,8 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | B | 60% | Doctrine *(provisional)* | +0.64% | +1.04% ±3.1 | Standard (+1%) | Neutral | 8 |
 | B | 69% | Mei | +0.61% | +2.32% ±2.7 | Niche (-29%) | Neutral | 50 |
 | B | 68% | Bastion | +0.55% | +0.82% ±2.6 | Standard (-16%) | Neutral | 48 |
-| B | 68% | D.Mon | +0.55% | +1.42% ±2.9 | Standard (+17%) | Neutral | 16 |
-| B | 73% | Wuyang | +0.44% | +1.27% ±2.7 | Standard (+9%) | Neutral | 52 |
+| B | 68% | D.Mon | +0.55% | +1.42% ±2.9 | Standard (+18%) | Neutral | 16 |
+| B | 73% | Wuyang | +0.44% | +1.27% ±2.7 | Standard (+10%) | Neutral | 52 |
 | B | 88% | Tracer | +0.29% | +0.51% ±1.6 | Popular (+33%) | Neutral | 52 |
 | B | 86% | Zarya | +0.29% | +0.45% ±1.6 | Standard (+2%) | Neutral | 50 |
 | B | 76% | Sierra | +0.22% | +1.17% ±2.8 | Standard (-8%) | Neutral | 33 |
@@ -1652,7 +1652,7 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | B | 72% | Venture | +0.04% | +1.76% ±3.5 | Standard (-6%) | Neutral | 51 |
 | B | 75% | Cassidy | -0.03% | +0.39% ±3.0 | Standard (+12%) | Neutral | 52 |
 | B | 91% | Genji | -0.05% | +0.74% ±1.6 | Standard (-11%) | Neutral | 51 |
-| B | 78% | Illari | -0.11% | +0.21% ±2.7 | Standard (-17%) | Neutral | 51 |
+| B | 78% | Illari | -0.11% | +0.21% ±2.7 | Standard (-16%) | Neutral | 51 |
 | B | 80% | Emre | -0.24% | +0.15% ±2.3 | Standard (-5%) | Neutral | 52 |
 | B | 73% | D.Va | -0.28% | +0.30% ±3.0 | Standard (+0%) | Neutral | 52 |
 | B | 98% | Sojourn | -0.28% | -0.26% ±1.0 | Standard (+15%) | Neutral | 52 |
@@ -1667,7 +1667,7 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | B | 68% | Hazard | -0.64% | -0.66% ±2.2 | Standard (+9%) | Neutral | 50 |
 | B | 77% | Shion | -0.75% | -1.01% ±1.3 | Popular (+40%) | Neutral | 28 |
 | B | 64% | Ashe | -0.76% | -0.74% ±2.8 | Niche (-55%) | Neutral | 51 |
-| B | 63% | Junkrat | -0.77% | -0.99% ±2.4 | Niche (-32%) | Neutral | 47 |
+| B | 62% | Junkrat | -0.77% | -0.99% ±2.4 | Niche (-32%) | Neutral | 47 |
 | B | 59% | Mercy | -0.94% | -2.08% ±2.7 | Niche (-21%) | Neutral | 49 |
 | B | 57% | Zenyatta | -0.97% | -1.72% ±2.9 | Niche (-35%) | Neutral | 52 |
 | C | 45% | Moira | -1.24% | -1.41% ±3.0 | Standard (+11%) | Unfavorable | 51 |
@@ -1677,7 +1677,7 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | C | 56% | Hanzo | -1.74% | -3.27% ±3.2 | Niche (-58%) | Deterrent | 50 |
 | C | 53% | Ramattra | -1.90% | -2.53% ±3.0 | Standard (-11%) | Unfavorable | 51 |
 | C | 61% | Freja | -2.38% | -4.45% ±2.8 | Niche (-33%) | Deterrent | 50 |
-| D | 78% | Ana | -3.79% | -4.60% ±2.3 | Niche (-24%) | Deterrent | 52 |
+| D | 77% | Ana | -3.79% | -4.60% ±2.3 | Niche (-24%) | Deterrent | 52 |
 | D | 83% | Sigma | -4.13% | -4.46% ±2.4 | Niche (-32%) | Deterrent | 52 |
 | D | 100% | Widowmaker | -16.67% | -17.19% ±3.1 | Niche (-62%) | Deterrent | 52 |
 
@@ -1685,22 +1685,22 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 
 | Tier | P(tier) | Hero | Delta WR | Raw (95% range) | Presence | Archetype | n |
 |---|---|---|---|---|---|---|---|
-| A | 83% | Symmetra | +1.93% | +2.20% ±1.3 | Popular (+31%) | Meta | 51 |
+| A | 84% | Symmetra | +1.93% | +2.20% ±1.3 | Popular (+31%) | Meta | 51 |
 | A | 60% | Torbjörn | +1.77% | +2.31% ±2.3 | Standard (-1%) | Favorable | 52 |
 | A | 74% | Mizuki | +1.55% | +1.69% ±1.1 | Popular (+23%) | Meta | 52 |
 | A | 77% | Cassidy | +1.51% | +1.74% ±0.9 | Popular (+27%) | Meta | 52 |
 | A | 57% | Moira | +1.43% | +2.19% ±1.9 | Popular (+22%) | Meta | 52 |
-| B | 57% | Tracer | +1.12% | +1.25% ±0.8 | Popular (+26%) | Neutral | 52 |
+| B | 58% | Tracer | +1.12% | +1.25% ±0.8 | Popular (+26%) | Neutral | 52 |
 | B | 55% | Anran | +1.05% | +2.23% ±2.6 | Standard (+18%) | Neutral | 51 |
 | B | 64% | Wuyang | +0.97% | +1.41% ±1.4 | Standard (+6%) | Neutral | 52 |
-| B | 66% | Junker Queen | +0.77% | +0.94% ±1.9 | Popular (+30%) | Neutral | 51 |
+| B | 67% | Junker Queen | +0.77% | +0.94% ±1.9 | Popular (+30%) | Neutral | 51 |
 | B | 78% | Zarya | +0.65% | +0.83% ±1.5 | Popular (+21%) | Neutral | 52 |
-| B | 70% | Ramattra | +0.60% | +1.05% ±2.2 | Standard (+8%) | Neutral | 50 |
+| B | 69% | Ramattra | +0.60% | +1.05% ±2.2 | Standard (+8%) | Neutral | 50 |
 | B | 94% | Kiriko | +0.51% | +0.57% ±0.9 | Standard (+9%) | Neutral | 52 |
 | B | 71% | Hazard | +0.49% | +0.79% ±2.3 | Standard (+5%) | Neutral | 52 |
 | B | 72% | Mauga | +0.49% | +0.96% ±2.3 | Popular (+22%) | Neutral | 50 |
 | B | 91% | Shion | +0.49% | +0.80% ±1.1 | Popular (+28%) | Neutral | 28 |
-| B | 81% | Bastion | +0.47% | +0.57% ±1.7 | Standard (-9%) | Neutral | 50 |
+| B | 81% | Bastion | +0.47% | +0.57% ±1.7 | Standard (-8%) | Neutral | 50 |
 | B | 86% | Reinhardt | +0.39% | +0.45% ±1.4 | Standard (+12%) | Neutral | 52 |
 | B | 87% | Sojourn | +0.39% | +0.68% ±1.6 | Standard (+8%) | Neutral | 52 |
 | B | 95% | Doomfist | +0.32% | +0.52% ±1.1 | Standard (+6%) | Neutral | 52 |
@@ -1708,8 +1708,8 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | B | 86% | Sierra | +0.22% | -0.60% ±1.8 | Standard (-15%) | Neutral | 32 |
 | B | 95% | Emre | +0.21% | +0.80% ±1.2 | Standard (-17%) | Neutral | 52 |
 | B | 80% | Baptiste | +0.15% | +1.03% ±2.4 | Standard (-16%) | Neutral | 51 |
-| B | 89% | Lifeweaver | +0.13% | +2.17% ±1.7 | Standard (-15%) | Neutral | 51 |
-| B | 80% | Lúcio | +0.13% | +0.25% ±1.9 | Popular (+33%) | Neutral | 52 |
+| B | 88% | Lifeweaver | +0.13% | +2.17% ±1.7 | Standard (-15%) | Neutral | 51 |
+| B | 79% | Lúcio | +0.13% | +0.25% ±1.9 | Popular (+33%) | Neutral | 52 |
 | B | 95% | Illari | +0.08% | +0.38% ±1.3 | Niche (-22%) | Neutral | 52 |
 | B | 64% | Domina | +0.07% | +0.51% ±3.0 | Standard (-16%) | Neutral | 51 |
 | B | 80% | Venture | +0.04% | -0.23% ±2.5 | Standard (+9%) | Neutral | 51 |
@@ -1720,13 +1720,13 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | B | 75% | Mei | -0.39% | -0.84% ±2.5 | Standard (-9%) | Neutral | 51 |
 | B | 91% | Ashe | -0.41% | -0.21% ±1.2 | Niche (-44%) | Neutral | 52 |
 | B | 88% | Zenyatta | -0.46% | -0.46% ±1.3 | Standard (-20%) | Neutral | 52 |
-| B | 68% | D.Mon | -0.61% | -0.79% ±2.6 | Popular (+20%) | Neutral | 16 |
+| B | 69% | D.Mon | -0.61% | -0.79% ±2.6 | Popular (+20%) | Neutral | 16 |
 | B | 77% | Mercy | -0.65% | -0.90% ±1.7 | Niche (-21%) | Neutral | 50 |
-| B | 69% | Reaper | -0.69% | -0.98% ±2.5 | Popular (+22%) | Neutral | 52 |
+| B | 68% | Reaper | -0.69% | -0.98% ±2.5 | Popular (+22%) | Neutral | 52 |
 | B | 66% | Vendetta | -0.69% | -1.23% ±2.9 | Standard (+6%) | Neutral | 48 |
 | B | 66% | Juno | -0.75% | -1.50% ±2.6 | Standard (+2%) | Neutral | 52 |
 | B | 55% | Freja | -1.05% | -1.49% ±2.5 | Niche (-33%) | Neutral | 52 |
-| B | 57% | Soldier: 76 | -1.08% | -1.23% ±1.4 | Standard (-13%) | Neutral | 52 |
+| B | 58% | Soldier: 76 | -1.08% | -1.23% ±1.4 | Standard (-13%) | Neutral | 52 |
 | C | 53% | Sigma | -1.28% | -1.26% ±1.5 | Niche (-25%) | Deterrent | 52 |
 | C | 54% | Echo | -1.33% | -1.58% ±1.9 | Niche (-32%) | Deterrent | 52 |
 | C | 67% | D.Va | -1.50% | -1.94% ±1.4 | Standard (-16%) | Unfavorable | 52 |
@@ -1735,7 +1735,7 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | C | 63% | Junkrat | -1.76% | -2.16% ±2.0 | Standard (-8%) | Unfavorable | 51 |
 | C | 54% | Jetpack Cat | -1.81% | -2.38% ±2.7 | Standard (-6%) | Unfavorable | 52 |
 | C | 93% | Ana | -2.00% | -2.07% ±1.0 | Standard (-14%) | Unfavorable | 52 |
-| C | 44% | Sombra *(provisional)* | -2.05% | -3.45% ±4.5 | Standard (+9%) | Unfavorable | 8 |
+| C | 44% | Sombra *(provisional)* | -2.05% | -3.45% ±4.5 | Standard (+8%) | Unfavorable | 8 |
 | C | 53% | Doctrine *(provisional)* | -2.21% | -3.34% ±3.0 | Standard (-2%) | Unfavorable | 8 |
 | C | 53% | Winston | -2.90% | -2.96% ±1.6 | Niche (-30%) | Deterrent | 52 |
 | D | 100% | Widowmaker | -6.71% | -6.74% ±1.9 | Niche (-71%) | Deterrent | 44 |
@@ -1752,7 +1752,7 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | A | 54% | Bastion | +1.48% | +2.11% ±2.4 | Popular (+28%) | Meta | 50 |
 | A | 50% | Junkrat | +1.36% | +1.80% ±2.3 | Popular (+44%) | Meta | 49 |
 | A | 53% | Wuyang | +1.33% | +2.64% ±2.2 | Standard (+16%) | Favorable | 52 |
-| B | 56% | Orisa | +1.07% | +1.50% ±2.0 | Popular (+21%) | Neutral | 52 |
+| B | 55% | Orisa | +1.07% | +1.50% ±2.0 | Popular (+21%) | Neutral | 52 |
 | B | 57% | Pharah | +0.72% | +1.49% ±3.1 | Popular (+34%) | Neutral | 52 |
 | B | 58% | Jetpack Cat | +0.65% | +1.06% ±3.1 | Standard (-1%) | Neutral | 52 |
 | B | 68% | Mei | +0.65% | +2.41% ±2.7 | Popular (+39%) | Neutral | 51 |
@@ -1781,7 +1781,7 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | B | 63% | Doomfist | -0.70% | -2.10% ±3.6 | Standard (-13%) | Neutral | 52 |
 | B | 57% | Moira | -0.77% | -0.52% ±3.5 | Standard (-10%) | Neutral | 50 |
 | B | 62% | Mercy | -0.81% | -2.00% ±3.1 | Standard (+10%) | Neutral | 49 |
-| B | 54% | Hazard | -0.82% | -1.00% ±3.4 | Niche (-35%) | Neutral | 51 |
+| B | 54% | Hazard | -0.82% | -1.00% ±3.4 | Niche (-34%) | Neutral | 51 |
 | B | 50% | Zarya | -1.09% | -1.19% ±3.0 | Standard (+15%) | Neutral | 52 |
 | B | 49% | Torbjörn | -1.13% | -1.73% ±3.1 | Standard (+5%) | Neutral | 50 |
 | B | 51% | Zenyatta | -1.18% | -1.80% ±2.2 | Popular (+22%) | Neutral | 52 |
@@ -1826,7 +1826,7 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | B | 83% | Sierra | +0.22% | +2.03% ±2.0 | Standard (-14%) | Neutral | 33 |
 | B | 83% | Echo | +0.20% | +0.53% ±2.0 | Niche (-36%) | Neutral | 52 |
 | B | 90% | Lifeweaver | +0.13% | -1.57% ±1.6 | Niche (-22%) | Neutral | 51 |
-| B | 79% | Vendetta | +0.05% | +0.25% ±2.5 | Standard (+17%) | Neutral | 48 |
+| B | 79% | Vendetta | +0.05% | +0.25% ±2.5 | Standard (+16%) | Neutral | 48 |
 | B | 79% | D.Mon | +0.04% | +0.32% ±2.4 | Standard (+11%) | Neutral | 16 |
 | B | 78% | Venture | +0.04% | -1.12% ±2.7 | Standard (+7%) | Neutral | 51 |
 | B | 72% | Torbjörn | +0.03% | +0.06% ±2.5 | Standard (-4%) | Neutral | 52 |
@@ -1868,12 +1868,12 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | A | 52% | Junkrat | +1.74% | +2.61% ±2.9 | Standard (+9%) | Favorable | 50 |
 | A | 57% | Hazard | +1.50% | +1.97% ±2.0 | Map Priority (+53%) | Meta | 52 |
 | A | 55% | Mercy | +1.39% | +3.22% ±2.3 | Popular (+21%) | Meta | 51 |
-| A | 53% | D.Va | +1.32% | +3.08% ±2.0 | Popular (+47%) | Meta | 51 |
+| A | 54% | D.Va | +1.32% | +3.08% ±2.0 | Popular (+47%) | Meta | 51 |
 | B | 52% | Brigitte | +1.13% | +1.79% ±2.1 | Map Priority (+61%) | Neutral | 52 |
 | B | 64% | Baptiste | +0.90% | +2.10% ±1.9 | Standard (+1%) | Neutral | 52 |
 | B | 63% | Freja | +0.80% | +2.33% ±2.8 | Popular (+31%) | Neutral | 52 |
 | B | 45% | Roadhog *(provisional)* | +0.71% | +5.12% ±8.2 | Standard (+9%) | Neutral | 7 |
-| B | 76% | Bastion | +0.46% | +0.61% ±2.1 | Standard (-1%) | Neutral | 50 |
+| B | 75% | Bastion | +0.46% | +0.61% ±2.1 | Standard (-1%) | Neutral | 50 |
 | B | 86% | Tracer | +0.44% | +0.68% ±1.5 | Standard (+10%) | Neutral | 52 |
 | B | 87% | Ashe | +0.34% | +1.39% ±1.6 | Map Priority (+83%) | Neutral | 52 |
 | B | 81% | Sierra | +0.22% | -0.26% ±2.3 | Standard (+9%) | Neutral | 36 |
@@ -1881,22 +1881,22 @@ As of the 2026-10-21 analysis (the table above is recomputed on every run): the 
 | B | 71% | Lifeweaver | +0.13% | -0.60% ±3.6 | Popular (+31%) | Neutral | 52 |
 | B | 81% | Echo | +0.11% | +0.45% ±2.1 | Popular (+21%) | Neutral | 52 |
 | B | 53% | Doctrine *(provisional)* | +0.10% | +0.39% ±5.3 | Standard (-3%) | Neutral | 8 |
-| B | 72% | Venture | +0.04% | -2.05% ±3.5 | Standard (-3%) | Neutral | 50 |
+| B | 72% | Venture | +0.04% | -2.05% ±3.5 | Standard (-2%) | Neutral | 50 |
 | B | 89% | Illari | +0.03% | +0.42% ±1.7 | Standard (+16%) | Neutral | 52 |
 | B | 92% | Cassidy | +0.02% | +0.15% ±1.5 | Standard (-14%) | Neutral | 52 |
 | B | 72% | Shion | -0.02% | +0.96% ±3.5 | Niche (-40%) | Neutral | 28 |
-| B | 96% | Genji | -0.07% | +0.38% ±1.3 | Popular (+21%) | Neutral | 52 |
+| B | 96% | Genji | -0.07% | +0.38% ±1.3 | Popular (+22%) | Neutral | 52 |
 | B | 87% | Emre | -0.09% | +0.54% ±1.9 | Standard (+11%) | Neutral | 52 |
 | B | 65% | Jetpack Cat | -0.13% | -0.08% ±3.0 | Standard (+20%) | Neutral | 52 |
 | B | 75% | Mei | -0.23% | -0.41% ±2.9 | Niche (-37%) | Neutral | 47 |
 | B | 67% | Soldier: 76 | -0.32% | -0.26% ±3.8 | Standard (-5%) | Neutral | 52 |
-| B | 71% | Doomfist | -0.53% | -1.03% ±2.8 | Standard (+0%) | Neutral | 52 |
+| B | 70% | Doomfist | -0.53% | -1.03% ±2.8 | Standard (+0%) | Neutral | 52 |
 | B | 65% | Juno | -0.60% | -0.55% ±3.6 | Standard (-18%) | Neutral | 49 |
 | B | 78% | Widowmaker | -0.62% | -0.58% ±1.4 | Map Priority (+52%) | Neutral | 51 |
-| B | 78% | Wuyang | -0.64% | -0.86% ±1.6 | Niche (-29%) | Neutral | 52 |
+| B | 78% | Wuyang | -0.64% | -0.86% ±1.6 | Niche (-28%) | Neutral | 52 |
 | B | 76% | Kiriko | -0.65% | -0.83% ±1.7 | Standard (-4%) | Neutral | 52 |
 | B | 66% | Hanzo | -0.66% | -0.86% ±2.8 | Standard (+13%) | Neutral | 52 |
-| B | 55% | Pharah | -0.75% | -0.62% ±3.4 | Niche (-37%) | Neutral | 51 |
+| B | 55% | Pharah | -0.75% | -0.62% ±3.4 | Niche (-38%) | Neutral | 51 |
 | B | 62% | Mizuki | -0.87% | -1.17% ±2.2 | Niche (-25%) | Neutral | 52 |
 | B | 54% | D.Mon | -0.88% | -2.30% ±5.1 | Niche (-40%) | Neutral | 16 |
 | B | 55% | Reaper | -1.05% | -1.70% ±2.5 | Standard (+17%) | Neutral | 52 |

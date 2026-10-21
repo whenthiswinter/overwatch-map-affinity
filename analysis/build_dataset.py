@@ -7,7 +7,7 @@ from collections import defaultdict
 import sources
 from config import (
     CURRENT_IS_MIDSEASON, CURRENT_PATCH, CURRENT_PATCH_MATURE, CURRENT_SEASON, DATA_THROUGH,
-    DAYS_INTO_PATCH, HERO_VALID_FROM_SEASON, MAP_MODES, MATURITY_DAYS, MIN_PICK_RATE, MIN_SAMPLE_SIZE,
+    DAYS_INTO_PATCH, MAP_MODES, MATURITY_DAYS, MIN_PICK_RATE, MIN_SAMPLE_SIZE, hero_valid_from,
     hero_name, hero_role, in_current_patch, is_provisional, period, season_usable,
 )
 
@@ -74,7 +74,7 @@ def flatten(raw, usable):
     raw_slice_counts = defaultdict(list)
 
     for hero_slug, seasons in raw.items():
-        earliest = HERO_VALID_FROM_SEASON.get(hero_slug, 1)
+        earliest = hero_valid_from(hero_slug)
         role = hero_role(hero_slug)
 
         for s in seasons:
@@ -280,18 +280,21 @@ def build_scope(raw, usable, flag_provisional):
                     se2 = noise[hero_slug][map_slug]
                     weight = hero_tau2 / (hero_tau2 + se2) if hero_tau2 + se2 > 0 else 0.0
                     adj_wr = hero_mean + weight * (raw_wr - hero_mean)
-                    pr_lift = mean_of(hero_map_pr[hero_slug][map_slug])
+                    # Labels come from the rounded values the site shows, so a
+                    # "+1.20%" is never labelled B because it was really 1.1996.
+                    shown_wr = round(adj_wr, 2)
+                    pr_lift = round(mean_of(hero_map_pr[hero_slug][map_slug]), 1)
                     mode_deltas[MAP_MODES.get(map_slug, "Other")].append(adj_wr)
 
                     hero_entries.append({
                         "hero": hero_slug, "map": map_slug,
-                        "delta_wr": round(adj_wr, 2), "raw_delta_wr": round(raw_wr, 2),
-                        "pr_lift": round(pr_lift, 1),
-                        "tier": tier_of(adj_wr), "presence": presence_label(pr_lift),
-                        "archetype": archetype_of(adj_wr, pr_lift),
+                        "delta_wr": shown_wr, "raw_delta_wr": round(raw_wr, 2),
+                        "pr_lift": pr_lift,
+                        "tier": tier_of(shown_wr), "presence": presence_label(pr_lift),
+                        "archetype": archetype_of(shown_wr, pr_lift),
                         "sample_size": len(deltas),
                         "ci": round(1.96 * math.sqrt(se2), 2),
-                        "tier_p": round(100 * tier_probability(adj_wr, se2, hero_tau2)),
+                        "tier_p": round(100 * tier_probability(shown_wr, se2, hero_tau2)),
                         "provisional": flag_provisional and is_provisional(hero_slug, map_slug),
                     })
 

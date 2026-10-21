@@ -22,8 +22,9 @@ import re
 import statistics
 
 import snapshots
-from collect_live import get, roster_warnings
-from config import PATCH_STATE_PATH, load_patch_state
+import sources
+from collect_live import get
+from config import HERO_VALID_FROM_SEASON, PATCH_STATE_PATH, load_patch_state, period
 
 PATCH_NOTES = "https://overwatch.blizzard.com/en-us/news/patch-notes/"
 
@@ -90,6 +91,60 @@ def label_new_patch(state, current, reset_date, notes):
     return patch, "no season/midseason patch notes found, so filed under the current half"
 
 
+def history_roster():
+    """Heroes and maps in the OWTics history, counting only rows from on/after
+    a hero's valid-from. OWTics returns the current season's numbers for any
+    season asked about a hero who didn't exist yet, so Doctrine has fake S4
+    rows, and those even list the S5-only map Grimsvotn."""
+    heroes, maps = set(), set()
+    for hero, slices in sources.load_history().items():
+        for s in slices:
+            if period(s["season"], s.get("isMidseason", False)) < HERO_VALID_FROM_SEASON.get(hero, 1):
+                continue
+            heroes.add(hero)
+            maps.update(m["map"]["slug"] for m in s["measurements"])
+    return heroes, maps
+
+
+def update_roster(state, newest, paths, notified):
+    """Record when heroes/maps unknown to the history first appear (config.py
+    uses that as their valid-from, so they show up as provisional at once) and
+    flag role or mode changes, which usually mean a rework."""
+    first_seen = state.setdefault("first_seen", {"heroes": {}, "maps": {}})
+    known_heroes, known_maps = history_roster()
+    now = period(newest["season"], newest.get("is_midseason", False))
+    patch = snapshots.patch_of(newest)
+    problems = []
+
+    for hero, info in sorted(newest["heroes"].items()):
+        if hero not in known_heroes and hero not in first_seen["heroes"]:
+            first_seen["heroes"][hero] = now
+            problems.append(f"- **New hero: {info['name']}** ({info['role']}), first seen in `{patch}`. Shown automatically, marked provisional. "
+                            f"Nothing to do unless it's really an existing hero under a new name.")
+    for slug, info in sorted(newest["maps"].items()):
+        if slug not in known_maps and slug not in first_seen["maps"]:
+            first_seen["maps"][slug] = now
+            problems.append(f"- **New map: {info['name']}** ({info['mode']}), first seen in `{patch}`. Shown automatically, marked provisional.")
+
+    if len(paths) > 1:
+        previous = snapshots.load_snapshot(paths[-2])
+        for hero, info in sorted(newest["heroes"].items()):
+            old = previous["heroes"].get(hero)
+            key = f"role:{hero}:{info['role']}"
+            if old and old["role"] != info["role"] and key not in notified:
+                notified.add(key)
+                problems.append(f"- **{info['name']} changed role: {old['role']} → {info['role']}.** That usually means a rework: add "
+                                f"`\"{hero}\": {now}` to `HERO_VALID_FROM_SEASON` in `analysis/config.py`, so older data stops counting.")
+        for slug, info in sorted(newest["maps"].items()):
+            old = previous["maps"].get(slug)
+            key = f"mode:{slug}:{info['mode']}"
+            if old and old["mode"] != info["mode"] and key not in notified:
+                notified.add(key)
+                problems.append(f"- **{info['name']} changed mode: {old['mode']} → {info['mode']}.** Probably a rework: add "
+                                f"`\"{slug}\": {now}` to `MAP_VALID_FROM_SEASON` in `analysis/config.py`.")
+    return problems
+
+
 def main():
     state = load_patch_state()
     current = next(p for p in state["patches"] if p["id"] == state["current"])
@@ -103,12 +158,6 @@ def main():
     newest_path = paths[-1]
     newest = snapshots.load_snapshot(newest_path)
     today = newest["date"]
-
-    for warning in roster_warnings(newest["heroes"], newest["maps"]):
-        key = f"roster:{warning}"
-        if key not in notified:
-            problems.append(f"- **Roster:** {warning}. Update `analysis/config.py` (roles, modes, `HERO_VALID_FROM_SEASON` / `MAP_VALID_FROM_SEASON`).")
-            notified.add(key)
 
     try:
         notes = major_patches()
@@ -157,6 +206,8 @@ def main():
             if key not in notified:
                 problems.append(f"- **Possible patch reset on {today}** (PR shift {pr_shift:.2f}, WR shift {wr_shift:.2f}), but only one signal passed. Not acted on; check the data.")
                 notified.add(key)
+
+    problems += update_roster(state, newest, paths, notified)
 
     # Season/midseason notes with no reset after a few days.
     if state["current"] == current["id"]:

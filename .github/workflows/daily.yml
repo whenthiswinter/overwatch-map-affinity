@@ -78,8 +78,18 @@ jobs:
         with:
           python-version: "3.13"
 
+      - run: pip install curl_cffi
+
+      # If either check fails, nothing below runs: the site keeps its last
+      # good version and an issue is opened.
+      - name: Run tests
+        run: python -m unittest discover -s tests
+
       - name: Build dataset
         run: python analysis/build_dataset.py
+
+      - name: Check the dataset
+        run: python analysis/validate_dataset.py
 
       - name: Assemble site
         run: |
@@ -93,3 +103,14 @@ jobs:
 
       - id: deploy
         uses: actions/deploy-pages@v4
+
+      - name: Open an issue if the deploy was blocked or failed
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TITLE: "Site not updated: deploy blocked or failed"
+        run: |
+          open=$(gh issue list --state open --search "in:title \"$TITLE\"" --json number --jq length)
+          if [ "$open" = "0" ]; then
+            gh issue create --title "$TITLE" --body "The site still shows its last good version. Either the tests or data checks failed (deploy blocked on purpose) or the deploy itself failed. Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          fi
