@@ -153,6 +153,7 @@ _roster = snapshots.latest_roster()
 HERO_ROLES = {**_FALLBACK_HERO_ROLES, **{h: v["role"] for h, v in _roster["heroes"].items()}}
 MAP_MODES = {**_FALLBACK_MAP_MODES, **{m: v["mode"] for m, v in _roster["maps"].items()}}
 _SNAPSHOT_NAMES = {h: v["name"] for h, v in _roster["heroes"].items()}
+_SNAPSHOT_MAP_NAMES = {m: v["name"] for m, v in _roster["maps"].items()}
 
 TIERS = ["MASTER", "GRANDMASTER_AND_CHAMPION"]
 REGIONS = ["AMER", "EU", "ASIA", "KOREA"]
@@ -170,6 +171,23 @@ def hero_role(slug):
 def hero_name(slug):
     slug = canonical_slug(slug)
     return _SNAPSHOT_NAMES.get(slug) or HERO_NAMES.get(slug, slug.replace("-", " ").title())
+
+
+_LOWERCASE_WORDS = {"of", "the", "and", "de", "du"}
+
+
+def tidy_name(name):
+    """Blizzard's listing has a few odd cases ("NEON JUNCTION", "Circuit royal")."""
+    if name.isupper():
+        name = name.title()
+    words = name.split(" ")
+    return " ".join(w if i and w in _LOWERCASE_WORDS else (w[:1].upper() + w[1:] if w.islower() else w) for i, w in enumerate(words))
+
+
+def map_name(map_slug):
+    """Blizzard's own map name (King's Row, Paraíso, Watchpoint: Gibraltar)."""
+    name = _SNAPSHOT_MAP_NAMES.get(map_slug)
+    return tidy_name(name) if name else map_slug.replace("-", " ").title()
 
 
 def hero_valid_from(hero_slug):

@@ -8,7 +8,7 @@ import sources
 from config import (
     CURRENT_IS_MIDSEASON, CURRENT_PATCH, CURRENT_PATCH_MATURE, CURRENT_SEASON, DATA_THROUGH,
     DAYS_INTO_PATCH, MAP_MODES, MATURITY_DAYS, MIN_PICK_RATE, MIN_SAMPLE_SIZE, hero_valid_from,
-    hero_name, hero_role, in_current_patch, is_provisional, period, season_usable,
+    hero_name, hero_role, in_current_patch, is_provisional, map_name, period, season_usable,
 )
 
 OUT_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "web_data.json")
@@ -338,6 +338,7 @@ def build():
         "hero_roles": {h: hero_role(h) for h in raw.keys()},
         "hero_names": {h: hero_name(h) for h in raw.keys()},
         "map_modes": MAP_MODES,
+        "map_names": {m: map_name(m) for m in MAP_MODES},
     }
 
     with open(OUT_PATH, "w", encoding="utf-8") as f:

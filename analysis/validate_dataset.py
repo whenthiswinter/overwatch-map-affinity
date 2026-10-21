@@ -33,6 +33,8 @@ def check(data):
     heroes, maps = data.get("hero_list", []), data.get("map_list", [])
     need(len(heroes) >= MIN_HEROES, f"only {len(heroes)} heroes (expected {MIN_HEROES}+)")
     need(len(maps) >= MIN_MAPS, f"only {len(maps)} maps (expected {MIN_MAPS}+)")
+    missing_names = sorted(set(maps) - set(data.get("map_names", {})))
+    need(not missing_names, f"maps without a display name: {missing_names}")
     bad_roles = {h: r for h, r in data.get("hero_roles", {}).items() if r not in ROLES}
     need(not bad_roles, f"unknown roles: {bad_roles}")
     bad_modes = {m: md for m, md in data.get("map_modes", {}).items() if md not in MODES}

@@ -9,7 +9,7 @@ import os
 import sources
 from build_dataset import build_scope
 from check_rank_region import run_checks
-from config import hero_name, season_usable
+from config import hero_name, map_name, season_usable
 
 CSV_DIR = os.path.join(os.path.dirname(__file__), "..", "data", "csv")
 REPORT_PATH = os.path.join(os.path.dirname(__file__), "..", "report", "analysis_report.md")
@@ -68,7 +68,7 @@ def run():
             by_map.setdefault(e["map"], []).append(e)
 
         for map_slug in sorted(by_map):
-            f.write(f"### {map_slug.replace('-', ' ').title()}\n\n")
+            f.write(f"### {map_name(map_slug)}\n\n")
             f.write("| Tier | P(tier) | Hero | Delta WR | Raw (95% range) | Presence | Archetype | n |\n|---|---|---|---|---|---|---|---|\n")
             for e in sorted(by_map[map_slug], key=lambda e: (TIER_ORDER[e["tier"]], -e["delta_wr"])):
                 name = hero_name(e["hero"]) + (" *(provisional)*" if e["provisional"] else "")

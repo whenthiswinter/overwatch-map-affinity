@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
 
-from config import hero_name
+from config import hero_name, map_name
 
 BASE = os.path.dirname(__file__)
 DATA_DIR = os.path.join(BASE, "..", "data")
@@ -35,7 +35,7 @@ def heatmap():
     df = pd.read_csv(os.path.join(CSV_DIR, "map_tierlists.csv"))
     pivot = df.pivot(index="hero", columns="map", values="delta_wr")
     pivot.index = pivot.index.map(hero_name)
-    pivot.columns = pivot.columns.str.replace("-", " ").str.title()
+    pivot.columns = pivot.columns.map(map_name)
 
     plt.figure(figsize=(22, 16))
     cmap = sns.diverging_palette(10, 133, s=85, l=55, as_cmap=True)

@@ -4,7 +4,15 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Overwatch Map Affinity</title>
-<link rel="stylesheet" href="css/style.css" />
+<meta name="description" content="How much each Overwatch hero's win rate rises or falls on every map, from ranked Masters+ data, updated daily and adjusted for noise." />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Overwatch Map Affinity" />
+<meta property="og:description" content="Per-hero, per-map win rate deltas from ranked Masters+ data, updated daily. Tier lists for every map, map sensitivity per hero, and a pool planner." />
+<meta property="og:url" content="https://whenthiswinter.github.io/overwatch-map-affinity/" />
+<meta property="og:image" content="https://whenthiswinter.github.io/overwatch-map-affinity/charts/hero_map_heatmap.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23ea580c'/%3E%3Cpath d='M7 22l6-7 5 4 7-9' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+<link rel="stylesheet" href="css/style.css?v=dev" />
 </head>
 <body>
 
@@ -22,16 +30,16 @@
     </div>
   </header>
 
-  <nav class="tabs">
-    <button class="tab active" data-tab="map">Maps</button>
-    <button class="tab" data-tab="hero">Heroes</button>
-    <button class="tab" data-tab="pool">My pool</button>
+  <nav class="tabs" role="tablist">
+    <button class="tab active" role="tab" aria-selected="true" data-tab="map">Maps</button>
+    <button class="tab" role="tab" aria-selected="false" data-tab="hero">Heroes</button>
+    <button class="tab" role="tab" aria-selected="false" data-tab="pool">My pool</button>
   </nav>
 
   <section class="filters">
     <label class="field">
       <span>Data</span>
-      <select id="scopeSelect">
+      <select id="scopeSelect" disabled>
         <option value="all">All seasons</option>
         <option value="patch">This patch only</option>
       </select>
@@ -39,7 +47,7 @@
 
     <label class="field">
       <span>Rank</span>
-      <select id="rankSelect">
+      <select id="rankSelect" disabled>
         <option value="ALL">All ranks</option>
         <option value="MASTER">Masters</option>
         <option value="GRANDMASTER_AND_CHAMPION">GM &amp; Champion</option>
@@ -48,7 +56,7 @@
 
     <label class="field">
       <span>Region</span>
-      <select id="regionSelect">
+      <select id="regionSelect" disabled>
         <option value="ALL">All regions</option>
         <option value="AMER">Americas</option>
         <option value="EU">Europe</option>
@@ -59,12 +67,12 @@
 
     <label class="field highlight" data-scope="map">
       <span>Map</span>
-      <select id="mapSelect"></select>
+      <select id="mapSelect" disabled></select>
     </label>
 
     <label class="field" data-scope="map">
       <span>Role</span>
-      <select id="roleSelect">
+      <select id="roleSelect" disabled>
         <option value="ALL">All roles</option>
         <option value="Tank">Tank</option>
         <option value="Damage">Damage</option>
@@ -73,20 +81,24 @@
     </label>
 
     <label class="field check" data-scope="map">
-      <input type="checkbox" id="onlyPoolCheck" />
+      <input type="checkbox" id="onlyPoolCheck" disabled />
       <span>Pool only</span>
     </label>
 
     <label class="field highlight" data-scope="hero">
       <span>Hero</span>
-      <select id="heroSelect"></select>
+      <select id="heroSelect" disabled></select>
     </label>
   </section>
 
-  <section class="pool-editor" data-scope="pool">
+  <details class="pool-editor" id="poolEditor" data-scope="pool">
+    <summary>
+      <span class="summary-title">Your pool</span>
+      <span class="summary-text" id="poolSummary"></span>
+    </summary>
     <div class="pool-editor-head">
-      <span>Hero pool</span>
-      <button class="link" id="clearPoolBtn">Clear</button>
+      <span class="muted">Tap heroes to add or remove them.</span>
+      <button class="link" id="clearPoolBtn" type="button">Clear</button>
     </div>
     <div class="role-block">
       <p class="role-label role-Tank">Tank</p>
@@ -100,9 +112,10 @@
       <p class="role-label role-Support">Support</p>
       <div class="chips" id="chipsSupport"></div>
     </div>
-  </section>
+  </details>
 
   <main>
+    <p id="status" class="status">Loading data&hellip;</p>
     <div id="patchNotice" class="patch-notice hidden"></div>
     <p id="filterNotice" class="filter-notice hidden">Narrower view: fewer games behind each number, so ranges are wider and more entries sit near B. Map affinity tested the same across ranks and nearly the same across regions, so <b>All ranks / All regions</b> is the most reliable view, even if you only care about one of them.</p>
     <div id="heroSummary" class="hero-summary hidden">
@@ -117,11 +130,15 @@
       <div class="mode-grid" id="modeGrid"></div>
     </div>
 
-    <div class="table-wrap" id="tableView">
-      <table>
-        <thead id="tableHead"></thead>
-        <tbody id="tableBody"></tbody>
-      </table>
+    <div id="tableView" class="hidden">
+      <p class="table-caption" id="tableCaption"></p>
+      <div class="table-wrap">
+        <table>
+          <thead id="tableHead"></thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+      </div>
+      <p class="hint">Tap or click a row for details.</p>
     </div>
 
     <div id="poolView" class="pool-view hidden">
@@ -145,7 +162,10 @@
           <button class="chip-toggle" data-mode="Flashpoint">Flashpoint</button>
         </div>
       </div>
-      <div id="poolStats" class="pool-stats"></div>
+      <details class="pool-stats-box" id="poolStatsBox" open>
+        <summary><span class="summary-title">Map sensitivity of your pool</span></summary>
+        <div id="poolStats" class="pool-stats"></div>
+      </details>
       <div id="poolGrid"></div>
     </div>
   </main>
@@ -172,7 +192,7 @@
   <div class="legend-entry">
     <h4>Delta WR &amp; tiers</h4>
     <p>Map win rate minus the hero's baseline win rate in that rank/region/patch slice, averaged across every slice collected. S &ge; 3.0%, A 1.2&ndash;2.9%, B &minus;1.1&ndash;1.1%, C &minus;3.0&ndash;&minus;1.3%, D &lt; &minus;3.0%.</p>
-    <p><b>Adjusted for noise.</b> Part of every average is noise, since its slices disagree with each other. So each number is pulled toward the hero's overall mean, more strongly the noisier it is: a well-measured +5% stays near +5%, while a +5% from a handful of inconsistent slices may end up near +1%. Without this, thin numbers would land in S or D by chance. The tier, archetype and pool picks use the adjusted value; hover a number to see the raw average.</p>
+    <p><b>Adjusted for noise.</b> Part of every average is noise, since its slices disagree with each other. So each number is pulled toward the hero's overall mean, more strongly the noisier it is: a well-measured +5% stays near +5%, while a +5% from a handful of inconsistent slices may end up near +1%. Without this, thin numbers would land in S or D by chance. The tier, archetype and pool picks use the adjusted value; tap a row to see the raw average.</p>
   </div>
 
   <div class="legend-entry">
@@ -202,7 +222,7 @@
 
   <div class="legend-entry">
     <h4>Confidence</h4>
-    <p>The chance that the shown tier is the right one for this hero on this map, from the same noise model as the adjustment (how much the slices behind the number disagree, and how big this hero's real map effects are). <b>High</b>: at least 75% (3 in 4). <b>Medium</b>: 50&ndash;74%, more likely right than wrong. <b>Low</b>: under 50%, more likely wrong than right; shown faded. A labels tend to be the least certain because the A band is narrow. These probabilities were checked against held-out data and came out within about 2 points on average. n is the number of slices; hover for the raw average and its 95% range.</p>
+    <p>The chance that the shown tier is the right one for this hero on this map, from the same noise model as the adjustment (how much the slices behind the number disagree, and how big this hero's real map effects are). <b>High</b>: at least 75% (3 in 4). <b>Medium</b>: 50&ndash;74%, more likely right than wrong. <b>Low</b>: under 50%, more likely wrong than right; shown faded. A labels tend to be the least certain because the A band is narrow. These probabilities were checked against held-out data and came out within about 2 points on average. n is the number of slices; tap a row for the raw average and its 95% range.</p>
   </div>
 
   <div class="legend-entry">
@@ -220,7 +240,7 @@
   </div>
 </dialog>
 
-<script src="js/app.js"></script>
+<script src="js/app.js?v=dev"></script>
 <script data-goatcounter="https://whenthiswinter.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </body>
 </html>

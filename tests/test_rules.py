@@ -60,6 +60,12 @@ class ValidityTests(unittest.TestCase):
             self.assertTrue(config.in_current_patch("ana", "dorado", 5))
             self.assertFalse(config.in_current_patch("ana", "dorado", 4, True))
 
+    def test_tidy_name_fixes_blizzards_odd_cases(self):
+        cases = [("NEON JUNCTION", "Neon Junction"), ("Circuit royal", "Circuit Royal"), ("King's Row", "King's Row"),
+                 ("Watchpoint: Gibraltar", "Watchpoint: Gibraltar"), ("Paraíso", "Paraíso"), ("temple of anubis", "Temple of Anubis")]
+        for raw, tidy in cases:
+            self.assertEqual(config.tidy_name(raw), tidy, raw)
+
     def test_canonical_slug_aliases(self):
         for raw, slug in [("Soldier: 76", "soldier-76"), ("soldier76", "soldier-76"), ("D.Mon", "dmon"),
                           ("jetpackcat", "jetpack-cat"), ("Lúcio", "lucio"), ("wrecking_ball", "wrecking-ball")]:
