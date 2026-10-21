@@ -183,6 +183,26 @@ def signal_variance(means, noises):
     return max(observed - mean_of(noises), 0.0)
 
 
+# For the confidence figure only (never the estimate itself): never treat a
+# hero's real map effect as exactly zero, or "no detected effect" turns into
+# "100% certain B". 2.0 calibrated best on 2026-10-21: forecasts of held-out
+# tiers were off by 1.9 points on average (4.2 without a floor).
+CONFIDENCE_TAU2_FLOOR = 2.0
+
+
+def normal_cdf(x):
+    return 0.5 * (1 + math.erf(x / math.sqrt(2)))
+
+
+def tier_probability(adjusted, se2, tau2):
+    """Chance the true value lies in the shown tier, from the noise model."""
+    t2 = max(tau2, CONFIDENCE_TAU2_FLOOR)
+    sd = math.sqrt(t2 * se2 / (t2 + se2))
+    edges = [-math.inf, -TIER_OUTER, -TIER_INNER, TIER_INNER, TIER_OUTER, math.inf]
+    i = "DCBAS".index(tier_of(adjusted))
+    return normal_cdf((edges[i + 1] - adjusted) / sd) - normal_cdf((edges[i] - adjusted) / sd)
+
+
 def volatility_class(sigma, provisional):
     if provisional:
         return "Too early to tell (new or reworked)"
@@ -271,6 +291,7 @@ def build_scope(raw, usable, flag_provisional):
                         "archetype": archetype_of(adj_wr, pr_lift),
                         "sample_size": len(deltas),
                         "ci": round(1.96 * math.sqrt(se2), 2),
+                        "tier_p": round(100 * tier_probability(adj_wr, se2, hero_tau2)),
                         "provisional": flag_provisional and is_provisional(hero_slug, map_slug),
                     })
 

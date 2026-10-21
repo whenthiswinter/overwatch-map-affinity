@@ -146,26 +146,25 @@ function activeSlice() {
   return data.scopes[el("scopeSelect").value][key] || { maps: {}, heroes: {} };
 }
 
-// 95% range of the average delta, from how much its slices disagree.
+// Chance the shown tier is right (tier_p, from the calibrated noise model).
+// High = at least 3 in 4, Medium = more likely right than wrong, Low = less.
 function confidence(e) {
-  if (e.ci == null) return { level: "Low", cls: "low", range: "single slice" };
-  const range = `±${e.ci.toFixed(1)}`;
-  if (e.ci <= 2.5) return { level: "High", cls: "high", range };
-  if (e.ci <= 5) return { level: "Medium", cls: "mid", range };
-  return { level: "Low", cls: "low", range };
+  if (e.tier_p >= 75) return { level: "High", cls: "high" };
+  if (e.tier_p >= 50) return { level: "Medium", cls: "mid" };
+  return { level: "Low", cls: "low" };
 }
 
 function confTitle(e) {
   const c = confidence(e);
   const raw = `${e.raw_delta_wr > 0 ? "+" : ""}${e.raw_delta_wr.toFixed(2)}%`;
-  return `${c.level} confidence. Raw average ${raw}, likely within ${c.range === "single slice" ? "an unknown range" : c.range + " points"} of the true value (${e.sample_size} slice${e.sample_size === 1 ? "" : "s"}). Shown value is adjusted for that noise.`;
+  return `${c.level} confidence: ${e.tier_p}% chance this hero's true value on this map is in tier ${e.tier}. Raw average ${raw} ±${e.ci.toFixed(1)} (95% range, ${e.sample_size} slice${e.sample_size === 1 ? "" : "s"}); the shown value is adjusted for that noise.`;
 }
 
 const sigmaText = (h) => (h.volatility_class.startsWith("Too early") ? "&sigma; &ndash;" : `&sigma; ${h.volatility.toFixed(2)}%`);
 
 function confCell(e) {
   const c = confidence(e);
-  return `<span class="conf conf-${c.cls}" title="${confTitle(e)}"><span class="conf-dot"></span>${c.range}</span> <span class="muted">n=${e.sample_size}</span>`;
+  return `<span class="conf conf-${c.cls}" title="${confTitle(e)}"><span class="conf-dot"></span>${c.level} ${e.tier_p}%</span> <span class="muted">n=${e.sample_size}</span>`;
 }
 
 function renderPatchNotice() {
@@ -385,7 +384,7 @@ function openExport() {
   });
 
   out += "* provisional: only current-patch data so far, still settling\n";
-  out += "? low confidence: the slices behind this number disagree a lot\n";
+  out += "? low confidence: under 50% chance the tier is right\n";
   out += `Data through ${data.meta.data_through}, ${el("scopeSelect").value === "patch" ? patchLabel(data.meta) + " only" : "all seasons"}\n`;
 
   el("exportText").value = out;

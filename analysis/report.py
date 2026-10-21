@@ -69,15 +69,15 @@ def run():
 
         for map_slug in sorted(by_map):
             f.write(f"### {map_slug.replace('-', ' ').title()}\n\n")
-            f.write("| Tier | Hero | Delta WR | Raw (95% range) | Presence | Archetype | n |\n|---|---|---|---|---|---|---|\n")
+            f.write("| Tier | P(tier) | Hero | Delta WR | Raw (95% range) | Presence | Archetype | n |\n|---|---|---|---|---|---|---|---|\n")
             for e in sorted(by_map[map_slug], key=lambda e: (TIER_ORDER[e["tier"]], -e["delta_wr"])):
                 name = hero_name(e["hero"]) + (" *(provisional)*" if e["provisional"] else "")
-                f.write(f"| {e['tier']} | {name} | {e['delta_wr']:+.2f}% | {e['raw_delta_wr']:+.2f}% ±{e['ci']:.1f} | "
+                f.write(f"| {e['tier']} | {e['tier_p']}% | {name} | {e['delta_wr']:+.2f}% | {e['raw_delta_wr']:+.2f}% ±{e['ci']:.1f} | "
                         f"{e['presence']} | {e['archetype']} | {e['sample_size']} |\n")
             f.write("\n")
 
     fields = ["map", "tier", "hero", "delta_wr", "pr_lift_pct", "presence", "archetype",
-              "sample_size", "raw_delta_wr", "ci95", "provisional"]
+              "sample_size", "raw_delta_wr", "ci95", "tier_probability_pct", "provisional"]
     with open(os.path.join(CSV_DIR, "map_tierlists.csv"), "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=fields)
         writer.writeheader()
@@ -86,7 +86,7 @@ def run():
                 "map": e["map"], "tier": e["tier"], "hero": e["hero"],
                 "delta_wr": e["delta_wr"], "pr_lift_pct": e["pr_lift"],
                 "presence": e["presence"], "archetype": e["archetype"],
-                "sample_size": e["sample_size"], "raw_delta_wr": e["raw_delta_wr"], "ci95": e["ci"],
+                "sample_size": e["sample_size"], "raw_delta_wr": e["raw_delta_wr"], "ci95": e["ci"], "tier_probability_pct": e["tier_p"],
                 "provisional": e["provisional"],
             })
 
