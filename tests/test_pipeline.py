@@ -57,28 +57,72 @@ class SourcesTests(unittest.TestCase):
                 sources.load_all()
 
 
-class PatchLabelTests(unittest.TestCase):
-    STATE = {"current": "S5", "patches": [{"id": "S5", "season": 5, "is_midseason": False, "started": "2026-10-06"}]}
-    CURRENT = STATE["patches"][0]
+def note(date, heading="Hotfix Update", season=None, hero_updates=0):
+    return {"date": date, "heading": heading, "season": season, "hero_updates": hero_updates}
 
-    def label(self, notes, state=None):
-        return detect_patch.label_new_patch(state or self.STATE, self.CURRENT, "2026-11-12", notes)[0]
+
+S5_CALENDAR = [{"season": 5, "start": "2026-10-07", "end": "2026-12-08"}]
+
+
+class PatchLabelTests(unittest.TestCase):
+    S5 = {"id": "S5", "season": 5, "is_midseason": False, "started": "2026-10-06"}
+    S5_MID = {"id": "S5-mid", "season": 5, "is_midseason": True, "started": "2026-11-09"}
+
+    def label(self, current, reset="2026-11-10", notes=None, homepage=None, calendar=None):
+        state = {"current": current["id"], "patches": [current]}
+        signals = {"notes": notes or [], "homepage": homepage, "calendar": calendar}
+        return detect_patch.label_new_patch(state, current, reset, signals)
 
     def test_season_heading_starts_a_new_season(self):
-        p = self.label([("2026-11-11", "season", 6, "Season 6: Something")])
-        self.assertEqual((p["id"], p["season"], p["is_midseason"], p["started"]), ("S6", 6, False, "2026-11-11"))
+        p, _, ok = self.label(self.S5_MID, "2026-12-09", notes=[note("2026-12-08", "Season 6: Something", season=6, hero_updates=40)])
+        self.assertEqual((p["id"], p["season"], p["is_midseason"], p["started"], ok), ("S6", 6, False, "2026-12-08", True))
 
-    def test_midseason_heading_starts_the_midseason(self):
-        p = self.label([("2026-11-11", "midseason", None, "Mid-Season Patch")])
-        self.assertEqual((p["id"], p["season"], p["is_midseason"]), ("S5-mid", 5, True))
+    def test_homepage_alone_is_enough_for_a_new_season(self):
+        p, reasons, ok = self.label(self.S5_MID, "2026-12-09", homepage=6)
+        self.assertEqual((p["id"], ok), ("S6", True))
+        self.assertIn("homepage", reasons[0])
 
-    def test_no_notes_means_another_reset_in_the_same_half(self):
-        self.assertEqual(self.label([])["id"], "S5-2")
-        state = {"current": "S5-2", "patches": self.STATE["patches"] + [{"id": "S5-2", "season": 5, "is_midseason": False, "started": "2026-10-30"}]}
-        self.assertEqual(self.label([], state)["id"], "S5-3")
+    def test_calendar_start_near_the_reset_means_a_new_season(self):
+        calendar = S5_CALENDAR + [{"season": 6, "start": "2026-12-09", "end": "2027-02-09"}]
+        p, _, _ = self.label(self.S5_MID, "2026-12-10", calendar=calendar)
+        self.assertEqual(p["id"], "S6")
 
-    def test_old_notes_are_ignored(self):
-        self.assertEqual(self.label([("2026-10-06", "season", 5, "Season 5")])["id"], "S5-2")
+    def test_disagreeing_season_numbers_are_unconfirmed(self):
+        p, _, ok = self.label(self.S5_MID, "2026-12-09", notes=[note("2026-12-08", "Season 6", season=6)], homepage=7)
+        self.assertEqual((p["id"], ok), ("S7", False))
+
+    def test_big_patch_in_a_first_half_is_the_midseason(self):
+        # S4's midseason notes opened with an event name, not "midseason".
+        p, reasons, ok = self.label(self.S5, notes=[note("2026-11-09", "Junkrat's Loot Hunt", hero_updates=27)])
+        self.assertEqual((p["id"], p["is_midseason"], p["started"], ok), ("S5-mid", True, "2026-11-09", True))
+        self.assertIn("27 hero changes", reasons[0])
+
+    def test_calendar_midpoint_confirms_the_midseason(self):
+        p, reasons, ok = self.label(self.S5, "2026-11-08", calendar=S5_CALENDAR)
+        self.assertEqual((p["id"], ok), ("S5-mid", True))
+        self.assertIn("middle of Season 5", reasons[0])
+
+    def test_unsupported_midseason_is_flagged_unconfirmed(self):
+        p, _, ok = self.label(self.S5, "2026-10-20", notes=[note("2026-10-13", hero_updates=5)], calendar=S5_CALENDAR)
+        self.assertEqual((p["id"], ok), ("S5-mid", False))
+
+    def test_a_second_reset_in_a_midseason_is_a_sub_patch(self):
+        p, _, ok = self.label(self.S5_MID, "2026-11-25")
+        self.assertEqual((p["id"], p["season"], p["is_midseason"], ok), ("S5-mid-2", 5, True, False))
+
+    def test_notes_from_before_the_current_patch_are_ignored(self):
+        p, _, _ = self.label(self.S5_MID, "2026-11-25", notes=[note("2026-10-06", "Season 5", season=5, hero_updates=46)])
+        self.assertEqual(p["id"], "S5-mid-2")
+
+    def test_parse_patch_notes(self):
+        page = ('<div class="PatchNotes-patch PatchNotes-live"><div class="anchor" id="patch-2026-10-06"></div>'
+                '<h4 class="PatchNotes-sectionTitle">Reign of Talon - Season 5: A Grim Doctrine</h4>'
+                '<div class="PatchNotesHeroUpdate-name">Ana</div><div class="PatchNotesHeroUpdate-name">Mei</div></div>'
+                '<div class="PatchNotes-patch"><div class="anchor" id="patch-2026-10-13"></div>'
+                '<h4 class="PatchNotes-sectionTitle">Hotfix Update</h4></div>')
+        out = detect_patch.parse_patch_notes(page)
+        self.assertEqual(out[0], {"date": "2026-10-06", "heading": "Reign of Talon - Season 5: A Grim Doctrine", "season": 5, "hero_updates": 2})
+        self.assertEqual((out[1]["season"], out[1]["hero_updates"]), (None, 0))
 
     def test_shift_tells_a_reset_from_a_normal_refresh(self):
         a = snapshot("2026-10-20", rates={"ana": [50.0, 20.0], "mercy": [48.0, 15.0]})

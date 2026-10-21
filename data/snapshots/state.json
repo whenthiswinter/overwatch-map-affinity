@@ -19,5 +19,10 @@
     "maps": {
       "grimsvotn": 5
     }
+  },
+  "signals": {
+    "notes": "ok",
+    "homepage": "ok",
+    "calendar": "ok"
   }
 }

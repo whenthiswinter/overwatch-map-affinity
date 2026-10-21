@@ -9,13 +9,17 @@ recognised by comparing the newest snapshot with the last one that differs:
   reset:          overall pick rate moves ~1.0+,              per-map WR ~5.5-8
   (calibrated 2026-10-20 on S4 -> S4 midseason -> S5 transitions)
 
-On a reset the newest snapshot is re-stamped with a new patch, labelled from
-Blizzard's patch notes ("Season N" = new season, "Mid-Season" = midseason,
-anything else = another reset inside the current half). Whatever needs a
-human is collected into one issue, written as JSON to $ISSUE_OUT for the
+On a reset the newest snapshot is re-stamped with a new patch. The label comes
+from three independent signals (label_new_patch): a "Season N" patch-notes
+heading, the season on Blizzard's homepage, and China's season calendar. No
+season signal inside a season's first half means the midseason, confirmed by
+a big patch in the notes and/or the calendar midpoint. Backtested 2026-10-21
+on the real S4 midseason (2 confirmations) and S5 launch (3). Whatever needs
+a human is collected into one issue, written as JSON to $ISSUE_OUT for the
 workflow to file (or printed when run locally).
 """
 import datetime
+import html
 import json
 import os
 import re
@@ -27,6 +31,13 @@ from collect_live import get
 from config import HERO_VALID_FROM_SEASON, PATCH_STATE_PATH, load_patch_state, period
 
 PATCH_NOTES = "https://overwatch.blizzard.com/en-us/news/patch-notes/"
+PATCH_NOTES_MONTH = "https://overwatch.blizzard.com/en-us/news/patch-notes/live/{year}/{month:02d}/"
+HOMEPAGE = "https://overwatch.blizzard.com/en-us/"
+CHINA_CALENDAR = "https://webapi.blizzard.cn/ow-armory-server/index"
+
+MAJOR_PATCH_HERO_UPDATES = 10  # 2026: hotfixes 0-5 hero changes, S4 midseason 27, season launches 32-46
+NEW_SEASON_WINDOW_DAYS = 7     # calendar season start vs the reset we saw
+MIDSEASON_WINDOW_DAYS = 14     # S4's midseason landed 1 day from its calendar midpoint
 
 RESET_PR_SHIFT = 0.5      # median |overall pick rate change|
 RESET_MAP_WR_SHIFT = 4.0  # median |per-map win rate change|
@@ -53,42 +64,127 @@ def shift(new, old):
     return statistics.median(pr), statistics.median(wr)
 
 
-def major_patches():
-    """Season / midseason entries from Blizzard's patch notes, newest first:
-    [(date, "season" | "midseason", season number or None, heading)]."""
-    page = get(PATCH_NOTES, as_json=False)
+def parse_patch_notes(page):
+    """[{date, heading, season, hero_updates}] for each patch on a notes page.
+    `season` is N when the first section is a "Season N" launch heading."""
     found = []
     for entry in re.split(r'(?=<div class="PatchNotes-patch[ "])', page)[1:]:
         date = re.search(r'id="patch-(\d{4}-\d{2}-\d{2})"', entry)
-        heading = re.search(r'class="PatchNotes-sectionTitle"[^>]*>(.*?)</h4>', entry, re.S)
-        if not date or not heading:
+        if not date:
             continue
-        title = re.sub(r"<[^>]+>", "", heading.group(1)).strip()
-        if re.search(r"mid-?\s?season", title, re.I):
-            found.append((date.group(1), "midseason", None, title))
-        elif m := re.search(r"\bSeason\s+(\d+)\b", title):
-            found.append((date.group(1), "season", int(m.group(1)), title))
+        heading = re.search(r'class="PatchNotes-sectionTitle"[^>]*>(.*?)</h4>', entry, re.S)
+        title = html.unescape(re.sub(r"<[^>]+>", "", heading.group(1))).strip() if heading else ""
+        season = re.search(r"\bSeason\s+(\d+)\b", title)
+        found.append({
+            "date": date.group(1), "heading": title,
+            "season": int(season.group(1)) if season else None,
+            "hero_updates": len(re.findall(r'class="PatchNotesHeroUpdate-name"', entry)),
+        })
     return found
 
 
-def label_new_patch(state, current, reset_date, notes):
-    """Which patch the reset belongs to, preferring patch notes, else guessing."""
-    recent = [n for n in notes if current["started"] < n[0] <= reset_date]
-    if recent:
-        date, kind, number, heading = recent[0]
-        if kind == "season" and number and number > current["season"]:
-            return {"id": f"S{number}", "season": number, "is_midseason": False, "started": date}, f'patch notes: "{heading}"'
-        if kind == "midseason" and not current["is_midseason"]:
-            return {"id": f"S{current['season']}-mid", "season": current["season"], "is_midseason": True, "started": date}, f'patch notes: "{heading}"'
+def patch_notes(since):
+    """Every patch since `since`: the main page plus the monthly archives, so
+    a midseason patch isn't lost behind a few hotfixes."""
+    pages = [PATCH_NOTES]
+    month = datetime.date.fromisoformat(since).replace(day=1)
+    while month <= datetime.date.today():
+        pages.append(PATCH_NOTES_MONTH.format(year=month.year, month=month.month))
+        month = (month + datetime.timedelta(days=32)).replace(day=1)
+    notes = {}
+    for url in pages:
+        for n in parse_patch_notes(get(url, as_json=False)):
+            notes[n["date"]] = n
+    return sorted(notes.values(), key=lambda n: n["date"], reverse=True)
 
-    # No matching notes: treat it as another reset within the current half.
+
+def homepage_season():
+    """The season Blizzard's homepage advertises ("Season 5: A Grim Doctrine")."""
+    text = html.unescape(re.sub(r"<[^>]+>", " ", get(HOMEPAGE, as_json=False)))
+    numbers = [int(n) for n in re.findall(r"\bSeason\s+(\d+)\s*:", text)]
+    return max(numbers) if numbers else None
+
+
+def china_calendar():
+    """[{season, start, end}] from the Chinese armory's season list."""
+    seasons = get(CHINA_CALENDAR)["data"]["seasons"]
+    out = []
+    for s in seasons:
+        start, end = re.findall(r"\d{4}-\d{2}-\d{2}", s["desc"])
+        out.append({"season": int(s["id"]), "start": start, "end": end})
+    return out
+
+
+def gather_signals(since):
+    """Independent hints about which patch is live; any of them may be missing."""
+    signals = {}
+    for name, fetch in (("notes", lambda: patch_notes(since)), ("homepage", homepage_season), ("calendar", china_calendar)):
+        try:
+            signals[name] = fetch()
+        except Exception as exc:
+            signals[name] = None
+            print(f"signal {name} unavailable: {exc}")
+    return signals
+
+
+def days_between(a, b):
+    return abs((datetime.date.fromisoformat(a) - datetime.date.fromisoformat(b)).days)
+
+
+def label_new_patch(state, current, reset_date, signals):
+    """(patch, reasons, confirmed) for a detected reset.
+
+    Only season and midseason patches reset the numbers (2026: the 10-13 balance
+    hotfix didn't), so a reset is a new season if any season signal says so,
+    otherwise the midseason if we're in a season's first half. Midseason patch
+    notes never say "midseason" (S4's opened with "Junkrat's Loot Hunt"), but
+    they're big: 27 hero changes vs 0-5 for hotfixes."""
+    notes = [n for n in (signals.get("notes") or []) if current["started"] < n["date"] <= reset_date]
+    calendar = signals.get("calendar") or []
+
+    votes = {}
+    for n in notes:
+        if n["season"] and n["season"] > current["season"]:
+            votes.setdefault(n["season"], []).append((n["date"], f'patch notes {n["date"]}: "{n["heading"]}"'))
+    homepage = signals.get("homepage")
+    if homepage and homepage > current["season"]:
+        votes.setdefault(homepage, []).append((reset_date, f"Blizzard homepage shows Season {homepage}"))
+    for s in calendar:
+        if s["season"] > current["season"] and days_between(s["start"], reset_date) <= NEW_SEASON_WINDOW_DAYS:
+            votes.setdefault(s["season"], []).append((s["start"], f"China calendar: Season {s['season']} starts {s['start']}"))
+
+    if votes:
+        number = max(votes)
+        reasons = [r for _, r in votes[number]]
+        if len(votes) > 1:
+            reasons.append(f"**signals disagree on the season number** ({sorted(votes)}), used the highest")
+        started = min(d for d, _ in votes[number])
+        patch = {"id": f"S{number}", "season": number, "is_midseason": False, "started": started}
+        return patch, reasons, len(votes) == 1
+
+    if not current["is_midseason"]:
+        reasons = []
+        big = [n for n in notes if n["hero_updates"] >= MAJOR_PATCH_HERO_UPDATES]
+        if big:
+            reasons.append(f'big patch on {big[-1]["date"]} ({big[-1]["hero_updates"]} hero changes)')
+        season = next((s for s in calendar if s["season"] == current["season"]), None)
+        if season:
+            start, end = (datetime.date.fromisoformat(season[k]) for k in ("start", "end"))
+            middle = (start + (end - start) / 2).isoformat()
+            if days_between(middle, reset_date) <= MIDSEASON_WINDOW_DAYS:
+                reasons.append(f"reset is near the middle of Season {current['season']} (calendar midpoint {middle})")
+        started = big[-1]["date"] if big else reset_date
+        patch = {"id": f"S{current['season']}-mid", "season": current["season"], "is_midseason": True, "started": started}
+        return patch, reasons or ["unconfirmed: no big patch in the notes and no calendar support"], bool(reasons)
+
+    # A second reset inside a midseason half, with no new-season signal: unexpected.
     base = re.sub(r"-\d+$", "", current["id"])
     taken = {p["id"] for p in state["patches"]}
     k = 2
     while f"{base}-{k}" in taken:
         k += 1
     patch = {"id": f"{base}-{k}", "season": current["season"], "is_midseason": current["is_midseason"], "started": reset_date}
-    return patch, "no season/midseason patch notes found, so filed under the current half"
+    return patch, ["unexpected: a reset during a midseason with no sign of a new season"], False
 
 
 def history_roster():
@@ -159,11 +255,10 @@ def main():
     newest = snapshots.load_snapshot(newest_path)
     today = newest["date"]
 
-    try:
-        notes = major_patches()
-    except Exception as exc:
-        notes = []
-        print(f"could not read patch notes: {exc}")
+    signals = gather_signals(current["started"])
+    # Kept in state.json (committed by the workflow) so it's visible whether
+    # each signal is reachable from GitHub's runners.
+    state["signals"] = {name: "ok" if value is not None else "unavailable" for name, value in signals.items()}
 
     # The last earlier snapshot of the same patch whose numbers differ.
     previous = None
@@ -183,8 +278,10 @@ def main():
         is_pr, is_wr = pr_shift >= RESET_PR_SHIFT, wr_shift >= RESET_MAP_WR_SHIFT
 
         if is_pr and is_wr:
-            patch, reason = label_new_patch(state, current, today, notes)
-            patch["detected_by"] = f"reset on {today} vs {previous['date']} (PR {pr_shift:.2f}, WR {wr_shift:.2f}); {reason}"
+            patch, reasons, confirmed = label_new_patch(state, current, today, signals)
+            patch["detected_by"] = f"reset on {today} vs {previous['date']} (PR {pr_shift:.2f}, WR {wr_shift:.2f}); " + "; ".join(reasons)
+            if not confirmed:
+                patch["detected_by"] += " **[label unconfirmed: please check]**"
             state["patches"].append(patch)
             state["current"] = patch["id"]
             newest.update({"patch": patch["id"], "season": patch["season"], "is_midseason": patch["is_midseason"]})
@@ -209,14 +306,21 @@ def main():
 
     problems += update_roster(state, newest, paths, notified)
 
-    # Season/midseason notes with no reset after a few days.
+    # A big patch or a newer season on the homepage, but no reset after a few days.
     if state["current"] == current["id"]:
-        for date, kind, number, heading in notes:
-            stale = (datetime.date.fromisoformat(today) - datetime.date.fromisoformat(date)).days > NOTES_GRACE_DAYS
-            key = f"notes-no-reset:{date}"
-            if date > current["started"] and stale and key not in notified:
-                problems.append(f'- **Patch notes from {date} ("{heading}") but no data reset seen** in {NOTES_GRACE_DAYS}+ days. Check the snapshots.')
+        for n in signals.get("notes") or []:
+            big = n["season"] or n["hero_updates"] >= MAJOR_PATCH_HERO_UPDATES
+            key = f"notes-no-reset:{n['date']}"
+            if big and n["date"] > current["started"] and days_between(today, n["date"]) > NOTES_GRACE_DAYS and key not in notified:
+                problems.append(f'- **Big patch on {n["date"]} ("{n["heading"]}", {n["hero_updates"]} hero changes) but no data reset seen** '
+                                f"in {NOTES_GRACE_DAYS}+ days. Check the snapshots.")
                 notified.add(key)
+        homepage = signals.get("homepage")
+        key = f"homepage-no-reset:{homepage}"
+        if homepage and homepage > current["season"] and key not in notified:
+            problems.append(f"- **Blizzard's homepage shows Season {homepage}, but the data hasn't reset yet** (current patch `{current['id']}`). "
+                            "Usually it resets within a day or two; if this persists, check the snapshots.")
+            notified.add(key)
 
     state["notified"] = sorted(notified)
     with open(PATCH_STATE_PATH, "w", encoding="utf-8") as f:
