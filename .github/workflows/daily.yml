@@ -78,7 +78,7 @@ jobs:
         with:
           python-version: "3.13"
 
-      - run: pip install curl_cffi
+      - run: pip install -r requirements.txt
 
       # If either check fails, nothing below runs: the site keeps its last
       # good version and an issue is opened.
@@ -91,11 +91,21 @@ jobs:
       - name: Check the dataset
         run: python analysis/validate_dataset.py
 
+      # Published on the site rather than committed, so they're always current
+      # and the charts (~2 MB per refresh) don't pile up in git history.
+      - name: Report, CSVs and charts
+        run: |
+          python analysis/report.py
+          python analysis/charts.py
+          python analysis/render_report.py
+
       - name: Assemble site
         run: |
-          mkdir -p _site/data
-          cp -r index.html web _site/
+          mkdir -p _site/data _site/report
+          cp -r index.html web charts _site/
+          cp -r data/csv _site/data/
           cp data/web_data.json _site/data/
+          cp report/index.html _site/report/
 
       - uses: actions/upload-pages-artifact@v3
         with:

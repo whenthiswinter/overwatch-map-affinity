@@ -78,7 +78,7 @@ def rank_agreement_scatter(data):
 
     rows = [
         {"role": data["hero_roles"][hero], "masters": master[(hero, m)]["raw_delta_wr"], "gm": gm[(hero, m)]["raw_delta_wr"]}
-        for hero, m in master.keys() & gm.keys()
+        for hero, m in sorted(master.keys() & gm.keys())  # sorted: set order varies per run
     ]
     df = pd.DataFrame(rows)
     r = df["masters"].corr(df["gm"])

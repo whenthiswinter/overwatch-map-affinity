@@ -27,16 +27,6 @@ COOKIES = {"cf_clearance": os.environ.get("OWTICS_CF_CLEARANCE", "")}
 
 MIDSEASONS = [False, True]
 
-QUERY_DISCOVER_HEROES = """
-query GetRolesTopHeroes($input: RolesTopHeroesInput!) {
-  rolesTopHeroes(input: $input) {
-    ... on RolesTopHeroesAvailable {
-      buckets { role entries { hero { id name slug role } } }
-    }
-  }
-}
-"""
-
 QUERY_MAP_STATS = """
 query GetHeroMapStats($heroId: ID!, $filter: HeroMapStatsFilterInput) {
   heroById(id: $heroId) {
