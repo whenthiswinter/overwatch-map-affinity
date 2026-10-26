@@ -17,80 +17,107 @@ every season; don't change the rule after looking at a result.
   Only then does a rank/region feature come back, and it then goes through the
   same noise adjustment as the tiers, never raw gaps.
 
+Amended 2026-10-26: how p is computed (the rule above is unchanged).
+  p used to come from Fisher's z, which assumes every pair is equally noisy.
+  They aren't: a thin pair is noisy in both halves, which widens chance
+  correlations ~1.4-1.6x. Simulated with no real difference, the old p fired
+  13% of the time at the 5% bar (rank) and 5.5-10% at the 1.25% bars
+  (regions). p now comes from that simulation: the group label (region, or
+  rank) is shuffled among slices of the same pair, half, season and other
+  dimension, NULL_RUNS times with a fixed seed; p = share of shuffles with a
+  correlation at least as high as the real one. The change was made after
+  seeing results, and it goes against the one positive finding (EU).
+
 Result on 2026-10-21 (rule written after a first look at these numbers, so
 this run is exploratory; it binds from the next season on):
-  rank GM+ vs Masters r = -0.021 (1,526 pairs, p 0.79): not detected.
-  regions: AMER -0.010, ASIA -0.014, KOREA +0.018 not detected;
-  EU +0.069 (p 0.003) passes, but is small: the real EU gap varies with
-  SD ~0.9 points (half-split covariance), against ~4 points of noise per half.
-  Out of sample, the "All" view still predicts EU (and GM+) numbers better
-  than the EU-only (GM+-only) view, so no region/rank feature was added; the
-  filters stay as they are, with a note.
+  rank GM+ vs Masters r = -0.021 (1,526 pairs): not detected.
+  regions: AMER -0.010, ASIA -0.014, KOREA +0.018 not detected.
+  EU +0.069 passed with the old Fisher p (0.003), but its simulated p is
+  0.06 (2026-10-26): not detected either. Out of sample, the "All" view also
+  predicts EU and GM+ numbers better than the EU-only / GM+-only view.
 """
-import math
 from collections import defaultdict
 
+import numpy as np
+
 import sources
-from build_dataset import flatten, mean_of
+from build_dataset import flatten
 from config import is_provisional, season_usable
 
 ALPHA = 0.05
 REGIONS = ["AMER", "EU", "ASIA", "KOREA"]
+TIERS = ["MASTER", "GRANDMASTER_AND_CHAMPION"]
 MIN_SLICES = 2  # per side and half
+NULL_RUNS = 2000
+SEED = 20261021
 
 
-def one_sided_p(r, n):
-    """P(correlation this high or higher | no real effect), Fisher z."""
-    z = math.atanh(r) * math.sqrt(n - 3)
-    return 0.5 * math.erfc(z / math.sqrt(2))
-
-
-def correlation(xs, ys):
-    mx, my = mean_of(xs), mean_of(ys)
-    sxy = sum((x - mx) * (y - my) for x, y in zip(xs, ys))
-    return sxy / math.sqrt(sum((x - mx) ** 2 for x in xs) * sum((y - my) ** 2 for y in ys))
-
-
-def grouped():
-    """hero -> map -> half ("first"/"mid") -> list of (tier, region, delta_wr), established pairs only."""
+def load_rows():
+    """Established slices as arrays: pair-half id (2*pair + half), season, tier, region, delta."""
     slices, _ = flatten(sources.load_all(), season_usable)
-    out = defaultdict(lambda: defaultdict(lambda: defaultdict(list)))
+    pair_ids = {}
+    cols = defaultdict(list)
     for hero, items in slices.items():
         for it in items:
-            if not is_provisional(hero, it["map_slug"]):
-                half = "mid" if it["is_midseason"] else "first"
-                out[hero][it["map_slug"]][half].append((it["tier"], it["region"], it["delta_wr"]))
+            if is_provisional(hero, it["map_slug"]):
+                continue
+            pid = pair_ids.setdefault((hero, it["map_slug"]), len(pair_ids))
+            cols["ph"].append(2 * pid + (1 if it["is_midseason"] else 0))
+            cols["season"].append(it["season"])
+            cols["tier"].append(TIERS.index(it["tier"]))
+            cols["region"].append(REGIONS.index(it["region"]))
+            cols["delta"].append(it["delta_wr"])
+    rows = {k: np.array(v) for k, v in cols.items()}
+    rows["pairs"] = len(pair_ids)
+    return rows
+
+
+def split_half(rows, inside):
+    """Correlation over pairs of the inside-minus-outside gap in the first half vs the midseason half."""
+    size = 2 * rows["pairs"]
+    ph, delta = rows["ph"], rows["delta"]
+    n_in = np.bincount(ph, weights=inside, minlength=size)
+    n_out = np.bincount(ph, weights=~inside, minlength=size)
+    s_in = np.bincount(ph, weights=delta * inside, minlength=size)
+    s_out = np.bincount(ph, weights=delta * ~inside, minlength=size)
+    ok = (n_in >= MIN_SLICES) & (n_out >= MIN_SLICES)
+    with np.errstate(invalid="ignore", divide="ignore"):
+        gap = s_in / n_in - s_out / n_out
+    both = ok[0::2] & ok[1::2]
+    xs, ys = gap[0::2][both], gap[1::2][both]
+    return float(np.corrcoef(xs, ys)[0, 1]), int(both.sum())
+
+
+def shuffle_within(labels, strata, stable, rng):
+    """labels permuted at random inside each stratum (each stratum keeps its own labels).
+    stable = np.argsort(strata, kind="stable"); strata must be integers."""
+    randomized = np.argsort(strata + rng.random(len(labels)))
+    out = np.empty_like(labels)
+    out[stable] = labels[randomized]
     return out
 
 
-def gap(rows, in_group):
-    inside = [d for t, r, d in rows if in_group(t, r)]
-    outside = [d for t, r, d in rows if not in_group(t, r)]
-    if len(inside) < MIN_SLICES or len(outside) < MIN_SLICES:
-        return None
-    return mean_of(inside) - mean_of(outside)
+def simulated_p(rows, label, other, group, r_obs, rng, runs):
+    """Share of label shuffles (within pair, half, season, other dimension) whose correlation reaches r_obs."""
+    strata = (rows["ph"] * 10 + rows["season"]) * 10 + rows[other]
+    stable = np.argsort(strata, kind="stable")
+    hits = 0
+    for _ in range(runs):
+        r, _ = split_half(rows, shuffle_within(rows[label], strata, stable, rng) == group)
+        hits += r >= r_obs
+    return (1 + hits) / (1 + runs)
 
 
-def split_half(data, in_group):
-    xs, ys = [], []
-    for maps in data.values():
-        for halves in maps.values():
-            a, b = gap(halves["first"], in_group), gap(halves["mid"], in_group)
-            if a is not None and b is not None:
-                xs.append(a)
-                ys.append(b)
-    r = correlation(xs, ys)
-    return r, len(xs), one_sided_p(r, len(xs))
-
-
-def run_checks():
-    data = grouped()
-    tests = [("rank: GM+ vs Masters", lambda t, r: t == "GRANDMASTER_AND_CHAMPION", ALPHA)]
-    tests += [(f"region: {reg} vs rest", (lambda reg: lambda t, r: r == reg)(reg), ALPHA / len(REGIONS)) for reg in REGIONS]
+def run_checks(runs=NULL_RUNS):
+    rows = load_rows()
+    rng = np.random.default_rng(SEED)
+    tests = [("rank: GM+ vs Masters", "tier", "region", TIERS.index("GRANDMASTER_AND_CHAMPION"), ALPHA)]
+    tests += [(f"region: {reg} vs rest", "region", "tier", i, ALPHA / len(REGIONS)) for i, reg in enumerate(REGIONS)]
 
     results = []
-    for name, in_group, alpha in tests:
-        r, n, p = split_half(data, in_group)
+    for name, label, other, group, alpha in tests:
+        r, n = split_half(rows, rows[label] == group)
+        p = simulated_p(rows, label, other, group, r, rng, runs)
         results.append({"test": name, "r": round(r, 3), "pairs": n, "p": round(p, 4), "alpha": alpha, "real": p < alpha})
     return results
 

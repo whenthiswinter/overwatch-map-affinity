@@ -8,7 +8,7 @@ import os
 
 import sources
 from build_dataset import build_scope
-from check_rank_region import run_checks
+from check_rank_region import NULL_RUNS, run_checks
 from config import hero_name, map_name, season_usable
 
 CSV_DIR = os.path.join(os.path.dirname(__file__), "..", "data", "csv")
@@ -60,9 +60,11 @@ def run():
         f.write("| Comparison | Split-half correlation | Pairs | p | Detected |\n|---|---|---|---|---|\n")
         for res in rank_region:
             f.write(f"| {res['test']} | {res['r']:+.3f} | {res['pairs']} | {res['p']:.4f} | {'yes' if res['real'] else 'no'} |\n")
-        f.write("\nAs of the 2026-10-21 analysis (the table above is recomputed on every run): the rank groups show no detectable difference. Europe shows a small consistent one (a typical hero-map gap of about 1 point), "
-                "but even for European numbers the all-regions estimate predicts held-out data better than Europe alone, because a quarter of the data adds more noise "
-                "than the regional difference is worth. The same holds for GM+. So the all-ranks, all-regions view is the most reliable one for everyone.\n\n---\n\n")
+        f.write("\np comes from simulating \"no real difference\": each slice's region (or rank) label is shuffled within its pair, half and season, "
+                f"{NULL_RUNS} times, and p is the share of shuffles that correlate at least as well. "
+                "(Until 2026-10-26 it came from a formula that assumes every pair is equally noisy; that made chance results look several times less likely than they are.) "
+                "As of 2026-10-26 neither the rank groups nor any region show a detectable difference; Europe came closest (p 0.06). "
+                "Even for European or GM+ numbers, the all-ranks, all-regions view predicts held-out data better than the narrower view, so it's the most reliable one for everyone.\n\n---\n\n")
 
         f.write("## 3. Map Tier Lists\n\n")
         by_map = {}
