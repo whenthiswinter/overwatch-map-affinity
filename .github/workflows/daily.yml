@@ -1,12 +1,16 @@
 name: Daily data
 
-# Every 6 hours: collect today's snapshot (only the first successful run of a
+# Every 2 hours: collect today's snapshot (only the first successful run of a
 # UTC day does any work; the rest are retries), check for a patch reset,
-# commit the snapshot, rebuild the dataset and redeploy the site. Pushes to
-# main only rebuild and redeploy.
+# commit the snapshot, rebuild the dataset and redeploy the site. Scheduled
+# runs only rebuild when they committed something new. Pushes to main and
+# manual runs always rebuild and redeploy.
+# Every 2 hours (was 6 until 2026-10-28) because Nexon's Cloudflare blocks some
+# GitHub runners with a 403 (1-2 of 4 runs a day from 2026-10-26); each run
+# gets a different runner, so more tries make a fully missed day unlikely.
 on:
   schedule:
-    - cron: "17 */6 * * *"
+    - cron: "17 */2 * * *"
   workflow_dispatch:
   push:
     branches: [main]
@@ -25,6 +29,8 @@ jobs:
   collect:
     if: github.event_name != 'push'
     runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.commit.outputs.changed }}
     steps:
       - uses: actions/checkout@v7
 
@@ -52,6 +58,7 @@ jobs:
           fi
 
       - name: Commit snapshot and patch state
+        id: commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -60,10 +67,11 @@ jobs:
             git commit -m "Snapshot $(date -u +%F)"
             git pull --rebase
             git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
 
       # A single failed run is normal (e.g. a temporary 403 from Nexon) and is
-      # retried 6 hours later; snapshots are cumulative, so nothing is lost.
+      # retried 2 hours later; snapshots are cumulative, so nothing is lost.
       # Only when no snapshot has been committed for today or yesterday, i.e. a
       # whole UTC day was missed, does it need a human.
       - name: Open an issue if a whole day of collection was missed
@@ -82,7 +90,7 @@ jobs:
           newest=$(git ls-files 'data/snapshots/*.json.gz' | sort | tail -1)
           open=$(gh issue list --state open --search "in:title \"$TITLE\"" --json number --jq length)
           if [ "$open" = "0" ]; then
-            gh issue create --title "$TITLE" --body "No snapshot has been committed for a full UTC day (newest: \`$newest\`). Runs retry every 6 hours; one-off failures don't open this issue, so this one means collection has kept failing. Snapshots are cumulative since the patch started, so nothing is lost if it recovers before the patch ends. Latest failed run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}. This issue closes itself when collection works again."
+            gh issue create --title "$TITLE" --body "No snapshot has been committed for a full UTC day (newest: \`$newest\`). Runs retry every 2 hours; one-off failures don't open this issue, so this one means collection has kept failing. Snapshots are cumulative since the patch started, so nothing is lost if it recovers before the patch ends. Latest failed run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}. This issue closes itself when collection works again."
           fi
 
       - name: Close the collection issue once it works again
@@ -97,7 +105,8 @@ jobs:
 
   deploy:
     needs: collect
-    if: ${{ !failure() && !cancelled() }}
+    # Scheduled runs that found nothing new leave the site as it is.
+    if: ${{ !failure() && !cancelled() && (github.event_name != 'schedule' || needs.collect.outputs.changed == 'true') }}
     runs-on: ubuntu-latest
     environment:
       name: github-pages
