@@ -37,11 +37,13 @@ def current_patch(state=None):
 # use it, flagged as provisional.
 #
 # "Settled" = MATURITY_DAYS since the patch started, counted to the newest
-# snapshot. At 13-15 days into S5, per-slice deltas still moved ~3 points
-# between refreshes (vs ~5 between two whole patches), so 14 was too early.
-# 21 is a conservative placeholder until a full half has been observed
-# (PLAN.md phase 5).
-MATURITY_DAYS = 21
+# snapshot. Measured on S5's 22 daily snapshots (analysis/check_maturity.py,
+# 2026-11-04): from day 14 on, adding the patch never made the all-seasons
+# numbers worse at predicting a left-out half (days 7-13: within noise, but
+# above zero), and day 14 is the first day S5's own numbers were closer to
+# their final values than two whole halves are to each other. Was a 21-day
+# placeholder. Rerun the check when each patch ends.
+MATURITY_DAYS = 14
 
 def latest_snapshot_date():
     dates = [f[:10] for f in os.listdir(SNAPSHOT_DIR) if f.endswith(".json.gz")] if os.path.isdir(SNAPSHOT_DIR) else []
