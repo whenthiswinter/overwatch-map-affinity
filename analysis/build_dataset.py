@@ -5,6 +5,7 @@ import os
 from collections import defaultdict
 from fractions import Fraction
 
+import snapshots
 import sources
 from config import (
     CURRENT_IS_MIDSEASON, CURRENT_PATCH, CURRENT_PATCH_MATURE, CURRENT_SEASON, DATA_THROUGH,
@@ -437,6 +438,8 @@ def build():
             "days_into_patch": DAYS_INTO_PATCH,
             "maturity_days": MATURITY_DAYS,
             "mature": CURRENT_PATCH_MATURE,
+            # Newest Korea data of the current patch; behind data_through when Nexon refused the latest runs.
+            "korea_through": snapshots.latest_per_patch().get(CURRENT_PATCH["id"], {}).get("korea_date"),
         },
         "scopes": {"all": all_scope, "patch": patch_scope},
         "map_list": sorted(MAP_MODES.keys()),

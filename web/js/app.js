@@ -79,6 +79,7 @@ function renderFreshness() {
   const m = data.meta;
   let text = `Data through ${fmtDate(m.data_through)} · ${patchLabel(m)}, day ${m.days_into_patch}`;
   if (!m.mature) text += ` · counts fully from day ${m.maturity_days}`;
+  if (m.korea_through && m.korea_through < m.data_through) text += ` · Korea through ${fmtDate(m.korea_through)}`;
   el("freshness").textContent = text;
   el("scopeSelect").options[1].textContent = `This patch only (${patchLabel(m)})`;
 }

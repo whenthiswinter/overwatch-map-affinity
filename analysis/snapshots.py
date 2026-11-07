@@ -40,14 +40,37 @@ def patch_of(snapshot):
     return snapshot.get("patch") or f"S{snapshot['season']}{'-mid' if snapshot.get('is_midseason') else ''}"
 
 
+KOREA = "KOREA"
+
+
+def has_korea(snapshot):
+    return any(s["region"] == KOREA for s in snapshot["slices"])
+
+
 def latest_per_patch():
     """The newest snapshot of every patch. Snapshots are cumulative since the
-    patch started, so only the newest one of each patch may be counted."""
-    latest = {}
-    for path in snapshot_paths():
+    patch started, so only the newest one of each patch may be counted.
+
+    Nexon refuses some GitHub runners, so a snapshot can be saved without
+    Korea. Its Korea slices then come from the newest snapshot of the same
+    patch that has them (cumulative too, so only a day or two behind, and
+    never taken across a patch reset); `korea_date` says which day, or None
+    if the patch has no Korea data yet."""
+    latest, korea = {}, {}
+    for path in snapshot_paths():  # date-sorted
         snapshot = load_snapshot(path)
-        latest[patch_of(snapshot)] = snapshot  # paths are date-sorted
-    return latest
+        patch = patch_of(snapshot)
+        latest[patch] = snapshot
+        if has_korea(snapshot):
+            korea[patch] = snapshot
+    out = {}
+    for patch, snapshot in latest.items():
+        kr = korea.get(patch)
+        if kr is not None and kr is not snapshot:
+            snapshot = {**snapshot, "slices": [s for s in snapshot["slices"] if s["region"] != KOREA]
+                        + [s for s in kr["slices"] if s["region"] == KOREA]}
+        out[patch] = {**snapshot, "korea_date": kr["date"] if kr else None}
+    return out
 
 
 def to_slices(snapshot):

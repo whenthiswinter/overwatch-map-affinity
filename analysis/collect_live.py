@@ -3,7 +3,13 @@
 Blizzard (Americas/Europe/Asia) and Nexon (Korea) only serve the current
 patch, cumulative since the patch started, so the backlog has to be built by
 saving a snapshot every day. Safe to run repeatedly: it exits right away once
-today's snapshot exists, and writes nothing unless every request succeeded.
+today's snapshot exists with Korea in it, and writes nothing unless every
+Blizzard request succeeded.
+
+Nexon's Cloudflare refuses some GitHub runners (403), so Korea may fail on its
+own: the snapshot is then saved without it, and later runs that day (or a run
+from a local PC) try Korea again and add it. Builders fill a missing Korea from
+the newest snapshot of the same patch that has it (snapshots.latest_per_patch).
 """
 import datetime
 import html
@@ -168,10 +174,38 @@ def note_run(outcome):
         f.write(f"{datetime.datetime.now():%Y-%m-%d %H:%M:%S} {outcome}\n")
 
 
+def collect_korea(map_slugs):
+    """(Korea slices, nexon source info); no slices when Nexon refuses."""
+    try:
+        kr_rq = nexon_rq()
+        kr_slices, kr_empty = collect_nexon(kr_rq, map_slugs)
+    except Exception as exc:
+        return [], {"status": "failed", "error": str(exc)[:300]}
+    return kr_slices, {"status": "ok", "rq": kr_rq, "empty_maps": kr_empty}
+
+
+def add_korea(path):
+    """Today's snapshot was saved without Korea: try Korea again."""
+    snapshot = snapshots.load_snapshot(path)
+    kr_slices, nexon = collect_korea(sorted(snapshot["maps"]))
+    if not kr_slices:
+        log(f"Korea still unavailable for {os.path.basename(path)}: {nexon['error']}")
+        note_run("skipped (Korea still failing)")
+        return 0
+    snapshot["slices"] += kr_slices
+    snapshot["sources"]["nexon"] = nexon
+    snapshots.save_snapshot(path, snapshot)
+    log(f"added Korea to {os.path.basename(path)}: {len(kr_slices)} slices")
+    note_run("Korea added")
+    return 0
+
+
 def main():
     today = datetime.date.today().isoformat()
     path = os.path.join(SNAPSHOT_DIR, f"{today}.json.gz")
     if os.path.exists(path):
+        if not snapshots.has_korea(snapshots.load_snapshot(path)):
+            return add_korea(path)
         print(f"{path} already exists, nothing to do")
         note_run("skipped (already collected today)")
         return 0
@@ -179,15 +213,15 @@ def main():
     started = time.time()
     try:
         bliz_rq, maps = blizzard_filters()
-        kr_rq = nexon_rq()
         heroes = {}
         map_slugs = sorted(maps)
-        kr_slices, kr_empty = collect_nexon(kr_rq, map_slugs)
-        slices = collect_blizzard(bliz_rq, map_slugs, heroes) + kr_slices
+        slices = collect_blizzard(bliz_rq, map_slugs, heroes)
     except Exception as exc:
         log(f"FAILED: {exc}")
         note_run("failed")
         return 1
+    kr_slices, nexon = collect_korea(map_slugs)
+    slices += kr_slices
 
     patch = current_patch()
     snapshot = {
@@ -196,7 +230,7 @@ def main():
         "patch": patch["id"],
         "season": patch["season"],
         "is_midseason": patch["is_midseason"],
-        "sources": {"blizzard": {"rq": bliz_rq}, "nexon": {"rq": kr_rq, "empty_maps": kr_empty}},
+        "sources": {"blizzard": {"rq": bliz_rq}, "nexon": nexon},
         "heroes": heroes,
         "maps": maps,
         "slices": slices,
@@ -205,9 +239,13 @@ def main():
 
     log(f"saved {os.path.basename(path)}: {len(slices)} slices, {len(heroes)} heroes, {len(maps)} maps, "
         f"{os.path.getsize(path) // 1024} KB, {time.time() - started:.0f}s")
-    note_run("saved")
-    if kr_empty:
-        log(f"note: no Korea data for {', '.join(kr_empty)}")
+    if nexon["status"] == "ok":
+        note_run("saved")
+        if nexon["empty_maps"]:
+            log(f"note: no Korea data for {', '.join(nexon['empty_maps'])}")
+    else:
+        log(f"saved without Korea (Nexon: {nexon['error']}); later runs today will retry it")
+        note_run("saved without Korea")
     return 0
 
 

@@ -170,3 +170,63 @@ class RosterTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+def with_korea(snap, wr=48.0):
+    snap["slices"].append({"region": "KOREA", "tier": "MASTER", "map": "dorado", "rates": {"ana": [wr, 20.0]}})
+    return snap
+
+
+class KoreaFallbackTests(unittest.TestCase):
+    """Nexon refuses some GitHub runners; Korea may be missing from a snapshot."""
+
+    def test_missing_korea_comes_from_the_same_patch_only(self):
+        with tempfile.TemporaryDirectory() as tmp, mock.patch.object(snapshots, "SNAPSHOT_DIR", tmp):
+            days = [(with_korea(snapshot("2026-11-02"), 47.0)), with_korea(snapshot("2026-11-03"), 49.0),
+                    snapshot("2026-11-04"),  # S5, Korea refused
+                    snapshot("2026-11-07", patch="S5-mid", mid=True)]  # new patch, Korea refused
+            for s in days:
+                snapshots.save_snapshot(os.path.join(tmp, f"{s['date']}.json.gz"), s)
+            latest = snapshots.latest_per_patch()
+        s5, mid = latest["S5"], latest["S5-mid"]
+        self.assertEqual((s5["date"], s5["korea_date"]), ("2026-11-04", "2026-11-03"))
+        (kr,) = [s for s in s5["slices"] if s["region"] == "KOREA"]
+        self.assertEqual(kr["rates"]["ana"][0], 49.0)  # the newest Korea, not an older one
+        self.assertIsNone(mid["korea_date"])  # never borrowed across the reset
+        self.assertFalse(snapshots.has_korea(mid))
+
+    def run_collector(self, tmp, nexon_ok):
+        import collect_live
+        nexon = (lambda rq, maps: ([{"region": "KOREA", "tier": "MASTER", "map": "dorado", "rates": {"ana": [50.0, 9.0]}}], [])) if nexon_ok \
+            else mock.Mock(side_effect=RuntimeError("HTTP Error 403"))
+        with mock.patch.multiple(collect_live, SNAPSHOT_DIR=tmp, log=mock.Mock(), note_run=mock.Mock(),
+                                 blizzard_filters=mock.Mock(return_value=("2", {"dorado": {"name": "Dorado", "mode": "Escort"}})),
+                                 collect_blizzard=mock.Mock(return_value=[{"region": "EU", "tier": "MASTER", "map": "dorado", "rates": {"ana": [51.0, 9.0]}}]),
+                                 nexon_rq=mock.Mock(return_value="2"), collect_nexon=nexon,
+                                 current_patch=mock.Mock(return_value={"id": "S5-mid", "season": 5, "is_midseason": True})):
+            return collect_live.main(), collect_live.collect_blizzard.call_count
+
+    def test_collector_saves_without_korea_then_adds_it_later(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            code, _ = self.run_collector(tmp, nexon_ok=False)
+            (name,) = os.listdir(tmp)
+            saved = snapshots.load_snapshot(os.path.join(tmp, name))
+            self.assertEqual(code, 0)
+            self.assertFalse(snapshots.has_korea(saved))
+            self.assertEqual(saved["sources"]["nexon"]["status"], "failed")
+
+            code, blizzard_calls = self.run_collector(tmp, nexon_ok=True)  # a later run the same day
+            saved = snapshots.load_snapshot(os.path.join(tmp, name))
+            self.assertEqual(code, 0)
+            self.assertEqual(blizzard_calls, 0)  # Blizzard isn't fetched again
+            self.assertTrue(snapshots.has_korea(saved))
+            self.assertEqual(saved["sources"]["nexon"]["status"], "ok")
+            self.assertEqual(len(saved["slices"]), 2)
+
+    def test_stale_korea_is_reported_once(self):
+        state = {"current": "S5-mid", "patches": [{"id": "S5-mid", "started": "2026-11-03"}]}
+        notified = set()
+        self.assertIsNone(detect_patch.korea_stale(state, "2026-11-08", "2026-11-07", notified))  # a day behind: normal
+        self.assertIn("Korea data is behind", detect_patch.korea_stale(state, "2026-11-09", "2026-11-07", notified))
+        self.assertIsNone(detect_patch.korea_stale(state, "2026-11-10", "2026-11-07", notified))  # already reported
+        self.assertIsNotNone(detect_patch.korea_stale(state, "2026-11-06", None, set()))  # none since the reset

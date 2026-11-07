@@ -42,6 +42,7 @@ MIDSEASON_WINDOW_DAYS = 14     # S4's midseason landed 1 day from its calendar m
 RESET_PR_SHIFT = 0.5      # median |overall pick rate change|
 RESET_MAP_WR_SHIFT = 4.0  # median |per-map win rate change|
 NOTES_GRACE_DAYS = 3      # Blizzard can lag a day; past this, a missing reset is suspicious
+KOREA_STALE_DAYS = 2      # Korea a day behind is normal while Nexon refuses a runner
 
 
 def rates_by_key(snapshot, overall):
@@ -129,6 +130,19 @@ def gather_signals(since):
 
 def days_between(a, b):
     return abs((datetime.date.fromisoformat(a) - datetime.date.fromisoformat(b)).days)
+
+
+def korea_stale(state, today, korea_date, notified):
+    """An issue line when the current patch's newest Korea data is KOREA_STALE_DAYS+ old."""
+    current = next(p for p in state["patches"] if p["id"] == state["current"])
+    since = korea_date or current["started"]
+    key = f"korea-stale:{since}"
+    if days_between(today, since) < KOREA_STALE_DAYS or key in notified:
+        return None
+    notified.add(key)
+    return (f"- **Korea data is behind:** the newest Korea data for `{current['id']}` is from {korea_date or 'no snapshot yet'} "
+            f"(newest snapshot {today}). Nexon keeps refusing GitHub's runners; the site keeps updating with the other regions. "
+            "If it lasts, run `python analysis/collect_live.py` on a local PC (it adds Korea to today's snapshot), then commit and push it.")
 
 
 def label_new_patch(state, current, reset_date, signals):
@@ -307,6 +321,10 @@ def main():
                 notified.add(key)
 
     problems += update_roster(state, newest, paths, notified)
+
+    stale = korea_stale(state, today, snapshots.latest_per_patch().get(state["current"], {}).get("korea_date"), notified)
+    if stale:
+        problems.append(stale)
 
     # A big patch or a newer season on the homepage, but no reset after a few days.
     if state["current"] == current["id"]:
