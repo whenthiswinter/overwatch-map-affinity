@@ -33,6 +33,10 @@ NEXON_TIERS = {"master": "MASTER", "grandmaster": "GRANDMASTER_AND_CHAMPION"}
 
 # Overall rates (all maps) are collected too; they make patch resets easy to spot.
 ALL_MAPS = "all-maps"
+# A sanity floor for the overall (all maps) lists only, which always name every
+# hero. Per-map lists only include heroes with games on that map, so right after
+# a patch reset they're legitimately short (Korea GM, Blizzard World, 2 days
+# into S5-mid: 15 heroes), which blocked collection 2026-11-05..07.
 MIN_HEROES = 40
 MAX_EMPTY_KR_MAPS = 8
 DELAY = 0.4
@@ -115,7 +119,7 @@ def collect_blizzard(rq, map_slugs, heroes):
                     raise RuntimeError(f"Blizzard answered {selected} for {params}")
 
                 rows = data["rates"]["rates"]
-                if len(rows) < MIN_HEROES:
+                if len(rows) < (MIN_HEROES if map_slug == ALL_MAPS else 1):
                     raise RuntimeError(f"only {len(rows)} heroes for {params}")
 
                 rates = {}
@@ -147,7 +151,7 @@ def collect_nexon(rq, map_slugs):
                 if len(empty) > MAX_EMPTY_KR_MAPS:
                     raise RuntimeError(f"too many empty Nexon maps: {empty}")
                 continue
-            if len(rows) < MIN_HEROES:
+            if map_slug == ALL_MAPS and len(rows) < MIN_HEROES:
                 raise RuntimeError(f"only {len(rows)} heroes for Nexon {params}")
 
             rates = {canonical_slug(r["heroId"]): [rate(r.get("winRate")), rate(r.get("pickRate"))] for r in rows}
