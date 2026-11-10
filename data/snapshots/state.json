@@ -16,7 +16,9 @@
       "detected_by": "reset on 2026-11-07 vs 2026-11-04 (PR 1.00, WR 11.40); big patch on 2026-11-03 (25 hero changes); reset is near the middle of Season 5 (calendar midpoint 2026-11-07)"
     }
   ],
-  "notified": [],
+  "notified": [
+    "ambiguous:2026-11-10"
+  ],
   "first_seen": {
     "heroes": {
       "doctrine": 5,
