@@ -20,6 +20,10 @@ permissions:
   issues: write
   pages: write
   id-token: write
+  # deploy-pages (v4+) looks up this run's "github-pages" artifact through the
+  # Actions API. Without this, from 2026-11-24 the lookup came back empty
+  # ("No artifacts named github-pages were found") although the upload worked.
+  actions: read
 
 concurrency:
   group: daily-data
